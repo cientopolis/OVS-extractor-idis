@@ -35,6 +35,12 @@ class Evaluation:
             Metric(name="barrio"),
             Metric(name="frentes"),
             Metric(name="pileta"),
+            Metric(name="urb_cerrada"),
+            Metric(name="urb_semicerrada"),
+            Metric(name="posesion"),
+            Metric(name="preventa"),
+            Metric(name="indiviso"),
+            Metric(name="a_demoler"),
         ]
         self.ResultTuple = namedtuple("ResultTuple", self.results.columns)
         self.GTTuple = namedtuple("GTTuple", self.gt.columns)

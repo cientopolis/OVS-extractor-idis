@@ -354,6 +354,30 @@ class Matcher:
             ],
         )
 
+        Matcher.matcher.add(
+            "urb_cerrada", [ ]
+        )
+
+        Matcher.matcher.add(
+            "urb_semicerrada", [ ]
+        )
+
+        Matcher.matcher.add(
+            "posesion", [ ]
+        )
+
+        Matcher.matcher.add(
+            "preventa", [ ]
+        )
+
+        Matcher.matcher.add(
+            "indiviso", [ ]
+        )
+
+        Matcher.matcher.add(
+            "a_demoler", [ ]
+        )
+        
         Matcher.dependencyMatcher = DependencyMatcherSpacy(NLP.vocab)
         Matcher.dependencyMatcher.add(
             "frentes",
@@ -452,6 +476,13 @@ class Matcher:
                 procesar_frentes(predichos["frentes"]) if predichos["frentes"] else ""
             ),
             "pileta": True if len(predichos["pileta"]) > 0 else "",
+            # acá agregar los procesadores de mejor resultado para cada variable
+            "urb_cerrada": predichos["urb_cerrada"],
+            "urb_semicerrada": predichos["urb_semicerrada"], 
+            "posesion": predichos["posesion"],
+            "preventa": predichos["preventa"],
+            "indiviso": predichos["indiviso"],
+            "a_demoler": predichos["a_demoler"]
         }
 
     def get_pairs(self, text: str):
@@ -467,6 +498,12 @@ class Matcher:
             "barrio": [],
             "esquina": [],
             "frentes": [],
+            "urb_cerrada": [],
+            "urb_semicerrada": [], 
+            "posesion": [],
+            "preventa": [],
+            "indiviso": [],
+            "a_demoler": []
         }
         self.__get_matches(text, prev_result)
         self.__get_dep_matches(text, prev_result)
