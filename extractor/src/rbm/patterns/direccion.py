@@ -1,0 +1,148 @@
+
+ #los uso con LEMMA
+#calleSinonimos = ["Av", "av", "calle", "Calle", "ruta", "Ruta", "avenida", "Avenida", "diagonal", "Diagonal", "dg", "Dg", "diag", "Diag"]
+#manzanaSinonimos = ["manzana", "Manzana", "mz", "Mz", "mza", "Mza"]
+#numeroSinonimos = ["numero", "nro", "número", "número", "n", "n°", "nº", "nº", "n°", "nro."]
+
+#los uso con LOWER
+#calleSinonimos2 = ["avs", "av", "calle", "calles", "ruta", "rutas", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dgs", "diag", "diags"]
+calleSinonimos3 = ["avs", "avs.", "av", "av.", "calle", "calles", "ruta", "rutas", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dg.", "dgs", "dgs.", "diag", "diasg.", "diags", "diags"]#tal vez dirá: "calle 5 entre calles 4 y 7"
+manzanaSinonimos2 = ["manzana", "mz", "mz.", "mza", "mza."]
+numeroSinonimos2 = ["numero", "numeros", "nro", "nros", "número", "números", "°", "n", "n°", "nº", "nº", "n°", "nro.", "ns", "n°s", "nºs", "nºs", "n°s", "nros."]
+anteNumero = ["km", "al", "altura", "altura:", "alt", "alt.", "kilometro", "km."]
+
+nombreLargo = ["PROPN", "DET", "ADP", "NOUN", "NUM"] #funciona que tenga el numero opcional, pero luego si o si al final termine con PROPN
+conectores = ["e/", "entre", "a", "a/", "esquina", "esq", "esq."]#pensé en sacarle lo de esquina pero fue contraproducente
+union = ["y", "e", "esquina", "esq", "esq."]
+#letra = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]#trae probleamos porque quiere matchear con la letra 'a' en las oraciones como: "a 5 metros de ahí"
+letraMay = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "Ñ", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+#extra = ["bis"] + letra #empeora precisión
+#PARA LOS MATCHERS DE DIRECCIÓN: LOS PATRONES COMENTADOS sin explicación es porque no aportan precisión, pero en una db más grande tal vez si (no están probados)
+
+sobreSinonimos = ["en","sobre"]
+nombreLote = ["NUM", "PROPN"]
+
+def dir_nro():
+    return  list([ #direcciones platenses = numericas
+                #calle sin altura
+                #[{"LOWER": {"IN":calleSinonimos3}},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER": "bis"}],
+                [{"LOWER": {"IN":calleSinonimos3}},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"},{"LOWER": {"IN": union}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"LIKE_NUM":True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"}],
+                [{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER": "bis", "OP":"?"},{"LOWER": {"IN": conectores}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"},{"LOWER":{"IN":union}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"}],
+                #caso extra de "calles 3, 4 y 5"
+                #[{"LOWER": {"IN":calleSinonimos3}}, {"TEXT": ",", "OP":"?"},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"},{"TEXT": ","},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"},{"TEXT": {"IN":union}},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"}],
+
+                #calle con altura
+                [{"LOWER": {"IN":calleSinonimos3}},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"},{"LOWER": {"IN":anteNumero}, "OP":"?"},{"LOWER": {"IN":numeroSinonimos2}, "OP":"*"},{"LIKE_NUM": True},],
+                #[{"LOWER": {"IN":calleSinonimos3}},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"},{"LOWER": {"IN":anteNumero}, "OP":"?"},{"LOWER": {"IN":numeroSinonimos2}, "OP":"*"},{"LIKE_NUM": True},{"LOWER": {"IN": conectores}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"LOWER": {"IN":numeroSinonimos2}, "OP":"+"},{"LIKE_NUM":True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"},],
+                #[{"LOWER": {"IN":calleSinonimos3}},{"LIKE_NUM": True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"},{"LOWER": {"IN":anteNumero}, "OP":"?"},{"LOWER": {"IN":numeroSinonimos2}, "OP":"*"},{"LIKE_NUM": True},{"LOWER": {"IN": conectores}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"LOWER": {"IN":numeroSinonimos2}, "OP":"+"},{"LIKE_NUM":True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"},{"LOWER":{"IN":union}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"LIKE_NUM":True},{"TEXT": {"IN": letraMay}, "OP":"?"},{"LOWER":"bis", "OP":"?"}],
+            ])
+
+def dir_interseccion():
+    return  list([
+                #calle sin altura
+                #[{"LOWER": {"IN":calleSinonimos3}},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LOWER": "bis"}],
+                [{"LOWER": {"IN":calleSinonimos3}},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER":"bis", "OP":"?"},{"LOWER": {"IN": conectores}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LOWER":"bis", "OP":"?"}], #no entinedo porque tengo que usar 'concectores' en lugar de 'union' -> porque estoy overfitteando, sube la presición el usar conector porque hace que no encuentre nada y luego el helper no se confunda con cual es la mejor opción a usar
+                [{"LOWER": {"IN":calleSinonimos3}},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER": "bis", "OP":"?"},{"LOWER": {"IN": conectores}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LOWER": "bis", "OP":"?"},{"LOWER":{"IN":union}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"}, {"LOWER": "bis", "OP":"?"},],
+                #case extra de "calle Miguel, Santiago y Fulano"
+                #[{"LOWER": {"IN":calleSinonimos3}}, {"TEXT": ",", "OP":"?"},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER":"bis", "OP":"?"},{"TEXT": ","},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER":"bis", "OP":"?"},{"TEXT": {"IN":union}},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER":"bis", "OP":"?"}],#hay que mejorarle el helper asociado para sacar el inicio de "calles,"
+
+                #calle con altura
+                [{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER":"bis"}],#un caso sin poner calle al inicio, no se si estoy overfitteando
+                [{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER": "bis", "OP":"?"},{"LOWER": {"IN":numeroSinonimos2}, "OP":"+"},{"LIKE_NUM": True},],#otro caso sin poner calle al inicio, no se si estoy overfitteando
+                
+                [{"LOWER": {"IN":calleSinonimos3}},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER": "bis", "OP":"?"},{"LOWER": {"IN":anteNumero}, "OP":"?"},{"LOWER": {"IN":numeroSinonimos2}, "OP":"*"},{"LIKE_NUM": True}],
+                #[{"LOWER": {"IN":calleSinonimos3}},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER": "bis", "OP":"?"},{"LOWER": {"IN":anteNumero}, "OP":"?"},{"LOWER": {"IN":numeroSinonimos2}, "OP":"*"},{"LIKE_NUM": True},{"LOWER": {"IN": union}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LOWER": "bis", "OP":"?"}],
+                [{"LOWER": {"IN":calleSinonimos3}},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LIKE_NUM": True, "OP": "?"},{"LOWER": "bis", "OP":"?"},{"LOWER": {"IN":anteNumero}, "OP":"?"},{"LOWER": {"IN":numeroSinonimos2}, "OP":"*"},{"LIKE_NUM": True},{"LOWER": {"IN": conectores}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LOWER": "bis", "OP":"?"},{"LOWER":{"IN":union}},{"LOWER": {"IN":calleSinonimos3}, "OP":"?"},{"POS":{"IN":nombreLargo}, "OP":"*"},{"POS": "PROPN"},{"LOWER": "bis", "OP":"?"}],#no entinedo porque debo sacarle el PROPN obligatorio del final
+
+            ])
+
+def dir_entre():
+    return [
+        [{"LOWER": {"IN":calleSinonimos3}}, {"POS": {"IN":nombreLargo}, "OP": "*"}, {"POS": "PROPN"}, {"LIKE_NUM": True, "OP": "?"}, {"LOWER": "bis", "OP": "?"}, {"LOWER": {"IN": union}}, {"LOWER": {"IN":calleSinonimos3}, "OP": "?"}, {"LIKE_NUM": True}, {"TEXT": {"IN": letraMay}, "OP": "?"}, {"LOWER": "bis", "OP": "?"}],
+        [{"LOWER": {"IN":calleSinonimos3}}, {"LIKE_NUM": True}, {"LOWER": "bis", "OP": "?"}, {"LOWER": {"IN": conectores}}, {"LOWER": {"IN":calleSinonimos3}, "OP": "?"}, {"LIKE_NUM": True}, {"LOWER": "bis", "OP": "?"}, {"LOWER": {"IN": union}}, {"LOWER": {"IN":calleSinonimos3}, "OP": "?"}, {"POS": "PROPN", "OP": "?"}, {"LIKE_NUM": True}, {"LOWER": "bis", "OP": "?"}]
+        # Uncomment and edit the following pattern as needed
+        # [{"LOWER": {"IN":calleSinonimos3}}, {"LIKE_NUM": True}, {"LOWER": "bis", "OP": "?"}, {"LOWER": {"IN":anteNumero}, "OP": "?"}, {"LOWER": {"IN":numeroSinonimos2}, "OP": "?"}, {"LIKE_NUM": True}, {"LOWER": {"IN": conectores}}, {"LOWER": {"IN":calleSinonimos3}, "OP": "?"}, {"LIKE_NUM": True}, {"LOWER": "bis", "OP": "?"}, {"LOWER": {"IN": union}}, {"LOWER": {"IN":calleSinonimos3}, "OP": "?"}, {"POS": "PROPN", "OP": "?"}, {"LIKE_NUM": True}, {"LOWER": "bis", "OP": "?"}]
+    ]
+
+
+def dir_lote():
+    return  list([ #direccion de lote
+                [{"LOWER": "lote"}, {"POS": {"IN": nombreLote}}],
+                #[{"LOWER": "lote"}, {"POS": {"IN": nombreLote}},{"LOWER": {"NOT_IN": medidas}}],#debería mejorar el helper para sacar el último token que toma
+
+                #manzana letrada
+                [{"LOWER": "lote"}, {"POS": {"IN": nombreLote}},{"LOWER": {"IN": sobreSinonimos}, "OP":"?"},{"LOWER": {"IN": manzanaSinonimos2}},{"TEXT": {"IN": letraMay}}],
+                [{"LOWER": {"IN": manzanaSinonimos2}},{"TEXT": {"IN": letraMay}}, {"LOWER": {"IN": sobreSinonimos}, "OP":"?"},{"LOWER": "lote"},{"POS": {"IN": nombreLote}}],
+
+                #manzana numerada
+                [{"LOWER": "lote"},{"POS": {"IN": nombreLote}},{"LOWER": {"IN": sobreSinonimos}, "OP":"?"},{"LOWER": {"IN": manzanaSinonimos2}},{"LOWER": {"IN":numeroSinonimos2}, "OP":"*"},{"LIKE_NUM": True}],
+                [{"LOWER": {"IN": manzanaSinonimos2}},{"LOWER": {"IN":numeroSinonimos2}, "OP":"*"},{"LIKE_NUM": True}, {"LOWER": {"IN": sobreSinonimos}, "OP":"?"},{"LOWER": "lote"},{"POS": {"IN": nombreLote}}],
+            
+                # [
+                #    {
+                #        "LOWER": {"IN": ["calle", "avenida", "av", "diagonal", "diag"]},
+                #        "OP": "?",
+                #    },
+                #    {"TEXT": ".", "OP": "?"},
+                #    {"POS": "PROPN", "OP": "+"},
+                #    {"LOWER": "al", "OP": "?"},
+                #    {"LIKE_NUM": True},
+                #],
+
+                #no aporta
+                #[
+                #    {
+                #        "LOWER": {"IN": calleSinonimos3},
+                #        "OP": "?",
+                #    },
+                #    #{"TEXT": ".", "OP": "?"},
+                #    {"POS": "PROPN", "OP": "+"},
+                #    {"LOWER": "n"},
+                #    {"TEXT": "°"},
+                #    {"LIKE_NUM": True},
+                #],
+            
+            #resta precisión
+            #[
+            #        {
+            #            "LOWER": {"IN": ["calle", "avenida", "av", "diagonal", "diag"]},
+            #            "OP": "?",
+            #        },
+            #        {"TEXT": ".", "OP": "?"},
+            #        {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "+"},
+            #        {"LOWER": {"IN": ["y", "esquina", "esq.", "e"]}},
+            #        {
+            #            "LOWER": {"IN": ["calle", "avenida", "av", "diagonal", "diag"]},
+            #            "OP": "?",
+            #        },
+            #        {"TEXT": ".", "OP": "?"},
+            #        {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "+"},
+            #    ]
+            
+            #este caso particular funciona bien poniendo a calleSinonimos3 opcional
+            [
+                    {
+                        "LOWER": {"IN": calleSinonimos3},
+                        "OP": "?",
+                    },
+                    #{"TEXT": ".", "OP": "?"},
+                    {"POS": {"IN": nombreLote}, "OP": "+"},
+                    {"LOWER": {"IN": conectores}},
+                    {
+                        "LOWER": {"IN": calleSinonimos3},
+                        "OP": "?",
+                    },
+                    #{"TEXT": ".", "OP": "?"},
+                    {"POS": {"IN": nombreLote}, "OP": "+"},
+                    {"LOWER": "y"},
+                    {
+                        "LOWER": {"IN": calleSinonimos3},
+                        "OP": "?",
+                    },
+                    #{"TEXT": ".", "OP": "?"},
+                    {"POS": {"IN": nombreLote}, "OP": "+"},
+                ]
+                
+                #no aporta
+                #[{"LOWER": "lote"}, {"POS": {"IN": ["NUM", "PROPN"]}}]
+            ])
