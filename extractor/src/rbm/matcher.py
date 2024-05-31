@@ -7,6 +7,7 @@ from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, di
 from src.rbm.patterns.fot import fot
 from src.rbm.patterns.medidas import medidas
 from src.rbm.patterns.urb_cerrada import urb_cerrada
+from src.rbm.patterns.posesion import posesion
 from src.helper import (
     procesar_barrio,
     procesar_direccion,
@@ -97,7 +98,8 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "posesion", [ ]
+            "posesion",
+            [posesion()]
         )
 
         Matcher.matcher.add(
@@ -212,6 +214,7 @@ class Matcher:
             "pileta": True if len(predichos["pileta"]) > 0 else "",
             # acá agregar los procesadores de mejor resultado para cada variable
             "urb_cerrada":  True if len(predichos["urb_cerrada"]) > 0 else "",
+            "posesion":  True if len(predichos["posesion"]) > 0 else "",
             "urb_semicerrada": predichos["urb_semicerrada"], 
             "posesion": predichos["posesion"],
             "preventa": predichos["preventa"],
