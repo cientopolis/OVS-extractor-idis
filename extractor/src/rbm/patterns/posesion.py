@@ -1,7 +1,7 @@
 def posesion() -> list:
     return list (
             [
-                [{"LOWER":"posesión"}]
+                [{"LOWER":"posesión"}],
                 [{"LOWER":"derechos"},{"LOWER":"posesorios"},{"IS_PUNCT":True,"OP":"?"}], #derechos posesorios
                 [{"LOWER":"usucapión"}] #usucapion        
             ]

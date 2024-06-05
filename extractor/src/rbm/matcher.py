@@ -99,7 +99,7 @@ class Matcher:
 
         Matcher.matcher.add(
             "posesion",
-            [posesion()]
+            posesion()
         )
 
         Matcher.matcher.add(
@@ -215,8 +215,7 @@ class Matcher:
             # acá agregar los procesadores de mejor resultado para cada variable
             "urb_cerrada":  True if len(predichos["urb_cerrada"]) > 0 else "",
             "posesion":  True if len(predichos["posesion"]) > 0 else "",
-            "urb_semicerrada": predichos["urb_semicerrada"], 
-            "posesion": predichos["posesion"],
+            "urb_semicerrada": True if len(predichos["urb_semicerrada"]) > 0 else "",
             "preventa": predichos["preventa"],
             "indiviso": predichos["indiviso"],
             "a_demoler": predichos["a_demoler"]
