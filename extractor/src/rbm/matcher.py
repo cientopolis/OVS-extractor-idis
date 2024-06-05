@@ -2,6 +2,7 @@ import spacy
 from spacy.matcher import DependencyMatcher as DependencyMatcherSpacy
 from spacy.matcher import Matcher as MatcherSpacy
 
+from src.rbm.patterns.urb_semicerrada import urb_semicerrada
 from src.rbm.patterns.barrio import barrio
 from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro
 from src.rbm.patterns.fot import fot
@@ -94,7 +95,8 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "urb_semicerrada", [ ]
+            "urb_semicerrada",
+            urb_semicerrada()
         )
 
         Matcher.matcher.add(
