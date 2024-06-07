@@ -7,6 +7,7 @@ def posesion() -> list:
                 [{'TEXT': {"REGEX": fr"(?i)^({'|'.join(puncts)})$"}},#  
                 {'TEXT': {"REGEX": fr"(?i)^({'|'.join(poses)})$"}} # 
                 ], 
+                [{"LEMMA":"boleto"},{"LOWER" : {"IN" :["con","de"]}},{"LOWER":"posesión"}], #boleto de/con posesion
 
                 #[{"LOWER":"posesión"}],#posesión                
                 [{"LOWER":"derechos"},{"LOWER":"posesorios"},{"IS_PUNCT":True,"OP":"?"}], #derechos posesorios
