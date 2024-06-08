@@ -302,13 +302,13 @@
     },
     {
         "name": "medidas",
-        "tp": 56,
+        "tp": 55,
         "fp": 15,
-        "fn": 35,
+        "fn": 36,
         "tn": 48,
-        "precision": 0.7887323943661971,
-        "recall": 0.6153846153846154,
-        "f1": 0.6913580246913581,
+        "precision": 0.7857142857142857,
+        "recall": 0.6043956043956044,
+        "f1": 0.6832298136645962,
         "error": [
             {
                 "context": "Venta lote en excelente ubicación, con construcción prácticamente para demoler. Soler al 700 Bahía Blanca. Ideal Desarrolladores. 8.66 mts de frente, 23 mts lado oeste, 19.60 mts lado este. Zonificación C2. FOT 2.4",
@@ -412,7 +412,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "17.32 x 26;8.66 x 26",
+                "actual": "8.66 x 26;17.32 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -497,7 +497,7 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50 x 25.70;50 x 25.70",
+                "actual": "14.80 x 50;50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
@@ -524,6 +524,11 @@
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
                 "actual": "32.25 x 40.00",
                 "expected": "32.25 x 40.00 x 26.32"
+            },
+            {
+                "context": "ESTRUCTURA JURíDICA: Fideicomiso a precio cerrado. EL VALOR PUBLICADO ES CONTADO EFECTIVO. Medidas: 15,5 x 25m La entrega del barrio esta programada para mediados 2023, no obstante, se permitirá dar inicio a las obras particulares a fines del 2022.  FORMA DE PAGO: Opción A: Contado en USD Opción B: 50 % anticipo USD + Cuotas hasta Dicembre 2024 U$S98.813.- UBICACIóN: A 200 mt de la bajada de Ruta 26, Ramal Pilar km 41,5. ESQUEMA DE RETIROS: INFORMACIóN GENERAL: Los lotes rondan los 375 a 400 mts 2. Superficie a construir mínima inicial permitida es de 120 m2 FOS: 0.4 FOT: 0.7 Retiro frente: 3 metros Retiro lateral: 1) 3.00 mt - 2) 1,15 mt Retiro Fondo mínimo: 8.00 mt. Pileta despegada de los ejes medianeros 1.50 mt. INFRAESTRUCTURA: Calles internas asfaltadas / hormigón intertrabado con cuneta. Redes subterráneas de electricidad, agua, cloaca y gas. Alumbrado Público. Pilares de servicios. Edificio de acceso.  Club House.  Amenities ",
+                "actual": "",
+                "expected": "15.5 x 25"
             },
             {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
@@ -3332,6 +3337,73 @@
             {
                 "context": "Increíble lote de 14m x 47,5m Excelente acceso a 150 metros de Ruta 2. El lote está ubicado sobre calle 406 Bis y Calle 202. Zona de casas quinta. Soy particular, venta directa de dueño. Cuento con la escritura a mi nombre. No es posesión, ni usucapion. El lote cuenta con servicio de energía eléctrica, agua por perforación, gas envasado . Escuelas, comercios de cercanía, muy lindo entorno. Ideal para casa quinta o vivienda permanente. No acepto permutas y no financio. Su consulta no molesta. Visítelo, que realmente vale la pena. Comuníquese directamente al Whatsapp 1569899268 y envío información",
                 "actual": [],
+                "expected": ""
+            }
+        ]
+    },
+    {
+        "name": "es_multioferta",
+        "tp": 10,
+        "fp": 11,
+        "fn": 0,
+        "tn": 133,
+        "precision": 0.47619047619047616,
+        "recall": 1.0,
+        "f1": 0.6451612903225806,
+        "error": [
+            {
+                "context": "fincas de Duggan se encuentra ubicado a 15 minutos del centro de la ciudad y a 10 minutos del casco urbano de La Plata permitiendo toda la libertad y calidad de vida que ofrece el campo la tranquilidad de que nuestros hijos crezcan en pleno contacto de la naturaleza y el aire libre dentro un barrio consolidado de baja densidad con todas las posibilidades de optar en cuanto a medidas y superficies de lotes desde 700 a 1.200 m2 y con más de 100 familias viviendo y otras 60 etapa de construcción. FINANCIACION EN HASTA 48 CUOTAS EN PESOS. seguridad y vigilancia las 24 horas triple cerco perimetral electrificado servicios por tendido subterráneo. red de energía eléctrica, red de fibra óptica para Internet de alta velocidad telefonía y televisión. red de agua corriente red de gas natural\r\n",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Barrio abierto con 150 lotes entre 200 y 500 m2 distribuido en 6 manzanas A 15 minutos del centro platnese ubicado entre las calles 608 entre 18bis y 20 rápido acceso alejado del ruido de la ciudad encontra el lugar para tu futuro hogar",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": " Terreno en venta - 200 mts2 - La Plata Terreno en venta ubicado sobre calle 19 entre 75 y 76 (Altos de San Lorenzo, La Plata, Buenos Aires) Con disposición frente y orientación norte.De medidas regulares, cuenta con 10mts de frente por 20mts de fondo, contabilizando 200mts2 totales de superficie, de los cuales 40mts2 pertenecen a una casa a demoler o refaccionar de dos dormitorios, con cocina, living comedor y un baño. Con acceso por calle de asfalto, cuenta con los servicios de electricidad, agua corriente, gas natural y cloacas disponibles en el lugar.índices de prefactibilidad: FOS 0,6 ALTURA REFERENCIA EN NIVELES 3 FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2 DENSIDAD COMERCIAL 300 DENSIDAD RESIDENCIAL 300 RETIROS Y REQUISITOS Laterales: Se permite solo un retiro respecto los ejes medianeros. COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2 PARCELAMIENTO MINIMO FRENTE 15 PARCELAMIENTO MINIMO SUPERFICIE 375 RELACION FTE / FDO 1/3",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Venta de Lote en Fincas de Duggan. Boero Propiedades vende Lote 225 Etapa 3: Fincas de Duggan se encuentra ubicado a 15 minutos del centro de la ciudad y a 10 minutos del casco urbano de La Plata, permitiendo toda la libertad y calidad de vida que ofrece el campo.La tranquilidad de que nuestros hijos crezcan en pleno contacto de la naturaleza y el aire libre, dentro un barrio consolidado, de baja densidad, con todas las posibilidades de optar en cuanto a medidas y superficies de lotes: desde 700 a 1.200 m2., y con más de 100 familias viviendo y otras 60 etapa de construcción.El lote 225 cuenta con mayor privacidad, debido a que está ubicado en uno de los cul de sac. FINANCIACION EN HASTA 48 CUOTAS EN PESOS!Seguridad y Vigilancia las 24 horas. Triple Cerco Perimetral Electrificado.Servicios por tendido subterráneo: Red de energía eléctrica. Red de fibra óptica para Internet de alta elocidad, telefonía y televisión. Red de agua corriente. Red de gas natural.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Lanzamiento Barrio Liquidambar. Calle 41 a 42 y de 149 a 150. Lote de 10 x 32. Sector privado. Preventa lotes ubicados a 200 mts de Av.44 , a 10 minutos del centro de La Plata y con facil acceso a Ruta 2 y 36 o Av.520. El barrio contara con lotes en el sector abierto y lotes cerrados que van desde los 160 a 400 mts2. Lotes comerciales con frente Avenida 149. ",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Fincas Don Eugenio II, un nuevo emprendimiento Situado en hermosa zona de estancias, rodeado de naturaleza y tranquilidad. Está ubicado en la Localidad de Gral. Rodríguez a 40 de Capital Federal y 15 de Acceso Oeste. Por Ruta N 6 Calle CAMINO NAVARRO. Cuenta con lotes a partir de los 300m2. Sus Valores los podemos identificar en plano como n colores: VALOR HASTA EL 26/03/2023 USD 10.948 EN LOTES SELECCIONADOS O LOTES DESDE USD 15.640. La posesión de los lotes son a 3 meses aproximadamente. Todos los lotes se entregan con quincho , parrilla y cerco de Alambre. Cuando se realiza la posesión se comienza a pagar un mínimo de expensas de $3.000, luego cuando todos los espacios en común estén terminados, se pagará $7.000 mensuales . El Barrio cuenta con ESCRITURA. Para que cada propietario pueda escriturar , deberá esperar un plazo estimativo de 1 a 2 años , ya que la ley nos pide tener un 60% del Barrio loteado. Porque se escritura por partes indivisas. Contamos con Normativas de Construcción , es importante leer con detalle. Respecto a los modelos de casas , hay flexibilidad. Se pueden construir Casas  en seco, Casas Alpinas, Cabañas, de material o estilo Streel Framing. No contamos con Financiación.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "ESTRUCTURA JURíDICA: Fideicomiso a precio cerrado. EL VALOR PUBLICADO ES CONTADO EFECTIVO. Medidas: 15,5 x 25m La entrega del barrio esta programada para mediados 2023, no obstante, se permitirá dar inicio a las obras particulares a fines del 2022.  FORMA DE PAGO: Opción A: Contado en USD Opción B: 50 % anticipo USD + Cuotas hasta Dicembre 2024 U$S98.813.- UBICACIóN: A 200 mt de la bajada de Ruta 26, Ramal Pilar km 41,5. ESQUEMA DE RETIROS: INFORMACIóN GENERAL: Los lotes rondan los 375 a 400 mts 2. Superficie a construir mínima inicial permitida es de 120 m2 FOS: 0.4 FOT: 0.7 Retiro frente: 3 metros Retiro lateral: 1) 3.00 mt - 2) 1,15 mt Retiro Fondo mínimo: 8.00 mt. Pileta despegada de los ejes medianeros 1.50 mt. INFRAESTRUCTURA: Calles internas asfaltadas / hormigón intertrabado con cuneta. Redes subterráneas de electricidad, agua, cloaca y gas. Alumbrado Público. Pilares de servicios. Edificio de acceso.  Club House.  Amenities ",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "San Jerónimo ll BARRIO ABIERTO. Este emprendimiento esta ubicado en Matheu, partido de Escobar a 8 cuadras de la ruta 25 (Av. Sarmiento) con acceso a panamericana Ruta Nacional Nº 9 (ramal Escobar), a 15 minutos del Centro de Belén de Escobar. Este emprendimiento se desarrolla bajo la modalidad de precio cerrado y diferentes opciones de financiación en cuotas fijas. Contará con calles con cunetas, red eléctrica aérea y alumbrado LED. Oferta lanzamiento, Lotes en Matheu a precios únicos. Luego del éxito San Jerónimo 1, nace esta nueva propuesta de nombre San Jerónimo 2, son todos lotes con las medidas justas para poder realizar tu propio proyecto, tanto para vivienda permanente o para casa de fines de semana. San Jerónimo 2 va a convertirse en una excelente propuesta con visión de futuro, con comparativos demostrables en San Jerónimo 1, cuyos valores actuales se duplicaron en poco tiempo, hoy podes tener la posibilidad de reservar tu terreno al mejor precio del mercado. No dudes en contactarnos y reservar tu terreno. El precio publicado es por el anticipo, luego podes acceder a planes de 12 o 24 cuotas fijas. Los precios de lotes por pago de contado arrancan en u$s 10.000.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Hermoso loteo semicerrado en Cardales con financiación!!! Lotes de 1500 y 2000m2. Vistas abiertas al campo. Canchas de fútbol, plaza y sector aeróbico. A 1000m de Ruta 4, en zona de plena expansión. Cercano a colegios y comercios. Digno de visitar. Aproveche la etapa de preventa!!! Pagá un anticipo de usd y el saldo en 6 cuotas!!",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Lote en venta en Magdalena, La Plata. San Martin y Junín. Lote en venta ubicado en el casco de Magdalena de 622,5 mts2.Excelente ubicación, zona consolidada con buenos accesos, a un paso del centro y diversos centros culturales de la Ciudad, cuenta con todos los servicios. Son lotes geodésicos, con escritura y partida inmobiliaria individual, con el mejor valor del mt2 -u$s34 dls- Oportunidad. Posesión inmediata. LIKEUS S.A no ejerce el corretaje inmobiliario. El presente sitio web es una plataforma en donde cada oficina inmobiliaria independiente que contrata los servicios LIKE Propiedades puede publicar las propiedades a su cargo. Cada oficina es de propiedad y gestión independiente, por lo que LIKEUS S.A no interviene en los datos de la publicación, en la operación inmobiliaria, ni en la confección y/o firma del boleto de compraventa y/o escritura y/o contrato de alquiler. En cumplimiento de las leyes vigentes que regulan el corretaje inmobiliario, Ley Nacional 25.028, Ley 22.802 de Lealtad Comercial, Ley 24.240 de Defensa al Consumidor, las normas del Código Civil y Comercial de la Nación y Constitucionales, los agentes/gestores/Likers NO ejercen el corretaje inmobiliario. La información gráfica y escrita en el presente aviso es meramente a título estimativo y no forma parte de ningún tipo de documentación contractual. Las medidas y superficies descriptas en el presente son aproximadas, las definitivas surgirán del título de propiedad del inmueble referido. Asimismo los importes de tasas, servicios y expensas indicados están sujetos a verificación. El valor del inmueble indicado en el presente puede ser modificado sin previo aviso. Operación supeditada a que el propietario cumplimente con la Reg.2371 COTI. Todas las operaciones inmobiliarias son objeto de intermediación y conclusión por parte del martillero y corredor público JUAN MARTIN BANEGAS CMCPDJLP 7694",
+                "actual": true,
                 "expected": ""
             }
         ]

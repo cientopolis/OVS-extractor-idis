@@ -176,4 +176,4 @@ def descubrir_nuevos(predichos: dict):
     return predichos
 
 def es_multioferta(predichos: list):
-    return True if predichos else False
+    return True if predichos else ""
