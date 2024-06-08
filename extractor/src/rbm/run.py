@@ -11,23 +11,6 @@ def rbm(input: pd.DataFrame) -> pd.DataFrame:
     data = []
     for _, row in input.iterrows():
         respuestas = MATCHER.get_pairs(row["descripcion"])
-        data.append(
-            {
-                "descripcion": row["descripcion"],
-                "direccion": respuestas["direccion"],
-                "fot": respuestas["fot"],
-                "irregular": respuestas["irregular"],
-                "medidas": respuestas["medidas"],
-                "esquina": respuestas["esquina"],
-                "barrio": respuestas["barrio"],
-                "frentes": respuestas["frentes"],
-                "pileta": respuestas["pileta"],
-                "urb_cerrada": respuestas["urb_cerrada"],
-                "urb_semicerrada": respuestas["urb_semicerrada"], 
-                "posesion": respuestas["posesion"],
-                "preventa": respuestas["preventa"],
-                "indiviso": respuestas["indiviso"],
-                "a_demoler": respuestas["a_demoler"]
-            }
-        )
+        respuestas["descripcion"]=row["descripcion"]
+        data.append(respuestas)
     return pd.DataFrame(data, index=None)

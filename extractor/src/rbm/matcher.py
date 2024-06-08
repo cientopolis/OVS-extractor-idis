@@ -1,7 +1,7 @@
 import spacy
-from spacy.matcher import DependencyMatcher as DependencyMatcherSpacy
+from spacy.matcher import DependencyMatcher
 from spacy.matcher import Matcher as MatcherSpacy
-
+from spacy.matcher import PhraseMatcher
 from src.rbm.patterns.urb_semicerrada import urb_semicerrada
 from src.rbm.patterns.barrio import barrio
 from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro
@@ -10,12 +10,14 @@ from src.rbm.patterns.medidas import medidas
 from src.rbm.patterns.urb_cerrada import urb_cerrada
 from src.rbm.patterns.posesion import posesion
 from src.helper import (
+    es_multioferta,
     procesar_barrio,
     procesar_direccion,
     procesar_fot,
     procesar_frentes,
     procesar_irregular,
     procesar_medidas,
+    procesar_medidas_multi
 )
 
 NLP = spacy.load("es_core_news_lg")
@@ -29,11 +31,20 @@ class Matcher:
 
     matcher = None
     dependencyMatcher = None
+    phraseMatcher = None
     
     @staticmethod
     def initialize_matcher():
         
         Matcher.matcher = MatcherSpacy(NLP.vocab)
+
+        Matcher.phraseMatcher = PhraseMatcher(NLP.vocab, attr="LOWER")
+        terms = ["barrio privado", "barrio cerrado", "club de campo", "urbanización cerrada", "country"]
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "urb_cerrada", patterns
+        )
+
         Matcher.matcher.add(
             "medidas", #para cada cantidad de medidas elijo si conviene obligar a tener una unidad o no. Luego, comento los patrones que no aportan precisión
             medidas()
@@ -114,9 +125,15 @@ class Matcher:
 
         Matcher.matcher.add(
             "a_demoler", [ ]
+        )   
+
+        Matcher.matcher.add(
+            "es_multioferta", [
+                [{"LEMMA": "lote", "MORPH": "Gender=Masc|Number=Plur"}]
+             ]
         )
         
-        Matcher.dependencyMatcher = DependencyMatcherSpacy(NLP.vocab)
+        Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
         Matcher.dependencyMatcher.add(
             "frentes",
             patterns=[
@@ -185,14 +202,17 @@ class Matcher:
                 palabra.append(token.text)
             prev_result[NLP.vocab.strings[match_id]].append(" ".join(palabra))
 
-    def __merge(self, dic1, dic2):
-        for clave, valores in dic1.items():
-            if clave in dic2:
-                dic2[clave].extend(valores)
-            else:
-                dic2[clave] = valores
+    def __get_phrase_matches(self, text, prev_result):
+        doc = NLP(text)
 
-        return dic2
+        matches = Matcher.phraseMatcher(doc)
+        for match_id, start, end in matches:
+            matched_span = doc[start:end]
+            prev_result[NLP.vocab.strings[match_id]].append(matched_span.text)
+
+
+    def obtener_mejor_resultado_multioferta(self, predichos, seleccionados):
+        seleccionados["medidas"]= procesar_medidas_multi(predichos["medidas"]) if predichos["medidas"] else ""
 
     def obtener_mejor_resultado(self, predichos):
         return {
@@ -220,7 +240,8 @@ class Matcher:
             "urb_semicerrada": True if len(predichos["urb_semicerrada"]) > 0 else "",
             "preventa": predichos["preventa"],
             "indiviso": predichos["indiviso"],
-            "a_demoler": predichos["a_demoler"]
+            "a_demoler": predichos["a_demoler"],
+            "es_multioferta": es_multioferta(predichos["es_multioferta"])
         }
 
     def get_pairs(self, text: str):
@@ -241,10 +262,13 @@ class Matcher:
             "posesion": [],
             "preventa": [],
             "indiviso": [],
-            "a_demoler": []
+            "a_demoler": [],
+            "es_multioferta": []
         }
         self.__get_matches(text, prev_result)
-        self.__get_dep_matches(text, prev_result)
+        self.__get_phrase_matches(text, prev_result)
 
-        a = self.obtener_mejor_resultado(prev_result)
-        return a
+        candidatos = self.obtener_mejor_resultado(prev_result)
+        if prev_result["es_multioferta"]:
+            self.obtener_mejor_resultado_multioferta(prev_result, candidatos)
+        return candidatos

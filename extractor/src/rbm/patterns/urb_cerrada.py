@@ -5,16 +5,16 @@ def urb_cerrada()-> list:
             # [ 
             #     {"LOWER": {"IN": ["barrio privado", "barrio cerrado", "club de campo","urbanización privada","barrio boutique","country","countries"]}},{"POS":"PROPN", "OP":"*"}
             # ], no agarra bien los tokens entonces no matchea
-            [{"LOWER": "barrio"}, {"LOWER": "privado"}],
-            [{"LOWER": "barrio"}, {"LOWER": "cerrado"}],
-            [{"LOWER": "club"}, {"LOWER": "de"}, {"LOWER": "campo"}],
-            [{"LOWER": "urbanización"}, {"LOWER": "privada"}],
-            [{"LOWER": "barrio"}, {"LOWER": "boutique"}],
-            [{"LOWER": "country"}],
-            [{"LOWER": "countries"}],
-            [
-                {"LEMMA": {"IN": ["cerrado", "privado"]}}
-            ],
+            # [{"LOWER": "barrio"}, {"LOWER": "privado"}],
+            # [{"LOWER": "barrio"}, {"LOWER": "cerrado"}],
+            # [{"LOWER": "club"}, {"LOWER": "de"}, {"LOWER": "campo"}],
+            # [{"LOWER": "urbanización"}, {"LOWER": "privada"}],
+            # [{"LOWER": "barrio"}, {"LOWER": "boutique"}],
+            # [{"LOWER": "country"}],
+            # [{"LOWER": "countries"}],
+            # [
+            #     {"LEMMA": {"IN": ["cerrado", "privado"]}}
+            # ],
             # [
             #     {"LOWER": "lote"},{"IS_DIGIT": True}
             # ], baja la presicion porque matchea muchos que no so

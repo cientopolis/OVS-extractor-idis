@@ -108,16 +108,54 @@ def procesar_frentes(frentes_predichos):
     return max(frentes_en_numeros) if len(frentes_en_numeros) != 0 else ""
 
 
-def procesar_medidas(predichos: list):
-    mejor_match = max(predichos, key=len)
+def procesar_medidas(predichos_todos: list):
+    """
+    Si el aviso enuncia múltiples dimensiones, buscar cuál refiere al lote
+    """
+    mejor_match= max(predichos_todos, key=len) if predichos_todos else ""
+    
     if "martillo" in mejor_match:
         return mejor_match.replace(" mts", "")
 
     medidas = ""
     for numero in list(map(str, get_numeros(mejor_match))):
         medidas += numero + " x "
-
+        
+    medidas= medidas.replace(",",".")
     return medidas.rstrip(" x")
+
+def procesar_medidas_multi(predichos_todos: list):
+    """
+    Si el aviso es multioferta, devolver todas las direcciones
+    """
+    result= []
+    for candidato in list(__reduce_superstrings(set(predichos_todos))):
+        medidas = ""
+        for numero in list(map(str, get_numeros(candidato))):
+            medidas += numero + " x "
+        
+        if (medidas.count("x")>1):
+            medidas= medidas.replace(",",".")
+            result.append(medidas.rstrip(" x"))
+
+
+    if len(result)>1:
+        return ";".join(result)
+    return "".join(result)
+
+
+
+def __reduce_superstrings(dimensions):
+    reduced_dimensions = []
+    for dim in dimensions:
+        # Si la dimensión actual no es un superstring de ninguna dimensión ya incluida
+        if not any(dim in existing or existing in dim for existing in reduced_dimensions):
+            # Eliminar superstrings de la lista de resultados
+            reduced_dimensions = [existing for existing in reduced_dimensions if dim not in existing and existing not in dim]
+            # Agregar la dimensión actual a la lista de resultados
+            reduced_dimensions.append(dim)
+    return reduced_dimensions
+
 
 
 def procesar_barrio(predichos: list):
@@ -136,3 +174,6 @@ def descubrir_nuevos(predichos: dict):
         predichos["frentes"] = 2.0
 
     return predichos
+
+def es_multioferta(predichos: list):
+    return True if predichos else False
