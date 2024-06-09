@@ -1,12 +1,51 @@
 import re
-
 import spacy
+from spacy.tokens import Doc, Span
+import datetime
 
 NLP = spacy.load("es_core_news_lg")
 
 RE_DOS = re.compile(r"\b(dos|doble|2|segundo)\b", re.IGNORECASE)
 RE_TRES = re.compile(r"\b(tres|triple|3|tercer)\b", re.IGNORECASE)
 
+def procesar_preventa(predichos: list):
+    matcheos = 0
+    minimosMatcheos = 2
+    maximoAniosLejanos = 15
+
+    for match_id, start, end in predichos["asegurados"]:
+        matcheos += minimosMatcheos + 1
+
+    matcheosAuxiliar = 0
+    for match_id, start, end in predichos["posibles"]:
+        matcheosAuxiliar += 1
+    if matcheosAuxiliar > 0:
+        matcheos += 1
+
+    matcheosAuxiliar = 0
+    for match_id, start, end in predichos["fecha"]:
+        span = doc[start:end]
+        span.text.replace('.', '') #para que no haya problemas con los puntos -> no se si me está dando efecto
+        try:
+            num = float(span.text)
+            actualYear = datetime.datetime.now().year
+            if (num > actualYear) and (num < actualYear + maximoAniosLejanos):
+                matcheosAuxiliar +=1
+        except ValueError:
+            pass
+    if matcheosAuxiliar > 0:
+        matcheos += 1
+
+    matcheosAuxiliar = 0
+    for match_id, start, end in predichos["cuotas"]:
+        matcheosAuxiliar += 1
+    if matcheosAuxiliar > 0:
+        matcheos += 1
+
+    for match_id, start, end in predichos["descartar"]:
+        matcheos = 0
+
+    return (matcheos >= minimosMatcheos)
 
 def clear_altura_entre(predichos: list):
     if predichos["dir_nro"] and predichos["dir_entre"]:
