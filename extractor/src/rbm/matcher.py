@@ -2,14 +2,11 @@ import spacy
 from spacy.matcher import DependencyMatcher
 from spacy.matcher import Matcher as MatcherSpacy
 from spacy.matcher import PhraseMatcher
-from src.rbm.patterns.urb_semicerrada import urb_semicerrada
 from src.rbm.patterns.barrio import barrio
 from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro
 from src.rbm.patterns.fot import fot
 from src.rbm.patterns.medidas import medidas
-from src.rbm.patterns.urb_cerrada import urb_cerrada
-from src.rbm.patterns.posesion import posesion
-from src.rbm.patterns.preventa import preventa
+from src.rbm.patterns.pre_venta import preventa
 from src.helper import (
     procesar_preventa,
     es_multioferta,
