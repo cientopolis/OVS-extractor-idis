@@ -24,7 +24,7 @@ def procesar_preventa(predichos: list):
 
     matcheosAuxiliar = 0
     for match_id, start, end in predichos["fecha"]:
-        span = doc[start:end]
+        span = predichos["fecha"][start:end]
         span.text.replace('.', '') #para que no haya problemas con los puntos -> no se si me está dando efecto
         try:
             num = float(span.text)
