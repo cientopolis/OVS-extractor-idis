@@ -118,29 +118,29 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "pre-venta-asegurados", [
+            "pre-venta-asegurados", 
                 asegurados()
-            ]
+            
         )
         Matcher.matcher.add(
-            "pre-venta-posibles", [
+            "pre-venta-posibles", 
                 posibles()
-            ]
+            
         )
         Matcher.matcher.add(
-            "pre-venta-fecha", [
+            "pre-venta-fecha", 
                 fecha()
-            ]
+            
         )
         Matcher.matcher.add(
-            "pre-venta-cuotas", [
+            "pre-venta-cuotas", 
                 cuotas()
-            ]
+            
         )
         Matcher.matcher.add(
-            "pre-venta-descartar", [
+            "pre-venta-descartar", 
                 descartar()
-            ]
+            
         )
 
         Matcher.matcher.add(

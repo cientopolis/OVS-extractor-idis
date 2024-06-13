@@ -21,6 +21,7 @@ LETRA_MAYUSCULA = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "
 
 SOBRE_SINONIMOS = ["en","sobre"]
 NOMBRE_LOTE = ["NUM", "PROPN"]
+MEDIDAS = ["metro", "metros", "m", "ms", "mt", "mts", "m2"] 
 
 def dir_nro():
     return  list([ #direcciones platenses = numericas
@@ -68,7 +69,7 @@ def dir_entre():
 def dir_lote():
     return  list([ #direccion de lote
                 [{"LOWER": "lote"}, {"POS": {"IN": NOMBRE_LOTE}}],
-                [{"LOWER": "lote"}, {"POS": {"IN": NOMBRE_LOTE}},{"LOWER": {"IN": medidas}, "OP":"!"}],#debería mejorar el helper para sacar el último token que toma
+                [{"LOWER": "lote"}, {"POS": {"IN": NOMBRE_LOTE}},{"LOWER": {"IN": MEDIDAS}, "OP":"!"}],#debería mejorar el helper para sacar el último token que toma
 
                 #manzana letrada
                 [{"LOWER": "lote"}, {"POS": {"IN": NOMBRE_LOTE}},{"LOWER": {"IN": SOBRE_SINONIMOS}, "OP":"?"},{"LOWER": {"IN": MANZANA_SINONIMOS}},{"TEXT": {"IN": LETRA_MAYUSCULA}}],

@@ -13,21 +13,20 @@ def procesar_preventa(predichos: list):
     minimosMatcheos = 2
     maximoAniosLejanos = 15
 
-    for match_id, start, end in predichos["asegurados"]:
+    for pre in predichos["pre-venta-asegurados"]:
         matcheos += minimosMatcheos + 1
 
     matcheosAuxiliar = 0
-    for match_id, start, end in predichos["posibles"]:
+    for pre in predichos["pre-venta-posibles"]:
         matcheosAuxiliar += 1
     if matcheosAuxiliar > 0:
         matcheos += 1
 
     matcheosAuxiliar = 0
-    for match_id, start, end in predichos["fecha"]:
-        span = predichos["fecha"][start:end]
-        span.text.replace('.', '') #para que no haya problemas con los puntos -> no se si me está dando efecto
+    for span in predichos["pre-venta-fecha"]:
+        span.replace('.', '') #para que no haya problemas con los puntos -> no se si me está dando efecto
         try:
-            num = float(span.text)
+            num = float(span)
             actualYear = datetime.datetime.now().year
             if (num > actualYear) and (num < actualYear + maximoAniosLejanos):
                 matcheosAuxiliar +=1
@@ -37,15 +36,15 @@ def procesar_preventa(predichos: list):
         matcheos += 1
 
     matcheosAuxiliar = 0
-    for match_id, start, end in predichos["cuotas"]:
+    for pre in predichos["pre-venta-cuotas"]:
         matcheosAuxiliar += 1
     if matcheosAuxiliar > 0:
         matcheos += 1
 
-    for match_id, start, end in predichos["descartar"]:
+    for pre in predichos["pre-venta-descartar"]:
         matcheos = 0
 
-    return (matcheos >= minimosMatcheos)
+    return True if (matcheos >= minimosMatcheos) else ""
 
 def clear_altura_entre(predichos: list):
     if predichos["dir_nro"] and predichos["dir_entre"]:
