@@ -101,17 +101,17 @@ class Matcher:
 
         Matcher.matcher.add(
             "urb_cerrada",
-            urb_cerrada()
+            []
         )
 
         Matcher.matcher.add(
             "urb_semicerrada",
-            urb_semicerrada()
+           []
         )
 
         Matcher.matcher.add(
             "posesion",
-            posesion()
+            []
         )
 
         Matcher.matcher.add(
