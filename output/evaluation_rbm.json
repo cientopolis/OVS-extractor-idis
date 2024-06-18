@@ -627,7 +627,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "17.32 x 26;8.66 x 26",
+                "actual": "8.66 x 26;17.32 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -1510,12 +1510,17 @@
         "name": "preventa",
         "tp": 25,
         "fp": 4,
-        "fn": 0,
-        "tn": 199,
+        "fn": 1,
+        "tn": 198,
         "precision": 0.8620689655172413,
-        "recall": 1.0,
-        "f1": 0.9259259259259259,
+        "recall": 0.9615384615384616,
+        "f1": 0.9090909090909091,
         "error": [
+            {
+                "context": "Excelente lote de 586 m2, sobre calle 117 entre 526 y 527. Ideal Inversores constructores, muy baja incidencia. Ancho 10 metros x 60 en su parte mas larga y 55.50 en la parte mas corta. FOS 0.6 FOT 0.8. Densidad x Ha 300. Zona UR2. Permitido 10 UF. Escritura inmediata. Proyecto de 10 UF+cocheras",
+                "actual": "",
+                "expected": true
+            },
             {
                 "context": "Lote de 253m2 a 600 metros del centro de San Vicente y 300m de la Laguna de San Vicente. Dependiendo el sector, disponibilidad de escritura o prescipción adquisitiva (usucapión - 20 ya años cumplidos). El barrio se encuentra en pleno desarrollo, es abierto y en un futuro pasará a ser cerrado.  Servicios: Luz y agua y cloaca de pozo.  Ya hay gente viviendo en el barrio",
                 "actual": true,
@@ -2692,46 +2697,16 @@
     },
     {
         "name": "a_demoler",
-        "tp": 37,
-        "fp": 28,
+        "tp": 53,
+        "fp": 12,
         "fn": 2,
         "tn": 161,
-        "precision": 0.5692307692307692,
-        "recall": 0.9487179487179487,
-        "f1": 0.7115384615384616,
+        "precision": 0.8153846153846154,
+        "recall": 0.9636363636363636,
+        "f1": 0.8833333333333333,
         "error": [
             {
-                "context": "Venta lote en excelente ubicación, con construcción prácticamente para demoler. Soler al 700 Bahía Blanca. Ideal Desarrolladores. 8.66 mts de frente, 23 mts lado oeste, 19.60 mts lado este. Zonificación C2. FOT 2.4",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Casa ideal inversores en construcción!!! Inmejorable casa en la calle Sgto. Cabral al 560, Lagos de Canning con $ de expensas (aprox). En su totalidad mide 670 m2, de los cuales 290 m2 son cubiertos y 380 m2 descubiertos. Características: altura 6 metros sin columnas. Portón: 4.80 mts. alto y 4.50 mts. ancho. Lote: 10 x 30. Cubiertos: 190 m2. Fuerza motriz. FOS 0.60. FOT 1.20.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Casa de 4 ambientes en Lomas del Mirador. Ubicada en Melo 836, Lomas del Mirador. Lote de 8.66 x 23. Vivienda con 100 años de antigüedad aprox. (ideal modernizar o demoler) de 90 m2 Cubiertos. Cocina. Comedor. Baño. Dormitorios. Patio. Terraza. Galpón. ZONIFICACION Zona: U2B. FOS 0.6. FOT 2.25. Densidad 700. Altura Máxima 13 mts",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "ATENCIÓN CONSTRUCTORAS: Excelente lote de 8.66 de Frente x 35 de largo, ideal inversión para construcción de departamentos en torre, emprendimiento o vivienda, en zona centrica En inmejorable ubicación sobre la calle Sitio de Montevideo entre Salta y Oncativo. posee un FOS de 0.6 y un FOT de 3. CONSULTE OPCIONES. SE ESCUCHAN OFERTAS. SE TOMA PROPIEDAD TERMINADA POR MENOR VALOR.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote en venta sobre la calle Rocal al 1600 entre Mons Blois y Fraga, que mide 12.90 mts de frente por 48 mts de fondo. En el mismo se encuentra construida una casa a refaccionar de 100 m2 cub aprox, de construcción solida con techo de losa. Zonificación Rmi (FOS 0.6 FOT 0.8). Posibilidad de construir PB + Primer Nivel. Ideal emprendimiento.",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "Excelente lote de 586 m2, sobre calle 117 entre 526 y 527. Ideal Inversores constructores, muy baja incidencia. Ancho 10 metros x 60 en su parte mas larga y 55.50 en la parte mas corta. FOS 0.6 FOT 0.8. Densidad x Ha 300. Zona UR2. Permitido 10 UF. Escritura inmediata. Proyecto de 10 UF+cocheras",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Excelente propiedad sobre esquina con un frente lineal de 162 metros y salida a tres calles, Cabildo, Guatemala y Pilcomayo. Superficie de terreno 6200 m2. Contrapiso para camiones en casi su totalidad. Sectores descubiertos a reciclar. Zona industrial. Apto todo destino. FOT residencial: 2, FOT industrial: 1.5, FOS: 60% max.",
                 "actual": true,
                 "expected": ""
             },
@@ -2746,11 +2721,6 @@
                 "expected": ""
             },
             {
-                "context": "Lote en Av. Santa Fe al 300, en la mejor zona de Alberdi apto construcción de edificio. Posibilidad de desarrollo planta baja + siete pisos, 38 unidades de vivienda y 2 locales comerciales. Metros terreno 360 m2 (9x41.25). Zona B. Edificable: 2.440 m2 aproximadamente. A demoler.",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "Excelente terreno de 8.66 mts de frente por 43.50 mts de fondo, sobre Av. Manuel Belgrano al 6200. Ideal inversor. El FOT es de 2.5.",
                 "actual": true,
                 "expected": ""
@@ -2761,27 +2731,7 @@
                 "expected": ""
             },
             {
-                "context": "Lote de 8.66 x 22.30. En excelente ubicación, a seis cuadras de avenida Santa Fe y a dos cuadras de calle Paraná. Sobre el terreno hay una edificación de tres ambientes para demoler. Apta vivienda unifamiliar. Zonificación RMB2, FOS 0.5, FOT 1, RADIO 7.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Venta de Lote en Barrio Hipódromo, La Plata. Lote sobre Avenida 38 de 328 m2 superficie, el mismo posee zonificación U/C3 (AREA URBANA/ Áreas de promoción y Corredores de Acceso Principal y Complementaria) apto para desarrollo constructivos o comerciales ya que se permiten construir hasta 6 Niveles (Fos 0.6/ Fot Res. 2; Fot Com. 2.4. Den Res. 800; Den Com. 1.600/ Premios 30% en FOT y DEN.), el mismo cuenta con una casa de 3 dormitorios, cocina comedor, baño y garage, la misma se encuentra a reciclar o demoler. Morfología irregular, medidas 7.54 x 39.82 x 9.43 mts.",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Inmueble en venta ideal emprendimiento. FOT 2.5 FOS 0.6 Zona residencial multifamiliar. Terreno de 346 mts frente 8.66 x fondo 39 mts aprox. Todos los servicios. Chalet a demoler con pileta y quincho.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote en proceso de subdivisión de mayor lote, 15 x 49.75 + un martillo a favor en centro de manzana de 200 m2 (10 x 20), con galpón a demoler. Apto para gran emprendimiento. Valor U$S 680.000. Único lote ideal para emprendimiento inmobiliario. Extraordinaria ubicación a solo 200 metros de la Av. Colón, y de Av. Independencia. 400 de la Av. Luro.",
                 "actual": true,
                 "expected": ""
             },
@@ -2797,31 +2747,6 @@
             },
             {
                 "context": "Excepcional lote céntrico con salida a 3 calles, con 14.15 metros de frente por Diagonal España, otros 30 metros por Córdoba y 10 metros por Teniente Ibáñez, a 250 metros de la Avenida Argentina. Superficie terreno: 1.177.90 m2. Superficie cubierta: 695.42 m2. Superficie semicubierta: 41.89 m2. El terreno es irregular, ideal para construcción en altura de complejo habitacional, comercial, centro médico y/o educativo. Zonificación: Zona Corredor Central CC2 y CP2. FOS: 0.85 %. Altura máxima: 42 metros.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote en venta en esquina. Puede tomar metros construidos. Medidas sobre calle 17: 18.38. Ochava de 3 mts. Sobre calle 38: 5.85. Cierra el polÍgono de forma irregular (ver foto). Existe un local a demoler. Zona: u/c2b. Fos 0.6. Altura referencia en niveles 8. Fot comercial 2.7 Fot residencial 2.25. densidad comercial 1800. Densidad residencial 900. Premios 50% en fot y densidad",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "37 e/ 17 y 18. terreno en inmejorable zona de la ciudad de La Plata barrio Norte. de 8 m de frente y 30 de fondo con una construcción a demoler o reciclar siendo que los techos y estructura están en buen estado a media cuadra de Plaza Guemes zona residencial ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "122 300 USD 80.000 Venta en La Plata, Buenos Aires Terreno 500 m2 Total. 10 mts Frente y 50 mts Fondo, Lote 500 m2, sobre avenida comercial Venta de Lote en Bº Hipódromo, La Plata lote de 10 x 50 mts. (500 m2) sobre avenida 122 próxima a Av. 38 cuenta con francos accesos al centro de la ciudad a la ciudad de Ensenada  Punta Lara y a la Autopista La Plata  Bs. As. ideal emprendimiento comercial sobre avenida 122 próximo a la esquina de avenida 38 estado a refaccionar ZONIFICACIÓN U/C3 (AREA URBANA/ Áreas de promoción y Corredores de Acceso Principal y Complementaria) apto para desarrollo constructivos o comerciales ya que se permiten construir hasta 6 Niveles Fos 0.6/ Fot Res. 2 Fot Com. 2.4/ Den Res. 800 Den Com. 1.600/ Premios 30% en FOT y DEN",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote con mejoras (casa a refaccionar) 8,77 x 26,23 x 8,77 x 26,07, sup. total 226 mts2. Todos los servicios. FOS 0.6. FOT 1.6. Zonificación RTMA. Escritura a cargo del comprador.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": " Terreno en venta - 200 mts2 - La Plata Terreno en venta ubicado sobre calle 19 entre 75 y 76 (Altos de San Lorenzo, La Plata, Buenos Aires) Con disposición frente y orientación norte.De medidas regulares, cuenta con 10mts de frente por 20mts de fondo, contabilizando 200mts2 totales de superficie, de los cuales 40mts2 pertenecen a una casa a demoler o refaccionar de dos dormitorios, con cocina, living comedor y un baño. Con acceso por calle de asfalto, cuenta con los servicios de electricidad, agua corriente, gas natural y cloacas disponibles en el lugar.índices de prefactibilidad: FOS 0,6 ALTURA REFERENCIA EN NIVELES 3 FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2 DENSIDAD COMERCIAL 300 DENSIDAD RESIDENCIAL 300 RETIROS Y REQUISITOS Laterales: Se permite solo un retiro respecto los ejes medianeros. COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2 PARCELAMIENTO MINIMO FRENTE 15 PARCELAMIENTO MINIMO SUPERFICIE 375 RELACION FTE / FDO 1/3",
                 "actual": true,
                 "expected": ""
             },
