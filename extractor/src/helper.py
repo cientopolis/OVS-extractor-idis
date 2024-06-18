@@ -215,3 +215,6 @@ def descubrir_nuevos(predichos: dict):
 
 def es_multioferta(predichos: list):
     return True if predichos else ""
+
+def procesar_a_demoler(predichos: list):
+    return True if predichos else ""
