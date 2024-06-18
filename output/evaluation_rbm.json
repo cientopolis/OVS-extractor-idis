@@ -562,71 +562,21 @@
     },
     {
         "name": "a_demoler",
-        "tp": 26,
+        "tp": 36,
         "fp": 0,
-        "fn": 12,
+        "fn": 2,
         "tn": 0,
         "precision": 1.0,
-        "recall": 0.6842105263157895,
-        "f1": 0.8125000000000001,
+        "recall": 0.9473684210526315,
+        "f1": 0.972972972972973,
         "error": [
-            {
-                "context": "VENDEMOS en 66 entre 11 y 12  LOTE CON CASA A RECICLAR IDEAL PARA DESARROLLO  Estar comedor, 2 habitaciones, cocina, baño y antebaño, garage cubierto, patio con jardín y galpón de guardado  Lote de 300 mts2 (10 mts de frente x 30 mts de fondo).  Zonificación U/C2b 8 niveles 12 con premios.  Consultanos!",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "LOTE CON DEMOLICION TOTAL. 7.80 de frente  x 25 de fondo aproximadamente. UC2, zona de buen rendimiento.",
-                "actual": "",
-                "expected": true
-            },
             {
                 "context": "LOTE 8.66 X 35 CON CASA PARA DEMOLERA 3 CDRS Av. MOSCONI Y 3 J. M ROSAS",
                 "actual": "",
                 "expected": true
             },
             {
-                "context": "Propiedad en block sobre lote de 8,66 x 34,64 en barrio Chauvén. Zonificación R4. Posibilidad de edificar PB y 5 pisos. 800m2 construibles mas cocheras y terrazas privadas. Vereda de sol. Toma menor valor o m2. ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Zona residencial - Todos los servicios. A metros de Av. Muñíz, y Puente Barcala - Fácil acceso a autopista. Lote de 10m x 60m con construcción de 70m2. IDEAL EMPRENDIMIENTO PERMUTA, toma propiedad en Morón , Castelar, Ituzaingó. (Así¬ mismo se encuentra a la venta lote de al lado 10m x 57m). ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "CASA ANTIGUA - SE CONSIDERA EL LOTE PARA CONSTRUCCIÓN DE EDIFICIO - 10 x 34,02 - PODRÍAN PERMUTARSE METROS CUADRADOS DE CONSTRUCCIÓN -",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Lote de terreno con construcción en venta frente al Parque San Martí¬n, 54 y 23, La Plata. LOTE 1: de 131m2 apróx con 8 mts de frente con vista al Parque San Martí¬n; LOTE 2: 408 m2 apróx total: 15 mts apróx de frente hacia calle 54 y 24 mts apróx con frente hacia calle 23; lo que hacen ambos una superficie total de 539 m2 apróx con frentes hacia 3 calles: 54, 23 y diagonal 102. Todos los servicios; Excelente propiedad en inmejorable ubicación de la ciudad ideal para desarrollos multifamiliares. Zona :U/EF3a - AREA Eje Fundacional Tramo 3: Calle 20 a calle 23 y frentistas a Parque San Martin. FOT RESIDENCIAL 2.5, DENSIDAD RESIDENCIAL 1.000, PREMIOS FOT Y DENSIDAD 70%. OPORTUNIDAD ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Terreno de 28x35 con construccion ideal desarrollo industrial con acceso rapido a autopista de Oeste. ",
-                "actual": "",
-                "expected": true
-            },
-            {
                 "context": "Lote con construcción de dos plantas (una casa PB y otra PA) No está afectado a PH, se vende como lote por el estado de los inmuebles.- Toman departamentos ya hechos en parte de pago ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Lote de 10 x 30 a metros de Av. Mosconi con construccion precaria apto varios destinos. Calle Laprida al 3600. Contactanos para más info ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Casona Antigua Sobre lote de 830 Mts c/ 3 Dormitorios ,amplios, living y comedor,cocina-comedor diario amueblado, 2 baños,patio,galeria y parque con quincho. - Buen Estado - ** IDEAL EMPRENDIMIENTO INMOBILIARIO** ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Casa 4 amb sobre lote 8,66 x 46.,40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
                 "actual": "",
                 "expected": true
             }
