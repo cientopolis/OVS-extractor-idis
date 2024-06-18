@@ -10,6 +10,7 @@ from src.rbm.patterns.medidas import medidas
 from src.rbm.patterns.urb_cerrada import urb_cerrada
 from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
+from src.rbm.patterns.indiviso import indiviso
 from src.helper import (
     procesar_preventa,
     es_multioferta,
@@ -144,7 +145,8 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "indiviso", [ ]
+            "indiviso",
+            indiviso()
         )
 
         Matcher.matcher.add(
@@ -263,7 +265,7 @@ class Matcher:
             "posesion":  True if len(predichos["posesion"]) > 0 else "",
             "urb_semicerrada": True if len(predichos["urb_semicerrada"]) > 0 else "",
             "preventa": procesar_preventa(predichos),
-            "indiviso": predichos["indiviso"],
+            "indiviso":  True if len(predichos["indiviso"]) > 0 else "",
             "a_demoler": predichos["a_demoler"],
             "es_multioferta": es_multioferta(predichos["es_multioferta"])
         }
