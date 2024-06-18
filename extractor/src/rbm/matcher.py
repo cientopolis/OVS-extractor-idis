@@ -266,7 +266,7 @@ class Matcher:
             "urb_semicerrada": True if len(predichos["urb_semicerrada"]) > 0 else "",
             "preventa": procesar_preventa(predichos),
             "indiviso": predichos["indiviso"],
-            "a_demoler": precesar_a_demoler(predichos["a_demoler"]),
+            "a_demoler": procesar_a_demoler(predichos["a_demoler"]),
             "es_multioferta": es_multioferta(predichos["es_multioferta"])
         }
 
