@@ -335,7 +335,7 @@
                 "expected": ""
             },
             {
-                "context": "Corredor Responsable: Daniel Guindani CMCPDJLP 7463 - Contacto: Adriano Graziani - MLS ID # _ Terreno a la venta con construcción para utilizar como deposito o a demoler, de 300mts2 (10mts de frente por 30mts de fondo), ubicado en calle 61 entre 11 y 12 (La Plata, Buenos Aires). Con disposición frente y orientación norte . _Zona :U/C1 - AREA Central, Residencial Central _ALTURA REFERENCIA EN NIVELES 10. R ",
+                "context": "Corredor Responsable: Daniel Guindani CMCPDJLP 7463. Contacto: Adriano Graziani - MLS ID # _ Terreno a la venta con construcción para utilizar como deposito o a demoler, de 300mts2 (10mts de frente por 30mts de fondo), ubicado en calle 61 entre 11 y 12 (La Plata, Buenos Aires). Con disposición frente y orientación norte . _Zona :U/C1 - AREA Central, Residencial Central _ALTURA REFERENCIA EN NIVELES 10. R ",
                 "actual": "calle 61 entre 11 y 12",
                 "expected": ""
             },
@@ -350,7 +350,7 @@
                 "expected": ""
             },
             {
-                "context": "Casa 4 amb sobre lote 8,66 x 46.,40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
+                "context": "Hola. Casa 4 amb sobre lote 8,66 x 46.,40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
                 "actual": "lote 8,66 x",
                 "expected": ""
             }
@@ -517,13 +517,13 @@
     },
     {
         "name": "medidas",
-        "tp": 55,
+        "tp": 56,
         "fp": 37,
-        "fn": 36,
+        "fn": 35,
         "tn": 100,
-        "precision": 0.5978260869565217,
-        "recall": 0.6043956043956044,
-        "f1": 0.6010928961748634,
+        "precision": 0.6021505376344086,
+        "recall": 0.6153846153846154,
+        "f1": 0.6086956521739132,
         "error": [
             {
                 "context": "Venta lote en excelente ubicación, con construcción prácticamente para demoler. Soler al 700 Bahía Blanca. Ideal Desarrolladores. 8.66 mts de frente, 23 mts lado oeste, 19.60 mts lado este. Zonificación C2. FOT 2.4",
@@ -741,11 +741,6 @@
                 "expected": "32.25 x 40.00 x 26.32"
             },
             {
-                "context": "ESTRUCTURA JURíDICA: Fideicomiso a precio cerrado. EL VALOR PUBLICADO ES CONTADO EFECTIVO. Medidas: 15,5 x 25m La entrega del barrio esta programada para mediados 2023, no obstante, se permitirá dar inicio a las obras particulares a fines del 2022.  FORMA DE PAGO: Opción A: Contado en USD Opción B: 50 % anticipo USD + Cuotas hasta Dicembre 2024 U$S98.813.- UBICACIóN: A 200 mt de la bajada de Ruta 26, Ramal Pilar km 41,5. ESQUEMA DE RETIROS: INFORMACIóN GENERAL: Los lotes rondan los 375 a 400 mts 2. Superficie a construir mínima inicial permitida es de 120 m2 FOS: 0.4 FOT: 0.7 Retiro frente: 3 metros Retiro lateral: 1) 3.00 mt - 2) 1,15 mt Retiro Fondo mínimo: 8.00 mt. Pileta despegada de los ejes medianeros 1.50 mt. INFRAESTRUCTURA: Calles internas asfaltadas / hormigón intertrabado con cuneta. Redes subterráneas de electricidad, agua, cloaca y gas. Alumbrado Público. Pilares de servicios. Edificio de acceso.  Club House.  Amenities ",
-                "actual": "",
-                "expected": "15.5 x 25"
-            },
-            {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
                 "actual": "",
                 "expected": "12 x 30; 12 x 25; 12 x 35"
@@ -886,7 +881,7 @@
                 "expected": ""
             },
             {
-                "context": "Casa 4 amb sobre lote 8,66 x 46.,40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
+                "context": "Hola. Casa 4 amb sobre lote 8,66 x 46.,40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
                 "actual": "8.66 x 46.40",
                 "expected": ""
             }
@@ -2589,7 +2584,7 @@
                 "expected": ""
             },
             {
-                "context": "- PARA DEMOLER O REFACCIONAR - CASA 3 AMBIENTES CON 3 DORMITORIOS AL FONDO - VILLA MAIPÃš (45) GÃ¼iraldes 2000 - Entre (52) EcheverrÍa y (54) Mitre En el lote se encuentran dos propiedades, una al frente y una al fondo, divididas por un patio. FRENTE: 2 Dormitorios Cocina-Comedor BaÃ±o Lavadero FONDO: 3 Dormitorios",
+                "context": "- PARA DEMOLER O REFACCIONAR - CASA 3 AMBIENTES CON 3 DORMITORIOS AL FONDO - VILLA MAIPÚ (45) GÃ¼iraldes 2000 - Entre (52) EcheverrÍa y (54) Mitre En el lote se encuentran dos propiedades, una al frente y una al fondo, divididas por un patio. FRENTE: 2 Dormitorios Cocina-Comedor BaÃ±o Lavadero FONDO: 3 Dormitorios",
                 "actual": [],
                 "expected": ""
             },
@@ -2644,7 +2639,7 @@
                 "expected": ""
             },
             {
-                "context": "Corredor Responsable: Daniel Guindani CMCPDJLP 7463 - Contacto: Adriano Graziani - MLS ID # _ Terreno a la venta con construcción para utilizar como deposito o a demoler, de 300mts2 (10mts de frente por 30mts de fondo), ubicado en calle 61 entre 11 y 12 (La Plata, Buenos Aires). Con disposición frente y orientación norte . _Zona :U/C1 - AREA Central, Residencial Central _ALTURA REFERENCIA EN NIVELES 10. R ",
+                "context": "Corredor Responsable: Daniel Guindani CMCPDJLP 7463. Contacto: Adriano Graziani - MLS ID # _ Terreno a la venta con construcción para utilizar como deposito o a demoler, de 300mts2 (10mts de frente por 30mts de fondo), ubicado en calle 61 entre 11 y 12 (La Plata, Buenos Aires). Con disposición frente y orientación norte . _Zona :U/C1 - AREA Central, Residencial Central _ALTURA REFERENCIA EN NIVELES 10. R ",
                 "actual": [],
                 "expected": ""
             },
@@ -2694,7 +2689,7 @@
                 "expected": ""
             },
             {
-                "context": "Casa 4 amb sobre lote 8,66 x 46.,40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
+                "context": "Hola. Casa 4 amb sobre lote 8,66 x 46.,40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
                 "actual": [],
                 "expected": ""
             }
