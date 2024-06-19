@@ -11,7 +11,8 @@ def posesion() -> list:
 
                 #[{"LOWER":"posesión"}],#posesión                
                 [{"LOWER":"derechos"},{"LOWER":"posesorios"},{"IS_PUNCT":True,"OP":"?"}], #derechos posesorios
-                [{"LOWER":"usucapión"}] #usucapion        
+                [{"LOWER":"usucapión"}] #usucapion   
+                #probando git     
             ]
     )
     
