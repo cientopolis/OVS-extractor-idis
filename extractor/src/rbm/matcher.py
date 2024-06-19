@@ -10,6 +10,7 @@ from src.rbm.patterns.medidas import medidas
 from src.rbm.patterns.urb_cerrada import urb_cerrada
 from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
+from src.rbm.patterns.edificacionMonetizable import edificacion_monetizable
 from src.helper import (
     procesar_preventa,
     es_multioferta,
@@ -207,6 +208,10 @@ class Matcher:
                 ]
             ],
         )
+        Matcher.dependencyMatcher.add(
+            "edificacion-monetizable",
+            edificacion_monetizable()
+        )
 
     def __get_matches(self, text, prev_result):
         doc = NLP(text)
@@ -265,7 +270,8 @@ class Matcher:
             "preventa": procesar_preventa(predichos),
             "indiviso": predichos["indiviso"],
             "a_demoler": predichos["a_demoler"],
-            "es_multioferta": es_multioferta(predichos["es_multioferta"])
+            "es_multioferta": es_multioferta(predichos["es_multioferta"]),
+            "edificacion-monetizable":  True if len(predichos["edificacion-monetizable"])>0 else "",
         }
 
     def get_pairs(self, text: str):
@@ -292,7 +298,8 @@ class Matcher:
             "pre-venta-posibles": [],
             "pre-venta-fecha": [],
             "pre-venta-cuotas": [],
-            "pre-venta-descartar": []
+            "pre-venta-descartar": [],
+            "edificacion-monetizable": []
         }
         self.__get_matches(text, prev_result)
         self.__get_phrase_matches(text, prev_result)
