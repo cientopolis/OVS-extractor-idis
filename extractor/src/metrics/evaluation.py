@@ -64,7 +64,7 @@ class Evaluation:
                     metric.tp += 1
 
                 else:
-                    metric.add_error(expected.descripcion, actual_value, expected_value)
+                    metric.add_error(expected.description, actual_value, expected_value)
                     if actual_value == "" and expected_value != "":
                         metric.fn += 1
 

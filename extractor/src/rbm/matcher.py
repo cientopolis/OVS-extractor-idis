@@ -12,18 +12,8 @@ from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import a_demoler
 from src.rbm.patterns.indiviso import indiviso
-from src.helper import (
-    procesar_preventa,
-    es_multioferta,
-    procesar_barrio,
-    procesar_direccion,
-    procesar_fot,
-    procesar_frentes,
-    procesar_irregular,
-    procesar_medidas,
-    procesar_medidas_multi,
-    procesar_a_demoler
-)
+
+
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -239,39 +229,6 @@ class Matcher:
             prev_result[NLP.vocab.strings[match_id]].append(matched_span.text)
 
 
-    def obtener_mejor_resultado_multioferta(self, predichos, seleccionados):
-        seleccionados["medidas"]= procesar_medidas_multi(predichos["medidas"]) if predichos["medidas"] else ""
-
-    def obtener_mejor_resultado(self, predichos):
-        return {
-            "direccion": procesar_direccion(predichos),
-            "fot": procesar_fot(predichos["fot"]) if predichos["fot"] else "",
-            "irregular": (
-                procesar_irregular(predichos["irregular"])
-                if len(predichos["irregular"]) > 0
-                else ""
-            ),
-            "medidas": (
-                procesar_medidas(predichos["medidas"]) if predichos["medidas"] else ""
-            ),
-            "esquina": True if len(predichos["esquina"]) > 0 else "",
-            "barrio": (
-                procesar_barrio(predichos["barrio"]) if predichos["barrio"] else ""
-            ),
-            "frentes": (
-                procesar_frentes(predichos["frentes"]) if predichos["frentes"] else ""
-            ),
-            "pileta": True if len(predichos["pileta"]) > 0 else "",
-            # acá agregar los procesadores de mejor resultado para cada variable
-            "urb_cerrada":  True if len(predichos["urb_cerrada"]) > 0 else "",
-            "posesion":  True if len(predichos["posesion"]) > 0 else "",
-            "urb_semicerrada": True if len(predichos["urb_semicerrada"]) > 0 else "",
-            "preventa": procesar_preventa(predichos),
-            "indiviso":  True if len(predichos["indiviso"]) > 0 else "",
-            "a_demoler": procesar_a_demoler(predichos["a_demoler"]),
-            "es_multioferta": es_multioferta(predichos["es_multioferta"])
-        }
-
     def get_pairs(self, text: str):
         prev_result = {
             "medidas": [],
@@ -301,7 +258,4 @@ class Matcher:
         self.__get_matches(text, prev_result)
         self.__get_phrase_matches(text, prev_result)
 
-        candidatos = self.obtener_mejor_resultado(prev_result)
-        if prev_result["es_multioferta"]:
-            self.obtener_mejor_resultado_multioferta(prev_result, candidatos)
-        return candidatos
+        return prev_result

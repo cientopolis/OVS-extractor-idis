@@ -14,8 +14,8 @@ INPUT_WITHOUT_INFERENCES: str = "input/ground_truth_100_sin_inferencias.csv"
 
 def save_dataframe_to_csv(data, output: str) -> pd.DataFrame:
     df = pd.DataFrame(data, index=None)
-    df.set_index("descripcion", inplace=True)
-    df.to_csv(output, sep="|")
+    df.set_index("description", inplace=True)
+    df.to_csv(output)
     return df
 
 
