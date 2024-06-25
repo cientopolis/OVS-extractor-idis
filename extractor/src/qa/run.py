@@ -31,7 +31,7 @@ def qa(input: pd.DataFrame, model: str) -> pd.DataFrame:
     for index, row in input.iterrows():
         respuestas = pipe(
             question=PREGUNTAS,
-            context=row["descripcion"],
+            context=row["description"],
             handle_impossible_answer=True,
         )
         respuestas = [
@@ -61,7 +61,7 @@ def qa(input: pd.DataFrame, model: str) -> pd.DataFrame:
 
         data.append(
             {
-                "descripcion": row["descripcion"],
+                "description": row["description"],
                 "direccion": respuestas[0][0],
                 "fot": respuestas[1],
                 "irregular": respuestas[2],

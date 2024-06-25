@@ -24,7 +24,7 @@ def ner(input: pd.DataFrame):
             "CANT_FRENTES": [],
             "PILETA": [],
         }
-        doc = NLP(row["descripcion"])
+        doc = NLP(row["description"])
         for ent in doc.ents:
             if ent.text not in respuestas[ent.label_]:
                 respuestas[ent.label_].append(ent.text)
@@ -62,7 +62,7 @@ def ner(input: pd.DataFrame):
 
         data.append(
             {
-                "descripcion": row["descripcion"],
+                "description": row["description"],
                 "direccion": respuestas["DIRECCION"],
                 "fot": respuestas["FOT"],
                 "irregular": respuestas["IRREGULAR"],
