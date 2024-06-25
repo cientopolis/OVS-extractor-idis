@@ -12,6 +12,7 @@ from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import a_demoler
 from src.rbm.patterns.indiviso import indiviso
+from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
 
 
 
@@ -150,6 +151,10 @@ class Matcher:
                 [{"LEMMA": "lote", "MORPH": "Gender=Masc|Number=Plur"}]
              ]
         )
+
+        Matcher.matcher.add(
+            "es_monetizable", edificacion_monetizable()
+        )
         
         Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
         Matcher.dependencyMatcher.add(
@@ -253,7 +258,8 @@ class Matcher:
             "pre-venta-posibles": [],
             "pre-venta-fecha": [],
             "pre-venta-cuotas": [],
-            "pre-venta-descartar": []
+            "pre-venta-descartar": [],
+            "edificacion_monetizable": []
         }
         self.__get_matches(text, prev_result)
         self.__get_phrase_matches(text, prev_result)
