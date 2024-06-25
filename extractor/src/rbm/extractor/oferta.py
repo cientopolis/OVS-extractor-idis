@@ -210,3 +210,5 @@ class Oferta():
     def posesion(self, predichos: list):
         return True if predichos["posesion"] else ""
 
+    def es_monetizable(self, predichos: list):
+        return True if predichos["es_monetizable"] else ""

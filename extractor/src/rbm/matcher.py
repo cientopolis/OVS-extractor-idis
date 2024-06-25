@@ -259,7 +259,7 @@ class Matcher:
             "pre-venta-fecha": [],
             "pre-venta-cuotas": [],
             "pre-venta-descartar": [],
-            "edificacion_monetizable": []
+            "es_monetizable": []
         }
         self.__get_matches(text, prev_result)
         self.__get_phrase_matches(text, prev_result)
