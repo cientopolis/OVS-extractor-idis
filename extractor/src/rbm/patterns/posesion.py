@@ -8,12 +8,13 @@ def posesion() -> list:
                 {'TEXT': {"REGEX": fr"(?i)^({'|'.join(poses)})$"}} # 
                 ], 
                 [{"LOWER":"boleto"},{"LOWER" : {"IN" :["con","de"]}},{"LOWER":"posesión"}], #boleto de/con posesion
+                
+                [{"LOWER":"hasta"},{"LOWER" : "la"},{"LOWER" : {"IN" :["posesion","posesión"]}}],#No paga expensas "hasta la posesion"
 
+                [{"LOWER":"es"},{"LOWER" : "una"},{"LOWER" : {"IN" :["posesion","posesión"]}}], # es una posesion/posesión
                 #[{"LOWER":"posesión"}],#posesión                
                 [{"LOWER":"derechos"},{"LOWER":"posesorios"},{"IS_PUNCT":True,"OP":"?"}], #derechos posesorios
-                [{"LOWER":"usucapión"}] #usucapion   
-                #probando git     
+                [{"LOWER":"usucapión"}] #usucapion        
             ]
     ) 
     
-  
