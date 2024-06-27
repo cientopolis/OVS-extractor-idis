@@ -6,7 +6,7 @@
 
 #los uso con LOWER
 #calleSinonimos2 = ["avs", "av", "calle", "calles", "ruta", "rutas", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dgs", "diag", "diags"]
-CALLE_SINONIMOS = ["avs", "avs.", "av", "av.", "Av.", "Avs.", "calle", "calles", "ruta", "rutas", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dg.", "Dg.", "dgs", "dgs.", "Dgs.", "Diag.", "diag", "diasg.", "diags", "diags"]#tal vez dirá: "calle 5 entre calles 4 y 7"
+CALLE_SINONIMOS = ["Bv.", "avs", "avs.", "av", "av.", "Av.", "Avs.", "calle", "calles", "ruta", "rutas", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dg.", "Dg.", "dgs", "dgs.", "Dgs.", "Diag.", "diag", "diasg.", "diags", "diags"]#tal vez dirá: "calle 5 entre calles 4 y 7"
 MANZANA_SINONIMOS = ["manzana", "mz", "mz.", "mza", "mza."]
 NUMERO_SINONIMOS = ["numero", "numeros", "nro", "nros", "número", "números", "°", "n", "n°", "nº", "nº", "n°", "nro.", "ns", "n°s", "nºs", "nºs", "n°s", "nros."]
 ANTE_NUMERO = ["km", "al", "altura", "altura:", "alt", "alt.", "kilometro", "km.", "Km."]
