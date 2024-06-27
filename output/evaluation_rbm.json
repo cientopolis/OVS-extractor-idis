@@ -577,13 +577,13 @@
     },
     {
         "name": "medidas",
-        "tp": 83,
-        "fp": 38,
+        "tp": 84,
+        "fp": 37,
         "fn": 39,
         "tn": 102,
-        "precision": 0.6859504132231405,
-        "recall": 0.680327868852459,
-        "f1": 0.6831275720164609,
+        "precision": 0.6942148760330579,
+        "recall": 0.6829268292682927,
+        "f1": 0.6885245901639344,
         "error": [
             {
                 "context": "Venta lote en excelente ubicación, con construcción prácticamente para demoler. Soler al 700 Bahía Blanca. Ideal Desarrolladores. 8.66 mts de frente, 23 mts lado oeste, 19.60 mts lado este. Zonificación C2. FOT 2.4",
@@ -687,7 +687,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "8.66 x 26;17.32 x 26",
+                "actual": "17.32 x 26;8.66 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -772,18 +772,13 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "50 x 25.70;14.80 x 50",
+                "actual": "14.80 x 50 x 25.70;50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
                 "actual": "",
                 "expected": "20 x 30"
-            },
-            {
-                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
-                "actual": "20 x 48;15 x 30",
-                "expected": "15 x 30;20 x 48"
             },
             {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
@@ -1925,13 +1920,13 @@
     },
     {
         "name": "es_monetizable",
-        "tp": 51,
-        "fp": 42,
+        "tp": 55,
+        "fp": 38,
         "fn": 3,
         "tn": 166,
-        "precision": 0.5483870967741935,
-        "recall": 0.9444444444444444,
-        "f1": 0.6938775510204082,
+        "precision": 0.5913978494623656,
+        "recall": 0.9482758620689655,
+        "f1": 0.728476821192053,
         "error": [
             {
                 "context": "Venta lote en excelente ubicación, con construcción prácticamente para demoler. Soler al 700 Bahía Blanca. Ideal Desarrolladores. 8.66 mts de frente, 23 mts lado oeste, 19.60 mts lado este. Zonificación C2. FOT 2.4",
@@ -1995,16 +1990,6 @@
             },
             {
                 "context": "En la calle Bereterbide al 1200, nos encontramos con la oportunidad de adquirir \"en modalidad pre-venta\" un excelente departamento actualmente en construcción, como parte del Proyecto de Complejo \" Altos de Bereterbide\", el cual cuenta con departamentos en Primer piso y PB. El plazo estimado de entrega es de 6 a 8 meses, a contar desde Octubre 2022. Esta unidad funcional de 42,5m2 desarrollada por completo en primer piso, consta de comedor con cocina integrada, un baÃ±o completo y una habitaciÃ³n. Tiene todos los servicios y cuenta con cochera. El pago puede hacerse con una entrega inicial y financiación del saldo de precio hasta en 12 cuotas, para que te mudes al lugar de tu sueÃ±os!!!! No dudes en consultar estamos para ayudarte a encontrar tu Mejor Lugar…",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Excelente casa a estrenar al agua! Barrio Cerrado Ceibos de Puertos del Lago. Excelente calidad constructiva. Posibilidad de financiación a cargo de la constructora con el 70% de anticipo y 30% hasta 24 cuotas fijas en dólares Sobre lote interno central, se desarrolla en dos plantas. En planta baja, living comedor principal con salida al exterior. Cocina con barra. Comedor diario. Toilete. Dependencia de servicio con baño completo. Lavadero independiente. Entrada lateral de servicio. En planta alta, dos dormitorios en semisuite. Suite junior. Master suite con vestidor. En el exterior galerÃa con parrilla. Piscina de 37m2.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Corredor Responsable: LAURA PALINI CSM 2733 / CPI 7752 - Contacto: Magdalena Camerlinckx - MLS ID # -4 Este departamento se encuentra en el Complejo Cerrado Cefiro, con Sum equipado con parrilla, cocina, baÃ±o y mobiliario. AdemÃ¡s cuenta con cochera. A unas cuadras de paradas de distintas lÃneas de colectivo, a unas cuadras de Ruta 8 estaciÃ³n Campo de Mayo y cerca de locales comerciales. Entrando por la puerta principal al departamento nos encontramos con un living comedor con una puerta ventana a un lindÃsimo balcÃ³n, con cocina integrada con bajo mesada y alacenas, y tambiÃ©n cuenta con conexiÃ³n para lavarropas. . Tiene una escalera que nos lleva a un altillo donde nos encontramos con un dormitorio. DespuÃ©s de la cocina tenemos tenemos un pasillo con un baÃ±o completo con baÃ±era, y despuÃ©s llegamos al dormitorio principal muy luminoso que ademÃ¡s cuenta con placard. Este departamento es un opciÃ³n para aquellas personas que buscan un lugar tranquilo donde vivir. ¿QUÉ ESTÁS ESPERANDO PARA MUDARTE? LLAMAME Y VAMOS A CONOCERLA!!! FINANCIA HASTA EL 30% Comprá la casa que querías! No la que podés. Accedé a un préstamo por hasta el 30% del valor de esta propiedad. Simula tu cuota en la página de Lendar (lendar. com. ar) SI TENES QUE VENDER PARA COMPRAR PODEMOS AYUDARTE Y REALIZAR LA OPERACIÃ“N SIMULTÃNEA. BENEFICIO PARA CLIENTES REMAX: Si comprás tu casa con RE/MAX y te falta hasta un 30% del valor podés acceder a un préstamo a través de LENDAR con mínimos requisitos y aprobaciÃ³n en sÃ³lo 7 dÃas hÃ¡biles! El trÃ¡mite es 100% online y sin bancos! Podes hacer la simulación de las cuotas y calcular vos tu préstamo. ConocÃ© mÃ¡s sobre LENDAR en su pÃ¡página www. lendar. com. ar ALCANZÃ LO QUE SOÑAS !!!! MUDATE A LA VIDA QUE QUERES",
                 "actual": true,
                 "expected": ""
             },
@@ -2104,11 +2089,6 @@
                 "expected": ""
             },
             {
-                "context": "Lote de terreno con construcción en venta frente al Parque San Martí¬n, 54 y 23, La Plata. LOTE 1: de 131m2 apróx con 8 mts de frente con vista al Parque San Martí¬n; LOTE 2: 408 m2 apróx total: 15 mts apróx de frente hacia calle 54 y 24 mts apróx con frente hacia calle 23; lo que hacen ambos una superficie total de 539 m2 apróx con frentes hacia 3 calles: 54, 23 y diagonal 102. Todos los servicios; Excelente propiedad en inmejorable ubicación de la ciudad ideal para desarrollos multifamiliares. Zona :U/EF3a - AREA Eje Fundacional Tramo 3: Calle 20 a calle 23 y frentistas a Parque San Martin. FOT RESIDENCIAL 2.5, DENSIDAD RESIDENCIAL 1.000, PREMIOS FOT Y DENSIDAD 70%. OPORTUNIDAD ",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "Terreno de 28x35 con construccion ideal desarrollo industrial con acceso rapido a autopista de Oeste. ",
                 "actual": true,
                 "expected": ""
@@ -2147,11 +2127,6 @@
                 "context": "LOTE EN VENTA EN MASCHWITZ CENTRO - MAROTO PROPIEDADES - El inmueble consta de tres lotes de terreno de 433 m cada uno  es decir 8,66x 50 cada uno con frente a la calle Entre Rios.  Tiene ademas un deposito techado impecable de 700 m2 cubiertyos aproximados Ideal para inversores , contrauctores o desarrolladores - se puede comprar lotes contiguos.        .",
                 "actual": "",
                 "expected": true
-            },
-            {
-                "context": "Loteo en venta,sobre las calle 56 a 58 y 163 a 165, 74 lotes disponible,. Con escritura y APTO PROCREAR. Los lotes se encuentran ubicados en una zona con creciente urbanización, a dos cuadras de la avenida 60 y a unos 10 minutos del centro de La Plata. Lotes linderos con construcciones nuevas y en proceso. Calles abiertas, con mejorado, alumbrado y tendido eléctrico. También disponibles lotes de 12 x 26 m2 .",
-                "actual": true,
-                "expected": ""
             },
             {
                 "context": "XINTEL(SAC-SAC-5788) Lote en Trenque Lauquen, Trenque Lauquen   Loteo Don Felipe , con el paso de los años este loteo se volvio el de mas rapido crecimiento de nuestra ciudad, cuenta con un bellísimo entorno, zona alta de buen agua , con construcciones unifamiliares de buen porte . La parcela en venta posee un frente de 20 mts con una profunidad de 40 mts.  Ideal para el desarrollo  de una vivienda permanente o casa tipo quinta de fin de semana. Se le realizo la obra de gas que pasa por su frente . ",
