@@ -13,6 +13,7 @@ from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import a_demoler
 from src.rbm.patterns.indiviso import indiviso
 from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
+from src.rbm.patterns.loteo_ph import loteo_ph
 
 
 
