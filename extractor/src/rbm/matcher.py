@@ -156,6 +156,11 @@ class Matcher:
         Matcher.matcher.add(
             "es_monetizable", edificacion_monetizable()
         )
+
+        Matcher.matcher.add(
+            "loteo_ph",
+            loteo_ph()
+        )
         
         Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
         Matcher.dependencyMatcher.add(
@@ -260,7 +265,9 @@ class Matcher:
             "pre-venta-fecha": [],
             "pre-venta-cuotas": [],
             "pre-venta-descartar": [],
-            "es_monetizable": []
+            "es_monetizable": [],
+            "loteo_ph": []
+
         }
         self.__get_matches(text, prev_result)
         self.__get_phrase_matches(text, prev_result)

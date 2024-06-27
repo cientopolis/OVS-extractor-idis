@@ -8,6 +8,9 @@ RE_DOS = re.compile(r"\b(dos|doble|2|segundo)\b", re.IGNORECASE)
 RE_TRES = re.compile(r"\b(tres|triple|3|tercer)\b", re.IGNORECASE)
 class Oferta():
 
+    def loteo_ph(self, predichos: list):
+        return True if predichos["loteo_ph"] else ""
+
     def a_demoler(self, predichos: list):
         return True if predichos["a_demoler"] else ""
 
