@@ -31,7 +31,12 @@ def rbm(input: pd.DataFrame) -> pd.DataFrame:
             "indiviso": None,
             "a_demoler": None,
             "es_multioferta": None,
-            "es_monetizable": None
+            "es_monetizable": None,
+            "loteo_ph": None,
+            
+
+
+            
         }
         select_best_candidate(candidate_pairs, estructura)
         estructura["description"] = description
