@@ -17,5 +17,5 @@ def replace_dashes(text: str):
 def replace_multiple_spaces(text):
     return re.sub(r'\s+', ' ', text) 
 
-def normalize(data: pd.DataFrame):
+def normalize(data: str):
     return replace_mts(replace_newlines(replace_multiple_spaces(replace_stars(replace_dashes(data)))))

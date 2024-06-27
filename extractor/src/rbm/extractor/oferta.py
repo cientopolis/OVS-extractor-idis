@@ -1,6 +1,8 @@
 import datetime
 import spacy
-import re 
+import re
+
+from src.helper import clean_direccion 
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -72,6 +74,14 @@ class Oferta():
         return result
 
 
+    def __clean_lote(self, predicciones_lote: list):
+        if not predicciones_lote:
+            return []
+        candidatos= []
+        for candidato in predicciones_lote:
+            candidatos.append(" ".join(candidato.split()[:2]).strip() if len(candidato.split()) == 3 else candidato.rstrip(".").rstrip(","))
+        return candidatos
+    
     def direccion(self, predichos: list):
         predichos = self.__clear_inter_entre(predichos)
         # predichos = clear_altura_entre(predichos)
@@ -79,15 +89,14 @@ class Oferta():
             predichos["dir_entre"]
             + predichos["dir_interseccion"]
             + predichos["dir_nro"]
-            + predichos["dir_lote"]
+            + self.__clean_lote(predichos["dir_lote"])
         )
         if matches_direccion_todos == []:
             return ""
-        mejor_match = max(matches_direccion_todos, key=len)
-
-        return re.sub(r"^\. ", "", mejor_match)
+        return clean_direccion(max(matches_direccion_todos, key=len))
 
 
+    
     def fot(self, predichos: list):
         predichos = list(set(predichos["fot"]))
         numeros = self._get_numeros(" ".join(predichos))
