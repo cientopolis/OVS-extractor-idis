@@ -772,7 +772,7 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "50 x 25.70;14.80 x 50 x 25.70",
+                "actual": "14.80 x 50;50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
@@ -1691,13 +1691,13 @@
     },
     {
         "name": "a_demoler",
-        "tp": 60,
-        "fp": 11,
+        "tp": 61,
+        "fp": 10,
         "fn": 3,
         "tn": 188,
-        "precision": 0.8450704225352113,
-        "recall": 0.9523809523809523,
-        "f1": 0.8955223880597014,
+        "precision": 0.8591549295774648,
+        "recall": 0.953125,
+        "f1": 0.9037037037037037,
         "error": [
             {
                 "context": "Excelente lote de 586 m2, sobre calle 117 entre 526 y 527. Ideal Inversores constructores, muy baja incidencia. Ancho 10 metros x 60 en su parte mas larga y 55.50 en la parte mas corta. FOS 0.6 FOT 0.8. Densidad x Ha 300. Zona UR2. Permitido 10 UF. Escritura inmediata. Proyecto de 10 UF+cocheras",
@@ -1761,11 +1761,6 @@
             },
             {
                 "context": "LOTE EN VENTA EN MASCHWITZ CENTRO - MAROTO PROPIEDADES - El inmueble consta de tres lotes de terreno de 433 m cada uno  es decir 8,66x 50 cada uno con frente a la calle Entre Rios.  Tiene ademas un deposito techado impecable de 700 m2 cubiertyos aproximados Ideal para inversores , contrauctores o desarrolladores - se puede comprar lotes contiguos.        .",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote con mejora de 120 m2 a una cuadra de Ruta 8 (entrada de El Chelito) En venta Lote con mejora de 5 ambientes a reciclar sobre Héctor Arregui (ex Florida) entre Provincia de Buenos Aires y Bahía Thetis.  Excelente zona de casas quintas a tan solo 100 mts. de Ruta 8 en el cruce  «El Chelito»  Propiedad sobre amplio lote de 15.77 x 40 mts. Superficie total del terreno 630 m2  Casa de 120 m2 distribuida en dos plantas a reciclar y acondicionar. ",
                 "actual": true,
                 "expected": ""
             }
@@ -1915,21 +1910,16 @@
     },
     {
         "name": "es_monetizable",
-        "tp": 49,
+        "tp": 51,
         "fp": 4,
-        "fn": 9,
-        "tn": 200,
-        "precision": 0.9245283018867925,
-        "recall": 0.8448275862068966,
-        "f1": 0.8828828828828829,
+        "fn": 5,
+        "tn": 202,
+        "precision": 0.9272727272727272,
+        "recall": 0.9107142857142857,
+        "f1": 0.918918918918919,
         "error": [
             {
                 "context": "Imponente lote de 1038 m2 en esquina sobre la Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Alberti 3359, Mar del Plata. Edificio en construcción: DEPARTAMENTOS DE CATEGORÍA. Venta en pozo: ANTICIPO Y FINANCIACIÓN. Entrega aproximada Julio 2025. 8 pisos de departamentos y quincho común en el piso 9. Unidades de 2 ambientes de 47 mts2 de 52 mts2. Unidades de 3 ambientes de 92 m2 (semipisos). Amplios balcones con parrilla. Terraza con pileta compartida.",
                 "actual": "",
                 "expected": true
             },
@@ -1959,22 +1949,7 @@
                 "expected": ""
             },
             {
-                "context": "Venta de Lote en Villa Elisa entre caminos, a una cuadra de Avenida Arana. Ubicado en calle 420, entre 14 y 14 bis, lote de 10 de frente por 41.80mtrs de fondo, a una cuadra de Avenida Arana y entre caminos Centenario y Belgrano con rápida salida a Autopista La Plata-Buenos Aires. Posee bases de construcción. POSIBLE PERMUTA POR VEHICULO.",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Lotes en calle Rio Reconquista, entre calles Atuel y Matanza, en Marcos Paz, provincia de Buenos Aires. Estos terrenos se encuentran en una zona privilegiada, rodeados de naturaleza y tranquilidad, pero a su vez cercanos a importantes vías de acceso y servicios.  El lote número 20 cuenta con una superficie total de 3550 m2, con medidas de 35.5 m. x 100 m., Mientras que el lote número 21 también tiene una superficie total de 3550 m2 y medidas de 35.5 m. x 100 m. Este último lote cuenta además con una hermosa cabaña de madera, ideal para disfrutar de momentos de descanso y relax en contacto con la naturaleza. ",
-                "actual": "",
-                "expected": true
-            },
-            {
                 "context": "LOTE EN VENTA EN MASCHWITZ CENTRO - MAROTO PROPIEDADES - El inmueble consta de tres lotes de terreno de 433 m cada uno  es decir 8,66x 50 cada uno con frente a la calle Entre Rios.  Tiene ademas un deposito techado impecable de 700 m2 cubiertyos aproximados Ideal para inversores , contrauctores o desarrolladores - se puede comprar lotes contiguos.        .",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Lote con mejora de 120 m2 a una cuadra de Ruta 8 (entrada de El Chelito) En venta Lote con mejora de 5 ambientes a reciclar sobre Héctor Arregui (ex Florida) entre Provincia de Buenos Aires y Bahía Thetis.  Excelente zona de casas quintas a tan solo 100 mts. de Ruta 8 en el cruce  «El Chelito»  Propiedad sobre amplio lote de 15.77 x 40 mts. Superficie total del terreno 630 m2  Casa de 120 m2 distribuida en dos plantas a reciclar y acondicionar. ",
                 "actual": "",
                 "expected": true
             },
