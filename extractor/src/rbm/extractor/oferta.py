@@ -211,4 +211,7 @@ class Oferta():
         return True if predichos["posesion"] else ""
 
     def es_monetizable(self, predichos: list):
-        return True if predichos["es_monetizable"] else ""
+        if not predichos["a_demoler"] and predichos["es_monetizable"]: # and not self.preventa(predichos)
+            return True
+        else: 
+            return ""
