@@ -8,11 +8,13 @@ RE_DOS = re.compile(r"\b(dos|doble|2|segundo)\b", re.IGNORECASE)
 RE_TRES = re.compile(r"\b(tres|triple|3|tercer)\b", re.IGNORECASE)
 class Oferta():
 
-    def loteo_ph(self, predichos: list):
-        return True if predichos["loteo_ph"] else ""
-
     def a_demoler(self, predichos: list):
         return True if predichos["a_demoler"] else ""
+    
+    def loteo_ph(self, predichos: list):
+        if predichos["loteo_ph_DM"] or predichos["loteo_ph_M"]:
+            return True 
+        return ""
 
 
     def preventa(self, predichos: list):
@@ -66,7 +68,7 @@ class Oferta():
                 predichos["dir_nro"] = []
         return predichos
 
-
+ 
     def __clear_inter_entre(self, result: list):
         for interseccion in result.get("dir_interseccion", []):
             for entre in result.get("dir_entre", []):
@@ -131,7 +133,7 @@ class Oferta():
         return re.findall(r"\b\d+(?:[.,]\d+)?\b", cadena)
 
 
-    def __contiene_dos(texto):
+    def __contiene_dos(self, texto):
         return bool(RE_DOS.findall(texto))
 
 

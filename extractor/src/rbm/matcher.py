@@ -13,7 +13,8 @@ from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import a_demoler
 from src.rbm.patterns.indiviso import indiviso
 from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
-from src.rbm.patterns.loteo_ph import loteo_ph
+from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM
+
 
 
 
@@ -158,8 +159,8 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "loteo_ph",
-            loteo_ph()
+            "loteo_ph_M",
+            loteo_ph_M()
         )
         
         Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
@@ -194,7 +195,7 @@ class Matcher:
                     },
                 ],
             ],
-        )
+        ) 
         Matcher.dependencyMatcher.add(
             "fot",
             patterns=[
@@ -211,6 +212,9 @@ class Matcher:
                     },
                 ]
             ],
+        )
+        Matcher.dependencyMatcher.add("loteo_ph_DM",
+            loteo_ph_DM()
         )
 
     def __get_matches(self, text, prev_result):
@@ -266,10 +270,12 @@ class Matcher:
             "pre-venta-cuotas": [],
             "pre-venta-descartar": [],
             "es_monetizable": [],
-            "loteo_ph": []
+            "loteo_ph_M": [],
+            "loteo_ph_DM": []
 
         }
         self.__get_matches(text, prev_result)
+        self.__get_dep_matches(text, prev_result)
         self.__get_phrase_matches(text, prev_result)
 
         return prev_result

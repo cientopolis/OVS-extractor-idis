@@ -1,6 +1,6 @@
 numeros = ["uno","dos","tres","cuatro","cinco","seis","siete","ocho"]
-def loteo_ph() -> list:
-    return list (
+def loteo_ph_M() -> list:
+    return list ( 
             [
                 
                 
@@ -18,6 +18,32 @@ def loteo_ph() -> list:
 
                 [{"LOWER" : {"IN" :["régimen","regimen"]}},{"LOWER" : "ph"}], #régimen/regimen ph
             
-            ]
+            ] 
     ) 
-     
+def loteo_ph_DM() -> list:
+    return [   [   
+                {
+                    "RIGHT_ID": "el_ph",  # me paro en ph y miro flecha que ENTRA
+                    "RIGHT_ATTRS": {"LOWER": {"IN": ["ph", "PH"]}}, #ph o PH
+                },
+                {
+                    "LEFT_ID": "el_ph", #
+                    "REL_OP": "<",
+                    "RIGHT_ID": "relacion_subdivididos",
+                    "RIGHT_ATTRS": {"POS": "ADJ"},
+                },
+                {
+                    "LEFT_ID": "relacion_subdivididos", #
+                    "REL_OP": ">",
+                    "RIGHT_ID": "verbo_estar",
+                    "RIGHT_ATTRS": {"LEMMA": "estar"},  #aca en realidad tendrias que matchear por el morfologico: que este en presente el verbo ese además
+                },
+                {
+                    "LEFT_ID": "relacion_subdivididos", #
+                    "REL_OP": ">",
+                    "RIGHT_ID": "estar",
+                    "RIGHT_ATTRS": {"LEMMA": "estar"},
+                }
+            ]
+        ]
+    

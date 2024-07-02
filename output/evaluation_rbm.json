@@ -528,14 +528,19 @@
     },
     {
         "name": "fot",
-        "tp": 39,
-        "fp": 18,
+        "tp": 37,
+        "fp": 20,
         "fn": 2,
         "tn": 230,
-        "precision": 0.6842105263157895,
-        "recall": 0.9512195121951219,
-        "f1": 0.7959183673469389,
+        "precision": 0.6491228070175439,
+        "recall": 0.9487179487179487,
+        "f1": 0.7708333333333334,
         "error": [
+            {
+                "context": "ATENCIÓN CONSTRUCTORAS: Excelente lote de 8.66 de Frente x 35 de largo, ideal inversión para construcción de departamentos en torre, emprendimiento o vivienda, en zona centrica En inmejorable ubicación sobre la calle Sitio de Montevideo entre Salta y Oncativo. posee un FOS de 0.6 y un FOT de 3. CONSULTE OPCIONES. SE ESCUCHAN OFERTAS. SE TOMA PROPIEDAD TERMINADA POR MENOR VALOR.",
+                "actual": "FOT 3 FOT de 3",
+                "expected": "3"
+            },
             {
                 "context": "Importante lote ubicado en excelente esquina de La Plata, con un superficie total de 1975 m2, con medidas de 32.91 m2 sobre calle 19 y 60.00 sobre calle 36. Zonificación UC/3, con un FOT de 5135 m2. El lote posee un total de 450 m2 edificados.",
                 "actual": "FOT de 5135 FOT de 5135 m2",
@@ -573,7 +578,7 @@
             },
             {
                 "context": " Terreno en venta - 200 mts2 - La Plata Terreno en venta ubicado sobre calle 19 entre 75 y 76 (Altos de San Lorenzo, La Plata, Buenos Aires) Con disposición frente y orientación norte.De medidas regulares, cuenta con 10mts de frente por 20mts de fondo, contabilizando 200mts2 totales de superficie, de los cuales 40mts2 pertenecen a una casa a demoler o refaccionar de dos dormitorios, con cocina, living comedor y un baño. Con acceso por calle de asfalto, cuenta con los servicios de electricidad, agua corriente, gas natural y cloacas disponibles en el lugar.índices de prefactibilidad: FOS 0,6 ALTURA REFERENCIA EN NIVELES 3 FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2 DENSIDAD COMERCIAL 300 DENSIDAD RESIDENCIAL 300 RETIROS Y REQUISITOS Laterales: Se permite solo un retiro respecto los ejes medianeros. COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2 PARCELAMIENTO MINIMO FRENTE 15 PARCELAMIENTO MINIMO SUPERFICIE 375 RELACION FTE / FDO 1/3",
-                "actual": "FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2",
+                "actual": "FOT RESIDENCIAL 1,2FOT COMERCIAL 1,21,2 FOT",
                 "expected": "FOT comercial: 1.2 FOT residencial: 1.2"
             },
             {
@@ -625,6 +630,11 @@
                 "context": "Terreno en PH sobre Avenida Arana entre calle 139 y 141. Zona residencial de Arturo segui. Sobre asfalto. Con servicios de electricidad, agua, gas (en vereda de enfrente).  Dimensiones de 20 de frente x 45 de fondo.  Zonificacion UR 8. Fos 0.4 Fot 0.8 Atura permitida 3 niveles. Demsidad por habitante 60 oersonas x hectarea.  Arbolado. Muy buen entorno.  Permuta por departamento en La Plata.  Servicios:  Gas  Características:  Alambrado perimetral Responsable Matriculado Andrés Ariel Brandoni - Matricula 6865 Folio 8 Tomo Xlll CMCPDJLP (Ley 10.973). Las medidas y superficies asignadas en la presente, son aproximadas al solo efecto orientativo. Las medidas definitivas surgiran del titulo de propiedad respectivo.",
                 "actual": "0.8",
                 "expected": ""
+            },
+            {
+                "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
+                "actual": "6,6 FOT FOT: 0.8",
+                "expected": "0.8"
             },
             {
                 "context": "LOTE PROPIO DE 15.55X18.55. 280 M2 TOTALES APROXIMADAMENTE. 190 M2 CUBIERTOS APROXIMADAMENTE. FOT 2.5. 628 M2 A CONSTRUIR. FOS 0,60 FOT 2,50 DENSIDAD 1000 HAB/HECT O 0.1HAB/,2 EL FOS 145 M2 Planta baja libre para estacionamiento. Y 4 niveles, cada nivel uno de 2 dormitorios y otro de 1 dormitorio.  HOY LOCAL A LA CALLE TODO EN ESQUINA + PH 3 AMBIENTES AL FRENTE CON ENTRADA INDEPENDIENTE Y EN PLANTA BAJA. TODO A NUEVO. 2 PATIOS CON PARRILLAS. TODO SOL. GRAN LIVING. BAñO COMPLETO. 2 PLACARDS.  ESQUINA 2 DE MAYO (A 1 CUADRA DE AV. 25 DE MAYO - A 5 DE AV. HIPOLITO YRIGOYEN - A 7 DE ESTACION LANUS) LANUS OESTE  *FichaBrick=1029793*",
@@ -802,7 +812,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "8.66 x 26;17.32 x 26",
+                "actual": "17.32 x 26;8.66 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -887,7 +897,7 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50;50 x 25.70",
+                "actual": "50 x 25.70;14.80 x 50",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
@@ -1573,13 +1583,13 @@
     },
     {
         "name": "frentes",
-        "tp": 0,
-        "fp": 0,
-        "fn": 20,
-        "tn": 269,
-        "precision": 0,
-        "recall": 0.0,
-        "f1": 0,
+        "tp": 8,
+        "fp": 2,
+        "fn": 11,
+        "tn": 268,
+        "precision": 0.8,
+        "recall": 0.42105263157894735,
+        "f1": 0.5517241379310345,
         "error": [
             {
                 "context": "Ecopueblo Alvear. Único lote disponible con salida a dos calles. Manzana 18 Lote 506. Lote irregular de 315.40 m2. Cuenta con un frente al norte de 10 mts, 34.76 mts en su lado este, 11.89 en su lado sur, y 28.32 en su lado oeste.",
@@ -1602,38 +1612,13 @@
                 "expected": 2.0
             },
             {
-                "context": "Cuatro Parcelas en conjunto. 30 de frente x 100 fondo con frente calle 25 de Mayo y San Martín (dos frentes) entre Burmeister y Mosconi. sobre asfalto. con todos los servicios.",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
-                "context": "Excelente propiedad sobre esquina con un frente lineal de 162 metros y salida a tres calles, Cabildo, Guatemala y Pilcomayo. Superficie de terreno 6200 m2. Contrapiso para camiones en casi su totalidad. Sectores descubiertos a reciclar. Zona industrial. Apto todo destino. FOT residencial: 2, FOT industrial: 1.5, FOS: 60% max.",
-                "actual": "",
-                "expected": 3.0
-            },
-            {
-                "context": "Lote en venta de (1.500 m2) con excelente ubicación! El cual consta de: Dos frentes a calles, uno con vista al Norte y otro al Este. Dos niveles de superficie, uno con tierra y otro nivel más elevado sobre roca.Amplias vistas panorámicas hacia las sierras chicas, sierras grandes y centro de Tanti. Colindante con espacio verde sobre lado Sur y parte del Oeste. Excepcional base para diseño de parque en rocalla. Existencia de acacias, paraísos, durazneros, yucas, lantanas, aromitos, palo amarillo y romerillos.Pasan por el frente TV por cable y recolección de residuos; luz instalada hasta unos 40 mts, y agua a 100 mts.",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
-                "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
-                "context": "CASA SUCRE. BELGRANO R. Casa sobre lote propio de doble frente (17.35 x 35) con balcones terraza, jardín, piscina, solárium y quincho con parrilla",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
                 "context": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
                 "actual": "",
                 "expected": 2.0
             },
             {
                 "context": "Terreno de triple frente en venta, entrada por Av San Martín (doble frente) y por Miguel ángel (frente simple). La de Av San Martín tiene 17.38 de frente X 48.55 de fondo, con posibilidad de construir 4032.2 m2 vendibles distribuidos en 7 pisos.",
-                "actual": "",
+                "actual": 2,
                 "expected": 3.0
             },
             {
@@ -1642,24 +1627,9 @@
                 "expected": 2.0
             },
             {
-                "context": "Venta de Casa Multifamiliar en Villa Ballester, General San Martín. Propiedad con doble frente en lote de 17.32 x 18. Patio y jardín al frente, gran cocina comedor diario, 3 dormitorios, patio y jardín al contra frente, lavadero, galería semicubierta, cochera para 1 auto con portón automático. Al contrafente unidad independiente de 2 ambientes. Esta propiedad de 35 años de antigüedad y con una solida construcción tiene diversos beneficios a tener en cuenta, como ser los cambios que pueden hacerse en la distribución de la misma según las necesidades del comprador como lo pueden ver en el plano adjunto, posee muy buena iluminación en todos los ambientes con ventanas a alguno de los patios, lo que permite una buena entrada de aire. El inmueble es todo planta baja y ese es un gran beneficio ya que no se tendrá a futuro el problema de las escaleras, motivo de venta de muchos propietarios a cierto momento de su vida.",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
                 "context": "Importante predio - lotes - en la mejor zona de Banfield, Lomas de Zamora. Apto ideal desarrollo inmobiliario. 4000 m2. Salida a dos calles. A 200 metros de Larroque y de Alvear. Zona residencial exclusiva. Predio a la venta en la mejor zona de Banfield, cerca de todo. Zona residencial ideal para desarrollo inmobiliario. 4000 m2 compuestos por 7 lotes, con medidas irregulares de 50 m de largo por 80 m de ancho. Doble frente con ingreso casi de 20 m. Salida a dos calles. 2.600.000 USD",
                 "actual": "",
                 "expected": 2.0
-            },
-            {
-                "context": "Partido de San Fernando PBA. Terreno en forma de L con su frente principal sobre la avenida y un segundo frente sobre la calle lateral Don Orione. Frente: 19.66 m, lateral derecho: 46.90 m, lateral izquierdo: 46.95 m, fondo: 26.20 m. Zonificacion: C2. Superficie: 2000 m2. F.O.T: 3. F.O.S: 0.6. Densidad: 900 Hab./Ha. Ret. Frente: No hay",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
-                "context": "Frente triple a Rocha de 28.39 mts con fondo de 34.77 mts. Frente a Mazza de 12.31 mts con fondo de 50.50 mts. UF 1 en PH 3B: 584 mts. UF 2 en lote propio 366 mts. UF 3 en lote propio 674 mts. Sumatoria mts de tierra 1624 mts. Zonificación: Ex R6 con FOT 2.4 y FOS 0.6.",
-                "actual": "",
-                "expected": 3.0
             },
             {
                 "context": "Espectacular lote con salida a 2 calles. Doble frente en ambas calles, 17.32m. Superficie total del lote 1375m. Zonificación USAM: Planta baja, 5 pisos y 2 retiros (pueden ser destino vivienda). A media cuadra de Av. Nazca, variedad de comercios y múltiples líneas de colectivo. Metraje de construcción total de planta baja al piso 7, habiendo contemplado dos ventilaciones (cada una de 24m.): 7000m. Aproximadamente.",
@@ -1680,6 +1650,11 @@
                 "context": "En excelente y estratégica ubicación, dentro de la zona del Puerto de Mar del Plata, se encuentra este importante lote en forma de L, con salida a dos calles. Con frentes de 17.30 mts sobre calle Bermejo y 8.71 mts sobre calle Solis, este lote cuenta con 1303 m2 totales. Emplazado sobre Distrito C2, zona destinada a la localización de usos urbanos centrales de índole administrativa, comercial, financiera, institucional y afines, compatibles con uso residencial de densidad media/alta. Con FOT 2.5 posee la factibilidad de construir aproximadamente 4.500 m2 en hasta 8 plantas.",
                 "actual": "",
                 "expected": 2.0
+            },
+            {
+                "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
+                "actual": 3,
+                "expected": ""
             }
         ]
     },
@@ -2781,13 +2756,13 @@
     },
     {
         "name": "loteo_ph",
-        "tp": 16,
-        "fp": 1,
-        "fn": 12,
-        "tn": 260,
-        "precision": 0.9411764705882353,
-        "recall": 0.5714285714285714,
-        "f1": 0.7111111111111111,
+        "tp": 17,
+        "fp": 2,
+        "fn": 11,
+        "tn": 259,
+        "precision": 0.8947368421052632,
+        "recall": 0.6071428571428571,
+        "f1": 0.7234042553191489,
         "error": [
             {
                 "context": "Frente triple a Rocha de 28.39 mts con fondo de 34.77 mts. Frente a Mazza de 12.31 mts con fondo de 50.50 mts. UF 1 en PH 3B: 584 mts. UF 2 en lote propio 366 mts. UF 3 en lote propio 674 mts. Sumatoria mts de tierra 1624 mts. Zonificación: Ex R6 con FOT 2.4 y FOS 0.6.",
@@ -2803,6 +2778,11 @@
                 "context": "Gran oportunidad, apto Procrear. Avenida 38 y 147 San Carlos, exclusivos loteo 10 x 28 mts (PH) en barrio semicerrado ALTOS DE DON PEDRO a minutos de la Ciudad, servicios, apto Banco, totalmente independiente o sea no es parte indivisa. Muy buenas perspectivas, zona en progreso. Posibilidad de financiación particular a convenir. Desde U$D 24.900",
                 "actual": "",
                 "expected": true
+            },
+            {
+                "context": "Lote con construcción de dos plantas (una casa PB y otra PA) No está afectado a PH, se vende como lote por el estado de los inmuebles.- Toman departamentos ya hechos en parte de pago ",
+                "actual": true,
+                "expected": ""
             },
             {
                 "context": "Lote en esquina de 133,49 mts en PH  La propiedad anteriormente era un lote, el cual fue subdividido bajo el régimen de PH, SIN ESPACIOS COMUNES.  No abona expensas.  Zonificación Id (Industrial Dominante) FOT: 1.2 (160 metros) FOS: 0.6 ( 80 metros)  La propiedad posee electricidad y agua corriente  Cuenta con construcción a refaccionar de living, dormitorio baño y cocina.  Y otra construcción para demoler  Ubicación: a una cuadra de Av. Pres. Juan Domingo Perón, a 4 cuadras de Av. Ricardo Balbín, rápida salida a General Paz. Gran cantidad de comercios y gastronomía en la zona. Bancos, colegios, Universidades cercanas y hospitales.  ",
@@ -2841,11 +2821,6 @@
             },
             {
                 "context": "Medidas: 20x54 Total mts2: 1080 SERVICIOS Agua: Si Gas: Si Luz: Si Cloacas: No Listo para escriturar Ubicacion: Zona Altos del Golf, entre calles Fidanza y Holmberg",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Lotes en berisso, a 10 minutos del caso urbano. Oportunidad de tener su primer lote. Fácil acceso, están ubicados a 200 metros de ruta 11 y de zona comercial; y a 3 cuadras de una escuela. Medidas de los lotes: 260, 325 y 390 mts2, frente de 9 mts. Son aptos PROCREAR y aptos crédito bancario. Están subdivididos por ph y tienen Escritura Definitiva. La zona cuenta con todos los servicios, electricidad, gas, agua, internet, cable. Calle de tierra. Posibilidad de financiación mediante oferta Desde 12.000 Usd, libre de todo gasto.",
                 "actual": "",
                 "expected": true
             },
