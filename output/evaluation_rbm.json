@@ -577,13 +577,13 @@
     },
     {
         "name": "medidas",
-        "tp": 84,
-        "fp": 37,
+        "tp": 83,
+        "fp": 38,
         "fn": 39,
         "tn": 102,
-        "precision": 0.6942148760330579,
-        "recall": 0.6829268292682927,
-        "f1": 0.6885245901639344,
+        "precision": 0.6859504132231405,
+        "recall": 0.680327868852459,
+        "f1": 0.6831275720164609,
         "error": [
             {
                 "context": "Venta lote en excelente ubicación, con construcción prácticamente para demoler. Soler al 700 Bahía Blanca. Ideal Desarrolladores. 8.66 mts de frente, 23 mts lado oeste, 19.60 mts lado este. Zonificación C2. FOT 2.4",
@@ -772,13 +772,18 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "50 x 25.70;14.80 x 50",
+                "actual": "14.80 x 50;50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
                 "actual": "",
                 "expected": "20 x 30"
+            },
+            {
+                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
+                "actual": "20 x 48;15 x 30",
+                "expected": "15 x 30;20 x 48"
             },
             {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
@@ -1906,13 +1911,23 @@
     {
         "name": "es_monetizable",
         "tp": 52,
-        "fp": 6,
+        "fp": 13,
         "fn": 4,
-        "tn": 200,
-        "precision": 0.896551724137931,
+        "tn": 193,
+        "precision": 0.8,
         "recall": 0.9285714285714286,
-        "f1": 0.912280701754386,
+        "f1": 0.859504132231405,
         "error": [
+            {
+                "context": "Semipiso de 1 dormitorio la estrenar en calle 7 e/ 71 y 72. Disponible en piso 5° al frente y 6° al contrafrente. Excelente iluminación y ventilación cruzada. ALQUILADO DESDE MARZO 2023 A $70.000 un dormitorio con placar living con balcón cocina con mueble bajo mesada baño completo lavadero separado cochera optativa. Listo para escriturar.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Importante chalet en Barrio Parque Calchaqui. Calle 341 (Craviotto) entre 382 y 383. 6 ambientes, 4 dormitorios, 5 baños, 2 pisos, lote de 15 X 50, total 750 m2, cubierta 410 m2. Recepción, toilette, amplio living con aberturas hacia el parque, comedor principal, cocina amueblada + comedor diario, dormitorio con placard, baño completo con ante baño, dormitorio principal con pisos tarugados en suite, con baño completo, amplisimo verde, pileta, parrilla.",
+                "actual": true,
+                "expected": ""
+            },
             {
                 "context": "Imponente lote de 1038 m2 en esquina sobre la Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
                 "actual": "",
@@ -1929,9 +1944,34 @@
                 "expected": ""
             },
             {
+                "context": "Barrio Cerrado La Elisa importante propiedad desarrollada en una planta. Amplio living comedor con salida a la galería con vista a la piscina. Dos dormitorios, el principal con vestidor y baño en suit, playrom o tercer dormitorio. Dependencias de servicio con dormitorio y baño privado, lavadero. y cocina comedor. Cochera cubierta para dos vehículos.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "Excepcional lote céntrico con salida a 3 calles, con 14.15 metros de frente por Diagonal España, otros 30 metros por Córdoba y 10 metros por Teniente Ibáñez, a 250 metros de la Avenida Argentina. Superficie terreno: 1.177.90 m2. Superficie cubierta: 695.42 m2. Superficie semicubierta: 41.89 m2. El terreno es irregular, ideal para construcción en altura de complejo habitacional, comercial, centro médico y/o educativo. Zonificación: Zona Corredor Central CC2 y CP2. FOS: 0.85 %. Altura máxima: 42 metros.",
                 "actual": "",
                 "expected": true
+            },
+            {
+                "context": "Lote de 8.66 x 44.70 (irregular), situado en el centro comercial de la localidad de Ciudadela. Con chalet de 4 ambientes 160 m2 aproximados cubiertos. Superficie del terreno: 374 m2. Superficie a edificar aproximada: 1122 m2. Zonificación C1. FOT: 3. FOS: 0.6. Densidad 1600. Posibilidades de tomar metros construidos o a construir",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Lote interno (PH) en calle 512 bis e/ 8 y 9, tiene 9 mts de frente por 16 de fondo, con cochera descubierta compartida e ingreso al lote por pasillo interno. se encuentra en una zona Clave de Ringuelet a metros de Camino Centenario y de avenida 7. el lote cuenta con permiso de obra y planos",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Departamento de un dormitorio en venta ubicado sobre calle 17 entre 40 y 41 (La Plata, Buenos Aires) Desarrollado en primer piso por ascensor, con disposición contrafrente y orientación sur.Dispone de cocina equipada con muebles sobre y bajo mesada semi integrada mediante una barra desayunadora al living comedor, un dormitorio con placard empotrado y un baño completo. Amplio y luminoso, cuenta con balcón.Cochera descubierta con capacidad para un vehículo.Las expensas al día 08/02/2024 son de aproximadamente $15.000.La propiedad cuenta con una totalidad de 44mts2, de los cuales 41mts2 son cubiertos.",
+                "actual": true,
+                "expected": ""
             },
             {
                 "context": "LOTE 8.66 X 35 CON CASA PARA DEMOLERA 3 CDRS Av. MOSCONI Y 3 J. M ROSAS",
