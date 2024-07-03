@@ -1691,13 +1691,13 @@
     },
     {
         "name": "a_demoler",
-        "tp": 61,
-        "fp": 10,
-        "fn": 3,
-        "tn": 188,
-        "precision": 0.8591549295774648,
-        "recall": 0.953125,
-        "f1": 0.9037037037037037,
+        "tp": 60,
+        "fp": 11,
+        "fn": 2,
+        "tn": 189,
+        "precision": 0.8450704225352113,
+        "recall": 0.967741935483871,
+        "f1": 0.9022556390977443,
         "error": [
             {
                 "context": "Excelente lote de 586 m2, sobre calle 117 entre 526 y 527. Ideal Inversores constructores, muy baja incidencia. Ancho 10 metros x 60 en su parte mas larga y 55.50 en la parte mas corta. FOS 0.6 FOT 0.8. Densidad x Ha 300. Zona UR2. Permitido 10 UF. Escritura inmediata. Proyecto de 10 UF+cocheras",
@@ -1720,12 +1720,12 @@
                 "expected": ""
             },
             {
-                "context": "Sólido PH en Barrio Grand Bell. Al frente, 3 ambientes con patio y jardín de 7 x 5. Son solo 2 unidades en el lote. Techo de losa con posibilidad de ampliación. Los dos dormitorios al frente. Living-comedor con cocina integrada. Baño completo. Lavadero. Patio y jardín con pequeña pileta de fibra de vidrio. La propiedad está de época. Antigüedad 40 años. Muy buena ubicación y buenos accesos.",
-                "actual": "",
-                "expected": true
+                "context": "Importante predio - lotes - en la mejor zona de Banfield, Lomas de Zamora. Apto ideal desarrollo inmobiliario. 4000 m2. Salida a dos calles. A 200 metros de Larroque y de Alvear. Zona residencial exclusiva. Predio a la venta en la mejor zona de Banfield, cerca de todo. Zona residencial ideal para desarrollo inmobiliario. 4000 m2 compuestos por 7 lotes, con medidas irregulares de 50 m de largo por 80 m de ancho. Doble frente con ingreso casi de 20 m. Salida a dos calles. 2.600.000 USD",
+                "actual": true,
+                "expected": ""
             },
             {
-                "context": "Importante predio - lotes - en la mejor zona de Banfield, Lomas de Zamora. Apto ideal desarrollo inmobiliario. 4000 m2. Salida a dos calles. A 200 metros de Larroque y de Alvear. Zona residencial exclusiva. Predio a la venta en la mejor zona de Banfield, cerca de todo. Zona residencial ideal para desarrollo inmobiliario. 4000 m2 compuestos por 7 lotes, con medidas irregulares de 50 m de largo por 80 m de ancho. Doble frente con ingreso casi de 20 m. Salida a dos calles. 2.600.000 USD",
+                "context": "Excepcional lote céntrico con salida a 3 calles, con 14.15 metros de frente por Diagonal España, otros 30 metros por Córdoba y 10 metros por Teniente Ibáñez, a 250 metros de la Avenida Argentina. Superficie terreno: 1.177.90 m2. Superficie cubierta: 695.42 m2. Superficie semicubierta: 41.89 m2. El terreno es irregular, ideal para construcción en altura de complejo habitacional, comercial, centro médico y/o educativo. Zonificación: Zona Corredor Central CC2 y CP2. FOS: 0.85 %. Altura máxima: 42 metros.",
                 "actual": true,
                 "expected": ""
             },
@@ -1910,43 +1910,18 @@
     },
     {
         "name": "es_monetizable",
-        "tp": 52,
-        "fp": 13,
+        "tp": 57,
+        "fp": 8,
         "fn": 4,
         "tn": 193,
-        "precision": 0.8,
-        "recall": 0.9285714285714286,
-        "f1": 0.859504132231405,
+        "precision": 0.8769230769230769,
+        "recall": 0.9344262295081968,
+        "f1": 0.9047619047619049,
         "error": [
-            {
-                "context": "Semipiso de 1 dormitorio la estrenar en calle 7 e/ 71 y 72. Disponible en piso 5° al frente y 6° al contrafrente. Excelente iluminación y ventilación cruzada. ALQUILADO DESDE MARZO 2023 A $70.000 un dormitorio con placar living con balcón cocina con mueble bajo mesada baño completo lavadero separado cochera optativa. Listo para escriturar.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Importante chalet en Barrio Parque Calchaqui. Calle 341 (Craviotto) entre 382 y 383. 6 ambientes, 4 dormitorios, 5 baños, 2 pisos, lote de 15 X 50, total 750 m2, cubierta 410 m2. Recepción, toilette, amplio living con aberturas hacia el parque, comedor principal, cocina amueblada + comedor diario, dormitorio con placard, baño completo con ante baño, dormitorio principal con pisos tarugados en suite, con baño completo, amplisimo verde, pileta, parrilla.",
-                "actual": true,
-                "expected": ""
-            },
             {
                 "context": "Imponente lote de 1038 m2 en esquina sobre la Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
                 "actual": "",
                 "expected": true
-            },
-            {
-                "context": "Sólido PH en Barrio Grand Bell. Al frente, 3 ambientes con patio y jardín de 7 x 5. Son solo 2 unidades en el lote. Techo de losa con posibilidad de ampliación. Los dos dormitorios al frente. Living-comedor con cocina integrada. Baño completo. Lavadero. Patio y jardín con pequeña pileta de fibra de vidrio. La propiedad está de época. Antigüedad 40 años. Muy buena ubicación y buenos accesos.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Sobre lote de 20 x 100. Amplio parque al frente, pileta de 4 x 8 y taller. Casa principal Living comedor, cocina, 1 dormitorio amplio con baño, sector lavadero y otra habitación. Tiene otra casa que requiere puesta a punto pero de la misma comodidad. Luz trifasica, gas natural, Agua de pozo c/bomba sumergible y tanque con automático, pozo nuevo. Pileta 4 x 8 con lajas térmicas.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Barrio Cerrado La Elisa importante propiedad desarrollada en una planta. Amplio living comedor con salida a la galería con vista a la piscina. Dos dormitorios, el principal con vestidor y baño en suit, playrom o tercer dormitorio. Dependencias de servicio con dormitorio y baño privado, lavadero. y cocina comedor. Cochera cubierta para dos vehículos.",
-                "actual": true,
-                "expected": ""
             },
             {
                 "context": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
