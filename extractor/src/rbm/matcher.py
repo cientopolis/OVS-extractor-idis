@@ -11,11 +11,9 @@ from src.rbm.patterns.urb_cerrada import urb_cerrada
 from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import a_demoler
-from src.rbm.patterns.indiviso import indiviso
+from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
 from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM
-
-
 
 
 NLP = spacy.load("es_core_news_lg")
@@ -140,8 +138,8 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "indiviso",
-            indiviso()
+            "indiviso_M",
+            indiviso_M()
         )
 
         Matcher.matcher.add(
@@ -216,10 +214,11 @@ class Matcher:
         Matcher.dependencyMatcher.add("loteo_ph_DM",
             loteo_ph_DM()
         )
-
+        Matcher.dependencyMatcher.add("indiviso_DM",
+            indiviso_DM()
+        )
     def __get_matches(self, text, prev_result):
         doc = NLP(text)
-
         matches = Matcher.matcher(doc)
         for match_id, start, end in matches:
             matched_span = doc[start:end]
@@ -261,7 +260,8 @@ class Matcher:
             "urb_semicerrada": [], 
             "posesion": [],
             "preventa": [],
-            "indiviso": [],
+            "indiviso_M": [],
+            "indiviso_DM": [],
             "a_demoler": [],
             "es_multioferta": [],
             "pre-venta-asegurados": [],
@@ -271,8 +271,7 @@ class Matcher:
             "pre-venta-descartar": [],
             "es_monetizable": [],
             "loteo_ph_M": [],
-            "loteo_ph_DM": []
-
+            "loteo_ph_DM": [],
         }
         self.__get_matches(text, prev_result)
         self.__get_dep_matches(text, prev_result)

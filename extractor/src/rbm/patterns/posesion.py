@@ -16,7 +16,7 @@ def posesion() -> list:
                 [{"LOWER":"es"},{"LOWER" : "una"},{"LOWER" : {"IN" :["posesion","posesión"]}}], # es una posesion/posesión
                 #[{"LOWER":"posesión"}],#posesión                
                 [{"LOWER":"derechos"},{"LOWER":"posesorios"},{"IS_PUNCT":True,"OP":"?"}], #derechos posesorios
-                [{"LOWER":"usucapión"}] #usucapion        
+                [{"LOWER":{"IN":["usucapión","usucapion"]}}], #usucapión/usucapion
             ]
     ) 
     

@@ -17,8 +17,7 @@ class Oferta():
         if predichos["loteo_ph_DM"] or predichos["loteo_ph_M"]:
             return True 
         return ""
-
-
+    
     def preventa(self, predichos: list):
         matcheos = 0
         minimosMatcheos = 2
@@ -203,6 +202,7 @@ class Oferta():
         # return re.compile(re.escape("Barrio"), re.IGNORECASE).sub("", mejor_match).strip()
 
     
+    
     def esquina(self, predichos: list):
         return True if predichos["esquina"] else ""
 
@@ -221,8 +221,13 @@ class Oferta():
     def es_multioferta(self, predichos: list):
         return True if predichos["es_multioferta"] else ""
     
-    def posesion(self, predichos: list):
-        return True if predichos["posesion"] else ""
+    def indiviso(self, predichos: list):
+        if not predichos["indiviso_DM"] and predichos["indiviso_M"]:
+            return True 
+        return ""
 
     def es_monetizable(self, predichos: list):
         return True if predichos["es_monetizable"] else ""
+    
+    def posesion(self, predichos: list):
+        return True if predichos["posesion"] else ""
