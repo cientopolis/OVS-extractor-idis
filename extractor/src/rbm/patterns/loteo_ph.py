@@ -3,9 +3,15 @@ def loteo_ph_M() -> list:
     return list ( 
             [
                 
-                
+                #[{"LOWER" : "ph"}],
                 [{"LOWER":"compuesto"},{"LOWER" : {"IN" :["por","de"]}},{"LOWER" : {"IN" :numeros}},{"LOWER":"ph"}], #compuesto por/de "numero" ph
+                
+                [{"LOWER":"subdivididos"},{"LOWER" : {"IN" :["por","en"]}},{"LOWER":"ph"}],#subdivididos por/en ph
+                
+                [{"LOWER":"Lote"},{"LOWER" : "interno("},{"LOWER" : {"IN" :["(PH)","ph","(ph)","PH"]}}],# lote interno (PH)
 
+                [{"LOWER":"terreno"},{"LOWER" : "en"},{"LOWER":"ph"}],#terreno en ph
+                
                 [{"LOWER":"lote"},{"LOWER":"interno"},{"LOWER" : {"IN" :["ph","(PH)","(ph)"]}}],#lote interno ph/(ph)
 
                 [{"LOWER":"ph"},{"LOWER" : "aprobado"}], #ph aprobado
@@ -19,31 +25,75 @@ def loteo_ph_M() -> list:
                 [{"LOWER" : {"IN" :["régimen","regimen"]}},{"LOWER" : "ph"}], #régimen/regimen ph
             
             ] 
-    ) 
+    )
+
+def loteo_ph_DM_True() -> list :
+    return 
+    [
+        [   
+            #lote ph
+            {
+                "RIGHT_ID": "division_ph",  # me paro en ph y miro flecha que ENTRA
+                "RIGHT_ATTRS": {"LOWER": {"IN": ["ph","PH"]}}, #ph o PH
+            },
+            {
+                "LEFT_ID": "division_ph", #
+                "REL_OP": "<",
+                "RIGHT_ID": "relacion_posible_division",
+                "RIGHT_ATTRS": {"POS": "PROPN"},
+            }   
+        ]
+    ] 
+
 def loteo_ph_DM() -> list:
-    return [   [   
+    return [   
+            [   
+                # matchea "no afectado PH"
                 {
-                    "RIGHT_ID": "el_ph",  # me paro en ph y miro flecha que ENTRA
-                    "RIGHT_ATTRS": {"LOWER": {"IN": ["ph", "PH"]}}, #ph o PH
+                    "RIGHT_ID": "no_afectado_ph",  # me paro en ph y miro flecha que ENTRA
+                    "RIGHT_ATTRS": {"LOWER": {"IN": ["ph","PH"]}}, #ph o PH
                 },
                 {
-                    "LEFT_ID": "el_ph", #
+                    "LEFT_ID": "no_afectado_ph", #
                     "REL_OP": "<",
-                    "RIGHT_ID": "relacion_subdivididos",
+                    "RIGHT_ID": "relacion_no_afectado",
                     "RIGHT_ATTRS": {"POS": "ADJ"},
                 },
                 {
-                    "LEFT_ID": "relacion_subdivididos", #
+                    "LEFT_ID": "relacion_no_afectado", #
                     "REL_OP": ">",
-                    "RIGHT_ID": "verbo_estar",
-                    "RIGHT_ATTRS": {"LEMMA": "estar"},  #aca en realidad tendrias que matchear por el morfologico: que este en presente el verbo ese además
+                    "RIGHT_ID": "ADV_no",
+                    "RIGHT_ATTRS": {"POS":{"IN" : ["ADV"]}},  #aca en realidad tendrias que matchear por el morfologico: que este en presente el verbo ese además
+                }
+            ],   
+            [    # posibilidad dividir ph
+                {
+                    "RIGHT_ID": "dividir_ph",  # me paro en ph y miro flecha que ENTRA
+                    "RIGHT_ATTRS": {"LOWER": {"IN": ["ph","PH"]}}, #ph o PH
                 },
                 {
-                    "LEFT_ID": "relacion_subdivididos", #
-                    "REL_OP": ">",
-                    "RIGHT_ID": "estar",
-                    "RIGHT_ATTRS": {"LEMMA": "estar"},
-                }
-            ]
-        ]
-    
+                    "LEFT_ID": "dividir_ph", #
+                    "REL_OP": "<",
+                    "RIGHT_ID": "relacion_posible_dividir",
+                    "RIGHT_ATTRS": {"POS": "VERB"},
+                },
+                {
+                    "LEFT_ID": "relacion_posible_dividir", #
+                    "REL_OP": "<",
+                    "RIGHT_ID": "posibilidad",
+                    "RIGHT_ATTRS": {"POS":"NOUN"},  #aca en realidad tendrias que matchear por el morfologico: que este en presente el verbo ese además
+                }              
+            ],
+            #[    # posible PH
+            #    {
+            #        "RIGHT_ID": "division_ph",  # me paro en ph y miro flecha que ENTRA
+            #        "RIGHT_ATTRS": {"LOWER": {"IN": ["ph","PH"]}}, #ph o PH
+            #    },
+            #    {
+            #        "LEFT_ID": "division_ph", #
+            #        "REL_OP": "<",
+            #        "RIGHT_ID": "relacion_posible_division",
+            #        "RIGHT_ATTRS": {"POS": "PROPN"},
+            #    },                
+            #]
+    ]
