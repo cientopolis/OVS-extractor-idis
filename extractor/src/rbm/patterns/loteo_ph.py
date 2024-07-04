@@ -3,7 +3,7 @@ def loteo_ph_M() -> list:
     return list ( 
             [
                 
-                
+                [{"LOWER" : "ph"}],
                 [{"LOWER":"compuesto"},{"LOWER" : {"IN" :["por","de"]}},{"LOWER" : {"IN" :numeros}},{"LOWER":"ph"}], #compuesto por/de "numero" ph
 
                 [{"LOWER":"lote"},{"LOWER":"interno"},{"LOWER" : {"IN" :["ph","(PH)","(ph)"]}}],#lote interno ph/(ph)
@@ -21,29 +21,26 @@ def loteo_ph_M() -> list:
             ] 
     ) 
 def loteo_ph_DM() -> list:
-    return [   [   
-                {
-                    "RIGHT_ID": "el_ph",  # me paro en ph y miro flecha que ENTRA
-                    "RIGHT_ATTRS": {"LOWER": {"IN": ["ph", "PH"]}}, #ph o PH
-                },
-                {
-                    "LEFT_ID": "el_ph", #
-                    "REL_OP": "<",
-                    "RIGHT_ID": "relacion_subdivididos",
-                    "RIGHT_ATTRS": {"POS": "ADJ"},
-                },
-                {
-                    "LEFT_ID": "relacion_subdivididos", #
-                    "REL_OP": ">",
-                    "RIGHT_ID": "verbo_estar",
-                    "RIGHT_ATTRS": {"LEMMA": "estar"},  #aca en realidad tendrias que matchear por el morfologico: que este en presente el verbo ese además
-                },
-                {
-                    "LEFT_ID": "relacion_subdivididos", #
-                    "REL_OP": ">",
-                    "RIGHT_ID": "estar",
-                    "RIGHT_ATTRS": {"LEMMA": "estar"},
-                }
+    return [   
+            [   
+                [   # matchea "no afectado PH"
+                    {
+                        "RIGHT_ID": "no_afectado_ph",  # me paro en ph y miro flecha que ENTRA
+                        "RIGHT_ATTRS": {"LOWER": {"IN": ["ph","PH"]}}, #ph o PH
+                    },
+                    {
+                        "LEFT_ID": "no_afectado_ph", #
+                        "REL_OP": "<",
+                        "RIGHT_ID": "relacion_no_afectado",
+                        "RIGHT_ATTRS": {"POS": "ADJ"},
+                    },
+                    {
+                        "LEFT_ID": "relacion_no_afectado", #
+                        "REL_OP": ">",
+                        "RIGHT_ID": "ADV_no",
+                        "RIGHT_ATTRS": {"POS":{"IN" : ["ADV"]}},  #aca en realidad tendrias que matchear por el morfologico: que este en presente el verbo ese además
+                    }
+                ],
+                
             ]
-        ]
-    
+    ]
