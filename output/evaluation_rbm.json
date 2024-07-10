@@ -772,7 +772,7 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50 x 25.70",
+                "actual": "14.80 x 50;50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
@@ -1925,13 +1925,13 @@
     },
     {
         "name": "es_monetizable",
-        "tp": 64,
+        "tp": 67,
         "fp": 3,
-        "fn": 31,
+        "fn": 28,
         "tn": 164,
-        "precision": 0.9552238805970149,
-        "recall": 0.6736842105263158,
-        "f1": 0.7901234567901234,
+        "precision": 0.9571428571428572,
+        "recall": 0.7052631578947368,
+        "f1": 0.8121212121212121,
         "error": [
             {
                 "context": "Pueyrredon 86 bis. Casa 4 dormitorios, 2 baños, patio con parrillero y cochera. Superficie del terreno de 145 m2 (irregular) con Frente de 7.5 metros, contra frente de 9.8 metros, y fondo de 19.17 metros. Planos de mensura desactualizados.",
@@ -1969,11 +1969,6 @@
                 "expected": true
             },
             {
-                "context": "Excelente lote central en Barrio San Joaquín, rodeado de añosa arboleda, en un barrio totalmente consolidado. Escrituración inmediata. Inmejorable acceso sobre Ruta 39 a 2.000 m de la Ruta Panamericana y a 10 minutos del centro de Pilar. Amplio jardín con piscina.",
-                "actual": "",
-                "expected": true
-            },
-            {
                 "context": "Espectacular casa quinta en Barrio El Rodeo en La Plata. Acceso sobre ruta 215. muy buen entorno barrio familiar semi cerrado. la propiedad esta desarrolada sobre 4 lotes de 20 x 50 cada uno. la casa esta situada sobre dos lotes es de tipo chalet en una planta y consta de gran estar comedor con vista hacia la piscina",
                 "actual": "",
                 "expected": true
@@ -1994,11 +1989,6 @@
                 "expected": true
             },
             {
-                "context": "Excelente terreno de 50 mts de frente x 83 mts de fondo con salida a 2 calles. Superficie del terreno 4150 m2. Zonificación UR2 B. FOT 0.9 ampliable a 1.05 abonando plusvalía. FOS 0.45. Altura máxima 10.5 mts + 3 mts retirados. Densidad 350 hab x ha. Actualmente consta de casa principal, casa de huespedes, amplio quincho cubierto, piscina, amplio parque arbolado.",
-                "actual": "",
-                "expected": true
-            },
-            {
                 "context": "fincas de Duggan se encuentra ubicado a 15 minutos del centro de la ciudad y a 10 minutos del casco urbano de La Plata permitiendo toda la libertad y calidad de vida que ofrece el campo la tranquilidad de que nuestros hijos crezcan en pleno contacto de la naturaleza y el aire libre dentro un barrio consolidado de baja densidad con todas las posibilidades de optar en cuanto a medidas y superficies de lotes desde 700 a 1.200 m2 y con más de 100 familias viviendo y otras 60 etapa de construcción. FINANCIACION EN HASTA 48 CUOTAS EN PESOS. seguridad y vigilancia las 24 horas triple cerco perimetral electrificado servicios por tendido subterráneo. red de energía eléctrica, red de fibra óptica para Internet de alta velocidad telefonía y televisión. red de agua corriente red de gas natural\r\n",
                 "actual": "",
                 "expected": true
@@ -2010,11 +2000,6 @@
             },
             {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Venta de Lote en Calle 600 y 18 Altos del Plata, Villa Elvira, La Plata. Medidas de 18 x 31. Lote de 558 m2 Totales. Servicios de Luz y Agua corriente. Calle de tierra. El lote se encuentra cerrado un Cerco premoldeado a la altura de 2 metros. También hay una construcción con el proyecto de tener 100 metros cubiertos de superficie. Precio U$D25.000, Se Vende por Boleto con Posesión próximo a escriturar la parte indivisa.",
                 "actual": "",
                 "expected": true
             },
