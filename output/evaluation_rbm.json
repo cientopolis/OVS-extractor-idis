@@ -577,13 +577,13 @@
     },
     {
         "name": "medidas",
-        "tp": 83,
-        "fp": 38,
+        "tp": 84,
+        "fp": 37,
         "fn": 39,
         "tn": 102,
-        "precision": 0.6859504132231405,
-        "recall": 0.680327868852459,
-        "f1": 0.6831275720164609,
+        "precision": 0.6942148760330579,
+        "recall": 0.6829268292682927,
+        "f1": 0.6885245901639344,
         "error": [
             {
                 "context": "Venta lote en excelente ubicación, con construcción prácticamente para demoler. Soler al 700 Bahía Blanca. Ideal Desarrolladores. 8.66 mts de frente, 23 mts lado oeste, 19.60 mts lado este. Zonificación C2. FOT 2.4",
@@ -687,7 +687,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "17.32 x 26;8.66 x 26",
+                "actual": "8.66 x 26;17.32 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -772,18 +772,13 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50;50 x 25.70",
+                "actual": "14.80 x 50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
                 "actual": "",
                 "expected": "20 x 30"
-            },
-            {
-                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
-                "actual": "20 x 48;15 x 30",
-                "expected": "15 x 30;20 x 48"
             },
             {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
@@ -1932,11 +1927,11 @@
         "name": "es_monetizable",
         "tp": 64,
         "fp": 3,
-        "fn": 22,
-        "tn": 173,
+        "fn": 31,
+        "tn": 164,
         "precision": 0.9552238805970149,
-        "recall": 0.7441860465116279,
-        "f1": 0.8366013071895424,
+        "recall": 0.6736842105263158,
+        "f1": 0.7901234567901234,
         "error": [
             {
                 "context": "Pueyrredon 86 bis. Casa 4 dormitorios, 2 baños, patio con parrillero y cochera. Superficie del terreno de 145 m2 (irregular) con Frente de 7.5 metros, contra frente de 9.8 metros, y fondo de 19.17 metros. Planos de mensura desactualizados.",
@@ -2039,7 +2034,42 @@
                 "expected": true
             },
             {
+                "context": "En la calle Bereterbide al 1200, nos encontramos con la oportunidad de adquirir \"en modalidad pre-venta\" un excelente departamento actualmente en construcción, como parte del Proyecto de Complejo \" Altos de Bereterbide\", el cual cuenta con departamentos en Primer piso y PB. El plazo estimado de entrega es de 6 a 8 meses, a contar desde Octubre 2022. Esta unidad funcional de 42,5m2 desarrollada por completo en primer piso, consta de comedor con cocina integrada, un baÃ±o completo y una habitaciÃ³n. Tiene todos los servicios y cuenta con cochera. El pago puede hacerse con una entrega inicial y financiación del saldo de precio hasta en 12 cuotas, para que te mudes al lugar de tu sueÃ±os!!!! No dudes en consultar estamos para ayudarte a encontrar tu Mejor Lugar…",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Exclusiva pre-venta con financiación, anticipo y 30 cuotas!! Espectacular casa premium fondo al lago â€“ Marinas â€“ Puertos del lago. Casa de categorÃa, con sÃ³lida construcciÃ³n de HormigÃ³n H-21- Platea y dos Losas macizas â€“ CaracterÃsticas sustentables y detalles exclusivos en todos los ambientes. Lote: 888 m2 Cubiertos: 324 m2 Semicubiertos: 109 m2 Terrazas: 65 m2 Total: 498 m2",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Importantes lotes de 1250m2 promedio en Fincas de Lima. Lotes perimetrales. ¡Con Posesión Inmediata! ¡Planes de financiación! FINCAS DE LIMA es un desarrollo de 17has con solo 100 lotes de 1250m2 promedio. Ubicado en Lima, partido de ZÃ¡rate, se encuentra a unos 100kms de CABA, a poco mÃ¡s de una hora en auto con acceso directo por autopista. Se accede desde la Ruta NÂ°9 por el Camino Km103. Con un entorno arbolado y en contacto con la naturaleza, es un espacio ideal para familias en busca de una mejor calidad de vida. El barrio semi-cerrado posee sólo dos accesos con tranqueras, uno desde la ruta (por Camino KM103) y el segundo desde el pueblo de Lima, otorgando seguridad y privacidad a las familias. Cuentan con servicio elÃ©ctrico con tendido aÃ©reo; calles internas mejoradas, cerco perimetral. El valor corresponde al pago de contado para los lotes: 62; 86; 88 y 91 Las dimensiones de algunos lotes varían entre 1233m2 y 1250m2 Las medidas, porcentuales, y superficies son aproximadas. Las medidas definitivas surgen del tÃtulo de propiedad, plano municipal y/o plano de mensura. Con 1.251 m2 su fondo de 28 metros se ubica sobre el hoyo 1 de la colorada, en el Barrio Pebble Beach de Pilar Golf. ¡Apto para construir inmediatamente! El precio publicado es por pago al contado. Ofrecemos financiación: USD 68.000 como anticipo y 24 cuotas de USD 6.000.- Te invitamos a recorrer el el lugar y estamos a tu disposición para todo lo que quieras saber.",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Hermosa casa 3 amb a estrenar ubicada en Solis 364, Temperley Excelente ubicación a tan solo 5 cuadras de la estación de Temperley. Sup. cubierta 47m2 Sup. total 52m2 -Casa al frente totalmente refaccionada a nuevo -Living -Comedor amplio que cuenta con estufa -Cocina con muebles bajo mesada -Dos dormitorios -Baño completo -Patio A 5 cuadras de la estación de Temperley! Se puede financiar el 50% Valor con finaciacion: US$93.000 Apto crédicto *SE ESCUCHAN PROPUESTAS* *SE ACEPTAN VEHICULOS COMO PARTE DE PAGO* *SE ACEPTAN PERMUTADAS EN ZONA SUR*",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Oportunidad! Anticipo con entrega de USD30.000 con entrega de posesion + 60 cuotas de USD500. Casa en venta en Barrio Abierto Los Campos de Fresnos, ubicado en Zarate sobre calle España, cercano a Antartida Argentina y a Ruta Nacional 9. Unidad Funcional de tres ambientes: Dos dormitorios, cocina-comedor integrada, baño completo. Parque y cochera semicubierta para dos vehiculos. Lote de 450 mts.2. Construccion en Seco. Sin Expensas. Termotanque eléctrico, cocina a gas envasado, biodigestor. InformaciÃ³n adicional: Agua caliente: Termotanque Superficie del terreno: 450",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "venta departamento en ph.-en complejo calle santa fe 735,bella vista.-pdo de san miguel esta unidad se encuentra en contrafrente Unidad desarrollada en una planta techo loza,preparado para construccion en futuro en. compuesta por cocina comedor con mobiliario.- dormitorio sin placard baÃ±o con tres sanitarios cochera descubierta total superficie 52,87m SERVICIOS_GAS ENVASADO.-LUZ.-AYSA 300.-MUNICIPAL 450-SE DIVIDE PROPORCIONAL DE GASTO DE LUZ DE BOMBA DE AGUA.- valor de venta u$s 70.000- apto credito bancario.- puede financiar: 70% al boleto con posesión y saldo 30% en cuotas a convenir.-",
+                "actual": "",
+                "expected": true
+            },
+            {
                 "context": "Lote de terreno con construcción en venta frente al Parque San Martí¬n, 54 y 23, La Plata. LOTE 1: de 131m2 apróx con 8 mts de frente con vista al Parque San Martí¬n; LOTE 2: 408 m2 apróx total: 15 mts apróx de frente hacia calle 54 y 24 mts apróx con frente hacia calle 23; lo que hacen ambos una superficie total de 539 m2 apróx con frentes hacia 3 calles: 54, 23 y diagonal 102. Todos los servicios; Excelente propiedad en inmejorable ubicación de la ciudad ideal para desarrollos multifamiliares. Zona :U/EF3a - AREA Eje Fundacional Tramo 3: Calle 20 a calle 23 y frentistas a Parque San Martin. FOT RESIDENCIAL 2.5, DENSIDAD RESIDENCIAL 1.000, PREMIOS FOT Y DENSIDAD 70%. OPORTUNIDAD ",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Terreno de 28x35 con construccion ideal desarrollo industrial con acceso rapido a autopista de Oeste. ",
                 "actual": "",
                 "expected": true
             },
@@ -2047,6 +2077,16 @@
                 "context": "Lote con construcción de dos plantas (una casa PB y otra PA) No está afectado a PH, se vende como lote por el estado de los inmuebles.- Toman departamentos ya hechos en parte de pago ",
                 "actual": true,
                 "expected": ""
+            },
+            {
+                "context": "Casona Antigua Sobre lote de 830 Mts c/ 3 Dormitorios ,amplios, living y comedor,cocina-comedor diario amueblado, 2 baños,patio,galeria y parque con quincho. - Buen Estado - ** IDEAL EMPRENDIMIENTO INMOBILIARIO** ",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Hola. Casa 4 amb sobre lote 8,66 x 46.40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
+                "actual": "",
+                "expected": true
             },
             {
                 "context": "LOTE EN VENTA EN MASCHWITZ CENTRO - MAROTO PROPIEDADES - El inmueble consta de tres lotes de terreno de 433 m cada uno  es decir 8,66x 50 cada uno con frente a la calle Entre Rios.  Tiene ademas un deposito techado impecable de 700 m2 cubiertyos aproximados Ideal para inversores , contrauctores o desarrolladores - se puede comprar lotes contiguos.        .",
