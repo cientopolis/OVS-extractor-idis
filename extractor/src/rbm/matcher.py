@@ -17,6 +17,7 @@ from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
 from src.rbm.patterns.pileta import pileta
 from src.rbm.patterns.esquina import esquina
 from src.rbm.patterns.irregular import irregular
+from src.rbm.patterns.frentes import frentes
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -155,35 +156,7 @@ class Matcher:
         Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
         Matcher.dependencyMatcher.add(
             "frentes",
-            patterns=[
-                [
-                    {
-                        "RIGHT_ID": "frentes",
-                        "RIGHT_ATTRS": {"LOWER": {"IN": ["frente", "frentes"]}},
-                    },
-                    {
-                        "LEFT_ID": "frentes",
-                        "REL_OP": ">",
-                        "RIGHT_ID": "num",
-                        "RIGHT_ATTRS": {"DEP": {"IN": ["nummod", "amod"]}},
-                    },
-                ],
-                [
-                    {"RIGHT_ID": "frentes", "RIGHT_ATTRS": {"LOWER": "salida"}},
-                    {
-                        "LEFT_ID": "frentes",
-                        "REL_OP": ">",
-                        "RIGHT_ID": "calles",
-                        "RIGHT_ATTRS": {"DEP": "obl"},
-                    },
-                    {
-                        "LEFT_ID": "calles",
-                        "REL_OP": ">",
-                        "RIGHT_ID": "num",
-                        "RIGHT_ATTRS": {"DEP": "nummod"},
-                    },
-                ],
-            ],
+            frentes()
         ) 
         Matcher.dependencyMatcher.add(
             "fot",
