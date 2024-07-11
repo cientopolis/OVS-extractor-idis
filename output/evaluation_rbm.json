@@ -508,7 +508,7 @@
             },
             {
                 "context": " Terreno en venta - 200 mts2 - La Plata Terreno en venta ubicado sobre calle 19 entre 75 y 76 (Altos de San Lorenzo, La Plata, Buenos Aires) Con disposición frente y orientación norte.De medidas regulares, cuenta con 10mts de frente por 20mts de fondo, contabilizando 200mts2 totales de superficie, de los cuales 40mts2 pertenecen a una casa a demoler o refaccionar de dos dormitorios, con cocina, living comedor y un baño. Con acceso por calle de asfalto, cuenta con los servicios de electricidad, agua corriente, gas natural y cloacas disponibles en el lugar.índices de prefactibilidad: FOS 0,6 ALTURA REFERENCIA EN NIVELES 3 FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2 DENSIDAD COMERCIAL 300 DENSIDAD RESIDENCIAL 300 RETIROS Y REQUISITOS Laterales: Se permite solo un retiro respecto los ejes medianeros. COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2 PARCELAMIENTO MINIMO FRENTE 15 PARCELAMIENTO MINIMO SUPERFICIE 375 RELACION FTE / FDO 1/3",
-                "actual": "FOT COMERCIAL 1,21,2 FOTFOT RESIDENCIAL 1,2",
+                "actual": "FOT RESIDENCIAL 1,21,2 FOTFOT COMERCIAL 1,2",
                 "expected": "FOT comercial: 1.2 FOT residencial: 1.2"
             },
             {
@@ -632,13 +632,13 @@
     },
     {
         "name": "medidas",
-        "tp": 96,
-        "fp": 30,
+        "tp": 97,
+        "fp": 29,
         "fn": 43,
         "tn": 122,
-        "precision": 0.7619047619047619,
-        "recall": 0.6906474820143885,
-        "f1": 0.7245283018867924,
+        "precision": 0.7698412698412699,
+        "recall": 0.6928571428571428,
+        "f1": 0.7293233082706767,
         "error": [
             {
                 "context": "Venta de Lote en barrio santa Isabel Highland Park , Mar del Plata . Ponemos a la venta 4 lotes de 20 x 47 metros cada uno, en  trámite de escrituración por usucapión, ubicados en la fracción 1 sobre la calle 749 asfaltada entre las calles 116 y 118, en barrio Highland park, pegado a golf. Marayui Country Club lotes a la venta, sobre la calle asfaltada 749 fracción 1, lotes 2 lote  3 lote  4 y lote 5. cada uno de 20 por 47 metros.  los lotes están judicializados por tramite de usucapión, y se ha hecho cesión de derechos por escribanía, y se hará cesión de derechos y posesión al comprador en escribanía.  tenemos toda la información pertinente de los lotes citados, se entrega con impuestos de Arba y municipal al día de la transferencia, los impuestos pagados son de Arba y municipal.",
@@ -752,7 +752,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "8.66 x 26;17.32 x 26",
+                "actual": "17.32 x 26;8.66 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -837,18 +837,13 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50;50 x 25.70",
+                "actual": "50 x 25.70;14.80 x 50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
                 "actual": "",
                 "expected": "20 x 30"
-            },
-            {
-                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
-                "actual": "20 x 48;15 x 30",
-                "expected": "15 x 30;20 x 48"
             },
             {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
@@ -947,7 +942,7 @@
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73.63;32.45 x 73;32.45 x 73.63",
+                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
                 "expected": ""
             },
             {
@@ -1840,14 +1835,24 @@
     },
     {
         "name": "posesion",
-        "tp": 15,
+        "tp": 13,
         "fp": 1,
-        "fn": 0,
+        "fn": 2,
         "tn": 275,
-        "precision": 0.9375,
-        "recall": 1.0,
-        "f1": 0.967741935483871,
+        "precision": 0.9285714285714286,
+        "recall": 0.8666666666666667,
+        "f1": 0.896551724137931,
         "error": [
+            {
+                "context": "Venta de Lote en Calle 600 y 18 Altos del Plata, Villa Elvira, La Plata. Medidas de 18 x 31. Lote de 558 m2 Totales. Servicios de Luz y Agua corriente. Calle de tierra. El lote se encuentra cerrado un Cerco premoldeado a la altura de 2 metros. También hay una construcción con el proyecto de tener 100 metros cubiertos de superficie. Precio U$D25.000, Se Vende por Boleto con Posesión próximo a escriturar la parte indivisa.",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "venta departamento en ph.-en complejo calle santa fe 735,bella vista.-pdo de san miguel esta unidad se encuentra en contrafrente Unidad desarrollada en una planta techo loza,preparado para construccion en futuro en. compuesta por cocina comedor con mobiliario.- dormitorio sin placard baÃ±o con tres sanitarios cochera descubierta total superficie 52,87m SERVICIOS_GAS ENVASADO.-LUZ.-AYSA 300.-MUNICIPAL 450-SE DIVIDE PROPORCIONAL DE GASTO DE LUZ DE BOMBA DE AGUA.- valor de venta u$s 70.000- apto credito bancario.- puede financiar: 70% al boleto con posesión y saldo 30% en cuotas a convenir.-",
+                "actual": "",
+                "expected": true
+            },
             {
                 "context": "Increíble lote de 14 m x 47.5 m. Excelente acceso a 150 metros de Ruta 2. El lote está ubicado sobre calle 406 Bis y Calle 202. Zona de casas quinta. Soy particular venta directa de dueño. Cuento con la escritura a mi nombre no es posesión ni usucapion el lote cuenta con servicio de energía eléctrica agua por perforación gas envasado. Escuelas comercios de cercanía muy lindo entorno Ideal para casa quinta o vivienda permanente",
                 "actual": true,
