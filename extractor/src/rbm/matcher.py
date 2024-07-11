@@ -14,6 +14,9 @@ from src.rbm.patterns.a_demoler import a_demoler
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
 from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
+from src.rbm.patterns.pileta import pileta
+from src.rbm.patterns.esquina import esquina
+from src.rbm.patterns.irregular import irregular
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -46,26 +49,15 @@ class Matcher:
         )
         Matcher.matcher.add(
             "pileta",
-            [
-                [
-                    {"LEMMA": {"IN": ["piscina", "pileta"]}},
-                ]
-            ],
+            pileta()
         )
         Matcher.matcher.add(
             "esquina",
-            [
-                [
-                    {"LOWER": "esquina"},
-                ]
-            ],
+            esquina()
         )
         Matcher.matcher.add(
             "irregular",
-            [
-                [{"LEMMA": "irregular"}],
-                [{"LOWER": {"IN": ["lote", "forma"]}}, {"POS": "ADJ"}],
-            ],
+            irregular()
         )
  
         Matcher.matcher.add(
