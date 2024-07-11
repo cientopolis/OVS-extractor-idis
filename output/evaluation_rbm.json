@@ -1,13 +1,13 @@
 [
     {
         "name": "direccion",
-        "tp": 77,
-        "fp": 72,
-        "fn": 25,
-        "tn": 146,
-        "precision": 0.5167785234899329,
-        "recall": 0.7549019607843137,
-        "f1": 0.6135458167330677,
+        "tp": 79,
+        "fp": 70,
+        "fn": 26,
+        "tn": 145,
+        "precision": 0.5302013422818792,
+        "recall": 0.7523809523809524,
+        "f1": 0.6220472440944882,
         "error": [
             {
                 "context": "Venta de Lote en Calle 600 y 18 Altos del Plata, Villa Elvira, La Plata. Medidas de 18 x 31. Lote de 558 m2 Totales. Servicios de Luz y Agua corriente. Calle de tierra. El lote se encuentra cerrado un Cerco premoldeado a la altura de 2 metros. También hay una construcción con el proyecto de tener 100 metros cubiertos de superficie. Precio U$D25.000, Se Vende por Boleto con Posesión próximo a escriturar la parte indivisa.",
@@ -460,29 +460,24 @@
                 "expected": ""
             },
             {
+                "context": "Terreno con quincho en 25 y 510. 400 mts2. El frente de 10 metros, cuenta con paredón y portón. Al ingresar se disfruta de una pileta de 3  x 7 mts con cerco perimetral. Quincho de 30 mts2.  Cuenta con cocina.  Espacio de comedor. Una habitación. Baño en el exterior. Espacio semi cubierto",
+                "actual": "",
+                "expected": "25 y 510"
+            },
+            {
                 "context": "Venta de Lote en Villa Elisa entre caminos, a una cuadra de Avenida Arana. Ubicado en calle 420, entre 14 y 14 bis, lote de 10 de frente por 41.80mtrs de fondo, a una cuadra de Avenida Arana y entre caminos Centenario y Belgrano con rápida salida a Autopista La Plata-Buenos Aires. Posee bases de construcción. POSIBLE PERMUTA POR VEHICULO.",
                 "actual": "calle 420, entre 14 y 14 bis",
                 "expected": ""
             },
             {
-                "context": "Lote en venta ubicado en la calle 71 entre 22 y 23, Casco Urbano, La Plata.-  EXCELENTE LOTE 11X30 UR1 CON LOZA CONSTRUIDA  VENDO LOTE zonificado U/R1, medidas 11x30, ubicado en barrio residencial próximo a avenidas 19, 25 y 72. Posee loza de 1º piso construida, superficie construida 141 m2 (11x13), con posibilidad de expandir a 2º piso y/o expandir la superficie de forma horizontal. Servicios todos. Orientado al sur.  Superficie total de lote 330m2. Posee portón metálico de ingreso.  Ideal vivienda multifamiliar.-  Permuta por departamento 2 dormitorios (Zonas parque san Martin, plaza Malvinas, aledaños)  Servicios: Cloacas, Gas",
-                "actual": "calle 71 entre 22 y 23",
-                "expected": ""
-            },
-            {
                 "context": "Lotes en calle Rio Reconquista, entre calles Atuel y Matanza, en Marcos Paz, provincia de Buenos Aires. Estos terrenos se encuentran en una zona privilegiada, rodeados de naturaleza y tranquilidad, pero a su vez cercanos a importantes vías de acceso y servicios.  El lote número 20 cuenta con una superficie total de 3550 m2, con medidas de 35.5 m. x 100 m., Mientras que el lote número 21 también tiene una superficie total de 3550 m2 y medidas de 35.5 m. x 100 m. Este último lote cuenta además con una hermosa cabaña de madera, ideal para disfrutar de momentos de descanso y relax en contacto con la naturaleza. ",
                 "actual": "calle Rio Reconquista, entre calles Atuel y Matanza",
-                "expected": ""
-            },
-            {
-                "context": "528 entre 139 y 140. Lote de Terreno regular de 300m2 (10 x 30) con construcción de material de 40m2 aproximadamente. El lote se ubica sobre calle de pavimento y cuenta con todos los servicios.",
-                "actual": "528 entre 139 y 140",
-                "expected": ""
+                "expected": "caller Rio Reconquista, entre calles Atuel y Matanza"
             },
             {
                 "context": "Lote con mejoras ubicado en la calle Rodofo Walsh 208 entre Magrasi y coronel de marina David Jewett. A una cuadra de la ruta N 11 y balnearios. Excelente ubicación. Coordneadas -38. , - 57.55112 Lote de 15x22,50 con construcción a terminar (son dos casas de 3 ambientes cada una en planta baja) Superficie del terreno 377. GASTOS A CARGO DEL COMPRADOR (Honorarios inmobiliarios y escritura)",
                 "actual": "calle Rodofo Walsh 208 entre Magrasi y coronel",
-                "expected": ""
+                "expected": "calle Rodolfo Walsh 208 entre Magrasi y coronel de marina Davis Jewett"
             },
             {
                 "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2sin mejoras al frente portón de reja  Lote 1 de 191M2esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex  Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
@@ -492,19 +487,19 @@
             {
                 "context": "Loteo en venta,sobre las calle 56 a 58 y 163 a 165, 74 lotes disponible,. Con escritura y APTO PROCREAR. Los lotes se encuentran ubicados en una zona con creciente urbanización, a dos cuadras de la avenida 60 y a unos 10 minutos del centro de La Plata. Lotes linderos con construcciones nuevas y en proceso. Calles abiertas, con mejorado, alumbrado y tendido eléctrico. También disponibles lotes de 12 x 26 m2 .",
                 "actual": "calle 56 a 58 y 163 a 165",
-                "expected": ""
+                "expected": "56 a 58 y 163 a 165"
             }
         ]
     },
     {
         "name": "fot",
-        "tp": 37,
-        "fp": 23,
+        "tp": 38,
+        "fp": 22,
         "fn": 2,
         "tn": 258,
-        "precision": 0.6166666666666667,
-        "recall": 0.9487179487179487,
-        "f1": 0.7474747474747475,
+        "precision": 0.6333333333333333,
+        "recall": 0.95,
+        "f1": 0.7599999999999999,
         "error": [
             {
                 "context": "ATENCIÓN CONSTRUCTORAS: Excelente lote de 8.66 de Frente x 35 de largo, ideal inversión para construcción de departamentos en torre, emprendimiento o vivienda, en zona centrica En inmejorable ubicación sobre la calle Sitio de Montevideo entre Salta y Oncativo. posee un FOS de 0.6 y un FOT de 3. CONSULTE OPCIONES. SE ESCUCHAN OFERTAS. SE TOMA PROPIEDAD TERMINADA POR MENOR VALOR.",
@@ -548,7 +543,7 @@
             },
             {
                 "context": " Terreno en venta - 200 mts2 - La Plata Terreno en venta ubicado sobre calle 19 entre 75 y 76 (Altos de San Lorenzo, La Plata, Buenos Aires) Con disposición frente y orientación norte.De medidas regulares, cuenta con 10mts de frente por 20mts de fondo, contabilizando 200mts2 totales de superficie, de los cuales 40mts2 pertenecen a una casa a demoler o refaccionar de dos dormitorios, con cocina, living comedor y un baño. Con acceso por calle de asfalto, cuenta con los servicios de electricidad, agua corriente, gas natural y cloacas disponibles en el lugar.índices de prefactibilidad: FOS 0,6 ALTURA REFERENCIA EN NIVELES 3 FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2 DENSIDAD COMERCIAL 300 DENSIDAD RESIDENCIAL 300 RETIROS Y REQUISITOS Laterales: Se permite solo un retiro respecto los ejes medianeros. COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2 PARCELAMIENTO MINIMO FRENTE 15 PARCELAMIENTO MINIMO SUPERFICIE 375 RELACION FTE / FDO 1/3",
-                "actual": "FOT RESIDENCIAL 1,2FOT COMERCIAL 1,21,2 FOT",
+                "actual": "1,2 FOTFOT RESIDENCIAL 1,2FOT COMERCIAL 1,2",
                 "expected": "FOT comercial: 1.2 FOT residencial: 1.2"
             },
             {
@@ -619,29 +614,24 @@
             {
                 "context": "Lote de 2024 m2, con una superficie cubierta de 1292 m2 y medidas irregulares. Próximo a Av 520.Cuenta de 80,3 mts de frente sobre calle 13 o Cno. Centenario.Zona :U/C4 - Corredores de Acceso principal (ex U/C4b). CARACTERISTICA Corresponde a aquellas configuraciones lineales que combinan usos centrales y servicios vinculados a los accesos a la ciudad. FOS 0,6. ALTURA REFERENCIA EN NIVELES 3. FOT COMERCIAL 1,2. FOT RESIDENCIAL 1,2. DENSIDAD COMERCIAL 300. DENSIDAD RESIDENCIAL 300. RETIROS Y REQUISITOS Laterales: Sobre Cno. Centenario, obligatorio, mínimo 3 mts. de un eje medianero. \"La Presente oferta esta condicionada a la confección del COTI por parte del Propietario (Res.AFIP 2371).\". \"Los metros publicados son aproximados, las medidas exactas surgirán de la escritura traslativa de dominio.\"",
                 "actual": "FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2",
-                "expected": ""
-            },
-            {
-                "context": "Lote en San Justo Centro, zona Comercial / Residencial. Posee mejoras: Quincho 50 m2 con parrilla y cocina . Pileta de 4 x 8 aprox. con bomba y filtro y parque  Zonificacion: C1 FOT: 3 - FOS 0.60 - Densidad: 900 Hab.  Medidas Lote: 10 x 33.70 Superficie Total: 337 m2  VALOR DE VENTA: u$s 350.000.  Honorarios por Asesoramiento: 3% + IVA Gastos por Diligenciamiento e Informes: 1% + IVA  ",
-                "actual": "3",
-                "expected": ""
+                "expected": "FOT comercial 1.2 FOT residencial 1.2"
             },
             {
                 "context": "CASO DIFÍCIL. Excelente lote de terreno de 12,00 m x 16,84 m , en la zona comercial de Virreyes. Actualmente con construccion de 353 m2, distibuidos en 2 locales y 3 departamentos. FOS : 0,6 FOT : 3 Zonificación: C2AU1   Alt. Max: 14,50m.  Dens: 900 ha/Ha",
                 "actual": "0,6 FOT FOT : 3",
-                "expected": ""
+                "expected": "3"
             }
         ]
     },
     {
         "name": "irregular",
-        "tp": 22,
-        "fp": 2,
+        "tp": 23,
+        "fp": 1,
         "fn": 7,
         "tn": 289,
-        "precision": 0.9166666666666666,
-        "recall": 0.7586206896551724,
-        "f1": 0.830188679245283,
+        "precision": 0.9583333333333334,
+        "recall": 0.7666666666666667,
+        "f1": 0.8518518518518519,
         "error": [
             {
                 "context": "lote en esquina, 10 mts x 35 mts + martillo. 224 m2, fot 3 mas premios, fos 0.6",
@@ -682,23 +672,18 @@
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
                 "actual": "",
                 "expected": true
-            },
-            {
-                "context": "Lote de 2024 m2, con una superficie cubierta de 1292 m2 y medidas irregulares. Próximo a Av 520.Cuenta de 80,3 mts de frente sobre calle 13 o Cno. Centenario.Zona :U/C4 - Corredores de Acceso principal (ex U/C4b). CARACTERISTICA Corresponde a aquellas configuraciones lineales que combinan usos centrales y servicios vinculados a los accesos a la ciudad. FOS 0,6. ALTURA REFERENCIA EN NIVELES 3. FOT COMERCIAL 1,2. FOT RESIDENCIAL 1,2. DENSIDAD COMERCIAL 300. DENSIDAD RESIDENCIAL 300. RETIROS Y REQUISITOS Laterales: Sobre Cno. Centenario, obligatorio, mínimo 3 mts. de un eje medianero. \"La Presente oferta esta condicionada a la confección del COTI por parte del Propietario (Res.AFIP 2371).\". \"Los metros publicados son aproximados, las medidas exactas surgirán de la escritura traslativa de dominio.\"",
-                "actual": true,
-                "expected": ""
             }
         ]
     },
     {
         "name": "medidas",
-        "tp": 97,
-        "fp": 46,
-        "fn": 43,
-        "tn": 134,
-        "precision": 0.6783216783216783,
-        "recall": 0.6928571428571428,
-        "f1": 0.6855123674911661,
+        "tp": 108,
+        "fp": 35,
+        "fn": 51,
+        "tn": 126,
+        "precision": 0.7552447552447552,
+        "recall": 0.6792452830188679,
+        "f1": 0.7152317880794701,
         "error": [
             {
                 "context": "Venta de Lote en barrio santa Isabel Highland Park , Mar del Plata . Ponemos a la venta 4 lotes de 20 x 47 metros cada uno, en  trámite de escrituración por usucapión, ubicados en la fracción 1 sobre la calle 749 asfaltada entre las calles 116 y 118, en barrio Highland park, pegado a golf. Marayui Country Club lotes a la venta, sobre la calle asfaltada 749 fracción 1, lotes 2 lote  3 lote  4 y lote 5. cada uno de 20 por 47 metros.  los lotes están judicializados por tramite de usucapión, y se ha hecho cesión de derechos por escribanía, y se hará cesión de derechos y posesión al comprador en escribanía.  tenemos toda la información pertinente de los lotes citados, se entrega con impuestos de Arba y municipal al día de la transferencia, los impuestos pagados son de Arba y municipal.",
@@ -1002,7 +987,7 @@
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
+                "actual": "32.45 x 73.63;32.45 x 73.63;32.45 x 73",
                 "expected": ""
             },
             {
@@ -1063,16 +1048,11 @@
             {
                 "context": "Vendo Lote de 10 x 35 con casita a terminar de 8 x 3.30 cuenta con servicio de luz, agua de pozo",
                 "actual": "8 x 3.30",
-                "expected": ""
+                "expected": "10 x 35"
             },
             {
                 "context": "Terreno con quincho en 25 y 510. 400 mts2. El frente de 10 metros, cuenta con paredón y portón. Al ingresar se disfruta de una pileta de 3  x 7 mts con cerco perimetral. Quincho de 30 mts2.  Cuenta con cocina.  Espacio de comedor. Una habitación. Baño en el exterior. Espacio semi cubierto",
                 "actual": "3 x 7",
-                "expected": ""
-            },
-            {
-                "context": "Se vende lote en gran zona. Zona de countrys (Grand Bell, Los Ceibos, Country Club de Estudiantes). 10 mts de frente x 30 mts de fondo. 300 mt2 totales. Tiene paredón al frente, alambrado, parrilla en el fondo, sala de maquinas/galpón. Zona con todos los servicios",
-                "actual": "10 x 30",
                 "expected": ""
             },
             {
@@ -1081,14 +1061,29 @@
                 "expected": ""
             },
             {
-                "context": "Lote en San Justo Centro, zona Comercial / Residencial. Posee mejoras: Quincho 50 m2 con parrilla y cocina . Pileta de 4 x 8 aprox. con bomba y filtro y parque  Zonificacion: C1 FOT: 3 - FOS 0.60 - Densidad: 900 Hab.  Medidas Lote: 10 x 33.70 Superficie Total: 337 m2  VALOR DE VENTA: u$s 350.000.  Honorarios por Asesoramiento: 3% + IVA Gastos por Diligenciamiento e Informes: 1% + IVA  ",
-                "actual": "10 x 33.70",
-                "expected": ""
+                "context": "Lote en venta ubicado en la calle 71 entre 22 y 23, Casco Urbano, La Plata.-  EXCELENTE LOTE 11X30 UR1 CON LOZA CONSTRUIDA  VENDO LOTE zonificado U/R1, medidas 11x30, ubicado en barrio residencial próximo a avenidas 19, 25 y 72. Posee loza de 1º piso construida, superficie construida 141 m2 (11x13), con posibilidad de expandir a 2º piso y/o expandir la superficie de forma horizontal. Servicios todos. Orientado al sur.  Superficie total de lote 330m2. Posee portón metálico de ingreso.  Ideal vivienda multifamiliar.-  Permuta por departamento 2 dormitorios (Zonas parque san Martin, plaza Malvinas, aledaños)  Servicios: Cloacas, Gas",
+                "actual": "",
+                "expected": "11 x 30"
+            },
+            {
+                "context": "Vendo lote de 12x49 en barrio cerrado Aires de Arana. El mismo es el tercer lote desde ingreso del predio. Nivelado. Posee bomba de agua. Bases de 90m2 para vivienda familiar. El predio tiene portón automatizado con apertura tanto por control remoto como por app desde el celular. Cámaras de seguridad. Calle interna iluminada. Se encuentra en una zona muy tranquila, próximo a la Av 137 a tan solo 20min del centro de la ciudad de La Plata. Posee escritura indivisa(próximo a escritura definitiva). Escucho Oferta Razonable",
+                "actual": "",
+                "expected": "12 x 49"
+            },
+            {
+                "context": "Lotes en calle Rio Reconquista, entre calles Atuel y Matanza, en Marcos Paz, provincia de Buenos Aires. Estos terrenos se encuentran en una zona privilegiada, rodeados de naturaleza y tranquilidad, pero a su vez cercanos a importantes vías de acceso y servicios.  El lote número 20 cuenta con una superficie total de 3550 m2, con medidas de 35.5 m. x 100 m., Mientras que el lote número 21 también tiene una superficie total de 3550 m2 y medidas de 35.5 m. x 100 m. Este último lote cuenta además con una hermosa cabaña de madera, ideal para disfrutar de momentos de descanso y relax en contacto con la naturaleza. ",
+                "actual": "",
+                "expected": "35.5 x 100. 35.50x 100"
             },
             {
                 "context": "Venta de 2 Lotes linderos de 10 x 45,75 cada uno, total de 20 x 45,75, con Pileta de 7 mts x 3,20 mts y Quincho (abierto) con contrapiso de 4mts x 7mts con parrilla y baño. en Ciudad Nueva, Nueve de Julio  Medida: Frente : 20 Medida: Fondo : 45.75  (FAE-FAE-585)",
                 "actual": "7 x 3.20",
-                "expected": ""
+                "expected": "20 x 45.75"
+            },
+            {
+                "context": "LOTE EN VENTA EN MASCHWITZ CENTRO - MAROTO PROPIEDADES - El inmueble consta de tres lotes de terreno de 433 m cada uno  es decir 8,66x 50 cada uno con frente a la calle Entre Rios.  Tiene ademas un deposito techado impecable de 700 m2 cubiertyos aproximados Ideal para inversores , contrauctores o desarrolladores - se puede comprar lotes contiguos.        .",
+                "actual": "",
+                "expected": "8.66 x 50. 8.66 x 50. 8.66 x 50"
             },
             {
                 "context": "Lote en City Bell, con construccion de 11,44 x 50, excelente zona entre caminos, todos los servicios",
@@ -1096,39 +1091,19 @@
                 "expected": ""
             },
             {
-                "context": "Lote en Venta en Maschwitz Club con mejora de pileta!! Medidas de 11 x 30.- No dude en consultar.   El emprendimiento fue fundado en 1969, fue el primero en instalarse. ",
-                "actual": "11 x 30",
-                "expected": ""
+                "context": "Lote con construcción mixta en venta Frente 8.66 mt Contrafrente 8.91 mt Lateral 11.68 mt Lateral 13.76 mt ",
+                "actual": "",
+                "expected": "8.66 x 8.61 x 11.68 x 13.76"
             },
             {
-                "context": "CASO DIFÍCIL. Excelente lote de terreno de 12,00 m x 16,84 m , en la zona comercial de Virreyes. Actualmente con construccion de 353 m2, distibuidos en 2 locales y 3 departamentos. FOS : 0,6 FOT : 3 Zonificación: C2AU1   Alt. Max: 14,50m.  Dens: 900 ha/Ha",
-                "actual": "12.00 x 16.84",
-                "expected": ""
+                "context": "Terreno con quincho. Acepta permuta más dinero, 50% local comercial zona sur y 50% dolar billete. Hermoso terreno de 50 de ancho por 100 metros de largo haciendo un total de 5000 mts,  Cuenta con   quincho de troncos, techo de paja de 70 mts, la distribución del mismo es, cocina con mesada, , baño, ambos con termo eléctrico, tiene luz en todos los ambientes con varias tomas con conexión a bluetooth , dormitorio, comedor amplio. En la propiedad tenemos una construcción con cimientos y vigas con algunas paredes, instalación de electricidad hasta la mitad del terreno, posee trifásica, Pileta de lona de 7 metros de diámetro, 1.20 de alto ",
+                "actual": "",
+                "expected": "50 x 100"
             },
             {
-                "context": "Lote de terreno en PH de 10 x 40 con construccion a terminar",
-                "actual": "10 x 40",
-                "expected": ""
-            },
-            {
-                "context": "528 entre 139 y 140. Lote de Terreno regular de 300m2 (10 x 30) con construcción de material de 40m2 aproximadamente. El lote se ubica sobre calle de pavimento y cuenta con todos los servicios.",
-                "actual": "10 x 30",
-                "expected": ""
-            },
-            {
-                "context": "Lote en Venta, con construcción, de 10 x 30 metros.",
-                "actual": "10 x 30",
-                "expected": ""
-            },
-            {
-                "context": "Lote en M. Romero, con Galpón de 10 x 20, todos los servicios",
-                "actual": "10 x 20",
-                "expected": ""
-            },
-            {
-                "context": "Lote en Venta, con quincho y pileta, de 10 x 60 metros.",
-                "actual": "10 x 60",
-                "expected": ""
+                "context": "Lote de 11 metros de frente por 53.50, en excelente ubicación en Gonnet, con quincho cerrado, con cocina y baño, galpón para herramientas y caniles, totalmente parquizado.  ",
+                "actual": "",
+                "expected": "11 x 53.50"
             },
             {
                 "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2sin mejoras al frente portón de reja  Lote 1 de 191M2esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex  Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
@@ -1136,26 +1111,21 @@
                 "expected": ""
             },
             {
-                "context": "Loteo en venta,sobre las calle 56 a 58 y 163 a 165, 74 lotes disponible,. Con escritura y APTO PROCREAR. Los lotes se encuentran ubicados en una zona con creciente urbanización, a dos cuadras de la avenida 60 y a unos 10 minutos del centro de La Plata. Lotes linderos con construcciones nuevas y en proceso. Calles abiertas, con mejorado, alumbrado y tendido eléctrico. También disponibles lotes de 12 x 26 m2 .",
-                "actual": "12 x 26",
-                "expected": ""
-            },
-            {
-                "context": "Cantisano propiedades vende lote de 16 x 40!!! excelente zona nueva!! con la construcción de nuevas casas!!",
-                "actual": "16 x 40",
-                "expected": ""
+                "context": "XINTEL(SAC-SAC-5788) Lote en Trenque Lauquen, Trenque Lauquen   Loteo Don Felipe , con el paso de los años este loteo se volvio el de mas rapido crecimiento de nuestra ciudad, cuenta con un bellísimo entorno, zona alta de buen agua , con construcciones unifamiliares de buen porte . La parcela en venta posee un frente de 20 mts con una profunidad de 40 mts.  Ideal para el desarrollo  de una vivienda permanente o casa tipo quinta de fin de semana. Se le realizo la obra de gas que pasa por su frente . ",
+                "actual": "",
+                "expected": "20 x 40"
             }
         ]
     },
     {
         "name": "esquina",
-        "tp": 26,
-        "fp": 14,
+        "tp": 28,
+        "fp": 12,
         "fn": 0,
         "tn": 280,
-        "precision": 0.65,
+        "precision": 0.7,
         "recall": 1.0,
-        "f1": 0.787878787878788,
+        "f1": 0.8235294117647058,
         "error": [
             {
                 "context": "122 300 USD 80.000 Venta en La Plata, Buenos Aires Terreno 500 m2 Total. 10 mts Frente y 50 mts Fondo, Lote 500 m2, sobre avenida comercial Venta de Lote en Bº Hipódromo, La Plata lote de 10 x 50 mts. (500 m2) sobre avenida 122 próxima a Av. 38 cuenta con francos accesos al centro de la ciudad a la ciudad de Ensenada  Punta Lara y a la Autopista La Plata  Bs. As. ideal emprendimiento comercial sobre avenida 122 próximo a la esquina de avenida 38 estado a refaccionar ZONIFICACIÓN U/C3 (AREA URBANA/ Áreas de promoción y Corredores de Acceso Principal y Complementaria) apto para desarrollo constructivos o comerciales ya que se permiten construir hasta 6 Niveles Fos 0.6/ Fot Res. 2 Fot Com. 2.4/ Den Res. 800 Den Com. 1.600/ Premios 30% en FOT y DEN",
@@ -1213,17 +1183,7 @@
                 "expected": ""
             },
             {
-                "context": "Excelente Lote sobre esquina en Zona residencial de Villa Elisa. Ideal entorno natural arbolado a min de Autopista y/o La Plata. Imperdible!!!. Consulte más detalles. Caracterisiticas principales. Superficie descubierta: 634 m2. 21 x 34 mts aprox. Superficie semicubierta: 80 m2. Obra iniciada c/plataforma terminada. Frente: Sobre calle 23 - Lote Totalmente Arbolado. • Lote en Esquina de 714 mts2. • Perforación y Bomba de agua instalada. • Tendido Eléctrico - Cable e internet. • LOTE ENTRE CAMINOS. • Lote c/una Construcción iniciada para Vivienda de 1 o 2 plantas (80 mts2 en PB aprox. • CONTADO - ESCRITURA DIRECTA.",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2sin mejoras al frente portón de reja  Lote 1 de 191M2esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex  Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "LOTE EN ESCOBAR, ZONA EN CRECIMIENTO! -Excelente esquina en una de las principales arterias de Escobar muy conocida y transitada por ser acceso a la Fiesta Nacional de la Flor. Zona recientemente  loteada El lote se encuentra sobre la calle principal en esquina de calle asfaltada Barrio en crecimiento que cuenta con supermercado, comercios, medios de transporte, colegios. Linda con la construcción de futuros locales. - El barrio cuenta con luz, gas, agua corriente y cloacas. SE ESCUCHAN OFERTAS! Guallini & Peifer propiedades Valeria Guallini matricula CMCPSI 5796 Delia Peifer matricula CMCPSI 6590",
                 "actual": true,
                 "expected": ""
             }
@@ -1233,11 +1193,11 @@
         "name": "barrio",
         "tp": 5,
         "fp": 59,
-        "fn": 38,
-        "tn": 218,
+        "fn": 42,
+        "tn": 214,
         "precision": 0.078125,
-        "recall": 0.11627906976744186,
-        "f1": 0.09345794392523366,
+        "recall": 0.10638297872340426,
+        "f1": 0.0900900900900901,
         "error": [
             {
                 "context": "Venta de Lote en barrio santa Isabel Highland Park , Mar del Plata . Ponemos a la venta 4 lotes de 20 x 47 metros cada uno, en  trámite de escrituración por usucapión, ubicados en la fracción 1 sobre la calle 749 asfaltada entre las calles 116 y 118, en barrio Highland park, pegado a golf. Marayui Country Club lotes a la venta, sobre la calle asfaltada 749 fracción 1, lotes 2 lote  3 lote  4 y lote 5. cada uno de 20 por 47 metros.  los lotes están judicializados por tramite de usucapión, y se ha hecho cesión de derechos por escribanía, y se hará cesión de derechos y posesión al comprador en escribanía.  tenemos toda la información pertinente de los lotes citados, se entrega con impuestos de Arba y municipal al día de la transferencia, los impuestos pagados son de Arba y municipal.",
@@ -1723,6 +1683,26 @@
                 "context": "Se vende lote en gran zona. Zona de countrys (Grand Bell, Los Ceibos, Country Club de Estudiantes). 10 mts de frente x 30 mts de fondo. 300 mt2 totales. Tiene paredón al frente, alambrado, parrilla en el fondo, sala de maquinas/galpón. Zona con todos los servicios",
                 "actual": "Country Club de Estudiantes",
                 "expected": ""
+            },
+            {
+                "context": "Excelente Lote sobre esquina en Zona residencial de Villa Elisa. Ideal entorno natural arbolado a min de Autopista y/o La Plata. Imperdible!!!. Consulte más detalles. Caracterisiticas principales. Superficie descubierta: 634 m2. 21 x 34 mts aprox. Superficie semicubierta: 80 m2. Obra iniciada c/plataforma terminada. Frente: Sobre calle 23 - Lote Totalmente Arbolado. • Lote en Esquina de 714 mts2. • Perforación y Bomba de agua instalada. • Tendido Eléctrico - Cable e internet. • LOTE ENTRE CAMINOS. • Lote c/una Construcción iniciada para Vivienda de 1 o 2 plantas (80 mts2 en PB aprox. • CONTADO - ESCRITURA DIRECTA.",
+                "actual": "",
+                "expected": "Villa Elisa"
+            },
+            {
+                "context": "Venta de Lote en Villa Elisa entre caminos, a una cuadra de Avenida Arana. Ubicado en calle 420, entre 14 y 14 bis, lote de 10 de frente por 41.80mtrs de fondo, a una cuadra de Avenida Arana y entre caminos Centenario y Belgrano con rápida salida a Autopista La Plata-Buenos Aires. Posee bases de construcción. POSIBLE PERMUTA POR VEHICULO.",
+                "actual": "",
+                "expected": "Villa Elisa"
+            },
+            {
+                "context": "Vendo lote de 12x49 en barrio cerrado Aires de Arana. El mismo es el tercer lote desde ingreso del predio. Nivelado. Posee bomba de agua. Bases de 90m2 para vivienda familiar. El predio tiene portón automatizado con apertura tanto por control remoto como por app desde el celular. Cámaras de seguridad. Calle interna iluminada. Se encuentra en una zona muy tranquila, próximo a la Av 137 a tan solo 20min del centro de la ciudad de La Plata. Posee escritura indivisa(próximo a escritura definitiva). Escucho Oferta Razonable",
+                "actual": "",
+                "expected": "Aires de Arena"
+            },
+            {
+                "context": "Lote de 11 metros de frente por 53.50, en excelente ubicación en Gonnet, con quincho cerrado, con cocina y baño, galpón para herramientas y caniles, totalmente parquizado.  ",
+                "actual": "",
+                "expected": "Gonnet"
             }
         ]
     },
@@ -1805,13 +1785,13 @@
     },
     {
         "name": "pileta",
-        "tp": 25,
-        "fp": 19,
+        "tp": 31,
+        "fp": 13,
         "fn": 0,
         "tn": 276,
-        "precision": 0.5681818181818182,
+        "precision": 0.7045454545454546,
         "recall": 1.0,
-        "f1": 0.7246376811594203,
+        "f1": 0.8266666666666667,
         "error": [
             {
                 "context": "Lote CHACRAS DE LA RESERVA CARDALES A LA LAGUNA. LOTE EN VENTA DE 1.100 M2 EN CHACRAS DE LA RESERVA. Lote con hermosa arboleda. Vistas abiertas a la laguna y al campo. BARRIO ubicado a la altura del km 61 de Panamericana Ramal Escobar por Ruta 4. dos km para el lado de Los Cardales Una zona de grandes y extensas áreas verdes a muy pocos minutos del casco urbano de Los Cardales. el barrio cuenta con un espacio de 60.000 m2 para el desarrollo de un sector social y area verde de esparcimiento, Club House Cancha de fútbol y Tenis Pileta de Natación Sendas con vista a los espejos de agua. Espectacular paisaje con  quebradas. Seguridad privada las 24hs. SUM con parrillas juegos para niños. Sendero Ecológico",
@@ -1877,48 +1857,18 @@
                 "context": "Excelente casa de 288 mts2 cubiertos emplazada sobre 3 terrenos con un total de 1948 mts2 ubicada en un\r\nbarrio semicerrado perimetrado que se encuentra en muy linda zona de Escobar con excelente acceso y\r\ncercano al centro. La misma esta desarrollada completamente en una planta y cuenta con 4 dormitorios (uno de\r\nellos en suite con baÃ±o y vestidor), amplio living, comedor, cocina, lavaderos y tres baÃ±os mas y un toilette.\r\nTambiÃ©n cuenta con galeria, cochera, sector de parrilla y una mini pileta. La casa esta revestida de ladrillos a\r\nla vista con techo de teja francesas, pisos de ceramico, calefacciÃ³n por losa radiante, splits frio/calor, aberturas\r\nde madera de primera calidad y riego por aspersiÃ³n. El barrio cuenta con un sector de espacio comÃºn donde\r\nhay una gran pileta de nataciÃ³n y una cancha de paddle.",
                 "actual": true,
                 "expected": ""
-            },
-            {
-                "context": "Terreno con quincho en 25 y 510. 400 mts2. El frente de 10 metros, cuenta con paredón y portón. Al ingresar se disfruta de una pileta de 3  x 7 mts con cerco perimetral. Quincho de 30 mts2.  Cuenta con cocina.  Espacio de comedor. Una habitación. Baño en el exterior. Espacio semi cubierto",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote en San Justo Centro, zona Comercial / Residencial. Posee mejoras: Quincho 50 m2 con parrilla y cocina . Pileta de 4 x 8 aprox. con bomba y filtro y parque  Zonificacion: C1 FOT: 3 - FOS 0.60 - Densidad: 900 Hab.  Medidas Lote: 10 x 33.70 Superficie Total: 337 m2  VALOR DE VENTA: u$s 350.000.  Honorarios por Asesoramiento: 3% + IVA Gastos por Diligenciamiento e Informes: 1% + IVA  ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Venta de 2 Lotes linderos de 10 x 45,75 cada uno, total de 20 x 45,75, con Pileta de 7 mts x 3,20 mts y Quincho (abierto) con contrapiso de 4mts x 7mts con parrilla y baño. en Ciudad Nueva, Nueve de Julio  Medida: Frente : 20 Medida: Fondo : 45.75  (FAE-FAE-585)",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote en Venta en Maschwitz Club con mejora de pileta!! Medidas de 11 x 30.- No dude en consultar.   El emprendimiento fue fundado en 1969, fue el primero en instalarse. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote en Venta, con quincho y pileta, de 10 x 60 metros.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Terreno con quincho. Acepta permuta más dinero, 50% local comercial zona sur y 50% dolar billete. Hermoso terreno de 50 de ancho por 100 metros de largo haciendo un total de 5000 mts,  Cuenta con   quincho de troncos, techo de paja de 70 mts, la distribución del mismo es, cocina con mesada, , baño, ambos con termo eléctrico, tiene luz en todos los ambientes con varias tomas con conexión a bluetooth , dormitorio, comedor amplio. En la propiedad tenemos una construcción con cimientos y vigas con algunas paredes, instalación de electricidad hasta la mitad del terreno, posee trifásica, Pileta de lona de 7 metros de diámetro, 1.20 de alto ",
-                "actual": true,
-                "expected": ""
             }
         ]
     },
     {
         "name": "urb_cerrada",
-        "tp": 21,
-        "fp": 18,
+        "tp": 22,
+        "fp": 17,
         "fn": 3,
         "tn": 278,
-        "precision": 0.5384615384615384,
-        "recall": 0.875,
-        "f1": 0.6666666666666667,
+        "precision": 0.5641025641025641,
+        "recall": 0.88,
+        "f1": 0.6875,
         "error": [
             {
                 "context": "Venta de Lote en barrio santa Isabel Highland Park , Mar del Plata . Ponemos a la venta 4 lotes de 20 x 47 metros cada uno, en  trámite de escrituración por usucapión, ubicados en la fracción 1 sobre la calle 749 asfaltada entre las calles 116 y 118, en barrio Highland park, pegado a golf. Marayui Country Club lotes a la venta, sobre la calle asfaltada 749 fracción 1, lotes 2 lote  3 lote  4 y lote 5. cada uno de 20 por 47 metros.  los lotes están judicializados por tramite de usucapión, y se ha hecho cesión de derechos por escribanía, y se hará cesión de derechos y posesión al comprador en escribanía.  tenemos toda la información pertinente de los lotes citados, se entrega con impuestos de Arba y municipal al día de la transferencia, los impuestos pagados son de Arba y municipal.",
@@ -2017,11 +1967,6 @@
             },
             {
                 "context": "Se vende lote en gran zona. Zona de countrys (Grand Bell, Los Ceibos, Country Club de Estudiantes). 10 mts de frente x 30 mts de fondo. 300 mt2 totales. Tiene paredón al frente, alambrado, parrilla en el fondo, sala de maquinas/galpón. Zona con todos los servicios",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Vendo lote de 12x49 en barrio cerrado Aires de Arana. El mismo es el tercer lote desde ingreso del predio. Nivelado. Posee bomba de agua. Bases de 90m2 para vivienda familiar. El predio tiene portón automatizado con apertura tanto por control remoto como por app desde el celular. Cámaras de seguridad. Calle interna iluminada. Se encuentra en una zona muy tranquila, próximo a la Av 137 a tan solo 20min del centro de la ciudad de La Plata. Posee escritura indivisa(próximo a escritura definitiva). Escucho Oferta Razonable",
                 "actual": true,
                 "expected": ""
             }
@@ -2293,13 +2238,13 @@
     },
     {
         "name": "es_multioferta",
-        "tp": 10,
-        "fp": 50,
-        "fn": 0,
-        "tn": 260,
-        "precision": 0.16666666666666666,
-        "recall": 1.0,
-        "f1": 0.2857142857142857,
+        "tp": 13,
+        "fp": 47,
+        "fn": 1,
+        "tn": 259,
+        "precision": 0.21666666666666667,
+        "recall": 0.9285714285714286,
+        "f1": 0.35135135135135137,
         "error": [
             {
                 "context": "*VENDO LOTE barrio Los Chañares, Tanti, Punilla lotes de 700m2 (20x35) Derechos Posesorios de mas de 50 años. Listo para Usucapión. *SERVICIOS DE AGUA Y LUZ A CONECTAR.\r\n*Video/Fotos: https://youtu.be/J8vYzQvuZU / https://nicolashnos.com/terreno-venta-tanti-punilla/5718348\r\n*Geolocalización: https://goo.gl/maps/XfYgFekUqMj3zmBm8",
@@ -2537,31 +2482,21 @@
                 "expected": ""
             },
             {
-                "context": "Lotes en calle Rio Reconquista, entre calles Atuel y Matanza, en Marcos Paz, provincia de Buenos Aires. Estos terrenos se encuentran en una zona privilegiada, rodeados de naturaleza y tranquilidad, pero a su vez cercanos a importantes vías de acceso y servicios.  El lote número 20 cuenta con una superficie total de 3550 m2, con medidas de 35.5 m. x 100 m., Mientras que el lote número 21 también tiene una superficie total de 3550 m2 y medidas de 35.5 m. x 100 m. Este último lote cuenta además con una hermosa cabaña de madera, ideal para disfrutar de momentos de descanso y relax en contacto con la naturaleza. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "LOTE EN VENTA EN MASCHWITZ CENTRO - MAROTO PROPIEDADES - El inmueble consta de tres lotes de terreno de 433 m cada uno  es decir 8,66x 50 cada uno con frente a la calle Entre Rios.  Tiene ademas un deposito techado impecable de 700 m2 cubiertyos aproximados Ideal para inversores , contrauctores o desarrolladores - se puede comprar lotes contiguos.        .",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Loteo en venta,sobre las calle 56 a 58 y 163 a 165, 74 lotes disponible,. Con escritura y APTO PROCREAR. Los lotes se encuentran ubicados en una zona con creciente urbanización, a dos cuadras de la avenida 60 y a unos 10 minutos del centro de La Plata. Lotes linderos con construcciones nuevas y en proceso. Calles abiertas, con mejorado, alumbrado y tendido eléctrico. También disponibles lotes de 12 x 26 m2 .",
-                "actual": true,
-                "expected": ""
+                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2sin mejoras al frente portón de reja  Lote 1 de 191M2esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex  Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
+                "actual": "",
+                "expected": true
             }
         ]
     },
     {
         "name": "es_monetizable",
-        "tp": 86,
-        "fp": 39,
+        "tp": 85,
+        "fp": 40,
         "fn": 20,
         "tn": 175,
-        "precision": 0.688,
-        "recall": 0.8113207547169812,
-        "f1": 0.7445887445887446,
+        "precision": 0.68,
+        "recall": 0.8095238095238095,
+        "f1": 0.7391304347826089,
         "error": [
             {
                 "context": "Fraccion en venta en la localidad de Pavón, partido de Exaltación de La Cruz, sin mejoras. Escritura de derechos posesorios.",
@@ -2854,6 +2789,11 @@
                 "expected": ""
             },
             {
+                "context": "Cantisano propiedades vende lote de 16 x 40!!! excelente zona nueva!! con la construcción de nuevas casas!!",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "XINTEL(SAC-SAC-5788) Lote en Trenque Lauquen, Trenque Lauquen   Loteo Don Felipe , con el paso de los años este loteo se volvio el de mas rapido crecimiento de nuestra ciudad, cuenta con un bellísimo entorno, zona alta de buen agua , con construcciones unifamiliares de buen porte . La parcela en venta posee un frente de 20 mts con una profunidad de 40 mts.  Ideal para el desarrollo  de una vivienda permanente o casa tipo quinta de fin de semana. Se le realizo la obra de gas que pasa por su frente . ",
                 "actual": true,
                 "expected": ""
@@ -2862,13 +2802,13 @@
     },
     {
         "name": "loteo_ph",
-        "tp": 18,
-        "fp": 1,
+        "tp": 19,
+        "fp": 0,
         "fn": 9,
         "tn": 292,
-        "precision": 0.9473684210526315,
-        "recall": 0.6666666666666666,
-        "f1": 0.782608695652174,
+        "precision": 1.0,
+        "recall": 0.6785714285714286,
+        "f1": 0.8085106382978724,
         "error": [
             {
                 "context": "Frente triple a Rocha de 28.39 mts con fondo de 34.77 mts. Frente a Mazza de 12.31 mts con fondo de 50.50 mts. UF 1 en PH 3B: 584 mts. UF 2 en lote propio 366 mts. UF 3 en lote propio 674 mts. Sumatoria mts de tierra 1624 mts. Zonificación: Ex R6 con FOT 2.4 y FOS 0.6.",
@@ -2914,11 +2854,6 @@
                 "context": "Lote de 244 mt2 en Barrio Privado Santa Elena (en PH), desarrollado en 1,2 hectáreas. A solo 10 minutos del centro de la ciudad de La Plata. Acceso principal por asfalto por calle 609 y 5 bis. Portón de ingreso vehicular. El emprendimiento está compuesto por 35 lotes unifamiliares y 10 locales comerciales. Plano Municipal y de Propiedad Horizontal probados. Servicios: Luz - Agua. La obra del servicio de gas será abonada por los compradores de las unidades y el comienzo de obra dependerá de la empresa prestadora. Escrituración y posesión inmediatas. ",
                 "actual": "",
                 "expected": true
-            },
-            {
-                "context": "Lote de terreno en PH de 10 x 40 con construccion a terminar",
-                "actual": true,
-                "expected": ""
             }
         ]
     }
