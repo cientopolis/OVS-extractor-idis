@@ -508,7 +508,7 @@
             },
             {
                 "context": " Terreno en venta - 200 mts2 - La Plata Terreno en venta ubicado sobre calle 19 entre 75 y 76 (Altos de San Lorenzo, La Plata, Buenos Aires) Con disposición frente y orientación norte.De medidas regulares, cuenta con 10mts de frente por 20mts de fondo, contabilizando 200mts2 totales de superficie, de los cuales 40mts2 pertenecen a una casa a demoler o refaccionar de dos dormitorios, con cocina, living comedor y un baño. Con acceso por calle de asfalto, cuenta con los servicios de electricidad, agua corriente, gas natural y cloacas disponibles en el lugar.índices de prefactibilidad: FOS 0,6 ALTURA REFERENCIA EN NIVELES 3 FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2 DENSIDAD COMERCIAL 300 DENSIDAD RESIDENCIAL 300 RETIROS Y REQUISITOS Laterales: Se permite solo un retiro respecto los ejes medianeros. COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2 PARCELAMIENTO MINIMO FRENTE 15 PARCELAMIENTO MINIMO SUPERFICIE 375 RELACION FTE / FDO 1/3",
-                "actual": "FOT RESIDENCIAL 1,21,2 FOTFOT COMERCIAL 1,2",
+                "actual": "FOT RESIDENCIAL 1,2FOT COMERCIAL 1,21,2 FOT",
                 "expected": "FOT comercial: 1.2 FOT residencial: 1.2"
             },
             {
@@ -752,7 +752,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "17.32 x 26;8.66 x 26",
+                "actual": "8.66 x 26;17.32 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -837,7 +837,7 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "50 x 25.70;14.80 x 50 x 25.70",
+                "actual": "14.80 x 50;50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
@@ -942,7 +942,7 @@
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
+                "actual": "32.45 x 73.63;32.45 x 73.63;32.45 x 73",
                 "expected": ""
             },
             {
@@ -1835,24 +1835,14 @@
     },
     {
         "name": "posesion",
-        "tp": 13,
+        "tp": 15,
         "fp": 1,
-        "fn": 2,
+        "fn": 0,
         "tn": 275,
-        "precision": 0.9285714285714286,
-        "recall": 0.8666666666666667,
-        "f1": 0.896551724137931,
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1": 0.967741935483871,
         "error": [
-            {
-                "context": "Venta de Lote en Calle 600 y 18 Altos del Plata, Villa Elvira, La Plata. Medidas de 18 x 31. Lote de 558 m2 Totales. Servicios de Luz y Agua corriente. Calle de tierra. El lote se encuentra cerrado un Cerco premoldeado a la altura de 2 metros. También hay una construcción con el proyecto de tener 100 metros cubiertos de superficie. Precio U$D25.000, Se Vende por Boleto con Posesión próximo a escriturar la parte indivisa.",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "venta departamento en ph.-en complejo calle santa fe 735,bella vista.-pdo de san miguel esta unidad se encuentra en contrafrente Unidad desarrollada en una planta techo loza,preparado para construccion en futuro en. compuesta por cocina comedor con mobiliario.- dormitorio sin placard baÃ±o con tres sanitarios cochera descubierta total superficie 52,87m SERVICIOS_GAS ENVASADO.-LUZ.-AYSA 300.-MUNICIPAL 450-SE DIVIDE PROPORCIONAL DE GASTO DE LUZ DE BOMBA DE AGUA.- valor de venta u$s 70.000- apto credito bancario.- puede financiar: 70% al boleto con posesión y saldo 30% en cuotas a convenir.-",
-                "actual": "",
-                "expected": true
-            },
             {
                 "context": "Increíble lote de 14 m x 47.5 m. Excelente acceso a 150 metros de Ruta 2. El lote está ubicado sobre calle 406 Bis y Calle 202. Zona de casas quinta. Soy particular venta directa de dueño. Cuento con la escritura a mi nombre no es posesión ni usucapion el lote cuenta con servicio de energía eléctrica agua por perforación gas envasado. Escuelas comercios de cercanía muy lindo entorno Ideal para casa quinta o vivienda permanente",
                 "actual": true,
