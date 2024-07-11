@@ -692,7 +692,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "8.66 x 26;17.32 x 26",
+                "actual": "17.32 x 26;8.66 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -777,7 +777,7 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50 x 25.70",
+                "actual": "14.80 x 50 x 25.70;50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
@@ -1931,15 +1931,20 @@
     {
         "name": "es_monetizable",
         "tp": 84,
-        "fp": 18,
+        "fp": 19,
         "fn": 14,
-        "tn": 146,
-        "precision": 0.8235294117647058,
+        "tn": 145,
+        "precision": 0.8155339805825242,
         "recall": 0.8571428571428571,
-        "f1": 0.84,
+        "f1": 0.835820895522388,
         "error": [
             {
                 "context": "Ubicados sobre la Calle De Luca entre calle Alsina y Av. San Martín (arteria principal de acceso). A sólo 350 metros de la Ruta Provincial N° 6. Localidad de Los Cardales, Partido de Exaltación de la Cruz, Provincia de Buenos Aires. Características: Se trata de dos terrenos ubicados en el casco urbano de Los Cardales. Se encuentran dentro de la Zona Residencial Comercial de Densidad Media Baja (RCmb) acorde al Código de Planeamiento de Exaltación de la Cruz en la cuál se admite la edificación de departamentos y locales comerciales. Con indicadores de ocupación de: FOS: O.6 y FOT: 1.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Hermoso lote de 1098 m2, ubicado en una excelente zona del Barrio Las Lomas de San Isidro. Av. Fleming 2800. Próximo al hipodromo de San Isidro. FOS 0.4: 439.2 m2. FOT 0.8: 878.4 m2. Uso exclusivo vivienda Unifamiliar!",
                 "actual": true,
                 "expected": ""
             },
