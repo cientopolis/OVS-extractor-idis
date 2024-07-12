@@ -6,7 +6,7 @@
 
 #los uso con LOWER
 #calleSinonimos2 = ["avs", "av", "calle", "calles", "ruta", "rutas", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dgs", "diag", "diags"]
-CALLE_SINONIMOS = ["Bv.", "avs", "avs.", "av", "av.", "Av.", "Avs.", "calle", "calles", "ruta", "rutas", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dg.", "Dg.", "dgs", "dgs.", "Dgs.", "Diag.", "diag", "diasg.", "diags", "diags"]#tal vez dirá: "calle 5 entre calles 4 y 7"
+CALLE_SINONIMOS = ["bv.", "bv", "avs", "avs.", "av", "av.", "calle", "calles", "ruta", "rutas", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dg.", "dgs", "dgs.","diag", "diasg.", "diags", "diags"]#tal vez dirá: "calle 5 entre calles 4 y 7"
 MANZANA_SINONIMOS = ["manzana", "mz", "mz.", "mza", "mza."]
 NUMERO_SINONIMOS = ["numero", "numeros", "nro", "nros", "número", "números", "°", "n", "n°", "nº", "nº", "n°", "nro.", "ns", "n°s", "nºs", "nºs", "n°s", "nros."]
 ANTE_NUMERO = ["km", "al", "altura", "altura:", "alt", "alt.", "kilometro", "km.", "Km."]
@@ -22,7 +22,7 @@ SOBRE_SINONIMOS = ["en"]
 NOMBRE_LOTE = ["NUM", "PROPN"]
 MEDIDAS = ["metro", "metros", "m", "ms", "mt", "mts", "m2"] 
 CONECTORES_MEDIDAS = ["x", "por"]
-CALLE_SEGMENTO = ["bis"]  + LETRA_MAYUSCULA
+CALLE_SEGMENTO = ["bis", "Bis", "BIS"]  + LETRA_MAYUSCULA
 
 def dir_nro():
     return  list([ #direcciones platenses = numericas
@@ -32,7 +32,10 @@ def dir_nro():
                     # calle 7 bis al 400
                     # calle montevideo n° 412
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"LOWER": {"IN": ["PROPN", "NUM"]}, "OP":"+"},
+                    {"POS": "PUNCT", "OP":"?"},
+                    {"POS": "PROPN", "OP":"?"},
+                    {"POS": "PUNCT", "OP":"?"},
+                    {"POS": "PROPN", "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
                     {"LIKE_NUM":True},
@@ -41,27 +44,30 @@ def dir_nro():
                     # calle 9 de julio 412
                     # Av. de los quilmes n° 123
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": {"IN": ["NUM", "PROPN", "ADP"]}, "OP":"+"},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"*"},
+                    {"POS": "PUNCT", "OP":"?"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"+"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
                     {"LIKE_NUM":True},
                 ],
                 [
                     # moreno n° 123
                     # moreno al 123
+                    # Av. De los Quilmes N° X
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
-                    {"POS": "PROPN", "OP":"+"},
+                    {"POS": {"IN": ["PROPN", "ADP", "DET"]}, "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
                     {"LIKE_NUM":True},
-                ],[
-                    # 9 n° 123
-                    # 9 al 123
-                    {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
-                    {"POS": "NUM"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
-                    {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
-                    {"LIKE_NUM":True},
-                ],           
+                ],
+                # [
+                #     # 9 n° 123
+                #     # 9 al 123
+                #     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
+                #     {"POS": "NUM"},
+                #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
+                #     {"LIKE_NUM":True},
+                # ],           
             ])
 
 def dir_interseccion():
@@ -71,27 +77,29 @@ def dir_interseccion():
                 # calle moreno n° 1231 y san martin bis
                 [
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": {"IN": ["PROPN", "PUNCT"]}, "OP":"+"},
+                    {"POS": {"IN": ["PROPN", "DET", "ADP"]}, "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
                     {"IS_PUNCT": True, "OP": "?"},
                     {"LIKE_NUM": True, "OP": "?"},
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
-                    {"POS": "PROPN", "OP":"+"},
+                    {"POS": "PROPN", "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
                 ],
                 # moreno n° 1231 y san martin bis
                 [
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
-                    {"POS": {"IN": ["PROPN", "PUNCT"]}, "OP":"+"},
+                    {"POS": "PROPN", "OP":"?"},
+                    {"POS": "PUNCT", "OP":"?"},
+                    {"POS": "PROPN", "OP": "{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS}},
                     {"IS_PUNCT": True, "OP": "?"},
                     {"LIKE_NUM": True, "OP": "?"},
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
-                    {"POS": "PROPN", "OP":"+"},
+                    {"POS": "PROPN", "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
                 ],
                 # calle 7 y 48
@@ -111,33 +119,33 @@ def dir_interseccion():
                 # calle 25 de mayo y 9 de julio
                 [
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": {"IN": ["NUM", "PROPN", "ADP"]}, "OP":"+"},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"*"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"+"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
                     {"IS_PUNCT": True, "OP": "?"},
                     {"LIKE_NUM": True, "OP": "?"},
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
-                    {"POS": {"IN": ["NUM", "PROPN", "ADP"]}, "OP":"+"},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"*"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"+"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
                 ],
                 #calle moreno y 9 de julio
                 [
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": {"IN":["PROPN", "NOUN", "NUM",  "PUNCT"]}},
+                    {"POS": {"IN":["PROPN", "NOUN", "NUM", "PUNCT"]}, "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
                     {"IS_PUNCT": True, "OP": "?"},
                     {"LIKE_NUM": True, "OP": "?"},
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
-                    {"POS": {"IN": ["NUM", "PROPN", "ADP"]}, "OP":"+"},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"*"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"+"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
                 ],
                 # calle 25 de mayo y san martin
                 [
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": {"IN": ["NUM", "PROPN", "ADP"]}, "OP":"+"},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"*"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"+"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
                     {"IS_PUNCT": True, "OP": "?"},
@@ -158,14 +166,17 @@ def dir_entre():
             # calle la hermosura n° 1231, entre calle moreno y san martin bis
             # calle 7 n° 1231, entre calle moreno y san martin bis
             # calle la hermosura n° 1231, entre calle 7 y 8 BIS
-            {"LOWER": {"IN":CALLE_SINONIMOS}}, 
-            {"POS": {"IN": ["PROPN","PUNCT"]}, "OP": "+"}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS},  "OP": "?"}, 
+            {"POS": "PROPN", "OP":"?"},
+            {"POS": "PUNCT", "OP":"?"},
+            {"POS": {"IN": ["DET","PROPN", "ADP"]}, "OP":"{1,3}"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
             {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
             {"IS_PUNCT": True, "OP": "?"},
             {"LIKE_NUM": True, "OP": "?"}, 
             {"IS_PUNCT": True, "OP": "?"},
             {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
             {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "+"}, 
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
@@ -185,30 +196,32 @@ def dir_entre():
             {"LIKE_NUM": True, "OP": "?"}, 
             {"IS_PUNCT": True, "OP": "?"},
             {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "+"}, 
+            {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "{1,3}"}, 
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
             {"LOWER": {"IN": INTERSECCION}}, 
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "+"}, 
+            {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "{1,3}"}, 
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
         ],
         [
              # calle 9 de julio 1231 e/ 25 de mayo Y 3 de febrero
-            {"LOWER": {"IN":CALLE_SINONIMOS}}, 
-            {"POS": {"IN": ["NUM", "PROPN", "ADP"]}, "OP":"+"},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"*"},
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"+"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
             {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
             {"IS_PUNCT": True, "OP": "?"},
             {"LIKE_NUM": True, "OP": "?"}, 
             {"IS_PUNCT": True, "OP": "?"},
             {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["NUM", "PROPN", "ADP"]}, "OP":"+"},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"*"},
+            {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"+"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
             {"LOWER": {"IN": INTERSECCION}}, 
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["NUM", "PROPN", "ADP"]}, "OP":"+"},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"*"},
+            {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"*"},{"POS": "PROPN", "OP":"+"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
         ]
    ]
