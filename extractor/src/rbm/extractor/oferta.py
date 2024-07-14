@@ -99,30 +99,39 @@ class Oferta():
             return ""
         return clean_direccion(max(matches_direccion_todos, key=len))
 
+    def fot_multiple(self, predichos):
+        indicadores_multiplicidad_ocurridos=1
+        for fot_string_predicho in predichos:
+            for indicador_multiplicidad in ["res ", "com", "ind"]:
+                if indicador_multiplicidad in fot_string_predicho.lower():
+                    indicadores_multiplicidad_ocurridos+=1
+        return indicadores_multiplicidad_ocurridos
+    
+    def replace(self, string):
+        for replacement in ["RESIDENCIAL", "res ", "res.", "Res.", "Residencial"]:
+            string = string.replace(replacement, "residencial")
+        
+        for replacement in ["COMERCIAL", "com ", "com.", "Com.", "Comercial"]:
+            string = string.replace(replacement, "comercial")
+        
+        for replacement in ["INDUSTRIAL", "ind.", "indus.", "ind ", "Industrial"]:
+            string = string.replace(replacement, "industrial")
 
+        for replacement in ["Fot", "fot", "f.o.t", "F.O.T", "F.o.t"]:
+            string = string.replace(replacement, "FOT")
+        
+        return string.replace(",",".").replace("/","")
     
     def fot(self, predichos: list):
         predichos = list(set(predichos["fot"]))
-        numeros = self._get_numeros(" ".join(predichos))
-        if len(self._get_numeros((" ".join(predichos)))) == 1:
-            unidad = re.search(r"\b(m2|mts2|mt2)\b", " ".join(predichos))
-            if unidad:
-                return " ".join(set(numeros)) + " " + unidad.group()
-
-            return " ".join(set(numeros))
-        else:
-            if len(predichos) == 2:
-                result = predichos[0] + ". " + predichos[1]
-                result = result.replace("Res.", "residencial:")
-                result = result.replace("Com.", "comercial:")
-                result = result.replace("Fot", "FOT")
-                result = result.replace("fot", "FOT")
-                return result
-            else:
-                result = "".join(predichos).rstrip(".")
-                result = result.replace("Fot", "FOT")
-                result = result.replace("fot", "FOT")
-                return result
+        veces_que_menciona_fot= self.fot_multiple(predichos)
+        if (veces_que_menciona_fot == 1):
+            result= max(predichos, key=len) if predichos else ""
+        else: 
+            predichos= self._reduce_superstrings(predichos)         
+            result= self.replace(". ".join(predichos))
+        return result
+            
 
 
     def irregular(self, predichos: list):
@@ -196,13 +205,10 @@ class Oferta():
         return reduced_dimensions
 
 
-
     def barrio(self, predichos: list):
         return max(predichos["barrio"], key=len) if predichos["barrio"] else ""
         # return re.compile(re.escape("Barrio"), re.IGNORECASE).sub("", mejor_match).strip()
 
-    
-    
     def esquina(self, predichos: list):
         return True if predichos["esquina"] else ""
 

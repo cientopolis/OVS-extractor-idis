@@ -17,5 +17,8 @@ def replace_dashes(text: str):
 def replace_multiple_spaces(text):
     return re.sub(r'\s+', ' ', text) 
 
+def replace_number_commas_by_dots(text):
+    return (re.compile(r'(\d+),(\d+)')).sub(r'\1.\2', text)
+
 def normalize(data: str):
-    return replace_mts(replace_newlines(replace_multiple_spaces(replace_stars(replace_dashes(data)))))
+    return replace_mts(replace_newlines(replace_multiple_spaces(replace_stars(replace_dashes(replace_number_commas_by_dots(data))))))

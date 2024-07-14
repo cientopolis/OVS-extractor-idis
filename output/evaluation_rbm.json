@@ -311,7 +311,7 @@
             },
             {
                 "context": "Lote de 2024 m2, con una superficie cubierta de 1292 m2 y medidas irregulares. Próximo a Av 520.Cuenta de 80,3 mts de frente sobre calle 13 o Cno. Centenario.Zona :U/C4 - Corredores de Acceso principal (ex U/C4b). CARACTERISTICA Corresponde a aquellas configuraciones lineales que combinan usos centrales y servicios vinculados a los accesos a la ciudad. FOS 0,6. ALTURA REFERENCIA EN NIVELES 3. FOT COMERCIAL 1,2. FOT RESIDENCIAL 1,2. DENSIDAD COMERCIAL 300. DENSIDAD RESIDENCIAL 300. RETIROS Y REQUISITOS Laterales: Sobre Cno. Centenario, obligatorio, mínimo 3 mts. de un eje medianero. \"La Presente oferta esta condicionada a la confección del COTI por parte del Propietario (Res.AFIP 2371).\". \"Los metros publicados son aproximados, las medidas exactas surgirán de la escritura traslativa de dominio.\"",
-                "actual": "Av 520.Cuenta de 80,3",
+                "actual": "Av 520.Cuenta de 80.3",
                 "expected": ""
             },
             {
@@ -333,128 +333,38 @@
     },
     {
         "name": "fot",
-        "tp": 38,
-        "fp": 21,
+        "tp": 56,
+        "fp": 3,
         "fn": 2,
         "tn": 258,
-        "precision": 0.6440677966101694,
-        "recall": 0.95,
-        "f1": 0.7676767676767676,
+        "precision": 0.9491525423728814,
+        "recall": 0.9655172413793104,
+        "f1": 0.9572649572649573,
         "error": [
             {
-                "context": "ATENCIÓN CONSTRUCTORAS: Excelente lote de 8.66 de Frente x 35 de largo, ideal inversión para construcción de departamentos en torre, emprendimiento o vivienda, en zona centrica En inmejorable ubicación sobre la calle Sitio de Montevideo entre Salta y Oncativo. posee un FOS de 0.6 y un FOT de 3. CONSULTE OPCIONES. SE ESCUCHAN OFERTAS. SE TOMA PROPIEDAD TERMINADA POR MENOR VALOR.",
-                "actual": "FOT 3 FOT de 3",
-                "expected": "3"
-            },
-            {
-                "context": "Importante lote ubicado en excelente esquina de La Plata, con un superficie total de 1975 m2, con medidas de 32.91 m2 sobre calle 19 y 60.00 sobre calle 36. Zonificación UC/3, con un FOT de 5135 m2. El lote posee un total de 450 m2 edificados.",
-                "actual": "FOT de 5135 FOT de 5135 m2",
-                "expected": "5135 m2"
-            },
-            {
-                "context": "Ubicado en una esquina muy importante de Villa Ballester. Con acceso a varias líneas de colectivos. Frente 22 m, lateral 19.33 m y superficie de 422 m2. Cantidad de pisos a construir PB más 3 pisos. Estudio de factibilidad disponible. fot 3 + 30% en premios. Se escuchan ofertas. Se vende ya!",
-                "actual": "FOT 3 FOT 3 + 30% en premios",
-                "expected": "FOT 3 + 30% en premios"
-            },
-            {
-                "context": "lote en esquina, 10 mts x 35 mts + martillo. 224 m2, fot 3 mas premios, fos 0.6",
-                "actual": "3",
-                "expected": "FOT 3 + premios"
+                "context": "Venta de Lote en Barrio Hipódromo, La Plata. Lote sobre Avenida 38 de 328 m2 superficie, el mismo posee zonificación U/C3 (AREA URBANA/ Áreas de promoción y Corredores de Acceso Principal y Complementaria) apto para desarrollo constructivos o comerciales ya que se permiten construir hasta 6 Niveles (Fos 0.6/ Fot Res. 2; Fot Com. 2.4. Den Res. 800; Den Com. 1.600/ Premios 30% en FOT y DEN.), el mismo cuenta con una casa de 3 dormitorios, cocina comedor, baño y garage, la misma se encuentra a reciclar o demoler. Morfología irregular, medidas 7.54 x 39.82 x 9.43 mts.",
+                "actual": "FOT residencial 2; FOT comercial 2.4",
+                "expected": "FOT comercial: 2.4 FOT residencial: 2"
             },
             {
                 "context": "Se trata de un terreno conformado por tres lotes de 8.66 x 50 mts. Zonificación: R2. Barrio residencial de baja densidad. F.O.S. máximo = 0.60. F.O.T. máximo = 2.2. Densidad neta potencial: 800 hab/ha. Altura máxima: R = h/d = 1.6. Altura máxima basamento: 6 m. Altura mínima interior P.B.: 2.80 m. Altura mínima interior sobre P.B.: 2.60 m",
                 "actual": "",
-                "expected": "2.2"
+                "expected": "F.O.T máximo = 2.2"
             },
             {
                 "context": "59 e/ 1 y 2. Venta importante lote apto desarrollo UC1 de 781 m2. Indicadores de puntos FOS 0.6 Altura en niveles 14. FOT Comercial 3, Residencial 2,5\r\n",
-                "actual": "3",
-                "expected": "FOT comercial 3 FOT residencial 2.5"
-            },
-            {
-                "context": "122 300 USD 80.000 Venta en La Plata, Buenos Aires Terreno 500 m2 Total. 10 mts Frente y 50 mts Fondo, Lote 500 m2, sobre avenida comercial Venta de Lote en Bº Hipódromo, La Plata lote de 10 x 50 mts. (500 m2) sobre avenida 122 próxima a Av. 38 cuenta con francos accesos al centro de la ciudad a la ciudad de Ensenada  Punta Lara y a la Autopista La Plata  Bs. As. ideal emprendimiento comercial sobre avenida 122 próximo a la esquina de avenida 38 estado a refaccionar ZONIFICACIÓN U/C3 (AREA URBANA/ Áreas de promoción y Corredores de Acceso Principal y Complementaria) apto para desarrollo constructivos o comerciales ya que se permiten construir hasta 6 Niveles Fos 0.6/ Fot Res. 2 Fot Com. 2.4/ Den Res. 800 Den Com. 1.600/ Premios 30% en FOT y DEN",
-                "actual": "2",
-                "expected": "FOT comercial 2.4 FOT residencial 2"
-            },
-            {
-                "context": "zona U/C1 area Central residencial. Central caracteristica es el ambito de centralidad donde se promueve preservar las caracteristicas significativas ambientales y culturales se caracteriza con usos institucionales administrativos de alcance regional comerciales y residenciales se promueve una elevada intensidad de ocupacion del suelo y multiplicidad de actividades. FOS 0,6. ALTURA REFERENCIA EN NIVELES 10. FOT COMERCIAL 3. FOT RESIDENCIAL 2,5. DENSIDAD COMERCIAL 2000. DENSIDAD RESIDENCIAl 1000. PREMIOS 70% en FOT Y DENSIDAD",
-                "actual": "FOT COMERCIAL 3 FOT RESIDENCIAL 2,5",
+                "actual": "FOT comercial 3 residencial 2.5",
                 "expected": "FOT comercial 3 FOT residencial 2.5"
             },
             {
                 "context": " Terreno en venta - 200 mts2 - La Plata Terreno en venta ubicado sobre calle 19 entre 75 y 76 (Altos de San Lorenzo, La Plata, Buenos Aires) Con disposición frente y orientación norte.De medidas regulares, cuenta con 10mts de frente por 20mts de fondo, contabilizando 200mts2 totales de superficie, de los cuales 40mts2 pertenecen a una casa a demoler o refaccionar de dos dormitorios, con cocina, living comedor y un baño. Con acceso por calle de asfalto, cuenta con los servicios de electricidad, agua corriente, gas natural y cloacas disponibles en el lugar.índices de prefactibilidad: FOS 0,6 ALTURA REFERENCIA EN NIVELES 3 FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2 DENSIDAD COMERCIAL 300 DENSIDAD RESIDENCIAL 300 RETIROS Y REQUISITOS Laterales: Se permite solo un retiro respecto los ejes medianeros. COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2 PARCELAMIENTO MINIMO FRENTE 15 PARCELAMIENTO MINIMO SUPERFICIE 375 RELACION FTE / FDO 1/3",
-                "actual": "FOT RESIDENCIAL 1,2FOT COMERCIAL 1,21,2 FOT",
+                "actual": "FOT comercial 1.2 FOT residencial 1.2",
                 "expected": "FOT comercial: 1.2 FOT residencial: 1.2"
-            },
-            {
-                "context": "ESTRUCTURA JURíDICA: Fideicomiso a precio cerrado. EL VALOR PUBLICADO ES CONTADO EFECTIVO. Medidas: 15,5 x 25m La entrega del barrio esta programada para mediados 2023, no obstante, se permitirá dar inicio a las obras particulares a fines del 2022.  FORMA DE PAGO: Opción A: Contado en USD Opción B: 50 % anticipo USD + Cuotas hasta Dicembre 2024 U$S98.813.- UBICACIóN: A 200 mt de la bajada de Ruta 26, Ramal Pilar km 41,5. ESQUEMA DE RETIROS: INFORMACIóN GENERAL: Los lotes rondan los 375 a 400 mts 2. Superficie a construir mínima inicial permitida es de 120 m2 FOS: 0.4 FOT: 0.7 Retiro frente: 3 metros Retiro lateral: 1) 3.00 mt - 2) 1,15 mt Retiro Fondo mínimo: 8.00 mt. Pileta despegada de los ejes medianeros 1.50 mt. INFRAESTRUCTURA: Calles internas asfaltadas / hormigón intertrabado con cuneta. Redes subterráneas de electricidad, agua, cloaca y gas. Alumbrado Público. Pilares de servicios. Edificio de acceso.  Club House.  Amenities ",
-                "actual": "0.7",
-                "expected": ""
-            },
-            {
-                "context": "VENTA TERRENO Calle 14 entre 35 y 36 - La Plata LOTE EN VENTA, CALLE 14 E/ 35 Y 36. RENDIMIENTO: FOS 0,6 - ALTURA REFERENCIA EN NIVELES: 6. FOT COMERCIAL: 2,7. FOT RESIDENCIAL: 2,25. DENSIDAD COMERCIAL: 1800. DENSIDAD RESIDENCIAL: 900. PREMIOS: 50% en FOT Y DENSIDAD. RETIROS Y REQUISITOS Parcela con frente a Diagonal (de 30 mts), Avenida, Plaza o Parque Frente: No se permiten RETIROS de la Linea Municipal a nivel de basamento (hasta 7 mts.). Laterales: No se permiten RETIROS visibles desde la via pública a nivel de basamento (hasta 7 mts.) COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2. VALOR DE INCIDENCIA POR METRO CUADRADO 177.77USD. VALOR DE INCIDENCIA POR UNIDAD FUNCIONAL 9000USD.  LOTE DE 10x30 EN BARRIO NORTE, LA PLATA, CON CASA A DEMOLER. ZONIFICACION UC2. F.O.S. 0,6, ALTURA REFERENCIA EN NIVELES 6, F.O.T. COMERCIAL 2,7, F.O.T. RESIDENCIAL 900, PREMIOS 50% EN F.O.T. IDEAL INVERSORES. ",
-                "actual": "FOT COMERCIAL: 2,7 FOT RESIDENCIAL: 2,25",
-                "expected": "FOT comercial: 2.7 FOT residencial: 2.25"
-            },
-            {
-                "context": "LOTE CON CASA A DEMOLER EN EXCELENTE ZONA A 2 CUADRAS DE LA ESTACION SOBRE FASOLA IDEAL COMERCIO Y VIVIENDA LOTE 8,85 X 27,80, FOT 0,8 , 1 UNIDAD CADA 100 Mts, ( SALE 1 LOCAL Y 1/ 2 DEPTOS.",
-                "actual": "0,8",
-                "expected": "0.8"
-            },
-            {
-                "context": "EXCELENTE LOTE DE 436 M2  - 8,72 Mts. DE FRENTE X 50 Mts. DE FONDO - TODOS LOS SERVICIOS EN LA PUERTA (A CONECTAR) - FOT: 950 M2 (APROX) - CASA PRE FABRICADA A DEMOLER",
-                "actual": "FOT: 950 FOT: 950 M2",
-                "expected": ""
-            },
-            {
-                "context": "GRAN ENTORNO COMERCIAL INMEJORABLE UBICACIÓN 2 CUADRAS DE AV. MAIPÚ PRÓXIMO ACCESO HACIA CAPITAL FEDERAL ÓPTIMOS MEDIOS DE LOCOMOCIÓN. LOTE DE 8.66X28. A DEMOLER UNA VIVIENDA CON 3 AMBIENTES. ZONIFICACION C1A. FOT 1,8 + PREMIOS. DENSIDAD 400 HAB/ha. APTO 9 UNIDADES. ",
-                "actual": "1,8",
-                "expected": "FOT 1.8"
-            },
-            {
-                "context": "Lote de terreno con construcción en venta frente al Parque San Martí¬n, 54 y 23, La Plata. LOTE 1: de 131m2 apróx con 8 mts de frente con vista al Parque San Martí¬n; LOTE 2: 408 m2 apróx total: 15 mts apróx de frente hacia calle 54 y 24 mts apróx con frente hacia calle 23; lo que hacen ambos una superficie total de 539 m2 apróx con frentes hacia 3 calles: 54, 23 y diagonal 102. Todos los servicios; Excelente propiedad en inmejorable ubicación de la ciudad ideal para desarrollos multifamiliares. Zona :U/EF3a - AREA Eje Fundacional Tramo 3: Calle 20 a calle 23 y frentistas a Parque San Martin. FOT RESIDENCIAL 2.5, DENSIDAD RESIDENCIAL 1.000, PREMIOS FOT Y DENSIDAD 70%. OPORTUNIDAD ",
-                "actual": "2.5",
-                "expected": "FOT RESIDENCIAL 2.5"
             },
             {
                 "context": "Hola. Casa 4 amb sobre lote 8,66 x 46.40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
                 "actual": "",
                 "expected": "1.5"
-            },
-            {
-                "context": "Lote en esquina de 133,49 mts en PH  La propiedad anteriormente era un lote, el cual fue subdividido bajo el régimen de PH, SIN ESPACIOS COMUNES.  No abona expensas.  Zonificación Id (Industrial Dominante) FOT: 1.2 (160 metros) FOS: 0.6 ( 80 metros)  La propiedad posee electricidad y agua corriente  Cuenta con construcción a refaccionar de living, dormitorio baño y cocina.  Y otra construcción para demoler  Ubicación: a una cuadra de Av. Pres. Juan Domingo Perón, a 4 cuadras de Av. Ricardo Balbín, rápida salida a General Paz. Gran cantidad de comercios y gastronomía en la zona. Bancos, colegios, Universidades cercanas y hospitales.  ",
-                "actual": "1.2",
-                "expected": ""
-            },
-            {
-                "context": "Terreno en PH sobre Avenida Arana entre calle 139 y 141. Zona residencial de Arturo segui. Sobre asfalto. Con servicios de electricidad, agua, gas (en vereda de enfrente).  Dimensiones de 20 de frente x 45 de fondo.  Zonificacion UR 8. Fos 0.4 Fot 0.8 Atura permitida 3 niveles. Demsidad por habitante 60 oersonas x hectarea.  Arbolado. Muy buen entorno.  Permuta por departamento en La Plata.  Servicios:  Gas  Características:  Alambrado perimetral Responsable Matriculado Andrés Ariel Brandoni - Matricula 6865 Folio 8 Tomo Xlll CMCPDJLP (Ley 10.973). Las medidas y superficies asignadas en la presente, son aproximadas al solo efecto orientativo. Las medidas definitivas surgiran del titulo de propiedad respectivo.",
-                "actual": "0.8",
-                "expected": ""
-            },
-            {
-                "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "6,6 FOT FOT: 0.8",
-                "expected": "0.8"
-            },
-            {
-                "context": "LOTE PROPIO DE 15.55X18.55. 280 M2 TOTALES APROXIMADAMENTE. 190 M2 CUBIERTOS APROXIMADAMENTE. FOT 2.5. 628 M2 A CONSTRUIR. FOS 0,60 FOT 2,50 DENSIDAD 1000 HAB/HECT O 0.1HAB/,2 EL FOS 145 M2 Planta baja libre para estacionamiento. Y 4 niveles, cada nivel uno de 2 dormitorios y otro de 1 dormitorio.  HOY LOCAL A LA CALLE TODO EN ESQUINA + PH 3 AMBIENTES AL FRENTE CON ENTRADA INDEPENDIENTE Y EN PLANTA BAJA. TODO A NUEVO. 2 PATIOS CON PARRILLAS. TODO SOL. GRAN LIVING. BAñO COMPLETO. 2 PLACARDS.  ESQUINA 2 DE MAYO (A 1 CUADRA DE AV. 25 DE MAYO - A 5 DE AV. HIPOLITO YRIGOYEN - A 7 DE ESTACION LANUS) LANUS OESTE  *FichaBrick=1029793*",
-                "actual": "FOT 2,50 FOT 2.5",
-                "expected": "2.5"
-            },
-            {
-                "context": "El Equipo Remax Sierras Vende Lote (parcela 8a) en la zona norte de la ciudad, ubicado sobre calle Primera Junta casi Magallanes. Se encuentra a 1 cuadra de la Ruta Nacional 226 y a 10 minutos del centro de la ciudad. Cuenta con una superficie de 347,4 m2, con medidas de 12 metros de frente y 28,95 metros de fondo. APTO SUBDIVISIÓN EN PH. También disponemos de otros lotes de mayores medidas.  Servicios Disponibles: electricidad, agua y cloacas. El lote presenta un retiro obligatorio de 6 metros sobre calle Primera Junta.  El barrio se encuentra en desarrollo, con potencial residencial y comercial. Según el Plan de Desarrollo Territorial de Tandil cuenta con los siguientes indicadores:  *Zona: Barrio Usos Mixtos *FOS: 0,6 *FOT: 0,8 *Densidad: 200 hab/ha *Altura Construcción: 7,5 metros USOS: Vivienda Unifamiliar, Vivienda Multifamiliar, comercios minoristas y mayoristas, servicios generales y oficinas, taller doméstico, taller automotor, depósitos.  ",
-                "actual": "0,8",
-                "expected": "0.8"
-            },
-            {
-                "context": "Lote de 2024 m2, con una superficie cubierta de 1292 m2 y medidas irregulares. Próximo a Av 520.Cuenta de 80,3 mts de frente sobre calle 13 o Cno. Centenario.Zona :U/C4 - Corredores de Acceso principal (ex U/C4b). CARACTERISTICA Corresponde a aquellas configuraciones lineales que combinan usos centrales y servicios vinculados a los accesos a la ciudad. FOS 0,6. ALTURA REFERENCIA EN NIVELES 3. FOT COMERCIAL 1,2. FOT RESIDENCIAL 1,2. DENSIDAD COMERCIAL 300. DENSIDAD RESIDENCIAL 300. RETIROS Y REQUISITOS Laterales: Sobre Cno. Centenario, obligatorio, mínimo 3 mts. de un eje medianero. \"La Presente oferta esta condicionada a la confección del COTI por parte del Propietario (Res.AFIP 2371).\". \"Los metros publicados son aproximados, las medidas exactas surgirán de la escritura traslativa de dominio.\"",
-                "actual": "FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2",
-                "expected": "FOT comercial 1.2 FOT residencial 1.2"
-            },
-            {
-                "context": "CASO DIFÍCIL. Excelente lote de terreno de 12,00 m x 16,84 m , en la zona comercial de Virreyes. Actualmente con construccion de 353 m2, distibuidos en 2 locales y 3 departamentos. FOS : 0,6 FOT : 3 Zonificación: C2AU1   Alt. Max: 14,50m.  Dens: 900 ha/Ha",
-                "actual": "0,6 FOT FOT : 3",
-                "expected": "3"
             }
         ]
     },
@@ -632,7 +542,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "17.32 x 26;8.66 x 26",
+                "actual": "8.66 x 26;17.32 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -717,7 +627,7 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50;50 x 25.70",
+                "actual": "14.80 x 50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
@@ -822,7 +732,7 @@
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
+                "actual": "32.45 x 73.63;32.45 x 73.63;32.45 x 73",
                 "expected": ""
             },
             {

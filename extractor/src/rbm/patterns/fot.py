@@ -8,19 +8,59 @@ ADICION_SINONIMOS = ["mas", "más", "con", "+"]
 def fot()->list:
     return  list([
             #1 fot
-            [{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"LIKE_NUM": True},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"}],
-            [{"LOWER": "factor"},{"LOWER": "de"},{"LOWER": "ocupacion"},{"LOWER": "total"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{'LIKE_NUM': True},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"}],
+            [
+                {'LOWER': {'IN':FOT_SINONIMOS}},
+                {"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},
+                {"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},
+                {"POS": "NUM"},
+                {"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"}
+            ],
+            [
+                {'LOWER': {'IN':FOT_SINONIMOS}},
+                {"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},
+                {"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},
+                {"LIKE_NUM": True},
+                {"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"}
+            ],
+            [
+                {'LOWER': {'IN':FOT_SINONIMOS}},
+                {"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},
+                {"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},
+                {"POS": "NUM"},
+                {"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"}, 
+                {"IS_PUNCT":  True},
+                {'LOWER': {'IN':FOT_SINONIMOS}, "OP":"?"},
+                {"LOWER": {"IN":TIPOS_FOT}},
+                {"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},
+                {"POS": "NUM"},
+                {"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"}
+            ],
+            [
+                {'LOWER': {'IN':FOT_SINONIMOS}},
+                {"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},
+                {"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},
+                {"LIKE_NUM": True},
+                {"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"}, 
+                {"IS_PUNCT":  True},
+                {'LOWER': {'IN':FOT_SINONIMOS}, "OP":"?"},
+                {"LOWER": {"IN":TIPOS_FOT}},
+                {"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},
+                {"LIKE_NUM": True},
+                {"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"}
+            ],
 
+            [{"LOWER": "factor"},{"LOWER": "de"},{"LOWER": "ocupacion"},{"LOWER": "total"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{'LIKE_NUM': True},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"}],
+                
             #1 fot con premios
-            [{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"LIKE_NUM": True},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"LOWER":{"IN":ADICION_SINONIMOS}}, {"POS": {"IN":NUM_PORCENTAJE}, "OP":"?"},{"LOWER": "en"},{"LOWER": {"IN":PREMIOS_SINONIMOS}}],
-            # [{"LOWER": "factor"},{"LOWER": "de"},{"LOWER": "ocupacion"},{"LOWER": "total"},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"LIKE_NUM": True},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"LOWER":{"IN":ADICION_SINONIMOS}}, {"POS": {"IN":NUM_PORCENTAJE}, "OP":"?"},{"LOWER": "en"},{"LOWER": {"IN":PREMIOS_SINONIMOS}}],
+            [{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"POS": "NUM"},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"LOWER":{"IN":ADICION_SINONIMOS}}, {"POS": {"IN":NUM_PORCENTAJE}, "OP":"?"},{"LOWER": "en", "OP":"?"},{"LOWER": {"IN":PREMIOS_SINONIMOS}}],
+            # [{"LOWER": "factor"},{"LOWER": "de"},{"LOWER": "ocupacion"},{"LOWER": "total"},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"POS": "NUM"},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"LOWER":{"IN":ADICION_SINONIMOS}}, {"POS": {"IN":NUM_PORCENTAJE}, "OP":"?"},{"LOWER": "en"},{"LOWER": {"IN":PREMIOS_SINONIMOS}}],
 
             #2 fots sin premios
             #tengo problemas con el helper.py:
-            # [{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"LIKE_NUM": True},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"POS":"PUNCT", "OP":"?"},{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"LIKE_NUM": True},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},]
+            # [{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"POS": "NUM"},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"POS":"PUNCT", "OP":"?"},{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"POS": "NUM"},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},]
 
             #2 fots con premios
-            # [{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"LIKE_NUM": True},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"LOWER":{"IN":ADICION_SINONIMOS}}, {"POS": {"IN":NUM_PORCENTAJE}, "OP":"?"},{"LOWER": "en"},{"LOWER": {"IN":PREMIOS_SINONIMOS}},{"POS":"PUNCT", "OP":"?"},{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"LIKE_NUM": True},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"LOWER":{"IN":ADICION_SINONIMOS}}, {"POS": {"IN":NUM_PORCENTAJE}, "OP":"?"},{"LOWER": "en"},{"LOWER": {"IN":PREMIOS_SINONIMOS}}]
+            # [{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"POS": "NUM"},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"LOWER":{"IN":ADICION_SINONIMOS}}, {"POS": {"IN":NUM_PORCENTAJE}, "OP":"?"},{"LOWER": "en"},{"LOWER": {"IN":PREMIOS_SINONIMOS}},{"POS":"PUNCT", "OP":"?"},{'LOWER': {'IN':FOT_SINONIMOS}},{"LOWER": {"IN":TIPOS_FOT}, "OP":"?"},{"TEXT":{"IN":FOT_CONECTOR}, "OP":"*"},{"POS": "NUM"},{"LOWER":{"IN":FOT_UNIDAD}, "OP":"?"},{"LOWER":{"IN":ADICION_SINONIMOS}}, {"POS": {"IN":NUM_PORCENTAJE}, "OP":"?"},{"LOWER": "en"},{"LOWER": {"IN":PREMIOS_SINONIMOS}}]
             
             #no aporta precisión
             #[
@@ -38,7 +78,7 @@ def fot()->list:
             #            "OP": "?",
             #        },
             #        {"IS_PUNCT": True, "OP": "?"},
-            #        {"LIKE_NUM": True},
+            #        {"POS": "NUM"},
             #    ]
             ]
     )   
