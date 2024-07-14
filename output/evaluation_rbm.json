@@ -1,19 +1,14 @@
 [
     {
         "name": "direccion",
-        "tp": 85,
-        "fp": 40,
-        "fn": 31,
-        "tn": 164,
-        "precision": 0.68,
-        "recall": 0.7327586206896551,
-        "f1": 0.7053941908713692,
+        "tp": 87,
+        "fp": 32,
+        "fn": 32,
+        "tn": 168,
+        "precision": 0.7310924369747899,
+        "recall": 0.7310924369747899,
+        "f1": 0.7310924369747899,
         "error": [
-            {
-                "context": "Venta de Lote en Calle 600 y 18 Altos del Plata, Villa Elvira, La Plata. Medidas de 18 x 31. Lote de 558 m2 Totales. Servicios de Luz y Agua corriente. Calle de tierra. El lote se encuentra cerrado un Cerco premoldeado a la altura de 2 metros. También hay una construcción con el proyecto de tener 100 metros cubiertos de superficie. Precio U$D25.000, Se Vende por Boleto con Posesión próximo a escriturar la parte indivisa.",
-                "actual": "Calle 600 y 18 Altos",
-                "expected": "Calle 600 y 18"
-            },
             {
                 "context": "VENTA TERRENO DE  22,52 X 43,30, GENERAL SAN MARTIN Ideal constructor Excelente lote sobre Güemes entre las de Rivadavia y Vidal. El mismo cuenta con una superficie total de 975 m2. sobre lote de 22,52 de frente x 43,30 mts de fondo A la fecha se puede escriturar el 60% del terreno el 40% restante se encuentra en etapa judicial ( usucapión)",
                 "actual": "",
@@ -26,7 +21,7 @@
             },
             {
                 "context": "LOTES EN VENTA EN TRISTAN SUAREZ, SOBRE CALLE LOS GIRASOLES ENTRE GADHINI Y MORENO MEDIDA DE CADA LOTE 10X35  VALOR DE CADA LOTE U$S 10.000 c/u.POSIBILIDAD DE FINANCIACION  SE VENDEN JUNTOS O SEPARADOS  Cesion de derechos posesorios",
-                "actual": "CALLE LOS GIRASOLES ENTRE GADHINI Y MORENO MEDIDA DE CADA",
+                "actual": "CALLE LOS GIRASOLES ENTRE GADHINI Y MORENO MEDIDA",
                 "expected": "CALLE LOS GIRASOLES ENTRE GADHINI Y MORENO"
             },
             {
@@ -130,11 +125,6 @@
                 "expected": ""
             },
             {
-                "context": "Espectacular lote con salida a 2 calles. Doble frente en ambas calles, 17.32m. Superficie total del lote 1375m. Zonificación USAM: Planta baja, 5 pisos y 2 retiros (pueden ser destino vivienda). A media cuadra de Av. Nazca, variedad de comercios y múltiples líneas de colectivo. Metraje de construcción total de planta baja al piso 7, habiendo contemplado dos ventilaciones (cada una de 24m.): 7000m. Aproximadamente.",
-                "actual": "lote 1375",
-                "expected": ""
-            },
-            {
                 "context": "En excelente y estratégica ubicación, dentro de la zona del Puerto de Mar del Plata, se encuentra este importante lote en forma de L, con salida a dos calles. Con frentes de 17.30 mts sobre calle Bermejo y 8.71 mts sobre calle Solis, este lote cuenta con 1303 m2 totales. Emplazado sobre Distrito C2, zona destinada a la localización de usos urbanos centrales de índole administrativa, comercial, financiera, institucional y afines, compatibles con uso residencial de densidad media/alta. Con FOT 2.5 posee la factibilidad de construir aproximadamente 4.500 m2 en hasta 8 plantas.",
                 "actual": "calle Bermejo y 8.71",
                 "expected": ""
@@ -145,8 +135,13 @@
                 "expected": "lote en manzana 161-w"
             },
             {
+                "context": "Departamento de un dormitorio en venta ubicado sobre calle Almirante Brown entre 9 de Julio y Republica Oriental del Uruguay (Morón, Buenos Aires). Desarrollado en piso alto por ascensor, con disposición frente y orientación al sur.El mismo posee cocina independiente equipada con muebles sobre y bajo mesada, living comedor, un dormitorio con placard empotrado y un baño completo. Amplio y luminoso, cuenta con balcón y equipo de aire acondicionado central.La propiedad tiene una superficie total de aproximadamente 48mts2, de los cuales 43mts2 son cubiertos. Las expensas al día 17/04/2024 son de aproximadamente $104.000.",
+                "actual": "calle Almirante Brown entre 9 de Julio y Republica Oriental",
+                "expected": "calle Almirante Brown entre 9 de Julio y Republica Oriental del Uruguay"
+            },
+            {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
-                "actual": "calle 202, diagonal 197 y calle 476",
+                "actual": "Diagonal 197 y calle 476.Lotes",
                 "expected": ""
             },
             {
@@ -160,14 +155,14 @@
                 "expected": "Calle 531 Entre las rutas 2 y ruta 6"
             },
             {
+                "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
+                "actual": "",
+                "expected": "Lote 307"
+            },
+            {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
                 "actual": "",
                 "expected": "Potosi esquina Colectora calle Mimosas"
-            },
-            {
-                "context": "Gran oportunidad, apto Procrear. Avenida 38 y 147 San Carlos, exclusivos loteo 10 x 28 mts (PH) en barrio semicerrado ALTOS DE DON PEDRO a minutos de la Ciudad, servicios, apto Banco, totalmente independiente o sea no es parte indivisa. Muy buenas perspectivas, zona en progreso. Posibilidad de financiación particular a convenir. Desde U$D 24.900",
-                "actual": "Avenida 38 y 147 San",
-                "expected": "Avenida 38 y 147"
             },
             {
                 "context": "Lote en venta en Magdalena, La Plata. San Martin y Junín. Lote en venta ubicado en el casco de Magdalena de 622,5 mts2.Excelente ubicación, zona consolidada con buenos accesos, a un paso del centro y diversos centros culturales de la Ciudad, cuenta con todos los servicios. Son lotes geodésicos, con escritura y partida inmobiliaria individual, con el mejor valor del mt2 -u$s34 dls- Oportunidad. Posesión inmediata. LIKEUS S.A no ejerce el corretaje inmobiliario. El presente sitio web es una plataforma en donde cada oficina inmobiliaria independiente que contrata los servicios LIKE Propiedades puede publicar las propiedades a su cargo. Cada oficina es de propiedad y gestión independiente, por lo que LIKEUS S.A no interviene en los datos de la publicación, en la operación inmobiliaria, ni en la confección y/o firma del boleto de compraventa y/o escritura y/o contrato de alquiler. En cumplimiento de las leyes vigentes que regulan el corretaje inmobiliario, Ley Nacional 25.028, Ley 22.802 de Lealtad Comercial, Ley 24.240 de Defensa al Consumidor, las normas del Código Civil y Comercial de la Nación y Constitucionales, los agentes/gestores/Likers NO ejercen el corretaje inmobiliario. La información gráfica y escrita en el presente aviso es meramente a título estimativo y no forma parte de ningún tipo de documentación contractual. Las medidas y superficies descriptas en el presente son aproximadas, las definitivas surgirán del título de propiedad del inmueble referido. Asimismo los importes de tasas, servicios y expensas indicados están sujetos a verificación. El valor del inmueble indicado en el presente puede ser modificado sin previo aviso. Operación supeditada a que el propietario cumplimente con la Reg.2371 COTI. Todas las operaciones inmobiliarias son objeto de intermediación y conclusión por parte del martillero y corredor público JUAN MARTIN BANEGAS CMCPDJLP 7694",
@@ -178,11 +173,6 @@
                 "context": "VENTA LOTE BARRIO BELVEDERE CAPITAN BERMUDEZ. VENTA LOTE BARRIO ABIERTO BELVEDERE. LOTE DE 250M2, 10 METROS DE FRENTE POR 25 METROS FONDO. UBICADO EN EL BARRIO BELVEDERE(CAPITÁN BERMUDEZ), EN AVENIDA ÁNGEL MARINO GERVASO 550(ACESSO DESDE AUTOPISTA) MANZANA J LOTE 94.\r\nCUENTA CON BOULEVARD CENTRAL ADOQUINADO. TODAS SUS CALLES CON CORDON CUNETA. ACESSO PRINCIPAL PAVIMENTADO.\r\nSERVICIOS: RED LUZ ELECTRICA. ALUMBRADO PUBLICO. RED DE GAS NATURAL. RED DE AGUA POTABLE. LISTO PARA ESCRITURAR",
                 "actual": "MANZANA J LOTE 94",
                 "expected": "AVENIDA ÁNGEL MARINO GERVASO 550 MANZANA J LOTE 94"
-            },
-            {
-                "context": "Lote 5 es una CESIÓN, por lo tanto paga sellos el COMPRADOR Se trata de una parcela de 795m² que forma parte del barrio privado Finca Pueyrredón en un exclusivo predio de 1.260m² con barranca al río y enmarcado en un maravilloso parque de especies añosas. FOT 0.90, FOS 0.45, Alt máx. 8,50m Retiro de frente: 5m Retiros laterales: 3m Forma de pago: 40% en USD a la adhesión 57% en cuotas 3% posesión Inmobiliaria NARVAEZ Av. Del Libertador 15.878, San Isidro, Buenos Aires, Argentina + 54 9 ******** / + 54 9 ******** ******** CSI 4169 CUCICBA 6062",
-                "actual": "Lote 5",
-                "expected": ""
             },
             {
                 "context": "UBICADO EN BARRIO FÉLIX U. CAMET, SOBRE CALLE DIAGONAL MAR AUSTRAL ENTRE CALLE CERRO ACONQUIJA (EX 29) Y CERRO FIAMBALÁ (EX 31). CUENTA CON SERVICIOS DE LUZ; GAS; RED CLOACAL Y RECOLECCIÓN DE RESIDUOS. SECTOR EN EXPANSIÓN. ACEPTA PERMUTA POR VEHICULO EN MUY BUEN ESTADO. ESCUCHA PROPUESTAS CON UN PORCENTAJE DE FINANCIACIÓN",
@@ -216,7 +206,7 @@
             },
             {
                 "context": "LOTE 8.66 X 35 CON CASA PARA DEMOLERA 3 CDRS Av. MOSCONI Y 3 J. M ROSAS",
-                "actual": "Av. MOSCONI Y 3 J. M",
+                "actual": "Av. MOSCONI Y 3",
                 "expected": ""
             },
             {
@@ -231,7 +221,7 @@
             },
             {
                 "context": "Lote de terreno con construcción en venta frente al Parque San Martí¬n, 54 y 23, La Plata. LOTE 1: de 131m2 apróx con 8 mts de frente con vista al Parque San Martí¬n; LOTE 2: 408 m2 apróx total: 15 mts apróx de frente hacia calle 54 y 24 mts apróx con frente hacia calle 23; lo que hacen ambos una superficie total de 539 m2 apróx con frentes hacia 3 calles: 54, 23 y diagonal 102. Todos los servicios; Excelente propiedad en inmejorable ubicación de la ciudad ideal para desarrollos multifamiliares. Zona :U/EF3a - AREA Eje Fundacional Tramo 3: Calle 20 a calle 23 y frentistas a Parque San Martin. FOT RESIDENCIAL 2.5, DENSIDAD RESIDENCIAL 1.000, PREMIOS FOT Y DENSIDAD 70%. OPORTUNIDAD ",
-                "actual": "calles: 54, 23 y diagonal 102",
+                "actual": "calle 54 y 24",
                 "expected": "54 y 23 "
             },
             {
@@ -256,7 +246,7 @@
             },
             {
                 "context": "Barrio desarrollado en 16 hectáreas. Comprendido entre las calles 501 a 507 y 138 a 140. Una excelente zona de fácil acceso a las principales Avenidas 25, 31, 520 y Camino Gral. Belgrano. Se encuentra a 5 minutos de los principales colegios de la zona.  Un Hermoso lugar para vivir | LOTES en PH y Geodesia desde 230 m2. | SERVICIOS: LUZ  AGUA  ASFALTO - CORDóN CUNETA  GAS (Prefactibilidad aprobada)  Los datos consignados en este aviso deben considerarse estimaciones aproximadas, que  pueden carecer de precisión, exactitud y/o  estar desactualizados, al igual que las fotos , imágenes y videos,  que   se publican solo a título ilustrativo para facilitar la visualización del inmueble relacionado .",
-                "actual": "Avenidas 25, 31, 520 y Camino Gral.",
+                "actual": "calles 501 a 507 y 138",
                 "expected": ""
             },
             {
@@ -276,7 +266,7 @@
             },
             {
                 "context": "Barrio desarrollado en 16 hectáreas. Comprendido entre las calles 501 a 507 y 138 a 140. Una excelente zona de fácil acceso a las principales Avenidas 25, 31, 520 y Camino Gral. Belgrano. Se encuentra a 5 minutos de los principales colegios de la zona.  Un Hermoso lugar para vivir | LOTES en PH y Geodesia desde 230 m2. | SERVICIOS: LUZ  AGUA  ASFALTO - CORDóN CUNETA  GAS (Prefactibilidad aprobada)",
-                "actual": "Avenidas 25, 31, 520 y Camino Gral.",
+                "actual": "calles 501 a 507 y 138",
                 "expected": ""
             },
             {
@@ -310,26 +300,6 @@
                 "expected": "11 de Septiembre al 300"
             },
             {
-                "context": "Venta de lotes dentro del barrio semi-cerrado ''Las Victorias'', en la localidad de Abasto Disponibilidad: 4 Lote 10\r\nmedidas: 10,06 x 25 Lote 13 medidas: 10,06 x 25 Lote 42 medidas: 10,06 x 25 Lote 65 medidas: 10,06 x 25\r\nServicios: Luz Valor: U$S 7500 (x lote) PUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado\r\npor Pixel Inmobiliario (Servicio de Páginas Web para Inmobiliarias). #1314",
-                "actual": "Lote 10",
-                "expected": ""
-            },
-            {
-                "context": "Venta de lotes dentro del barrio semi-cerrado ''El Juncal'', en la localidad de Melchor Romero Disponibilidad: 2\r\nLote 21 medidas: 10 x 25 Lote 42 medidas: 10 x 25 Servicios: Agua corriente y Luz Valor: U$S7000 (x lote)\r\nPUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado por Pixel Inmobiliario (Servicio de\r\nPáginas Web para Inmobiliarias). #1437",
-                "actual": "Lote 21",
-                "expected": ""
-            },
-            {
-                "context": "Lote en Barrio Semi cerrado. Manzana que comprende las calles : Alsina : Bustamante : Blandengues : Copello\r\nLotes de 144 mts ( 8,4 x 17,05 ) El loteo cuenta con terrenos a la calle y terenos internos, semi cerrado por 2\r\ncalles internas. Sobre asfalto. Lote Numero 2 Precio de contado. LISTO PARA ESCRITURAR Pardiñas\r\nInmuebles",
-                "actual": "Lote Numero 2 Precio",
-                "expected": ""
-            },
-            {
-                "context": "Av 38 y 147 San Carlos. Exclusivos lotes en barrio semicerrado \"ALTOS DE DON PEDRO\" ,a minutos de la\r\nCiudad, OPORTUNIDAD Ãºnica, casa alquilada ($103.000) sobre lote arbolado de 10.70 x 28 metros (PH), 2\r\ndormitorios, cocina comedor equipada, lavadero, baÃ±o completo, 67 m2 cubiertos, fondo. Apto Banco.\r\nIMPORTANTE escritura inmediata. por UF no es parte indivisa. Tel - 2455 o 221 15 .",
-                "actual": "Av 38 y 147 San",
-                "expected": "Av 38 y 147"
-            },
-            {
                 "context": "Vendo,terreno de 10x 30mts, con bases de 7 x 11mts.servicio de luz y agua.escritura en condominio.barrio\r\ncerrado siempre verde.direccion 602 y 22.zona de casa quinta en pleno crecimiento.ppsible financiación y\r\npermuta.",
                 "actual": "",
                 "expected": "602 y 22"
@@ -355,11 +325,6 @@
                 "expected": "calle Rodolfo Walsh 208 entre Magrasi y coronel de marina Davis Jewett"
             },
             {
-                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2sin mejoras al frente portón de reja  Lote 1 de 191M2esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex  Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
-                "actual": "Lote 25",
-                "expected": ""
-            },
-            {
                 "context": "Loteo en venta,sobre las calle 56 a 58 y 163 a 165, 74 lotes disponible,. Con escritura y APTO PROCREAR. Los lotes se encuentran ubicados en una zona con creciente urbanización, a dos cuadras de la avenida 60 y a unos 10 minutos del centro de La Plata. Lotes linderos con construcciones nuevas y en proceso. Calles abiertas, con mejorado, alumbrado y tendido eléctrico. También disponibles lotes de 12 x 26 m2 .",
                 "actual": "calle 56 a 58 y 163",
                 "expected": "56 a 58 y 163 a 165"
@@ -369,12 +334,12 @@
     {
         "name": "fot",
         "tp": 38,
-        "fp": 22,
+        "fp": 21,
         "fn": 2,
         "tn": 258,
-        "precision": 0.6333333333333333,
+        "precision": 0.6440677966101694,
         "recall": 0.95,
-        "f1": 0.7599999999999999,
+        "f1": 0.7676767676767676,
         "error": [
             {
                 "context": "ATENCIÓN CONSTRUCTORAS: Excelente lote de 8.66 de Frente x 35 de largo, ideal inversión para construcción de departamentos en torre, emprendimiento o vivienda, en zona centrica En inmejorable ubicación sobre la calle Sitio de Montevideo entre Salta y Oncativo. posee un FOS de 0.6 y un FOT de 3. CONSULTE OPCIONES. SE ESCUCHAN OFERTAS. SE TOMA PROPIEDAD TERMINADA POR MENOR VALOR.",
@@ -418,17 +383,12 @@
             },
             {
                 "context": " Terreno en venta - 200 mts2 - La Plata Terreno en venta ubicado sobre calle 19 entre 75 y 76 (Altos de San Lorenzo, La Plata, Buenos Aires) Con disposición frente y orientación norte.De medidas regulares, cuenta con 10mts de frente por 20mts de fondo, contabilizando 200mts2 totales de superficie, de los cuales 40mts2 pertenecen a una casa a demoler o refaccionar de dos dormitorios, con cocina, living comedor y un baño. Con acceso por calle de asfalto, cuenta con los servicios de electricidad, agua corriente, gas natural y cloacas disponibles en el lugar.índices de prefactibilidad: FOS 0,6 ALTURA REFERENCIA EN NIVELES 3 FOT COMERCIAL 1,2 FOT RESIDENCIAL 1,2 DENSIDAD COMERCIAL 300 DENSIDAD RESIDENCIAL 300 RETIROS Y REQUISITOS Laterales: Se permite solo un retiro respecto los ejes medianeros. COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2 PARCELAMIENTO MINIMO FRENTE 15 PARCELAMIENTO MINIMO SUPERFICIE 375 RELACION FTE / FDO 1/3",
-                "actual": "1,2 FOTFOT RESIDENCIAL 1,2FOT COMERCIAL 1,2",
+                "actual": "FOT RESIDENCIAL 1,2FOT COMERCIAL 1,21,2 FOT",
                 "expected": "FOT comercial: 1.2 FOT residencial: 1.2"
             },
             {
                 "context": "ESTRUCTURA JURíDICA: Fideicomiso a precio cerrado. EL VALOR PUBLICADO ES CONTADO EFECTIVO. Medidas: 15,5 x 25m La entrega del barrio esta programada para mediados 2023, no obstante, se permitirá dar inicio a las obras particulares a fines del 2022.  FORMA DE PAGO: Opción A: Contado en USD Opción B: 50 % anticipo USD + Cuotas hasta Dicembre 2024 U$S98.813.- UBICACIóN: A 200 mt de la bajada de Ruta 26, Ramal Pilar km 41,5. ESQUEMA DE RETIROS: INFORMACIóN GENERAL: Los lotes rondan los 375 a 400 mts 2. Superficie a construir mínima inicial permitida es de 120 m2 FOS: 0.4 FOT: 0.7 Retiro frente: 3 metros Retiro lateral: 1) 3.00 mt - 2) 1,15 mt Retiro Fondo mínimo: 8.00 mt. Pileta despegada de los ejes medianeros 1.50 mt. INFRAESTRUCTURA: Calles internas asfaltadas / hormigón intertrabado con cuneta. Redes subterráneas de electricidad, agua, cloaca y gas. Alumbrado Público. Pilares de servicios. Edificio de acceso.  Club House.  Amenities ",
                 "actual": "0.7",
-                "expected": ""
-            },
-            {
-                "context": "Lote 5 es una CESIÓN, por lo tanto paga sellos el COMPRADOR Se trata de una parcela de 795m² que forma parte del barrio privado Finca Pueyrredón en un exclusivo predio de 1.260m² con barranca al río y enmarcado en un maravilloso parque de especies añosas. FOT 0.90, FOS 0.45, Alt máx. 8,50m Retiro de frente: 5m Retiros laterales: 3m Forma de pago: 40% en USD a la adhesión 57% en cuotas 3% posesión Inmobiliaria NARVAEZ Av. Del Libertador 15.878, San Isidro, Buenos Aires, Argentina + 54 9 ******** / + 54 9 ******** ******** CSI 4169 CUCICBA 6062",
-                "actual": "0.90",
                 "expected": ""
             },
             {
@@ -503,7 +463,7 @@
         "tp": 23,
         "fp": 1,
         "fn": 7,
-        "tn": 289,
+        "tn": 288,
         "precision": 0.9583333333333334,
         "recall": 0.7666666666666667,
         "f1": 0.8518518518518519,
@@ -552,13 +512,13 @@
     },
     {
         "name": "medidas",
-        "tp": 107,
-        "fp": 36,
+        "tp": 108,
+        "fp": 35,
         "fn": 51,
-        "tn": 126,
-        "precision": 0.7482517482517482,
-        "recall": 0.6772151898734177,
-        "f1": 0.7109634551495017,
+        "tn": 125,
+        "precision": 0.7552447552447552,
+        "recall": 0.6792452830188679,
+        "f1": 0.7152317880794701,
         "error": [
             {
                 "context": "Venta de Lote en barrio santa Isabel Highland Park , Mar del Plata . Ponemos a la venta 4 lotes de 20 x 47 metros cada uno, en  trámite de escrituración por usucapión, ubicados en la fracción 1 sobre la calle 749 asfaltada entre las calles 116 y 118, en barrio Highland park, pegado a golf. Marayui Country Club lotes a la venta, sobre la calle asfaltada 749 fracción 1, lotes 2 lote  3 lote  4 y lote 5. cada uno de 20 por 47 metros.  los lotes están judicializados por tramite de usucapión, y se ha hecho cesión de derechos por escribanía, y se hará cesión de derechos y posesión al comprador en escribanía.  tenemos toda la información pertinente de los lotes citados, se entrega con impuestos de Arba y municipal al día de la transferencia, los impuestos pagados son de Arba y municipal.",
@@ -672,7 +632,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "8.66 x 26;17.32 x 26",
+                "actual": "17.32 x 26;8.66 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -757,18 +717,13 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "50 x 25.70;14.80 x 50",
+                "actual": "14.80 x 50;50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
                 "actual": "",
                 "expected": "20 x 30"
-            },
-            {
-                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
-                "actual": "20 x 48;15 x 30",
-                "expected": "15 x 30;20 x 48"
             },
             {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
@@ -867,7 +822,7 @@
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73.63;32.45 x 73.63;32.45 x 73",
+                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
                 "expected": ""
             },
             {
@@ -1002,7 +957,7 @@
         "tp": 28,
         "fp": 12,
         "fn": 0,
-        "tn": 280,
+        "tn": 279,
         "precision": 0.7,
         "recall": 1.0,
         "f1": 0.8235294117647058,
@@ -1071,13 +1026,13 @@
     },
     {
         "name": "barrio",
-        "tp": 5,
+        "tp": 4,
         "fp": 59,
         "fn": 42,
         "tn": 214,
-        "precision": 0.078125,
-        "recall": 0.10638297872340426,
-        "f1": 0.0900900900900901,
+        "precision": 0.06349206349206349,
+        "recall": 0.08695652173913043,
+        "f1": 0.07339449541284403,
         "error": [
             {
                 "context": "Venta de Lote en barrio santa Isabel Highland Park , Mar del Plata . Ponemos a la venta 4 lotes de 20 x 47 metros cada uno, en  trámite de escrituración por usucapión, ubicados en la fracción 1 sobre la calle 749 asfaltada entre las calles 116 y 118, en barrio Highland park, pegado a golf. Marayui Country Club lotes a la venta, sobre la calle asfaltada 749 fracción 1, lotes 2 lote  3 lote  4 y lote 5. cada uno de 20 por 47 metros.  los lotes están judicializados por tramite de usucapión, y se ha hecho cesión de derechos por escribanía, y se hará cesión de derechos y posesión al comprador en escribanía.  tenemos toda la información pertinente de los lotes citados, se entrega con impuestos de Arba y municipal al día de la transferencia, los impuestos pagados son de Arba y municipal.",
@@ -1591,7 +1546,7 @@
         "tp": 8,
         "fp": 2,
         "fn": 11,
-        "tn": 299,
+        "tn": 298,
         "precision": 0.8,
         "recall": 0.42105263157894735,
         "f1": 0.5517241379310345,
@@ -1668,7 +1623,7 @@
         "tp": 31,
         "fp": 13,
         "fn": 0,
-        "tn": 276,
+        "tn": 275,
         "precision": 0.7045454545454546,
         "recall": 1.0,
         "f1": 0.8266666666666667,
@@ -1743,12 +1698,12 @@
     {
         "name": "urb_cerrada",
         "tp": 22,
-        "fp": 17,
+        "fp": 16,
         "fn": 3,
         "tn": 278,
-        "precision": 0.5641025641025641,
+        "precision": 0.5789473684210527,
         "recall": 0.88,
-        "f1": 0.6875,
+        "f1": 0.6984126984126985,
         "error": [
             {
                 "context": "Venta de Lote en barrio santa Isabel Highland Park , Mar del Plata . Ponemos a la venta 4 lotes de 20 x 47 metros cada uno, en  trámite de escrituración por usucapión, ubicados en la fracción 1 sobre la calle 749 asfaltada entre las calles 116 y 118, en barrio Highland park, pegado a golf. Marayui Country Club lotes a la venta, sobre la calle asfaltada 749 fracción 1, lotes 2 lote  3 lote  4 y lote 5. cada uno de 20 por 47 metros.  los lotes están judicializados por tramite de usucapión, y se ha hecho cesión de derechos por escribanía, y se hará cesión de derechos y posesión al comprador en escribanía.  tenemos toda la información pertinente de los lotes citados, se entrega con impuestos de Arba y municipal al día de la transferencia, los impuestos pagados son de Arba y municipal.",
@@ -1777,11 +1732,6 @@
             },
             {
                 "context": "VENTA- TERRENO 2036M2- EL MOLLAR. RE/MAX NOA II COMERCIALIZA VENTA EN B° EL MOLLAR. DESCRIPCIÓN: El terreno se encuentra en el Barrio El Mollar, cuenta con una superficie de 2036m² y cuenta con un amplio frente. La ubicación de la propiedad se encuentra a 5 cuadras de la Ruta Nacional N°2, a tan solo de 20 minutos de la Ciudad de San Salvador de Jujuy. En un excelente Barrio Privado.\r\nCARACTERÍSTICAS: SUPERFICIE 2036m². SERVICIOS: AGUA, LUZ, CORDÓN CUNETA, Posesión inmediata. En cumplimiento de las leyes vigentes que regulan el corretaje inmobiliario, Ley Nacional 25.028, Ley 22.802 de Lealtad Comercial, Ley 24.240 de Defensa al Consumidor, las normas del Código Civil y Comercial de la Nación y Constitucionales, los agentes/gestores NO ejercen el corretaje inmobiliario. Todas las operaciones inmobiliarias son objeto de intermediación y conclusión por parte de los corredores públicos inmobiliarios.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote 5 es una CESIÓN, por lo tanto paga sellos el COMPRADOR Se trata de una parcela de 795m² que forma parte del barrio privado Finca Pueyrredón en un exclusivo predio de 1.260m² con barranca al río y enmarcado en un maravilloso parque de especies añosas. FOT 0.90, FOS 0.45, Alt máx. 8,50m Retiro de frente: 5m Retiros laterales: 3m Forma de pago: 40% en USD a la adhesión 57% en cuotas 3% posesión Inmobiliaria NARVAEZ Av. Del Libertador 15.878, San Isidro, Buenos Aires, Argentina + 54 9 ******** / + 54 9 ******** ******** CSI 4169 CUCICBA 6062",
                 "actual": true,
                 "expected": ""
             },
@@ -1857,7 +1807,7 @@
         "tp": 19,
         "fp": 0,
         "fn": 0,
-        "tn": 301,
+        "tn": 300,
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
@@ -1868,7 +1818,7 @@
         "tp": 15,
         "fp": 1,
         "fn": 0,
-        "tn": 304,
+        "tn": 303,
         "precision": 0.9375,
         "recall": 1.0,
         "f1": 0.967741935483871,
@@ -1882,13 +1832,13 @@
     },
     {
         "name": "preventa",
-        "tp": 26,
+        "tp": 25,
         "fp": 10,
         "fn": 1,
         "tn": 283,
-        "precision": 0.7222222222222222,
-        "recall": 0.9629629629629629,
-        "f1": 0.8253968253968254,
+        "precision": 0.7142857142857143,
+        "recall": 0.9615384615384616,
+        "f1": 0.819672131147541,
         "error": [
             {
                 "context": "Lote de 253m2 a 600 metros del centro de San Vicente y 300m de la Laguna de San Vicente. Dependiendo el sector, disponibilidad de escritura o prescipción adquisitiva (usucapión - 20 ya años cumplidos). El barrio se encuentra en pleno desarrollo, es abierto y en un futuro pasará a ser cerrado.  Servicios: Luz y agua y cloaca de pozo.  Ya hay gente viviendo en el barrio",
@@ -1952,7 +1902,7 @@
         "tp": 6,
         "fp": 1,
         "fn": 0,
-        "tn": 313,
+        "tn": 312,
         "precision": 0.8571428571428571,
         "recall": 1.0,
         "f1": 0.923076923076923,
@@ -1969,7 +1919,7 @@
         "tp": 53,
         "fp": 26,
         "fn": 2,
-        "tn": 239,
+        "tn": 238,
         "precision": 0.6708860759493671,
         "recall": 0.9636363636363636,
         "f1": 0.791044776119403,
@@ -2121,7 +2071,7 @@
         "tp": 13,
         "fp": 47,
         "fn": 1,
-        "tn": 259,
+        "tn": 258,
         "precision": 0.21666666666666667,
         "recall": 0.9285714285714286,
         "f1": 0.35135135135135137,
@@ -2373,7 +2323,7 @@
         "tp": 85,
         "fp": 40,
         "fn": 20,
-        "tn": 175,
+        "tn": 174,
         "precision": 0.68,
         "recall": 0.8095238095238095,
         "f1": 0.7391304347826089,
@@ -2685,7 +2635,7 @@
         "tp": 19,
         "fp": 0,
         "fn": 9,
-        "tn": 292,
+        "tn": 291,
         "precision": 1.0,
         "recall": 0.6785714285714286,
         "f1": 0.8085106382978724,

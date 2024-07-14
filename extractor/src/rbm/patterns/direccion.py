@@ -45,7 +45,7 @@ def dir_nro():
                     # Av. de los quilmes n° 123
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
                     {"POS": "PUNCT", "OP":"?"},
-                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"{0,1}"},{"POS": "PROPN", "OP":"{0,1}"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
                     {"LIKE_NUM":True},
                 ],
@@ -131,14 +131,14 @@ def dir_interseccion():
                 # calle 25 de mayo y 9 de julio
                 [
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"{0,1}"},{"POS": "PROPN", "OP":"{0,1}"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
                     {"IS_PUNCT": True, "OP": "?"},
                     {"LIKE_NUM": True, "OP": "?"},
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
-                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"{0,1}"},{"POS": "PROPN", "OP":"{0,1}"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
                 ],
                 #calle moreno y 9 de julio
@@ -151,7 +151,7 @@ def dir_interseccion():
                     {"LIKE_NUM": True, "OP": "?"},
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
-                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}, "OP":"{0,1}"},{"POS": "PROPN", "OP":"{0,1}"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
                 ],
                 # calle 25 de mayo y san martin
@@ -220,7 +220,7 @@ def dir_entre():
         [
              # calle 9 de julio 1231 e/ 25 de mayo Y 3 de febrero
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}, "OP":"{0,1}"},{"POS": "PROPN", "OP":"{0,1}"},
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
             {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
             {"IS_PUNCT": True, "OP": "?"},
@@ -229,24 +229,75 @@ def dir_entre():
             {"LOWER": {"IN": ENTRE}}, 
             {"POS": "DET", "OP": "?"},
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}, "OP":"{0,1}"},{"POS": "PROPN", "OP":"{0,1}"},
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
             {"LOWER": {"IN": INTERSECCION}}, 
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}, "OP":"{0,1}"},{"POS": "PROPN", "OP":"{0,1}"},
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+        ],
+        [
+             # calle moreno 1231 e/ 25 de mayo Y san martín
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
+            {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LIKE_NUM": True, "OP": "?"}, 
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+            {"LOWER": {"IN": INTERSECCION}}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+        ],
+        [
+             # calle moreno 1231 e/ 25 de mayo Y san martín
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
+            {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LIKE_NUM": True, "OP": "?"}, 
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+            {"LOWER": {"IN": INTERSECCION}}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+        ],
+        [
+             # calle moreno 1231 e/ 25 de mayo Y san martín
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
+            {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LIKE_NUM": True, "OP": "?"}, 
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+            {"LOWER": {"IN": INTERSECCION}}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
         ]
    ]
 
 
 def dir_lote():
-    return  list([ #direccion de lote
-                [
-                    {"LOWER": "lote"}, 
-                    {"LOWER": {"IN":NUMERO_SINONIMOS}, "OP":"*"},
-                    {"POS": "NUM"},
-                    {"LOWER": {"IN": MEDIDAS+CONECTORES_MEDIDAS}, "OP":"!"}
-                ],
+    return  list([
                 #manzana letrada
                 [
                     {"LOWER": "lote"}, 

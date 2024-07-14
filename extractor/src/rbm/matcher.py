@@ -1,3 +1,4 @@
+import re
 import spacy
 from spacy.matcher import DependencyMatcher
 from spacy.matcher import Matcher as MatcherSpacy
@@ -21,6 +22,7 @@ from src.rbm.patterns.frentes import frentes
 
 NLP = spacy.load("es_core_news_lg")
 
+REGEX_LOTE= re.compile(r'\blote\b\s+\d+\b(?![\d.,]*\s*(?:x|m|,|\bpor\b))', re.MULTILINE | re.IGNORECASE)
 
 class Matcher:
 
@@ -216,7 +218,7 @@ class Matcher:
             "dir_nro": [],
             "dir_interseccion": [],
             "dir_entre": [],
-            "dir_lote": [],
+            "dir_lote": re.findall(REGEX_LOTE, text),
             "fot": [],
             "irregular": [],
             "pileta": [],
