@@ -2,7 +2,7 @@ import datetime
 import spacy
 import re
 
-from src.helper import clean_direccion 
+from src.helper import clean_direccion, reduce_superstrings 
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -70,30 +70,22 @@ class Oferta():
         return predichos
 
  
-    def __clear_inter_entre(self, result: list):
+    def _clear_inter_entre(self, result: list):
         for interseccion in result.get("dir_interseccion", []):
             for entre in result.get("dir_entre", []):
                 if interseccion in entre and interseccion in result["dir_interseccion"]:
                     result["dir_interseccion"].remove(interseccion)
         return result
 
-
-    def __clean_lote(self, predicciones_lote: list):
-        if not predicciones_lote:
-            return []
-        candidatos= []
-        for candidato in predicciones_lote:
-            candidatos.append(" ".join(candidato.split()[:2]).strip() if len(candidato.split()) == 3 else candidato.rstrip(".").rstrip(","))
-        return candidatos
     
     def direccion(self, predichos: list):
-        predichos = self.__clear_inter_entre(predichos)
+        predichos = self._clear_inter_entre(predichos)
         # predichos = clear_altura_entre(predichos)
         matches_direccion_todos = (
             predichos["dir_entre"]
             + predichos["dir_interseccion"]
             + predichos["dir_nro"]
-            + self.__clean_lote(predichos["dir_lote"])
+            + predichos["dir_lote"]
         )
         if matches_direccion_todos == []:
             return ""
@@ -128,7 +120,7 @@ class Oferta():
         if (veces_que_menciona_fot == 1):
             result= max(predichos, key=len) if predichos else ""
         else: 
-            predichos= self._reduce_superstrings(predichos)         
+            predichos= reduce_superstrings(predichos)         
             result= self.replace(". ".join(predichos))
         return result
             
@@ -191,18 +183,6 @@ class Oferta():
         medidas= medidas.replace(",",".")
         return medidas.rstrip(" x")
 
-
-
-    def _reduce_superstrings(self, dimensions):
-        reduced_dimensions = []
-        for dim in dimensions:
-            # Si la dimensión actual no es un superstring de ninguna dimensión ya incluida
-            if not any(dim in existing or existing in dim for existing in reduced_dimensions):
-                # Eliminar superstrings de la lista de resultados
-                reduced_dimensions = [existing for existing in reduced_dimensions if dim not in existing and existing not in dim]
-                # Agregar la dimensión actual a la lista de resultados
-                reduced_dimensions.append(dim)
-        return reduced_dimensions
 
 
     def barrio(self, predichos: list):

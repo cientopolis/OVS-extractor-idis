@@ -142,8 +142,9 @@ class Matcher:
 
         Matcher.matcher.add(
             "es_multioferta", [
-                [{"LEMMA": "lote", "MORPH": "Gender=Masc|Number=Plur"}]
-             ]
+                [{"POS":"NUM"},{"LEMMA": "lote", "MORPH": "Gender=Masc|Number=Plur"}], #4 lotes
+                [{"POS": "NUM", "OP":"?"},{"LOWER": {"IN": ["lotes", "terrenos", "locales"]}},{"OP":"{1,2}"}, {"LOWER": {"IN": ["venta","medidas"]}}], #lotes en venta, lotes a la venta, lotes de diferentes medidas
+            ]
         )
 
         Matcher.matcher.add(

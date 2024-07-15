@@ -30,3 +30,15 @@ def clean_direccion(cadena: str):
         cadena= " ".join(cadena)
 
     return cadena.strip()
+
+
+def reduce_superstrings(dimensions):
+    reduced_dimensions = []
+    for dim in dimensions:
+        # Si la dimensión actual no es un superstring de ninguna dimensión ya incluida
+        if not any(dim in existing or existing in dim for existing in reduced_dimensions):
+            # Eliminar superstrings de la lista de resultados
+            reduced_dimensions = [existing for existing in reduced_dimensions if dim not in existing and existing not in dim]
+            # Agregar la dimensión actual a la lista de resultados
+            reduced_dimensions.append(dim)
+    return reduced_dimensions
