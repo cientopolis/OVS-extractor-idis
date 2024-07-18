@@ -144,6 +144,7 @@ class Matcher:
             "es_multioferta", [
                 [{"POS":"NUM"},{"LEMMA": "lote", "MORPH": "Gender=Masc|Number=Plur"}], #4 lotes
                 [{"POS": "NUM", "OP":"?"},{"LOWER": {"IN": ["lotes", "terrenos", "locales"]}},{"OP":"{1,2}"}, {"LOWER": {"IN": ["venta","medidas"]}}], #lotes en venta, lotes a la venta, lotes de diferentes medidas
+                [{"LEMMA": "lote", "MORPH": "Gender=Masc|Number=Plur"}, {"POS":"NUM"},{"LOWER": {"IN": ["x", "por"]}}] # lotes 10x30
             ]
         )
 
