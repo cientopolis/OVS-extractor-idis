@@ -45,11 +45,8 @@ def rbm(input: pd.DataFrame) -> pd.DataFrame:
         # if (candidate_pairs["es_multioferta"] and (candidate_pairs["urb_cerrada"] or candidate_pairs["urb_semicerrada"])):
         #     candidate_pairs["es_multioferta"]= ""
         if (candidate_pairs["es_multioferta"]):
-            if (len(medidas(candidate_pairs["medidas"]))>1):
-                candidate_pairs["es_multioferta"]=True
-            else:
-                candidate_pairs["es_multioferta"]=""
-            if (len(reduce_superstrings(set([x.lower() for x in candidate_pairs["dir_lote"]])))>1):
+            # enumera más de una medida de lote, o mas de un numero de lote
+            if (len(candidate_pairs["es_multioferta"])>2) or (len(medidas(candidate_pairs["medidas"]))>1) or (len(reduce_superstrings(set([x.lower() for x in candidate_pairs["dir_lote"]])))>1):
                 candidate_pairs["es_multioferta"]=True
             else:
                 candidate_pairs["es_multioferta"]=""
