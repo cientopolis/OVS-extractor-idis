@@ -22,7 +22,7 @@ from src.rbm.patterns.frentes import frentes
 
 NLP = spacy.load("es_core_news_lg")
 
-REGEX_LOTE= re.compile(r'\blote\b\s+\d+\b(?![\d.,](?:x|m|,|\bpor\b))', re.MULTILINE | re.IGNORECASE)
+REGEX_LOTE= re.compile(r'\b(lote)\s+(\d+)\b(?!\s*(?:x\s*\d|mts|m)\b)', re.MULTILINE | re.IGNORECASE)
 # REGEX_LOTE= re.compile(r'\blote\b\s+\d+\b(?![\d.,]*\s*(?:x|m|,|\bpor\b))', re.MULTILINE | re.IGNORECASE)
 
 class Matcher:
@@ -223,7 +223,7 @@ class Matcher:
             "dir_nro": [],
             "dir_interseccion": [],
             "dir_entre": [],
-            "dir_lote": re.findall(REGEX_LOTE, text),
+            "dir_lote": [" ".join(x) for x  in re.findall(REGEX_LOTE, text)],
             "fot": [],
             "irregular": [],
             "pileta": [],
