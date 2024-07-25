@@ -38,21 +38,12 @@ def rbm(input: pd.DataFrame) -> pd.DataFrame:
 
         #detectar multioferta debe ser el primero porque de esto depende la selección del mejor candidato
 
-        # condiciones para multioferta:
-        # le dió true el matcher, y además:
-            # 1) le dió que hay más de 1 lote
-            # 2) le dió que hay más de una medida
-        # if (candidate_pairs["es_multioferta"] and (candidate_pairs["urb_cerrada"] or candidate_pairs["urb_semicerrada"])):
-        #     candidate_pairs["es_multioferta"]= ""
-        if (candidate_pairs["es_multioferta"]):
+        if (candidate_pairs["es_multioferta"] or "lotes" in description.lower()):
             # enumera más de una medida de lote, o mas de un numero de lote
-            if (len(candidate_pairs["es_multioferta"])>2) or (len(medidas(candidate_pairs["medidas"]))>1) or (len(reduce_superstrings(set([x.lower() for x in candidate_pairs["dir_lote"]])))>1):
+            if description.lower().split().count("lotes")>2 or (len(reduce_superstrings(set([x.lower() for x in candidate_pairs["es_multioferta"]])))>2) or (len(medidas(candidate_pairs["medidas"]))>1) or (len(reduce_superstrings(set([x.lower() for x in candidate_pairs["dir_lote"]])))>1):
                 candidate_pairs["es_multioferta"]=True
             else:
                 candidate_pairs["es_multioferta"]=""
-
-        # elif ((len(reduce_superstrings(set(candidate_pairs["dir_lote"])))==1)):
-        #     candidate_pairs["es_multioferta"]= ""
 
         estructura =  {
             "direccion": None,

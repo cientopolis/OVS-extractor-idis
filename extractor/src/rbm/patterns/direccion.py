@@ -300,6 +300,11 @@ def dir_lote():
     return  list([
                 #manzana letrada
                 [
+                    {"LOWER": "lote"},
+                    {"LOWER": {"IN":NUMERO_SINONIMOS}},
+                    {"POS": {"IN": NOMBRE_LOTE}},
+                ],
+                [
                     {"LOWER": "lote"}, 
                     {"LOWER": {"IN":NUMERO_SINONIMOS}, "OP":"*"},
                     {"POS": {"IN": NOMBRE_LOTE}},

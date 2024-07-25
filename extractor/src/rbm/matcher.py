@@ -22,7 +22,8 @@ from src.rbm.patterns.frentes import frentes
 
 NLP = spacy.load("es_core_news_lg")
 
-REGEX_LOTE= re.compile(r'\blote\b\s+\d+\b(?![\d.,]*\s*(?:x|m|,|\bpor\b))', re.MULTILINE | re.IGNORECASE)
+REGEX_LOTE= re.compile(r'\blote\b\s+\d+\b(?![\d.,](?:x|m|,|\bpor\b))', re.MULTILINE | re.IGNORECASE)
+# REGEX_LOTE= re.compile(r'\blote\b\s+\d+\b(?![\d.,]*\s*(?:x|m|,|\bpor\b))', re.MULTILINE | re.IGNORECASE)
 
 class Matcher:
 
@@ -142,10 +143,11 @@ class Matcher:
 
         Matcher.matcher.add(
             "es_multioferta", [
-                [{"LOWER": {"IN": ["cada", "varios", "multiples", "múltiples"]}, "LOWER": "lotes"}], #cada lotes, varios lotes, multiples lotes
-                [{"POS":"NUM"},{"LOWER": {"IN": ["lotes", "lote"]}}], #4 lotes
-                [{"POS": "NUM", "OP":"?"},{"LOWER": {"IN": ["lotes", "terrenos", "locales"]}},{"OP":"{1,2}"}, {"LOWER": {"IN": ["venta","medidas"]}}], #lotes en venta, lotes a la venta, lotes de diferentes medidas
-                [{"LOWER": {"IN": ["lotes", "lote"]}}, {"POS":"NUM"},{"LOWER": {"IN": ["x", "por"]}}] # lotes 10x30
+                [{"LOWER": {"IN": ["cada", "varios", "multiples", "múltiples"]}}, {"LOWER": {"IN": ["lotes", "lote", "terernos", "terreno", "parcela", "parcelas"]}}], #cada lote, varios lotes, multiples lotes
+                [{"POS":"NUM"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}}], #4 lotes
+                [{"POS": "NUM", "OP":"?"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}},{"OP":"{1,2}"}, {"LOWER": {"IN": ["venta","medidas"]}}], #lotes en venta, lotes a la venta, lotes de diferentes medidas
+                [{"LOWER": {"IN": ["lotes",  "terrenos"]}}, {"POS":"NUM"},{"LOWER": {"IN": ["x", "por"]}}], # lotes 10x30
+                [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}] #se venden juntos o separados
             ]
         )
 
