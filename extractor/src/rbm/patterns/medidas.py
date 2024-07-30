@@ -6,20 +6,38 @@ RELLENO = ["ADP", "ADV", "PROPN", "NOUN", "DET", "ADJ"] # sacarle el DET y ADJ? 
 def medidas():
     return  list([            
             # 5 mt x 10 mt 
-            # 5 mt x 10 mt x 40 mt
-            # 5 mt x 10 mt x 40 mt x 5 mt
             [
+                {"LIKE_NUM":True},
+                {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
+                {"TEXT":",", "OP":"?"}, 
+                {"LOWER":{"IN":CONECTORES_MEDIDAS}}, 
+                {"LIKE_NUM":True}
+             ],
+             # 5 mt x 10 mt x 40 mt
+             [
+                {"LIKE_NUM":True},
+                {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
+                {"TEXT":",", "OP":"?"}, 
+                {"LOWER":{"IN":CONECTORES_MEDIDAS}}, 
+                {"LIKE_NUM":True}, 
+                {"LOWER": {"IN":MEDIDAS}, "OP": "?"},
+                {"LOWER":{"IN":CONECTORES_MEDIDAS}}, 
+                {"LIKE_NUM":True},
+                {"LOWER": {"IN":MEDIDAS}, "OP":"?"}
+             ],
+             # 5 mt x 10 mt x 40 mt x 5 mt
+             [
                 {"LIKE_NUM":True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
                 {"TEXT":",", "OP":"?"}, 
                 {"LOWER":{"IN":CONECTORES_MEDIDAS}}, 
                 {"LIKE_NUM":True}, 
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
-                {"LOWER":{"IN":CONECTORES_MEDIDAS}, "OP":"?"}, 
-                {"LIKE_NUM":True, "OP":"?"}, 
+                {"LOWER":{"IN":CONECTORES_MEDIDAS}}, 
+                {"LIKE_NUM":True}, 
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
-                {"LOWER":{"IN":CONECTORES_MEDIDAS}, "OP":"?"}, 
-                {"LIKE_NUM":True, "OP":"?"}, 
+                {"LOWER":{"IN":CONECTORES_MEDIDAS}}, 
+                {"LIKE_NUM":True}, 
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"}
              ],
              #Frente de x mts y Fondo de x mts

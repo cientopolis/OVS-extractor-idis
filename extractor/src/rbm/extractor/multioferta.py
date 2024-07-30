@@ -22,9 +22,9 @@ class Multioferta(Oferta):
                 result.append(medidas.rstrip(" x"))
 
 
-        if len(result)>1:
+        if len(set(result))>1:
             return ";".join(result)
-        return "".join(result)
+        return "".join(set(result))
     
     def direccion(self, predichos: list):
         predichos = self._clear_inter_entre(predichos)

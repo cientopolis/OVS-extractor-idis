@@ -20,8 +20,9 @@ def get_numeros(cadena: str):
 
 def clean_direccion(cadena: str):
     cadena= re.sub(r"^\. ", "", cadena)
-    
-    if  (NLP(cadena))[0].pos_ == "ADP":
+    if cadena == "":
+        return ""
+    if (NLP(cadena))[0].pos_ == "ADP":
         cadena= cadena.split()[1:]
         cadena= " ".join(cadena)
     
@@ -33,12 +34,15 @@ def clean_direccion(cadena: str):
 
 
 def reduce_superstrings(dimensions):
+    # Normalizamos las dimensiones eliminando 'mts' y otros caracteres no necesarios
+    normalized_dimensions = [re.sub(r'\s*mts?\s*', '', dim) for dim in dimensions]
+    
     reduced_dimensions = []
-    for dim in dimensions:
-        # Si la dimensión actual no es un superstring de ninguna dimensión ya incluida
-        if not any(dim in existing or existing in dim for existing in reduced_dimensions):
-            # Eliminar superstrings de la lista de resultados
-            reduced_dimensions = [existing for existing in reduced_dimensions if dim not in existing and existing not in dim]
+    for dim in normalized_dimensions:
+        # Verificar si la dimensión actual es un superstring de alguna ya en la lista
+        if not any(dim in existing for existing in reduced_dimensions):
+            # Filtrar las dimensiones que son subcadenas de la dimensión actual
+            reduced_dimensions = [existing for existing in reduced_dimensions if existing not in dim]
             # Agregar la dimensión actual a la lista de resultados
             reduced_dimensions.append(dim)
     return reduced_dimensions

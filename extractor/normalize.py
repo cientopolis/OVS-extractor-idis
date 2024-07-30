@@ -2,7 +2,7 @@ import pandas as pd
 import re 
 
 def space_in_dimensions(text):
-    return re.sub(r'(\d+)x(\d+)', r'\1 x \2', text, flags=re.IGNORECASE)
+    return re.sub(r'(\d+)\s*[xX]\s*(\d+)', r'\1 x \2', text, flags=re.IGNORECASE)
 
 def replace_mts(text):
     return re.sub(r'(\d+)(mts|m2|m)',r'\1 \2', text)

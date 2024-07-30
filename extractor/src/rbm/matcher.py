@@ -252,17 +252,5 @@ class Matcher:
         self.__get_dep_matches(text, prev_result)
         self.__get_phrase_matches(text, prev_result)
 
-        prev_result["dir_nro"]= descartar_ultimo_token(prev_result["dir_nro"])
-        prev_result["dir_interseccion"]= descartar_ultimo_token(prev_result["dir_interseccion"])
         return prev_result
     
-def descartar_ultimo_token(lista):
-    nueva_lista = []
-    for elemento in lista:
-        if (elemento.endswith(".") or elemento.endswith(",") or elemento.endswith("(")):
-            nuevo_elemento= elemento[:-1]
-        else:
-            tokens =elemento.split()  # Dividir el elemento en tokens
-            nuevo_elemento = ' '.join(tokens[:-1])  # Unir todos los tokens excepto el último
-        nueva_lista.append(nuevo_elemento.strip())
-    return nueva_lista

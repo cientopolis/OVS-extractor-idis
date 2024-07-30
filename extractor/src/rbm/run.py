@@ -12,6 +12,16 @@ from normalize import normalize
 def get_numeros(cadena: str):
         return re.findall(r"\b\d+(?:[.,]\d+)?\b", cadena)
 
+def descartar_ultimo_token(lista):
+    nueva_lista = []
+    for elemento in lista:
+        if (elemento.endswith(".") or elemento.endswith(",") or elemento.endswith("(")):
+            nuevo_elemento= elemento[:-1]
+        else:
+            tokens =elemento.split()  # Dividir el elemento en tokens
+            nuevo_elemento = ' '.join(tokens[:-1])  # Unir todos los tokens excepto el último
+        nueva_lista.append(nuevo_elemento.strip())
+    return nueva_lista
 
 def medidas(predichos):
 
@@ -35,6 +45,9 @@ def rbm(input: pd.DataFrame) -> pd.DataFrame:
     for _, row in input.iterrows():
         description= normalize(row["description"])
         candidate_pairs = MATCHER.get_pairs(description)
+        candidate_pairs["dir_nro"]= descartar_ultimo_token(candidate_pairs["dir_nro"])
+        candidate_pairs["dir_interseccion"]= descartar_ultimo_token(candidate_pairs["dir_interseccion"])
+        
 
         #detectar multioferta debe ser el primero porque de esto depende la selección del mejor candidato
 

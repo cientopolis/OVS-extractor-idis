@@ -85,7 +85,7 @@ class Oferta():
             predichos["dir_entre"]
             + predichos["dir_interseccion"]
             + predichos["dir_nro"]
-            + predichos["dir_lote"]
+            + [";".join(reduce_superstrings(predichos["dir_lote"]))]
         )
         if matches_direccion_todos == []:
             return ""
