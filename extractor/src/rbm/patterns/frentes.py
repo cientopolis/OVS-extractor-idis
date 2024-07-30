@@ -52,6 +52,30 @@ def frentes() -> list :
                 "RIGHT_ATTRS": {"POS": "NUM"}
             }
         ],
+        [
+            {
+                "RIGHT_ID": "terreno",
+                "RIGHT_ATTRS": {"LOWER": {"IN": ["terreno", "lote","inmueble","parcela"]}},
+            },
+            {
+                "LEFT_ID": "terreno",
+                "REL_OP": ">",
+                "RIGHT_ID": "triple",
+                "RIGHT_ATTRS": {"POS": "NUM"}
+            },
+            {
+                "LEFT_ID": "triple",
+                "REL_OP": ">",
+                "RIGHT_ID": "de",
+                "RIGHT_ATTRS": {"POS": "ADP"}
+            },
+            {
+                "LEFT_ID": "terreno",
+                "REL_OP": ">",
+                "RIGHT_ID": "frente",
+                "RIGHT_ATTRS": {"POS": "NOUN"},
+            }
+        ],
     ] 
 )
    
