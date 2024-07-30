@@ -21,14 +21,8 @@ def urb_cerrada()-> list:
             # [
             #     {"LOWER": "lote"},{"TEXT":{"REGEX": "[A-Za-z]\d+"}}
             # ],por si solo no es indicativo de que sea barrio privado entonces resta presicion
-            [
-                {"LOWER": "seguridad"}
-            ],
-            [
-                {"LOWER": "amenities"}, {"LOWER": "generales", "OP":"?"}
-            ],
-            [
-                {"LOWER": "cancha"}, {"LOWER": "de"}, {"LOWER": {"REGEX": ".*"}}
-            ]
+            #[{"LOWER": "seguridad"}],
+            #[{"LOWER": "amenities"}, {"LOWER": "generales", "OP":"?"}],
+            #[{"LOWER": "cancha"}, {"LOWER": "de"}, {"LOWER": {"REGEX": ".*"}}]
         ]
     )
