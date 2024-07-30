@@ -22,7 +22,7 @@ from src.rbm.patterns.frentes import frentes
 
 NLP = spacy.load("es_core_news_lg")
 
-REGEX_LOTE= re.compile(r'\b(lote)\s+(\d+)\b(?!\s*(?:x\s*\d|mts|m)\b)', re.MULTILINE | re.IGNORECASE)
+REGEX_LOTE= re.compile(r'\b(lote)\s+(\d+)\b(?![.,]\d+)(?!\s*[xX]\s*\d+)(?!\s*(?:x\s*\d+|\d+\s*x\s*\d+|mts|m2)\b)', re.MULTILINE | re.IGNORECASE)
 # REGEX_LOTE= re.compile(r'\blote\b\s+\d+\b(?![\d.,]*\s*(?:x|m|,|\bpor\b))', re.MULTILINE | re.IGNORECASE)
 
 class Matcher:
@@ -252,4 +252,17 @@ class Matcher:
         self.__get_dep_matches(text, prev_result)
         self.__get_phrase_matches(text, prev_result)
 
+        prev_result["dir_nro"]= descartar_ultimo_token(prev_result["dir_nro"])
+        prev_result["dir_interseccion"]= descartar_ultimo_token(prev_result["dir_interseccion"])
         return prev_result
+    
+def descartar_ultimo_token(lista):
+    nueva_lista = []
+    for elemento in lista:
+        if (elemento.endswith(".") or elemento.endswith(",") or elemento.endswith("(")):
+            nuevo_elemento= elemento[:-1]
+        else:
+            tokens =elemento.split()  # Dividir el elemento en tokens
+            nuevo_elemento = ' '.join(tokens[:-1])  # Unir todos los tokens excepto el último
+        nueva_lista.append(nuevo_elemento.strip())
+    return nueva_lista

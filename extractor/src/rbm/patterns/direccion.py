@@ -39,6 +39,7 @@ def dir_nro():
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
                     {"LIKE_NUM":True},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 [
                     # calle 9 de julio 412
@@ -48,6 +49,7 @@ def dir_nro():
                     {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
                     {"LIKE_NUM":True},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 [
                     # moreno n° 123
@@ -58,6 +60,7 @@ def dir_nro():
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
                     {"LIKE_NUM":True},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 # [
                 #     # 9 n° 123
@@ -85,7 +88,8 @@ def dir_interseccion():
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
                     {"POS": "PROPN", "OP":"{1,2}"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 [
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
@@ -97,7 +101,8 @@ def dir_interseccion():
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
                     {"POS": "NUM"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 # moreno n° 1231 y san martin bis
                 [
@@ -112,7 +117,8 @@ def dir_interseccion():
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
                     {"POS": "PROPN", "OP":"{1,3}"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 # calle 7 y 48
                 # calle 1 1359 y 61
@@ -126,7 +132,8 @@ def dir_interseccion():
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
                     {"POS": "NUM"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 # calle 25 de mayo y 9 de julio
                 [
@@ -139,7 +146,8 @@ def dir_interseccion():
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
                     {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 #calle moreno y 9 de julio
                 [
@@ -152,7 +160,8 @@ def dir_interseccion():
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
                     {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 # calle 25 de mayo y san martin
                 [
@@ -165,7 +174,8 @@ def dir_interseccion():
                     {"LOWER": {"IN": INTERSECCION}},
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
                     {"POS": {"IN":["PROPN", "NOUN", "NUM", "ADP"]}, "OP":"+"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
                 ]
                 
             ])

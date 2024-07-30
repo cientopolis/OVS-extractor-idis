@@ -17,6 +17,10 @@ def sanitize(df: pd.DataFrame) -> pd.DataFrame:
         lambda x: " ".join(sorted(x.split(". "))).strip()
     )
 
+    result["direccion"] = result["direccion"].apply(
+        lambda x: x.rstrip(". ")
+    )
+
     return result
 
 
