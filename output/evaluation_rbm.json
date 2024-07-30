@@ -872,7 +872,7 @@
             },
             {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
-                "actual": "12 x 25;12 x 30;15 x 35",
+                "actual": "12 x 30;12 x 25;15 x 35",
                 "expected": "12 x 30; 12 x 25; 12 x 35"
             },
             {
@@ -927,17 +927,17 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 41;12 x 40;12 x 55;12 x 52",
+                "actual": "12 x 41;12 x 55;12 x 40;12 x 52",
                 "expected": ""
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "10 x 21;15 x 55;24 x 30;10 x 32;24 x 45;15 x 28;12 x 30;14 x 30;15 x 32;10 x 27;15 x 40",
+                "actual": "12 x 30;15 x 28;15 x 40;24 x 45;24 x 30;10 x 27;10 x 32;10 x 21;14 x 30;15 x 32;15 x 55",
                 "expected": ""
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73.63;32.45 x 73;32.45 x 73.63",
+                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
                 "expected": ""
             },
             {
@@ -1513,34 +1513,14 @@
     },
     {
         "name": "frentes",
-        "tp": 8,
-        "fp": 2,
-        "fn": 11,
-        "tn": 271,
-        "precision": 0.8,
-        "recall": 0.42105263157894735,
-        "f1": 0.5517241379310345,
+        "tp": 16,
+        "fp": 3,
+        "fn": 3,
+        "tn": 270,
+        "precision": 0.8421052631578947,
+        "recall": 0.8421052631578947,
+        "f1": 0.8421052631578947,
         "error": [
-            {
-                "context": "Ecopueblo Alvear. Único lote disponible con salida a dos calles. Manzana 18 Lote 506. Lote irregular de 315.40 m2. Cuenta con un frente al norte de 10 mts, 34.76 mts en su lado este, 11.89 en su lado sur, y 28.32 en su lado oeste.",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
-                "context": "Terreno a la venta (Lote 8 Manzana n°1), dimensiones irregulares con frente a tres calles principales, y vistas al parque verde central del predio. Son 850 m2 de superficie total. El loteo cuenta con frente y acceso directo sobre Ruta n° 1, y bajada también directa al canal por donde se accede al río",
-                "actual": "",
-                "expected": 3.0
-            },
-            {
-                "context": "Casa en venta en la zona sur de la ciudad. Ubicación: Jose Maria Eguiluz n° 663. Barrio San Fernando. La casa se posee un terreno amplio de 413 m2, y tiene acceso por 2 calles, por adelante con calle Jose Maria Eguiluz y por atras con calle Jose Amenabar. Ideal proyecto e inversión",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
-                "context": "Lote con salida a dos calles, ubicado en la calle Tejedor entre Av. José María Moreno y calle Beauchef con 17 metros de frente. Se encuentra a cuatro cuadras de Av. Pedro Goyena; dos de la Av. Directorio. Subte E y varias lineas de colectivos. Acceso a autopista. Superficie total: 1700 m2. Superficie construible: 5720 aproximadamente.",
-                "actual": "",
-                "expected": 2.0
-            },
             {
                 "context": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
                 "actual": "",
@@ -1557,29 +1537,14 @@
                 "expected": 2.0
             },
             {
-                "context": "Importante predio - lotes - en la mejor zona de Banfield, Lomas de Zamora. Apto ideal desarrollo inmobiliario. 4000 m2. Salida a dos calles. A 200 metros de Larroque y de Alvear. Zona residencial exclusiva. Predio a la venta en la mejor zona de Banfield, cerca de todo. Zona residencial ideal para desarrollo inmobiliario. 4000 m2 compuestos por 7 lotes, con medidas irregulares de 50 m de largo por 80 m de ancho. Doble frente con ingreso casi de 20 m. Salida a dos calles. 2.600.000 USD",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
                 "context": "Espectacular lote con salida a 2 calles. Doble frente en ambas calles, 17.32m. Superficie total del lote 1375m. Zonificación USAM: Planta baja, 5 pisos y 2 retiros (pueden ser destino vivienda). A media cuadra de Av. Nazca, variedad de comercios y múltiples líneas de colectivo. Metraje de construcción total de planta baja al piso 7, habiendo contemplado dos ventilaciones (cada una de 24m.): 7000m. Aproximadamente.",
                 "actual": "",
                 "expected": 2.0
             },
             {
-                "context": "Excepcional lote céntrico con salida a 3 calles, con 14.15 metros de frente por Diagonal España, otros 30 metros por Córdoba y 10 metros por Teniente Ibáñez, a 250 metros de la Avenida Argentina. Superficie terreno: 1.177.90 m2. Superficie cubierta: 695.42 m2. Superficie semicubierta: 41.89 m2. El terreno es irregular, ideal para construcción en altura de complejo habitacional, comercial, centro médico y/o educativo. Zonificación: Zona Corredor Central CC2 y CP2. FOS: 0.85 %. Altura máxima: 42 metros.",
-                "actual": "",
-                "expected": 3.0
-            },
-            {
-                "context": "Excelente terreno de 50 mts de frente x 83 mts de fondo con salida a 2 calles. Superficie del terreno 4150 m2. Zonificación UR2 B. FOT 0.9 ampliable a 1.05 abonando plusvalía. FOS 0.45. Altura máxima 10.5 mts + 3 mts retirados. Densidad 350 hab x ha. Actualmente consta de casa principal, casa de huespedes, amplio quincho cubierto, piscina, amplio parque arbolado.",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
-                "context": "En excelente y estratégica ubicación, dentro de la zona del Puerto de Mar del Plata, se encuentra este importante lote en forma de L, con salida a dos calles. Con frentes de 17.30 mts sobre calle Bermejo y 8.71 mts sobre calle Solis, este lote cuenta con 1303 m2 totales. Emplazado sobre Distrito C2, zona destinada a la localización de usos urbanos centrales de índole administrativa, comercial, financiera, institucional y afines, compatibles con uso residencial de densidad media/alta. Con FOT 2.5 posee la factibilidad de construir aproximadamente 4.500 m2 en hasta 8 plantas.",
-                "actual": "",
-                "expected": 2.0
+                "context": "Este impresionante chalet revestido en piedra, de techo de tejas rojas, aberturas de madera artesanales, luminoso, espacioso y funcional, está ubicado a dos cuadras de Avenida Sarmiento, a dos cuadras de Avenida 3 de Febrero, a 7 cuadras del centro de la ciudad y a 10 cuadras del paseo costanero, en una zona apacible y pintoresca. Construido estratégicamente en esquina, permite ambientes luminosos, ventilados y muy bien distribuidos, permitiendo una total funcionalidad. Cuenta con 4 dormitorios, 3 baños, cocina con desayunador, comedor, amplia sala, lavadero, patio con parrilla, jardín y una pequeña pileta.",
+                "actual": 3,
+                "expected": ""
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
