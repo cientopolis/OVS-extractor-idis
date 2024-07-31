@@ -877,7 +877,7 @@
             },
             {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
-                "actual": "12 x 25;15 x 35;12 x 30",
+                "actual": "12 x 25;12 x 30;15 x 35",
                 "expected": "12 x 30; 12 x 25; 12 x 35"
             },
             {
@@ -932,17 +932,17 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 52;12 x 40;12 x 41;12 x 55",
+                "actual": "12 x 52;12 x 55;12 x 40;12 x 41",
                 "expected": ""
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "10 x 32;10 x 27;14 x 30;12 x 30;15 x 40;10 x 21;15 x 55;24 x 45;15 x 28;15 x 32;24 x 30",
+                "actual": "12 x 30;10 x 21;24 x 45;14 x 30;15 x 40;15 x 32;10 x 27;10 x 32;15 x 28;15 x 55;24 x 30",
                 "expected": ""
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73.63;32.45 x 73;32.45 x 73.63",
+                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
                 "expected": ""
             },
             {
@@ -952,7 +952,7 @@
             },
             {
                 "context": "Lotes Propios ( No es ph, ni parte indivisa) - Medidas 12x27 y 12x33 - Urbanizacion con 29 parcelas - Asfalto, luz, gas y agua corriente - Obras Finalizadas - Ultimos 4 lotes disponibles - Desde U$S 14.000 a U$S 19.000 segun tamaño y ubicacion - Financiacion: 30 % al boleto y el saldo hasta 48 cuotas de U$S 200 cada una. -",
-                "actual": "12 x 27;12 x 33",
+                "actual": "12 x 33;12 x 27",
                 "expected": ""
             },
             {
@@ -1577,36 +1577,21 @@
     },
     {
         "name": "urb_cerrada",
-        "tp": 34,
-        "fp": 7,
+        "tp": 35,
+        "fp": 4,
         "fn": 1,
-        "tn": 250,
-        "precision": 0.8292682926829268,
-        "recall": 0.9714285714285714,
-        "f1": 0.8947368421052632,
+        "tn": 252,
+        "precision": 0.8974358974358975,
+        "recall": 0.9722222222222222,
+        "f1": 0.9333333333333333,
         "error": [
-            {
-                "context": "Lote en venta sobre calle 148 esquina 477. BARRIO LAS LIEBRES. Lindero con el Club de Campo Grand Bell. De medidas 24 x 56 mts., haciendo un total de 1.320, m2. LOTE N° 2 SEGUN PLANO Cuenta con una hermosa vegetación, alambrado perimetral y servicio de luz. Escritura por parte indivisa",
-                "actual": true,
-                "expected": ""
-            },
             {
                 "context": "Hermoso lote en Chacras II-San Vicente. Lote en venta en el Barrio Fincas de San Vicente , Minichacra de 2400 m2.\nSector consolidado con  más 100 casas construidas y lotes de 2000 a 3600 mts. Compartiendo con Sporting Club y Fincas Laguna un sector común de espacio verde e infraestructura deportiva. Este increíble terreno ofrece una oportunidad única para aquellos que buscan un hogar en un entorno tranquilo y natural. Amplísimo  espacio para construir la casa de tus sueños. Ubicado en un barrio consolidado y de alta calidad en San Vicente, este lote promete ser el escenario perfecto para una vida apacible y en contacto con la naturaleza. \nLote de 2400 mts cuadrados en Fincas de San Vicente, Chacras urbanas II FINCAS de San Vicente tiene un hermoso Club House, canchas de Voley, Tennis y Fútbol, SUM, área de recreación para niños. A pocos minutos del centro de San Vicente",
                 "actual": true,
                 "expected": ""
             },
             {
-                "context": " VENTA EXCELENTE LOTE EN CAMPOS DE LA ENRIQUETA. Hermoso lote de 700 m2 con salida náutica. Disponibilidad de playa y muelle , para uso de embarcaciones sin motor. Número de Lote 288. Excelente orientación. El Emprendimiento se ubica en plena zona de desarrollo de Clubes de Campo del corredor ruta 2, La Plata - Brandsen, en el kilómetro 65 de dicha vía. Lotes de 700 m2. y de 1000 m2. Lotes con acceso directo a espectaculares canales de agua, en los cuales podes tener un muelle y una playa privada de arena, desde donde podes salir a navegar en embarcaciones sin motor, o pescar desde tu propio jardín. MAS DE 12 CANALES NAVEGABLES Y 2 LAGUNAS PRINCIPALES que tendrán un tratamiento especial para la mantención del agua, las especies de peces y toda su vegetación, y con un Arroyo Natural con una RESERVA DE FLORA Y FAUNA AUTOCTONA, un espacio único en la zona con juncales y espadañares, y una gran cantidad de aves, zorros, carpinchos, nutrias y liebres. Arroyo natural y 2 lagunas artificiales navegables. Locales comerciales, club house, gimnasio spa y piscinas. Club de playa y pesca deportiva. Spa, Gimnasio y Piscina climatizada.",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "LOTE EN VENTA * De 1187 m2 ubicado en Barrio Laguna (da a la laguna). Villa de Campo Tres Pino, partido de General Rodríguez * Entrega y posesión año 2024, Aun no se abonan expensas. * Predio de 500 hectáreas, con 7 barrios interconectados: \"Estribo\", \"Norte\", \"Polo\", \"Golf\", \"Casco\", \"Laguna\" e \"Isla\" * Club house ya funciona, se puede ir a pasar al día.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Importantes lotes de 1250m2 promedio en Fincas de Lima. Lotes perimetrales. ¡Con Posesión Inmediata! ¡Planes de financiación! FINCAS DE LIMA es un desarrollo de 17has con solo 100 lotes de 1250m2 promedio. Ubicado en Lima, partido de ZÃ¡rate, se encuentra a unos 100kms de CABA, a poco mÃ¡s de una hora en auto con acceso directo por autopista. Se accede desde la Ruta NÂ°9 por el Camino Km103. Con un entorno arbolado y en contacto con la naturaleza, es un espacio ideal para familias en busca de una mejor calidad de vida. El barrio semi-cerrado posee sólo dos accesos con tranqueras, uno desde la ruta (por Camino KM103) y el segundo desde el pueblo de Lima, otorgando seguridad y privacidad a las familias. Cuentan con servicio elÃ©ctrico con tendido aÃ©reo; calles internas mejoradas, cerco perimetral. El valor corresponde al pago de contado para los lotes: 62; 86; 88 y 91 Las dimensiones de algunos lotes varían entre 1233m2 y 1250m2 Las medidas, porcentuales, y superficies son aproximadas. Las medidas definitivas surgen del tÃtulo de propiedad, plano municipal y/o plano de mensura. Con 1.251 m2 su fondo de 28 metros se ubica sobre el hoyo 1 de la colorada, en el Barrio Pebble Beach de Pilar Golf. ¡Apto para construir inmediatamente! El precio publicado es por pago al contado. Ofrecemos financiación: USD 68.000 como anticipo y 24 cuotas de USD 6.000.- Te invitamos a recorrer el el lugar y estamos a tu disposición para todo lo que quieras saber.",
                 "actual": true,
                 "expected": ""
             },

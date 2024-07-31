@@ -196,7 +196,9 @@ class Oferta():
         return True if predichos["pileta"] else ""
 
     def urb_cerrada(self, predichos: list):
-        return True if predichos["urb_cerrada"] else ""
+        if ((not predichos["urb_cerrada_DM"]) and predichos["urb_cerrada"]):
+            return True
+        return ""
     
     def urb_semicerrada(self, predichos: list):
         return True if predichos["urb_semicerrada"] else ""
