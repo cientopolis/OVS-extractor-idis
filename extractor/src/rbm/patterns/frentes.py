@@ -76,6 +76,24 @@ def frentes() -> list :
                 "RIGHT_ATTRS": {"POS": "NOUN"},
             }
         ],
+        [
+            {
+                "RIGHT_ID": "casa",
+                "RIGHT_ATTRS": {"POS": "PROPN" },
+            },
+            {
+                "LEFT_ID": "casa",
+                "REL_OP": ">",
+                "RIGHT_ID": "doble",
+                "RIGHT_ATTRS": {"POS": "ADJ"}
+            },
+            {
+                "LEFT_ID": "casa",
+                "REL_OP": ">",
+                "RIGHT_ID": "frente",
+                "RIGHT_ATTRS": {"LOWER": "frente"}
+            },    
+        ]    
     ] 
 )
    

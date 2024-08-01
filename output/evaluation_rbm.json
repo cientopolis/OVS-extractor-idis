@@ -932,17 +932,17 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 52;12 x 55;12 x 40;12 x 41",
+                "actual": "12 x 40;12 x 52;12 x 41;12 x 55",
                 "expected": ""
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "12 x 30;10 x 21;24 x 45;14 x 30;15 x 40;15 x 32;10 x 27;10 x 32;15 x 28;15 x 55;24 x 30",
+                "actual": "14 x 30;10 x 32;15 x 55;24 x 30;10 x 21;10 x 27;24 x 45;12 x 30;15 x 32;15 x 40;15 x 28",
                 "expected": ""
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
+                "actual": "32.45 x 73.63;32.45 x 73.63;32.45 x 73",
                 "expected": ""
             },
             {
@@ -952,7 +952,7 @@
             },
             {
                 "context": "Lotes Propios ( No es ph, ni parte indivisa) - Medidas 12x27 y 12x33 - Urbanizacion con 29 parcelas - Asfalto, luz, gas y agua corriente - Obras Finalizadas - Ultimos 4 lotes disponibles - Desde U$S 14.000 a U$S 19.000 segun tamaño y ubicacion - Financiacion: 30 % al boleto y el saldo hasta 48 cuotas de U$S 200 cada una. -",
-                "actual": "12 x 33;12 x 27",
+                "actual": "12 x 27;12 x 33",
                 "expected": ""
             },
             {
@@ -1463,24 +1463,14 @@
     },
     {
         "name": "frentes",
-        "tp": 17,
+        "tp": 19,
         "fp": 2,
-        "fn": 3,
+        "fn": 1,
         "tn": 270,
-        "precision": 0.8947368421052632,
-        "recall": 0.85,
-        "f1": 0.8717948717948718,
+        "precision": 0.9047619047619048,
+        "recall": 0.95,
+        "f1": 0.9268292682926829,
         "error": [
-            {
-                "context": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
-                "actual": "",
-                "expected": 2.0
-            },
-            {
-                "context": "Lote de terreno de doble frente (17.32 m) ubicado sobre la calle Olaguer en la ciudad de lomas del mirador. Posee portón de acceso corredizo, piso de hormigón en toda la superficie y cuenta con una oficina con baño. Medidas del Lote: 17.32 m frente x 43.30 m fondo. Superficie Total: 750 m2. Zonificacion: U2b Urbano Mixto. FOT: 2.25 FOS: 0.60. Densidad: 700 Hab",
-                "actual": "",
-                "expected": 2.0
-            },
             {
                 "context": "Espectacular lote con salida a 2 calles. Doble frente en ambas calles, 17.32m. Superficie total del lote 1375m. Zonificación USAM: Planta baja, 5 pisos y 2 retiros (pueden ser destino vivienda). A media cuadra de Av. Nazca, variedad de comercios y múltiples líneas de colectivo. Metraje de construcción total de planta baja al piso 7, habiendo contemplado dos ventilaciones (cada una de 24m.): 7000m. Aproximadamente.",
                 "actual": "",
