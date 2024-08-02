@@ -1,18 +1,21 @@
 DIMENSION = ["frente", "fondo", "lateral", "ancho", "alto", "profundidad", "largo", "anchura", "longitud", "espesor"]
 CONECTORES_MEDIDAS = ["x", "por"]
-MEDIDAS = ["metro", "metros", "m", "ms", "mt", "mts", "m2"] 
+MEDIDAS = ["metro", "metros", "m", "ms", "mt", "mts", "m2", "mtros", "mtr", "m²"] 
 RELLENO = ["ADP", "ADV", "PROPN", "NOUN", "DET", "ADJ"] # sacarle el DET y ADJ? -> por ahora da buenos resultados sin perjudicar
 
 def medidas():
     return  list([            
             # 5 mt x 10 mt 
-            [
-                {"LIKE_NUM":True},
-                {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
-                {"TEXT":",", "OP":"?"}, 
-                {"LOWER":{"IN":CONECTORES_MEDIDAS}}, 
-                {"LIKE_NUM":True}
-             ],
+             [
+               {"LOWER": {"IN": ["lote","terreno", "medidas"]}, "OP":"?"},
+               {"LOWER": "de", "OP": "?"},
+               {"LIKE_NUM": True},
+               {"LOWER": {"IN": MEDIDAS}, "OP": "?"},
+               {"TEXT": ",", "OP": "?"},
+               {"LOWER": {"IN": CONECTORES_MEDIDAS}},
+               {"LIKE_NUM": True}
+            ]
+            ,
              # 5 mt x 10 mt x 40 mt
              [
                 {"LIKE_NUM":True},
@@ -46,7 +49,7 @@ def medidas():
                 {"POS": "ADP", "OP":"?"},
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
-                {"LOWER":{"IN":CONECTORES_MEDIDAS+["y", "con"]}, "OP": "?"}, 
+                {"LOWER":{"IN":CONECTORES_MEDIDAS+["y", "con", ".", ","]}, "OP": "?"}, 
                 {"LOWER": "fondo"},
                 {"POS": "ADP", "OP":"?"},
                 {"LIKE_NUM": True},
@@ -58,7 +61,7 @@ def medidas():
                 {"POS": "ADP", "OP":"?"},
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
-                {"LOWER":{"IN":CONECTORES_MEDIDAS+["y", "con"]}, "OP": "?"}, 
+                {"LOWER":{"IN":CONECTORES_MEDIDAS+["y", "con",".",","]}, "OP": "?"}, 
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
                 {"POS": "ADP", "OP":"?"},

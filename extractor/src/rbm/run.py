@@ -15,7 +15,7 @@ def get_numeros(cadena: str):
 def descartar_ultimo_token(lista):
     nueva_lista = []
     for elemento in lista:
-        if (elemento.endswith(".") or elemento.endswith(",") or elemento.endswith("(")):
+        if (elemento.endswith(".") or elemento.endswith(",") or elemento.endswith(")")):
             nuevo_elemento= elemento[:-1]
         else:
             tokens =elemento.split()  # Dividir el elemento en tokens
@@ -79,5 +79,6 @@ def rbm(input: pd.DataFrame) -> pd.DataFrame:
         }
         select_best_candidate(candidate_pairs, estructura)
         estructura["description"] = description
+        print(description+"\n")
         data.append(estructura)
     return pd.DataFrame(data, index=None)

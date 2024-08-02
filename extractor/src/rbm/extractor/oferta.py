@@ -171,17 +171,16 @@ class Oferta():
         Si el aviso enuncia múltiples dimensiones, buscar cuál refiere al lote
         """
         predichos= predichos["medidas"]
-        mejor_match= max(predichos, key=len) if predichos else ""
-        
-        if "martillo" in mejor_match:
-            return mejor_match.replace(" mts", "")
+        seleccionadas= []
+        for candidato in list(reduce_superstrings(set(predichos))):
+            medidas_candidato=""
+            if all(float(numero) >=5 for numero in list(map(str, self._get_numeros(candidato)))):
+                for numero in list(map(str, self._get_numeros(candidato))):
+                    medidas_candidato += numero + " x "
+                seleccionadas.append(medidas_candidato.replace(",",".").rstrip(" x"))
 
-        medidas = ""
-        for numero in list(map(str, self._get_numeros(mejor_match))):
-            medidas += numero + " x "
             
-        medidas= medidas.replace(",",".")
-        return medidas.rstrip(" x")
+        return ";".join(set(seleccionadas))
 
 
 

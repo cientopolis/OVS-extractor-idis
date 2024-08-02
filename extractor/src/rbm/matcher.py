@@ -22,7 +22,7 @@ from src.rbm.patterns.frentes import frentes
 
 NLP = spacy.load("es_core_news_lg")
 
-REGEX_LOTE= re.compile(r'\b(lote)\s+(\d+)\b(?![.,]\d+)(?!\s*[xX]\s*\d+)(?!\s*(?:x\s*\d+|\d+\s*x\s*\d+|mts|m2)\b)', re.MULTILINE | re.IGNORECASE)
+REGEX_LOTE= re.compile(r'\b(lote)\s+(\d+)\b(?![.,]\d+)(?!\s*[xX]\s*\d+)(?!\s*(?:mts|m2|m)\b)(?!\s*m²)', re.MULTILINE | re.IGNORECASE)
 # REGEX_LOTE= re.compile(r'\blote\b\s+\d+\b(?![\d.,]*\s*(?:x|m|,|\bpor\b))', re.MULTILINE | re.IGNORECASE)
 
 class Matcher:
@@ -147,7 +147,10 @@ class Matcher:
                 [{"POS":"NUM"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}}], #4 lotes
                 [{"POS": "NUM", "OP":"?"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}},{"OP":"{1,2}"}, {"LOWER": {"IN": ["venta","medidas"]}}], #lotes en venta, lotes a la venta, lotes de diferentes medidas
                 [{"LOWER": {"IN": ["lotes",  "terrenos"]}}, {"POS":"NUM"},{"LOWER": {"IN": ["x", "por"]}}], # lotes 10x30
-                [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}] #se venden juntos o separados
+                [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}], #se venden juntos o separados, #en bloque o por separado
+                [{"LOWER": "bloque"}, {"LOWER": "o"}, {"LOWER": {"IN": ["por", "separado"]}, "OP":"{,2}"}], 
+                [{"LOWER": "entre", "OP": "?"}, {"POS":"NUM"},{"LOWER": {"IN":["m2", "mts", "m"]}, "OP":"?"}, {"POS":"CCONJ"},{"POS":"NUM"},{"LOWER": {"IN":["m2", "mts", "m"]}}], #ENTRE 6.900 Y 12.300 M2 
+                [{"LOWER": "entre", "OP": "?"}, {"ORTH":{"IN": ["$", "AR$","US$", "USD", "U$S"]}},{"POS":"NUM"}, {"POS":"CCONJ"},{"ORTH":{"IN": ["$", "AR$","US$", "USD", "U$S"]}},{"POS":"NUM"}] #ENTRE U$S 48.500. Y U$S 86.000  
             ]
         )
 

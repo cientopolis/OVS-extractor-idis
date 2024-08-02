@@ -200,11 +200,11 @@ def dir_entre():
             {"LOWER": {"IN": ENTRE}}, 
             {"POS": "DET", "OP": "?"},
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "+"}, 
+            {"POS": {"IN": ["PROPN", "NUM", "DET"]}, "OP": "+"}, 
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
             {"LOWER": {"IN": INTERSECCION}}, 
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "+"}, 
+            {"POS": {"IN": ["PROPN", "NUM", "DET"]}, "OP": "+"}, 
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
         ],
         [

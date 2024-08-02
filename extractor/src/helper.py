@@ -35,7 +35,7 @@ def clean_direccion(cadena: str):
 
 def reduce_superstrings(dimensions):
     # Normalizamos las dimensiones eliminando 'mts' y otros caracteres no necesarios
-    normalized_dimensions = [re.sub(r'\s*mts?\s*', '', dim) for dim in dimensions]
+    normalized_dimensions = [re.sub(r'\s*mts?\s*', ' ', dim) for dim in dimensions]
     
     reduced_dimensions = []
     for dim in normalized_dimensions:
