@@ -1,3 +1,4 @@
+
 palabraPreVenta = ["preventa", "pre-venta"]
 desarrolloSinonimos = ["construcción", "construccion", "obra", "desarrollo"]
 propuestaSinonimos = ["propuesta", "proyecto", "posible", "posibilidad", "destinado", "preparado"]#, "posible", "posibilidad", "destinado"

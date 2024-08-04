@@ -13,3 +13,4 @@ def a_demoler()->list:
         #bueno para construir
         [{"LOWER": {"IN": idealSinonimos}}, {"TEXT": "de", "OP":"?"}, {"LOWER": {"IN": ideales}}], #esto lo tengo que sacar?
         ])
+
