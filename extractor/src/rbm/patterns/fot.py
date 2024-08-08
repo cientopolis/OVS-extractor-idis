@@ -1,5 +1,5 @@
 TIPOS_FOT = ["residencial", "comercial", "industrial", "res", "res.", "com", "com.", "ind", "ind."]
-FOT_SINONIMOS = ['fot', 'f.o.t']
+FOT_SINONIMOS = ['fot', 'f.o.t','F.O.T','Fot','F.o.t','FOT:']
 NUM_PORCENTAJE = ["NUM", "SYM"]
 PREMIOS_SINONIMOS = ["premios", "premio"]
 FOT_CONECTOR = ["de", ":", "es", ",", ".", "="]

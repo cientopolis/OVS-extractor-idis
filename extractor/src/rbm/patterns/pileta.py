@@ -1,6 +1,6 @@
 def pileta() -> list:
     return list ( 
     [
-        [{"LEMMA": {"IN": ["piscina", "pileta","Pileta"]}}]
+        [{"LOWER": {"IN": ["piscina", "pileta","Pileta"]}}]
     ]
 )
