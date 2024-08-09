@@ -14,7 +14,7 @@ class Oferta():
 
     def preventa(self, predichos: list):
         matcheos = 0
-        minimosMatcheos = 2
+        minimosMatcheos = 3 #3
         maximoAniosLejanos = 15
 
         for pre in predichos["pre-venta-asegurados"]:

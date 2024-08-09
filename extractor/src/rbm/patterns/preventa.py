@@ -25,7 +25,7 @@ def posibles():
 
 def fecha():
     return list([ #si encuentra un año mayor al actual aporta, pero no es seguro que sea pre-venta
-        [{"POS":"NUM"}] #solo si es como un número voy a poder comparar
+        [{"LIKE_NUM": True}] #solo si es como un número voy a poder comparar
     ])
 
 def cuotas():
