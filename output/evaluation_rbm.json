@@ -857,13 +857,13 @@
     },
     {
         "name": "medidas",
-        "tp": 107,
-        "fp": 40,
+        "tp": 106,
+        "fp": 41,
         "fn": 51,
         "tn": 127,
-        "precision": 0.7278911564625851,
-        "recall": 0.6772151898734177,
-        "f1": 0.7016393442622951,
+        "precision": 0.7210884353741497,
+        "recall": 0.6751592356687898,
+        "f1": 0.6973684210526315,
         "error": [
             {
                 "context": "Zona rural, predio cerrado, semiprivado de 16x25mts, lote 6 excelente ubicaion con arbolado, todos los servicios",
@@ -1111,6 +1111,11 @@
                 "expected": "20 x 30"
             },
             {
+                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
+                "actual": "20 x 48;15 x 30",
+                "expected": "15 x 30;20 x 48"
+            },
+            {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
                 "actual": "32.25 x 40.00",
                 "expected": "32.25 x 40.00 x 26.32"
@@ -1272,7 +1277,7 @@
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73.63;32.45 x 73.63;32.45 x 73",
+                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
                 "expected": ""
             },
             {
@@ -2121,13 +2126,13 @@
     },
     {
         "name": "a_demoler",
-        "tp": 73,
-        "fp": 16,
-        "fn": 5,
-        "tn": 231,
-        "precision": 0.8202247191011236,
-        "recall": 0.9358974358974359,
-        "f1": 0.874251497005988,
+        "tp": 74,
+        "fp": 15,
+        "fn": 3,
+        "tn": 233,
+        "precision": 0.8314606741573034,
+        "recall": 0.961038961038961,
+        "f1": 0.8915662650602411,
         "error": [
             {
                 "context": "Corredor Responsable: Verónica Lorena Paz Mat. N° 231 - Contacto: Veronica Lorena Paz - MLS ID # RE/MAX\r\nSEED OFRECE A LA VENTA UN TERRENO EN SAN PEDRO , PCIA DE BS AS Ubicado a pocas cuadras del\r\nRío, barrio semiprivado, en pleno crecimiento con casas nuevas y en construcción Con una superficie total de\r\n300 m2 (15m de frente por 20 m de fondo) Ideal para construcción de vivienda familiar o casa quinta. Acepta\r\nterreno en Mar del Plata No dudes en consultarme!",
@@ -2195,16 +2200,6 @@
                 "expected": true
             },
             {
-                "context": "Lote en venta ubicado en la calle 71 entre 22 y 23, Casco Urbano, La Plata.-  EXCELENTE LOTE 11X30 UR1 CON LOZA CONSTRUIDA  VENDO LOTE zonificado U/R1, medidas 11x30, ubicado en barrio residencial próximo a avenidas 19, 25 y 72. Posee loza de 1º piso construida, superficie construida 141 m2 (11x13), con posibilidad de expandir a 2º piso y/o expandir la superficie de forma horizontal. Servicios todos. Orientado al sur.  Superficie total de lote 330m2. Posee portón metálico de ingreso.  Ideal vivienda multifamiliar.-  Permuta por departamento 2 dormitorios (Zonas parque san Martin, plaza Malvinas, aledaños)  Servicios: Cloacas, Gas",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "LOTE EN VENTA EN MASCHWITZ CENTRO - MAROTO PROPIEDADES - El inmueble consta de tres lotes de terreno de 433 m cada uno  es decir 8,66x 50 cada uno con frente a la calle Entre Rios.  Tiene ademas un deposito techado impecable de 700 m2 cubiertyos aproximados Ideal para inversores , contrauctores o desarrolladores - se puede comprar lotes contiguos.        .",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
                 "actual": "",
                 "expected": true
@@ -2228,11 +2223,6 @@
                 "context": "LOTE DOBLE FRENTE en Ramos Mejía. Excelente Terreno de 17 mts. de Frente x 40 mts. de Fondo. Posibilidad de venta por fracción de 8,66 x 40 mts. La propiedad se encuentra ubicada sobre la calle 11 de Septiembre al 300, en el barrio de Ramos Mejía. A metros de la Av. San Martín. Ideal para emprendimiento de Departamentos o Duplex/PH. Posibilidad de tomar menor valor en parte de pago. ",
                 "actual": true,
                 "expected": ""
-            },
-            {
-                "context": "Se vende! RETASADOIDEAL EMPRENDIMIENTO Amplia propiedad ubicada en la calle San Martin 622, Bernal\r\ncentro. Medidas: 625 m2 cubiertos Lote de 11,60 x 59 Listo para tomar posesión y escriturar Consulte para más\r\ninformación o para visitar la propiedad",
-                "actual": "",
-                "expected": true
             }
         ]
     },
