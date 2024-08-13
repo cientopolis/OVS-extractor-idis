@@ -10,7 +10,7 @@ from src.rbm.patterns.medidas import medidas
 from src.rbm.patterns.urb_cerrada import urb_cerrada
 from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
-from src.rbm.patterns.a_demoler import a_demoler
+from src.rbm.patterns.a_demoler import asegurado, ideal, construccion
 from src.rbm.patterns.indiviso import indiviso
 from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
 
@@ -143,8 +143,16 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "a_demoler", a_demoler()
+            "a_demoler-asegurado", asegurado()
         )   
+
+        Matcher.matcher.add(
+            "a_demoler-ideal", ideal()
+        )  
+
+        Matcher.matcher.add(
+            "a_demoler-construccion", construccion()
+        )  
 
         Matcher.matcher.add(
             "es_multioferta", [
@@ -252,7 +260,9 @@ class Matcher:
             "posesion": [],
             "preventa": [],
             "indiviso": [],
-            "a_demoler": [],
+            "a_demoler-asegurado": [],
+            "a_demoler-ideal": [],
+            "a_demoler-construccion": [],
             "es_multioferta": [],
             "pre-venta-asegurados": [],
             "pre-venta-posibles": [],

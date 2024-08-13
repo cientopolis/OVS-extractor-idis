@@ -852,13 +852,13 @@
     },
     {
         "name": "medidas",
-        "tp": 107,
-        "fp": 41,
+        "tp": 108,
+        "fp": 40,
         "fn": 50,
         "tn": 127,
-        "precision": 0.722972972972973,
-        "recall": 0.6815286624203821,
-        "f1": 0.7016393442622951,
+        "precision": 0.7297297297297297,
+        "recall": 0.6835443037974683,
+        "f1": 0.7058823529411764,
         "error": [
             {
                 "context": "Zona rural, predio cerrado, semiprivado de 16x25mts, lote 6 excelente ubicaion con arbolado, todos los servicios",
@@ -1101,11 +1101,6 @@
                 "expected": "20 x 30"
             },
             {
-                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
-                "actual": "20 x 48;15 x 30",
-                "expected": "15 x 30;20 x 48"
-            },
-            {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
                 "actual": "32.25 x 40.00",
                 "expected": "32.25 x 40.00 x 26.32"
@@ -1267,7 +1262,7 @@
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
+                "actual": "32.45 x 73.63;32.45 x 73;32.45 x 73.63",
                 "expected": ""
             },
             {
@@ -2107,15 +2102,30 @@
     {
         "name": "a_demoler",
         "tp": 73,
-        "fp": 8,
+        "fp": 15,
         "fn": 4,
-        "tn": 240,
-        "precision": 0.9012345679012346,
+        "tn": 233,
+        "precision": 0.8295454545454546,
         "recall": 0.948051948051948,
-        "f1": 0.9240506329113924,
+        "f1": 0.8848484848484849,
         "error": [
             {
                 "context": "Corredor Responsable: Verónica Lorena Paz Mat. N° 231 - Contacto: Veronica Lorena Paz - MLS ID # RE/MAX\r\nSEED OFRECE A LA VENTA UN TERRENO EN SAN PEDRO , PCIA DE BS AS Ubicado a pocas cuadras del\r\nRío, barrio semiprivado, en pleno crecimiento con casas nuevas y en construcción Con una superficie total de\r\n300 m2 (15m de frente por 20 m de fondo) Ideal para construcción de vivienda familiar o casa quinta. Acepta\r\nterreno en Mar del Plata No dudes en consultarme!",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "VENTA TERRENO DE  22,52 X 43,30, GENERAL SAN MARTIN Ideal constructor Excelente lote sobre Güemes entre las de Rivadavia y Vidal. El mismo cuenta con una superficie total de 975 m2. sobre lote de 22,52 de frente x 43,30 mts de fondo A la fecha se puede escriturar el 60% del terreno el 40% restante se encuentra en etapa judicial ( usucapión)",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Las Toninas, ciudad balneario del Partido de La Costa en la provincia de Buenos Aires, ubicada a 337 km de la Ciudad de Buenos Aires. Excelente lugar de ambiente familiar, con playas angostas de arena fina y aguas tranquilas, especial para proyectos o inversión. El terreno en venta se encuentra ubicado a 4 cuadras de la playa, sobre la calle 7 entre la 6 y 8 y cuenta con todos los servicios: agua, luz, gas y con todos los impuestos al día. A tener en cuenta: Se encuentra en proceso judicial de usucapión iniciado a los fines de obtener el título de propiedad. Posibilidad de otorgar cesión de derechos litigiosos. Con opción de financiación de dueño directo. ",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "TERRENO ZONA DE ALVEAR Y CAñADA, CORDOBA, cerca de Nueva Córdoba, 264mts2,  terreno irregular, ideal para emprendimiento, Derechos posesorios de mas de 25 años. Oportunidad de negocio!!! \r\nESCUCHO OFERTAS DE CONTADO.  PRECIO PUBLICADO: RECIBO VEHICULOS (1, 2, 3 ó 4) que no sean de alta gama ni invendibles, autos nacionales, vendibles, fáciles de hacer efectivo.\r\nLLAMAME LUCíA CORONEL RUIZ. Visitá nuestra web y enviame un Whatsapp (LU) por las propiedades que quieras ver!.MP 4199",
                 "actual": true,
                 "expected": ""
             },
@@ -2135,7 +2145,27 @@
                 "expected": ""
             },
             {
+                "context": "Excelente lote de 586 m2, sobre calle 117 entre 526 y 527. Ideal Inversores constructores, muy baja incidencia. Ancho 10 metros x 60 en su parte mas larga y 55.50 en la parte mas corta. FOS 0.6 FOT 0.8. Densidad x Ha 300. Zona UR2. Permitido 10 UF. Escritura inmediata. Proyecto de 10 UF+cocheras",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Avenida Montevideo y 105. Lote de 8.66 x 26 mts. Ideal emprendimiento. Zona S2 R3 con cloacas. FOS 0.6 y FOT 1.8 Densidad 800 habitantes.",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "Venta de Lote, Villa Gesell. Avenida 2 e/ Paseo 118 y 119. Lote multifamiliar. Ideal Inversores. Lote Multifamiliar de alta densidad a 2 cuadras de la playa. Excelente ubicación. Superficies: Sup. Lote: 1304.74 m2 (20.00m de frente). Zonificación: RMA. FOS 0.60. FOT 2. DENSIDAD 800 HAB/HA. C.U.V. 0.025. POTENCIAL CONSTRUCTIVO HASTA 32 UNIDADES DE VIVIENDA. Puede construirse un máximo de 2607.48 m2 distribuidos en 6 Pisos.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Excelente terreno de 8.66 mts de frente por 43.50 mts de fondo, sobre Av. Manuel Belgrano al 6200. Ideal inversor. El FOT es de 2.5.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Importante predio - lotes - en la mejor zona de Banfield, Lomas de Zamora. Apto ideal desarrollo inmobiliario. 4000 m2. Salida a dos calles. A 200 metros de Larroque y de Alvear. Zona residencial exclusiva. Predio a la venta en la mejor zona de Banfield, cerca de todo. Zona residencial ideal para desarrollo inmobiliario. 4000 m2 compuestos por 7 lotes, con medidas irregulares de 50 m de largo por 80 m de ancho. Doble frente con ingreso casi de 20 m. Salida a dos calles. 2.600.000 USD",
                 "actual": true,
                 "expected": ""
             },

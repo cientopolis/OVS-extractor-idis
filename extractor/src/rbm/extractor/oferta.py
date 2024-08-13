@@ -9,8 +9,10 @@ RE_TRES = re.compile(r"\b(tres|triple|3|tercer)\b", re.IGNORECASE)
 class Oferta():
 
     def a_demoler(self, predichos: list):
-        return True if predichos["a_demoler"] else ""
-
+        if (predichos["a_demoler-asegurado"]) or (predichos["a_demoler-ideal"] and predichos["a_demoler-construccion"]):
+            return True
+        else:
+            ""
 
     def preventa(self, predichos: list):
         matcheos = 0
