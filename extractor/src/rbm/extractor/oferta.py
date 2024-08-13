@@ -9,7 +9,7 @@ RE_TRES = re.compile(r"\b(tres|triple|3|tercer)\b", re.IGNORECASE)
 class Oferta():
 
     def a_demoler(self, predichos: list):
-        if (predichos["a_demoler-asegurado"]) or (predichos["a_demoler-ideal"] and predichos["a_demoler-construccion"]):
+        if (predichos["a_demoler-asegurado"]) or (predichos["a_demoler-ideal"] and predichos["edificado"]):
             return True
         else:
             ""
@@ -213,7 +213,7 @@ class Oferta():
         return True if predichos["posesion"] else ""
 
     def es_monetizable(self, predichos: list):
-        if not self.a_demoler(predichos) and not self.preventa(predichos) and predichos["es_monetizable"]: # and not self.preventa(predichos)
+        if not self.a_demoler(predichos) and not self.preventa(predichos) and predichos["edificado"]: # and not self.preventa(predichos)
             return True
         else: 
             return ""

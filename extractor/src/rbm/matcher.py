@@ -12,7 +12,7 @@ from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal, construccion
 from src.rbm.patterns.indiviso import indiviso
-from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
+from src.rbm.patterns.edificacion_monetizable import edificado
 
 
 
@@ -161,7 +161,7 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "es_monetizable", edificacion_monetizable()
+            "es_monetizable", edificado()
         )
         
         Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
@@ -262,7 +262,6 @@ class Matcher:
             "indiviso": [],
             "a_demoler-asegurado": [],
             "a_demoler-ideal": [],
-            "a_demoler-construccion": [],
             "es_multioferta": [],
             "pre-venta-asegurados": [],
             "pre-venta-posibles": [],

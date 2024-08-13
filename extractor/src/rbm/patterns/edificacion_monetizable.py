@@ -8,7 +8,7 @@ AREA = ["m2", "mts2", "mt2", "metros2", "metro2"] #fijarme sk matchea con M2 y s
 PALABRAS_CLAVE = ["parquizado", "parquizada", "nivelado", "nivelada"]
 CONSTRUIDO_SINONIMOS = ["construido", "construida", "construidos", "construidas", "creada", "creado", "creadas", "creados"]
 
-def edificacion_monetizable():
+def edificado():
     return  list([
         # #con construcción
         # [{"LOWER": "consta"},{"LOWER": "de"},{"POS":"ADV", "OP":"?"},{"LOWER": {"IN":UN_SINONIMOS},"OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
@@ -34,3 +34,5 @@ def edificacion_monetizable():
         [{"LOWER": {"IN":PALABRAS_CLAVE}}],
         #si la construcción es futura entonces no ponerla
     ])
+
+def mejorado():return  list([])

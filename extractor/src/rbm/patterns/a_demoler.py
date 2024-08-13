@@ -18,8 +18,3 @@ def ideal()->list:
         [{"LOWER": {"IN": idealSinonimos}}, {"TEXT": "de", "OP":"?"}, {"LOWER": {"IN": ideales}}], #esto lo tengo que sacar?
         ])
 
-def construccion()->list:
-    return  list([
-        #con construcción
-        [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}]
-        ])
