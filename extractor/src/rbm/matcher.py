@@ -10,7 +10,7 @@ from src.rbm.patterns.medidas import medidas
 from src.rbm.patterns.urb_cerrada import urb_cerrada
 from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
-from src.rbm.patterns.a_demoler import asegurado, ideal, construccion
+from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso
 from src.rbm.patterns.edificacion_monetizable import edificado
 
@@ -151,17 +151,13 @@ class Matcher:
         )  
 
         Matcher.matcher.add(
-            "a_demoler-construccion", construccion()
-        )  
-
-        Matcher.matcher.add(
             "es_multioferta", [
                 [{"LEMMA": "lote", "MORPH": "Gender=Masc|Number=Plur"}]
              ]
         )
 
         Matcher.matcher.add(
-            "es_monetizable", edificado()
+            "edificado", edificado()
         )
         
         Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
@@ -268,7 +264,7 @@ class Matcher:
             "pre-venta-fecha": [],
             "pre-venta-cuotas": [],
             "pre-venta-descartar": [],
-            "es_monetizable": []
+            "edificado": []
         }
         self.__get_matches(text, prev_result)
         self.__get_phrase_matches(text, prev_result)
