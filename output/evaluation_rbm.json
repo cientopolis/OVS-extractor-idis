@@ -1007,7 +1007,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "8.66 x 26;17.32 x 26",
+                "actual": "17.32 x 26;8.66 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -1092,7 +1092,7 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50;50 x 25.70",
+                "actual": "14.80 x 50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
@@ -2436,12 +2436,12 @@
     {
         "name": "es_monetizable",
         "tp": 87,
-        "fp": 60,
+        "fp": 62,
         "fn": 18,
-        "tn": 160,
-        "precision": 0.5918367346938775,
+        "tn": 158,
+        "precision": 0.5838926174496645,
         "recall": 0.8285714285714286,
-        "f1": 0.6904761904761905,
+        "f1": 0.6850393700787403,
         "error": [
             {
                 "context": "Terreno en venta dentro de un loteo semi-cerrado ubicado en calle 22 y 619, La Plata. Loteo \"Terrazas del Sur\". 1250m2. 25 metros de frente por 50 metros de fondo. Lote interno. Instrumento de venta. Fideicomiso. Desarrollo en pleno cecimiento, zona muy tranquila. ",
@@ -2502,6 +2502,11 @@
                 "context": "venta departamento en ph.-en complejo calle santa fe 735,bella vista.-pdo de san miguel esta unidad se encuentra en contrafrente Unidad desarrollada en una planta techo loza,preparado para construccion en futuro en. compuesta por cocina comedor con mobiliario.- dormitorio sin placard baÃ±o con tres sanitarios cochera descubierta total superficie 52,87m SERVICIOS_GAS ENVASADO.-LUZ.-AYSA 300.-MUNICIPAL 450-SE DIVIDE PROPORCIONAL DE GASTO DE LUZ DE BOMBA DE AGUA.- valor de venta u$s 70.000- apto credito bancario.- puede financiar: 70% al boleto con posesión y saldo 30% en cuotas a convenir.-",
                 "actual": "",
                 "expected": true
+            },
+            {
+                "context": "Casa ideal inversores en construcción!!! Inmejorable casa en la calle Sgto. Cabral al 560, Lagos de Canning con $ de expensas (aprox). En su totalidad mide 670 m2, de los cuales 290 m2 son cubiertos y 380 m2 descubiertos. Características: altura 6 metros sin columnas. Portón: 4.80 mts. alto y 4.50 mts. ancho. Lote: 10 x 30. Cubiertos: 190 m2. Fuerza motriz. FOS 0.60. FOT 1.20.",
+                "actual": true,
+                "expected": ""
             },
             {
                 "context": "Lote en esquina entre las calles Moreno y Avellaneda. Superficie terreno 210 metros. Zonificacion Rma1. FOT 1.5. FOS 0.6. Posee una construccion de un antiguo local de 220 mts",
@@ -2805,6 +2810,11 @@
             },
             {
                 "context": "Vendo,terreno de 10x 30mts, con bases de 7 x 11mts.servicio de luz y agua.escritura en condominio. barrio cerrado siempre verde.direccion 602 y 22.zona de casa quinta en pleno crecimiento.ppsible financiación y\r\npermuta.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "TERRENOS EN PRE-VENTA VENTA DE TERRENOS - EXCELENTE OPORTUNIDAD DE INVERSIÒN\r\nUbicados a tan solo 45 minutos de CABA y a 5 minutos de la nueva autopista Presidente Perón (Continuación\r\ndel Camino del Buen Ayre) que conectara directamente Zona Norte con Ezeiza-La Plata. PRE VENTA DE LAS\r\nPRIMERAS 10 UNIDADADES DISPONIBLES DE 724 mts2 - DOCUMENTACION: Escritura al día. Posesión a\r\n12 meses, escritura indivisa. DESCRIPCIONES GENERALES Barrio cerrado VIEDMA CHICO compuesto por 41\r\nunidades funcionales que van desde los 724 a 850mts2 / Trabajo de agrimensura realizado, lotes amojonados\r\n/ / Calles internas ( cul de sac ) / / Vigilancia / / Portón automático / / Cerco perimetral y alarma / / Circuito\r\ncerrado cámaras seguridad con acceso para cada propietario / / Iluminación LED / / Forestación /\r\nINFORMACION DE INTERES -Linea de transporte publico a 3 cuadras. -Ubicado a 300 metros de Avenida\r\nConstituyentes. -Ubicado a 10 minutos del centro comercial de Mariano Acosta., -Ubicado a 5 minutos del Lago\r\nSan Francisco y Reserva Parque Los Robles. -Ubicado a 5 minutos de la subida de la nueva autopista con fácil\r\nacceso.",
                 "actual": true,
                 "expected": ""
             },
