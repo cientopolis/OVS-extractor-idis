@@ -5,8 +5,9 @@ SUPERFICIE_SINONIMOS = ["superficie", "espacio", "sup"]
 CUBIERTA_SINONIMOS = ["edificada", "edificadas", "edificado", "edificados", "cubierta", "cubierto", "cubiertas", "cubiertos", "semicubierta", "semicubierto", "semicubiertas", "semicubiertos"]
 BASE_SINONIMOS = ["base", "bases"]
 AREA = ["m2", "mts2", "mt2", "metros2", "metro2"] #fijarme sk matchea con M2 y similares
-PALABRAS_CLAVE = ["parquizado", "parquizada", "nivelado", "nivelada"]
+PALABRAS_CLAVE_EDIFICADO = ["parquizado", "parquizada", "nivelado", "nivelada"]
 CONSTRUIDO_SINONIMOS = ["construido", "construida", "construidos", "construidas", "creada", "creado", "creadas", "creados"]
+PALABRAS_CLAVE_MEJORADO = ["mejora", "mejoras", "mejorado", "mejorada", "alambrado", "alambrada"]
 
 def edificado():
     return  list([
@@ -31,8 +32,10 @@ def edificado():
         #[{"LOWER": {"IN":CON_SINONIMOS}},{"LOWER": {"IN":BASE_SINONIMOS}},{"LOWER":"de","OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
 
         #palabras que no requieren "con"
-        [{"LOWER": {"IN":PALABRAS_CLAVE}}],
+        [{"LOWER": {"IN":PALABRAS_CLAVE_EDIFICADO}}],
         #si la construcción es futura entonces no ponerla
     ])
 
-def mejorado():return  list([])
+def mejorado():return  list([
+    [{"LOWER": {"IN":PALABRAS_CLAVE_MEJORADO}}],
+])
