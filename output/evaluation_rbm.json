@@ -852,13 +852,13 @@
     },
     {
         "name": "medidas",
-        "tp": 107,
-        "fp": 41,
+        "tp": 108,
+        "fp": 40,
         "fn": 50,
         "tn": 127,
-        "precision": 0.722972972972973,
-        "recall": 0.6815286624203821,
-        "f1": 0.7016393442622951,
+        "precision": 0.7297297297297297,
+        "recall": 0.6835443037974683,
+        "f1": 0.7058823529411764,
         "error": [
             {
                 "context": "Zona rural, predio cerrado, semiprivado de 16x25mts, lote 6 excelente ubicaion con arbolado, todos los servicios",
@@ -1007,7 +1007,7 @@
             },
             {
                 "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "17.32 x 26;8.66 x 26",
+                "actual": "8.66 x 26;17.32 x 26",
                 "expected": "17.32 x 26"
             },
             {
@@ -1092,18 +1092,13 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50;50 x 25.70",
+                "actual": "50 x 25.70;14.80 x 50",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
                 "actual": "",
                 "expected": "20 x 30"
-            },
-            {
-                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
-                "actual": "20 x 48;15 x 30",
-                "expected": "15 x 30;20 x 48"
             },
             {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
@@ -1267,7 +1262,7 @@
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
+                "actual": "32.45 x 73.63;32.45 x 73;32.45 x 73.63",
                 "expected": ""
             },
             {
@@ -2106,13 +2101,13 @@
     },
     {
         "name": "a_demoler",
-        "tp": 73,
+        "tp": 74,
         "fp": 8,
-        "fn": 4,
+        "fn": 3,
         "tn": 240,
-        "precision": 0.9012345679012346,
-        "recall": 0.948051948051948,
-        "f1": 0.9240506329113924,
+        "precision": 0.9024390243902439,
+        "recall": 0.961038961038961,
+        "f1": 0.9308176100628931,
         "error": [
             {
                 "context": "Corredor Responsable: Verónica Lorena Paz Mat. N° 231 - Contacto: Veronica Lorena Paz - MLS ID # RE/MAX\r\nSEED OFRECE A LA VENTA UN TERRENO EN SAN PEDRO , PCIA DE BS AS Ubicado a pocas cuadras del\r\nRío, barrio semiprivado, en pleno crecimiento con casas nuevas y en construcción Con una superficie total de\r\n300 m2 (15m de frente por 20 m de fondo) Ideal para construcción de vivienda familiar o casa quinta. Acepta\r\nterreno en Mar del Plata No dudes en consultarme!",
@@ -2146,11 +2141,6 @@
             },
             {
                 "context": "Lote con construcción de dos plantas (una casa PB y otra PA) No está afectado a PH, se vende como lote por el estado de los inmuebles.- Toman departamentos ya hechos en parte de pago ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
                 "actual": "",
                 "expected": true
             },
@@ -2441,12 +2431,12 @@
     {
         "name": "es_monetizable",
         "tp": 84,
-        "fp": 50,
+        "fp": 49,
         "fn": 21,
-        "tn": 170,
-        "precision": 0.6268656716417911,
+        "tn": 171,
+        "precision": 0.631578947368421,
         "recall": 0.8,
-        "f1": 0.7029288702928871,
+        "f1": 0.7058823529411765,
         "error": [
             {
                 "context": "Terreno en venta dentro de un loteo semi-cerrado ubicado en calle 22 y 619, La Plata. Loteo \"Terrazas del Sur\". 1250m2. 25 metros de frente por 50 metros de fondo. Lote interno. Instrumento de venta. Fideicomiso. Desarrollo en pleno cecimiento, zona muy tranquila. ",
@@ -2705,11 +2695,6 @@
             },
             {
                 "context": "137 Y 90 LOTE EN VENTA, BARRIO PRIVADO FINCAS DE DUGGAN, 800 m2, Ubicado en la etapa 2, esta se ecuentra completamente desarrollada y el lote es el único que queda en este sector. Plano PH aprobado.  SERVICIOS E INFRAESTRUCTURA:  • Seguridad privada en accesos, y rondines por el barrio las 24 hs. de los 365 días del año, a lo que se le adiciona un puesto de control de la policía bonaerense en la esquina del barrio.  • Sala de control para monitoreo de imágenes.  • Sistema de control de acceso y egreso con llave magnética personalizada.  • Cerco olímpico perimetral.  • Alumbrado de calles.  • Servicios por tendido subterráneo:  >  Red de energía eléctrica.  >  Red de fibra óptica para Internet de alta velocidad, telefonía y televisión.  >  Red de agua corriente.  >  Red de gas natural.  ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
                 "actual": true,
                 "expected": ""
             },
