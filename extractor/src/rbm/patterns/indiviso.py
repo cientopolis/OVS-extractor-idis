@@ -1,8 +1,9 @@
 def indiviso_M() -> list:
     return list (
             [
-                [{"TEXT":"indiviso"}],#indiviso 
-                [{"TEXT":"indivisa"}],#indivisa       
+                [{"LOWER":"indiviso"}],#indiviso 
+                [{"LOWER":"indivisa"}],#indivisa  
+                #[{"LOWER": "escritura"},{"LOWER" : "indivisa("}]     
             ]
     )
 def indiviso_DM() -> list:
