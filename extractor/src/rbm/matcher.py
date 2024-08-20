@@ -15,7 +15,7 @@ from src.rbm.patterns.a_demoler import a_demoler
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
 from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
-from src.rbm.patterns.pileta import pileta
+from src.rbm.patterns.pileta import pileta,pileta_barrio
 from src.rbm.patterns.esquina import esquina
 from src.rbm.patterns.irregular import irregular
 from src.rbm.patterns.frentes import frentes
@@ -54,6 +54,10 @@ class Matcher:
         Matcher.matcher.add(
             "pileta",
             pileta()
+        )
+        Matcher.matcher.add(
+            "pileta_barrio",
+            pileta_barrio()
         )
         Matcher.matcher.add(
             "esquina",
@@ -230,6 +234,7 @@ class Matcher:
             "fot": [],
             "irregular": [],
             "pileta": [],
+            "pileta_barrio":[],
             "barrio": [],
             "esquina": [],
             "frentes": [],

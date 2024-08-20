@@ -193,7 +193,9 @@ class Oferta():
         return True if predichos["esquina"] else ""
 
     def pileta(self, predichos: list):
-        return True if predichos["pileta"] else ""
+        if not predichos["pileta_barrio"] and predichos["pileta"]:
+            return True 
+        return ""
 
     def urb_cerrada(self, predichos: list):
         if ((not predichos["urb_cerrada_DM"]) and predichos["urb_cerrada"]):
