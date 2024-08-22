@@ -11,6 +11,7 @@ def urb_cerrada()-> list:
             [{"LOWER" : "condominio"},{"LOWER" : "cerrado"}],
             [{"LOWER" : "Amenities"}],
             [{"LOWER" : "complejo"},{"LOWER" : "cerrado"}],
+            [{"POS" : "PROPN"},{"LOWER" : "club"}],
         ]
     )
 
