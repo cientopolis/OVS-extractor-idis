@@ -44,4 +44,4 @@ def urb_cerrada_DM()-> list:
             ]
         ]
     )
-# relizar dependency matcher para descartar los casos como: "lindero a club de campo Grand Bell"
+#relizar dependency matcher para descartar los casos como: "lindero a club de campo Grand Bell"
