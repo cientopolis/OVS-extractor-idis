@@ -17,7 +17,7 @@ from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
 from src.rbm.patterns.pileta import pileta,pileta_barrio
 from src.rbm.patterns.esquina import esquina
-from src.rbm.patterns.irregular import irregular
+from src.rbm.patterns.irregular import irregular,irregular_DM
 from src.rbm.patterns.frentes import frentes
 
 NLP = spacy.load("es_core_news_lg")
@@ -198,6 +198,9 @@ class Matcher:
         Matcher.dependencyMatcher.add("urb_cerrada_DM",
             urb_cerrada_DM()
         )
+        Matcher.dependencyMatcher.add("irregular_DM",
+            irregular_DM()
+        )
     def __get_matches(self, text, prev_result):
         doc = NLP(text)
         matches = Matcher.matcher(doc)
@@ -233,6 +236,7 @@ class Matcher:
             "dir_lote": [" ".join(x) for x  in re.findall(REGEX_LOTE, text)],
             "fot": [],
             "irregular": [],
+            "irregular_DM":[],
             "pileta": [],
             "pileta_barrio":[],
             "barrio": [],
