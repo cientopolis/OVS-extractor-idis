@@ -1,4 +1,4 @@
-fincas = ["duggan" , "Duggan"]
+fincas = ["duggan","Duggan","Hudson","San Vicente","Alba","Don Victor","Alvarez","Laguna"]
 def urb_cerrada()-> list:
     return list(
         [
@@ -6,9 +6,11 @@ def urb_cerrada()-> list:
             [{"LOWER" : "Barrio"},{"LOWER" : "Privado."}],
             [{"LOWER" : "barrios"},{"LOWER" : "cerrados"}],
             [{"LOWER" : {"IN" : ["Club","club"]}},{"LOWER" : {"IN" : ["House","house"]}}],
-            [{"LOWER" : "fincas"},{"LOWER" : "de"},{"LOWER" : {"IN" : fincas} }],
+            # fincas/finca de/del [fincas]
+            [{"LOWER" : {"IN" :["fincas","finca"]}},{"LOWER" : {"IN" : ["de","del"]}},{"OP" : "?"},{"LOWER" : {"IN" : fincas} }],
             [{"LOWER" : "condominio"},{"LOWER" : "cerrado"}],
-            [{"LOWER" : "Amenities"}]
+            [{"LOWER" : "Amenities"}],
+            [{"LOWER" : "complejo"},{"LOWER" : "cerrado"}],
         ]
     )
 
