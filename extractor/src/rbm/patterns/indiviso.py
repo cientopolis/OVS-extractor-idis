@@ -28,8 +28,17 @@ def indiviso_DM() -> list:
                     "RIGHT_ATTRS": {"POS":{"IN" : ["ADV" , "CCONJ"]}},  # no/ni parte indivisa
                 }
             ],
-            [
-                
-            ]
+            #[
+            #    {
+            #        "RIGHT_ID": "indiviso).",
+            #        "RIGHT_ATTRS": {"POS": "ADJ"},
+            #    },
+            #    {
+            #        "LEFT_ID": "indiviso).",
+            #        "REL_OP": ">",
+            #        "RIGHT_ID": "NO",
+            #        "RIGHT_ATTRS": {"POS": "ADV"}
+            #    }            
+            #]
         ]
   
