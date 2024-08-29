@@ -218,6 +218,8 @@ class Oferta():
         return ""
 
     def es_monetizable(self, predichos: list):
+        if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos)):
+            return True
         if predichos["es_monetizable-mejorado"]:
             return True
         if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and (predichos["es_monetizable-construccion"]):

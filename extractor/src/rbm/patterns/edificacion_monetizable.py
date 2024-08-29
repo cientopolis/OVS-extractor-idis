@@ -1,14 +1,15 @@
 CON_SINONIMOS = ["c/", "con", "tiene", "posee", "hay"]
 UN_SINONIMOS = ["un", "una", "unos", "unas"]
-CONSTRUCCION_SINONIMOS = [ "vivienda", "viviendas", "depto", "deptos", "departamento", "departamentos", "edificado", "edificados", "deposito", "depósito", "depositos", "depósitos", "construcción", "construccion", "construcciones", "zócalo", "zocalo", "zocalos", "edificación", "edificacion", "edificaciones", "quincho", "quinchos", "galpon", "galpón", "galpones", "local", "locales", "casa", "casas", "casita", "casitas", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "parrilla", "parrillas", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "dormitorio", "dormitorios", "cochera", "cocheras", "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos", "guardacoche", "guardacoches", "piso", "pisos", "muro", "muros", "hall", "halls", "terraza", "terrazas", "garage", "garages", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias", "playroom", "playrooms", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches"]
+CONSTRUCCION_SINONIMOS = [ "vivienda", "viviendas", "depto", "deptos", "departamento", "departamentos", "edificado", "edificados", "deposito", "depósito", "depositos", "depósitos", "construcción", "construccion", "construcciones", "zócalo", "zocalo", "zocalos", "edificación", "edificacion", "edificaciones", "quincho", "quinchos", "parrilla", "parrillas", "galpon", "galpón", "galpones", "local", "locales", "casa", "casas", "casita", "casitas", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "parrilla", "parrillas", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "dormitorio", "dormitorios", "cochera", "cocheras", "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos", "guardacoche", "guardacoches", "piso", "pisos", "muro", "muros", "hall", "halls", "terraza", "terrazas", "garage", "garages", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias", "playroom", "playrooms", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches"]
 SUPERFICIE_SINONIMOS = ["superficie", "espacio", "sup"]
 CUBIERTA_SINONIMOS = ["edificada", "edificadas", "edificado", "edificados", "cubierta", "cubierto", "cubiertas", "cubiertos", "semicubierta", "semicubierto", "semicubiertas", "semicubiertos"]
 BASE_SINONIMOS = ["base", "bases"]
 AREA = ["m2", "mts2", "mt2", "metros2", "metro2"] #fijarme sk matchea con M2 y similares
 PALABRAS_CLAVE_EDIFICADO = ["parquizado", "parquizada", "nivelado", "nivelada"]
 CONSTRUIDO_SINONIMOS = ["construido", "construida", "construidos", "construidas", "creada", "creado", "creadas", "creados"]
-#COSAS_COUNTRY = ["portón", "porton", "portones"]
-PALABRAS_CLAVE_MEJORADO = ["portón", "porton", "portones", "pileta", "piscina", "mejora", "mejoras", "mejorado", "mejorada", "alambrado", "alambrada","paredón", "paredon", "paredones", "contrapiso", "contrapisos", "portón", "porton", "portones", "cerco", "cercos", "medianera", "medianeras", "cercado", "cercados", "parrilla", "parrillas", "platea", "plateas", "loza", "lozas"]# "losa", "losas",
+COSAS_COUNTRY = ["portón", "porton", "portones", "alambrado", "alambrada", "cercado", "cercados", "pileta", "piscina", "cerco", "cercos"]
+PALABRAS_CLAVE_MEJORADO = ["mejora", "mejoras", "mejorado", "mejorada","paredón", "paredon", "paredones", "contrapiso", "contrapisos", "medianera", "medianeras", "platea", "plateas", "loza", "lozas",]
+#"portón", "porton", "portones", 
 
 def construccion():
     return  list([
@@ -41,4 +42,9 @@ def construccion():
 def mejorado():
     return  list([
         [{"LOWER": {"IN":PALABRAS_CLAVE_MEJORADO}}],
+    ])
+
+def mejoras_country():
+    return list([
+        [{"LOWER": {"IN": COSAS_COUNTRY}}]
     ])
