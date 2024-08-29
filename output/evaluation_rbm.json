@@ -1077,7 +1077,7 @@
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "14.80 x 50 x 25.70;50 x 25.70",
+                "actual": "14.80 x 50;50 x 25.70",
                 "expected": "14.80 x 50 x 25.7"
             },
             {
@@ -1232,7 +1232,7 @@
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
+                "actual": "32.45 x 73.63;32.45 x 73;32.45 x 73.63",
                 "expected": ""
             },
             {
@@ -2356,14 +2356,34 @@
     },
     {
         "name": "es_monetizable",
-        "tp": 94,
-        "fp": 51,
-        "fn": 4,
-        "tn": 172,
-        "precision": 0.6482758620689655,
-        "recall": 0.9591836734693877,
-        "f1": 0.7736625514403292,
+        "tp": 97,
+        "fp": 48,
+        "fn": 9,
+        "tn": 167,
+        "precision": 0.6689655172413793,
+        "recall": 0.9150943396226415,
+        "f1": 0.7729083665338645,
         "error": [
+            {
+                "context": "Inmueble en venta ideal emprendimiento. FOT 2.5 FOS 0.6 Zona residencial multifamiliar. Terreno de 346 mts frente 8.66 x fondo 39 mts aprox. Todos los servicios. Chalet a demoler con pileta y quincho.",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "ESTRUCTURA JURíDICA: Fideicomiso a precio cerrado. EL VALOR PUBLICADO ES CONTADO EFECTIVO. Medidas: 15,5 x 25m La entrega del barrio esta programada para mediados 2026, no obstante, se permitirá dar inicio a las obras particulares a fines del 2022.  FORMA DE PAGO: Opción A: Contado en USD Opción B: 50 % anticipo USD + Cuotas hasta Dicembre 2024 U$S98.813.- UBICACIóN: A 200 mt de la bajada de Ruta 26, Ramal Pilar km 41,5. ESQUEMA DE RETIROS: INFORMACIóN GENERAL: Los lotes rondan los 375 a 400 mts 2. Superficie a construir mínima inicial permitida es de 120 m2 FOS: 0.4 FOT: 0.7 Retiro frente: 3 metros Retiro lateral: 1) 3.00 mt - 2) 1,15 mt Retiro Fondo mínimo: 8.00 mt. Pileta despegada de los ejes medianeros 1.50 mt. INFRAESTRUCTURA: Calles internas asfaltadas / hormigón intertrabado con cuneta. Redes subterráneas de electricidad, agua, cloaca y gas. Alumbrado Público. Pilares de servicios. Edificio de acceso.  Club House.  Amenities ",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Excelente propiedad sobre esquina con un frente lineal de 162 metros y salida a tres calles, Cabildo, Guatemala y Pilcomayo. Superficie de terreno 6200 m2. Contrapiso para camiones en casi su totalidad. Sectores descubiertos a reciclar. Zona industrial. Apto todo destino. FOT residencial: 2, FOT industrial: 1.5, FOS: 60% max.",
+                "actual": "",
+                "expected": true
+            },
             {
                 "context": "Terreno de triple frente en venta, entrada por Av San Martín (doble frente) y por Miguel ángel (frente simple). La de Av San Martín tiene 17.38 de frente X 48.55 de fondo, con posibilidad de construir 4032.2 m2 vendibles distribuidos en 7 pisos.",
                 "actual": true,
@@ -2371,11 +2391,6 @@
             },
             {
                 "context": "Terreno en venta dentro de un loteo semi-cerrado ubicado en calle 22 y 619, La Plata. Loteo \"Terrazas del Sur\". 1250m2. 25 metros de frente por 50 metros de fondo. Lote interno. Instrumento de venta. Fideicomiso. Desarrollo en pleno cecimiento, zona muy tranquila. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "OPORTUNIDAD ULTIMOS LOTES EN BARRIO ABIERTO GARIN LOTES 12X25 PREVENTA A 12 MESES SE ENTREGAN CON TENDIDO ELECTRICO APROBADO POR EDENOR. CALLES ASFALTADAS. PILAR DE LUZ ANTICIPO 5.000 USD Y 60 CTAS FIJAS TAMBIEN PODES ENTREGAR UN ANTICIPO DE 1.800.000 PESOS Y EL RESTO EN 60 CTAS VARIABLE AL UVA. PARA MAS INFORMACION COMUNICATE CON DANIELA REINOSO VENDEDORA POBLAR DESARROLLOS. Servicios: Gas, Pavimento. Características: Medianera, Alambrado perimetral. Nos encontramos con un Barrio semi cerrado de 6 hectáreas, con lotes de 350m2 en adelante, a metros de la ruta 25 que comunica escobar con pilar, todos lotes son escriturables y sin expensas. San Juan Bautista se caracteriza por su tranquilidad y su entorno privilegiado, con mucha naturaleza en los alrededores y con una vegetación única. Precios de pre-venta y únicamente para las primeras 40 unidades. Te invitamos a que conozcas el predio y puedas formar parte de nuestra cartera de clientes, ya que nos están conociendo y eligiendo.\"",
                 "actual": true,
                 "expected": ""
             },
@@ -2395,9 +2410,9 @@
                 "expected": ""
             },
             {
-                "context": "Casa ideal inversores en construcción!!! Inmejorable casa en la calle Sgto. Cabral al 560, Lagos de Canning con $ de expensas (aprox). En su totalidad mide 670 m2, de los cuales 290 m2 son cubiertos y 380 m2 descubiertos. Características: altura 6 metros sin columnas. Portón: 4.80 mts. alto y 4.50 mts. ancho. Lote: 10 x 30. Cubiertos: 190 m2. Fuerza motriz. FOS 0.60. FOT 1.20.",
-                "actual": true,
-                "expected": ""
+                "context": "venta departamento en ph.-en complejo calle santa fe 735,bella vista.-pdo de san miguel esta unidad se encuentra en contrafrente Unidad desarrollada en una planta techo loza,preparado para construccion en futuro en. compuesta por cocina comedor con mobiliario.- dormitorio sin placard baÃ±o con tres sanitarios cochera descubierta total superficie 52,87m SERVICIOS_GAS ENVASADO.-LUZ.-AYSA 300.-MUNICIPAL 450-SE DIVIDE PROPORCIONAL DE GASTO DE LUZ DE BOMBA DE AGUA.- valor de venta u$s 70.000- apto credito bancario.- puede financiar: 70% al boleto con posesión y saldo 30% en cuotas a convenir.-",
+                "actual": "",
+                "expected": true
             },
             {
                 "context": "Venta Lote IDEAL PROYECTO EDILICIO sobre José Indart entre Ocampo y Perón. Frente 10 Fondo 31. FOT 3. Actualmente posee dos casas construidas en muy buen estado con cochera pasante. Todas las medidas son aproximadas y provistas por el cliente. Información Adicional: gas natural. Servicios: cloacas, gas",
@@ -2451,11 +2466,6 @@
             },
             {
                 "context": "lote en venta con fondo al agua. Barrio cerrado Miralagos el lote dispone de 1285 m2 ubicado en una calle poco transitable y cuenta con un fondo a la laguna del barrio está ubicado a cerca del segundo ingreso del barrio con fácil acceso a la entrada al club y a la entrada a la ruta 2 el barrio cerrado Miralagos club de campo golf y spa se encuentra solo a 30 minutos de la capital con vía directa cuenta con club house con pileta climatizada piscina exterior playroom paddle tenis cancha de golf con 9 hoyos spa y gimnasio orientacion Frente al Suroeste las medidas son aproximadas las definitivas surgirán del título de la propiedad",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote con mejoras (casa a refaccionar) 8,77 x 26,23 x 8,77 x 26,07, sup. total 226 mts2. Todos los servicios. FOS 0.6. FOT 1.6. Zonificación RTMA. Escritura a cargo del comprador.",
                 "actual": true,
                 "expected": ""
             },
@@ -2525,11 +2535,6 @@
                 "expected": ""
             },
             {
-                "context": "RUTA N° 3, KM. 118, A 160 METROS DE LA RUTA (SAN MIGUEL DEL MONTE).  LOTE IRREGULAR EN ESQUINA. SUP. TOTAL DEL TERRENO 8.000 m2 APROX. RANCHO (A DEMOLER). SERVICIOS: LUZ â€“ AGUA POR BOMBEADOR. ALAMBRADO PERIMETRAL DE CAMPO. ARBOLEDA AÑOSA. MUY BUEN CAMINO DESDE LA RUTA PARA EL INGRESO CON DECLARATORIA DE HEREDEROS, PARA ESCRITURAR POR TRACTO ABREVIADO. PASANDO LA LAGUNA DE LAS PERDICES. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "VENTA lote de 616 m2, con mejora a demoler y/o reciclar y una pileta de fibra a refaccionar. Tiene 20 m de frente por 30,80 m de fondo. Tiene luz, gas envasado, pozo ciego y agua de pozo. Ubicada en barrio de vivienda permanente con rápido acceso a Panamericana Ramal Pilar. Tiene escritura  ",
                 "actual": true,
                 "expected": ""
@@ -2576,6 +2581,11 @@
             },
             {
                 "context": "504 Y 138 Excelente entorno consolidado de casa nuevas. Altos de Don Carlos. Lote en PH en esquina de 314 m2 aproximados. Movimiento de suelo, bases hechas, proyecto y permiso de obra aprobado. Rápido acceso a La Plata. Cercano a La Plata Rugby, Santa Bárbara, República de los Niños, Los Tilos, Colegio del Sol, Crisol, Raíces.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "BARRIO LAS MUÑECAS III. ULTIMO LOTE (EN PH), BARRIO CERRADO CON BAJAS EXPENSAS. ACCESO POR PORTON AUTOMATICO. ALARMA VECINAL. ARBOLADO Y TOTALMENTE DESARROLLADO.  Alberto Dacal Propiedades: Código de la propiedad",
                 "actual": true,
                 "expected": ""
             },
