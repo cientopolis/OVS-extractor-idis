@@ -447,7 +447,7 @@
             },
             {
                 "context": "Venta de 2 Lotes linderos de 10 x 45,75 cada uno, total de 20 x 45,75, con Pileta de 7 mts x 3,20 mts y Quincho (abierto) con contrapiso de 4mts x 7mts con parrilla y baño. en Ciudad Nueva, Nueve de Julio  Medida: Frente : 20 Medida: Fondo : 45.75  (FAE-FAE-585)",
-                "actual": "10 x 45.75;20 x 45.75",
+                "actual": "20 x 45.75;10 x 45.75",
                 "expected": ""
             },
             {
@@ -747,12 +747,12 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 55;12 x 41;12 x 40;12 x 52",
+                "actual": "12 x 55;12 x 52;12 x 40;12 x 41",
                 "expected": ""
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "15 x 40;15 x 28;14 x 30;10 x 32;24 x 30;12 x 30;10 x 27;15 x 55;24 x 45;15 x 32;10 x 21",
+                "actual": "12 x 30;10 x 27;15 x 32;24 x 45;10 x 21;24 x 30;15 x 28;14 x 30;15 x 40;15 x 55;10 x 32",
                 "expected": "10 x 21.89"
             },
             {
@@ -802,7 +802,7 @@
             },
             {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
-                "actual": "15 x 35;12 x 25;12 x 30",
+                "actual": "12 x 30;15 x 35;12 x 25",
                 "expected": "12 x 30; 12 x 25; 12 x 35"
             }
         ]
@@ -1586,14 +1586,24 @@
     },
     {
         "name": "es_monetizable",
-        "tp": 92,
-        "fp": 37,
-        "fn": 6,
-        "tn": 186,
-        "precision": 0.7131782945736435,
-        "recall": 0.9387755102040817,
-        "f1": 0.8105726872246697,
+        "tp": 103,
+        "fp": 52,
+        "fn": 4,
+        "tn": 162,
+        "precision": 0.6645161290322581,
+        "recall": 0.9626168224299065,
+        "f1": 0.7862595419847328,
         "error": [
+            {
+                "context": "Alberti 3359, Mar del Plata. Edificio en construcción: DEPARTAMENTOS DE CATEGORÍA. Venta en pozo: ANTICIPO Y FINANCIACIÓN. Entrega aproximada Julio 2025. 8 pisos de departamentos y quincho común en el piso 9. Unidades de 2 ambientes de 47 mts2 de 52 mts2. Unidades de 3 ambientes de 92 m2 (semipisos). Amplios balcones con parrilla. Terraza con pileta compartida.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "TERRENO EN VENTA con amplio chalet a refaccionar, en inmejorable zona de Martínez entre Av. Libertador y el río.Hall de recepción, importante living con chimenea y comedor ppal con pisos de marmol, escritorio en PA o 5to dormitorio. 4 dormitorios (1 en suite con buen vestidor), 2 baños, 2 toilettes, cocina y comedor diario, dependencia de servicio y lavadero en PB. Gran Playroom en PA, terraza, garaje para 3 autos. Jardín de 24m x 20m con quincho, parrilla, vestuarios, casa de caseros y pileta.Zona muy tranquila.Estado original. Estructura de hormigón independiente que permite flexibilidad de distribución interna. Calefacción por conducto de aire.Vigilancia.   ",
+                "actual": true,
+                "expected": ""
+            },
             {
                 "context": "Terreno de triple frente en venta, entrada por Av San Martín (doble frente) y por Miguel ángel (frente simple). La de Av San Martín tiene 17.38 de frente X 48.55 de fondo, con posibilidad de construir 4032.2 m2 vendibles distribuidos en 7 pisos.",
                 "actual": true,
@@ -1626,6 +1636,11 @@
             },
             {
                 "context": "Ubicados sobre la Calle De Luca entre calle Alsina y Av. San Martín (arteria principal de acceso). A sólo 350 metros de la Ruta Provincial N° 6. Localidad de Los Cardales, Partido de Exaltación de la Cruz, Provincia de Buenos Aires. Características: Se trata de dos terrenos ubicados en el casco urbano de Los Cardales. Se encuentran dentro de la Zona Residencial Comercial de Densidad Media Baja (RCmb) acorde al Código de Planeamiento de Exaltación de la Cruz en la cuál se admite la edificación de departamentos y locales comerciales. Con indicadores de ocupación de: FOS: O.6 y FOT: 1.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Terreno en venta ubicado sobre calle 487 entre 133 y 134 (Joaquín Gorina, La Plata, Buenos Aires). Con disposición frente y orientación norte. De medidas regulares, cuenta con una superficie total aproximada de 319 m2. Acceso por calle de tierra mejorada con los servicios de electricidad, agua, gas natural y cable disponibles en la zona.",
                 "actual": true,
                 "expected": ""
             },
@@ -1670,6 +1685,16 @@
                 "expected": ""
             },
             {
+                "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "MIRALAGOS. Club de Campo Golf y Spa. Ubicado en MIRALAGOS Club de Campo Golf & spa (La Plata, Buenos Aires). VENTA Terreno de 1285 mts2 con fondo a la laguna. Las medidas aproximadas de 20 mts de frente por 60 mts de fondo.Acceso por calle de tierra mejorada con servicio de electricidad en la zona. Características: Red de Energía eléctrica Red de fibra óptica para telefonía, internet, etc.Red de Agua corrienteRed de Gas natural Derecho de Conexión a Red cloacal con planta de tratamiento interna.Calles con pavimentación asfáltica Alumbrado de calles Seguridad y vigilancia las 24 horas Gimnasio & Spa, Cancha de Golf , 6 Canchas de Tenis, Canchas de Futbol 5 y 11, Cancha de Paddle, Canchas de Beach Voley, Polideportivo (básquet, patinaje, handball, hockey),Circuito aeróbico. El mismo concepto fue aplicado para el agua servida, esta es tratada y desechada en tu totalidad en una única red que se conecta a una importante planta de tratamiento propia construida con la última tecnología, que trabaja sin provocar ningún tipo de ruido y con ausencia de olores.La información gráfica y escrita contenida en el presente aviso es meramente a título ilustrativo e informativo y no forma parte de ningún tipo de documentación contractual.Las medidas y superficies definitivas surgirán del título de propiedad del inmueble referido. Asimismo los importes de tasas, servicios y expensas indicados están sujetos a verificación",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
                 "actual": true,
                 "expected": ""
@@ -1678,11 +1703,6 @@
                 "context": "San Jerónimo ll BARRIO ABIERTO. Este emprendimiento esta ubicado en Matheu, partido de Escobar a 8 cuadras de la ruta 25 (Av. Sarmiento) con acceso a panamericana Ruta Nacional Nº 9 (ramal Escobar), a 15 minutos del Centro de Belén de Escobar. Este emprendimiento se desarrolla bajo la modalidad de precio cerrado y diferentes opciones de financiación en cuotas fijas. Contará con calles con cunetas, red eléctrica aérea y alumbrado LED. Oferta lanzamiento, Lotes en Matheu a precios únicos. Luego del éxito San Jerónimo 1, nace esta nueva propuesta de nombre San Jerónimo 2, son todos lotes con las medidas justas para poder realizar tu propio proyecto, tanto para vivienda permanente o para casa de fines de semana. San Jerónimo 2 va a convertirse en una excelente propuesta con visión de futuro, con comparativos demostrables en San Jerónimo 1, cuyos valores actuales se duplicaron en poco tiempo, hoy podes tener la posibilidad de reservar tu terreno al mejor precio del mercado. No dudes en contactarnos y reservar tu terreno. El precio publicado es por el anticipo, luego podes acceder a planes de 12 o 24 cuotas fijas. Los precios de lotes por pago de contado arrancan en u$s 10.000.",
                 "actual": true,
                 "expected": ""
-            },
-            {
-                "context": "Lote en PH Barrio Abierto Don Uriel. Ubicación: Mz 146, lote 25. Lote de 235,38 m2 (10,81m X 23,19m) Servicios: Calles con cordón cuneta y mejorado. Red de tendido eléctrico. Alumbrado publico con luminarias LED. Agua corriente. Gas natural.  Sistema de venta por Fideicomiso con asignación de lote individual (no indiviso).",
-                "actual": "",
-                "expected": true
             },
             {
                 "context": "Lote de 12m x 39m , 468 m2excelente zona en El Pato, El Peligro, todos los servicios. El lote es con escritura, dueño directo. Todos los papeles al día y a disposición de los interesados. Se encuentra sobre Calle 406 bis y Calle 202 . Excelente acceso desde Caba. Zona de casas quinta. Comercios en cercanía, escuelas. Comuníquese por Whatsapp y le envío la información.",
@@ -1710,6 +1730,21 @@
                 "expected": ""
             },
             {
+                "context": "Lote de 1020 m2 con orientación NE (luz solar todo el día) La nueva etapa es una combinación ideal para acceder a una inmejorable calidad de vida, disfrutando de los espacios y dimensiones propios de la vida de campo y el confort de una ciudad. Es el sector ideal para aquellos que quieran disfrutar de los deportes acuáticos, cuenta con una laguna artificial de 5.5 hectáreas. Sus chacras, que van de 800 m2 a 1400m2 y 50 metros de frente, ofrecen una amplia distancia entre vecinos y un espacio propio suficientemente generoso. Cuentan tambiÃ©n con la posibilidad de acceso a todo tipo de actividad deportiva del mega emprendimiento. Un sector que contará con 412 lotes de 800m2 a 1400m2. Éxito total en su primer lanzamiento de pre-venta a fines del año 2017. House nÃ¡utico con muelle hacia la laguna Lotes con frente a la laguna Acceso a todo tipo de actividad deportiva dentro del mega emprendimiento (futbol, golf, polideportivo, tenis, pileta semi-olímpica).",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Oportunidad de inversión a valores de pre-venta: Barrio abierto Los Aromos, sin expensas, en la mejor zona de 20 de Junio, Matanza El proyecto contempla para la venta 80 Lotes de 900 y 1000m2 que se entregarán ESCRITURADOS en una fecha estimada cercana a DICIEMBRE 2026, y que gracias a una impecable gestión, hoy ya cuenta con Planos Aprobados en el Municipio de Matanza, y ARBA, en la La Plata. Para tal logro, serán necesarias todas las obras de infraestructura viales tales como: -Apertura de cinco calles nuevas -Aporte de suelo cemento -Aporte de tosca compactada -Aporte de cascote fino como terminaciÃ³n final -CordÃ³n cuneta de HormigÃ³n Armado en todas las nuevas calles a ceder con acceso vehicular y desagÃ¼e pluvial. El proyecto urbano tambiÃ©n contempla un plan hidrÃ¡ulico de evacuaciÃ³n de las aguas de lluvia mediante sumideros, zanjas y entubados perimetrales aprobados por el municipio de La Matanza Por otro lado, se contempla toda la iluminaciÃ³n pÃºblica y tendido elÃ©ctrico; mejorado de calles aledaÃ±as y desmalezado. El emprendimiento contará con un sector de 10.000mÂ² para el esparcimiento público.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Exclusiva pre-venta con financiación, anticipo y 30 cuotas!! Espectacular casa premium fondo al lago â€“ Marinas â€“ Puertos del lago. Casa de categorÃa, con sÃ³lida construcciÃ³n de HormigÃ³n H-21- Platea y dos Losas macizas â€“ CaracterÃsticas sustentables y detalles exclusivos en todos los ambientes. Lote: 888 m2 Cubiertos: 324 m2 Semicubiertos: 109 m2 Terrazas: 65 m2 Total: 498 m2",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "DUEÑO DIRECTO. atencion: No respondo a Inmobiliarias. aviso: otros truchos copian y roban datos para publicar el mismo lote. tener cuidado!!! TOBAS entre COLIQUEO y ANCATRUZ. 400mts del río. zona no inundable. apto financiacion privada con garantia prop o prendaria 50% y saldo 12 cuotas en dolares sin interes- a 1500mts de ruta 11 tendido electrico en la entrada al lote no hay red de agua potable ni cloacal internet por antena parabolica .asp?id=7188&t=Punta-del-Indio-paraiso-oculto como llegar: desde capital tomar autopista buenos aires- la plata y en la primera bifurcación a la derecha pasa primer peaje. Tomar salida a la derecha a Mar del Plata ruta 2 Hudson para luego ver cartel ruta 36 EL PATO y salir en la bifurcacion a la derecha para tomar la 36 ruta hacia dolores chascomús salida empalme ruta 36 partido de la costa y en cartel a la izquierda hacer como una media U pasando por abajo del puente y todo derecho por la 36 es doble mano sin luz unos 15 minutos aprox. Pasar la primer rotonda y pasar la segunda rotonda y tercer rotonda a Pipinas qué son unos 45 minutos Aproximadamente en la cuarta rotonda seguir derecho hasta la cruz de Jesús ahí a la izquierda hay un cartel a Verónica la ruta se llama circunvalacion2. Hacer unos 7 km de ripio y después de un cartel de bienvenida a Punta Indio doblar a la derecha y seguir como 3 km más y luego doblar a la izquierda por ruta 11 en el cartel Parque Costero Sur, es como volviendo para atras. Luego doblar en calle ANCATRUZ a la derecha y seguir hasta Tobas y a 50mts está la entrada a lote 19. No esta demarcado ni amojonado ni cercado. para ir en micro: hay que llegar hasta veronica desde la plata con micro que sale de terminal. Y una vez en Veronica tomar el micro Parque Costero del Sur a Punta Indio. horarios-micro-comunal",
                 "actual": true,
                 "expected": ""
@@ -1725,12 +1760,32 @@
                 "expected": ""
             },
             {
+                "context": "VENTA lote de 616 m2, con mejora a demoler y/o reciclar y una pileta de fibra a refaccionar. Tiene 20 m de frente por 30,80 m de fondo. Tiene luz, gas envasado, pozo ciego y agua de pozo. Ubicada en barrio de vivienda permanente con rápido acceso a Panamericana Ramal Pilar. Tiene escritura  ",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "Lote de terreno con construcción en venta frente al Parque San Martín, 54 y 23, La Plata. LOTE 1: de 131m2 apróx con 8 mts de frente con vista al Parque San Martí¬n; LOTE 2: 408 m2 apróx total: 15 mts apróx de frente hacia calle 54 y 24 mts apróx con frente hacia calle 23; lo que hacen ambos una superficie total de 539 m2 apróx con frentes hacia 3 calles: 54, 23 y diagonal 102. Todos los servicios; Excelente propiedad en inmejorable ubicación de la ciudad ideal para desarrollos multifamiliares. Zona :U/EF3a - AREA Eje Fundacional Tramo 3: Calle 20 a calle 23 y frentistas a Parque San Martin. FOT RESIDENCIAL 2.5, DENSIDAD RESIDENCIAL 1.000, PREMIOS FOT Y DENSIDAD 70%. OPORTUNIDAD ",
                 "actual": "",
                 "expected": true
             },
             {
                 "context": "Lote con construcción de dos plantas (una casa PB y otra PA) No está afectado a PH, se vende como lote por el estado de los inmuebles.- Toman departamentos ya hechos en parte de pago ",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Lote con mejora de 120 m2 a una cuadra de Ruta 8 (entrada de El Chelito) En venta Lote con mejora de 5 ambientes a reciclar sobre Héctor Arregui (ex Florida) entre Provincia de Buenos Aires y Bahía Thetis.  Excelente zona de casas quintas a tan solo 100 mts. de Ruta 8 en el cruce  «El Chelito»  Propiedad sobre amplio lote de 15.77 x 40 mts. Superficie total del terreno 630 m2  Casa de 120 m2 distribuida en dos plantas a reciclar y acondicionar. ",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Terreno de 240mts2 en venta ubicado en calle  50 entre 246 y 247 (Lisandro Olmos Etcheverry, La Plata, Buenos Aires). Con disposición frente y orientación sudeste. _ Regular entre medianeras, cuenta con medidas de 10mts de frente por 24mts de fondo. _ Acceso por calle de tierra mejorada con servicio de electricidad en la zona._ El lote cuenta con construcciones independientes a refaccionar, al frente cuenta con una unidad funcional de 2 ambientes, un dormitorio y un baño. Al contrafrente posee un monoambiente. ",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Calle 515 e/ 141 y 142. Lotes con construccion antigua a refaccionar. Posee casa con dos habitaciones, cocina separada, living comedor y quincho con parrilla. Son cuatro lotes totales con posibilidad de venderse por separado o en bloque.",
                 "actual": true,
                 "expected": ""
             },
@@ -1758,11 +1813,6 @@
                 "context": "504 Y 138 Excelente entorno consolidado de casa nuevas. Altos de Don Carlos. Lote en PH en esquina de 314 m2 aproximados. Movimiento de suelo, bases hechas, proyecto y permiso de obra aprobado. Rápido acceso a La Plata. Cercano a La Plata Rugby, Santa Bárbara, República de los Niños, Los Tilos, Colegio del Sol, Crisol, Raíces.",
                 "actual": true,
                 "expected": ""
-            },
-            {
-                "context": "BARRIO LAS MUÑECAS III. ULTIMO LOTE (EN PH), BARRIO CERRADO CON BAJAS EXPENSAS. ACCESO POR PORTON AUTOMATICO. ALARMA VECINAL. ARBOLADO Y TOTALMENTE DESARROLLADO.  Alberto Dacal Propiedades: Código de la propiedad",
-                "actual": "",
-                "expected": true
             },
             {
                 "context": "Terreno en PH sobre Avenida Arana entre calle 139 y 141. Zona residencial de Arturo segui. Sobre asfalto. Con servicios de electricidad, agua, gas (en vereda de enfrente).  Dimensiones de 20 de frente x 45 de fondo.  Zonificacion UR 8. Fos 0.4 Fot 0.8 Atura permitida 3 niveles. Demsidad por habitante 60 oersonas x hectarea.  Arbolado. Muy buen entorno.  Permuta por departamento en La Plata.  Servicios:  Gas  Características:  Alambrado perimetral Responsable Matriculado Andrés Ariel Brandoni - Matricula 6865 Folio 8 Tomo Xlll CMCPDJLP (Ley 10.973). Las medidas y superficies asignadas en la presente, son aproximadas al solo efecto orientativo. Las medidas definitivas surgiran del titulo de propiedad respectivo.",
@@ -1800,12 +1850,27 @@
                 "expected": ""
             },
             {
+                "context": "TERRENOS EN PRE-VENTA VENTA DE TERRENOS - EXCELENTE OPORTUNIDAD DE INVERSIÒN. Ubicados a tan solo 45 minutos de CABA y a 5 minutos de la nueva autopista Presidente Perón (Continuación del Camino del Buen Ayre) que conectara directamente Zona Norte con Ezeiza-La Plata. PRE VENTA DE LAS PRIMERAS 10 UNIDADADES DISPONIBLES DE 724 mts2 - DOCUMENTACION: Escritura al día. Posesión a 12 meses, escritura indivisa. DESCRIPCIONES GENERALES Barrio cerrado VIEDMA CHICO compuesto por 41 unidades funcionales que van desde los 724 a 850mts2 / Trabajo de agrimensura realizado, lotes amojonados / / Calles internas ( cul de sac ) / / Vigilancia / / Portón automático / / Cerco perimetral y alarma / / Circuito cerrado cámaras seguridad con acceso para cada propietario / / Iluminación LED / / Forestación / INFORMACION DE INTERES -Linea de transporte publico a 3 cuadras. -Ubicado a 300 metros de Avenida Constituyentes. -Ubicado a 10 minutos del centro comercial de Mariano Acosta., -Ubicado a 5 minutos del Lago San Francisco y Reserva Parque Los Robles. -Ubicado a 5 minutos de la subida de la nueva autopista con fácil acceso.",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "Se vende! RETASADO IDEAL EMPRENDIMIENTO Amplia propiedad ubicada en la calle San Martin 622, Bernal centro. Medidas: 625 m2 cubiertos Lote de 11,60 x 59 Listo para tomar posesión y escriturar Consulte para más información o para visitar la propiedad",
                 "actual": "",
                 "expected": true
             },
             {
+                "context": "486 Y 147 LOTEO FINCAS GORINA NUEVO EMPRENDIMIENTO. Lote nº1, de 633m2 de la manzana 100 . Servicios: luz, agua corriente por la cooperativa Cosego. Luminaria publica, calles con mejorado. Planos Aprobado (municipal y geodesia) UR6. Escritura y posesión inmediata. Fácil acceso a camino General Belgrano y a solo 10 minutos a la ciudad de La Plata. Lotes disponibles 990m2 - 1062",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "Boero Propiedades vende: Lote dentro de barrio cerrado. Nuevo Loteo en La Plata (Calle 131 y 85)\r\n- A 10 del centro, acceso por asfalto\r\n-Varias familias ya viviendo y otras en proceso de construcción.\r\n-FINANCIACIóN EN PESOS con anticipo mínimo y hasta 48 cuotas\r\n- Vehículos como parte de pago\r\nLotes desde 250 a 330 m2 (promedio de 10 x 30 mts)\r\n- Lotes ESCRITURABLES.\r\n- Entrega de posesión inmediata.\r\n- Lotes dentro de 4 mini barrios cerrados delimitados con alambrado olímpico y portón automático exclusivo para los propietarios.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
                 "actual": true,
                 "expected": ""
             }

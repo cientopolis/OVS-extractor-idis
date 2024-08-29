@@ -13,7 +13,7 @@ from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
-from src.rbm.patterns.edificacion_monetizable import edificacion_monetizable
+from src.rbm.patterns.edificacion_monetizable import construccion, mejorado
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
 from src.rbm.patterns.pileta import pileta,pileta_barrio
 from src.rbm.patterns.esquina import esquina
@@ -161,7 +161,11 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "es_monetizable", edificacion_monetizable()
+            "es_monetizable-construccion", construccion()
+        )
+
+        Matcher.matcher.add(
+            "es_monetizable-mejorado", mejorado()
         )
 
         Matcher.matcher.add(
@@ -262,7 +266,8 @@ class Matcher:
             "pre-venta-fecha": [],
             "pre-venta-cuotas": [],
             "pre-venta-descartar": [],
-            "es_monetizable": [],
+            "es_monetizable-construccion": [],
+            "es_monetizable-mejorado": [],
             "loteo_ph_M": [],
             "loteo_ph_DM": [],
             "loteo_ph_DM_True": [],
