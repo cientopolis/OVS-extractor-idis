@@ -2,7 +2,9 @@ def indiviso_M() -> list:
     return list (
             [
                 [{"LOWER":"indiviso"}],#indiviso 
-                [{"LOWER":"indivisa"}],#indivisa  
+                [{"LOWER":"indivisa"}],#indivisa
+                [{"LOWER" : "partes"},{"LOWER" : "indivisas"}],
+                #[{"LOWER" : "escritura"},{"LOWER" : "indvisa(proximo"}],#error humano indivisa(proximo  
                 #[{"LOWER": "escritura"},{"LOWER" : "indivisa("}]     
             ]
     )
@@ -25,6 +27,18 @@ def indiviso_DM() -> list:
                     "RIGHT_ID": "ADV_no",
                     "RIGHT_ATTRS": {"POS":{"IN" : ["ADV" , "CCONJ"]}},  # no/ni parte indivisa
                 }
-            ]
+            ],
+            #[
+            #    {
+            #        "RIGHT_ID": "indiviso).",
+            #        "RIGHT_ATTRS": {"POS": "ADJ"},
+            #    },
+            #    {
+            #        "LEFT_ID": "indiviso).",
+            #        "REL_OP": ">",
+            #        "RIGHT_ID": "NO",
+            #        "RIGHT_ATTRS": {"POS": "ADV"}
+            #    }            
+            #]
         ]
   

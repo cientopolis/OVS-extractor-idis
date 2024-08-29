@@ -127,7 +127,7 @@ class Oferta():
 
 
     def irregular(self, predichos: list):
-        for predicho in predichos["irregular"]:
+        for predicho in predichos["irregular"]  : #or predichos["irregular_DM"] (dependency para matchear con "terreno en forma de L")
             if any(
                 map(
                     lambda subs: subs.lower() in predicho.lower(),
