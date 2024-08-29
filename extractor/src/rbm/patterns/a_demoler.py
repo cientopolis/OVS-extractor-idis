@@ -1,5 +1,5 @@
 idealSinonimos = ["para", "ideal", "posibilidad"]
-ideales  = ["proyecto", "proyectos", "inversión", "inversion", "edificar", "edificio", "edificios", "constructor","constructores", "construccion", "construcciones", "construcción", "inversor", "inversores", "emprendimiento", "emprendimientos", "desarrollo", "desarrollos"]
+ideales  = ["inversión", "inversion", "edificar", "edificio", "edificios", "constructor","constructores", "construccion", "construcciones", "construcción", "inversor", "inversores", "emprendimiento", "emprendimientos", "desarrollo", "desarrollos"]
 demolerSinonimos = ["reciclar", "refaccionar", "demoler", "demolicion", "demolición"]
 casaSinonimos= ["casa", "construccion", "construcción"] #PH
 antiguaSinonimos = ["antigua", "precaria"] #vieja

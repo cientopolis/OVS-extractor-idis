@@ -1,13 +1,13 @@
 [
     {
         "name": "direccion",
-        "tp": 80,
-        "fp": 40,
-        "fn": 34,
-        "tn": 168,
-        "precision": 0.6666666666666666,
-        "recall": 0.7017543859649122,
-        "f1": 0.6837606837606838,
+        "tp": 84,
+        "fp": 34,
+        "fn": 37,
+        "tn": 166,
+        "precision": 0.711864406779661,
+        "recall": 0.6942148760330579,
+        "f1": 0.7029288702928871,
         "error": [
             {
                 "context": "Importante chalet en Barrio Parque Calchaqui. Calle 341 (Craviotto) entre 382 y 383. 6 ambientes, 4 dormitorios, 5 baños, 2 pisos, lote de 15 X 50, total 750 m2, cubierta 410 m2. Recepción, toilette, amplio living con aberturas hacia el parque, comedor principal, cocina amueblada + comedor diario, dormitorio con placard, baño completo con ante baño, dormitorio principal con pisos tarugados en suite, con baño completo, amplisimo verde, pileta, parrilla.",
@@ -55,7 +55,17 @@
                 "expected": "5 entre 489 y 490"
             },
             {
-                "context": "Lote en Barrio Semi cerrado. Manzana que comprende las calles : Alsina : Bustamante : Blandengues : Copello\r\nLotes de 144 mts ( 8,4 x 17,05 ) El loteo cuenta con terrenos a la calle y terenos internos, semi cerrado por 2\r\ncalles internas. Sobre asfalto. Lote Numero 2 Precio de contado. LISTO PARA ESCRITURAR Pardiñas\r\nInmuebles",
+                "context": "Venta de lotes dentro del barrio semi-cerrado ''Las Victorias'', en la localidad de Abasto Disponibilidad: 4 Lote 10 medidas: 10,06 x 25 Lote 13 medidas: 10,06 x 25 Lote 42 medidas: 10,06 x 25 Lote 65 medidas: 10,06 x 25. Servicios: Luz Valor: U$S 7500 (x lote) PUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado por Pixel Inmobiliario (Servicio de Páginas Web para Inmobiliarias). #1314",
+                "actual": "",
+                "expected": "Lote 10;Lote 13;Lote 62;Lote 45"
+            },
+            {
+                "context": "Venta de lotes dentro del barrio semi-cerrado ''El Juncal'', en la localidad de Melchor Romero Disponibilidad: 2. Lote 21 medidas: 10 x 25 Lote 42 medidas: 10 x 25 Servicios: Agua corriente y Luz Valor: U$S7000 (x lote). PUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado por Pixel Inmobiliario (Servicio de Páginas Web para Inmobiliarias). #1437",
+                "actual": "",
+                "expected": "Lote 21;Lote 42"
+            },
+            {
+                "context": "Lote en Barrio Semi cerrado. Manzana que comprende las calles : Alsina : Bustamante : Blandengues : Copello. Lotes de 144 mts ( 8,4 x 17,05 ) El loteo cuenta con terrenos a la calle y terenos internos, semi cerrado por 2 calles internas. Sobre asfalto. Lote Numero 2 Precio de contado. LISTO PARA ESCRITURAR Pardiñas Inmuebles",
                 "actual": "Lote Numero 2",
                 "expected": ""
             },
@@ -88,11 +98,6 @@
                 "context": "Venta lote en excelente ubicación, con construcción prácticamente para demoler. Soler al 700 Bahía Blanca. Ideal Desarrolladores. 8.66 mts de frente, 23 mts lado oeste, 19.60 mts lado este. Zonificación C2. FOT 2.4",
                 "actual": "",
                 "expected": "Soler al 700"
-            },
-            {
-                "context": "Casa ideal inversores en construcción!!! Inmejorable casa en la calle Sgto. Cabral al 560, Lagos de Canning con $ de expensas (aprox). En su totalidad mide 670 m2, de los cuales 290 m2 son cubiertos y 380 m2 descubiertos. Características: altura 6 metros sin columnas. Portón: 4.80 mts. alto y 4.50 mts. ancho. Lote: 10 x 30. Cubiertos: 190 m2. Fuerza motriz. FOS 0.60. FOT 1.20.",
-                "actual": "calle Sgto. Cabral al 560",
-                "expected": "Sgto. Cabral al 560"
             },
             {
                 "context": "Sobre Ruta 58 km 16 en Barrio San Lucas. En venta esté hermoso lote de 1112 m2 de los más grandes del barrio. Medidas exactas: Frente 43 mts. Lado izquierdo 40 mts. Lado derecho 49 mts y fondo de 15 mts.",
@@ -143,6 +148,11 @@
                 "context": "Venta de Lote, Villa Gesell. Avenida 2 e/ Paseo 118 y 119. Lote multifamiliar. Ideal Inversores. Lote Multifamiliar de alta densidad a 2 cuadras de la playa. Excelente ubicación. Superficies: Sup. Lote: 1304.74 m2 (20.00m de frente). Zonificación: RMA. FOS 0.60. FOT 2. DENSIDAD 800 HAB/HA. C.U.V. 0.025. POTENCIAL CONSTRUCTIVO HASTA 32 UNIDADES DE VIVIENDA. Puede construirse un máximo de 2607.48 m2 distribuidos en 6 Pisos.",
                 "actual": "Gesell. Avenida 2 e/ Paseo 118 y 119",
                 "expected": "Avenida 2 e/ Paseo 118 y 119"
+            },
+            {
+                "context": "Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
+                "actual": "",
+                "expected": "Av Gral. Guemes esquina Gral. Arredondo"
             },
             {
                 "context": "Lote de terreno irregular en excelente ubicación. 2° Rivadavia esquina Navarro. Castelar Norte. Medidas: lote irregular: 18 x 24. Superficie total: 353.89 m2. Valor: U$s 150.000.",
@@ -235,11 +245,6 @@
                 "expected": "Paseo 105 y Avenida 10"
             },
             {
-                "context": "LOTE DE TERRENO irregular en esquina cuyas medidas aproximadas son de 10m x 17m contando con una superficie total de 172,08m2. Se encuentra ubicado sobre las calles 461b y 14a en la localidad de City Bell, partido de La Plata, a 3 cuadras del Camino Centenario. Posee una pequeña casa a demoler. El barrio se encuentra en pleno desarrollo y con construcciones de viviendas nuevas.",
-                "actual": "calles 461b y 14a",
-                "expected": "461b y 14a"
-            },
-            {
                 "context": "Zona residencial - Todos los servicios. A metros de Av. Muñíz, y Puente Barcala - Fácil acceso a autopista. Lote de 10m x 60m con construcción de 70m2. IDEAL EMPRENDIMIENTO PERMUTA, toma propiedad en Morón , Castelar, Ituzaingó. (Así¬ mismo se encuentra a la venta lote de al lado 10m x 57m). ",
                 "actual": "Av. Muñíz, y Puente Barcala",
                 "expected": ""
@@ -250,24 +255,14 @@
                 "expected": "54 y 23"
             },
             {
-                "context": "Venta de Lote en Villa Elisa entre caminos, a una cuadra de Avenida Arana. Ubicado en calle 420, entre 14 y 14 bis, lote de 10 de frente por 41.80mtrs de fondo, a una cuadra de Avenida Arana y entre caminos Centenario y Belgrano con rápida salida a Autopista La Plata-Buenos Aires. Posee bases de construcción. POSIBLE PERMUTA POR VEHICULO.",
-                "actual": "calle 420, entre 14 y 14 bis",
-                "expected": "calle 420, entre 14 y 15 bis"
-            },
-            {
-                "context": "Lotes en calle Rio Reconquista, entre calles Atuel y Matanza, en Marcos Paz, provincia de Buenos Aires. Estos terrenos se encuentran en una zona privilegiada, rodeados de naturaleza y tranquilidad, pero a su vez cercanos a importantes vías de acceso y servicios.  El lote número 20 cuenta con una superficie total de 3550 m2, con medidas de 35.5 m. x 100 m., Mientras que el lote número 21 también tiene una superficie total de 3550 m2 y medidas de 35.5 m. x 100 m. Este último lote cuenta además con una hermosa cabaña de madera, ideal para disfrutar de momentos de descanso y relax en contacto con la naturaleza. ",
-                "actual": "calle Rio Reconquista, entre calles Atuel y Matanza. lote número 20;lote número 21",
-                "expected": "calle Rio Reconquista,entre calles Atuel y Matanza, lote 20"
-            },
-            {
                 "context": "Lote con mejoras ubicado en la calle Rodofo Walsh 208 entre Magrasi y coronel de marina David Jewett. A una cuadra de la ruta N 11 y balnearios. Excelente ubicación. Coordneadas -38. , - 57.55112 Lote de 15x22,50 con construcción a terminar (son dos casas de 3 ambientes cada una en planta baja) Superficie del terreno 377. GASTOS A CARGO DEL COMPRADOR (Honorarios inmobiliarios y escritura)",
                 "actual": "calle Rodofo Walsh 208",
                 "expected": "calle Rodolfo Walsh 208 entre Magrasi y coronel de marina David Jewett"
             },
             {
-                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2sin mejoras al frente portón de reja  Lote 1 de 191M2esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex  Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
+                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2 sin mejoras al frente portón de reja  Lote 1 de 191M2 esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2 con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex. Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
                 "actual": "Lote 25;Lote 26;Lote 27;Lote 28;Lote 1;Lote 30",
-                "expected": ""
+                "expected": "Lote 25;Lote 26;Lote 27;Lote 28;Lote 2;Lote 1;Lote 30"
             },
             {
                 "context": "Loteo en venta,sobre las calle 56 a 58 y 163 a 165, 74 lotes disponible,. Con escritura y APTO PROCREAR. Los lotes se encuentran ubicados en una zona con creciente urbanización, a dos cuadras de la avenida 60 y a unos 10 minutos del centro de La Plata. Lotes linderos con construcciones nuevas y en proceso. Calles abiertas, con mejorado, alumbrado y tendido eléctrico. También disponibles lotes de 12 x 26 m2 .",
@@ -330,11 +325,6 @@
                 "expected": "calle 138 y calle 510"
             },
             {
-                "context": "VENTA DE CASA O PH EN RAMOS MEJÍA- IDEAL INVERSIÓN, OPORTUNIDAD EN LA ZONA  ANTICIPO DE 199.000 USD Y CUOTAS A FINANCIAR VALOR DE CONTADO 200.000 USD  EXCLUSIVA VENTA O PERMUTA-  TOMA METROS CONSULTAR  Excelente chalet a la venta Ideal Constructor o primera vivienda. Ubicado en la localidad de Ramos Mejía, sobre la calle Oncativo al 400 entre las calles Necochea y Pringles. A pocos metros de la Av. de Mayo,  del centro comercial y de los distintos medios de transporte que conectan a Ramos Mejía con las diferentes ciudades cercanas de la Provincia y C.A.B.A.-  Toma propiedad en parte de Pago.  Descripción del inmueble: - El lote cuenta con las siguientes Medidas: 8,66 mts. de frente x 41.60 mts. de fondo.- - Superficie Total: 370,26 m2.- - Orientación Noroeste   Ubicación de la propiedad: - A mts. de Av. de Mayo - A mts. de Avenida San Martín. - A mts. de la calle Humbolt. - A mts. de la Plaza Bomberitos. - A mts. del Centro de Ramos Mejía.  (Las medidas, superficies, y demás información son meramente enunciativas. Los datos definitivos van a surgir del título de propiedad del inmueble).",
-                "actual": "calle Oncativo al 400 entre las calles Necochea y Pringles",
-                "expected": "Oncativo al 400 entre Necochea y Pringles"
-            },
-            {
                 "context": "Propiedad en venta en calle Funes y Av, Colon. La misma cuenta con dos PH El primero al frente cuenta con living comedor, dormitorio, baño completo, cocina comedor, lavadero separado y patio. El segundo ph consta de 3 ambientes. Living comedor, cocina 2 baños, 2 dormitorios uno de ellos con vestidor, patio y garage. Las unidades se venden en conjunto. Ideal desarrollo inmobiliario.",
                 "actual": "calle Funes y Av",
                 "expected": "calle Funes y Av, Colon"
@@ -355,24 +345,14 @@
                 "expected": "calle 11 de Septiembre al 300"
             },
             {
-                "context": "Vendo,terreno de 10x 30mts, con bases de 7 x 11mts.servicio de luz y agua.escritura en condominio. barrio cerrado siempre verde.direccion 602 y 22.zona de casa quinta en pleno crecimiento.ppsible financiación y\r\npermuta.",
+                "context": "Vendo,terreno de 10x 30mts, con bases de 7 x 11mts.servicio de luz y agua.escritura en condominio. barrio cerrado siempre verde.direccion 602 y 22.zona de casa quinta en pleno crecimiento.ppsible financiación y permuta.",
                 "actual": "",
                 "expected": "602 y 22"
             },
             {
-                "context": "DESARROLLO: \"BELL BUENAVISTA\" SE VENDE: Lotes en barrio cerrado \"Bell Buenavista\", calle 135 entre 460 y 464, City Bell, partido de La Plata, provincia de Buenos Aires. El emprendimiento se emplaza sobre una\r\nnueva área urbana de City Bell, inserta en una situación de paisaje natural destacado, frente al campo de golf\r\ndel club Estudiantes de La Plata. Se proponen 28 lotes para vivienda individual y 2 condominios. La estructura\r\nde circulación del conjunto comprende el concepto de manzana como criterio de orden y optimización de los\r\nespacios, liberando áreas de acceso a los conjuntos de vivienda multifamiliar y espacios del conjunto en relación\r\na las condiciones de paisaje que genera el arroyo Martín como vínculo con el campo de golf. El emprendimiento\r\ncontara con un portal de acceso (entrada), cerco perimetral, redes internas vial, agua, luz y cloaca con planta de\r\ntratamiento. Lotes a la venta hoy: Lote 03 (502,5 m2) = Usd 54.082Lote 04 (502,5 m2) = Usd 54.082Lote 05\r\n(502,5 m2) = Usd 54.082Lote 10 (392 m2) = Usd 42.197Lote 12 (461,5 m2) = Usd 49.674Lote 13 (461,5 m2) =\r\nUsd 49.674FINANCIAMIENTO: Anticipo del 50% y hasta 37 cuotas. Servicios: Gas, Agua y Electricidad.",
-                "actual": "calle 135 entre 460 y 464. Lote 03",
-                "expected": "calle 135 entre 460 y 464"
-            },
-            {
-                "context": "486 Y 147 LOTEO FINCAS GORINA NUEVO EMPRENDIMIENTO. Lote nº1, de 633m2 de la manzana 100 .\r\nServicios: luz, agua corriente por la cooperativa Cosego. Luminaria publica, calles con mejorado. Planos Aprobado\r\n(municipal y geodesia) UR6. Escritura y posesión inmediata. Fácil acceso a camino General Belgrano y a solo 10\r\nminutos a la ciudad de La Plata. Lotes disponibles 990m2 - 1062",
+                "context": "486 Y 147 LOTEO FINCAS GORINA NUEVO EMPRENDIMIENTO. Lote nº1, de 633m2 de la manzana 100 . Servicios: luz, agua corriente por la cooperativa Cosego. Luminaria publica, calles con mejorado. Planos Aprobado (municipal y geodesia) UR6. Escritura y posesión inmediata. Fácil acceso a camino General Belgrano y a solo 10 minutos a la ciudad de La Plata. Lotes disponibles 990m2 - 1062",
                 "actual": "",
-                "expected": " 486 y 147"
-            },
-            {
-                "context": " LOTE EN VENTA EN BARRIO CERRADO, LA PLATA\r\n34 y 133 | Lotes en PH en barrio cerrado.\r\nEl barrio se emplaza en una ubicación excelente, en un zona en crecimiento y desarrollo. Además, comprende un área que se extiende entre las calles 34 de 132 a 133, San Carlos. Es un barrio de viviendas unifamiliares de baja densidad en conformación, compuesto por 39 lotes de diversas medidas.                                                                                                                                                                                                                                                                                 \r\nTiene acceso controlado con portón automatizado con dos entradas, circulación por calle principal central que permiten un rápido recorrido y fácil acceso a los terrenos. El predio cuenta con todos los servicios.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \r\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
-                "actual": "calles 34 de 132",
-                "expected": "34 y 133"
+                "expected": "486 y 147. Lote n°1"
             },
             {
                 "context": "Boero Propiedades vende: Lote dentro de barrio cerrado. Nuevo Loteo en La Plata (Calle 131 y 85)\r\n- A 10 del centro, acceso por asfalto\r\n-Varias familias ya viviendo y otras en proceso de construcción.\r\n-FINANCIACIóN EN PESOS con anticipo mínimo y hasta 48 cuotas\r\n- Vehículos como parte de pago\r\nLotes desde 250 a 330 m2 (promedio de 10 x 30 mts)\r\n- Lotes ESCRITURABLES.\r\n- Entrega de posesión inmediata.\r\n- Lotes dentro de 4 mini barrios cerrados delimitados con alambrado olímpico y portón automático exclusivo para los propietarios.",
@@ -391,7 +371,7 @@
         "tp": 59,
         "fp": 0,
         "fn": 2,
-        "tn": 261,
+        "tn": 260,
         "precision": 1.0,
         "recall": 0.9672131147540983,
         "f1": 0.9833333333333333,
@@ -413,7 +393,7 @@
         "tp": 28,
         "fp": 0,
         "fn": 3,
-        "tn": 291,
+        "tn": 290,
         "precision": 1.0,
         "recall": 0.9032258064516129,
         "f1": 0.9491525423728813,
@@ -437,13 +417,13 @@
     },
     {
         "name": "medidas",
-        "tp": 127,
-        "fp": 40,
+        "tp": 130,
+        "fp": 37,
         "fn": 39,
-        "tn": 116,
-        "precision": 0.7604790419161677,
-        "recall": 0.7650602409638554,
-        "f1": 0.7627627627627627,
+        "tn": 115,
+        "precision": 0.7784431137724551,
+        "recall": 0.7692307692307693,
+        "f1": 0.7738095238095238,
         "error": [
             {
                 "context": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
@@ -467,7 +447,7 @@
             },
             {
                 "context": "Venta de 2 Lotes linderos de 10 x 45,75 cada uno, total de 20 x 45,75, con Pileta de 7 mts x 3,20 mts y Quincho (abierto) con contrapiso de 4mts x 7mts con parrilla y baño. en Ciudad Nueva, Nueve de Julio  Medida: Frente : 20 Medida: Fondo : 45.75  (FAE-FAE-585)",
-                "actual": "20 x 45.75;10 x 45.75",
+                "actual": "10 x 45.75;20 x 45.75",
                 "expected": ""
             },
             {
@@ -524,21 +504,6 @@
                 "context": "Corredor Responsable: Francisco Ezequiel Errico CMCPDJLP 7292 - Contacto: Damian Dominguez - MLS ID # 5 entre 489 y 490. BARRIO SEMICERRADO \"DON ATILIO\". Ubicado a 5 minutos del centro de City bell, y 20 minutos de La Plata. Excelente entorno en pleno crecimiento. Lote en PH de 11, 5 por 41, 5 mts. El Barrio \"Don Atilio\", está compuesto por 10 lotes con ingreso por portón principal y calle con acceso en común. El loteo se encuentra alambrado en todo su perímetro. Posee servicios de luz, agua y gas. Cámaras de seguridad. Posibilidad de financiación. Consultar por otras medidas disponibles. CONSULTAR POR CONSTRUCCIÓN LLAVE EN MANO ",
                 "actual": "5 x 41",
                 "expected": "11.5 x 41.5"
-            },
-            {
-                "context": "Venta de lotes dentro del barrio semi-cerrado ''Las Victorias'', en la localidad de Abasto Disponibilidad: 4 Lote 10\r\nmedidas: 10,06 x 25 Lote 13 medidas: 10,06 x 25 Lote 42 medidas: 10,06 x 25 Lote 65 medidas: 10,06 x 25\r\nServicios: Luz Valor: U$S 7500 (x lote) PUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado\r\npor Pixel Inmobiliario (Servicio de Páginas Web para Inmobiliarias). #1314",
-                "actual": "10.06 x 25",
-                "expected": ""
-            },
-            {
-                "context": "Venta de lotes dentro del barrio semi-cerrado ''El Juncal'', en la localidad de Melchor Romero Disponibilidad: 2\r\nLote 21 medidas: 10 x 25 Lote 42 medidas: 10 x 25 Servicios: Agua corriente y Luz Valor: U$S7000 (x lote)\r\nPUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado por Pixel Inmobiliario (Servicio de\r\nPáginas Web para Inmobiliarias). #1437",
-                "actual": "10 x 25",
-                "expected": ""
-            },
-            {
-                "context": "Lote en Barrio Semi cerrado. Manzana que comprende las calles : Alsina : Bustamante : Blandengues : Copello\r\nLotes de 144 mts ( 8,4 x 17,05 ) El loteo cuenta con terrenos a la calle y terenos internos, semi cerrado por 2\r\ncalles internas. Sobre asfalto. Lote Numero 2 Precio de contado. LISTO PARA ESCRITURAR Pardiñas\r\nInmuebles",
-                "actual": "8.4 x 17.05",
-                "expected": ""
             },
             {
                 "context": "*VENDO LOTE barrio Los Chañares, Tanti, Punilla lotes de 700m2 (20x35) Derechos Posesorios de mas de 50 años. Listo para Usucapión. *SERVICIOS DE AGUA Y LUZ A CONECTAR.\r\n*Video/Fotos: https://youtu.be/J8vYzQvuZU / https://nicolashnos.com/terreno-venta-tanti-punilla/5718348\r\n*Geolocalización: https://goo.gl/maps/XfYgFekUqMj3zmBm8",
@@ -606,7 +571,7 @@
                 "expected": "9.69 x 8.66 x 22.59 x 18.17"
             },
             {
-                "context": "Imponente lote de 1038 m2 en esquina sobre la Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
+                "context": "Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
                 "actual": "",
                 "expected": "29 x 29"
             },
@@ -766,7 +731,7 @@
                 "expected": "11 x 53.50"
             },
             {
-                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2sin mejoras al frente portón de reja  Lote 1 de 191M2esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex  Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
+                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2 sin mejoras al frente portón de reja  Lote 1 de 191M2 esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2 con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex. Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
                 "actual": "3.16 x 10.6",
                 "expected": ""
             },
@@ -782,17 +747,17 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 41;12 x 40;12 x 55;12 x 52",
+                "actual": "12 x 55;12 x 52;12 x 41;12 x 40",
                 "expected": ""
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "15 x 32;10 x 21;24 x 30;15 x 55;10 x 32;10 x 27;15 x 40;15 x 28;12 x 30;24 x 45;14 x 30",
+                "actual": "15 x 55;10 x 32;10 x 21;24 x 45;15 x 40;10 x 27;15 x 32;24 x 30;14 x 30;15 x 28;12 x 30",
                 "expected": "10 x 21.89"
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73.63;32.45 x 73;32.45 x 73.63",
+                "actual": "32.45 x 73.63;32.45 x 73.63;32.45 x 73",
                 "expected": ""
             },
             {
@@ -802,7 +767,7 @@
             },
             {
                 "context": "Lotes Propios ( No es ph, ni parte indivisa) - Medidas 12x27 y 12x33 - Urbanizacion con 29 parcelas - Asfalto, luz, gas y agua corriente - Obras Finalizadas - Ultimos 4 lotes disponibles - Desde U$S 14.000 a U$S 19.000 segun tamaño y ubicacion - Financiacion: 30 % al boleto y el saldo hasta 48 cuotas de U$S 200 cada una. -",
-                "actual": "12 x 27;12 x 33",
+                "actual": "12 x 33;12 x 27",
                 "expected": ""
             },
             {
@@ -837,7 +802,7 @@
             },
             {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
-                "actual": "12 x 25;15 x 35;12 x 30",
+                "actual": "12 x 25;12 x 30;15 x 35",
                 "expected": "12 x 30; 12 x 25; 12 x 35"
             }
         ]
@@ -847,7 +812,7 @@
         "tp": 37,
         "fp": 4,
         "fn": 3,
-        "tn": 278,
+        "tn": 277,
         "precision": 0.9024390243902439,
         "recall": 0.925,
         "f1": 0.9135802469135802,
@@ -863,7 +828,7 @@
                 "expected": true
             },
             {
-                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2sin mejoras al frente portón de reja  Lote 1 de 191M2esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex  Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
+                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2 sin mejoras al frente portón de reja  Lote 1 de 191M2 esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2 con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex. Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
                 "actual": true,
                 "expected": ""
             },
@@ -892,12 +857,12 @@
     {
         "name": "barrio",
         "tp": 31,
-        "fp": 32,
+        "fp": 31,
         "fn": 44,
         "tn": 215,
-        "precision": 0.49206349206349204,
+        "precision": 0.5,
         "recall": 0.41333333333333333,
-        "f1": 0.4492753623188405,
+        "f1": 0.45255474452554745,
         "error": [
             {
                 "context": "CASA SUCRE. BELGRANO R. Casa sobre lote propio de doble frente (17.35 x 35) con balcones terraza, jardín, piscina, solárium y quincho con parrilla",
@@ -975,7 +940,7 @@
                 "expected": "ECO SUCRE"
             },
             {
-                "context": "Venta de lotes dentro del barrio semi-cerrado ''Las Victorias'', en la localidad de Abasto Disponibilidad: 4 Lote 10\r\nmedidas: 10,06 x 25 Lote 13 medidas: 10,06 x 25 Lote 42 medidas: 10,06 x 25 Lote 65 medidas: 10,06 x 25\r\nServicios: Luz Valor: U$S 7500 (x lote) PUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado\r\npor Pixel Inmobiliario (Servicio de Páginas Web para Inmobiliarias). #1314",
+                "context": "Venta de lotes dentro del barrio semi-cerrado ''Las Victorias'', en la localidad de Abasto Disponibilidad: 4 Lote 10 medidas: 10,06 x 25 Lote 13 medidas: 10,06 x 25 Lote 42 medidas: 10,06 x 25 Lote 65 medidas: 10,06 x 25. Servicios: Luz Valor: U$S 7500 (x lote) PUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado por Pixel Inmobiliario (Servicio de Páginas Web para Inmobiliarias). #1314",
                 "actual": "barrio semi",
                 "expected": "Las Victorias"
             },
@@ -985,22 +950,22 @@
                 "expected": "Los Eucaliptos"
             },
             {
-                "context": "Venta de lotes dentro del barrio semi-cerrado ''El Juncal'', en la localidad de Melchor Romero Disponibilidad: 2\r\nLote 21 medidas: 10 x 25 Lote 42 medidas: 10 x 25 Servicios: Agua corriente y Luz Valor: U$S7000 (x lote)\r\nPUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado por Pixel Inmobiliario (Servicio de\r\nPáginas Web para Inmobiliarias). #1437",
+                "context": "Venta de lotes dentro del barrio semi-cerrado ''El Juncal'', en la localidad de Melchor Romero Disponibilidad: 2. Lote 21 medidas: 10 x 25 Lote 42 medidas: 10 x 25 Servicios: Agua corriente y Luz Valor: U$S7000 (x lote). PUEDE TOMAR VEHICULO COMO PARTE DE PAGO Aviso publicado por Pixel Inmobiliario (Servicio de Páginas Web para Inmobiliarias). #1437",
                 "actual": "barrio semi",
                 "expected": "El Juncal"
             },
             {
-                "context": "Lote en Barrio Semi cerrado. Manzana que comprende las calles : Alsina : Bustamante : Blandengues : Copello\r\nLotes de 144 mts ( 8,4 x 17,05 ) El loteo cuenta con terrenos a la calle y terenos internos, semi cerrado por 2\r\ncalles internas. Sobre asfalto. Lote Numero 2 Precio de contado. LISTO PARA ESCRITURAR Pardiñas\r\nInmuebles",
+                "context": "Lote en Barrio Semi cerrado. Manzana que comprende las calles : Alsina : Bustamante : Blandengues : Copello. Lotes de 144 mts ( 8,4 x 17,05 ) El loteo cuenta con terrenos a la calle y terenos internos, semi cerrado por 2 calles internas. Sobre asfalto. Lote Numero 2 Precio de contado. LISTO PARA ESCRITURAR Pardiñas Inmuebles",
                 "actual": "Barrio Semi",
                 "expected": ""
             },
             {
-                "context": "El terreno ideal para tu casa en Parque Exaltación! - Gran Lote de 1050 m2 - Opción de sumar otro lindero de\r\n1.550 m2 - Inmejorable vista hacia el campo infinito. - Excelente ubicación. A solo tres cuadras del ingreso del\r\nbarrio y de la bajada de la Autopista. - Escriturable - Apto crédito Parque Exaltación es un barrio semicerrado\r\nmuy consolidado de más de 1.000 lotes forestados hace más de 30 años, cobrando un gran impulso en la última\r\ndécada. El Barrio Parque cuenta con una añeja e importante arboleda compuesta por variedades de Coníferas,\r\nSauces , Eucaliptos entre otros. El acceso al barrio se encuentra exactamente a metros de la bajada del Km 74\r\nde la nueva Autopista 8 a solo 10 minutos de Pilar Centro. Centros comerciales muy cercanos tanto en elRemanso, como en Parada de Robles. En BlueKorner Inmobiliaria Boutique contamos con los mejores lotes del Barrio Parque Exaltación / Remanso",
+                "context": "El terreno ideal para tu casa en Parque Exaltación! - Gran Lote de 1050 m2 - Opción de sumar otro lindero de 1.550 m2 - Inmejorable vista hacia el campo infinito. - Excelente ubicación. A solo tres cuadras del ingreso del barrio y de la bajada de la Autopista. - Escriturable - Apto crédito Parque Exaltación es un barrio semicerradonmuy consolidado de más de 1.000 lotes forestados hace más de 30 años, cobrando un gran impulso en la última década. El Barrio Parque cuenta con una añeja e importante arboleda compuesta por variedades de Coníferas, Sauces , Eucaliptos entre otros. El acceso al barrio se encuentra exactamente a metros de la bajada del Km 74 de la nueva Autopista 8 a solo 10 minutos de Pilar Centro. Centros comerciales muy cercanos tanto en elRemanso, como en Parada de Robles. En BlueKorner Inmobiliaria Boutique contamos con los mejores lotes del Barrio Parque Exaltación / Remanso",
                 "actual": "Barrio Parque Exaltación",
                 "expected": "Parque Exaltación"
             },
             {
-                "context": "Av 38 y 147 San Carlos. Exclusivos lotes en barrio semicerrado \"ALTOS DE DON PEDRO\" ,a minutos de la\r\nCiudad, OPORTUNIDAD Ãºnica, casa alquilada ($103.000) sobre lote arbolado de 10.70 x 28 metros (PH), 2\r\ndormitorios, cocina comedor equipada, lavadero, baÃ±o completo, 67 m2 cubiertos, fondo. Apto Banco.\r\nIMPORTANTE escritura inmediata. por UF no es parte indivisa. Tel - 2455 o 221 15 .",
+                "context": "Av 38 y 147 San Carlos. Exclusivos lotes en barrio semicerrado \"ALTOS DE DON PEDRO\" ,a minutos de la Ciudad, OPORTUNIDAD Ãºnica, casa alquilada ($103.000) sobre lote arbolado de 10.70 x 28 metros (PH), 2 dormitorios, cocina comedor equipada, lavadero, baÃ±o completo, 67 m2 cubiertos, fondo. Apto Banco. IMPORTANTE escritura inmediata. por UF no es parte indivisa. Tel - 2455 o 221 15 .",
                 "actual": "",
                 "expected": "ALTOS DE DON PEDRO"
             },
@@ -1270,14 +1235,9 @@
                 "expected": "barrio de Ramos Mejía"
             },
             {
-                "context": "DESARROLLO: \"BELL BUENAVISTA\" SE VENDE: Lotes en barrio cerrado \"Bell Buenavista\", calle 135 entre 460 y 464, City Bell, partido de La Plata, provincia de Buenos Aires. El emprendimiento se emplaza sobre una\r\nnueva área urbana de City Bell, inserta en una situación de paisaje natural destacado, frente al campo de golf\r\ndel club Estudiantes de La Plata. Se proponen 28 lotes para vivienda individual y 2 condominios. La estructura\r\nde circulación del conjunto comprende el concepto de manzana como criterio de orden y optimización de los\r\nespacios, liberando áreas de acceso a los conjuntos de vivienda multifamiliar y espacios del conjunto en relación\r\na las condiciones de paisaje que genera el arroyo Martín como vínculo con el campo de golf. El emprendimiento\r\ncontara con un portal de acceso (entrada), cerco perimetral, redes internas vial, agua, luz y cloaca con planta de\r\ntratamiento. Lotes a la venta hoy: Lote 03 (502,5 m2) = Usd 54.082Lote 04 (502,5 m2) = Usd 54.082Lote 05\r\n(502,5 m2) = Usd 54.082Lote 10 (392 m2) = Usd 42.197Lote 12 (461,5 m2) = Usd 49.674Lote 13 (461,5 m2) =\r\nUsd 49.674FINANCIAMIENTO: Anticipo del 50% y hasta 37 cuotas. Servicios: Gas, Agua y Electricidad.",
+                "context": "DESARROLLO: \"\"BELL BUENAVISTA\"\" SE VENDE: Lotes en barrio cerrado \"\"Bell Buenavista\"\", calle 135 entre 460 y 464, City Bell, partido de La Plata, provincia de Buenos Aires. El emprendimiento se emplaza sobre una nueva área urbana de City Bell, inserta en una situación de paisaje natural destacado, frente al campo de golf del club Estudiantes de La Plata. Se proponen 28 lotes para vivienda individual y 2 condominios. La estructura de circulación del conjunto comprende el concepto de manzana como criterio de orden y optimización de los espacios, liberando áreas de acceso a los conjuntos de vivienda multifamiliar y espacios del conjunto en relación a las condiciones de paisaje que genera el arroyo Martín como vínculo con el campo de golf. El emprendimiento contara con un portal de acceso (entrada), cerco perimetral, redes internas vial, agua, luz y cloaca con planta de tratamiento. Lotes a la venta hoy: Lote 03 (502,5 m2) = Usd 54.082Lote 04 (502,5 m2) = Usd 54.082 Lote 05 (502,5 m2) = Usd 54.082 Lote 10 (392 m2) = Usd 42.197 Lote 12 (461,5 m2) = Usd 49.674 Lote 13 (461,5 m2) =Usd 49.674. FINANCIAMIENTO: Anticipo del 50% y hasta 37 cuotas. Servicios: Gas, Agua y Electricidad.",
                 "actual": "club Estudiantes de La Plata",
                 "expected": "barrio cerrado \"Bell Buenavista\""
-            },
-            {
-                "context": " LOTE EN VENTA EN BARRIO CERRADO, LA PLATA\r\n34 y 133 | Lotes en PH en barrio cerrado.\r\nEl barrio se emplaza en una ubicación excelente, en un zona en crecimiento y desarrollo. Además, comprende un área que se extiende entre las calles 34 de 132 a 133, San Carlos. Es un barrio de viviendas unifamiliares de baja densidad en conformación, compuesto por 39 lotes de diversas medidas.                                                                                                                                                                                                                                                                                 \r\nTiene acceso controlado con portón automatizado con dos entradas, circulación por calle principal central que permiten un rápido recorrido y fácil acceso a los terrenos. El predio cuenta con todos los servicios.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \r\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
-                "actual": "BARRIO CERRADO",
-                "expected": ""
             }
         ]
     },
@@ -1286,7 +1246,7 @@
         "tp": 20,
         "fp": 1,
         "fn": 2,
-        "tn": 299,
+        "tn": 298,
         "precision": 0.9523809523809523,
         "recall": 0.9090909090909091,
         "f1": 0.9302325581395349,
@@ -1313,7 +1273,7 @@
         "tp": 35,
         "fp": 5,
         "fn": 1,
-        "tn": 281,
+        "tn": 280,
         "precision": 0.875,
         "recall": 0.9722222222222222,
         "f1": 0.9210526315789473,
@@ -1352,13 +1312,13 @@
     },
     {
         "name": "urb_cerrada",
-        "tp": 38,
+        "tp": 37,
         "fp": 3,
         "fn": 1,
         "tn": 280,
-        "precision": 0.926829268292683,
-        "recall": 0.9743589743589743,
-        "f1": 0.9500000000000001,
+        "precision": 0.925,
+        "recall": 0.9736842105263158,
+        "f1": 0.9487179487179489,
         "error": [
             {
                 "context": "Venta de Lote en barrio santa Isabel Highland Park , Mar del Plata . Ponemos a la venta 4 lotes de 20 x 47 metros cada uno, en  trámite de escrituración por usucapión, ubicados en la fracción 1 sobre la calle 749 asfaltada entre las calles 116 y 118, en barrio Highland park, pegado a golf. Marayui Country Club lotes a la venta, sobre la calle asfaltada 749 fracción 1, lotes 2 lote  3 lote  4 y lote 5. cada uno de 20 por 47 metros.  los lotes están judicializados por tramite de usucapión, y se ha hecho cesión de derechos por escribanía, y se hará cesión de derechos y posesión al comprador en escribanía.  tenemos toda la información pertinente de los lotes citados, se entrega con impuestos de Arba y municipal al día de la transferencia, los impuestos pagados son de Arba y municipal.",
@@ -1376,7 +1336,7 @@
                 "expected": "True"
             },
             {
-                "context": "DESARROLLO: \"BELL BUENAVISTA\" SE VENDE: Lotes en barrio cerrado \"Bell Buenavista\", calle 135 entre 460 y 464, City Bell, partido de La Plata, provincia de Buenos Aires. El emprendimiento se emplaza sobre una\r\nnueva área urbana de City Bell, inserta en una situación de paisaje natural destacado, frente al campo de golf\r\ndel club Estudiantes de La Plata. Se proponen 28 lotes para vivienda individual y 2 condominios. La estructura\r\nde circulación del conjunto comprende el concepto de manzana como criterio de orden y optimización de los\r\nespacios, liberando áreas de acceso a los conjuntos de vivienda multifamiliar y espacios del conjunto en relación\r\na las condiciones de paisaje que genera el arroyo Martín como vínculo con el campo de golf. El emprendimiento\r\ncontara con un portal de acceso (entrada), cerco perimetral, redes internas vial, agua, luz y cloaca con planta de\r\ntratamiento. Lotes a la venta hoy: Lote 03 (502,5 m2) = Usd 54.082Lote 04 (502,5 m2) = Usd 54.082Lote 05\r\n(502,5 m2) = Usd 54.082Lote 10 (392 m2) = Usd 42.197Lote 12 (461,5 m2) = Usd 49.674Lote 13 (461,5 m2) =\r\nUsd 49.674FINANCIAMIENTO: Anticipo del 50% y hasta 37 cuotas. Servicios: Gas, Agua y Electricidad.",
+                "context": "DESARROLLO: \"\"BELL BUENAVISTA\"\" SE VENDE: Lotes en barrio cerrado \"\"Bell Buenavista\"\", calle 135 entre 460 y 464, City Bell, partido de La Plata, provincia de Buenos Aires. El emprendimiento se emplaza sobre una nueva área urbana de City Bell, inserta en una situación de paisaje natural destacado, frente al campo de golf del club Estudiantes de La Plata. Se proponen 28 lotes para vivienda individual y 2 condominios. La estructura de circulación del conjunto comprende el concepto de manzana como criterio de orden y optimización de los espacios, liberando áreas de acceso a los conjuntos de vivienda multifamiliar y espacios del conjunto en relación a las condiciones de paisaje que genera el arroyo Martín como vínculo con el campo de golf. El emprendimiento contara con un portal de acceso (entrada), cerco perimetral, redes internas vial, agua, luz y cloaca con planta de tratamiento. Lotes a la venta hoy: Lote 03 (502,5 m2) = Usd 54.082Lote 04 (502,5 m2) = Usd 54.082 Lote 05 (502,5 m2) = Usd 54.082 Lote 10 (392 m2) = Usd 42.197 Lote 12 (461,5 m2) = Usd 49.674 Lote 13 (461,5 m2) =Usd 49.674. FINANCIAMIENTO: Anticipo del 50% y hasta 37 cuotas. Servicios: Gas, Agua y Electricidad.",
                 "actual": true,
                 "expected": "Ture"
             }
@@ -1384,21 +1344,27 @@
     },
     {
         "name": "urb_semicerrada",
-        "tp": 19,
+        "tp": 18,
         "fp": 0,
-        "fn": 0,
-        "tn": 303,
+        "fn": 1,
+        "tn": 302,
         "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "error": []
+        "recall": 0.9473684210526315,
+        "f1": 0.972972972972973,
+        "error": [
+            {
+                "context": "El terreno ideal para tu casa en Parque Exaltación! - Gran Lote de 1050 m2 - Opción de sumar otro lindero de 1.550 m2 - Inmejorable vista hacia el campo infinito. - Excelente ubicación. A solo tres cuadras del ingreso del barrio y de la bajada de la Autopista. - Escriturable - Apto crédito Parque Exaltación es un barrio semicerradonmuy consolidado de más de 1.000 lotes forestados hace más de 30 años, cobrando un gran impulso en la última década. El Barrio Parque cuenta con una añeja e importante arboleda compuesta por variedades de Coníferas, Sauces , Eucaliptos entre otros. El acceso al barrio se encuentra exactamente a metros de la bajada del Km 74 de la nueva Autopista 8 a solo 10 minutos de Pilar Centro. Centros comerciales muy cercanos tanto en elRemanso, como en Parada de Robles. En BlueKorner Inmobiliaria Boutique contamos con los mejores lotes del Barrio Parque Exaltación / Remanso",
+                "actual": "",
+                "expected": true
+            }
+        ]
     },
     {
         "name": "posesion",
         "tp": 15,
         "fp": 1,
         "fn": 0,
-        "tn": 306,
+        "tn": 305,
         "precision": 0.9375,
         "recall": 1.0,
         "f1": 0.967741935483871,
@@ -1415,7 +1381,7 @@
         "tp": 18,
         "fp": 1,
         "fn": 1,
-        "tn": 302,
+        "tn": 301,
         "precision": 0.9473684210526315,
         "recall": 0.9473684210526315,
         "f1": 0.9473684210526315,
@@ -1437,7 +1403,7 @@
         "tp": 7,
         "fp": 1,
         "fn": 1,
-        "tn": 313,
+        "tn": 312,
         "precision": 0.875,
         "recall": 0.875,
         "f1": 0.875,
@@ -1456,16 +1422,21 @@
     },
     {
         "name": "a_demoler",
-        "tp": 75,
-        "fp": 14,
-        "fn": 3,
-        "tn": 230,
-        "precision": 0.8426966292134831,
-        "recall": 0.9615384615384616,
-        "f1": 0.8982035928143712,
+        "tp": 72,
+        "fp": 15,
+        "fn": 5,
+        "tn": 229,
+        "precision": 0.8275862068965517,
+        "recall": 0.935064935064935,
+        "f1": 0.8780487804878049,
         "error": [
             {
                 "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Casa en venta en la zona sur de la ciudad. Ubicación: Jose Maria Eguiluz n° 663. Barrio San Fernando. La casa se posee un terreno amplio de 413 m2, y tiene acceso por 2 calles, por adelante con calle Jose Maria Eguiluz y por atras con calle Jose Amenabar. Ideal proyecto e inversión",
                 "actual": "",
                 "expected": true
             },
@@ -1530,6 +1501,11 @@
                 "expected": ""
             },
             {
+                "context": "Lote de terreno con construcción en venta frente al Parque San Martín, 54 y 23, La Plata. LOTE 1: de 131m2 apróx con 8 mts de frente con vista al Parque San Martí¬n; LOTE 2: 408 m2 apróx total: 15 mts apróx de frente hacia calle 54 y 24 mts apróx con frente hacia calle 23; lo que hacen ambos una superficie total de 539 m2 apróx con frentes hacia 3 calles: 54, 23 y diagonal 102. Todos los servicios; Excelente propiedad en inmejorable ubicación de la ciudad ideal para desarrollos multifamiliares. Zona :U/EF3a - AREA Eje Fundacional Tramo 3: Calle 20 a calle 23 y frentistas a Parque San Martin. FOT RESIDENCIAL 2.5, DENSIDAD RESIDENCIAL 1.000, PREMIOS FOT Y DENSIDAD 70%. OPORTUNIDAD ",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "Lote con construcción de dos plantas (una casa PB y otra PA) No está afectado a PH, se vende como lote por el estado de los inmuebles.- Toman departamentos ya hechos en parte de pago ",
                 "actual": "",
                 "expected": true
@@ -1548,56 +1524,36 @@
                 "context": "LOTE DOBLE FRENTE en Ramos Mejía. Excelente Terreno de 17 mts. de Frente x 40 mts. de Fondo. Posibilidad de venta por fracción de 8,66 x 40 mts. La propiedad se encuentra ubicada sobre la calle 11 de Septiembre al 300, en el barrio de Ramos Mejía. A metros de la Av. San Martín. Ideal para emprendimiento de Departamentos o Duplex/PH. Posibilidad de tomar menor valor en parte de pago. ",
                 "actual": true,
                 "expected": ""
+            },
+            {
+                "context": "Se vende! RETASADO IDEAL EMPRENDIMIENTO Amplia propiedad ubicada en la calle San Martin 622, Bernal centro. Medidas: 625 m2 cubiertos Lote de 11,60 x 59 Listo para tomar posesión y escriturar Consulte para más información o para visitar la propiedad",
+                "actual": true,
+                "expected": ""
             }
         ]
     },
     {
         "name": "es_multioferta",
-        "tp": 18,
-        "fp": 4,
-        "fn": 22,
-        "tn": 278,
-        "precision": 0.8181818181818182,
-        "recall": 0.45,
-        "f1": 0.5806451612903226,
+        "tp": 22,
+        "fp": 0,
+        "fn": 17,
+        "tn": 282,
+        "precision": 1.0,
+        "recall": 0.5641025641025641,
+        "f1": 0.7213114754098361,
         "error": [
-            {
-                "context": "Espectacular casa quinta en Barrio El Rodeo en La Plata. Acceso sobre ruta 215. muy buen entorno barrio familiar semi cerrado. la propiedad esta desarrolada sobre 4 lotes de 20 x 50 cada uno. la casa esta situada sobre dos lotes es de tipo chalet en una planta y consta de gran estar comedor con vista hacia la piscina",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
-                "actual": "",
-                "expected": true
-            },
             {
                 "context": "Importante predio - lotes - en la mejor zona de Banfield, Lomas de Zamora. Apto ideal desarrollo inmobiliario. 4000 m2. Salida a dos calles. A 200 metros de Larroque y de Alvear. Zona residencial exclusiva. Predio a la venta en la mejor zona de Banfield, cerca de todo. Zona residencial ideal para desarrollo inmobiliario. 4000 m2 compuestos por 7 lotes, con medidas irregulares de 50 m de largo por 80 m de ancho. Doble frente con ingreso casi de 20 m. Salida a dos calles. 2.600.000 USD",
                 "actual": "",
                 "expected": true
             },
             {
-                "context": "Lote en Barrio Semi cerrado. Manzana que comprende las calles : Alsina : Bustamante : Blandengues : Copello\r\nLotes de 144 mts ( 8,4 x 17,05 ) El loteo cuenta con terrenos a la calle y terenos internos, semi cerrado por 2\r\ncalles internas. Sobre asfalto. Lote Numero 2 Precio de contado. LISTO PARA ESCRITURAR Pardiñas\r\nInmuebles",
+                "context": "El terreno ideal para tu casa en Parque Exaltación! - Gran Lote de 1050 m2 - Opción de sumar otro lindero de 1.550 m2 - Inmejorable vista hacia el campo infinito. - Excelente ubicación. A solo tres cuadras del ingreso del barrio y de la bajada de la Autopista. - Escriturable - Apto crédito Parque Exaltación es un barrio semicerradonmuy consolidado de más de 1.000 lotes forestados hace más de 30 años, cobrando un gran impulso en la última década. El Barrio Parque cuenta con una añeja e importante arboleda compuesta por variedades de Coníferas, Sauces , Eucaliptos entre otros. El acceso al barrio se encuentra exactamente a metros de la bajada del Km 74 de la nueva Autopista 8 a solo 10 minutos de Pilar Centro. Centros comerciales muy cercanos tanto en elRemanso, como en Parada de Robles. En BlueKorner Inmobiliaria Boutique contamos con los mejores lotes del Barrio Parque Exaltación / Remanso",
                 "actual": "",
                 "expected": true
             },
             {
-                "context": "El terreno ideal para tu casa en Parque Exaltación! - Gran Lote de 1050 m2 - Opción de sumar otro lindero de\r\n1.550 m2 - Inmejorable vista hacia el campo infinito. - Excelente ubicación. A solo tres cuadras del ingreso del\r\nbarrio y de la bajada de la Autopista. - Escriturable - Apto crédito Parque Exaltación es un barrio semicerrado\r\nmuy consolidado de más de 1.000 lotes forestados hace más de 30 años, cobrando un gran impulso en la última\r\ndécada. El Barrio Parque cuenta con una añeja e importante arboleda compuesta por variedades de Coníferas,\r\nSauces , Eucaliptos entre otros. El acceso al barrio se encuentra exactamente a metros de la bajada del Km 74\r\nde la nueva Autopista 8 a solo 10 minutos de Pilar Centro. Centros comerciales muy cercanos tanto en elRemanso, como en Parada de Robles. En BlueKorner Inmobiliaria Boutique contamos con los mejores lotes del Barrio Parque Exaltación / Remanso",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "OPORTUNIDAD SOLO MES DE JUNIO 2022 San Sebastián, ubicado en el límite de Escobar y Pilar, es el barrio indicado para vos, que buscas siempre lo mejor para tu familia. Con un acceso en el km 54,5 de la autopista panamericana, cuenta con todos los servicios necesarios para que vivas la naturaleza de una forma diferente. 13 barrios comunicados por un boulevard, lagunas, cancha de golf y más de 100 hectáreas destinadas a los deportes conforman este maravilloso ecosistema, ideal para disfrutar todos los días junto con tus seres más queridos. 154 hectáreas de lagunas Cancha de golf Canchas de futbol y tenis Seguridad 24hs Club house Disponibles Lotes internos frente a Plaza 659 Mt. La mejor orientación del Barrio Nuestra Señora del Carmen. Área 13 Anticipo USD 14.200 Restan 19 cuotas de $ 87.239,00 + CAC y 3 refuerzos de $ 375.800,00 No paga expensas hasta la posesión enero 2026. Aclaramos que tenemos varios disponibles todos con buena orientación !!! No dejes de contactarnos para mayor información Remax Duo",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Imponente lote de 1038 m2 en esquina sobre la Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Se trata de un terreno conformado por tres lotes de 8.66 x 50 mts. Zonificación: R2. Barrio residencial de baja densidad. F.O.S. máximo = 0.60. F.O.T. máximo = 2.2. Densidad neta potencial: 800 hab/ha. Altura máxima: R = h/d = 1.6. Altura máxima basamento: 6 m. Altura mínima interior P.B.: 2.80 m. Altura mínima interior sobre P.B.: 2.60 m",
+                "context": "Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
                 "actual": "",
                 "expected": true
             },
@@ -1605,16 +1561,6 @@
                 "context": "Barrio abierto con 150 lotes entre 200 y 500 m2 distribuido en 6 manzanas A 15 minutos del centro platnese ubicado entre las calles 608 entre 18bis y 20 rápido acceso alejado del ruido de la ciudad encontra el lugar para tu futuro hogar",
                 "actual": "",
                 "expected": true
-            },
-            {
-                "context": "Lanzamiento Barrio Liquidambar. Calle 41 a 42 y de 149 a 150. Lote de 10 x 32. Sector privado. Preventa lotes ubicados a 200 mts de Av.44 , a 10 minutos del centro de La Plata y con facil acceso a Ruta 2 y 36 o Av.520. El barrio contara con lotes en el sector abierto y lotes cerrados que van desde los 160 a 400 mts2. Lotes comerciales con frente Avenida 149. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "San Jerónimo ll BARRIO ABIERTO. Este emprendimiento esta ubicado en Matheu, partido de Escobar a 8 cuadras de la ruta 25 (Av. Sarmiento) con acceso a panamericana Ruta Nacional Nº 9 (ramal Escobar), a 15 minutos del Centro de Belén de Escobar. Este emprendimiento se desarrolla bajo la modalidad de precio cerrado y diferentes opciones de financiación en cuotas fijas. Contará con calles con cunetas, red eléctrica aérea y alumbrado LED. Oferta lanzamiento, Lotes en Matheu a precios únicos. Luego del éxito San Jerónimo 1, nace esta nueva propuesta de nombre San Jerónimo 2, son todos lotes con las medidas justas para poder realizar tu propio proyecto, tanto para vivienda permanente o para casa de fines de semana. San Jerónimo 2 va a convertirse en una excelente propuesta con visión de futuro, con comparativos demostrables en San Jerónimo 1, cuyos valores actuales se duplicaron en poco tiempo, hoy podes tener la posibilidad de reservar tu terreno al mejor precio del mercado. No dudes en contactarnos y reservar tu terreno. El precio publicado es por el anticipo, luego podes acceder a planes de 12 o 24 cuotas fijas. Los precios de lotes por pago de contado arrancan en u$s 10.000.",
-                "actual": true,
-                "expected": ""
             },
             {
                 "context": " VENTA EXCELENTE LOTE EN CAMPOS DE LA ENRIQUETA. Hermoso lote de 700 m2 con salida náutica. Disponibilidad de playa y muelle , para uso de embarcaciones sin motor. Número de Lote 288. Excelente orientación. El Emprendimiento se ubica en plena zona de desarrollo de Clubes de Campo del corredor ruta 2, La Plata - Brandsen, en el kilómetro 65 de dicha vía. Lotes de 700 m2. y de 1000 m2. Lotes con acceso directo a espectaculares canales de agua, en los cuales podes tener un muelle y una playa privada de arena, desde donde podes salir a navegar en embarcaciones sin motor, o pescar desde tu propio jardín. MAS DE 12 CANALES NAVEGABLES Y 2 LAGUNAS PRINCIPALES que tendrán un tratamiento especial para la mantención del agua, las especies de peces y toda su vegetación, y con un Arroyo Natural con una RESERVA DE FLORA Y FAUNA AUTOCTONA, un espacio único en la zona con juncales y espadañares, y una gran cantidad de aves, zorros, carpinchos, nutrias y liebres. Arroyo natural y 2 lagunas artificiales navegables. Locales comerciales, club house, gimnasio spa y piscinas. Club de playa y pesca deportiva. Spa, Gimnasio y Piscina climatizada.",
@@ -1652,7 +1598,7 @@
                 "expected": true
             },
             {
-                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2sin mejoras al frente portón de reja  Lote 1 de 191M2esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex  Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
+                "context": "Propiedad de 2000 metros cuadrados con 4 locales, hoy Dupplex. Lote 25 de 200M2 arbolado, sin mejoras con portón de reja en dos hojas  Lote 26 de 200M2 arbolado sin mejoras con tejido artístico al frente.  Lote 27 de 191M2 esquina arbolado sin mejoras solo una parrilla de material.  Lote 28 de 200M2ante esquina garaje  3,16 x 10,6 cubierto techo de abovedado con losa, piso de cemento portón de reja de 2 hojas Lote 2 de 200M2 sin mejoras al frente portón de reja  Lote 1 de 191M2 esquina sin mejoras. Lote 4,92 x 5,1 29 de 400M2 con dos locales. Locales 4,92 x 5,1 c/u edificados de mampostería con techo de hormigón armado, hoy en día son dúplex. Comedor con piso de cerámica, ventanas de aluminio con reja divisiones con la cocina con una pared de machimbre.  Cocina 4,48 x 4,88 con piso de cerÃ¡mica, mesada de material revestida en cerámica con dos hachas de acero inoxidable, instalación de agua frÃa y caliente, extracto, escalera metÃ¡lica con escalones de madera a entrepiso  Baño con piso y paredes revestidas en cerÃ¡mica instalado con inodoro y lavamanos con pie ducha con agua fría y caliente, termotanque eléctrico. Entrepiso 4,89 x 5,02 con piso de machimbre ventana de aluminio con reja  Duplex 4,85 x 9,53 siguiente similar a terminar y sin división entre la cocina y el comedor. Galpón 9 x 10 de mamposterÃa con techo de chapa a un agua  Lote  30 de 400M2similar al anterior con escalera a terraza accesible desde la calle, con patio.",
                 "actual": "",
                 "expected": true
             },
@@ -1660,16 +1606,6 @@
                 "context": "Barrio desarrollado en 16 hectáreas. Comprendido entre las calles 501 a 507 y 138 a 140. Una excelente zona de fácil acceso a las principales Avenidas 25, 31, 520 y Camino Gral. Belgrano. Se encuentra a 5 minutos de los principales colegios de la zona.  Un Hermoso lugar para vivir | LOTES en PH y Geodesia desde 230 m2. | SERVICIOS: LUZ  AGUA  ASFALTO - CORDóN CUNETA  GAS (Prefactibilidad aprobada)  Los datos consignados en este aviso deben considerarse estimaciones aproximadas, que  pueden carecer de precisión, exactitud y/o  estar desactualizados, al igual que las fotos , imágenes y videos,  que   se publican solo a título ilustrativo para facilitar la visualización del inmueble relacionado .",
                 "actual": "",
                 "expected": true
-            },
-            {
-                "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": true,
-                "expected": ""
             },
             {
                 "context": "Lotes en berisso, a 10 minutos del caso urbano. Oportunidad de tener su primer lote. Fácil acceso, están ubicados a 200 metros de ruta 11 y de zona comercial; y a 3 cuadras de una escuela. Medidas de los lotes: 260, 325 y 390 mts2, frente de 9 mts. Son aptos PROCREAR y aptos crédito bancario. Están subdivididos por ph y tienen Escritura Definitiva. La zona cuenta con todos los servicios, electricidad, gas, agua, internet, cable. Calle de tierra. Posibilidad de financiación mediante oferta Desde 12.000 Usd, libre de todo gasto.",
@@ -1687,7 +1623,7 @@
                 "expected": true
             },
             {
-                "context": "TERRENOS EN PRE-VENTA VENTA DE TERRENOS - EXCELENTE OPORTUNIDAD DE INVERSIÒN\r\nUbicados a tan solo 45 minutos de CABA y a 5 minutos de la nueva autopista Presidente Perón (Continuación\r\ndel Camino del Buen Ayre) que conectara directamente Zona Norte con Ezeiza-La Plata. PRE VENTA DE LAS\r\nPRIMERAS 10 UNIDADADES DISPONIBLES DE 724 mts2 - DOCUMENTACION: Escritura al día. Posesión a\r\n12 meses, escritura indivisa. DESCRIPCIONES GENERALES Barrio cerrado VIEDMA CHICO compuesto por 41\r\nunidades funcionales que van desde los 724 a 850mts2 / Trabajo de agrimensura realizado, lotes amojonados\r\n/ / Calles internas ( cul de sac ) / / Vigilancia / / Portón automático / / Cerco perimetral y alarma / / Circuito\r\ncerrado cámaras seguridad con acceso para cada propietario / / Iluminación LED / / Forestación /\r\nINFORMACION DE INTERES -Linea de transporte publico a 3 cuadras. -Ubicado a 300 metros de Avenida\r\nConstituyentes. -Ubicado a 10 minutos del centro comercial de Mariano Acosta., -Ubicado a 5 minutos del Lago\r\nSan Francisco y Reserva Parque Los Robles. -Ubicado a 5 minutos de la subida de la nueva autopista con fácil\r\nacceso.",
+                "context": "TERRENOS EN PRE-VENTA VENTA DE TERRENOS - EXCELENTE OPORTUNIDAD DE INVERSIÒN. Ubicados a tan solo 45 minutos de CABA y a 5 minutos de la nueva autopista Presidente Perón (Continuación del Camino del Buen Ayre) que conectara directamente Zona Norte con Ezeiza-La Plata. PRE VENTA DE LAS PRIMERAS 10 UNIDADADES DISPONIBLES DE 724 mts2 - DOCUMENTACION: Escritura al día. Posesión a 12 meses, escritura indivisa. DESCRIPCIONES GENERALES Barrio cerrado VIEDMA CHICO compuesto por 41 unidades funcionales que van desde los 724 a 850mts2 / Trabajo de agrimensura realizado, lotes amojonados / / Calles internas ( cul de sac ) / / Vigilancia / / Portón automático / / Cerco perimetral y alarma / / Circuito cerrado cámaras seguridad con acceso para cada propietario / / Iluminación LED / / Forestación / INFORMACION DE INTERES -Linea de transporte publico a 3 cuadras. -Ubicado a 300 metros de Avenida Constituyentes. -Ubicado a 10 minutos del centro comercial de Mariano Acosta., -Ubicado a 5 minutos del Lago San Francisco y Reserva Parque Los Robles. -Ubicado a 5 minutos de la subida de la nueva autopista con fácil acceso.",
                 "actual": "",
                 "expected": true
             }
@@ -1695,13 +1631,13 @@
     },
     {
         "name": "es_monetizable",
-        "tp": 96,
-        "fp": 37,
-        "fn": 3,
-        "tn": 186,
-        "precision": 0.7218045112781954,
-        "recall": 0.9696969696969697,
-        "f1": 0.8275862068965517,
+        "tp": 94,
+        "fp": 39,
+        "fn": 4,
+        "tn": 184,
+        "precision": 0.706766917293233,
+        "recall": 0.9591836734693877,
+        "f1": 0.8138528138528139,
         "error": [
             {
                 "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
@@ -1710,6 +1646,11 @@
             },
             {
                 "context": "Terreno de triple frente en venta, entrada por Av San Martín (doble frente) y por Miguel ángel (frente simple). La de Av San Martín tiene 17.38 de frente X 48.55 de fondo, con posibilidad de construir 4032.2 m2 vendibles distribuidos en 7 pisos.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "Casa en venta en la zona sur de la ciudad. Ubicación: Jose Maria Eguiluz n° 663. Barrio San Fernando. La casa se posee un terreno amplio de 413 m2, y tiene acceso por 2 calles, por adelante con calle Jose Maria Eguiluz y por atras con calle Jose Amenabar. Ideal proyecto e inversión",
                 "actual": true,
                 "expected": ""
             },
@@ -1724,7 +1665,7 @@
                 "expected": ""
             },
             {
-                "context": "El terreno ideal para tu casa en Parque Exaltación! - Gran Lote de 1050 m2 - Opción de sumar otro lindero de\r\n1.550 m2 - Inmejorable vista hacia el campo infinito. - Excelente ubicación. A solo tres cuadras del ingreso del\r\nbarrio y de la bajada de la Autopista. - Escriturable - Apto crédito Parque Exaltación es un barrio semicerrado\r\nmuy consolidado de más de 1.000 lotes forestados hace más de 30 años, cobrando un gran impulso en la última\r\ndécada. El Barrio Parque cuenta con una añeja e importante arboleda compuesta por variedades de Coníferas,\r\nSauces , Eucaliptos entre otros. El acceso al barrio se encuentra exactamente a metros de la bajada del Km 74\r\nde la nueva Autopista 8 a solo 10 minutos de Pilar Centro. Centros comerciales muy cercanos tanto en elRemanso, como en Parada de Robles. En BlueKorner Inmobiliaria Boutique contamos con los mejores lotes del Barrio Parque Exaltación / Remanso",
+                "context": "El terreno ideal para tu casa en Parque Exaltación! - Gran Lote de 1050 m2 - Opción de sumar otro lindero de 1.550 m2 - Inmejorable vista hacia el campo infinito. - Excelente ubicación. A solo tres cuadras del ingreso del barrio y de la bajada de la Autopista. - Escriturable - Apto crédito Parque Exaltación es un barrio semicerradonmuy consolidado de más de 1.000 lotes forestados hace más de 30 años, cobrando un gran impulso en la última década. El Barrio Parque cuenta con una añeja e importante arboleda compuesta por variedades de Coníferas, Sauces , Eucaliptos entre otros. El acceso al barrio se encuentra exactamente a metros de la bajada del Km 74 de la nueva Autopista 8 a solo 10 minutos de Pilar Centro. Centros comerciales muy cercanos tanto en elRemanso, como en Parada de Robles. En BlueKorner Inmobiliaria Boutique contamos con los mejores lotes del Barrio Parque Exaltación / Remanso",
                 "actual": true,
                 "expected": ""
             },
@@ -1732,11 +1673,6 @@
                 "context": "Fraccion en venta en la localidad de Pavón, partido de Exaltación de La Cruz, sin mejoras. Escritura de derechos posesorios.",
                 "actual": true,
                 "expected": ""
-            },
-            {
-                "context": "Venta Lote IDEAL PROYECTO EDILICIO sobre José Indart entre Ocampo y Perón. Frente 10 Fondo 31. FOT 3. Actualmente posee dos casas construidas en muy buen estado con cochera pasante. Todas las medidas son aproximadas y provistas por el cliente. Información Adicional: gas natural. Servicios: cloacas, gas",
-                "actual": "",
-                "expected": true
             },
             {
                 "context": "Ubicados sobre la Calle De Luca entre calle Alsina y Av. San Martín (arteria principal de acceso). A sólo 350 metros de la Ruta Provincial N° 6. Localidad de Los Cardales, Partido de Exaltación de la Cruz, Provincia de Buenos Aires. Características: Se trata de dos terrenos ubicados en el casco urbano de Los Cardales. Se encuentran dentro de la Zona Residencial Comercial de Densidad Media Baja (RCmb) acorde al Código de Planeamiento de Exaltación de la Cruz en la cuál se admite la edificación de departamentos y locales comerciales. Con indicadores de ocupación de: FOS: O.6 y FOT: 1.",
@@ -1874,6 +1810,21 @@
                 "expected": ""
             },
             {
+                "context": "Terreno en PH sobre Avenida Arana entre calle 139 y 141. Zona residencial de Arturo segui. Sobre asfalto. Con servicios de electricidad, agua, gas (en vereda de enfrente).  Dimensiones de 20 de frente x 45 de fondo.  Zonificacion UR 8. Fos 0.4 Fot 0.8 Atura permitida 3 niveles. Demsidad por habitante 60 oersonas x hectarea.  Arbolado. Muy buen entorno.  Permuta por departamento en La Plata.  Servicios:  Gas  Características:  Alambrado perimetral Responsable Matriculado Andrés Ariel Brandoni - Matricula 6865 Folio 8 Tomo Xlll CMCPDJLP (Ley 10.973). Las medidas y superficies asignadas en la presente, son aproximadas al solo efecto orientativo. Las medidas definitivas surgiran del titulo de propiedad respectivo.",
+                "actual": true,
+                "expected": ""
+            },
+            {
+                "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "Calle 6 e/ 488 y 489. Lote PH de 443 m2. Todo cercado. Excelente entorno. Calles con mejorado. Alumbrado público. Escriturado. Documentación perfecta.",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "Lote de 244 mt2 en Barrio Privado Santa Elena (en PH), desarrollado en 1,2 hectáreas. A solo 10 minutos del centro de la ciudad de La Plata. Acceso principal por asfalto por calle 609 y 5 bis. Portón de ingreso vehicular. El emprendimiento está compuesto por 35 lotes unifamiliares y 10 locales comerciales. Plano Municipal y de Propiedad Horizontal probados. Servicios: Luz - Agua. La obra del servicio de gas será abonada por los compradores de las unidades y el comienzo de obra dependerá de la empresa prestadora. Escrituración y posesión inmediatas. ",
                 "actual": true,
                 "expected": ""
@@ -1894,9 +1845,9 @@
                 "expected": ""
             },
             {
-                "context": " LOTE EN VENTA EN BARRIO CERRADO, LA PLATA\r\n34 y 133 | Lotes en PH en barrio cerrado.\r\nEl barrio se emplaza en una ubicación excelente, en un zona en crecimiento y desarrollo. Además, comprende un área que se extiende entre las calles 34 de 132 a 133, San Carlos. Es un barrio de viviendas unifamiliares de baja densidad en conformación, compuesto por 39 lotes de diversas medidas.                                                                                                                                                                                                                                                                                 \r\nTiene acceso controlado con portón automatizado con dos entradas, circulación por calle principal central que permiten un rápido recorrido y fácil acceso a los terrenos. El predio cuenta con todos los servicios.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \r\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
-                "actual": true,
-                "expected": ""
+                "context": "Se vende! RETASADO IDEAL EMPRENDIMIENTO Amplia propiedad ubicada en la calle San Martin 622, Bernal centro. Medidas: 625 m2 cubiertos Lote de 11,60 x 59 Listo para tomar posesión y escriturar Consulte para más información o para visitar la propiedad",
+                "actual": "",
+                "expected": true
             },
             {
                 "context": "Boero Propiedades vende: Lote dentro de barrio cerrado. Nuevo Loteo en La Plata (Calle 131 y 85)\r\n- A 10 del centro, acceso por asfalto\r\n-Varias familias ya viviendo y otras en proceso de construcción.\r\n-FINANCIACIóN EN PESOS con anticipo mínimo y hasta 48 cuotas\r\n- Vehículos como parte de pago\r\nLotes desde 250 a 330 m2 (promedio de 10 x 30 mts)\r\n- Lotes ESCRITURABLES.\r\n- Entrega de posesión inmediata.\r\n- Lotes dentro de 4 mini barrios cerrados delimitados con alambrado olímpico y portón automático exclusivo para los propietarios.",
@@ -1907,13 +1858,13 @@
     },
     {
         "name": "loteo_ph",
-        "tp": 18,
+        "tp": 17,
         "fp": 0,
         "fn": 11,
         "tn": 293,
         "precision": 1.0,
-        "recall": 0.6206896551724138,
-        "f1": 0.7659574468085107,
+        "recall": 0.6071428571428571,
+        "f1": 0.7555555555555554,
         "error": [
             {
                 "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
@@ -1931,7 +1882,7 @@
                 "expected": true
             },
             {
-                "context": "Av 38 y 147 San Carlos. Exclusivos lotes en barrio semicerrado \"ALTOS DE DON PEDRO\" ,a minutos de la\r\nCiudad, OPORTUNIDAD Ãºnica, casa alquilada ($103.000) sobre lote arbolado de 10.70 x 28 metros (PH), 2\r\ndormitorios, cocina comedor equipada, lavadero, baÃ±o completo, 67 m2 cubiertos, fondo. Apto Banco.\r\nIMPORTANTE escritura inmediata. por UF no es parte indivisa. Tel - 2455 o 221 15 .",
+                "context": "Av 38 y 147 San Carlos. Exclusivos lotes en barrio semicerrado \"ALTOS DE DON PEDRO\" ,a minutos de la Ciudad, OPORTUNIDAD Ãºnica, casa alquilada ($103.000) sobre lote arbolado de 10.70 x 28 metros (PH), 2 dormitorios, cocina comedor equipada, lavadero, baÃ±o completo, 67 m2 cubiertos, fondo. Apto Banco. IMPORTANTE escritura inmediata. por UF no es parte indivisa. Tel - 2455 o 221 15 .",
                 "actual": "",
                 "expected": true
             },
