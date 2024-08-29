@@ -872,12 +872,12 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 40;12 x 55;12 x 52;12 x 41",
+                "actual": "12 x 40;12 x 55;12 x 41;12 x 52",
                 "expected": ""
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "24 x 30;10 x 32;15 x 40;10 x 27;15 x 28;10 x 21;15 x 32;15 x 55;14 x 30;24 x 45;12 x 30",
+                "actual": "10 x 27;24 x 30;15 x 55;12 x 30;15 x 28;15 x 40;10 x 32;10 x 21;15 x 32;24 x 45;14 x 30",
                 "expected": "10 x 21.89"
             },
             {
@@ -892,7 +892,7 @@
             },
             {
                 "context": "Lotes Propios ( No es ph, ni parte indivisa) - Medidas 12x27 y 12x33 - Urbanizacion con 29 parcelas - Asfalto, luz, gas y agua corriente - Obras Finalizadas - Ultimos 4 lotes disponibles - Desde U$S 14.000 a U$S 19.000 segun tamaño y ubicacion - Financiacion: 30 % al boleto y el saldo hasta 48 cuotas de U$S 200 cada una. -",
-                "actual": "12 x 33;12 x 27",
+                "actual": "12 x 27;12 x 33",
                 "expected": ""
             },
             {
@@ -927,7 +927,7 @@
             },
             {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
-                "actual": "12 x 25;12 x 30;15 x 35",
+                "actual": "15 x 35;12 x 25;12 x 30",
                 "expected": "12 x 30; 12 x 25; 12 x 35"
             }
         ]
@@ -1546,21 +1546,16 @@
     },
     {
         "name": "a_demoler",
-        "tp": 73,
-        "fp": 13,
-        "fn": 5,
-        "tn": 231,
-        "precision": 0.8488372093023255,
-        "recall": 0.9358974358974359,
-        "f1": 0.8902439024390244,
+        "tp": 75,
+        "fp": 14,
+        "fn": 3,
+        "tn": 230,
+        "precision": 0.8426966292134831,
+        "recall": 0.9615384615384616,
+        "f1": 0.8982035928143712,
         "error": [
             {
                 "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Casa en venta en la zona sur de la ciudad. Ubicación: Jose Maria Eguiluz n° 663. Barrio San Fernando. La casa se posee un terreno amplio de 413 m2, y tiene acceso por 2 calles, por adelante con calle Jose Maria Eguiluz y por atras con calle Jose Amenabar. Ideal proyecto e inversión",
                 "actual": "",
                 "expected": true
             },
@@ -1580,17 +1575,17 @@
                 "expected": ""
             },
             {
+                "context": "Las Toninas, ciudad balneario del Partido de La Costa en la provincia de Buenos Aires, ubicada a 337 km de la Ciudad de Buenos Aires. Excelente lugar de ambiente familiar, con playas angostas de arena fina y aguas tranquilas, especial para proyectos o inversión. El terreno en venta se encuentra ubicado a 4 cuadras de la playa, sobre la calle 7 entre la 6 y 8 y cuenta con todos los servicios: agua, luz, gas y con todos los impuestos al día. A tener en cuenta: Se encuentra en proceso judicial de usucapión iniciado a los fines de obtener el título de propiedad. Posibilidad de otorgar cesión de derechos litigiosos. Con opción de financiación de dueño directo. ",
+                "actual": true,
+                "expected": ""
+            },
+            {
                 "context": "TERRENO ZONA DE ALVEAR Y CAñADA, CORDOBA, cerca de Nueva Córdoba, 264mts2,  terreno irregular, ideal para emprendimiento, Derechos posesorios de mas de 25 años. Oportunidad de negocio!!! \r\nESCUCHO OFERTAS DE CONTADO.  PRECIO PUBLICADO: RECIBO VEHICULOS (1, 2, 3 ó 4) que no sean de alta gama ni invendibles, autos nacionales, vendibles, fáciles de hacer efectivo.\r\nLLAMAME LUCíA CORONEL RUIZ. Visitá nuestra web y enviame un Whatsapp (LU) por las propiedades que quieras ver!.MP 4199",
                 "actual": true,
                 "expected": ""
             },
             {
                 "context": "Se ubica sobre Vieytes y Champagnat. Chacras de Canning. Superficie 38.500 m2 (110 x 350 metros) Superficie edificada aprox 180 m2 + Depósito VENTA: U$S 90 x m2 1 hectarea 10.000 m2 x U$S 90 = U$S 900.000 3.85 hectareas = U$S 3.465.000 VENTA: U$S 3.465.000",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Venta Lote IDEAL PROYECTO EDILICIO sobre José Indart entre Ocampo y Perón. Frente 10 Fondo 31. FOT 3. Actualmente posee dos casas construidas en muy buen estado con cochera pasante. Todas las medidas son aproximadas y provistas por el cliente. Información Adicional: gas natural. Servicios: cloacas, gas",
                 "actual": "",
                 "expected": true
             },
@@ -1790,13 +1785,13 @@
     },
     {
         "name": "es_monetizable",
-        "tp": 97,
-        "fp": 38,
-        "fn": 2,
-        "tn": 185,
-        "precision": 0.7185185185185186,
-        "recall": 0.9797979797979798,
-        "f1": 0.8290598290598291,
+        "tp": 96,
+        "fp": 37,
+        "fn": 3,
+        "tn": 186,
+        "precision": 0.7218045112781954,
+        "recall": 0.9696969696969697,
+        "f1": 0.8275862068965517,
         "error": [
             {
                 "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
@@ -1805,11 +1800,6 @@
             },
             {
                 "context": "Terreno de triple frente en venta, entrada por Av San Martín (doble frente) y por Miguel ángel (frente simple). La de Av San Martín tiene 17.38 de frente X 48.55 de fondo, con posibilidad de construir 4032.2 m2 vendibles distribuidos en 7 pisos.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Casa en venta en la zona sur de la ciudad. Ubicación: Jose Maria Eguiluz n° 663. Barrio San Fernando. La casa se posee un terreno amplio de 413 m2, y tiene acceso por 2 calles, por adelante con calle Jose Maria Eguiluz y por atras con calle Jose Amenabar. Ideal proyecto e inversión",
                 "actual": true,
                 "expected": ""
             },
@@ -1832,6 +1822,11 @@
                 "context": "Fraccion en venta en la localidad de Pavón, partido de Exaltación de La Cruz, sin mejoras. Escritura de derechos posesorios.",
                 "actual": true,
                 "expected": ""
+            },
+            {
+                "context": "Venta Lote IDEAL PROYECTO EDILICIO sobre José Indart entre Ocampo y Perón. Frente 10 Fondo 31. FOT 3. Actualmente posee dos casas construidas en muy buen estado con cochera pasante. Todas las medidas son aproximadas y provistas por el cliente. Información Adicional: gas natural. Servicios: cloacas, gas",
+                "actual": "",
+                "expected": true
             },
             {
                 "context": "Ubicados sobre la Calle De Luca entre calle Alsina y Av. San Martín (arteria principal de acceso). A sólo 350 metros de la Ruta Provincial N° 6. Localidad de Los Cardales, Partido de Exaltación de la Cruz, Provincia de Buenos Aires. Características: Se trata de dos terrenos ubicados en el casco urbano de Los Cardales. Se encuentran dentro de la Zona Residencial Comercial de Densidad Media Baja (RCmb) acorde al Código de Planeamiento de Exaltación de la Cruz en la cuál se admite la edificación de departamentos y locales comerciales. Con indicadores de ocupación de: FOS: O.6 y FOT: 1.",
