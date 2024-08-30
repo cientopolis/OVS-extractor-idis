@@ -2,7 +2,7 @@
 PALABRAS_CLAVE_EDIFICADO = ["termotanque", "termotanques", "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos", "quincho", "quinchos", "parrilla", "parrillas", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "parrilla", "parrillas", "dormitorio", "dormitorios",  "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos",  "muro", "muros", "hall", "halls", "terraza", "terrazas", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias", "playroom", "playrooms"]
 
 #con construcción
-CONSTRUCCION_SINONIMOS = [ "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "piso", "pisos", "garage", "garages", ]
+CONSTRUCCION_SINONIMOS = ["piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
 
 #mejoras
 PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "contrapisos", "medianera", "medianeras", "platea", "plateas", "loza", "lozas",]
@@ -10,6 +10,7 @@ PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "co
 #con mejoras
 PALABRAS_CLAVE_EDIFICADO_CON = ["mejora", "mejoras", "mejorado", "mejorada"]
 
+FIN_SINONIMOS = ["finalizada", "finalizadas", "finalizado", "finalizados", "terminada", "terminadas", "terminado", "terminados"]
 CON_SINONIMOS = ["c/", "con", "tiene", "posee", "hay"]
 UN_SINONIMOS = ["un", "una", "unos", "unas"]
 SUPERFICIE_SINONIMOS = ["superficie", "espacio", "sup", "sup."]
