@@ -2,7 +2,7 @@ import datetime
 import spacy
 import re
 
-from src.helper import clean_direccion, reduce_superstrings 
+from src.helper import clean_direccion, medidas_terrenos, reduce_superstrings 
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -81,6 +81,7 @@ class Oferta():
     def direccion(self, predichos: list):
         predichos = self._clear_inter_entre(predichos)
         # predichos = clear_altura_entre(predichos)
+        
         matches_direccion_todos = (
             predichos["dir_entre"]
             + predichos["dir_interseccion"]
@@ -170,7 +171,7 @@ class Oferta():
         """
         Si el aviso enuncia múltiples dimensiones, buscar cuál refiere al lote
         """
-        predichos= predichos["medidas"]
+        predichos= medidas_terrenos(predichos["medidas"])
         mejor_match= max(predichos, key=len) if predichos else ""
         
         if "martillo" in mejor_match:

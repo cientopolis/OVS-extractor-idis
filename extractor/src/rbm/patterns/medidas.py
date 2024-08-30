@@ -1,8 +1,8 @@
-DIMENSION = ["frente", "fondo", "lateral", "ancho", "alto", "profundidad", "largo", "anchura", "longitud", "espesor"]
 CONECTORES_MEDIDAS = ["x", "por"]
-MEDIDAS = ["metro", "metros", "m", "ms", "mt", "mts", "m2"] 
+MEDIDAS = ["metro", "metros", "m", "ms", "mt", "mts", "m2", "m."] 
 RELLENO = ["ADP", "ADV", "PROPN", "NOUN", "DET", "ADJ"] # sacarle el DET y ADJ? -> por ahora da buenos resultados sin perjudicar
-
+FRENTE= ["frente", "ancho"]
+FONDO= ["fondo", "largo"]
 def medidas():
     return  list([            
             # 5 mt x 10 mt 
@@ -42,19 +42,19 @@ def medidas():
              ],
              #Frente de x mts y Fondo de x mts
              [
-                {"LOWER": "frente"},
+                {"LOWER": {"IN": FRENTE}},
                 {"POS": "ADP", "OP":"?"},
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
                 {"LOWER":{"IN":CONECTORES_MEDIDAS+["y", "con"]}, "OP": "?"}, 
-                {"LOWER": "fondo"},
+                {"LOWER": {"IN": FONDO}},
                 {"POS": "ADP", "OP":"?"},
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
              ],
              #frente de 15.85 mts y 25 de fondo
              [
-                {"LOWER": "frente"},
+                {"LOWER": {"IN": FRENTE}},
                 {"POS": "ADP", "OP":"?"},
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
@@ -62,16 +62,28 @@ def medidas():
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
                 {"POS": "ADP", "OP":"?"},
-                {"LOWER": "fondo"},
+                {"LOWER": {"IN": FONDO}},
+             ],
+             # 8 de frente por 35 de largo
+             [
+                {"LIKE_NUM": True},
+                {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
+                {"POS": "ADP", "OP":"?"},
+                {"LOWER": {"IN": FRENTE}},
+                {"LOWER":{"IN":CONECTORES_MEDIDAS+["y", "con"]}, "OP": "?"}, 
+                {"LIKE_NUM": True},
+                {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
+                {"POS": "ADP", "OP":"?"},
+                {"LOWER": {"IN": FONDO}},
              ],
              #Frente: x mts y Fondo: x mts
              [
-                {"LOWER": "frente"},
+                {"LOWER": {"IN": FRENTE}},
                 {"IS_PUNCT": True},
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
-                {"LOWER":{"IN":CONECTORES_MEDIDAS+["y", "con"]}, "OP": "?"}, 
-                {"LOWER": "fondo"},
+                {"LOWER":{"IN":CONECTORES_MEDIDAS+["y", "con", "."]}, "OP": "?"}, 
+                {"LOWER": {"IN": FONDO}},
                 {"IS_PUNCT": True},
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
@@ -81,12 +93,12 @@ def medidas():
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
                 {"POS": "ADP", "OP":"?"},
-                {"LOWER": "frente"},
+                {"LOWER": {"IN": FRENTE}},
                 {"LOWER":{"IN":CONECTORES_MEDIDAS+["y", "con"]}, "OP": "?"}, 
                 {"LIKE_NUM": True},
                 {"LOWER": {"IN":MEDIDAS}, "OP":"?"},
                 {"POS": "ADP", "OP":"?"},
-                {"LOWER": "fondo"},
+                {"LOWER": {"IN": FONDO}},
              ],
              
             #2 MEDIDAS, que tenga la unidad en algún lado -> anda peor que el patrón de arriba
@@ -148,12 +160,12 @@ def medidas():
             #       {"LIKE_NUM": True},
             #        {"LOWER": {"IN": ["m", "mts", "metros"]}, "OP": "?"},
             #        {"LOWER": "de", "OP": "?"},
-            #        {"LOWER": "frente"},
+            #        {"LOWER": {"IN": FRENTE}},
             #        {"LOWER": {"IN": ["por", "x", "y"]}, "OP": "?"},
             #        {"LIKE_NUM": True},
             #        {"LOWER": {"IN": ["m", "mts", "metros"]}, "OP": "?"},
             #        {"LOWER": "de", "OP": "?"},
-            #        {"LOWER": "fondo"},
+            #        {"LOWER": {"IN": FONDO}},
             #    ],
             ]
     )

@@ -1,5 +1,7 @@
 import re 
-import spacy 
+import spacy
+
+from src.rbm.patterns.direccion import CALLE_SINONIMOS 
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -18,6 +20,24 @@ def descubrir_nuevos(predichos: dict):
 def get_numeros(cadena: str):
         return re.findall(r"\b\d+(?:[.,]\d+)?\b", cadena)
 
+def medidas_terrenos(medidas: list[str]):
+    medidas_largas= []
+    for medida in medidas:
+        if all([float(numero)>5 for numero in get_numeros(medida)]):
+            medidas_largas.append(medida)
+    return medidas_largas
+
+
+def remover_previo_a_palabra(direccion):
+    patrones = "|".join(CALLE_SINONIMOS)
+    patron = r".*?(" + patrones + r")"
+    resultado = re.search(patron, direccion, flags=re.IGNORECASE)
+    
+    if resultado:
+        return direccion[resultado.start():].strip()
+    else:
+        return direccion.strip()
+
 def clean_direccion(cadena: str):
     cadena= re.sub(r"^\. ", "", cadena)
     if cadena == "":
@@ -29,8 +49,7 @@ def clean_direccion(cadena: str):
     if  (NLP(cadena))[-1].pos_ == "ADP":
         cadena= cadena.split()[:-1]
         cadena= " ".join(cadena)
-
-    return cadena.strip()
+    return remover_previo_a_palabra(cadena.strip())
 
 
 def reduce_superstrings(dimensions):

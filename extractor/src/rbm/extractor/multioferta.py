@@ -1,4 +1,4 @@
-from src.helper import clean_direccion, reduce_superstrings
+from src.helper import clean_direccion, medidas_terrenos, reduce_superstrings
 from src.rbm.extractor.oferta import Oferta
 
 
@@ -8,7 +8,7 @@ class Multioferta(Oferta):
         Si el aviso es multioferta, devolver todas las dimensiones
         """
 
-        predichos= predichos["medidas"] 
+        predichos= medidas_terrenos(predichos["medidas"])
         if not predichos:
             return ""
         result= []
@@ -34,10 +34,14 @@ class Multioferta(Oferta):
             + predichos["dir_interseccion"]
             + predichos["dir_nro"]
         )
-        if matches_direccion_todos == []:
-            return ""
+        direccion_loteo=None
+        if matches_direccion_todos != []:
+            direccion_loteo= clean_direccion(max(matches_direccion_todos, key=len))
         
-        direccion_loteo= clean_direccion(max(matches_direccion_todos, key=len))
         lotes_en_venta= ";".join(reduce_superstrings(predichos["dir_lote"]))
-            
-        return direccion_loteo+ ". "+lotes_en_venta
+        
+        if lotes_en_venta:
+            return f"{direccion_loteo}. {lotes_en_venta}" if direccion_loteo else lotes_en_venta
+        return direccion_loteo
+
+        

@@ -13,6 +13,9 @@ def replace_newlines(text):
 def replace_stars(text: str):
     return text.replace("*", " ")
 
+def replace_numeric(text: str):
+    return text.replace("º", "°")
+
 def replace_dashes(text: str):
     return re.sub(r'[-_]', ' ', text)
 
@@ -23,4 +26,4 @@ def replace_number_commas_by_dots(text):
     return (re.compile(r'(\d+),(\d+)')).sub(r'\1.\2', text)
 
 def normalize(data: str):
-    return space_in_dimensions(replace_mts(replace_newlines(replace_multiple_spaces(replace_stars(replace_dashes(replace_number_commas_by_dots(data)))))))
+    return space_in_dimensions(replace_mts(replace_newlines(replace_multiple_spaces(replace_numeric(replace_stars(replace_dashes(replace_number_commas_by_dots(data))))))))
