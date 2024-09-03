@@ -17,7 +17,7 @@ def pileta_barrio() -> list:
             #dentro del barrio
             [{"LOWER" : {"IN" : ["piscinas","piletas"]}}], #dejarlo porque hay veces que lo dicen en plural y singular en la misma publicación
             [{"LOWER" : {"IN": ["pileta"]}},{"LOWER" : "climatizada"}], #poner , piscina"?
-            #[{"LOWER" : {"IN": piletaSinonimos}},{"LOWER" : "semi-olímpica"}]
+            [{"LOWER" : {"IN": piletaSinonimos}},{"LOWER" : "semi-olímpica"}]
 
             #pileta a refaccionar -> no mejora nada por ahora
             # [{"LOWER": {"IN": piletaSinonimos}},{"LOWER": {"IN":conectores}},{"LOWER": {"IN": demolerSinonimos}}],
