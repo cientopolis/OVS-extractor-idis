@@ -25,5 +25,52 @@ def replace_multiple_spaces(text):
 def replace_number_commas_by_dots(text):
     return (re.compile(r'(\d+),(\d+)')).sub(r'\1.\2', text)
 
+def replace_n(text: str): # remplaza Ã± por ñ 
+    return text.replace("Ã±", "ñ")
+
+def replace_o(text : str):
+    return text.replace("Ã³","ó")
+
+def replace_a(text : str):
+    return text.replace("Ã¡","á")
+
+def replace_i(text : str):
+    return text.replace("Ã-","í")
+
+def replace_e(text : str):
+    return text.replace("Ã©","é")
+
+def replace_u(text : str):
+    return text.replace("Ã° ","ú")
+
+
+
 def normalize(data: str):
-    return space_in_dimensions(replace_mts(replace_newlines(replace_multiple_spaces(replace_numeric(replace_stars(replace_dashes(replace_number_commas_by_dots(data))))))))
+    return space_in_dimensions(
+        replace_mts(
+            replace_newlines(
+                replace_multiple_spaces(
+                    replace_numeric(
+                        replace_stars(
+                            replace_dashes(
+                                replace_number_commas_by_dots(
+                                    replace_n(
+                                        replace_a(
+                                            replace_e(
+                                                replace_i(
+                                                    replace_o(
+                                                        replace_u(data)
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    )
+
