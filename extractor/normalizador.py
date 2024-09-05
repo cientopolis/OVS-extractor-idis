@@ -9,7 +9,7 @@ df = pd.read_csv(input_file, delimiter='|', dtype=str,keep_default_na=False) #Le
 for column in df.columns:
     df[column] = df[column].astype(str).apply(normalize)
 
-df.to_csv(output_file, index=False,na_rep='')
+df.to_csv(output_file,sep='|',index=False,na_rep='')
 
 
 
