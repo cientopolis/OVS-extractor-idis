@@ -25,8 +25,55 @@ def replace_multiple_spaces(text):
 def replace_number_commas_by_dots(text):
     return (re.compile(r'(\d+),(\d+)')).sub(r'\1.\2', text)
 
+
+def replace_ñ(text: str): # remplaza Ã± por ñ 
+    return text.replace("Ã±", "ñ")
+
+def replace_ó(text : str):
+    return text.replace("Ã³","ó")
+
+def replace_á(text : str):
+    return text.replace("Ã¡","á")
+
+def replace_í(text : str):
+    return text.replace("Ã ","í")
+
+def replace_é(text : str):
+    return text.replace("Ã©","é")
+
+def replace_ú(text : str):
+    return text.replace("Ã° ","ú")
+
+# Cadena de llamadas a la funcion normalize
 def normalize(data: str):
     if pd.isna(data) or data == "":
         return ""  # Deja los campos vacíos como cadena vacía
-    return space_in_dimensions(replace_mts(replace_newlines(replace_multiple_spaces(replace_numeric(replace_stars(replace_dashes(replace_number_commas_by_dots(data))))))))
+    return space_in_dimensions(
+        replace_mts(
+            replace_newlines(
+                replace_multiple_spaces(
+                    replace_numeric(
+                        replace_stars(
+                            replace_dashes(
+                                replace_number_commas_by_dots(
+                                    replace_ñ(
+                                        replace_ó(
+                                            replace_á(
+                                                replace_í(
+                                                    replace_é(
+                                                        replace_ú(data)
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    )
 
+'Ã¡' 
