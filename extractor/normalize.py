@@ -75,5 +75,3 @@ def normalize(data: str):
             )
         )
     )
-
-'Ã¡' 

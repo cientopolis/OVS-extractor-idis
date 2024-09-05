@@ -42,8 +42,12 @@ def rbm(input: pd.DataFrame) -> pd.DataFrame:
     MATCHER = Matcher()
     input= input.fillna("")
     data = []
+
+    #i=1  para debuggear
     for _, row in input.iterrows():
         description= normalize(row["description"])
+        #print(f"fila {i}: {description} \n") para debugger
+        #i +=1  para debuggear
         candidate_pairs = MATCHER.get_pairs(description)
         candidate_pairs["dir_nro"]= descartar_ultimo_token(candidate_pairs["dir_nro"])
         candidate_pairs["dir_interseccion"]= descartar_ultimo_token(candidate_pairs["dir_interseccion"])
