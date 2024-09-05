@@ -36,7 +36,7 @@ def replace_á(text : str):
     return text.replace("Ã¡","á")
 
 def replace_í(text : str):
-    return text.replace("Ã ","í")
+    return text.replace("Ã-","í")
 
 def replace_é(text : str):
     return text.replace("Ã©","é")
