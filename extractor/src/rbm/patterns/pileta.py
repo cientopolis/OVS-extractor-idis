@@ -1,4 +1,3 @@
-piletaSinonimos = ["pileta", "piscina"]
 antiguaSinonimos = ["antigua", "precaria"]
 demolerSinonimos = ["reciclar", "refaccionar", "demoler", "demolicion", "demolición"]
 conectores = ["para", "a"]#que necesita, se encuentra a , destinada para, ideal para (ya son muchas cosas posibles, conviene un DM)
@@ -6,7 +5,6 @@ POSIBLE_COUNTRY = ["cancha", "canchas", "futbol", "fútbol", "tenis", "tennis", 
 DE_SINONIMOS = ["de", "para"]
 NATACION_SINONIMOS = ["natacion", "natación"]
 #dm
-refaccionar_sinonimos = ["refaccionar", "reciclar", "demoler"]
 barrio_sinonimos = ["barrio", "complejo", "loteo", "zona", "terraza"]
 pileta_sinonimos = ["pileta", "piscina"]
 cuenta_sinonimos = ["con", "cuenta", "tiene"]
@@ -18,7 +16,7 @@ def pileta() -> list:
     return list ( 
     [
         [
-            {"LOWER": {"IN": piletaSinonimos}},
+            {"LOWER": {"IN": pileta_sinonimos}},
         ]
     ]
     )
@@ -30,7 +28,7 @@ def pileta_barrio() -> list:
             #[{"LOWER" : {"IN": piletaSinonimos}},{"LOWER" : "climatizada"}], #baja rendimiento
 
             #piletas grandes
-            [{"LOWER" : {"IN": piletaSinonimos}},{"LOWER" : "semi-olímpica"}],
+            [{"LOWER" : {"IN": pileta_sinonimos}},{"LOWER" : "semi-olímpica"}],
             #[{"LOWER" : {"IN": piletaSinonimos}},{"LOWER" : {"IN": DE_SINONIMOS}},{"LOWER" : {"IN": NATACION_SINONIMOS}}],#pileta de natación
             #gran pileta
 
@@ -69,7 +67,7 @@ def no_pileta_DM() -> list:
                 "LEFT_ID": "pileta",
                 "REL_OP": ">",
                 "RIGHT_ID": "refaccionar",
-                "RIGHT_ATTRS": {"LOWER": {"IN":refaccionar_sinonimos}},
+                "RIGHT_ATTRS": {"LOWER": {"IN":demolerSinonimos}},
             },
         ]
         ,
