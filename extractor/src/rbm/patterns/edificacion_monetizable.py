@@ -1,23 +1,37 @@
+#construcción
+PALABRAS_CLAVE_EDIFICADO = ["termotanque", "termotanques", "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos"
+                            ,"quincho", "quinchos", "parrilla", "parrillas", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "parrilla", "parrillas", "dormitorio", "dormitorios",  "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos",  "muro", "muros", "hall", "halls", "terraza", "terrazas", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias", "playroom", "playrooms"]
+
+#con construcción
+CONSTRUCCION_SINONIMOS = ["piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
+
+#mejoras
+PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "contrapisos", "medianera", "medianeras", "platea", "plateas", "loza", "lozas",]
+
+#con mejoras
+PALABRAS_CLAVE_EDIFICADO_CON = ["mejora", "mejoras", "mejorado", "mejorada"]
+
+FIN_SINONIMOS = ["finalizada", "finalizadas", "finalizado", "finalizados", "terminada", "terminadas", "terminado", "terminados"]
 CON_SINONIMOS = ["c/", "con", "tiene", "posee", "hay"]
 UN_SINONIMOS = ["un", "una", "unos", "unas"]
-CONSTRUCCION_SINONIMOS = ["vivienda", "viviendas", "depto", "deptos", "departamento", "departamentos", "pileta", "piletas", "piscina", "piscinas", "edificado", "edificados", "deposito", "depósito", "depositos", "depósitos", "mejora", "mejoras", "construcción", "construccion", "construcciones", "zócalo", "zocalo", "zocalos", "mejora", "mejoras", "edificación", "edificacion", "edificaciones", "quincho", "quinchos", "galpon", "galpón", "galpones", "local", "locales", "casa", "casas", "casita", "casitas", "paredón", "paredon", "paredones", "portón", "porton", "portones", "comedor", "comedores", "cocina", "cocinas", "cerco", "cercos", "habitación", "habitacion", "habitaciones", "alambrado", "alambrados", "parrilla", "parrillas", "loza", "lozas", "contrapiso", "contrapisos", "medianera", "medianeras", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "dormitorio", "dormitorios", "cochera", "cocheras", "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos", "pileta", "piletas", "guardacoche", "guardacoches", "platea", "plateas", "piso", "pisos", "muro", "muros", "hall", "halls", "terraza", "terrazas", "parrilla", "parrillas", "garage", "garages", "cocina", "cocinas", "portón", "porton", "portones", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias", "playroom", "playrooms", "local", "locales", "cercado", "cercados", "pórtico", "póritcos", "portico", "porticos", "porche", "porches"]
-SUPERFICIE_SINONIMOS = ["superficie", "espacio", "sup"]
+SUPERFICIE_SINONIMOS = ["superficie", "espacio", "sup", "sup."]
 CUBIERTA_SINONIMOS = ["edificada", "edificadas", "edificado", "edificados", "cubierta", "cubierto", "cubiertas", "cubiertos", "semicubierta", "semicubierto", "semicubiertas", "semicubiertos"]
 BASE_SINONIMOS = ["base", "bases"]
 AREA = ["m2", "mts2", "mt2", "metros2", "metro2"] #fijarme sk matchea con M2 y similares
-PALABRAS_CLAVE = ["parquizado", "parquizada", "nivelado", "nivelada"]
 CONSTRUIDO_SINONIMOS = ["construido", "construida", "construidos", "construidas", "creada", "creado", "creadas", "creados"]
-
-def edificacion_monetizable():
+COSAS_COUNTRY = ["portón", "porton", "portones", "alambrado", "alambrada", "cercado", "cercados", "cerco", "cercos"]# pileta, piscina
+#"portón", "porton", "portones", 
+#EXTRA = ["paddle", "tennis", "tenis", "cancha", "canchas", "gimnasio", "gimnasios", "spa", "spas"]
+def construccion():
     return  list([
-        # #con construcción
-        # [{"LOWER": "consta"},{"LOWER": "de"},{"POS":"ADV", "OP":"?"},{"LOWER": {"IN":UN_SINONIMOS},"OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
-        # [{"LOWER": {"IN":CON_SINONIMOS}},{"POS":"ADV", "OP":"?"},{"LOWER": {"IN":UN_SINONIMOS},"OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
-        # [{"LOWER": {"IN":CON_SINONIMOS}},{"POS":"ADV", "OP":"?"},{"POS": "DET"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
-        # [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}},{"LOWER":{"IN":CONSTRUIDO_SINONIMOS}}],
+        #con construcción
+        [{"LOWER": "consta"},{"LOWER": "de"},{"POS":"ADV", "OP":"?"},{"LOWER": {"IN":UN_SINONIMOS},"OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
+        [{"LOWER": {"IN":CON_SINONIMOS}},{"POS":"ADV", "OP":"?"},{"LOWER": {"IN":UN_SINONIMOS},"OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
+        [{"LOWER": {"IN":CON_SINONIMOS}},{"POS":"ADV", "OP":"?"},{"POS": "DET"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
+        [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}},{"LOWER":{"IN":CONSTRUIDO_SINONIMOS}}],
 
-        #contrucción -> tal vez sea todo lo que necesite si lo junto con el Dependency Matcher
-        [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
+        #palabras que no requieren "con"
+        [{"LOWER": {"IN":PALABRAS_CLAVE_EDIFICADO}}],
 
         #superficie cubierta
         [{"LOWER": {"IN":SUPERFICIE_SINONIMOS}},{"LOWER": "semi"},{"LOWER":"cubierta"}],
@@ -28,9 +42,20 @@ def edificacion_monetizable():
         #relacionado a Base
         [{"LOWER": {"IN":BASE_SINONIMOS}},{"LOWER":"de","OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"LOWER": "metros"},{"LOWER": "cuadrados"}],
         [{"LOWER": {"IN":BASE_SINONIMOS}},{"LOWER":"de","OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"LOWER": {"IN":AREA}}],
-        #[{"LOWER": {"IN":CON_SINONIMOS}},{"LOWER": {"IN":BASE_SINONIMOS}},{"LOWER":"de","OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
+        [{"LOWER": {"IN":CON_SINONIMOS}},{"LOWER": {"IN":BASE_SINONIMOS}},{"LOWER":"de","OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
+    ])
 
-        #palabras que no requieren "con"
-        [{"LOWER": {"IN":PALABRAS_CLAVE}}],
-        #si la construcción es futura entonces no ponerla
+
+def mejorado():
+    return  list([
+        #mejora
+        [{"LOWER": {"IN":PALABRAS_CLAVE_MEJORADO}}],
+
+        #con mejora
+        [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}},{"LOWER":{"IN":PALABRAS_CLAVE_EDIFICADO_CON}}],
+    ])
+
+def mejoras_country():
+    return list([
+        [{"LOWER": {"IN": COSAS_COUNTRY}}]
     ])

@@ -11,7 +11,11 @@ RE_TRES = re.compile(r"\b(tres|triple|3|tercer)\b", re.IGNORECASE)
 class Oferta():
 
     def a_demoler(self, predichos: list):
-        return True if predichos["a_demoler"] else ""
+        if (predichos["a_demoler-asegurado"]) or (predichos["a_demoler-ideal"] and predichos["es_monetizable-construccion"]):
+            return True
+        else:
+            ""
+
     
     def loteo_ph(self, predichos: list):
         if not predichos["loteo_ph_DM"] and (predichos["loteo_ph_M"]) : #or predichos["loteo_ph_DM_True"]):
@@ -194,7 +198,7 @@ class Oferta():
         return True if predichos["esquina"] else ""
 
     def pileta(self, predichos: list):
-        if not predichos["pileta_barrio"] and predichos["pileta"]:
+        if not predichos["pileta_barrio"] and not predichos["no_pileta_DM"] and predichos["pileta"]:
             return True 
         return ""
 
@@ -215,7 +219,13 @@ class Oferta():
         return ""
 
     def es_monetizable(self, predichos: list):
-        if not self.a_demoler(predichos) and not self.preventa(predichos) and predichos["es_monetizable"]:
+        if (self.pileta(predichos)):
+            return True
+        if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos)):
+            return True
+        if predichos["es_monetizable-mejorado"]:
+            return True
+        if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and (predichos["es_monetizable-construccion"]):
             return True
         return ""
     
