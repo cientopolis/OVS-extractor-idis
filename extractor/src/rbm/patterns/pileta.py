@@ -32,9 +32,6 @@ def pileta_barrio() -> list:
             #[{"LOWER" : {"IN": piletaSinonimos}},{"LOWER" : {"IN": DE_SINONIMOS}},{"LOWER" : {"IN": NATACION_SINONIMOS}}],#pileta de natación
             #gran pileta
 
-            #posible country, aunque no lo sea no quiero matchear con la pileta
-            [{"LOWER" : {"IN": POSIBLE_COUNTRY}}]
-
             #pileta a refaccionar -> no mejora nada por ahora
             # [{"LOWER": {"IN": piletaSinonimos}},{"LOWER": {"IN":conectores}},{"LOWER": {"IN": demolerSinonimos}}],
             # [{"LOWER": {"IN": piletaSinonimos}},{"LOWER": {"IN": antiguaSinonimos}}]

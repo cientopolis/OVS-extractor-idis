@@ -64,5 +64,5 @@ def mejoras_country():
 
 def posible_country():
     return list([
-        # [{"LOWER" : {"IN": POSIBLE_COUNTRY}}]
+        [{"LOWER" : {"IN": POSIBLE_COUNTRY}}]
     ])

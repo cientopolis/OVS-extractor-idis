@@ -198,7 +198,7 @@ class Oferta():
         return True if predichos["esquina"] else ""
 
     def pileta(self, predichos: list):
-        if not predichos["pileta_barrio"] and not predichos["no_pileta_DM"] and predichos["pileta"]:
+        if not predichos["pileta_barrio"] and not predichos["no_pileta_DM"] and not predichos["posible_country"] and predichos["pileta"]:
             return True 
         return ""
 
