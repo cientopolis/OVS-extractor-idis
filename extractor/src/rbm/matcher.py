@@ -15,7 +15,7 @@ from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
 from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
-from src.rbm.patterns.pileta import pileta,pileta_barrio
+from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina
 from src.rbm.patterns.irregular import irregular,irregular_DM
 from src.rbm.patterns.frentes import frentes
@@ -214,6 +214,9 @@ class Matcher:
         Matcher.dependencyMatcher.add("irregular_DM",
             irregular_DM()
         )
+        Matcher.dependencyMatcher.add("no_pileta_DM",
+            no_pileta_DM()
+        )
     def __get_matches(self, text, prev_result):
         doc = NLP(text)
         matches = Matcher.matcher(doc)
@@ -252,6 +255,7 @@ class Matcher:
             "irregular_DM":[],
             "pileta": [],
             "pileta_barrio":[],
+            "no_pileta_DM":[],
             "barrio": [],
             "esquina": [],
             "frentes": [],
