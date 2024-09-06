@@ -13,7 +13,7 @@ from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
-from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country
+from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country, posible_country
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina
@@ -173,6 +173,11 @@ class Matcher:
         )
 
         Matcher.matcher.add(
+            "posible_country", posible_country()
+        )
+
+
+        Matcher.matcher.add(
             "loteo_ph_M",
             loteo_ph_M()
         )
@@ -277,6 +282,7 @@ class Matcher:
             "es_monetizable-construccion": [],
             "es_monetizable-mejorado": [],
             "es_monetizable-mejoras_country": [],
+            "posible_country": [],
             "loteo_ph_M": [],
             "loteo_ph_DM": [],
             "loteo_ph_DM_True": [],

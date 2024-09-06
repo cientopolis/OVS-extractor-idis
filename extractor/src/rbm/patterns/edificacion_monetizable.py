@@ -22,6 +22,8 @@ CONSTRUIDO_SINONIMOS = ["construido", "construida", "construidos", "construidas"
 COSAS_COUNTRY = ["portón", "porton", "portones", "alambrado", "alambrada", "cercado", "cercados", "cerco", "cercos"]# pileta, piscina
 #"portón", "porton", "portones", 
 #EXTRA = ["paddle", "tennis", "tenis", "cancha", "canchas", "gimnasio", "gimnasios", "spa", "spas"]
+POSIBLE_COUNTRY = ["cancha", "canchas", "futbol", "fútbol", "tenis", "tennis", "rugby", "spa", "spas", "gimnasio", "gimnasios", "paddle", "hockey", "polo"] #polo
+
 def construccion():
     return  list([
         #con construcción
@@ -58,4 +60,9 @@ def mejorado():
 def mejoras_country():
     return list([
         [{"LOWER": {"IN": COSAS_COUNTRY}}]
+    ])
+
+def posible_country():
+    return list([
+        # [{"LOWER" : {"IN": POSIBLE_COUNTRY}}]
     ])

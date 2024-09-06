@@ -221,7 +221,7 @@ class Oferta():
     def es_monetizable(self, predichos: list):
         if (self.pileta(predichos)):
             return True
-        if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos)):
+        if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos) and not predichos["posible_country"]):
             return True
         if predichos["es_monetizable-mejorado"]:
             return True
