@@ -223,7 +223,7 @@ class Oferta():
         if (self.pileta(predichos)): 
             return True
         #si habla de portones o alambrados, que no sea de la entrada al barrio, que sea del lote
-        if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos) and not predichos["no_mejora_country_DM"] and not predichos["posible_country"]):
+        if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos) and not predichos["posible_country"] and not predichos["no_mejora_country_DM"] ):#
             return True
         #si hay mejoras es true (asegurarme que hable del lote y no de la calle)
         if predichos["es_monetizable-mejorado"] or (predichos["mejora_posible_calle"] and not predichos["no_mejora_DM"]):
