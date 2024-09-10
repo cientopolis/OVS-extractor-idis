@@ -1,9 +1,9 @@
 #construcción
 PALABRAS_CLAVE_EDIFICADO = ["termotanque", "termotanques", "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos"
-                            ,"quincho", "quinchos", "parrilla", "parrillas", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "parrilla", "parrillas", "dormitorio", "dormitorios",  "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos",  "muro", "muros", "hall", "halls", "terraza", "terrazas", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias", "playroom", "playrooms"]
+                            ,"quincho", "quinchos", "parrilla", "parrillas", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "parrilla", "parrillas", "dormitorio", "dormitorios",  "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos",  "muro", "muros", "hall", "halls", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias", "playroom", "playrooms"]
 
 #con construcción
-CONSTRUCCION_SINONIMOS = ["piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
+CONSTRUCCION_SINONIMOS = [ "terraza", "terrazas", "piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
 
 #mejoras
 PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "contrapisos", "medianera", "medianeras", "platea", "plateas", "loza", "lozas",]
@@ -19,7 +19,8 @@ CUBIERTA_SINONIMOS = ["edificada", "edificadas", "edificado", "edificados", "cub
 BASE_SINONIMOS = ["base", "bases"]
 AREA = ["m2", "mts2", "mt2", "metros2", "metro2"] #fijarme sk matchea con M2 y similares
 CONSTRUIDO_SINONIMOS = ["construido", "construida", "construidos", "construidas", "creada", "creado", "creadas", "creados"]
-COSAS_COUNTRY = ["portón", "porton", "portones", "alambrado", "alambrada", "cercado", "cercados", "cerco", "cercos"]# pileta, piscina
+PORTON_SINONIMOS = ["portón", "porton", "portones"]
+COSAS_COUNTRY = PORTON_SINONIMOS + ["alambrado", "alambrada", "cercado", "cercados", "cerco", "cercos"]# pileta, piscina
 #"portón", "porton", "portones", 
 #EXTRA = ["paddle", "tennis", "tenis", "cancha", "canchas", "gimnasio", "gimnasios", "spa", "spas"]
 POSIBLE_COUNTRY = ["cancha", "canchas", "futbol", "fútbol", "tenis", "tennis", "rugby", "spa", "spas", "gimnasio", "gimnasios", "paddle", "hockey", "polo"] #polo
@@ -82,6 +83,22 @@ def no_mejora_DM() -> list:
                 "REL_OP": ">",
                 "RIGHT_ID": "mejora",
                 "RIGHT_ATTRS": {"LOWER": {"IN":PALABRAS_CLAVE_MEJORADO_CON}},
+            },
+        ]
+    ]
+
+def no_mejora_country_DM() -> list:
+    return[
+        [#calle mejorada
+            {
+                "RIGHT_ID": "porton",
+                "RIGHT_ATTRS": {"LOWER": {"IN": PORTON_SINONIMOS}},
+            },
+                {
+                "LEFT_ID": "porton",
+                "REL_OP": ">",
+                "RIGHT_ID": "principal",
+                "RIGHT_ATTRS": {"LOWER": "principal"},
             },
         ]
     ]
