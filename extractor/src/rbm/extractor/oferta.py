@@ -219,12 +219,16 @@ class Oferta():
         return ""
 
     def es_monetizable(self, predichos: list):
-        if (self.pileta(predichos)):
+        #si tiene pileta entonces cuenta como mejora
+        if (self.pileta(predichos)): 
             return True
+        #si habla de portones o alambrados, que no sea de la entrada al barrio, que sea del lote
         if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos) and not predichos["posible_country"]):
             return True
-        if predichos["es_monetizable-mejorado"]:
+        #si hay mejoras es true (asegurarme que hable del lote y no de la calle)
+        if predichos["es_monetizable-mejorado"] or (predichos["mejora_posible_calle"] and not predichos["no_mejora_DM"]):
             return True
+        #si hay una edificación que no está para demoler o a preventa (todavía no se construyó) entonces es true
         if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and (predichos["es_monetizable-construccion"]):
             return True
         return ""

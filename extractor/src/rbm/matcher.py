@@ -13,7 +13,7 @@ from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
-from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country, posible_country
+from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country, posible_country, no_mejora_DM, mejora_posible_calle
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina
@@ -172,6 +172,11 @@ class Matcher:
             "es_monetizable-mejoras_country", mejoras_country()
         )
 
+
+        Matcher.matcher.add(
+            "mejora_posible_calle", mejora_posible_calle()
+        )
+
         Matcher.matcher.add(
             "posible_country", posible_country()
         )
@@ -183,10 +188,12 @@ class Matcher:
         )
         
         Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
+
         Matcher.dependencyMatcher.add(
             "frentes",
             frentes()
         ) 
+
         Matcher.dependencyMatcher.add(
             "fot",
             patterns=[
@@ -221,6 +228,9 @@ class Matcher:
         )
         Matcher.dependencyMatcher.add("no_pileta_DM",
             no_pileta_DM()
+        )
+        Matcher.dependencyMatcher.add("no_mejora_DM",
+            no_mejora_DM()
         )
     def __get_matches(self, text, prev_result):
         doc = NLP(text)
@@ -282,6 +292,8 @@ class Matcher:
             "es_monetizable-construccion": [],
             "es_monetizable-mejorado": [],
             "es_monetizable-mejoras_country": [],
+            "no_mejora_DM": [],
+            "mejora_posible_calle": [],
             "posible_country": [],
             "loteo_ph_M": [],
             "loteo_ph_DM": [],

@@ -9,7 +9,7 @@ CONSTRUCCION_SINONIMOS = ["piso", "pisos", "propiedad", "propiedades", "garaje",
 PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "contrapisos", "medianera", "medianeras", "platea", "plateas", "loza", "lozas",]
 
 #con mejoras
-PALABRAS_CLAVE_EDIFICADO_CON = ["mejora", "mejoras", "mejorado", "mejorada"]
+PALABRAS_CLAVE_MEJORADO_CON = ["mejora", "mejoras", "mejorado", "mejorada"]
 
 FIN_SINONIMOS = ["finalizada", "finalizadas", "finalizado", "finalizados", "terminada", "terminadas", "terminado", "terminados"]
 CON_SINONIMOS = ["c/", "con", "tiene", "posee", "hay"]
@@ -23,6 +23,7 @@ COSAS_COUNTRY = ["portón", "porton", "portones", "alambrado", "alambrada", "cer
 #"portón", "porton", "portones", 
 #EXTRA = ["paddle", "tennis", "tenis", "cancha", "canchas", "gimnasio", "gimnasios", "spa", "spas"]
 POSIBLE_COUNTRY = ["cancha", "canchas", "futbol", "fútbol", "tenis", "tennis", "rugby", "spa", "spas", "gimnasio", "gimnasios", "paddle", "hockey", "polo"] #polo
+CALLE_SINONIMOS = ["bv.", "bv", "avs", "avs.", "av", "av,","av.", "calle", "calles", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dg.", "dgs", "dgs.","diag", "diasg.", "diags", "diags"]#tal vez dirá: "calle 5 entre calles 4 y 7"
 
 def construccion():
     return  list([
@@ -50,11 +51,8 @@ def construccion():
 
 def mejorado():
     return  list([
-        #mejora
-        [{"LOWER": {"IN":PALABRAS_CLAVE_MEJORADO}}],
-
         #con mejora
-        [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}},{"LOWER":{"IN":PALABRAS_CLAVE_EDIFICADO_CON}}],
+        [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}},{"LOWER":{"IN":PALABRAS_CLAVE_MEJORADO_CON}}],
     ])
 
 def mejoras_country():
@@ -66,3 +64,24 @@ def posible_country():
     return list([
         [{"LOWER" : {"IN": POSIBLE_COUNTRY}}]
     ])
+
+def mejora_posible_calle() -> list:
+    return list([    #mejora
+        [{"LOWER": {"IN":PALABRAS_CLAVE_MEJORADO}}],
+    ])
+
+def no_mejora_DM() -> list:
+    return[
+        [#calle mejorada
+            {
+                "RIGHT_ID": "calle",
+                "RIGHT_ATTRS": {"LOWER": {"IN": CALLE_SINONIMOS}},
+            },
+                {
+                "LEFT_ID": "calle",
+                "REL_OP": ">",
+                "RIGHT_ID": "mejora",
+                "RIGHT_ATTRS": {"LOWER": {"IN":PALABRAS_CLAVE_MEJORADO_CON}},
+            },
+        ]
+    ]
