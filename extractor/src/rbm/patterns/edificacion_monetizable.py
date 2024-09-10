@@ -11,9 +11,9 @@ PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "co
 #con mejoras
 PALABRAS_CLAVE_MEJORADO_CON = ["mejora", "mejoras", "mejorado", "mejorada"]
 
-LOTE_SINONIMOS = ["lote", "terreno", "parcela", "predio", "finca", "propiedad"]
+LOTE_SINONIMOS = ["lote", "lotes", "terreno", "terrenos", "parcela", "parcelas", "predio", "predios", "finca", "fincas", "propiedad", "propiedades"]
 FIN_SINONIMOS = ["finalizada", "finalizadas", "finalizado", "finalizados", "terminada", "terminadas", "terminado", "terminados"]
-CON_SINONIMOS = ["c/", "con", "tiene", "posee", "hay"]
+CON_SINONIMOS = ["c", "c/", "con", "tiene", "posee", "hay"]
 UN_SINONIMOS = ["un", "una", "unos", "unas"]
 SUPERFICIE_SINONIMOS = ["superficie", "espacio", "sup", "sup."]
 CUBIERTA_SINONIMOS = ["edificada", "edificadas", "edificado", "edificados", "cubierta", "cubierto", "cubiertas", "cubiertos", "semicubierta", "semicubierto", "semicubiertas", "semicubiertos"]
@@ -29,7 +29,7 @@ CALLE_SINONIMOS = ["bv.", "bv", "avs", "avs.", "av", "av,","av.", "calle", "call
 
 def construccion():
     return  list([
-        #con construcción
+        # con construcción
         [{"LOWER": "consta"},{"LOWER": "de"},{"POS":"ADV", "OP":"?"},{"LOWER": {"IN":UN_SINONIMOS},"OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
         [{"LOWER": {"IN":CON_SINONIMOS}},{"POS":"ADV", "OP":"?"},{"LOWER": {"IN":UN_SINONIMOS},"OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
         [{"LOWER": {"IN":CON_SINONIMOS}},{"POS":"ADV", "OP":"?"},{"POS": "DET"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
@@ -55,6 +55,8 @@ def mejorado():
     return  list([
         #con mejora
         [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}},{"LOWER":{"IN":PALABRAS_CLAVE_MEJORADO_CON}}],
+        [{"LOWER":{"IN":LOTE_SINONIMOS}},{"LOWER":{"IN":CON_SINONIMOS}},{"LOWER":{"IN":PALABRAS_CLAVE_MEJORADO_CON}}],
+
     ])
 
 def mejoras_country():
@@ -104,18 +106,18 @@ def no_mejora_country_DM() -> list:
         ]
     ]
 
-def lote_construccion_DM() -> list:
-    return[
-        [#calle mejorada
-            {
-                "RIGHT_ID": "lote",
-                "RIGHT_ATTRS": {"LOWER": {"IN": LOTE_SINONIMOS}},
-            },
-            {
-                "LEFT_ID": "lote",
-                "REL_OP": ">",
-                "RIGHT_ID": "construccion",
-                "RIGHT_ATTRS": {"LOWER": {"IN":CONSTRUCCION_SINONIMOS}},
-            },
-        ]
-    ]
+# def lote_construccion_DM() -> list:
+#     return[
+#         [#calle mejorada
+#             {
+#                 "RIGHT_ID": "lote",
+#                 "RIGHT_ATTRS": {"LOWER": {"IN": LOTE_SINONIMOS}},
+#             },
+#             {
+#                 "LEFT_ID": "lote",
+#                 "REL_OP": ">",
+#                 "RIGHT_ID": "construccion",
+#                 "RIGHT_ATTRS": {"LOWER": {"IN":PALABRAS_CLAVE_MEJORADO_CON}},
+#             },
+#         ]
+#     ]

@@ -231,10 +231,10 @@ class Oferta():
         #si hay una edificación que no está para demoler o a preventa (todavía no se construyó) entonces es true
         if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and (predichos["es_monetizable-construccion"]):
             return True
-        #si tiene una construcción que refiere estrictamente al lote
+        #si tiene una construcción que refiere estrictamente al lote -> empeora un poco el modelo
         # if(predichos["lote_construccion_DM"]):
         #     return True
-        return ""
+        # return ""
     
     def posesion(self, predichos: list):
         return True if predichos["posesion"] else ""
