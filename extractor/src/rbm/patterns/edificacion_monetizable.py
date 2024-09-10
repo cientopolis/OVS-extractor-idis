@@ -11,6 +11,7 @@ PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "co
 #con mejoras
 PALABRAS_CLAVE_MEJORADO_CON = ["mejora", "mejoras", "mejorado", "mejorada"]
 
+LOTE_SINONIMOS = ["lote", "terreno", "parcela", "predio", "finca", "propiedad"]
 FIN_SINONIMOS = ["finalizada", "finalizadas", "finalizado", "finalizados", "terminada", "terminadas", "terminado", "terminados"]
 CON_SINONIMOS = ["c/", "con", "tiene", "posee", "hay"]
 UN_SINONIMOS = ["un", "una", "unos", "unas"]
@@ -94,11 +95,27 @@ def no_mejora_country_DM() -> list:
                 "RIGHT_ID": "porton",
                 "RIGHT_ATTRS": {"LOWER": {"IN": PORTON_SINONIMOS}},
             },
-                {
+            {
                 "LEFT_ID": "porton",
                 "REL_OP": ">",
                 "RIGHT_ID": "principal",
                 "RIGHT_ATTRS": {"LOWER": "principal"},
+            },
+        ]
+    ]
+
+def lote_construccion_DM() -> list:
+    return[
+        [#calle mejorada
+            {
+                "RIGHT_ID": "lote",
+                "RIGHT_ATTRS": {"LOWER": {"IN": LOTE_SINONIMOS}},
+            },
+            {
+                "LEFT_ID": "lote",
+                "REL_OP": ">",
+                "RIGHT_ID": "construccion",
+                "RIGHT_ATTRS": {"LOWER": {"IN":CONSTRUCCION_SINONIMOS}},
             },
         ]
     ]
