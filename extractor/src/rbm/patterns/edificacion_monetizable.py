@@ -1,9 +1,9 @@
 #construcción
 PALABRAS_CLAVE_EDIFICADO = ["termotanque", "termotanques", "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos"
-                            ,"quincho", "quinchos", "parrilla", "parrillas", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "parrilla", "parrillas", "dormitorio", "dormitorios",  "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos",  "muro", "muros", "hall", "halls", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias", "playroom", "playrooms"]
+                            ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "dormitorio", "dormitorios",  "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos",  "muro", "muros", "hall", "halls", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias", "playroom", "playrooms"]
 
 #con construcción
-CONSTRUCCION_SINONIMOS = [ "terraza", "terrazas", "piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
+CONSTRUCCION_SINONIMOS = ["terraza", "terrazas", "piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
 
 #mejoras
 PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "contrapisos", "medianera", "medianeras", "platea", "plateas", "loza", "lozas",]
@@ -11,6 +11,7 @@ PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "co
 #con mejoras
 PALABRAS_CLAVE_MEJORADO_CON = ["mejora", "mejoras", "mejorado", "mejorada"]
 
+PARRILLA = ["parrilla", "parrillas", ]
 LOTE_SINONIMOS = ["lote", "lotes", "terreno", "terrenos", "parcela", "parcelas", "predio", "predios", "finca", "fincas", "propiedad", "propiedades"]
 FIN_SINONIMOS = ["finalizada", "finalizadas", "finalizado", "finalizados", "terminada", "terminadas", "terminado", "terminados"]
 CON_SINONIMOS = ["c", "c/", "con", "tiene", "posee", "hay"]
@@ -55,7 +56,7 @@ def mejorado():
     return  list([
         #con mejora
         [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}},{"LOWER":{"IN":PALABRAS_CLAVE_MEJORADO_CON}}],
-        [{"LOWER":{"IN":LOTE_SINONIMOS}},{"LOWER":{"IN":CON_SINONIMOS}},{"LOWER":{"IN":PALABRAS_CLAVE_MEJORADO_CON}}],
+        [{"LOWER":{"IN":LOTE_SINONIMOS}},{"LOWER":{"IN":CON_SINONIMOS}},{"LOWER":{"IN":PALABRAS_CLAVE_MEJORADO_CON+PARRILLA}}],
 
     ])
 
