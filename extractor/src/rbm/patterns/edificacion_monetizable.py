@@ -1,6 +1,6 @@
 #construcción
 PALABRAS_CLAVE_EDIFICADO = [ "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos"
-                            ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "muro", "muros", "hall", "halls", "cocina", "cocinas", "balcón", "balcon", "balcones", "galería", "galeria", "galerías", "galerias"] # "ventana", "ventanas"
+                            ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "muro", "muros", "hall", "halls", "balcón", "balcon", "balcones", "galería", "galeria", "galerías", "galerias"] # "ventana", "ventanas"
 
 ELEMENTOS = ["termotanque", "termotanques",  "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "dormitorio", "dormitorios", "living", "livings", "lavadero", "lavaderos",  ]
 
@@ -43,7 +43,7 @@ def con_construccion():
 def construccion():
     return  list([
         #palabras que no requieren "con"
-        [{"LOWER": {"IN":PALABRAS_CLAVE_EDIFICADO}}],
+        [{"LOWER": {"IN":PALABRAS_CLAVE_EDIFICADO+ELEMENTOS}}],
 
         #superficie cubierta
         [{"LOWER": {"IN":SUPERFICIE_SINONIMOS}},{"LOWER": "semi"},{"LOWER":"cubierta"}],
