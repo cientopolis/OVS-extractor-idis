@@ -111,21 +111,21 @@ def no_mejora_country_DM() -> list:
         ]
     ]
 
-# def no_con_construccion_DM() -> list:
-#     return[
-#         [#barrio con construcción
-#             {
-#                 "RIGHT_ID": "barrio",
-#                 "RIGHT_ATTRS": {"LOWER": {"IN": BARRIO_SINONIMOS}},
-#             },
-#             {
-#                 "LEFT_ID": "barrio",
-#                 "REL_OP": ">",
-#                 "RIGHT_ID": "construccion",
-#                 "RIGHT_ATTRS": {"LOWER": {"IN": CONSTRUCCION_SINONIMOS}},
-#             },
-#         ]
-#     ]
+def no_con_construccion_DM() -> list:
+    return[
+        [#barrio con construcción
+            {
+                "RIGHT_ID": "barrio",
+                "RIGHT_ATTRS": {"LOWER": {"IN": BARRIO_SINONIMOS}},
+            },
+            {
+                "LEFT_ID": "barrio",
+                "REL_OP": ">",
+                "RIGHT_ID": "construccion",
+                "RIGHT_ATTRS": {"LOWER": {"IN": CONSTRUCCION_SINONIMOS}},
+            },
+        ]
+    ]
 
 # def lote_construccion_DM() -> list:
 #     return[

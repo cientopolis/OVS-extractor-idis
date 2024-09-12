@@ -229,10 +229,10 @@ class Oferta():
         if predichos["es_monetizable-mejorado"] or (predichos["mejora_posible_calle"] and not predichos["no_mejora_DM"]):
             return True
         #si hay una edificación que no está para demoler o a preventa (todavía no se construyó) entonces es true
-        if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and ( predichos["es_monetizable-construccion"] or predichos["es_monetizable-con_construccion"] ):
+        if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and ( predichos["es_monetizable-construccion"]  ): #or predichos["es_monetizable-con_construccion"]
             return True
-        # if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and predichos["es_monetizable-con_construccion"] and (not predichos["no_con_construccion_DM"]):
-        #     return True
+        if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and predichos["es_monetizable-con_construccion"] and (not predichos["no_con_construccion_DM"]):
+            return True
         #si tiene una construcción que refiere estrictamente al lote -> empeora un poco el modelo
         # if(predichos["lote_construccion_DM"]):
         #     return True
