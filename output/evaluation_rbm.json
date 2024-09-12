@@ -397,13 +397,13 @@
     },
     {
         "name": "medidas",
-        "tp": 145,
-        "fp": 22,
+        "tp": 146,
+        "fp": 21,
         "fn": 36,
         "tn": 118,
-        "precision": 0.8682634730538922,
-        "recall": 0.8011049723756906,
-        "f1": 0.8333333333333333,
+        "precision": 0.874251497005988,
+        "recall": 0.8021978021978022,
+        "f1": 0.836676217765043,
         "error": [
             {
                 "context": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
@@ -412,7 +412,7 @@
             },
             {
                 "context": "Venta de 2 Lotes linderos de 10 x 45,75 cada uno, total de 20 x 45,75, con Pileta de 7 mts x 3,20 mts y Quincho (abierto) con contrapiso de 4mts x 7mts con parrilla y baño. en Ciudad Nueva, Nueve de Julio  Medida: Frente : 20 Medida: Fondo : 45.75  (FAE-FAE-585)",
-                "actual": "20 x 45.75;10 x 45.75",
+                "actual": "10 x 45.75;20 x 45.75",
                 "expected": "10 x 45.75"
             },
             {
@@ -642,12 +642,12 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 40;12 x 41;12 x 52;12 x 55",
+                "actual": "12 x 40;12 x 52;12 x 41;12 x 55",
                 "expected": "12 x 55;12 x 41;12 x 40;12 x 52"
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "15 x 32;12 x 30;15 x 40;24 x 30;10 x 32;24 x 45;10 x 27;15 x 28;15 x 55;14 x 30;10 x 21",
+                "actual": "24 x 30;15 x 28;15 x 55;15 x 40;10 x 32;10 x 27;14 x 30;10 x 21;24 x 45;15 x 32;12 x 30",
                 "expected": "10 x 21.89"
             },
             {
@@ -659,11 +659,6 @@
                 "context": "Ubicado en barrio San José, a metros de Av. Independencia, se encuentra esta importante propiedad para uso comercial o para desarrollo de propiedad horizontal. Actualmente funciona como fábrica y local central de reconocida Marca de indumentaria y zapatería, por lo que su estructura resulta ideal para locales comerciales de amplias superficies como concecionarias, o para grandes empresas. Con 24 mts totales de frente y 43,25 mts de fondo, esta propiedad cuenta con 1.038 m2 de terreno y 1.052 m2 cubiertos. Emplazado sobre distrito urbano R2 con frente de VC1, cuenta además con la factibilidad de desarrollar aproximadamente 3.700 m2 en hasta ocho plantas, pudiéndose realizar local comercial en planta baja y edificio de viviendas sobre éste.",
                 "actual": "",
                 "expected": "24 x 43.25"
-            },
-            {
-                "context": "Lotes Propios ( No es ph, ni parte indivisa) - Medidas 12x27 y 12x33 - Urbanizacion con 29 parcelas - Asfalto, luz, gas y agua corriente - Obras Finalizadas - Ultimos 4 lotes disponibles - Desde U$S 14.000 a U$S 19.000 segun tamaño y ubicacion - Financiacion: 30 % al boleto y el saldo hasta 48 cuotas de U$S 200 cada una. -",
-                "actual": "12 x 27;12 x 33",
-                "expected": "12 x 33;12 x 27"
             },
             {
                 "context": "VENTA DE CASA O PH EN RAMOS MEJÍA- IDEAL INVERSIÓN, OPORTUNIDAD EN LA ZONA  ANTICIPO DE 199.000 USD Y CUOTAS A FINANCIAR VALOR DE CONTADO 200.000 USD  EXCLUSIVA VENTA O PERMUTA-  TOMA METROS CONSULTAR  Excelente chalet a la venta Ideal Constructor o primera vivienda. Ubicado en la localidad de Ramos Mejía, sobre la calle Oncativo al 400 entre las calles Necochea y Pringles. A pocos metros de la Av. de Mayo,  del centro comercial y de los distintos medios de transporte que conectan a Ramos Mejía con las diferentes ciudades cercanas de la Provincia y C.A.B.A.-  Toma propiedad en parte de Pago.  Descripción del inmueble: - El lote cuenta con las siguientes Medidas: 8,66 mts. de frente x 41.60 mts. de fondo.- - Superficie Total: 370,26 m2.- - Orientación Noroeste   Ubicación de la propiedad: - A mts. de Av. de Mayo - A mts. de Avenida San Martín. - A mts. de la calle Humbolt. - A mts. de la Plaza Bomberitos. - A mts. del Centro de Ramos Mejía.  (Las medidas, superficies, y demás información son meramente enunciativas. Los datos definitivos van a surgir del título de propiedad del inmueble).",
@@ -1442,12 +1437,12 @@
     {
         "name": "es_monetizable",
         "tp": 98,
-        "fp": 10,
+        "fp": 9,
         "fn": 9,
-        "tn": 204,
-        "precision": 0.9074074074074074,
+        "tn": 205,
+        "precision": 0.9158878504672897,
         "recall": 0.9158878504672897,
-        "f1": 0.9116279069767442,
+        "f1": 0.9158878504672897,
         "error": [
             {
                 "context": "Espectacular lote con salida a 2 calles. Doble frente en ambas calles, 17.32m. Superficie total del lote 1375m. Zonificación USAM: Planta baja, 5 pisos y 2 retiros (pueden ser destino vivienda). A media cuadra de Av. Nazca, variedad de comercios y múltiples líneas de colectivo. Metraje de construcción total de planta baja al piso 7, habiendo contemplado dos ventilaciones (cada una de 24m.): 7000m. Aproximadamente.",
@@ -1463,11 +1458,6 @@
                 "context": "Excelente Lote! Oportunidad en Parque Patricios CABA\r\nCant. Pisos PB + 5 + 2 Retiros (Total 7 Pisos) y 8 Cocheras en PB\r\nSup. Vendible viejo codigo: 343 M2 X FOT R2bI (1.60) = 548 M2\r\nSup. Vendible nuevo codigo: 1704 M2 X 80 % = 1363 M2\r\nNota: Ley N° 6323, La exencion de pago del derecho para el desarrollo urbano y el habitat sustentable (Plusvalia),\r\ndebe ser verificado por el interesado.\r\nNota: La incidencia del terreno es estimativa y debe ser verificada por el Interesado.\r\nNota: Dichos numeros son una aproximacion. Los calculos definitivos se definiran en base a un anteproyecto con consulta\r\nMunicipal, siendo verificados por el interesado.\r\nAVISO LEGAL: Todas las fotos, imágenes y videos son meramente ilustrativos y no contractuales.\r\nLas descripciones, medidas, superficies y proporciones consignadas en esta ficha son aproximadas, sólo se muestran a modo orientativo. La venta queda sujeta al cumplimiento por parte del propietario de lo establecido por la Resolución General Nº 2371 de AFIP (COTI).",
                 "actual": "",
                 "expected": true
-            },
-            {
-                "context": "Equipo RE/MAX Cordillera Vende RE/MAX vende lote soleado y vegetación nativa en Villa Lago Meliquina.\r\nTerreno muy soleado, con vegetación nativa con hermosas vistas en todas las direcciones.   Ubicado en Meliquina II,  cuenta con un fácil acceso desde la ruta 63 tomando la calle 22 . Posee vistas hacía el Cerro Ventana y el Cerro Muela y vistas panorámicas a las montañas.\r\nUbicación: Manzana Y lote 9. Metros cuadrados: 990,63 m2. Acceso: frente a la Ruta 63 a 3 km del Lago (frente a cervecería artesanal de Meliquina) por calle 22. Servicios: Loteo sin servicios de red. Uso de energías renovables y agua tomada de arroyos o vertientes. (sistemas alternativos propios de uso individual). VALOR PUBLICADO DE CONTADO U$D 19.000 (sin posibilidad de negociación). IMPORTANTE FINANCIACION con ESCRITURA Hipotecaria: 50% al momento de la escritura U$D 10.200 + 6 cuotas bimestrales fijas de U$D 1800en dólares. ( valor final U$D 21.000 ). OPORTUNIDAD: posibilidad de comprar el lote lindante de 962,26 m2; del mismo propietario, y poder hacer un uso turístico para cabañas, hosterías o varias construcciones en los ambos lotes.",
-                "actual": true,
-                "expected": ""
             },
             {
                 "context": "Exclusiva pre-venta con financiación, anticipo y 30 cuotas!! Espectacular casa premium fondo al lago â€“ Marinas â€“ Puertos del lago. Casa de categorÃa, con sÃ³lida construcciÃ³n de HormigÃ³n H-21- Platea y dos Losas macizas â€“ CaracterÃsticas sustentables y detalles exclusivos en todos los ambientes. Lote: 888 m2 Cubiertos: 324 m2 Semicubiertos: 109 m2 Terrazas: 65 m2 Total: 498 m2",

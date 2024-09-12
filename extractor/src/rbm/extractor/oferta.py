@@ -11,12 +11,11 @@ RE_TRES = re.compile(r"\b(tres|triple|3|tercer)\b", re.IGNORECASE)
 class Oferta():
 
     def a_demoler(self, predichos: list):
-        if (predichos["a_demoler-asegurado"]) or (predichos["a_demoler-ideal"] and ( predichos["es_monetizable-construccion"] or predichos["es_monetizable-con_construccion"])):
+        if (predichos["a_demoler-asegurado"]) or (predichos["a_demoler-ideal"] and ( self.hay_construccion(predichos))):
             return True
         else:
             ""
 
-    
     def loteo_ph(self, predichos: list):
         if not predichos["loteo_ph_DM"] and (predichos["loteo_ph_M"]) : #or predichos["loteo_ph_DM_True"]):
             return True 
@@ -228,15 +227,20 @@ class Oferta():
         #si hay mejoras que no sean de la calle
         if predichos["es_monetizable-mejorado"] or (predichos["mejora_posible_calle"] and not predichos["no_mejora_DM"]):
             return True
-        #si hay una edificación que no está para demoler o a preventa (todavía no se construyó) entonces es true
-        if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and ( predichos["es_monetizable-construccion"]  ): #or predichos["es_monetizable-con_construccion"]
+        if self.no_cuenta_construccion(predichos) and ( predichos["es_monetizable-construccion"]  ): #or predichos["es_monetizable-con_construccion"]
             return True
-        if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and predichos["es_monetizable-con_construccion"] and (not predichos["no_con_construccion_DM"]):
+        if self.no_cuenta_construccion(predichos) and predichos["es_monetizable-con_construccion"] and (not predichos["no_con_construccion_DM"]):
             return True
         #si tiene una construcción que refiere estrictamente al lote -> empeora un poco el modelo
         # if(predichos["lote_construccion_DM"]):
         #     return True
         return ""
     
+    def no_cuenta_construccion(self, predichos):
+        return not self.a_demoler(predichos) and not self.preventa(predichos)
+                                                   
+    def hay_construccion(self, predichos):
+        return predichos["es_monetizable-con_construccion"] or predichos["es_monetizable-construccion"]
+
     def posesion(self, predichos: list):
         return True if predichos["posesion"] else ""

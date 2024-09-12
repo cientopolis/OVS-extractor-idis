@@ -1,6 +1,6 @@
 #construcción
 PALABRAS_CLAVE_EDIFICADO = ["termotanque", "termotanques", "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos"
-                            ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "dormitorio", "dormitorios",  "ventana", "ventanas", "living", "livings", "lavadero", "lavaderos",  "muro", "muros", "hall", "halls", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias"]
+                            ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "dormitorio", "dormitorios", "living", "livings", "lavadero", "lavaderos",  "muro", "muros", "hall", "halls", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias"] # "ventana", "ventanas"
 
 #con construcción
 CONSTRUCCION_SINONIMOS = ["terraza", "terrazas", "piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
@@ -129,7 +129,7 @@ def no_con_construccion_DM() -> list:
 
 # def lote_construccion_DM() -> list:
 #     return[
-#         [#calle mejorada
+#         [#lote con construccion
 #             {
 #                 "RIGHT_ID": "lote",
 #                 "RIGHT_ATTRS": {"LOWER": {"IN": LOTE_SINONIMOS}},
