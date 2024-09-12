@@ -1,6 +1,8 @@
 #construcción
-PALABRAS_CLAVE_EDIFICADO = ["termotanque", "termotanques", "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos"
-                            ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "dormitorio", "dormitorios", "living", "livings", "lavadero", "lavaderos",  "muro", "muros", "hall", "halls", "cocina", "cocinas", "lavadero", "lavaderos", "balcón", "balcon", "balcones", "comedor", "comedores", "galería", "galeria", "galerías", "galerias"] # "ventana", "ventanas"
+PALABRAS_CLAVE_EDIFICADO = [ "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos"
+                            ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "muro", "muros", "hall", "halls", "cocina", "cocinas", "balcón", "balcon", "balcones", "galería", "galeria", "galerías", "galerias"] # "ventana", "ventanas"
+
+ELEMENTOS = ["termotanque", "termotanques",  "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "dormitorio", "dormitorios", "living", "livings", "lavadero", "lavaderos",  ]
 
 #con construcción
 CONSTRUCCION_SINONIMOS = ["terraza", "terrazas", "piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
