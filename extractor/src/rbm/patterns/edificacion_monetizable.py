@@ -12,7 +12,7 @@ PALABRAS_CLAVE_MEJORADO = ["paredón", "paredon", "paredones", "contrapiso", "co
 PALABRAS_CLAVE_MEJORADO_CON = ["mejora", "mejoras", "mejorado", "mejorada"]
 
 PARRILLA = ["parrilla", "parrillas", ]
-LOTE_SINONIMOS = ["lote", "lotes", "terreno", "terrenos", "parcela", "parcelas", "predio", "predios", "finca", "fincas", "propiedad", "propiedades"]
+LOTE_SINONIMOS = ["finca", "fincas", "lote", "lotes", "terreno", "terrenos", "parcela", "parcelas", "predio", "predios", "propiedad", "propiedades"]
 FIN_SINONIMOS = ["finalizada", "finalizadas", "finalizado", "finalizados", "terminada", "terminadas", "terminado", "terminados"]
 CON_SINONIMOS = ["c", "c/", "con", "tiene", "posee", "hay"]
 UN_SINONIMOS = ["un", "una", "unos", "unas"]
@@ -27,15 +27,19 @@ COSAS_COUNTRY = PORTON_SINONIMOS + ["alambrado", "alambrada", "cercado", "cercad
 #EXTRA = ["paddle", "tennis", "tenis", "cancha", "canchas", "gimnasio", "gimnasios", "spa", "spas"]
 POSIBLE_COUNTRY = ["cancha", "canchas", "futbol", "fútbol", "tenis", "tennis", "rugby", "spa", "spas", "gimnasio", "gimnasios", "paddle", "hockey", "polo"] #polo
 CALLE_SINONIMOS = ["bv.", "bv", "avs", "avs.", "av", "av,","av.", "calle", "calles", "avenida", "avenidas", "diagonal", "diagonales", "dg", "dg.", "dgs", "dgs.","diag", "diasg.", "diags", "diags"]#tal vez dirá: "calle 5 entre calles 4 y 7"
+BARRIO_SINONIMOS = ["barrio", "barrios", "sector", "sectores", "finca", "fincas", "zona", "zonas", "loteo", "loteos"]
 
-def construccion():
-    return  list([
+def con_construccion():
+    return list([
         # con construcción
         [{"LOWER": "consta"},{"LOWER": "de"},{"POS":"ADV", "OP":"?"},{"LOWER": {"IN":UN_SINONIMOS},"OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
         [{"LOWER": {"IN":CON_SINONIMOS}},{"POS":"ADV", "OP":"?"},{"LOWER": {"IN":UN_SINONIMOS},"OP":"?"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
         [{"LOWER": {"IN":CON_SINONIMOS}},{"POS":"ADV", "OP":"?"},{"POS": "DET"},{"LIKE_NUM":True,"OP":"?"},{"POS": "ADJ", "OP":"?"},{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}}],
         [{"LOWER":{"IN":CONSTRUCCION_SINONIMOS}},{"LOWER":{"IN":CONSTRUIDO_SINONIMOS}}],
+    ])
 
+def construccion():
+    return  list([
         #palabras que no requieren "con"
         [{"LOWER": {"IN":PALABRAS_CLAVE_EDIFICADO}}],
 
@@ -93,7 +97,7 @@ def no_mejora_DM() -> list:
 
 def no_mejora_country_DM() -> list:
     return[
-        [#calle mejorada
+        [#porton principal
             {
                 "RIGHT_ID": "porton",
                 "RIGHT_ATTRS": {"LOWER": {"IN": PORTON_SINONIMOS}},
@@ -106,6 +110,22 @@ def no_mejora_country_DM() -> list:
             },
         ]
     ]
+
+# def no_con_construccion_DM() -> list:
+#     return[
+#         [#barrio con construcción
+#             {
+#                 "RIGHT_ID": "barrio",
+#                 "RIGHT_ATTRS": {"LOWER": {"IN": BARRIO_SINONIMOS}},
+#             },
+#             {
+#                 "LEFT_ID": "barrio",
+#                 "REL_OP": ">",
+#                 "RIGHT_ID": "construccion",
+#                 "RIGHT_ATTRS": {"LOWER": {"IN": CONSTRUCCION_SINONIMOS}},
+#             },
+#         ]
+#     ]
 
 # def lote_construccion_DM() -> list:
 #     return[
