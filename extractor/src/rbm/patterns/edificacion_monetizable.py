@@ -149,7 +149,7 @@ def frases_PM() -> list:
     CONSTRUCCION = ["terraza", "terrazas", "piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
 
     frases_antes = [
-        "en", "permuta por", "posible", "se admite", "con posibilidad de construir",
+        "permuta por", "posible", "se admite", "con posibilidad de construir",
         "frente a", "zona de", "ideal para", "etapa de", "el barrio cuenta con",
         "sin", "ideal para complejos de", "apto para", "poder hacer un uso turístico para",
         "ni", "no", "destinado a", "barrio de", "preparado para", "Barrio en crecimiento que cuenta con",
