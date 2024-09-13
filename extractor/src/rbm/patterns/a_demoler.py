@@ -1,4 +1,4 @@
-idealSinonimos = ["para", "ideal", "posibilidad"]
+idealSinonimos = ["para", "ideal"]#  "posibilidad"
 ideales  = ["proyecto", "proyectos", "inversión", "inversion", "edificar", "edificio", "edificios", "constructor","constructores", "construccion", "construcciones", "construcción", "inversor", "inversores", "emprendimiento", "emprendimientos", "desarrollo", "desarrollos"] #"proyecto", "proyectos", 
 demolerSinonimos = ["reciclar", "refaccionar", "demoler", "demolicion", "demolición", "refaccionarse", "reciclarse", "demolerse"]
 casaSinonimos= ["casa", "construccion", "construcción"] #PH
