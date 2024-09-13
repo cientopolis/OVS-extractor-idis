@@ -229,7 +229,7 @@ class Oferta():
             return True
         if self.no_cuenta_construccion(predichos) and ( predichos["es_monetizable-construccion"]  ): #or predichos["es_monetizable-con_construccion"]
             return True
-        if self.no_cuenta_construccion(predichos) and predichos["es_monetizable-con_construccion"] and (not predichos["no_con_construccion_DM"]):
+        if self.no_cuenta_construccion(predichos) and predichos["es_monetizable-con_construccion"]  and not predichos["no_construccion-PM"] and (not predichos["no_con_construccion_DM"]): #
             return True
         #si tiene una construcción que refiere estrictamente al lote -> empeora un poco el modelo
         # if(predichos["lote_construccion_DM"]):
@@ -237,7 +237,7 @@ class Oferta():
         return ""
     
     def no_cuenta_construccion(self, predichos):
-        return not self.a_demoler(predichos) and not self.preventa(predichos)
+        return not self.a_demoler(predichos) and not self.preventa(predichos) 
                                                    
     def hay_construccion(self, predichos):
         return predichos["es_monetizable-con_construccion"] or predichos["es_monetizable-construccion"]

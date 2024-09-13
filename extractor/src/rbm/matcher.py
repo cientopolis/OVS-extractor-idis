@@ -13,7 +13,7 @@ from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
-from src.rbm.patterns.edificacion_monetizable import con_construccion, no_mejora_country_DM, construccion, mejorado, mejoras_country, posible_country, no_mejora_DM, mejora_posible_calle, no_con_construccion_DM #, lote_construccion_DM
+from src.rbm.patterns.edificacion_monetizable import frases_PM, con_construccion, no_mejora_country_DM, construccion, mejorado, mejoras_country, posible_country, no_mejora_DM, mejora_posible_calle, no_con_construccion_DM #, lote_construccion_DM
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina
@@ -46,6 +46,13 @@ class Matcher:
         Matcher.phraseMatcher.add(
             "urb_cerrada", patterns
         )
+
+        terms = frases_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "no_construccion-PM", patterns
+        )
+
 
         Matcher.matcher.add(
             "medidas", #para cada cantidad de medidas elijo si conviene obligar a tener una unidad o no. Luego, comento los patrones que no aportan precisión
@@ -310,6 +317,7 @@ class Matcher:
             "no_mejora_country_DM": [],
             "no_con_construccion_DM": [],
             # "lote_construccion_DM": [],
+            "no_construccion-PM": [],
             "mejora_posible_calle": [],
             "posible_country": [],
             "loteo_ph_M": [],

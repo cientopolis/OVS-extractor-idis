@@ -1,8 +1,8 @@
-#construcción
-PALABRAS_CLAVE_EDIFICADO = [ "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos"
-                            ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "muro", "muros", "hall", "halls", "balcón", "balcon", "balcones", "galería", "galeria", "galerías", "galerias"] # "ventana", "ventanas"
-
 ELEMENTOS = ["termotanque", "termotanques",  "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "dormitorio", "dormitorios", "living", "livings", "lavadero", "lavaderos",  ]
+
+#construcción
+PALABRAS_CLAVE_EDIFICADO = ELEMENTOS + [ "parquizado", "parquizada", "nivelado", "nivelada", "deposito", "depósito", "depositos", "depósitos", "zócalo", "zocalo", "zocalos"
+                            ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "muro", "muros", "hall", "halls", "balcón", "balcon", "balcones", "galería", "galeria", "galerías", "galerias"] # "ventana", "ventanas"
 
 #con construcción
 CONSTRUCCION_SINONIMOS = ["terraza", "terrazas", "piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
@@ -43,7 +43,7 @@ def con_construccion():
 def construccion():
     return  list([
         #palabras que no requieren "con"
-        [{"LOWER": {"IN":PALABRAS_CLAVE_EDIFICADO+ELEMENTOS}}],
+        [{"LOWER": {"IN":PALABRAS_CLAVE_EDIFICADO}}],
 
         #superficie cubierta
         [{"LOWER": {"IN":SUPERFICIE_SINONIMOS}},{"LOWER": "semi"},{"LOWER":"cubierta"}],
@@ -144,3 +144,24 @@ def no_con_construccion_DM() -> list:
 #             },
 #         ]
 #     ]
+
+def frases_PM() -> list:
+    CONSTRUCCION = ["terraza", "terrazas", "piso", "pisos", "propiedad", "propiedades", "garaje", "garajes", "cabaña", "cabañas", "chalet", "chalets", "vivienda", "viviendas", "depto", "deptos", "construcción", "construccion", "construcciones", "edificación", "edificacion", "edificaciones", "local", "locales", "pórtico", "póritcos", "portico", "porticos", "porche", "porches", "casa", "casas", "casita", "casitas", "departamento", "departamentos", "edificado", "edificados", "cochera", "cocheras", "guardacoche", "guardacoches", "garage", "garages", ]
+
+    frases_antes = [
+        "en", "permuta por", "posible", "se admite", "con posibilidad de construir",
+        "frente a", "zona de", "ideal para", "etapa de", "el barrio cuenta con",
+        "sin", "ideal para complejos de", "apto para", "poder hacer un uso turístico para",
+        "ni", "no", "destinado a", "barrio de", "preparado para", "Barrio en crecimiento que cuenta con",
+        "futuro", "futura", "futuros", "futuras", "Ideal para el desarrollo de", "se admite la"
+    ]
+    frases_despues = ["a construir", "que se encuentran alrededor", "a futuro", "en futuro"]
+    frases = []
+
+    for palabra in CONSTRUCCION:
+        for antes in frases_antes:
+            frases.append(antes+" "+palabra)
+        for despues in frases_despues:
+            frases.append(palabra+" "+despues)
+
+    return frases
