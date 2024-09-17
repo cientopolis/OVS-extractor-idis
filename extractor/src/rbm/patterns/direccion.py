@@ -349,6 +349,13 @@ def dir_lote():
                     {"LOWER": "lote"}, 
                     {"LOWER": {"IN":NUMERO_SINONIMOS}, "OP":"*"},
                     {"POS": {"IN": NOMBRE_LOTE}},
+                ],
+                [
+                    #3er piso [algo que sea el numero de eso]
+                    {"POS": {"IN": ["NUM", "ADJ"]}},
+                    {"LOWER": "piso"},
+                    {"LOWER": {"IN":NUMERO_SINONIMOS}, "OP":"*"},
+                    {"POS": {"IN":[ "PROPN", "ADJ"]}}
                 ]
                 # #manzana numerada
                 # [{"LOWER": "lote"},{"POS": {"IN": NOMBRE_LOTE}},{"LOWER": {"IN": SOBRE_SINONIMOS}, "OP":"?"},{"LOWER": {"IN": MANZANA_SINONIMOS}},{"LOWER": {"IN":NUMERO_SINONIMOS}, "OP":"*"},{"LIKE_NUM": True}],

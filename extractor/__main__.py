@@ -8,8 +8,7 @@ import pandas as pd
 
 warnings.filterwarnings("ignore", message=r"\[W008\]", category=UserWarning)
 
-INPUT_WITH_INFERENCES: str = "input/ground_truth_100.csv"
-INPUT_WITHOUT_INFERENCES: str = "input/ground_truth_100_sin_inferencias.csv"
+GT: str = "input/ground_truth_sin_inferencias.csv"
 
 
 def save_dataframe_to_csv(data, output: str) -> pd.DataFrame:
@@ -20,8 +19,12 @@ def save_dataframe_to_csv(data, output: str) -> pd.DataFrame:
 
 
 def process_input(args: argparse.Namespace) -> pd.DataFrame:
-    input: str = INPUT_WITH_INFERENCES if args.inferences else INPUT_WITHOUT_INFERENCES
-    df: pd.DataFrame = pd.read_csv(input, sep="|")
+    df: pd.DataFrame
+    if args.file.name != GT:
+        nrows: int = int(args.nrows) if args.nrows else None
+        df = pd.read_csv(args.file.name, nrows=nrows)
+    else:
+        df = pd.read_csv(GT, sep="|")
     return df
 
 
@@ -62,7 +65,6 @@ def run_ner(input: pd.DataFrame) -> tuple[pd.DataFrame, str]:
 
 def parse_args(functions: list[str]) -> argparse.Namespace:
     parser: argparse.ArgumentParser = argparse.ArgumentParser(description=__doc__)
-
     parser.add_argument(
         "-s",
         "--strategy",
@@ -76,6 +78,20 @@ def parse_args(functions: list[str]) -> argparse.Namespace:
         action=argparse.BooleanOptionalAction,
         default=False,
         help="Run with inferences",
+    )
+    parser.add_argument(
+        "-f",
+        "--file",
+        metavar='file',
+        default=GT,
+        type=argparse.FileType('r'),
+        help="Run extractions over specific file without evaluation metrics",
+    )
+    parser.add_argument(
+        "-nr",
+        "--nrows",
+        type=int,
+        help="Select the first NROWS rows of the file",
     )
     return parser.parse_args()
 
@@ -99,14 +115,20 @@ def main():
     results = results if isinstance(results, list) else [results]
     results = [process_result(result, args) for result in results]
 
-    filenames = filenames if isinstance(filenames, list) else [filenames]
+    if args.file.name == GT:
+        filenames = filenames if isinstance(filenames, list) else [filenames]
 
-    for result, filename in zip(results, filenames):
-        evaluation = Evaluation(input, result)
-        evaluation.evaluate()
+        for result, filename in zip(results, filenames):
+            evaluation = Evaluation(input, result)
+            evaluation.evaluate()
 
-        save_dataframe_to_csv(result, f"output/{filename}.csv")
-        evaluation.save(f"output/evaluation_{filename}.json")
+            save_dataframe_to_csv(result, f"output/{filename}.csv")
+            evaluation.save(f"output/evaluation_{filename}.json")
+    elif args.strategy == "rbm":
+        save_dataframe_to_csv(results[0], f"output/rbm_ovs_ave.csv")
+    else:
+        raise NotImplementedError("La estrategia elegida no puede procesar un archivo distinto al ground truth. Usa rbm.")
+
 
 
 if __name__ == "__main__":

@@ -24,10 +24,19 @@ options:
                         Select the strategy
   -i, --inferences, --no-inferences
                         Run with inferences (default: False)
+  -f file, --file file  
+                        Run extractions over specific file without evaluation metrics
+  -nr NROWS, --nrows NROWS
+                        Select the first NROWS rows of the file
 ```
 Extracción sin inferencias usando rule-based matching
 ```python
 py extractor -s rbm
+```
+
+Extracción sin inferencias usando rule-based matching para el archivo del OVS. No evalúa resultados
+```python
+py extractor -s rbm -f "ovs.csv" --nrows "500"
 ```
 
 ## 🌱 Licencia
