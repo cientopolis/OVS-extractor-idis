@@ -218,6 +218,9 @@ class Oferta():
         return ""
 
     def es_monetizable(self, predichos: list):
+        #si no es a demoler, seguro no es monetizable
+        if self.a_demoler(predichos):
+            return ""
         #si tiene pileta entonces cuenta como mejora
         if (self.pileta(predichos)): 
             return True
@@ -237,7 +240,7 @@ class Oferta():
         return ""
     
     def no_cuenta_construccion(self, predichos):
-        return not self.a_demoler(predichos) and not self.preventa(predichos) and not predichos["no_construccion-PM"]
+        return not self.preventa(predichos) and not predichos["no_construccion-PM"]
                                                    
     def hay_construccion(self, predichos):
         return predichos["es_monetizable-con_construccion"] or predichos["es_monetizable-construccion"] 
