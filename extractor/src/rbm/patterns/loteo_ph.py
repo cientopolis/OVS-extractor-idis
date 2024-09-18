@@ -1,18 +1,25 @@
 numeros = ["uno","dos","tres","cuatro","cinco","seis","siete","ocho"]
+ph_similares = ["PH","ph","(PH)","(ph)","ph.","PH."]
 def loteo_ph_M() -> list:
     return list ( 
             [
-                
-                #[{"LOWER" : "ph"}],
-                [{"LOWER":"compuesto"},{"LOWER" : {"IN" :["por","de"]}},{"LOWER" : {"IN" :numeros}},{"LOWER":"ph"}], #compuesto por/de "numero" ph
+                #[{"LOWER" : {"IN" : ph_similares}}], 
+
+                [{"LOWER" : "por"},{"LOWER" : "ph"}],
+
+                [{"LOWER" : "Lote"},{"LOWER" : "interno"},{"LOWER" : {"IN" : ph_similares}}],  #Lote interno (PH)
+
+                [{"LOWER" : "diferentes"},{"LOWER" : "medidas"},{"LOWER": "en"},{"LOWER": {"IN" : ph_similares}}], # diferentes medidas en ph
+
+                [{"LOWER":"compuesto"},{"LOWER" : {"IN" :["por","de"]}},{"LOWER" : {"IN" :numeros}},{"LOWER": {"IN" : ph_similares}}], #compuesto por/de "numero" ph
                 
                 [{"LOWER":"subdivididos"},{"LOWER" : {"IN" :["por","en"]}},{"LOWER":"ph"}],#subdivididos por/en ph
                 
-                [{"LOWER":"Lote"},{"LOWER" : "interno("},{"LOWER" : {"IN" :["(PH)","ph","(ph)","PH"]}}],# lote interno (PH)
+                [{"LOWER":"Lote"},{"LOWER" : "interno("},{"LOWER" : {"IN" :ph_similares}}],# lote interno (PH)
 
                 [{"LOWER":"terreno"},{"LOWER" : "en"},{"LOWER":"ph"}],#terreno en ph
                 
-                [{"LOWER":"lote"},{"LOWER":"interno"},{"LOWER" : {"IN" :["ph","(PH)","(ph)"]}}],#lote interno ph/(ph)
+                [{"LOWER":"lote"},{"LOWER":"interno"},{"LOWER" : {"IN" :ph_similares}}],#lote interno ph/(ph)
 
                 [{"LOWER":"ph"},{"LOWER" : "aprobado"}], #ph aprobado
 
