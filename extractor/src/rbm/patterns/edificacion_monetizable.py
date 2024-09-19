@@ -1,7 +1,7 @@
 ELEMENTOS = ["termotanque", "termotanques",  "comedor", "comedores", "cocina", "cocinas", "habitación", "habitacion", "habitaciones", "dormitorio", "dormitorios", "living", "livings", "lavadero", "lavaderos",  ]
 
 #construcción
-PALABRAS_CLAVE_EDIFICADO = ELEMENTOS + ["parquizado", "parquizada", "nivelado", "nivelada","zócalo", "zocalo", "zocalos"
+PALABRAS_CLAVE_EDIFICADO = ELEMENTOS + ["acondicionar", "reciclar", "refaccionar",  "refaccionarse", "reciclarse", "acondicionarse", "parquizado", "parquizada", "nivelado", "nivelada","zócalo", "zocalo", "zocalos"
                             ,"quincho", "quinchos", "galpon", "galpón", "galpones", "paredón", "paredon", "paredones", "muro", "muros", "hall", "halls", "balcón", "balcon", "balcones", "galería", "galeria", "galerías", "galerias"] # "ventana", "ventanas"
 
 #con construcción
