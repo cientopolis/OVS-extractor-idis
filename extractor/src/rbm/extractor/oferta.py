@@ -18,7 +18,7 @@ class Oferta():
 
     
     def loteo_ph(self, predichos: list):
-        if not predichos["loteo_ph_DM"] and (predichos["loteo_ph_M"]) : #or predichos["loteo_ph_DM_True"]):
+        if (((not predichos["loteo_ph_DM"]) or (not predichos["frases_loteo_ph_PM"])) and (predichos["loteo_ph_M"])) : #or predichos["loteo_ph_DM_True"]):
             return True 
         return ""
     
@@ -203,7 +203,7 @@ class Oferta():
         return ""
 
     def urb_cerrada(self, predichos: list):
-        if ((not predichos["urb_cerrada_DM"]) and predichos["urb_cerrada"]):
+        if (((not predichos["urb_cerrada_DM"]) and (not predichos["frases_urb_cerrada_PM"])) and (predichos["urb_cerrada"])):
             return True
         return ""
     

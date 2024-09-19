@@ -104,3 +104,7 @@ def loteo_ph_DM() -> list:
             #    },                
             #]
     ]
+
+def frases_loteo_ph_PM() -> list:
+    frases = ["(en PH)","en PH","(PH)","se encuentra sujeta al Régimen de PH"]
+    return frases

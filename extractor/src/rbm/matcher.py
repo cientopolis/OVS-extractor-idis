@@ -8,13 +8,13 @@ from src.rbm.patterns.barrio import barrio
 from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro
 from src.rbm.patterns.fot import fot
 from src.rbm.patterns.medidas import medidas
-from src.rbm.patterns.urb_cerrada import urb_cerrada,urb_cerrada_DM
+from src.rbm.patterns.urb_cerrada import urb_cerrada,urb_cerrada_DM,frases_urb_cerrada_PM
 from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
 from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country
-from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
+from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,frases_loteo_ph_PM
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina
 from src.rbm.patterns.irregular import irregular,irregular_DM
@@ -46,6 +46,18 @@ class Matcher:
         Matcher.phraseMatcher.add(
             "urb_cerrada", patterns
         )
+
+        terms = frases_urb_cerrada_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_urb_cerrada_PM",patterns
+        )
+        terms = frases_loteo_ph_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_loteo_ph_PM",patterns
+        )
+
 
         Matcher.matcher.add(
             "medidas", #para cada cantidad de medidas elijo si conviene obligar a tener una unidad o no. Luego, comento los patrones que no aportan precisión
@@ -261,6 +273,7 @@ class Matcher:
             "frentes": [],
             "urb_cerrada": [],
             "urb_cerrada_DM":[],
+            "frases_urb_cerrada_PM":[],    
             "urb_semicerrada": [], 
             "posesion": [],
             "preventa": [],
@@ -279,6 +292,7 @@ class Matcher:
             "es_monetizable-mejoras_country": [],
             "loteo_ph_M": [],
             "loteo_ph_DM": [],
+            "frases_loteo_ph_PM":[],
             "loteo_ph_DM_True": [],
         }
         self.__get_matches(text, prev_result)
