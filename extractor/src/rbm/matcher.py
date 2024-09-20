@@ -13,7 +13,7 @@ from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
-from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country
+from src.rbm.patterns.edificacion_monetizable import frases_PM, con_construccion, no_mejora_country_DM, construccion, mejorado, mejoras_country, posible_country, no_mejora_DM, mejora_posible_calle, no_con_construccion_DM #, lote_construccion_DM
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina
@@ -46,6 +46,13 @@ class Matcher:
         Matcher.phraseMatcher.add(
             "urb_cerrada", patterns
         )
+
+        terms = frases_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "no_construccion-PM", patterns
+        )
+
 
         Matcher.matcher.add(
             "medidas", #para cada cantidad de medidas elijo si conviene obligar a tener una unidad o no. Luego, comento los patrones que no aportan precisión
@@ -172,16 +179,31 @@ class Matcher:
             "es_monetizable-mejoras_country", mejoras_country()
         )
 
+        Matcher.matcher.add(        
+            "es_monetizable-con_construccion", con_construccion()
+        )
+
+        Matcher.matcher.add(
+            "mejora_posible_calle", mejora_posible_calle()
+        )
+
+        Matcher.matcher.add(
+            "posible_country", posible_country()
+        )
+
+
         Matcher.matcher.add(
             "loteo_ph_M",
             loteo_ph_M()
         )
         
         Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
+
         Matcher.dependencyMatcher.add(
             "frentes",
             frentes()
         ) 
+
         Matcher.dependencyMatcher.add(
             "fot",
             patterns=[
@@ -217,6 +239,19 @@ class Matcher:
         Matcher.dependencyMatcher.add("no_pileta_DM",
             no_pileta_DM()
         )
+        Matcher.dependencyMatcher.add("no_mejora_DM",
+            no_mejora_DM()
+        )
+        Matcher.dependencyMatcher.add("no_mejora_country_DM",
+            no_mejora_country_DM()
+        )
+        Matcher.dependencyMatcher.add("no_con_construccion_DM",
+            no_con_construccion_DM()
+        )
+        # Matcher.dependencyMatcher.add("lote_construccion_DM",
+        #     no_mejora_country_DM()
+        # )
+
     def __get_matches(self, text, prev_result):
         doc = NLP(text)
         matches = Matcher.matcher(doc)
@@ -275,8 +310,16 @@ class Matcher:
             "pre-venta-cuotas": [],
             "pre-venta-descartar": [],
             "es_monetizable-construccion": [],
+            "es_monetizable-con_construccion": [],
             "es_monetizable-mejorado": [],
             "es_monetizable-mejoras_country": [],
+            "no_mejora_DM": [],
+            "no_mejora_country_DM": [],
+            "no_con_construccion_DM": [],
+            # "lote_construccion_DM": [],
+            "no_construccion-PM": [],
+            "mejora_posible_calle": [],
+            "posible_country": [],
             "loteo_ph_M": [],
             "loteo_ph_DM": [],
             "loteo_ph_DM_True": [],

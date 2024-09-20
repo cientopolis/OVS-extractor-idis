@@ -11,12 +11,11 @@ RE_TRES = re.compile(r"\b(tres|triple|3|tercer)\b", re.IGNORECASE)
 class Oferta():
 
     def a_demoler(self, predichos: list):
-        if (predichos["a_demoler-asegurado"]) or (predichos["a_demoler-ideal"] and predichos["es_monetizable-construccion"]):
+        if (predichos["a_demoler-asegurado"]) or (predichos["a_demoler-ideal"] and ( self.hay_construccion(predichos))):
             return True
         else:
             ""
 
-    
     def loteo_ph(self, predichos: list):
         if not predichos["loteo_ph_DM"] and (predichos["loteo_ph_M"]) : #or predichos["loteo_ph_DM_True"]):
             return True 
@@ -198,7 +197,7 @@ class Oferta():
         return True if predichos["esquina"] else ""
 
     def pileta(self, predichos: list):
-        if not predichos["pileta_barrio"] and not predichos["no_pileta_DM"] and predichos["pileta"]:
+        if not predichos["pileta_barrio"] and not predichos["no_pileta_DM"] and not predichos["posible_country"] and predichos["pileta"]:
             return True 
         return ""
 
@@ -219,15 +218,32 @@ class Oferta():
         return ""
 
     def es_monetizable(self, predichos: list):
-        if (self.pileta(predichos)):
+        #si no es a demoler, seguro no es monetizable
+        if self.a_demoler(predichos):
+            return ""
+        #si tiene pileta entonces cuenta como mejora
+        if (self.pileta(predichos)): 
             return True
-        if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos)):
+        #si habla de portones o alambrados, que no sea de la entrada al barrio, que sea del lote
+        if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos) and not predichos["posible_country"] and not predichos["no_mejora_country_DM"] ):#
             return True
-        if predichos["es_monetizable-mejorado"]:
+        #si hay mejoras que no sean de la calle
+        if predichos["es_monetizable-mejorado"] or (predichos["mejora_posible_calle"] and not predichos["no_mejora_DM"]):
             return True
-        if (not self.a_demoler(predichos)) and (not self.preventa(predichos)) and (predichos["es_monetizable-construccion"]):
+        if self.no_cuenta_construccion(predichos) and ( predichos["es_monetizable-construccion"]  ): #or predichos["es_monetizable-con_construccion"]
             return True
+        if self.no_cuenta_construccion(predichos) and predichos["es_monetizable-con_construccion"] and (not predichos["no_con_construccion_DM"]): #
+            return True
+        #si tiene una construcción que refiere estrictamente al lote -> empeora un poco el modelo
+        # if(predichos["lote_construccion_DM"]):
+        #     return True
         return ""
     
+    def no_cuenta_construccion(self, predichos):
+        return not self.preventa(predichos) and not predichos["no_construccion-PM"]
+                                                   
+    def hay_construccion(self, predichos):
+        return predichos["es_monetizable-con_construccion"] or predichos["es_monetizable-construccion"] 
+
     def posesion(self, predichos: list):
         return True if predichos["posesion"] else ""

@@ -397,13 +397,13 @@
     },
     {
         "name": "medidas",
-        "tp": 145,
-        "fp": 22,
+        "tp": 146,
+        "fp": 21,
         "fn": 36,
         "tn": 118,
-        "precision": 0.8682634730538922,
-        "recall": 0.8011049723756906,
-        "f1": 0.8333333333333333,
+        "precision": 0.874251497005988,
+        "recall": 0.8021978021978022,
+        "f1": 0.836676217765043,
         "error": [
             {
                 "context": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
@@ -586,11 +586,6 @@
                 "expected": "20 x 30"
             },
             {
-                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
-                "actual": "20 x 48;15 x 30",
-                "expected": "15 x 30;20 x 48"
-            },
-            {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
                 "actual": "32.25 x 40.00",
                 "expected": "32.25 x 40.00 x 26.32"
@@ -642,17 +637,17 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 40;12 x 41;12 x 55;12 x 52",
+                "actual": "12 x 41;12 x 55;12 x 40;12 x 52",
                 "expected": "12 x 55;12 x 41;12 x 40;12 x 52"
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "24 x 45;24 x 30;15 x 32;10 x 21;12 x 30;10 x 27;15 x 55;15 x 28;14 x 30;10 x 32;15 x 40",
+                "actual": "15 x 40;14 x 30;10 x 21;15 x 28;15 x 32;10 x 32;15 x 55;24 x 45;10 x 27;24 x 30;12 x 30",
                 "expected": "10 x 21.89"
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73.63;32.45 x 73.63;32.45 x 73",
+                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
                 "expected": "32.45 x 73.63;32.45 x 73;32.45 x 73.63"
             },
             {
@@ -692,7 +687,7 @@
             },
             {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
-                "actual": "12 x 25;12 x 30;15 x 35",
+                "actual": "15 x 35;12 x 25;12 x 30",
                 "expected": "12 x 25;15 x 35;12 x 30"
             }
         ]
@@ -1292,13 +1287,13 @@
     },
     {
         "name": "a_demoler",
-        "tp": 65,
-        "fp": 12,
-        "fn": 3,
-        "tn": 241,
-        "precision": 0.8441558441558441,
-        "recall": 0.9558823529411765,
-        "f1": 0.8965517241379309,
+        "tp": 67,
+        "fp": 2,
+        "fn": 2,
+        "tn": 250,
+        "precision": 0.9710144927536232,
+        "recall": 0.9710144927536232,
+        "f1": 0.9710144927536232,
         "error": [
             {
                 "context": "TERRENO EN VENTA con amplio chalet a refaccionar, en inmejorable zona de Martínez entre Av. Libertador y el río.Hall de recepción, importante living con chimenea y comedor ppal con pisos de marmol, escritorio en PA o 5to dormitorio. 4 dormitorios (1 en suite con buen vestidor), 2 baños, 2 toilettes, cocina y comedor diario, dependencia de servicio y lavadero en PB. Gran Playroom en PA, terraza, garaje para 3 autos. Jardín de 24m x 20m con quincho, parrilla, vestuarios, casa de caseros y pileta.Zona muy tranquila.Estado original. Estructura de hormigón independiente que permite flexibilidad de distribución interna. Calefacción por conducto de aire.Vigilancia.   ",
@@ -1321,42 +1316,7 @@
                 "expected": ""
             },
             {
-                "context": "Lote con mejoras (casa a refaccionar) 8,77 x 26,23 x 8,77 x 26,07, sup. total 226 mts2. Todos los servicios. FOS 0.6. FOT 1.6. Zonificación RTMA. Escritura a cargo del comprador.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote con construcción de dos plantas (una casa PB y otra PA) No está afectado a PH, se vende como lote por el estado de los inmuebles.- Toman departamentos ya hechos en parte de pago ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Lote con mejora de 120 m2 a una cuadra de Ruta 8 (entrada de El Chelito) En venta Lote con mejora de 5 ambientes a reciclar sobre Héctor Arregui (ex Florida) entre Provincia de Buenos Aires y Bahía Thetis.  Excelente zona de casas quintas a tan solo 100 mts. de Ruta 8 en el cruce  «El Chelito»  Propiedad sobre amplio lote de 15.77 x 40 mts. Superficie total del terreno 630 m2  Casa de 120 m2 distribuida en dos plantas a reciclar y acondicionar. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Terreno de 240mts2 en venta ubicado en calle  50 entre 246 y 247 (Lisandro Olmos Etcheverry, La Plata, Buenos Aires). Con disposición frente y orientación sudeste. _ Regular entre medianeras, cuenta con medidas de 10mts de frente por 24mts de fondo. _ Acceso por calle de tierra mejorada con servicio de electricidad en la zona._ El lote cuenta con construcciones independientes a refaccionar, al frente cuenta con una unidad funcional de 2 ambientes, un dormitorio y un baño. Al contrafrente posee un monoambiente. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Calle 515 e/ 141 y 142. Lotes con construccion antigua a refaccionar. Posee casa con dos habitaciones, cocina separada, living comedor y quincho con parrilla. Son cuatro lotes totales con posibilidad de venderse por separado o en bloque.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Excelente lote en esquina de 10 X 20. Actualmente con construcción a reciclar de 70 mt2. APTO CRÉDITO. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "Lote en esquina de 133,49 mts en PH  La propiedad anteriormente era un lote, el cual fue subdividido bajo el régimen de PH, SIN ESPACIOS COMUNES.  No abona expensas.  Zonificación Id (Industrial Dominante) FOT: 1.2 (160 metros) FOS: 0.6 ( 80 metros)  La propiedad posee electricidad y agua corriente  Cuenta con construcción a refaccionar de living, dormitorio baño y cocina.  Y otra construcción para demoler  Ubicación: a una cuadra de Av. Pres. Juan Domingo Perón, a 4 cuadras de Av. Ricardo Balbín, rápida salida a General Paz. Gran cantidad de comercios y gastronomía en la zona. Bancos, colegios, Universidades cercanas y hospitales.  ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Hotel a reciclar ubicado en España 654, entre las calles Ayacucho e Ituzaingó, en el barrio de \"La Perla\". La propiedad está distribuida en dos plantas y posee 24 habitaciones con baño privado; hall de recepción; amplia cocina; gran comedor y patio descubierto.Ideal para complejo estudiantil  o construcción de PH. Se toman propiedades en parte de pago.  Seguinos en nuestras redes sociales y enterate de todos los nuevos ingresos, nos podés encontrar como @msestudioinmobiliario  ",
                 "actual": true,
                 "expected": ""
             },
@@ -1364,16 +1324,6 @@
                 "context": "VENTA DE CASA O PH EN RAMOS MEJÍA- IDEAL INVERSIÓN, OPORTUNIDAD EN LA ZONA  ANTICIPO DE 199.000 USD Y CUOTAS A FINANCIAR VALOR DE CONTADO 200.000 USD  EXCLUSIVA VENTA O PERMUTA-  TOMA METROS CONSULTAR  Excelente chalet a la venta Ideal Constructor o primera vivienda. Ubicado en la localidad de Ramos Mejía, sobre la calle Oncativo al 400 entre las calles Necochea y Pringles. A pocos metros de la Av. de Mayo,  del centro comercial y de los distintos medios de transporte que conectan a Ramos Mejía con las diferentes ciudades cercanas de la Provincia y C.A.B.A.-  Toma propiedad en parte de Pago.  Descripción del inmueble: - El lote cuenta con las siguientes Medidas: 8,66 mts. de frente x 41.60 mts. de fondo.- - Superficie Total: 370,26 m2.- - Orientación Noroeste   Ubicación de la propiedad: - A mts. de Av. de Mayo - A mts. de Avenida San Martín. - A mts. de la calle Humbolt. - A mts. de la Plaza Bomberitos. - A mts. del Centro de Ramos Mejía.  (Las medidas, superficies, y demás información son meramente enunciativas. Los datos definitivos van a surgir del título de propiedad del inmueble).",
                 "actual": "",
                 "expected": true
-            },
-            {
-                "context": "Se vende! RETASADO IDEAL EMPRENDIMIENTO Amplia propiedad ubicada en la calle San Martin 622, Bernal centro. Medidas: 625 m2 cubiertos Lote de 11,60 x 59 Listo para tomar posesión y escriturar Consulte para más información o para visitar la propiedad",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote con construcción en regular estado, apta para oficinas o vivienda a refaccionar.",
-                "actual": true,
-                "expected": ""
             }
         ]
     },
@@ -1481,71 +1431,16 @@
     },
     {
         "name": "es_monetizable",
-        "tp": 94,
-        "fp": 19,
-        "fn": 13,
-        "tn": 195,
-        "precision": 0.831858407079646,
-        "recall": 0.8785046728971962,
-        "f1": 0.8545454545454546,
+        "tp": 102,
+        "fp": 2,
+        "fn": 4,
+        "tn": 213,
+        "precision": 0.9807692307692307,
+        "recall": 0.9622641509433962,
+        "f1": 0.9714285714285713,
         "error": [
             {
-                "context": "Inmueble en venta ideal emprendimiento. FOT 2.5 FOS 0.6 Zona residencial multifamiliar. Terreno de 346 mts frente 8.66 x fondo 39 mts aprox. Todos los servicios. Chalet a demoler con pileta y quincho.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Terreno en venta dentro de un loteo semi-cerrado ubicado en calle 22 y 619, La Plata. Loteo \"Terrazas del Sur\". 1250m2. 25 metros de frente por 50 metros de fondo. Lote interno. Instrumento de venta. Fideicomiso. Desarrollo en pleno cecimiento, zona muy tranquila. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Corredor Responsable: Francisco Ezequiel Errico CMCPDJLP 7292 - Contacto: Damian Dominguez - MLS ID # 5 entre 489 y 490. BARRIO SEMICERRADO \"DON ATILIO\". Ubicado a 5 minutos del centro de City bell, y 20 minutos de La Plata. Excelente entorno en pleno crecimiento. Lote en PH de 11, 5 por 41, 5 mts. El Barrio \"Don Atilio\", está compuesto por 10 lotes con ingreso por portón principal y calle con acceso en común. El loteo se encuentra alambrado en todo su perímetro. Posee servicios de luz, agua y gas. Cámaras de seguridad. Posibilidad de financiación. Consultar por otras medidas disponibles. CONSULTAR POR CONSTRUCCIÓN LLAVE EN MANO",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "venta departamento en ph.-en complejo calle santa fe 735,bella vista.-pdo de san miguel esta unidad se encuentra en contrafrente Unidad desarrollada en una planta techo loza,preparado para construccion en futuro en. compuesta por cocina comedor con mobiliario.- dormitorio sin placard baÃ±o con tres sanitarios cochera descubierta total superficie 52,87m SERVICIOS_GAS ENVASADO.-LUZ.-AYSA 300.-MUNICIPAL 450-SE DIVIDE PROPORCIONAL DE GASTO DE LUZ DE BOMBA DE AGUA.- valor de venta u$s 70.000- apto credito bancario.- puede financiar: 70% al boleto con posesión y saldo 30% en cuotas a convenir.-",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Casa ideal inversores en construcción!!! Inmejorable casa en la calle Sgto. Cabral al 560, Lagos de Canning con $ de expensas (aprox). En su totalidad mide 670 m2, de los cuales 290 m2 son cubiertos y 380 m2 descubiertos. Características: altura 6 metros sin columnas. Portón: 4.80 mts. alto y 4.50 mts. ancho. Lote: 10 x 30. Cubiertos: 190 m2. Fuerza motriz. FOS 0.60. FOT 1.20.",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "Casa sobre calle 40 e/ 22 y 23 de La Plata. Lote irregular: Frente: 9 mts. Lateral Der.: 36.85 mts. Lateral Izq.: 27.85 mts. Contra-Frente: 12.72",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Lote c/ mejoras. Superficie irregular. Medidas: 9.69 mts de frente, 8.66 mts de fondo, 22.59 y 18.17 laterales. Orientación: Este Oeste. Excelente zona comercial. Sobre Avenida Alte. Brown entre calles Indalecio Gomez y Conscripto Bernardi. OPORTUNIDAD !!  ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Lote CHACRAS DE LA RESERVA CARDALES A LA LAGUNA. LOTE EN VENTA DE 1.100 M2 EN CHACRAS DE LA RESERVA. Lote con hermosa arboleda. Vistas abiertas a la laguna y al campo. BARRIO ubicado a la altura del km 61 de Panamericana Ramal Escobar por Ruta 4. dos km para el lado de Los Cardales Una zona de grandes y extensas áreas verdes a muy pocos minutos del casco urbano de Los Cardales. el barrio cuenta con un espacio de 60.000 m2 para el desarrollo de un sector social y area verde de esparcimiento, Club House Cancha de fútbol y Tenis Pileta de Natación Sendas con vista a los espejos de agua. Espectacular paisaje con  quebradas. Seguridad privada las 24hs. SUM con parrillas juegos para niños. Sendero Ecológico",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "AMPLIO LOTE EN VENTA EN MIRALAGOS CLUB DE CAMPO GOLF & SPA. el lote dispone de 1285 m2 ubicado en una calle poco transitable y cuenta con un fondo a la laguna del barrio. está ubicado cerca del segundo ingreso del barrio, con fácil acceso a la entrada al Club y a la entrada a la ruta 2. el barrio cerrado Miralagos Club de Campo Golf y Spa se encuentra solo a 30 minutos de la capital con vía directa cuenta con Club house, con pileta climatizada, piscina exterior, playroom, paddle, tenis, cancha de golf con 9 hoyos; spa y gimnasio orientacion. Frente al Suroeste. las medidas son aproximadas. Las definitivas surgirán del título de la propiedad. las medidas y superficie son aproximadas y no resultan vinculantes",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "lote en venta con fondo al agua. Barrio cerrado Miralagos el lote dispone de 1285 m2 ubicado en una calle poco transitable y cuenta con un fondo a la laguna del barrio está ubicado a cerca del segundo ingreso del barrio con fácil acceso a la entrada al club y a la entrada a la ruta 2 el barrio cerrado Miralagos club de campo golf y spa se encuentra solo a 30 minutos de la capital con vía directa cuenta con club house con pileta climatizada piscina exterior playroom paddle tenis cancha de golf con 9 hoyos spa y gimnasio orientacion Frente al Suroeste las medidas son aproximadas las definitivas surgirán del título de la propiedad",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote con mejoras (casa a refaccionar) 8,77 x 26,23 x 8,77 x 26,07, sup. total 226 mts2. Todos los servicios. FOS 0.6. FOT 1.6. Zonificación RTMA. Escritura a cargo del comprador.",
                 "actual": "",
                 "expected": true
             },
@@ -1555,57 +1450,7 @@
                 "expected": true
             },
             {
-                "context": "Hermoso lote en Chacras II-San Vicente. Lote en venta en el Barrio Fincas de San Vicente , Minichacra de 2400 m2.\r\nSector consolidado con  más 100 casas construidas y lotes de 2000 a 3600 mts. Compartiendo con Sporting Club y Fincas Laguna un sector común de espacio verde e infraestructura deportiva. Este increíble terreno ofrece una oportunidad única para aquellos que buscan un hogar en un entorno tranquilo y natural. Amplísimo  espacio para construir la casa de tus sueños. Ubicado en un barrio consolidado y de alta calidad en San Vicente, este lote promete ser el escenario perfecto para una vida apacible y en contacto con la naturaleza. \r\nLote de 2400 mts cuadrados en Fincas de San Vicente, Chacras urbanas II FINCAS de San Vicente tiene un hermoso Club House, canchas de Voley, Tennis y Fútbol, SUM, área de recreación para niños. A pocos minutos del centro de San Vicente",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Equipo RE/MAX Cordillera Vende RE/MAX vende lote soleado y vegetación nativa en Villa Lago Meliquina.\r\nTerreno muy soleado, con vegetación nativa con hermosas vistas en todas las direcciones.   Ubicado en Meliquina II,  cuenta con un fácil acceso desde la ruta 63 tomando la calle 22 . Posee vistas hacía el Cerro Ventana y el Cerro Muela y vistas panorámicas a las montañas.\r\nUbicación: Manzana Y lote 9. Metros cuadrados: 990,63 m2. Acceso: frente a la Ruta 63 a 3 km del Lago (frente a cervecería artesanal de Meliquina) por calle 22. Servicios: Loteo sin servicios de red. Uso de energías renovables y agua tomada de arroyos o vertientes. (sistemas alternativos propios de uso individual). VALOR PUBLICADO DE CONTADO U$D 19.000 (sin posibilidad de negociación). IMPORTANTE FINANCIACION con ESCRITURA Hipotecaria: 50% al momento de la escritura U$D 10.200 + 6 cuotas bimestrales fijas de U$D 1800en dólares. ( valor final U$D 21.000 ). OPORTUNIDAD: posibilidad de comprar el lote lindante de 962,26 m2; del mismo propietario, y poder hacer un uso turístico para cabañas, hosterías o varias construcciones en los ambos lotes.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "DUEÑO DIRECTO. atencion: No respondo a Inmobiliarias. aviso: otros truchos copian y roban datos para publicar el mismo lote. tener cuidado!!! TOBAS entre COLIQUEO y ANCATRUZ. 400mts del río. zona no inundable. apto financiacion privada con garantia prop o prendaria 50% y saldo 12 cuotas en dolares sin interes- a 1500mts de ruta 11 tendido electrico en la entrada al lote no hay red de agua potable ni cloacal internet por antena parabolica .asp?id=7188&t=Punta-del-Indio-paraiso-oculto como llegar: desde capital tomar autopista buenos aires- la plata y en la primera bifurcación a la derecha pasa primer peaje. Tomar salida a la derecha a Mar del Plata ruta 2 Hudson para luego ver cartel ruta 36 EL PATO y salir en la bifurcacion a la derecha para tomar la 36 ruta hacia dolores chascomús salida empalme ruta 36 partido de la costa y en cartel a la izquierda hacer como una media U pasando por abajo del puente y todo derecho por la 36 es doble mano sin luz unos 15 minutos aprox. Pasar la primer rotonda y pasar la segunda rotonda y tercer rotonda a Pipinas qué son unos 45 minutos Aproximadamente en la cuarta rotonda seguir derecho hasta la cruz de Jesús ahí a la izquierda hay un cartel a Verónica la ruta se llama circunvalacion2. Hacer unos 7 km de ripio y después de un cartel de bienvenida a Punta Indio doblar a la derecha y seguir como 3 km más y luego doblar a la izquierda por ruta 11 en el cartel Parque Costero Sur, es como volviendo para atras. Luego doblar en calle ANCATRUZ a la derecha y seguir hasta Tobas y a 50mts está la entrada a lote 19. No esta demarcado ni amojonado ni cercado. para ir en micro: hay que llegar hasta veronica desde la plata con micro que sale de terminal. Y una vez en Veronica tomar el micro Parque Costero del Sur a Punta Indio. horarios-micro-comunal",
-                "actual": true,
-                "expected": ""
-            },
-            {
                 "context": "Consulte por anticipo y cuotas! Parte indivisa de 5x20. Destinado a construcción de duplex. Toda la documentacion al día. Listo para escriturar. Subdivisión por PH. El de al lado esta vendido. Plano del proyecto a construir: Planta baja: Cocina comedor y toilet. Planta alta: dos dormitorios y baño completo. La mejor manera de invertir. No te pierdas esta oportunidad!",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "RUTA N° 3, KM. 118, A 160 METROS DE LA RUTA (SAN MIGUEL DEL MONTE).  LOTE IRREGULAR EN ESQUINA. SUP. TOTAL DEL TERRENO 8.000 m2 APROX. RANCHO (A DEMOLER). SERVICIOS: LUZ â€“ AGUA POR BOMBEADOR. ALAMBRADO PERIMETRAL DE CAMPO. ARBOLEDA AÑOSA. MUY BUEN CAMINO DESDE LA RUTA PARA EL INGRESO CON DECLARATORIA DE HEREDEROS, PARA ESCRITURAR POR TRACTO ABREVIADO. PASANDO LA LAGUNA DE LAS PERDICES. ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote con construcción de dos plantas (una casa PB y otra PA) No está afectado a PH, se vende como lote por el estado de los inmuebles.- Toman departamentos ya hechos en parte de pago ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Lote con mejora de 120 m2 a una cuadra de Ruta 8 (entrada de El Chelito) En venta Lote con mejora de 5 ambientes a reciclar sobre Héctor Arregui (ex Florida) entre Provincia de Buenos Aires y Bahía Thetis.  Excelente zona de casas quintas a tan solo 100 mts. de Ruta 8 en el cruce  «El Chelito»  Propiedad sobre amplio lote de 15.77 x 40 mts. Superficie total del terreno 630 m2  Casa de 120 m2 distribuida en dos plantas a reciclar y acondicionar. ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Calle 515 e/ 141 y 142. Lotes con construccion antigua a refaccionar. Posee casa con dos habitaciones, cocina separada, living comedor y quincho con parrilla. Son cuatro lotes totales con posibilidad de venderse por separado o en bloque.",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Excelente lote en esquina de 10 X 20. Actualmente con construcción a reciclar de 70 mt2. APTO CRÉDITO. ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "LOTE EN ESCOBAR, ZONA EN CRECIMIENTO! -Excelente esquina en una de las principales arterias de Escobar muy conocida y transitada por ser acceso a la Fiesta Nacional de la Flor. Zona recientemente  loteada El lote se encuentra sobre la calle principal en esquina de calle asfaltada Barrio en crecimiento que cuenta con supermercado, comercios, medios de transporte, colegios. Linda con la construcción de futuros locales. - El barrio cuenta con luz, gas, agua corriente y cloacas. SE ESCUCHAN OFERTAS! Guallini & Peifer propiedades Valeria Guallini matricula CMCPSI 5796 Delia Peifer matricula CMCPSI 6590",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Cantisano propiedades vende lote de 16 x 40!!! excelente zona nueva!! con la construcción de nuevas casas!!",
                 "actual": true,
                 "expected": ""
             },
@@ -1623,43 +1468,18 @@
                 "context": "Lote en esquina de 133,49 mts en PH  La propiedad anteriormente era un lote, el cual fue subdividido bajo el régimen de PH, SIN ESPACIOS COMUNES.  No abona expensas.  Zonificación Id (Industrial Dominante) FOT: 1.2 (160 metros) FOS: 0.6 ( 80 metros)  La propiedad posee electricidad y agua corriente  Cuenta con construcción a refaccionar de living, dormitorio baño y cocina.  Y otra construcción para demoler  Ubicación: a una cuadra de Av. Pres. Juan Domingo Perón, a 4 cuadras de Av. Ricardo Balbín, rápida salida a General Paz. Gran cantidad de comercios y gastronomía en la zona. Bancos, colegios, Universidades cercanas y hospitales.  ",
                 "actual": "",
                 "expected": true
-            },
-            {
-                "context": "Hotel a reciclar ubicado en España 654, entre las calles Ayacucho e Ituzaingó, en el barrio de \"La Perla\". La propiedad está distribuida en dos plantas y posee 24 habitaciones con baño privado; hall de recepción; amplia cocina; gran comedor y patio descubierto.Ideal para complejo estudiantil  o construcción de PH. Se toman propiedades en parte de pago.  Seguinos en nuestras redes sociales y enterate de todos los nuevos ingresos, nos podés encontrar como @msestudioinmobiliario  ",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "El Equipo Remax Sierras Vende Lote (parcela 8a) en la zona norte de la ciudad, ubicado sobre calle Primera Junta casi Magallanes. Se encuentra a 1 cuadra de la Ruta Nacional 226 y a 10 minutos del centro de la ciudad. Cuenta con una superficie de 347,4 m2, con medidas de 12 metros de frente y 28,95 metros de fondo. APTO SUBDIVISIÓN EN PH. También disponemos de otros lotes de mayores medidas.  Servicios Disponibles: electricidad, agua y cloacas. El lote presenta un retiro obligatorio de 6 metros sobre calle Primera Junta.  El barrio se encuentra en desarrollo, con potencial residencial y comercial. Según el Plan de Desarrollo Territorial de Tandil cuenta con los siguientes indicadores:  *Zona: Barrio Usos Mixtos *FOS: 0,6 *FOT: 0,8 *Densidad: 200 hab/ha *Altura Construcción: 7,5 metros USOS: Vivienda Unifamiliar, Vivienda Multifamiliar, comercios minoristas y mayoristas, servicios generales y oficinas, taller doméstico, taller automotor, depósitos.  ",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Vendo,terreno de 10x 30mts, con bases de 7 x 11mts.servicio de luz y agua.escritura en condominio. barrio cerrado siempre verde.direccion 602 y 22.zona de casa quinta en pleno crecimiento.ppsible financiación y permuta.",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Se vende! RETASADO IDEAL EMPRENDIMIENTO Amplia propiedad ubicada en la calle San Martin 622, Bernal centro. Medidas: 625 m2 cubiertos Lote de 11,60 x 59 Listo para tomar posesión y escriturar Consulte para más información o para visitar la propiedad",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Lote con construcción en regular estado, apta para oficinas o vivienda a refaccionar.",
-                "actual": "",
-                "expected": true
             }
         ]
     },
     {
         "name": "loteo_ph",
-        "tp": 19,
+        "tp": 16,
         "fp": 1,
-        "fn": 9,
+        "fn": 12,
         "tn": 292,
-        "precision": 0.95,
-        "recall": 0.6785714285714286,
-        "f1": 0.7916666666666667,
+        "precision": 0.9411764705882353,
+        "recall": 0.5714285714285714,
+        "f1": 0.7111111111111111,
         "error": [
             {
                 "context": "Avenida 44 entre 29 y 30, frente al Colegio y Parroquia San Cayetano.  APTO DESTINO VIVIENDA MULTIFAMILIAR. APTO DESTINO COMERCIAL.  Lote de 1.127m2. Con un frente aproximado de 24 metros y un fondo de 48 metros. Zonificación: UC1 Posee una construcción de 150m2 aproximados que, a los fines de vivienda única y residencial, necesita refaccionarse. Y una pileta de 12x6 m2. Además, al frente del lote pequeña construcción en dos plantas, tipo oficina, de alrededor de 50m2 totales.  La propiedad original se encuentra sujeta al Régimen de PH y tiene aprobado mediante Reglamento de Copropiedad la \"...incorporación de nuevos polígonos a la UF 1 para eventualmente generar otras unidades funcionales y todo aquello que fuera autorizado por reglamentación vigente...\".  El lote original es de 32x48 m2 Se comercializa la UF 1 con superfiice de 24 x 48",
@@ -1687,6 +1507,11 @@
                 "expected": true
             },
             {
+                "context": "Consulte por anticipo y cuotas! Parte indivisa de 5x20. Destinado a construcción de duplex. Toda la documentacion al día. Listo para escriturar. Subdivisión por PH. El de al lado esta vendido. Plano del proyecto a construir: Planta baja: Cocina comedor y toilet. Planta alta: dos dormitorios y baño completo. La mejor manera de invertir. No te pierdas esta oportunidad!",
+                "actual": "",
+                "expected": true
+            },
+            {
                 "context": "VENTA DE LOTE EN L COMPUESTO POR TRES PH DE 3 AMB Y FONDO LIBRE. .Publicado por Noely Rodriguez Majeric a traves de Inmomap",
                 "actual": true,
                 "expected": ""
@@ -1708,6 +1533,11 @@
             },
             {
                 "context": "Lote de 244 mt2 en Barrio Privado Santa Elena (en PH), desarrollado en 1,2 hectáreas. A solo 10 minutos del centro de la ciudad de La Plata. Acceso principal por asfalto por calle 609 y 5 bis. Portón de ingreso vehicular. El emprendimiento está compuesto por 35 lotes unifamiliares y 10 locales comerciales. Plano Municipal y de Propiedad Horizontal probados. Servicios: Luz - Agua. La obra del servicio de gas será abonada por los compradores de las unidades y el comienzo de obra dependerá de la empresa prestadora. Escrituración y posesión inmediatas. ",
+                "actual": "",
+                "expected": true
+            },
+            {
+                "context": "El lote se encuentra a una cuadra del asfalto, rapido acceso a la autopista y al centro de Villa Elisa. Las medidas aproximadas son de 22 x 43. Ideal para emprendimiento, salen 4 casas por PH (el propietario tiene un proyecto de esas características realizado) ",
                 "actual": "",
                 "expected": true
             }
