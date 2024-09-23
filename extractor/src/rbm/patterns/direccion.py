@@ -296,6 +296,25 @@ def dir_entre():
             {"LOWER": {"IN": ENTRE}}, 
             {"POS": "DET", "OP": "?"},
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+            {"LOWER": {"IN": INTERSECCION}}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN":["PROPN", "NOUN", "NUM", "ADP"]}, "OP":"+"},#aca hago un cambio
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+        ],
+        [
+             # calle moreno 1231 e/ 25 de mayo Y san martín
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
+            {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LIKE_NUM": True, "OP": "?"}, 
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
             {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
             {"LOWER": {"IN": INTERSECCION}}, 
