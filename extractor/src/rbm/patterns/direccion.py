@@ -186,7 +186,7 @@ def dir_entre():
             # calle la hermosura n° 1231, entre calle moreno y san martin bis
             # calle 7 n° 1231, entre calle moreno y san martin bis
             # calle la hermosura n° 1231, entre calle 7 y 8 BIS
-            {"LOWER": {"IN":CALLE_SINONIMOS},  "OP": "?"}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}}, 
             {"POS": "PROPN", "OP":"?"},
             {"POS": "PUNCT", "OP":"?"},
             {"POS": {"IN": ["DET","PROPN", "ADP"]}, "OP":"{1,3}"},
@@ -248,7 +248,7 @@ def dir_entre():
         ],
         [
              # calle 9 de julio 1231 e/ 25 de mayo Y 3 de febrero
-            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}}, 
             {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
             {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
@@ -305,7 +305,7 @@ def dir_entre():
         ],
         [
              # calle moreno 1231 e/ 25 de mayo Y san martín
-            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}}, 
             {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
             {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
