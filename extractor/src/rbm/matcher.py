@@ -5,7 +5,7 @@ from spacy.matcher import Matcher as MatcherSpacy
 from spacy.matcher import PhraseMatcher
 from src.rbm.patterns.urb_semicerrada import urb_semicerrada
 from src.rbm.patterns.barrio import barrio
-from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro
+from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro #dir_lote_nro,
 from src.rbm.patterns.fot import fot
 from src.rbm.patterns.medidas import medidas
 from src.rbm.patterns.urb_cerrada import urb_cerrada,urb_cerrada_DM
@@ -97,6 +97,10 @@ class Matcher:
             "dir_entre", #dirrecciones platenses + no platenses y direcciones que en el nombre ponen numeros -> los casos posibles son muchisimos, por eso solo escribo los patrones que veo, por falta de tiempo
             dir_entre()
         )
+        # Matcher.matcher.add(
+        #     "dir_lote_nro", #dirrecciones platenses + no platenses y direcciones que en el nombre ponen numeros -> los casos posibles son muchisimos, por eso solo escribo los patrones que veo, por falta de tiempo
+        #     dir_lote_nro()
+        # )
         Matcher.matcher.add(
             "dir_lote", 
             dir_lote()
@@ -285,6 +289,7 @@ class Matcher:
             "dir_interseccion": [],
             "dir_entre": [],
             "dir_lote": [" ".join(x) for x  in re.findall(REGEX_LOTE, text)],
+            # "dir_lote_nro": [],
             "fot": [],
             "irregular": [],
             "irregular_DM":[],

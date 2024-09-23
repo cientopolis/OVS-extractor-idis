@@ -20,16 +20,14 @@ LETRA_MAYUSCULA = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "
 
 SOBRE_SINONIMOS = ["en"]
 NOMBRE_LOTE = ["NUM", "PROPN"]
-MEDIDAS = ["metro", "metros", "m", "ms", "mt", "mts", "m2"] 
+MEDIDAS = ["metro", "metros", "m", "ms", "mt", "mts", "m2", "m.", "ms.", "mt.", "mts.", "m2.",] 
 CONECTORES_MEDIDAS = ["x", "por"]
 CALLE_SEGMENTO = ["bis", "Bis", "BIS"]  + LETRA_MAYUSCULA
 
 def dir_nro():
-    return  list([ #direcciones platenses = numericas
+    return  list([ #direcciones numéricas con la altura únicamente 
                 [
                     # calle montevideo 412
-                    # calle 7 412
-                    # calle 7 bis al 400
                     # calle montevideo n° 412
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
                     {"POS": "PUNCT", "OP":"?"},
@@ -227,6 +225,27 @@ def dir_entre():
             {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "{1,3}"}, 
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
         ],
+        [   #calle 34 (Craviotto) entre 43 y 44
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": "NUM"}, 
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
+            {"IS_PUNCT": True, "OP": "?"},
+            {"POS": "PROPN"}, 
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LIKE_NUM": True, "OP": "?"}, 
+            {"IS_PUNCT": True, "OP": "?"},
+            {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "{1,3}"}, 
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+            {"LOWER": {"IN": INTERSECCION}}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "{1,3}"}, 
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
+        ],
         [
              # calle 9 de julio 1231 e/ 25 de mayo Y 3 de febrero
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
@@ -305,6 +324,15 @@ def dir_entre():
         ]
    ]
 
+# def dir_lote_nro():
+#     return list([
+#         [
+#             {"LOWER": "lote"},
+#             {"LOWER": {"IN":NUMERO_SINONIMOS}, "OP":"?"},
+#             {"LIKE_NUM":True},
+#             {"LOWER":{"NOT_IN":MEDIDAS+CONECTORES_MEDIDAS}}
+#         ],
+#     ])
 
 def dir_lote():
     return  list([
@@ -312,7 +340,7 @@ def dir_lote():
                 [
                     {"LOWER": "lote"},
                     {"LOWER": {"IN":NUMERO_SINONIMOS}},
-                    {"POS": {"IN": NOMBRE_LOTE}},
+                    {"LIKE_NUM":True},
                 ],
                 [
                     {"LOWER": "lote"}, 
