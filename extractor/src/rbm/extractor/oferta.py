@@ -18,7 +18,7 @@ class Oferta():
 
     
     def loteo_ph(self, predichos: list):
-        if (((not predichos["loteo_ph_DM"]) or (not predichos["frases_loteo_ph_PM"])) and (predichos["loteo_ph_M"])) : #or predichos["loteo_ph_DM_True"]):
+        if ((not predichos["loteo_ph_DM"]) and (predichos["loteo_ph_M"]) or (predichos["frases_loteo_ph_PM"])) :
             return True 
         return ""
     
