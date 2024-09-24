@@ -293,7 +293,6 @@ class Matcher:
             "loteo_ph_M": [],
             "loteo_ph_DM": [],
             "frases_loteo_ph_PM":[],
-            "loteo_ph_DM_True": [],
         }
         self.__get_matches(text, prev_result)
         self.__get_dep_matches(text, prev_result)

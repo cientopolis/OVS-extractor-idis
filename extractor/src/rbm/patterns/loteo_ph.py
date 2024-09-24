@@ -34,24 +34,6 @@ def loteo_ph_M() -> list:
             ] 
     )
 
-def loteo_ph_DM_True() -> list :
-    return 
-    [
-        [   
-            #lote ph
-            {
-                "RIGHT_ID": "division_ph",  # me paro en ph y miro flecha que ENTRA
-                "RIGHT_ATTRS": {"LOWER": {"IN": ["ph","PH"]}}, #ph o PH
-            },
-            {
-                "LEFT_ID": "division_ph", #
-                "REL_OP": "<",
-                "RIGHT_ID": "relacion_posible_division",
-                "RIGHT_ATTRS": {"POS": "PROPN"},
-            }   
-        ]
-    ] 
-
 def loteo_ph_DM() -> list:
     return [   
             [   
@@ -106,5 +88,5 @@ def loteo_ph_DM() -> list:
     ]
 
 def frases_loteo_ph_PM() -> list:
-    frases = ["(en PH)","en PH","(PH)","se encuentra sujeta al Régimen de PH"]
+    frases = ["(en PH)","en PH","(PH)","se encuentra sujeta al Régimen de PH","(PH Cerrado)"]
     return frases
