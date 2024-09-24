@@ -24,6 +24,8 @@ MEDIDAS = ["metro", "metros", "m", "ms", "mt", "mts", "m2", "m.", "ms.", "mt.", 
 CONECTORES_MEDIDAS = ["x", "por"]
 CALLE_SEGMENTO = ["bis", "Bis", "BIS"]  + LETRA_MAYUSCULA
 
+#los patrones más cortos suelen tener como obligatorio la palabra "calle" o similar porque es fácil que el patrón se confunda con otra cosa
+
 def dir_nro():
     return  list([ #direcciones numéricas con la altura únicamente 
                 [
@@ -61,14 +63,15 @@ def dir_nro():
                     {"LOWER": {"NOT_IN": MEDIDAS}}
                 ],
                 # [
-                #     # 9 n° 123
-                #     # 9 al 123
-                #     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
+                #     #9 n° 123
+                #     #9 al 123
+                #     {"LOWER": {"IN":CALLE_SINONIMOS}},
                 #     {"POS": "NUM"},
                 #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
                 #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
                 #     {"LIKE_NUM":True},
-                # ],           
+                #     {"LOWER": {"NOT_IN": MEDIDAS}}
+                # ],
             ])
 
 def dir_interseccion():
@@ -246,9 +249,26 @@ def dir_entre():
             {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "{1,3}"}, 
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
         ],
+        # [
+        #     #"calle 25 de Mayo y San Martín entre Burmeister y Mosconi"
+        #     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+        #     {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
+        #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
+        #     {"LOWER": {"IN": INTERSECCION}}, 
+        #     {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "{1,3}"}, 
+
+        #     {"LOWER": {"IN": ENTRE}}, 
+            
+        #     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+        #     {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "{1,3}"}, 
+        #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
+        #     {"LOWER": {"IN": INTERSECCION}}, 
+        #     {"POS": {"IN": ["PROPN", "NUM"]}, "OP": "{1,3}"}, 
+
+        # ],
         [
              # calle 9 de julio 1231 e/ 25 de mayo Y 3 de febrero
-            {"LOWER": {"IN":CALLE_SINONIMOS}}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
             {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
             {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
@@ -275,10 +295,8 @@ def dir_entre():
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
             {"POS": "NUM"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
-
             {"LOWER": {"IN": INTERSECCION}}, 
             {"POS": "ADP", "OP": "?"},
-
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
             {"POS": "NUM"}, 
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
@@ -287,25 +305,6 @@ def dir_entre():
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
             {"POS": "NUM"},
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
-        ],
-        [
-             # calle moreno 1231 e/ 25 de mayo Y san martín
-            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
-            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
-            {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
-            {"IS_PUNCT": True, "OP": "?"},
-            {"LIKE_NUM": True, "OP": "?"}, 
-            {"IS_PUNCT": True, "OP": "?"},
-            {"LOWER": {"IN": ENTRE}}, 
-            {"POS": "DET", "OP": "?"},
-            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
-            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
-            {"LOWER": {"IN": INTERSECCION}}, 
-            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
-            {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
-            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
         ],
         [
              # calle moreno 1231 e/ 25 de mayo Y san martín
