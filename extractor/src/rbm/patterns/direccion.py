@@ -266,6 +266,29 @@ def dir_entre():
             {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}
         ],
         [
+            #Calle 41 a 42 y de 149 a 150
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": "NUM"}, 
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
+            {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": "NUM"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+
+            {"LOWER": {"IN": INTERSECCION}}, 
+            {"POS": "ADP", "OP": "?"},
+
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": "NUM"}, 
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"}, 
+            {"LOWER": {"IN": ENTRE}}, 
+            {"POS": "DET", "OP": "?"},
+            {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
+            {"POS": "NUM"},
+            {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+        ],
+        [
              # calle moreno 1231 e/ 25 de mayo Y san martín
             {"LOWER": {"IN":CALLE_SINONIMOS}, "OP": "?"}, 
             {"POS": {"IN": ["PROPN","NUM"]}, "OP":"{1,2}"},
