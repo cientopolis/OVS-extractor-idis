@@ -14,7 +14,7 @@ from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
 from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country
-from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,frases_loteo_ph_PM
+from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,frases_loteo_ph_PM,frases_not_loteo_ph_PM
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina
 from src.rbm.patterns.irregular import irregular,irregular_DM
@@ -57,6 +57,13 @@ class Matcher:
         Matcher.phraseMatcher.add(
             "frases_loteo_ph_PM",patterns
         )
+
+        terms = frases_not_loteo_ph_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_not_loteo_ph_PM",patterns
+        )
+
 
 
         Matcher.matcher.add(
@@ -293,6 +300,7 @@ class Matcher:
             "loteo_ph_M": [],
             "loteo_ph_DM": [],
             "frases_loteo_ph_PM":[],
+            "frases_not_loteo_ph_PM":[],
         }
         self.__get_matches(text, prev_result)
         self.__get_dep_matches(text, prev_result)

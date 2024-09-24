@@ -9,29 +9,26 @@ matcher= DependencyMatcher(NLP.vocab)
 matcher.add("APTO_SUBDIVISION_PH", [
     [
         {"RIGHT_ID": "PH",
-        "RIGHT_ATTRS": {"ORTH": "PH"}
+        "RIGHT_ATTRS": {"ORTH": "PH)"}
         },
 
         {"LEFT_ID": "PH",
         "REL_OP": "<",
-        "RIGHT_ID": "EN",
-        "RIGHT_ATTRS": {"ORTH": "EN"}
+        "RIGHT_ID": "subdivisible",
+        "RIGHT_ATTRS": {"POS": "PROPN"}
         },
 
-        {"LEFT_ID": "EN", "REL_OP": "<",
-        "RIGHT_ID": "SUBDIVISION",
-        "RIGHT_ATTRS": {"ORTH": "SUBDIVISIÓN"}
+        {"LEFT_ID": "subdivisible",
+         "REL_OP": ">",
+        "RIGHT_ID": "departamento",
+        "RIGHT_ATTRS": {"POS": "ADP"}
         },
 
-        {"LEFT_ID": "SUBDIVISION",
-        "REL_OP": "<",
-        "RIGHT_ID": "APTO",
-        "RIGHT_ATTRS": {"ORTH": "APTO"}
-        }
+        
     ]
 ])
 
-doc = NLP("El Equipo Remax Sierras Vende Lote (parcela 8a) en la zona norte de la ciudad, ubicado sobre calle Primera Junta casi Magallanes. Se encuentra a 1 cuadra de la Ruta Nacional 226 y a 10 minutos del centro de la ciudad. Cuenta con una superficie de 347,4 m2, con medidas de 12 metros de frente y 28,95 metros de fondo. APTO SUBDIVISIÓN EN PH. También disponemos de otros lotes de mayores medidas. Servicios Disponibles: electricidad, agua y cloacas. El lote presenta un retiro obligatorio de 6 metros sobre calle Primera Junta. El barrio se encuentra en desarrollo, con potencial residencial y comercial. Según el Plan de Desarrollo Territorial de Tandil cuenta con los siguientes indicadores: *Zona: Barrio Usos Mixtos *FOS: 0,6 *FOT: 0,8 *Densidad: 200 hab/ha *Altura Construcción: 7,5 metros USOS: Vivienda Unifamiliar, Vivienda Multifamiliar, comercios minoristas y mayoristas, servicios generales y oficinas, taller doméstico, taller automotor, depósitos.")
+doc = NLP("En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ")
 #doc = NLP("APTO SUBDIVISIÓN EN PH.")
 #for token in doc:
 #    print(token.text, token.dep_, token.pos_, token.lemma_)
