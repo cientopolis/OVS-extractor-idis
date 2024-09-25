@@ -1,13 +1,13 @@
 [
     {
         "name": "direccion",
-        "tp": 88,
+        "tp": 89,
         "fp": 33,
-        "fn": 34,
+        "fn": 33,
         "tn": 166,
-        "precision": 0.7272727272727273,
-        "recall": 0.7213114754098361,
-        "f1": 0.7242798353909464,
+        "precision": 0.7295081967213115,
+        "recall": 0.7295081967213115,
+        "f1": 0.7295081967213115,
         "error": [
             {
                 "context": "Importante chalet en Barrio Parque Calchaqui. Calle 341 (Craviotto) entre 382 y 383. 6 ambientes, 4 dormitorios, 5 baños, 2 pisos, lote de 15 X 50, total 750 m2, cubierta 410 m2. Recepción, toilette, amplio living con aberturas hacia el parque, comedor principal, cocina amueblada + comedor diario, dormitorio con placard, baño completo con ante baño, dormitorio principal con pisos tarugados en suite, con baño completo, amplisimo verde, pileta, parrilla.",
@@ -130,11 +130,6 @@
                 "expected": "Avenida 2 e/ Paseo 118 y 119"
             },
             {
-                "context": "Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
-                "actual": "",
-                "expected": "Av Gral. Guemes esquina Gral. Arredondo"
-            },
-            {
                 "context": "Lote de terreno irregular en excelente ubicación. 2° Rivadavia esquina Navarro. Castelar Norte. Medidas: lote irregular: 18 x 24. Superficie total: 353.89 m2. Valor: U$s 150.000.",
                 "actual": "",
                 "expected": "2° Rivadavia esquina Navarro"
@@ -152,7 +147,7 @@
             {
                 "context": "Departamento de un dormitorio en venta ubicado sobre calle Almirante Brown entre 9 de Julio y Republica Oriental del Uruguay (Morón, Buenos Aires). Desarrollado en piso alto por ascensor, con disposición frente y orientación al sur.El mismo posee cocina independiente equipada con muebles sobre y bajo mesada, living comedor, un dormitorio con placard empotrado y un baño completo. Amplio y luminoso, cuenta con balcón y equipo de aire acondicionado central.La propiedad tiene una superficie total de aproximadamente 48mts2, de los cuales 43mts2 son cubiertos. Las expensas al día 17/04/2024 son de aproximadamente $104.000.",
                 "actual": "calle Almirante Brown entre 9 de Julio y Republica Oriental",
-                "expected": "Almirante Brown entre 9 de Julio y Republica Oriental del Uruguay"
+                "expected": "calle Almirante Brown entre 9 de Julio y Republica Oriental del Uruguay"
             },
             {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
@@ -399,8 +394,13 @@
         "name": "medidas",
         "tp": 146,
         "fp": 21,
+        "tp": 146,
+        "fp": 21,
         "fn": 36,
         "tn": 118,
+        "precision": 0.874251497005988,
+        "recall": 0.8021978021978022,
+        "f1": 0.836676217765043,
         "precision": 0.874251497005988,
         "recall": 0.8021978021978022,
         "f1": 0.836676217765043,
@@ -511,7 +511,7 @@
                 "expected": "9.69 x 8.66 x 22.59 x 18.17"
             },
             {
-                "context": "Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
+                "context": "Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
                 "actual": "",
                 "expected": "29 x 29"
             },
@@ -654,6 +654,11 @@
                 "context": "Ubicado en barrio San José, a metros de Av. Independencia, se encuentra esta importante propiedad para uso comercial o para desarrollo de propiedad horizontal. Actualmente funciona como fábrica y local central de reconocida Marca de indumentaria y zapatería, por lo que su estructura resulta ideal para locales comerciales de amplias superficies como concecionarias, o para grandes empresas. Con 24 mts totales de frente y 43,25 mts de fondo, esta propiedad cuenta con 1.038 m2 de terreno y 1.052 m2 cubiertos. Emplazado sobre distrito urbano R2 con frente de VC1, cuenta además con la factibilidad de desarrollar aproximadamente 3.700 m2 en hasta ocho plantas, pudiéndose realizar local comercial en planta baja y edificio de viviendas sobre éste.",
                 "actual": "",
                 "expected": "24 x 43.25"
+            },
+            {
+                "context": "Lotes Propios ( No es ph, ni parte indivisa) - Medidas 12x27 y 12x33 - Urbanizacion con 29 parcelas - Asfalto, luz, gas y agua corriente - Obras Finalizadas - Ultimos 4 lotes disponibles - Desde U$S 14.000 a U$S 19.000 segun tamaño y ubicacion - Financiacion: 30 % al boleto y el saldo hasta 48 cuotas de U$S 200 cada una. -",
+                "actual": "12 x 27;12 x 33",
+                "expected": "12 x 33;12 x 27"
             },
             {
                 "context": "Lotes Propios ( No es ph, ni parte indivisa) - Medidas 12x27 y 12x33 - Urbanizacion con 29 parcelas - Asfalto, luz, gas y agua corriente - Obras Finalizadas - Ultimos 4 lotes disponibles - Desde U$S 14.000 a U$S 19.000 segun tamaño y ubicacion - Financiacion: 30 % al boleto y el saldo hasta 48 cuotas de U$S 200 cada una. -",
@@ -1157,7 +1162,13 @@
         "name": "pileta",
         "tp": 30,
         "fp": 1,
+        "tp": 30,
+        "fp": 1,
         "fn": 1,
+        "tn": 289,
+        "precision": 0.967741935483871,
+        "recall": 0.967741935483871,
+        "f1": 0.967741935483871,
         "tn": 289,
         "precision": 0.967741935483871,
         "recall": 0.967741935483871,
@@ -1178,20 +1189,15 @@
     {
         "name": "urb_cerrada",
         "tp": 37,
-        "fp": 3,
+        "fp": 2,
         "fn": 1,
-        "tn": 280,
-        "precision": 0.925,
+        "tn": 281,
+        "precision": 0.9487179487179487,
         "recall": 0.9736842105263158,
-        "f1": 0.9487179487179489,
+        "f1": 0.9610389610389611,
         "error": [
             {
                 "context": "Venta de Lote en barrio santa Isabel Highland Park , Mar del Plata . Ponemos a la venta 4 lotes de 20 x 47 metros cada uno, en  trámite de escrituración por usucapión, ubicados en la fracción 1 sobre la calle 749 asfaltada entre las calles 116 y 118, en barrio Highland park, pegado a golf. Marayui Country Club lotes a la venta, sobre la calle asfaltada 749 fracción 1, lotes 2 lote  3 lote  4 y lote 5. cada uno de 20 por 47 metros.  los lotes están judicializados por tramite de usucapión, y se ha hecho cesión de derechos por escribanía, y se hará cesión de derechos y posesión al comprador en escribanía.  tenemos toda la información pertinente de los lotes citados, se entrega con impuestos de Arba y municipal al día de la transferencia, los impuestos pagados son de Arba y municipal.",
-                "actual": true,
-                "expected": ""
-            },
-            {
-                "context": "Se vende lote en gran zona. Zona de countrys (Grand Bell, Los Ceibos, Country Club de Estudiantes). 10 mts de frente x 30 mts de fondo. 300 mt2 totales. Tiene paredón al frente, alambrado, parrilla en el fondo, sala de maquinas/galpón. Zona con todos los servicios",
                 "actual": true,
                 "expected": ""
             },
@@ -1265,23 +1271,18 @@
     },
     {
         "name": "indiviso",
-        "tp": 7,
+        "tp": 8,
         "fp": 1,
-        "fn": 1,
+        "fn": 0,
         "tn": 312,
-        "precision": 0.875,
-        "recall": 0.875,
-        "f1": 0.875,
+        "precision": 0.8888888888888888,
+        "recall": 1.0,
+        "f1": 0.9411764705882353,
         "error": [
             {
                 "context": "Lote en PH Barrio Abierto Don Uriel. Ubicación: Mz 146, lote 25. Lote de 235,38 m2 (10,81m X 23,19m) Servicios: Calles con cordón cuneta y mejorado. Red de tendido eléctrico. Alumbrado publico con luminarias LED. Agua corriente. Gas natural.  Sistema de venta por Fideicomiso con asignación de lote individual (no indiviso).",
                 "actual": true,
                 "expected": ""
-            },
-            {
-                "context": "Vendo lote de 12x49 en barrio cerrado Aires de Arana. El mismo es el tercer lote desde ingreso del predio. Nivelado. Posee bomba de agua. Bases de 90m2 para vivienda familiar. El predio tiene portón automatizado con apertura tanto por control remoto como por app desde el celular. Cámaras de seguridad. Calle interna iluminada. Se encuentra en una zona muy tranquila, próximo a la Av 137 a tan solo 20min del centro de la ciudad de La Plata. Posee escritura indivisa(próximo a escritura definitiva). Escucho Oferta Razonable",
-                "actual": "",
-                "expected": true
             }
         ]
     },
@@ -1296,12 +1297,12 @@
         "f1": 0.9710144927536232,
         "error": [
             {
-                "context": "Casa en venta en la zona sur de la ciudad. Ubicación: Jose Maria Eguiluz n° 663. Barrio San Fernando. La casa se posee un terreno amplio de 413 m2, y tiene acceso por 2 calles, por adelante con calle Jose Maria Eguiluz y por atras con calle Jose Amenabar. Ideal proyecto e inversión",
-                "actual": "",
-                "expected": true
+                "context": "TERRENO EN VENTA con amplio chalet a refaccionar, en inmejorable zona de Martínez entre Av. Libertador y el río.Hall de recepción, importante living con chimenea y comedor ppal con pisos de marmol, escritorio en PA o 5to dormitorio. 4 dormitorios (1 en suite con buen vestidor), 2 baños, 2 toilettes, cocina y comedor diario, dependencia de servicio y lavadero en PB. Gran Playroom en PA, terraza, garaje para 3 autos. Jardín de 24m x 20m con quincho, parrilla, vestuarios, casa de caseros y pileta.Zona muy tranquila.Estado original. Estructura de hormigón independiente que permite flexibilidad de distribución interna. Calefacción por conducto de aire.Vigilancia.   ",
+                "actual": true,
+                "expected": ""
             },
             {
-                "context": "Corredor Responsable: Verónica Lorena Paz Mat. N° 231 - Contacto: Veronica Lorena Paz - MLS ID # RE/MAX\r\nSEED OFRECE A LA VENTA UN TERRENO EN SAN PEDRO , PCIA DE BS AS Ubicado a pocas cuadras del\r\nRío, barrio semiprivado, en pleno crecimiento con casas nuevas y en construcción Con una superficie total de\r\n300 m2 (15m de frente por 20 m de fondo) Ideal para construcción de vivienda familiar o casa quinta. Acepta\r\nterreno en Mar del Plata No dudes en consultarme!",
+                "context": "Excelente propiedad sobre esquina con un frente lineal de 162 metros y salida a tres calles, Cabildo, Guatemala y Pilcomayo. Superficie de terreno 6200 m2. Contrapiso para camiones en casi su totalidad. Sectores descubiertos a reciclar. Zona industrial. Apto todo destino. FOT residencial: 2, FOT industrial: 1.5, FOS: 60% max.",
                 "actual": true,
                 "expected": ""
             },
@@ -1338,7 +1339,7 @@
                 "expected": true
             },
             {
-                "context": "Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
+                "context": "Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
                 "actual": "",
                 "expected": true
             },
@@ -1440,7 +1441,7 @@
                 "expected": true
             },
             {
-                "context": "DUEÑO DIRECTO. atencion: No respondo a Inmobiliarias. aviso: otros truchos copian y roban datos para publicar el mismo lote. tener cuidado!!! TOBAS entre COLIQUEO y ANCATRUZ. 400mts del río. zona no inundable. apto financiacion privada con garantia prop o prendaria 50% y saldo 12 cuotas en dolares sin interes- a 1500mts de ruta 11 tendido electrico en la entrada al lote no hay red de agua potable ni cloacal internet por antena parabolica .asp?id=7188&t=Punta-del-Indio-paraiso-oculto como llegar: desde capital tomar autopista buenos aires- la plata y en la primera bifurcación a la derecha pasa primer peaje. Tomar salida a la derecha a Mar del Plata ruta 2 Hudson para luego ver cartel ruta 36 EL PATO y salir en la bifurcacion a la derecha para tomar la 36 ruta hacia dolores chascomús salida empalme ruta 36 partido de la costa y en cartel a la izquierda hacer como una media U pasando por abajo del puente y todo derecho por la 36 es doble mano sin luz unos 15 minutos aprox. Pasar la primer rotonda y pasar la segunda rotonda y tercer rotonda a Pipinas qué son unos 45 minutos Aproximadamente en la cuarta rotonda seguir derecho hasta la cruz de Jesús ahí a la izquierda hay un cartel a Verónica la ruta se llama circunvalacion2. Hacer unos 7 km de ripio y después de un cartel de bienvenida a Punta Indio doblar a la derecha y seguir como 3 km más y luego doblar a la izquierda por ruta 11 en el cartel Parque Costero Sur, es como volviendo para atras. Luego doblar en calle ANCATRUZ a la derecha y seguir hasta Tobas y a 50mts está la entrada a lote 19. No esta demarcado ni amojonado ni cercado. para ir en micro: hay que llegar hasta veronica desde la plata con micro que sale de terminal. Y una vez en Veronica tomar el micro Parque Costero del Sur a Punta Indio. horarios-micro-comunal",
+                "context": "Consulte por anticipo y cuotas! Parte indivisa de 5x20. Destinado a construcción de duplex. Toda la documentacion al día. Listo para escriturar. Subdivisión por PH. El de al lado esta vendido. Plano del proyecto a construir: Planta baja: Cocina comedor y toilet. Planta alta: dos dormitorios y baño completo. La mejor manera de invertir. No te pierdas esta oportunidad!",
                 "actual": true,
                 "expected": ""
             },
@@ -1450,7 +1451,7 @@
                 "expected": ""
             },
             {
-                "context": "VENTA DE LOTE EN L COMPUESTO POR TRES PH DE 3 AMB Y FONDO LIBRE. .Publicado por Noely Rodriguez Majeric a traves de Inmomap",
+                "context": "Lote en esquina de 133,49 mts en PH  La propiedad anteriormente era un lote, el cual fue subdividido bajo el régimen de PH, SIN ESPACIOS COMUNES.  No abona expensas.  Zonificación Id (Industrial Dominante) FOT: 1.2 (160 metros) FOS: 0.6 ( 80 metros)  La propiedad posee electricidad y agua corriente  Cuenta con construcción a refaccionar de living, dormitorio baño y cocina.  Y otra construcción para demoler  Ubicación: a una cuadra de Av. Pres. Juan Domingo Perón, a 4 cuadras de Av. Ricardo Balbín, rápida salida a General Paz. Gran cantidad de comercios y gastronomía en la zona. Bancos, colegios, Universidades cercanas y hospitales.  ",
                 "actual": "",
                 "expected": true
             },

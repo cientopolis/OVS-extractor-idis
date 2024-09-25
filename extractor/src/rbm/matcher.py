@@ -8,13 +8,13 @@ from src.rbm.patterns.barrio import barrio
 from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro
 from src.rbm.patterns.fot import fot
 from src.rbm.patterns.medidas import medidas
-from src.rbm.patterns.urb_cerrada import urb_cerrada,urb_cerrada_DM
+from src.rbm.patterns.urb_cerrada import urb_cerrada,urb_cerrada_DM,frases_urb_cerrada_PM
 from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
-from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
-from src.rbm.patterns.edificacion_monetizable import frases_PM, con_construccion, no_mejora_country_DM, construccion, mejorado, mejoras_country, posible_country, no_mejora_DM, mejora_posible_calle, no_con_construccion_DM #, lote_construccion_DM
-from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,loteo_ph_DM_True
+from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM,frases_indiviso_PM
+from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country
+from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,frases_loteo_ph_PM,frases_not_loteo_ph_PM
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina
 from src.rbm.patterns.irregular import irregular,irregular_DM
@@ -47,11 +47,29 @@ class Matcher:
             "urb_cerrada", patterns
         )
 
-        terms = frases_PM()
+        terms = frases_urb_cerrada_PM()
         patterns = [NLP(text) for text in terms]
         Matcher.phraseMatcher.add(
-            "no_construccion-PM", patterns
+            "frases_urb_cerrada_PM",patterns
         )
+        terms = frases_loteo_ph_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_loteo_ph_PM",patterns
+        )
+
+        terms = frases_not_loteo_ph_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_not_loteo_ph_PM",patterns
+        )
+
+        terms = frases_indiviso_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_indiviso_PM",patterns
+        )
+
 
 
         Matcher.matcher.add(
@@ -296,11 +314,13 @@ class Matcher:
             "frentes": [],
             "urb_cerrada": [],
             "urb_cerrada_DM":[],
+            "frases_urb_cerrada_PM":[],    
             "urb_semicerrada": [], 
             "posesion": [],
             "preventa": [],
             "indiviso_M": [],
             "indiviso_DM": [],
+            "frases_indiviso_PM":[],
             "a_demoler-asegurado": [],
             "a_demoler-ideal": [],
             "es_multioferta": [],
@@ -322,7 +342,8 @@ class Matcher:
             "posible_country": [],
             "loteo_ph_M": [],
             "loteo_ph_DM": [],
-            "loteo_ph_DM_True": [],
+            "frases_loteo_ph_PM":[],
+            "frases_not_loteo_ph_PM":[],
         }
         self.__get_matches(text, prev_result)
         self.__get_dep_matches(text, prev_result)

@@ -34,24 +34,6 @@ def loteo_ph_M() -> list:
             ] 
     )
 
-def loteo_ph_DM_True() -> list :
-    return 
-    [
-        [   
-            #lote ph
-            {
-                "RIGHT_ID": "division_ph",  # me paro en ph y miro flecha que ENTRA
-                "RIGHT_ATTRS": {"LOWER": {"IN": ["ph","PH"]}}, #ph o PH
-            },
-            {
-                "LEFT_ID": "division_ph", #
-                "REL_OP": "<",
-                "RIGHT_ID": "relacion_posible_division",
-                "RIGHT_ATTRS": {"POS": "PROPN"},
-            }   
-        ]
-    ] 
-
 def loteo_ph_DM() -> list:
     return [   
             [   
@@ -90,17 +72,13 @@ def loteo_ph_DM() -> list:
                     "RIGHT_ID": "posibilidad",
                     "RIGHT_ATTRS": {"POS":"NOUN"},  #aca en realidad tendrias que matchear por el morfologico: que este en presente el verbo ese además
                 }              
-            ],
-            #[    # posible PH
-            #    {
-            #        "RIGHT_ID": "division_ph",  # me paro en ph y miro flecha que ENTRA
-            #        "RIGHT_ATTRS": {"LOWER": {"IN": ["ph","PH"]}}, #ph o PH
-            #    },
-            #    {
-            #        "LEFT_ID": "division_ph", #
-            #        "REL_OP": "<",
-            #        "RIGHT_ID": "relacion_posible_division",
-            #        "RIGHT_ATTRS": {"POS": "PROPN"},
-            #    },                
-            #]
+            ]
     ]
+
+def frases_loteo_ph_PM() -> list:
+    frases = ["(en PH)","en PH","(PH)","se encuentra sujeta al Régimen de PH","(PH Cerrado)"]
+    return frases
+
+def frases_not_loteo_ph_PM() -> list:
+    not_frases = ["departamento en ph.-en","APTO SUBDIVISIÓN EN PH","Posibilidad de dividir en PH","LOTE DIVISIBLE PH","LOTE EN L COMPUESTO POR TRES PH","posible ph",]
+    return not_frases
