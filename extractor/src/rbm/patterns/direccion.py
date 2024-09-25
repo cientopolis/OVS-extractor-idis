@@ -1,3 +1,24 @@
+# import json
+
+# import os
+# print(os.getcwd())  # Muestra el directorio de trabajo actual
+
+# with open("input/calles_bsas.json", "r") as file:
+#     dicc_calles = json.load(file)#con keys del 1 al 10 siempre
+
+# INICIO = []
+# MEDIO = []
+# MEDIO2 = []
+# MEDIO3 = []
+# MEDIO4 = []
+# FIN = []
+# for nombre in dicc_calles["6"]:
+#     INICIO.append(nombre.split()[0])
+#     MEDIO.append(nombre.split()[1])
+#     MEDIO2.append(nombre.split()[2])
+#     MEDIO3.append(nombre.split()[3])
+#     MEDIO4.append(nombre.split()[4])
+#     FIN.append(nombre.split()[5])
 
  #los uso con LEMMA
 #calleSinonimos = [ "av", "calle", "Calle", "ruta", "Ruta", "avenida", "diagonal", "Diagonal", "dg", "Dg", "diag", "Diag"]
@@ -28,6 +49,42 @@ CALLE_SEGMENTO = ["bis", "Bis", "BIS"]  + LETRA_MAYUSCULA
 
 def dir_nro():
     return  list([ #direcciones numéricas con la altura únicamente 
+                # [
+                #     {"LOWER":{"IN":dicc_calles["1"]}},
+
+                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                #     {"LIKE_NUM":True},
+                #     {"LOWER": {"NOT_IN": MEDIDAS}}
+                # ],
+                # [
+                #     {"LOWER":{"IN":INICIO}},
+                #     {"LOWER":{"IN":FIN}},
+
+                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                #     {"LIKE_NUM":True},
+                #     {"LOWER": {"NOT_IN": MEDIDAS}}
+                # ],
+                #  [
+                #     {"LOWER":{"IN":INICIO}},
+                #     {"LOWER":{"IN":MEDIO}},
+                #     {"LOWER":{"IN":FIN}},
+
+                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                #     {"LIKE_NUM":True},
+                #     {"LOWER": {"NOT_IN": MEDIDAS}}
+                # ],
+                #  [
+                #     {"LOWER":{"IN":INICIO}},
+                #     {"LOWER":{"IN":MEDIO}},
+                #     {"LOWER":{"IN":MEDIO2}},
+                #     {"LOWER":{"IN":MEDIO3}},
+                #     {"LOWER":{"IN":MEDIO4}},
+                #     {"LOWER":{"IN":FIN}},
+
+                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                #     {"LIKE_NUM":True},
+                #     {"LOWER": {"NOT_IN": MEDIDAS}}
+                # ],
                 [
                     # calle montevideo 412
                     # calle montevideo n° 412
@@ -37,6 +94,7 @@ def dir_nro():
                     {"POS": "PUNCT", "OP":"?"},
                     {"POS": "PROPN", "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
                     {"LIKE_NUM":True},
                     {"LOWER": {"NOT_IN": MEDIDAS}}
@@ -47,6 +105,7 @@ def dir_nro():
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
                     {"POS": "PUNCT", "OP":"?"},
                     {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
+
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
                     {"LIKE_NUM":True},
                     {"LOWER": {"NOT_IN": MEDIDAS}}
@@ -58,6 +117,7 @@ def dir_nro():
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
                     {"POS": {"IN": ["PROPN", "ADP", "DET"]}, "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
                     {"LIKE_NUM":True},
                     {"LOWER": {"NOT_IN": MEDIDAS}}
@@ -83,10 +143,12 @@ def dir_interseccion():
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
                     {"POS": {"IN": ["PROPN", "DET", "ADP"]}, "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
                     {"IS_PUNCT": True, "OP": "?"},
                     {"LIKE_NUM": True, "OP": "?"},
                     {"LOWER": {"IN": INTERSECCION}},
+
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
                     {"POS": "PROPN", "OP":"{1,2}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
@@ -96,10 +158,12 @@ def dir_interseccion():
                     {"LOWER": {"IN":CALLE_SINONIMOS}},
                     {"POS": {"IN": ["PROPN", "DET", "ADP"]}, "OP":"{1,3}"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+
                     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"*"},
                     {"IS_PUNCT": True, "OP": "?"},
                     {"LIKE_NUM": True, "OP": "?"},
                     {"LOWER": {"IN": INTERSECCION}},
+
                     {"LOWER": {"IN":CALLE_SINONIMOS}, "OP":"?"},
                     {"POS": "NUM"},
                     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
