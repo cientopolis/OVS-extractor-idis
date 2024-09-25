@@ -12,7 +12,7 @@ from src.rbm.patterns.urb_cerrada import urb_cerrada,urb_cerrada_DM,frases_urb_c
 from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
-from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM
+from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM,frases_indiviso_PM
 from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,frases_loteo_ph_PM,frases_not_loteo_ph_PM
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
@@ -62,6 +62,12 @@ class Matcher:
         patterns = [NLP(text) for text in terms]
         Matcher.phraseMatcher.add(
             "frases_not_loteo_ph_PM",patterns
+        )
+
+        terms = frases_indiviso_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_indiviso_PM",patterns
         )
 
 
@@ -286,6 +292,7 @@ class Matcher:
             "preventa": [],
             "indiviso_M": [],
             "indiviso_DM": [],
+            "frases_indiviso_PM":[],
             "a_demoler-asegurado": [],
             "a_demoler-ideal": [],
             "es_multioferta": [],

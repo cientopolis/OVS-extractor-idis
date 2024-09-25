@@ -18,7 +18,8 @@ class Oferta():
 
     
     def loteo_ph(self, predichos: list):
-        if (((not predichos["loteo_ph_DM"]) or (not predichos["frases_not_loteo_ph_PM"])) and ((predichos["loteo_ph_M"]) or (predichos["frases_loteo_ph_PM"]))) :
+        if (((not predichos["loteo_ph_DM"]) or (predichos["frases_not_loteo_ph_PM"])) and
+            ((predichos["loteo_ph_M"]) or ( predichos["frases_loteo_ph_PM"]))) :
             return True 
         return ""
     
@@ -214,7 +215,7 @@ class Oferta():
         return True if predichos["es_multioferta"] else ""
     
     def indiviso(self, predichos: list):
-        if not predichos["indiviso_DM"] and predichos["indiviso_M"]:
+        if not predichos["indiviso_DM"] and (predichos["indiviso_M"] or predichos["frases_indiviso_PM"]):
             return True 
         return ""
 

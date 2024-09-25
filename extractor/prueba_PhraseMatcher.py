@@ -4,14 +4,14 @@ from spacy.matcher import PhraseMatcher
 
 nlp = spacy.load("es_core_news_lg")
 
-description = "VENTA DE LOTE EN L COMPUESTO POR TRES PH DE 3 AMB Y FONDO LIBRE. .Publicado por Noely Rodriguez Majeric a traves de Inmomap"
+description = "Vendo lote de 12x49 en barrio cerrado Aires de Arana. El mismo es el tercer lote desde ingreso del predio. Nivelado. Posee bomba de agua. Bases de 90m2 para vivienda familiar. El predio tiene portón automatizado con apertura tanto por control remoto como por app desde el celular. Cámaras de seguridad. Calle interna iluminada. Se encuentra en una zona muy tranquila, próximo a la Av 137 a tan solo 20min del centro de la ciudad de La Plata. Posee escritura indivisa(próximo a escritura definitiva). Escucho Oferta Razonable"
 
 doc = nlp(description)
 
 matcher = PhraseMatcher(nlp.vocab,attr= "LOWER")
 
 # Lista de frases a matchear
-frases = ["departamento en ph.-en","APTO SUBDIVISIÓN EN PH","Posibilidad de dividir en PH","LOTE DIVISIBLE PH","LOTE EN L COMPUESTO POR TRES PH"]
+frases = ["Posee escritura indivisa(próximo","posee escritura indivsa","posee escritura por la parte indiva",]
 
 # Convertir cada frase a un objeto Doc usando nlp
 patterns = [nlp(frase) for frase in frases]
