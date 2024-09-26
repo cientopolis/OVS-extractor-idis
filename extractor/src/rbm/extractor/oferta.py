@@ -200,7 +200,9 @@ class Oferta():
         # return re.compile(re.escape("Barrio"), re.IGNORECASE).sub("", mejor_match).strip()
 
     def esquina(self, predichos: list):
-        return True if predichos["esquina"] else ""
+        if ((predichos["esquina"]) and (not predichos["frases_not_esquina"])): 
+            return True
+        return "" 
 
     def pileta(self, predichos: list):
         if not predichos["pileta_barrio"] and not predichos["no_pileta_DM"] and not predichos["posible_country"] and predichos["pileta"]:

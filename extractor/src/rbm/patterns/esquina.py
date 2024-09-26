@@ -1,6 +1,13 @@
+sinonimos_esquina = ["esq.","esq","ochava","esqui","Esq."]
+
 def esquina() -> list:
     return list ( 
     [
         [{"LOWER": "esquina"}],
+        [{"LOWER" : {"IN" : sinonimos_esquina}}]
     ]
 )
+
+def frases_not_esquina() -> list:
+    frases = ["próximo a la esquina","un puesto de control de la policía bonaerense en la esquina del barrio","puesto de control de la policía en la esquina"]
+    return frases
