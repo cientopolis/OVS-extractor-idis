@@ -81,9 +81,13 @@ class Oferta():
                     result["dir_interseccion"].remove(interseccion)
         return result
 
+    def _clear_lote_nro(self, predichos: list):
+        for prediction in predichos["dir_lote_nro"]:
+            prediction = prediction[:-1]
     
     def direccion(self, predichos: list):
         predichos = self._clear_inter_entre(predichos)
+        # predichos = self._clear_lote_nro(predichos)
         # predichos = clear_altura_entre(predichos)
         
         matches_direccion_todos = (
@@ -91,6 +95,7 @@ class Oferta():
             + predichos["dir_interseccion"]
             + predichos["dir_nro"]
             + [";".join(reduce_superstrings(predichos["dir_lote"]))]
+            # + [";".join(reduce_superstrings(predichos["dir_lote_nro"]))]
         )
         if matches_direccion_todos == []:
             return ""
