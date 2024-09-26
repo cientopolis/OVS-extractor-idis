@@ -70,6 +70,12 @@ class Matcher:
             "frases_indiviso_PM",patterns
         )
 
+        terms = frases_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "no_construccion-PM", patterns
+        )
+
 
 
         Matcher.matcher.add(
