@@ -236,7 +236,7 @@ class Matcher:
         ) 
 
         Matcher.dependencyMatcher.add(
-            "fot",
+            "fot_DM",
             fot_DM()
             
         )
@@ -306,6 +306,7 @@ class Matcher:
             "dir_lote": [" ".join(x) for x  in re.findall(REGEX_LOTE, text)],
             # "dir_lote_nro": [],
             "fot": [],
+            "fot_DM":[],
             "irregular": [],
             "irregular_DM":[],
             "pileta": [],

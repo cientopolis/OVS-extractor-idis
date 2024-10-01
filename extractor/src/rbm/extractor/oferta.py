@@ -125,7 +125,7 @@ class Oferta():
         return string.replace(",",".").replace("/","")
     
     def fot(self, predichos: list):
-        predichos = list(set(predichos["fot"]))
+        predichos = list(set(predichos["fot"]) or predichos("fot_DM"))
         veces_que_menciona_fot= self.fot_multiple(predichos)
         if (veces_que_menciona_fot == 1):
             result= max(predichos, key=len) if predichos else ""
