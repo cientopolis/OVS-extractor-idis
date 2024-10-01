@@ -76,7 +76,7 @@ def loteo_ph_DM() -> list:
     ]
 
 def frases_loteo_ph_PM() -> list:
-    frases = ["(en PH)","en PH","(PH)","se encuentra sujeta al Régimen de PH","(PH Cerrado)"]
+    frases = ["(en PH)","en PH","(PH)","sujeta al Régimen de PH","sujeto al Régimen de PH","(PH Cerrado)"]
     return frases
 
 def frases_not_loteo_ph_PM() -> list:
