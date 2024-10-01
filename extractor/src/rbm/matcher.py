@@ -6,7 +6,7 @@ from spacy.matcher import PhraseMatcher
 from src.rbm.patterns.urb_semicerrada import urb_semicerrada
 from src.rbm.patterns.barrio import barrio
 from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro #dir_lote_nro,
-from src.rbm.patterns.fot import fot
+from src.rbm.patterns.fot import fot,fot_DM
 from src.rbm.patterns.medidas import medidas
 from src.rbm.patterns.urb_cerrada import urb_cerrada,urb_cerrada_DM,frases_urb_cerrada_PM
 from src.rbm.patterns.posesion import posesion
@@ -19,6 +19,7 @@ from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina,frases_not_esquina
 from src.rbm.patterns.irregular import irregular,irregular_DM
 from src.rbm.patterns.frentes import frentes
+from src.rbm.patterns.multioferta import multioferta
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -193,13 +194,8 @@ class Matcher:
 
 
         Matcher.matcher.add(
-            "es_multioferta", [
-                [{"LOWER": {"IN": ["cada", "varios", "multiples", "múltiples"]}}, {"LOWER": {"IN": ["lotes", "lote", "terernos", "terreno", "parcela", "parcelas"]}}], #cada lote, varios lotes, multiples lotes
-                [{"POS":"NUM"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}}], #4 lotes
-                [{"POS": "NUM", "OP":"?"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}},{"OP":"{1,2}"}, {"LOWER": {"IN": ["venta","medidas"]}}], #lotes en venta, lotes a la venta, lotes de diferentes medidas
-                [{"LOWER": {"IN": ["lotes",  "terrenos"]}}, {"POS":"NUM"},{"LOWER": {"IN": ["x", "por"]}}], # lotes 10x30
-                [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}] #se venden juntos o separados
-            ]
+            "es_multioferta",
+            multioferta()
         )
 
         Matcher.matcher.add(
@@ -241,20 +237,8 @@ class Matcher:
 
         Matcher.dependencyMatcher.add(
             "fot",
-            patterns=[
-                [
-                    {
-                        "RIGHT_ID": "fot",
-                        "RIGHT_ATTRS": {"LOWER": {"IN": ["fot", "f.o.t"]}},
-                    },
-                    {
-                        "LEFT_ID": "fot",
-                        "REL_OP": ">",
-                        "RIGHT_ID": "num",
-                        "RIGHT_ATTRS": {"DEP": "nummod"},
-                    },
-                ]
-            ],
+            fot_DM()
+            
         )
         Matcher.dependencyMatcher.add("loteo_ph_DM",
             loteo_ph_DM()
