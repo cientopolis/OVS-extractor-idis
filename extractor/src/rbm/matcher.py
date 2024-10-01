@@ -13,7 +13,7 @@ from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM,frases_indiviso_PM
-from src.rbm.patterns.edificacion_monetizable import frases_PM, no_con_construccion_DM, no_mejora_country_DM, no_mejora_DM, mejora_posible_calle, posible_country, mejoras_country, mejorado, construccion, con_construccion
+from src.rbm.patterns.edificacion_monetizable import frases_PM, no_con_construccion_DM
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,frases_loteo_ph_PM,frases_not_loteo_ph_PM
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina,frases_not_esquina

@@ -254,4 +254,4 @@ class Oferta():
         return predichos["es_monetizable-con_construccion"] or predichos["es_monetizable-construccion"] 
 
     def posesion(self, predichos: list):
-        return True if predichos["posesion"] else ""
+        return True if predichos["otra_cosa"] else ""
