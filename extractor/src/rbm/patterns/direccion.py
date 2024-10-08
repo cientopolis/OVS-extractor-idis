@@ -1,3 +1,15 @@
+import os
+print(os.getcwd())  # Muestra el directorio de trabajo actual
+calles = {}
+with open("input/calles_amba.txt", "r") as file:
+    for row in file:
+        row = row.lower() #lo llevo a minusculas
+        row = row.rstrip() #saco el salto de línea
+        cantPalabras = len(row.split()) 
+        calles.setdefault(cantPalabras, []).append(row)
+
+# print(calles)
+# print(calles.keys())
 # import json
 
 # import os
@@ -6,19 +18,20 @@
 # with open("input/calles_bsas.json", "r") as file:
 #     dicc_calles = json.load(file)#con keys del 1 al 10 siempre
 
-# INICIO = []
-# MEDIO = []
-# MEDIO2 = []
-# MEDIO3 = []
-# MEDIO4 = []
-# FIN = []
-# for nombre in dicc_calles["6"]:
-#     INICIO.append(nombre.split()[0])
-#     MEDIO.append(nombre.split()[1])
-#     MEDIO2.append(nombre.split()[2])
-#     MEDIO3.append(nombre.split()[3])
-#     MEDIO4.append(nombre.split()[4])
-#     FIN.append(nombre.split()[5])
+INICIO = []
+MEDIO = []
+MEDIO2 = []
+MEDIO3 = []
+MEDIO4 = []
+FIN = []
+for nombre in calles[5]:
+    INICIO.append(nombre.split()[0])
+    MEDIO.append(nombre.split()[1])
+    MEDIO2.append(nombre.split()[2])
+    MEDIO3.append(nombre.split()[3])
+    FIN.append(nombre.split()[4])
+
+# print(calles[1])
 
  #los uso con LEMMA
 #calleSinonimos = [ "av", "calle", "Calle", "ruta", "Ruta", "avenida", "diagonal", "Diagonal", "dg", "Dg", "diag", "Diag"]
@@ -50,20 +63,25 @@ CALLE_SEGMENTO = ["bis", "Bis", "BIS"]  + LETRA_MAYUSCULA
 def dir_nro():
     return  list([ #direcciones numéricas con la altura únicamente 
                 # [
-                #     {"LOWER":{"IN":dicc_calles["1"]}},
+                #     {"LOWER": {"IN":CALLE_SINONIMOS}},
+                #     {"POS": "PUNCT", "OP":"?"},
+                #     {"LOWER":{"IN":calles[1]}},
 
                 #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
                 #     {"LIKE_NUM":True},
+                #     {"LOWER": "bis", "OP":"?"},
                 #     {"LOWER": {"NOT_IN": MEDIDAS}}
                 # ],
-                # [
-                #     {"LOWER":{"IN":INICIO}},
-                #     {"LOWER":{"IN":FIN}},
+                [
+                    {"LOWER": {"IN":CALLE_SINONIMOS}},
+                    {"POS": "PUNCT", "OP":"?"},
+                    {"LOWER":{"IN":INICIO}},
+                    {"LOWER":{"IN":FIN}},
 
-                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                #     {"LIKE_NUM":True},
-                #     {"LOWER": {"NOT_IN": MEDIDAS}}
-                # ],
+                    {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                    {"LIKE_NUM":True},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
+                ],
                 #  [
                 #     {"LOWER":{"IN":INICIO}},
                 #     {"LOWER":{"IN":MEDIO}},
@@ -73,65 +91,68 @@ def dir_nro():
                 #     {"LIKE_NUM":True},
                 #     {"LOWER": {"NOT_IN": MEDIDAS}}
                 # ],
+
+                ##esta es con la que estoy trabajando
                 #  [
                 #     {"LOWER":{"IN":INICIO}},
                 #     {"LOWER":{"IN":MEDIO}},
                 #     {"LOWER":{"IN":MEDIO2}},
-                #     {"LOWER":{"IN":MEDIO3}},
-                #     {"LOWER":{"IN":MEDIO4}},
-                #     {"LOWER":{"IN":FIN}},
+
+                #     {"ORTH":{"IN":FIN}},
 
                 #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
                 #     {"LIKE_NUM":True},
                 #     {"LOWER": {"NOT_IN": MEDIDAS}}
                 # ],
-                [
-                    # calle montevideo 412
-                    # calle montevideo n° 412
-                    {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": "PUNCT", "OP":"?"},
-                    {"POS": "PROPN", "OP":"?"},
-                    {"POS": "PUNCT", "OP":"?"},
-                    {"POS": "PROPN", "OP":"{1,3}"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
 
-                    {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                    {"LIKE_NUM":True},
-                    {"LOWER": {"NOT_IN": MEDIDAS}}
-                ],
-                [
-                    # calle 9 de julio 412
-                    # Av. de los quilmes n° 123
-                    {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": "PUNCT", "OP":"?"},
-                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
-
-                    {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                    {"LIKE_NUM":True},
-                    {"LOWER": {"NOT_IN": MEDIDAS}}
-                ],
-                [
-                    # moreno n° 123
-                    # moreno al 123
-                    # Av. De los Quilmes N° X
-                    {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": {"IN": ["PROPN", "ADP", "DET"]}, "OP":"{1,3}"},
-                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
-
-                    {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
-                    {"LIKE_NUM":True},
-                    {"LOWER": {"NOT_IN": MEDIDAS}}
-                ],
+                ## descomentar lo siguiente
                 # [
-                #     #9 n° 123
-                #     #9 al 123
+                #     # calle montevideo 412
+                #     # calle montevideo n° 412
                 #     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                #     {"POS": "NUM"},
+                #     {"POS": "PUNCT", "OP":"?"},
+                #     {"POS": "PROPN", "OP":"?"},
+                #     {"POS": "PUNCT", "OP":"?"},
+                #     {"POS": "PROPN", "OP":"{1,3}"},
                 #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+
+                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                #     {"LIKE_NUM":True},
+                #     {"LOWER": {"NOT_IN": MEDIDAS}}
+                # ],
+                # [
+                #     # calle 9 de julio 412
+                #     # Av. de los quilmes n° 123
+                #     {"LOWER": {"IN":CALLE_SINONIMOS}},
+                #     {"POS": "PUNCT", "OP":"?"},
+                #     {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
+
+                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                #     {"LIKE_NUM":True},
+                #     {"LOWER": {"NOT_IN": MEDIDAS}}
+                # ],
+                # [
+                #     # moreno n° 123
+                #     # moreno al 123
+                #     # Av. De los Quilmes N° X
+                #     {"LOWER": {"IN":CALLE_SINONIMOS}},
+                #     {"POS": {"IN": ["PROPN", "ADP", "DET"]}, "OP":"{1,3}"},
+                #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+
                 #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
                 #     {"LIKE_NUM":True},
                 #     {"LOWER": {"NOT_IN": MEDIDAS}}
                 # ],
+                # # [
+                # #     #9 n° 123
+                # #     #9 al 123
+                # #     {"LOWER": {"IN":CALLE_SINONIMOS}},
+                # #     {"POS": "NUM"},
+                # #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+                # #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
+                # #     {"LIKE_NUM":True},
+                # #     {"LOWER": {"NOT_IN": MEDIDAS}}
+                # # ],
             ])
 
 def dir_interseccion():
