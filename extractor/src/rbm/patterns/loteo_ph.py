@@ -2,38 +2,24 @@ numeros = ["uno","dos","tres","cuatro","cinco","seis","siete","ocho"]
 ph_similares = ["PH","ph","(PH)","(ph)","ph.","PH."]
 def loteo_ph_M() -> list:
     return list ( 
-            [
-                #[{"LOWER" : {"IN" : ph_similares}}], 
-
+            [                 
                 [{"LOWER" : "por"},{"LOWER" : "ph"}],
-
                 [{"LOWER" : "Lote"},{"LOWER" : "interno"},{"LOWER" : {"IN" : ph_similares}}],  #Lote interno (PH)
-
                 [{"LOWER" : "diferentes"},{"LOWER" : "medidas"},{"LOWER": "en"},{"LOWER": {"IN" : ph_similares}}], # diferentes medidas en ph
-
-                [{"LOWER":"compuesto"},{"LOWER" : {"IN" :["por","de"]}},{"LOWER" : {"IN" :numeros}},{"LOWER": {"IN" : ph_similares}}], #compuesto por/de "numero" ph
-                
-                [{"LOWER":"subdivididos"},{"LOWER" : {"IN" :["por","en"]}},{"LOWER":"ph"}],#subdivididos por/en ph
-                
-                [{"LOWER":"Lote"},{"LOWER" : "interno("},{"LOWER" : {"IN" :ph_similares}}],# lote interno (PH)
-
-                [{"LOWER":"terreno"},{"LOWER" : "en"},{"LOWER":"ph"}],#terreno en ph
-                
-                [{"LOWER":"lote"},{"LOWER":"interno"},{"LOWER" : {"IN" :ph_similares}}],#lote interno ph/(ph)
-
-                [{"LOWER":"ph"},{"LOWER" : "aprobado"}], #ph aprobado
-
-                [{"LOWER":"lotes"},{"LOWER" : "en"},{"LOWER" : "venta"},{"LOWER" : "en"},{"LOWER" : "ph"}],#lotes en venta en ph
-
+                [{"LOWER":"ph"},{"LOWER" : "aprobado"}], #ph aprobado                
                 [{"LOWER":"terreno"},{"LOWER" : "tipo","OP" : "?"},{"LOWER" : "ph"}],#terreno tipo (opcional) ph
-
-                [{"LOWER":{"IN" :["lote","lotes"]}},{"LOWER" : "en", "OP" : "?" },{"LOWER" : "ph"}], #lote/lotes en(opcional) ph
-
-                [{"LOWER" : {"IN" :["régimen","regimen"]}},{"LOWER" : "ph"}], #régimen/regimen ph
-            
+                [{"LOWER":{"IN" :["lote","lotes"]}},{"LOWER" : "en", "OP" : "?" },{"LOWER" : "ph"}], #lote/lotes en(opcional) ph                
+                # POSIBLES MEJORAS
+                #[{"LOWER":"lotes"},{"LOWER" : "en"},{"LOWER" : "venta"},{"LOWER" : "en"},{"LOWER" : "ph"}],#lotes en venta en ph
+                #[{"LOWER" : {"IN" : ph_similares}}],
+                #[{"LOWER" : {"IN" :["régimen","regimen"]}},{"LOWER" : "ph"}], #régimen/regimen ph
+                #[{"LOWER":"compuesto"},{"LOWER" : {"IN" :["por","de"]}},{"LOWER" : {"IN" :numeros}},{"LOWER": {"IN" : ph_similares}}], #compuesto por/de "numero" ph # linea referencia1                
+                #[{"LOWER":"subdivididos"},{"LOWER" : {"IN" :["por","en"]}},{"LOWER":"ph"}],#subdivididos por/en ph                
+                #[{"LOWER":"Lote"},{"LOWER" : "interno("},{"LOWER" : {"IN" :ph_similares}}],# lote interno (PH)
+                #[{"LOWER":"terreno"},{"LOWER" : "en"},{"LOWER":"ph"}],#terreno en ph        
+                #[{"LOWER":"lote"},{"LOWER":"interno"},{"LOWER" : {"IN" :ph_similares}}],#lote interno ph/(ph)            
             ] 
     )
-
 def loteo_ph_DM() -> list:
     return [   
             [   
@@ -74,11 +60,9 @@ def loteo_ph_DM() -> list:
                 }              
             ]
     ]
-
 def frases_loteo_ph_PM() -> list:
     frases = ["(en PH)","en PH","(PH)","se encuentra sujeta al Régimen de PH","(PH Cerrado)"]
     return frases
-
 def frases_not_loteo_ph_PM() -> list:
     not_frases = ["departamento en ph.-en","APTO SUBDIVISIÓN EN PH","Posibilidad de dividir en PH","LOTE DIVISIBLE PH","LOTE EN L COMPUESTO POR TRES PH","posible ph",]
     return not_frases
