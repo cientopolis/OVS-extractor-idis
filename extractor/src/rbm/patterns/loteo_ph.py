@@ -1,4 +1,4 @@
-numeros = ["uno","dos","tres","cuatro","cinco","seis","siete","ocho"]
+#numeros = ["uno","dos","tres","cuatro","cinco","seis","siete","ocho"]
 ph_similares = ["PH","ph","(PH)","(ph)","ph.","PH."]
 def loteo_ph_M() -> list:
     return list ( 
