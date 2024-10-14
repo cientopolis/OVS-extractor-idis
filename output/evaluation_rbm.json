@@ -1,13 +1,13 @@
 [
     {
         "name": "direccion",
-        "tp": 84,
-        "fp": 22,
-        "fn": 47,
-        "tn": 168,
-        "precision": 0.7924528301886793,
-        "recall": 0.6412213740458015,
-        "f1": 0.7088607594936709,
+        "tp": 95,
+        "fp": 24,
+        "fn": 35,
+        "tn": 167,
+        "precision": 0.7983193277310925,
+        "recall": 0.7307692307692307,
+        "f1": 0.7630522088353414,
         "error": [
             {
                 "context": "Te presentamos un hermoso chalet de 3 ambientes con gran parque, ubicado en La Primavera entre Zeballos y Godoy Cruz, en el barrio Las Dalias, próximo a Parque Camet. Esta propiedad posee un amplio y muy cómodo living con hogar y entrepiso con playroom con vista hacia el living. La cocina comedor se encuentra mediante barra desayunadora, cuenta con doble ventana que le otorga mucha luminosidad, mesada en L y espacio para lavarropas. Los dos dormitorios tienen amplios placares con bauleras. El baño es completo, con ducha y revestimientos cerámicos. Además, cuenta con un gran parque en el cual dispone de un quincho semicubierto, pileta y entrada pasante para autos. El chalet posee todos los servicios y se encuentra en buen estado general. Tiene paredón perimetral. El lote tiene 15 metros de frente por 26 metros de fondo, con una superficie total de 390 m2.",
@@ -75,11 +75,6 @@
                 "expected": "Soler al 700"
             },
             {
-                "context": "Casa ideal inversores en construcción!!! Inmejorable casa en la calle Sgto. Cabral al 560, Lagos de Canning con $ de expensas (aprox). En su totalidad mide 670 m2, de los cuales 290 m2 son cubiertos y 380 m2 descubiertos. Características: altura 6 metros sin columnas. Portón: 4.80 mts. alto y 4.50 mts. ancho. Lote: 10 x 30. Cubiertos: 190 m2. Fuerza motriz. FOS 0.60. FOT 1.20.",
-                "actual": "",
-                "expected": "calle Sgto. Cabral al 560"
-            },
-            {
                 "context": "Sobre Ruta 58 km 16 en Barrio San Lucas. En venta esté hermoso lote de 1112 m2 de los más grandes del barrio. Medidas exactas: Frente 43 mts. Lado izquierdo 40 mts. Lado derecho 49 mts y fondo de 15 mts.",
                 "actual": "",
                 "expected": "Ruta 58 km 16"
@@ -115,24 +110,9 @@
                 "expected": "José Indart entre Ocampo y Perón"
             },
             {
-                "context": "Sobre la calle Lope de Vega al 2600 frente al Club de Golf San Martín y a cinco cuadras de Gral Paz, encontramos este lote irregular de 10 metros al frente y 11.91 al fondo y de 48 metros en uno de sus lados en tanto que el restante asciende a 53 metros. Buena ubicación y excelentes medidas.",
-                "actual": "",
-                "expected": "calle Lope de Vega al 2600"
-            },
-            {
                 "context": "Importante lote ubicado en excelente esquina de La Plata, con un superficie total de 1975 m2, con medidas de 32.91 m2 sobre calle 19 y 60.00 sobre calle 36. Zonificación UC/3, con un FOT de 5135 m2. El lote posee un total de 450 m2 edificados.",
                 "actual": "",
                 "expected": "calle 19 y calle 36"
-            },
-            {
-                "context": "Excelente terreno de 8.66 mts de frente por 43.50 mts de fondo, sobre Av. Manuel Belgrano al 6200. Ideal inversor. El FOT es de 2.5.",
-                "actual": "",
-                "expected": "Av. Manuel Belgrano al 6200"
-            },
-            {
-                "context": "Hermoso lote de 1098 m2, ubicado en una excelente zona del Barrio Las Lomas de San Isidro. Av. Fleming 2800. Próximo al hipodromo de San Isidro. FOS 0.4: 439.2 m2. FOT 0.8: 878.4 m2. Uso exclusivo vivienda Unifamiliar!",
-                "actual": "",
-                "expected": "Av. Fleming 2800"
             },
             {
                 "context": "Lote de terreno irregular en excelente ubicación. 2° Rivadavia esquina Navarro. Castelar Norte. Medidas: lote irregular: 18 x 24. Superficie total: 353.89 m2. Valor: U$s 150.000.",
@@ -150,16 +130,6 @@
                 "expected": "520 y 172 lote e manzana 161-w"
             },
             {
-                "context": "Sobre la calle Lope de Vega al 2600 frente al Club de Golf San Martín y a cinco cuadras de Gral Paz, encontramos este lote irregular de 10 metros al frente y 11,91 al fondo y de 48 metros en uno de sus lados en tanto que el restante asciende a 53 metros. Buena ubicación y excelentes medidas.",
-                "actual": "",
-                "expected": "calle Lope de Vega al 2600"
-            },
-            {
-                "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
-                "actual": "",
-                "expected": "Av. De los Quilmes N° 1540/1550"
-            },
-            {
                 "context": "Lotes en venta en Club de Campo Estancia Chica; el emprendimiento tiene como objetivo la realización de un barrio privado como complemento del complejo deportivo y recreativo \"Estancia Chica\".Muy bien ubicado, comprendido entre la ruta 36, calle 498, calle 202, diagonal 197 y calle 476; con fácil accesibilidad a La Plata (centro), City Bell y Capital Federal, alejado del tráfico y el ruido de la ciudad; un lugar para disfrutar en familia con grandes espacios recreativos y deportivos.EL PROYECTO El loteo a urbanizar consta de 742 lotes, de 20 metros de ancho por 30 metros de profundidad cada uno, con una superficie de 600 metros cuadrados. Se trata de un área de 88 hectáreas que en forma de herradura abraza y rodea al casco de Estancia Chica.URBANIZACIÓN Se comercializan 50 lotes en la 1° Etapa de PREVENTA, dispuestos a la derecha del acceso de calle 202 y 498. Ya se están realizando los primeros trabajos de desmalezado, trazado y consolidación de los lotes y calles que conformarán la primera etapa, red de agua potable, tendido eléctrico y luminarias de espacios comunes, alambrado perimetral y construcción de los pórticos de acceso. La siguiente etapa de obras de infraestructura comprende el desarrollo del sistema de desagües pluviales a cielo abierto, provisión de internet por fibra óptica, el sistema de provisión red cloacal, cumpliendo así con las requisitorias para el desarrollo de obras por parte de los entes gubernamentales.En la segunda etapa se comercializarán y urbanizarán los 398 lotes que se encuentran a la derecha del izquierda de calle 202 y 498, paralelo al Diagonal 197 y calle 476.Lotes propios. Escritura Inmediata dentro de los 60 días de conformada la reserva. Escribano Designado",
                 "actual": "Diagonal 197 y calle 476.Lotes",
                 "expected": ""
@@ -175,19 +145,9 @@
                 "expected": "San Martin y Junín"
             },
             {
-                "context": "VENTA TERRENO CARLOS PAZ SOBRE RUTA 38 1489 METROS. REMAX ofrece a la venta terreno ubicado sobre Bv. Sarmiento al 2500 de 1489 metros. Caracteristicas: 1489 metros con leve pendiente positiva generando gran vista a  la ciudad y el lago. 32 metros de frente. Servicios de agua y luz. Ideal para complejos de cabañas o comerciales al estar sobre ruta. Zona de muchos comercios como karting, museo de tractores entre otros. Cuenta con escritura. LLAMANOS NO TE PIERDAS ESTA OPORTUNIDAD !!",
-                "actual": "",
-                "expected": "Bv. Sarmiento al 2500"
-            },
-            {
                 "context": "VENTA LOTE BARRIO BELVEDERE CAPITAN BERMUDEZ. VENTA LOTE BARRIO ABIERTO BELVEDERE. LOTE DE 250M2, 10 METROS DE FRENTE POR 25 METROS FONDO. UBICADO EN EL BARRIO BELVEDERE(CAPITÁN BERMUDEZ), EN AVENIDA ÁNGEL MARINO GERVASO 550(ACESSO DESDE AUTOPISTA) MANZANA J LOTE 94.\r\nCUENTA CON BOULEVARD CENTRAL ADOQUINADO. TODAS SUS CALLES CON CORDON CUNETA. ACESSO PRINCIPAL PAVIMENTADO.\r\nSERVICIOS: RED LUZ ELECTRICA. ALUMBRADO PUBLICO. RED DE GAS NATURAL. RED DE AGUA POTABLE. LISTO PARA ESCRITURAR",
                 "actual": "MANZANA J LOTE 94",
                 "expected": "AVENIDA ÁNGEL MARINO GERVASO 550 MANZANA J LOTE 94"
-            },
-            {
-                "context": "En la calle Bereterbide al 1200, nos encontramos con la oportunidad de adquirir \"en modalidad pre-venta\" un excelente departamento actualmente en construcción, como parte del Proyecto de Complejo \" Altos de Bereterbide\", el cual cuenta con departamentos en Primer piso y PB. El plazo estimado de entrega es de 6 a 8 meses, a contar desde Octubre 2026. Esta unidad funcional de 42,5m2 desarrollada por completo en primer piso, consta de comedor con cocina integrada, un baÃ±o completo y una habitaciÃ³n. Tiene todos los servicios y cuenta con cochera. El pago puede hacerse con una entrega inicial y financiación del saldo de precio hasta en 12 cuotas, para que te mudes al lugar de tu sueÃ±os!!!! No dudes en consultar estamos para ayudarte a encontrar tu Mejor Lugar…",
-                "actual": "",
-                "expected": "calle Bereterbide al 1200"
             },
             {
                 "context": "UBICADO EN BARRIO FÉLIX U. CAMET, SOBRE CALLE DIAGONAL MAR AUSTRAL ENTRE CALLE CERRO ACONQUIJA (EX 29) Y CERRO FIAMBALÁ (EX 31). CUENTA CON SERVICIOS DE LUZ; GAS; RED CLOACAL Y RECOLECCIÓN DE RESIDUOS. SECTOR EN EXPANSIÓN. ACEPTA PERMUTA POR VEHICULO EN MUY BUEN ESTADO. ESCUCHA PROPUESTAS CON UN PORCENTAJE DE FINANCIACIÓN",
@@ -245,13 +205,8 @@
                 "expected": "54 y 23. LOTE 1;LOTE 2"
             },
             {
-                "context": "Lote de 10 x 30 a metros de Av. Mosconi con construccion precaria apto varios destinos. Calle Laprida al 3600. Contactanos para más info ",
-                "actual": "",
-                "expected": "Calle Laprida al 3600"
-            },
-            {
                 "context": "Lote con mejoras ubicado en la calle Rodofo Walsh 208 entre Magrasi y coronel de marina David Jewett. A una cuadra de la ruta N 11 y balnearios. Excelente ubicación. Coordneadas -38. , - 57.55112 Lote de 15x22,50 con construcción a terminar (son dos casas de 3 ambientes cada una en planta baja) Superficie del terreno 377. GASTOS A CARGO DEL COMPRADOR (Honorarios inmobiliarios y escritura)",
-                "actual": "",
+                "actual": "calle Rodofo Walsh 208",
                 "expected": "calle Rodolfo Walsh 208 entre Magrasi y coronel de marina David Jewett"
             },
             {
@@ -300,11 +255,6 @@
                 "expected": "calle 138 Bis entre 506 y 507"
             },
             {
-                "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "",
-                "expected": "calle Entre Ríos al 300"
-            },
-            {
                 "context": "Excelente lote interno de 1006m2 parquizado con sistema de riego, gramma bahiana y una gran arboleda desarrollada.  San Francisco Club de Campo se encuentra ubicado a la altura del km 59 de Panamericana Ramal Pilar.  Cuenta con una superficie total de 68.7 hectáreas, con 316 lotes con una superficie promedio por lote de 1.100m2, 25 hectáreas de zonas verdes, un lago y una importante infraestructura social y deportiva brindando un entorno muy familiar.  Cuenta con un importante club house, 3 canchas de tenis de polvo de ladrillo, 1 cancha de fútbol 11, 2 canchas de fútbol 7, 1 cancha de hockey, 2 piletas de natación, gimnasio totalmente equipado, quincho con parrilla, plaza de juegos para niños.  Servicios: - Electricidad- Gas- Teléfono- Internet- Recolección de residuos- Seguridad perimetral electrónica las 24 horas El club cuenta con una añosa arboleda en un entorno natural propio de la zona.\r\n",
                 "actual": "",
                 "expected": "km 59 de Panamericana Ramal Pilar"
@@ -325,6 +275,11 @@
                 "expected": "calle Funes y Av, Colon"
             },
             {
+                "context": "VENTA EN BLOCK EDIFICIO SIN SUBDIVISION SOBRE LOTE PROPIO DE 8.66X26 METROS. HOY 6 UNIDADES Y TERRAZA. SIN EXPENSAS. TECHO INTEGRAMENTE DE LOSA (POSIBILIDAD DE TERRAZA) EN PLANTA BAJA: - PH (UNIDAD 1) 2 AMBIENTES SOBRE CALLE ALDECOA. FRENTE. ENTRADA INDEPENDIENTE.  COCHERA CUBIERTA. PATIO SEMICUBIERTO. BAñO COMPLETO. COCINA INTEGRADA. - PH (UNIDAD 2) 3 AMBIENTES SOBRE CALLE ALDECOA. TODO AL FRENTE. ENTRADA INDEPENDIENTE. PATIO CON PARRILLA Y LAVADERO. BAñO CON DUCHA. COCINA INTEGRADA. - PH (UNIDAD 3) 3 AMBIENTES SOBRE CALLE FIORITO. FRENTE. AMPLIO LIVING. BAñO COMPLETO. COCINA INTEGRADA. LAVADERO EN PATIO. EN 1 PISO POR ESCALERA: - PH (UNIDAD 4) 4 AMBIENTES. FRENTE EN ESQUINA. AMPLIO LIVING. BAñO COMPLETO. COCINA INTEGRADA. - PH (UNIDAD 5) 2 AMBIENTES. FRENTE. BAñO COMPLETO. COCINA INTEGRADA. - PH (UNIDAD 6) 3 AMBIENTES. FRENTE. POSIBILIDAD DE BALCON INTERNO. BAñO COMPLETO. COCINA INTEGRADA.  ESQUINA ALDECOA (A 1 CUADRA DE AV. BERNARDINO RIVADAVIA - A 5 DE AV. HIPOLITO YRIGOYEN) AVELLANEDA  *FichaBrick=1028803*",
+                "actual": "AV. BERNARDINO RIVADAVIA A 5",
+                "expected": ""
+            },
+            {
                 "context": "LOTE DOBLE FRENTE en Ramos Mejía. Excelente Terreno de 17 mts. de Frente x 40 mts. de Fondo. Posibilidad de venta por fracción de 8,66 x 40 mts. La propiedad se encuentra ubicada sobre la calle 11 de Septiembre al 300, en el barrio de Ramos Mejía. A metros de la Av. San Martín. Ideal para emprendimiento de Departamentos o Duplex/PH. Posibilidad de tomar menor valor en parte de pago. ",
                 "actual": "",
                 "expected": "calle 11 de Septiembre al 300"
@@ -333,11 +288,6 @@
                 "context": "Vendo,terreno de 10x 30mts, con bases de 7 x 11mts.servicio de luz y agua.escritura en condominio. barrio cerrado siempre verde.direccion 602 y 22.zona de casa quinta en pleno crecimiento.ppsible financiación y permuta.",
                 "actual": "",
                 "expected": "602 y 22"
-            },
-            {
-                "context": "Se vende! RETASADO IDEAL EMPRENDIMIENTO Amplia propiedad ubicada en la calle San Martin 622, Bernal centro. Medidas: 625 m2 cubiertos Lote de 11,60 x 59 Listo para tomar posesión y escriturar Consulte para más información o para visitar la propiedad",
-                "actual": "",
-                "expected": "calle San Martin 622"
             },
             {
                 "context": "486 Y 147 LOTEO FINCAS GORINA NUEVO EMPRENDIMIENTO. Lote nº1, de 633m2 de la manzana 100 . Servicios: luz, agua corriente por la cooperativa Cosego. Luminaria publica, calles con mejorado. Planos Aprobado (municipal y geodesia) UR6. Escritura y posesión inmediata. Fácil acceso a camino General Belgrano y a solo 10 minutos a la ciudad de La Plata. Lotes disponibles 990m2 - 1062",
@@ -407,13 +357,13 @@
     },
     {
         "name": "medidas",
-        "tp": 147,
-        "fp": 20,
+        "tp": 146,
+        "fp": 21,
         "fn": 36,
         "tn": 118,
-        "precision": 0.8802395209580839,
-        "recall": 0.8032786885245902,
-        "f1": 0.84,
+        "precision": 0.874251497005988,
+        "recall": 0.8021978021978022,
+        "f1": 0.836676217765043,
         "error": [
             {
                 "context": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
@@ -596,6 +546,11 @@
                 "expected": "20 x 30"
             },
             {
+                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
+                "actual": "20 x 48;15 x 30",
+                "expected": "15 x 30;20 x 48"
+            },
+            {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
                 "actual": "32.25 x 40.00",
                 "expected": "32.25 x 40.00 x 26.32"
@@ -646,13 +601,8 @@
                 "expected": "20 x 40"
             },
             {
-                "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 55;12 x 40;12 x 52;12 x 41",
-                "expected": "12 x 55;12 x 41;12 x 40;12 x 52"
-            },
-            {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "24 x 30;15 x 28;24 x 45;10 x 27;15 x 32;12 x 30;15 x 40;15 x 55;10 x 21;10 x 32;14 x 30",
+                "actual": "15 x 40;24 x 30;10 x 32;10 x 21;15 x 28;15 x 32;10 x 27;12 x 30;14 x 30;15 x 55;24 x 45",
                 "expected": "10 x 21.89"
             },
             {
@@ -694,6 +644,11 @@
                 "context": "Boero Propiedades vende: Lote dentro de barrio cerrado. Nuevo Loteo en La Plata (Calle 131 y 85)\r\n- A 10 del centro, acceso por asfalto\r\n-Varias familias ya viviendo y otras en proceso de construcción.\r\n-FINANCIACIóN EN PESOS con anticipo mínimo y hasta 48 cuotas\r\n- Vehículos como parte de pago\r\nLotes desde 250 a 330 m2 (promedio de 10 x 30 mts)\r\n- Lotes ESCRITURABLES.\r\n- Entrega de posesión inmediata.\r\n- Lotes dentro de 4 mini barrios cerrados delimitados con alambrado olímpico y portón automático exclusivo para los propietarios.",
                 "actual": "10 x 30",
                 "expected": ""
+            },
+            {
+                "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
+                "actual": "15 x 35;12 x 25;12 x 30",
+                "expected": "12 x 25;15 x 35;12 x 30"
             }
         ]
     },

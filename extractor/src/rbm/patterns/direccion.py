@@ -72,16 +72,16 @@ def dir_nro():
                 #     {"LOWER": "bis", "OP":"?"},
                 #     {"LOWER": {"NOT_IN": MEDIDAS}}
                 # ],
-                [
-                    {"LOWER": {"IN":CALLE_SINONIMOS}},
-                    {"POS": "PUNCT", "OP":"?"},
-                    {"LOWER":{"IN":INICIO}},
-                    {"LOWER":{"IN":FIN}},
+                # [
+                #     {"LOWER": {"IN":CALLE_SINONIMOS}},
+                #     {"POS": "PUNCT", "OP":"?"},
+                #     {"LOWER":{"IN":INICIO}},
+                #     {"LOWER":{"IN":FIN}},
 
-                    {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                    {"LIKE_NUM":True},
-                    {"LOWER": {"NOT_IN": MEDIDAS}}
-                ],
+                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                #     {"LIKE_NUM":True},
+                #     {"LOWER": {"NOT_IN": MEDIDAS}}
+                # ],
                 #  [
                 #     {"LOWER":{"IN":INICIO}},
                 #     {"LOWER":{"IN":MEDIO}},
@@ -105,54 +105,54 @@ def dir_nro():
                 #     {"LOWER": {"NOT_IN": MEDIDAS}}
                 # ],
 
-                ## descomentar lo siguiente
+                # descomentar lo siguiente
+                [
+                    # calle montevideo 412
+                    # calle montevideo n° 412
+                    {"LOWER": {"IN":CALLE_SINONIMOS}},
+                    {"POS": "PUNCT", "OP":"?"},
+                    {"POS": "PROPN", "OP":"?"},
+                    {"POS": "PUNCT", "OP":"?"},
+                    {"POS": "PROPN", "OP":"{1,3}"},
+                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+
+                    {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                    {"LIKE_NUM":True},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
+                ],
+                [
+                    # calle 9 de julio 412
+                    # Av. de los quilmes n° 123
+                    {"LOWER": {"IN":CALLE_SINONIMOS}},
+                    {"POS": "PUNCT", "OP":"?"},
+                    {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
+
+                    {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
+                    {"LIKE_NUM":True},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
+                ],
+                [
+                    # moreno n° 123
+                    # moreno al 123
+                    # Av. De los Quilmes N° X
+                    {"LOWER": {"IN":CALLE_SINONIMOS}},
+                    {"POS": {"IN": ["PROPN", "ADP", "DET"]}, "OP":"{1,3}"},
+                    {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
+
+                    {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
+                    {"LIKE_NUM":True},
+                    {"LOWER": {"NOT_IN": MEDIDAS}}
+                ],
                 # [
-                #     # calle montevideo 412
-                #     # calle montevideo n° 412
+                #     #9 n° 123
+                #     #9 al 123
                 #     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                #     {"POS": "PUNCT", "OP":"?"},
-                #     {"POS": "PROPN", "OP":"?"},
-                #     {"POS": "PUNCT", "OP":"?"},
-                #     {"POS": "PROPN", "OP":"{1,3}"},
+                #     {"POS": "NUM"},
                 #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
-
-                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                #     {"LIKE_NUM":True},
-                #     {"LOWER": {"NOT_IN": MEDIDAS}}
-                # ],
-                # [
-                #     # calle 9 de julio 412
-                #     # Av. de los quilmes n° 123
-                #     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                #     {"POS": "PUNCT", "OP":"?"},
-                #     {"POS": {"IN": ["PROPN","NUM"]}},{"POS": {"IN":["ADP", "DET"]}},{"POS": "PROPN", "OP":"{0,1}"},
-
-                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                #     {"LIKE_NUM":True},
-                #     {"LOWER": {"NOT_IN": MEDIDAS}}
-                # ],
-                # [
-                #     # moreno n° 123
-                #     # moreno al 123
-                #     # Av. De los Quilmes N° X
-                #     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                #     {"POS": {"IN": ["PROPN", "ADP", "DET"]}, "OP":"{1,3}"},
-                #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
-
                 #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
                 #     {"LIKE_NUM":True},
                 #     {"LOWER": {"NOT_IN": MEDIDAS}}
                 # ],
-                # # [
-                # #     #9 n° 123
-                # #     #9 al 123
-                # #     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                # #     {"POS": "NUM"},
-                # #     {"ORTH": {"IN": CALLE_SEGMENTO}, "OP": "?"},
-                # #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}},
-                # #     {"LIKE_NUM":True},
-                # #     {"LOWER": {"NOT_IN": MEDIDAS}}
-                # # ],
             ])
 
 def dir_interseccion():
