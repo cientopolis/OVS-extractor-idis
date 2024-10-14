@@ -96,4 +96,6 @@ def frentes() -> list :
         ]    
     ] 
 )
-   
+def frases_frentes_PM() -> list:
+    frases = ["LOTE DOBLE FRENTE","terreno doble frente","LOTE TRIPLE FRENTE","lote con salida a 2 calles.","Doble frente"]
+    return frases   

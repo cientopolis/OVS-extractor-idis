@@ -18,7 +18,7 @@ from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,frases_loteo_ph_PM,
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina,frases_not_esquina
 from src.rbm.patterns.irregular import irregular,irregular_DM
-from src.rbm.patterns.frentes import frentes
+from src.rbm.patterns.frentes import frentes,frases_frentes_PM
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -68,6 +68,12 @@ class Matcher:
         patterns = [NLP(text) for text in terms]
         Matcher.phraseMatcher.add(
             "frases_indiviso_PM",patterns
+        )
+
+        terms = frases_frentes_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_frentes_PM",patterns
         )
 
 
@@ -284,6 +290,7 @@ class Matcher:
             "barrio": [],
             "esquina": [],
             "frentes": [],
+            "frases_frentes_PM":[],
             "urb_cerrada": [],
             "urb_cerrada_DM":[],
             "frases_urb_cerrada_PM":[],    

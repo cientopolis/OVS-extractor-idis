@@ -4,14 +4,14 @@ from spacy.matcher import PhraseMatcher
 
 nlp = spacy.load("es_core_news_lg")
 
-description = "137 Y 90 LOTE EN VENTA, BARRIO PRIVADO FINCAS DE DUGGAN, 800 m2, Ubicado en la etapa 2, esta se ecuentra completamente desarrollada y el lote es el único que queda en este sector. Plano PH aprobado.  SERVICIOS E INFRAESTRUCTURA:  • Seguridad privada en accesos, y rondines por el barrio las 24 hs. de los 365 días del año, a lo que se le adiciona un puesto de control de la policía bonaerense en la esquina del barrio.  • Sala de control para monitoreo de imágenes.  • Sistema de control de acceso y egreso con llave magnética personalizada.  • Cerco olímpico perimetral.  • Alumbrado de calles.  • Servicios por tendido subterráneo:  >  Red de energía eléctrica.  >  Red de fibra óptica para Internet de alta velocidad, telefonía y televisión.  >  Red de agua corriente.  >  Red de gas natural.  "
+description = "LOTE DOBLE FRENTE en Ramos Mejía. Excelente Terreno de 17 mts. de Frente x 40 mts. de Fondo. Posibilidad de venta por fracción de 8,66 x 40 mts. La propiedad se encuentra ubicada sobre la calle 11 de Septiembre al 300, en el barrio de Ramos Mejía. A metros de la Av. San Martín. Ideal para emprendimiento de Departamentos o Duplex/PH. Posibilidad de tomar menor valor en parte de pago. "
 
 doc = nlp(description)
 
 matcher = PhraseMatcher(nlp.vocab,attr= "LOWER")
 
 # Lista de frases a matchear
-frases = ["próximo a la esquina","un puesto de control de la policía bonaerense en la esquina del barrio","puesto de control de la policía en la esquina"]
+frases = ["LOTE DOBLE FRENTE","terreno doble frente","LOTE TRIPLE FRENTE","lote con salida a 2 calles."]
 
 # Convertir cada frase a un objeto Doc usando nlp
 patterns = [nlp(frase) for frase in frases]
