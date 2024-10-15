@@ -161,7 +161,7 @@ class Oferta():
 
 
     def frentes(self, predichos: list):
-        predichos= predichos["frentes"]
+        predichos= predichos["frentes"] or predichos["frases_frentes_PM"]
         frentes_en_numeros = []
         for match in predichos:
             contiene_2 = self.__contiene_dos(match.lower())
