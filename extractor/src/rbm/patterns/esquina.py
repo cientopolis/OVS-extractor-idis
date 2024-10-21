@@ -1,11 +1,11 @@
-sinonmios_esquina = ["esq.","esq","esqui","ochava","esquin",]
+sinonimos_esquina = ["esq.","esq","esqui","ochava","esquin",]
 
 
 def esquina() -> list:
     return list ( 
     [
         [{"LOWER": "esquina"}],
-        [{"LOWER" : {"IN" : sinonmios_esquina}}]
+        [{"LOWER" : {"IN" : sinonimos_esquina}}]
     ]
 )
 

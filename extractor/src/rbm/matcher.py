@@ -5,20 +5,21 @@ from spacy.matcher import Matcher as MatcherSpacy
 from spacy.matcher import PhraseMatcher
 from src.rbm.patterns.urb_semicerrada import urb_semicerrada
 from src.rbm.patterns.barrio import barrio
-from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro
-from src.rbm.patterns.fot import fot
+from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro #dir_lote_nro,
+from src.rbm.patterns.fot import fot,fot_DM
 from src.rbm.patterns.medidas import medidas
 from src.rbm.patterns.urb_cerrada import urb_cerrada,urb_cerrada_DM,frases_urb_cerrada_PM
 from src.rbm.patterns.posesion import posesion
 from src.rbm.patterns.preventa import asegurados,cuotas,descartar,fecha,posibles
 from src.rbm.patterns.a_demoler import asegurado, ideal
 from src.rbm.patterns.indiviso import indiviso_M,indiviso_DM,frases_indiviso_PM
-from src.rbm.patterns.edificacion_monetizable import construccion, mejorado, mejoras_country
+from src.rbm.patterns.edificacion_monetizable import frases_PM, no_con_construccion_DM, no_mejora_country_DM, no_mejora_DM, mejora_posible_calle, posible_country, mejoras_country, mejorado, construccion, con_construccion
 from src.rbm.patterns.loteo_ph import loteo_ph_M,loteo_ph_DM,frases_loteo_ph_PM,frases_not_loteo_ph_PM
 from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
-from src.rbm.patterns.esquina import esquina,frases_not_esquina
+from src.rbm.patterns.esquina import esquina,frases_not_esquina,frases_not_esquina
 from src.rbm.patterns.irregular import irregular,irregular_DM
 from src.rbm.patterns.frentes import frentes,frases_frentes_PM
+from src.rbm.patterns.multioferta import multioferta
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -68,6 +69,19 @@ class Matcher:
         patterns = [NLP(text) for text in terms]
         Matcher.phraseMatcher.add(
             "frases_indiviso_PM",patterns
+        )
+
+        terms = frases_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "no_construccion-PM", patterns
+        )
+
+        #agrego phrasematcher asociado a patron esquina
+        terms = frases_not_esquina()
+        patterns = [NLP(text)for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_not_esquina",patterns
         )
 
         terms = frases_frentes_PM()
@@ -121,6 +135,10 @@ class Matcher:
             "dir_entre", #dirrecciones platenses + no platenses y direcciones que en el nombre ponen numeros -> los casos posibles son muchisimos, por eso solo escribo los patrones que veo, por falta de tiempo
             dir_entre()
         )
+        # Matcher.matcher.add(
+        #     "dir_lote_nro", #dirrecciones platenses + no platenses y direcciones que en el nombre ponen numeros -> los casos posibles son muchisimos, por eso solo escribo los patrones que veo, por falta de tiempo
+        #     dir_lote_nro()
+        # )
         Matcher.matcher.add(
             "dir_lote", 
             dir_lote()
@@ -182,13 +200,8 @@ class Matcher:
 
 
         Matcher.matcher.add(
-            "es_multioferta", [
-                [{"LOWER": {"IN": ["cada", "varios", "multiples", "múltiples"]}}, {"LOWER": {"IN": ["lotes", "lote", "terernos", "terreno", "parcela", "parcelas"]}}], #cada lote, varios lotes, multiples lotes
-                [{"POS":"NUM"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}}], #4 lotes
-                [{"POS": "NUM", "OP":"?"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}},{"OP":"{1,2}"}, {"LOWER": {"IN": ["venta","medidas"]}}], #lotes en venta, lotes a la venta, lotes de diferentes medidas
-                [{"LOWER": {"IN": ["lotes",  "terrenos"]}}, {"POS":"NUM"},{"LOWER": {"IN": ["x", "por"]}}], # lotes 10x30
-                [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}] #se venden juntos o separados
-            ]
+            "es_multioferta",
+            multioferta()
         )
 
         Matcher.matcher.add(
@@ -203,32 +216,35 @@ class Matcher:
             "es_monetizable-mejoras_country", mejoras_country()
         )
 
+        Matcher.matcher.add(        
+            "es_monetizable-con_construccion", con_construccion()
+        )
+
+        Matcher.matcher.add(
+            "mejora_posible_calle", mejora_posible_calle()
+        )
+
+        Matcher.matcher.add(
+            "posible_country", posible_country()
+        )
+
+
         Matcher.matcher.add(
             "loteo_ph_M",
             loteo_ph_M()
         )
         
         Matcher.dependencyMatcher = DependencyMatcher(NLP.vocab)
+
         Matcher.dependencyMatcher.add(
             "frentes",
             frentes()
         ) 
+
         Matcher.dependencyMatcher.add(
-            "fot",
-            patterns=[
-                [
-                    {
-                        "RIGHT_ID": "fot",
-                        "RIGHT_ATTRS": {"LOWER": {"IN": ["fot", "f.o.t"]}},
-                    },
-                    {
-                        "LEFT_ID": "fot",
-                        "REL_OP": ">",
-                        "RIGHT_ID": "num",
-                        "RIGHT_ATTRS": {"DEP": "nummod"},
-                    },
-                ]
-            ],
+            "fot_DM",
+            fot_DM()
+            
         )
         Matcher.dependencyMatcher.add("loteo_ph_DM",
             loteo_ph_DM()
@@ -248,6 +264,19 @@ class Matcher:
         Matcher.dependencyMatcher.add("no_pileta_DM",
             no_pileta_DM()
         )
+        Matcher.dependencyMatcher.add("no_mejora_DM",
+            no_mejora_DM()
+        )
+        Matcher.dependencyMatcher.add("no_mejora_country_DM",
+            no_mejora_country_DM()
+        )
+        Matcher.dependencyMatcher.add("no_con_construccion_DM",
+            no_con_construccion_DM()
+        )
+        # Matcher.dependencyMatcher.add("lote_construccion_DM",
+        #     no_mejora_country_DM()
+        # )
+
     def __get_matches(self, text, prev_result):
         doc = NLP(text)
         matches = Matcher.matcher(doc)
@@ -281,7 +310,9 @@ class Matcher:
             "dir_interseccion": [],
             "dir_entre": [],
             "dir_lote": [" ".join(x) for x  in re.findall(REGEX_LOTE, text)],
+            # "dir_lote_nro": [],
             "fot": [],
+            "fot_DM":[],
             "irregular": [],
             "irregular_DM":[],
             "pileta": [],
@@ -289,6 +320,7 @@ class Matcher:
             "no_pileta_DM":[],
             "barrio": [],
             "esquina": [],
+            "frases_not_esquina":[],
             "frentes": [],
             "frases_frentes_PM":[],
             "urb_cerrada": [],
@@ -309,8 +341,16 @@ class Matcher:
             "pre-venta-cuotas": [],
             "pre-venta-descartar": [],
             "es_monetizable-construccion": [],
+            "es_monetizable-con_construccion": [],
             "es_monetizable-mejorado": [],
             "es_monetizable-mejoras_country": [],
+            "no_mejora_DM": [],
+            "no_mejora_country_DM": [],
+            "no_con_construccion_DM": [],
+            # "lote_construccion_DM": [],
+            "no_construccion-PM": [],
+            "mejora_posible_calle": [],
+            "posible_country": [],
             "loteo_ph_M": [],
             "loteo_ph_DM": [],
             "frases_loteo_ph_PM":[],
