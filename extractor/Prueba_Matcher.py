@@ -8,14 +8,14 @@ from spacy.matcher import PhraseMatcher # importo spacy phrasematcher para futur
 
 nlp = spacy.load("es_core_news_lg")#importamos la info entrenada en español con muchos datos
 
-description = "Lote de 244 mt2 en Barrio Privado Santa Elena (en PH), desarrollado en 1,2 hectáreas. A solo 10 minutos del centro de la ciudad de La Plata. Acceso principal por asfalto por calle 609 y 5 bis. Portón de ingreso vehicular. El emprendimiento está compuesto por 35 lotes unifamiliares y 10 locales comerciales. Plano Municipal y de Propiedad Horizontal probados. Servicios: Luz - Agua. La obra del servicio de gas será abonada por los compradores de las unidades y el comienzo de obra dependerá de la empresa prestadora. Escrituración y posesión inmediatas. "
+description = "Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3"
 
 doc = nlp(description)# el doc tiene cada palabra/token
  
 matcher = Matcher(nlp.vocab)
 matcher.add("patron_analizado", 
         [
-            [{"LOWER" : "Zona "},{"LOWER" : "countrys" }]         
+            [{"LOWER" : "son"},{"LIKE_NUM" : True},{"LOWER" : "lotes"}]         
         ])
 
 print("El beio match es: ")
