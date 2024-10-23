@@ -1,39 +1,4 @@
-import os
-print(os.getcwd())  # Muestra el directorio de trabajo actual
-calles = {}
-with open("input/calles_amba.txt", "r") as file:
-    for row in file:
-        row = row.lower() #lo llevo a minusculas
-        row = row.rstrip() #saco el salto de línea
-        cantPalabras = len(row.split()) 
-        calles.setdefault(cantPalabras, []).append(row)
-
-# print(calles)
-# print(calles.keys())
-# import json
-
-# import os
-# print(os.getcwd())  # Muestra el directorio de trabajo actual
-
-# with open("input/calles_bsas.json", "r") as file:
-#     dicc_calles = json.load(file)#con keys del 1 al 10 siempre
-
-INICIO = []
-MEDIO = []
-MEDIO2 = []
-MEDIO3 = []
-MEDIO4 = []
-FIN = []
-for nombre in calles[5]:
-    INICIO.append(nombre.split()[0])
-    MEDIO.append(nombre.split()[1])
-    MEDIO2.append(nombre.split()[2])
-    MEDIO3.append(nombre.split()[3])
-    FIN.append(nombre.split()[4])
-
-# print(calles[1])
-
- #los uso con LEMMA
+#los uso con LEMMA
 #calleSinonimos = [ "av", "calle", "Calle", "ruta", "Ruta", "avenida", "diagonal", "Diagonal", "dg", "Dg", "diag", "Diag"]
 #manzanaSinonimos = ["manzana", "Manzana", "mz", "Mz", "mza", "Mza"]
 #numeroSinonimos = ["numero", "nro", "número", "número", "n", "n°", "nº", "nº", "n°", "nro."]
@@ -62,50 +27,6 @@ CALLE_SEGMENTO = ["bis", "Bis", "BIS"]  + LETRA_MAYUSCULA
 
 def dir_nro():
     return  list([ #direcciones numéricas con la altura únicamente 
-                # [
-                #     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                #     {"POS": "PUNCT", "OP":"?"},
-                #     {"LOWER":{"IN":calles[1]}},
-
-                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                #     {"LIKE_NUM":True},
-                #     {"LOWER": "bis", "OP":"?"},
-                #     {"LOWER": {"NOT_IN": MEDIDAS}}
-                # ],
-                # [
-                #     {"LOWER": {"IN":CALLE_SINONIMOS}},
-                #     {"POS": "PUNCT", "OP":"?"},
-                #     {"LOWER":{"IN":INICIO}},
-                #     {"LOWER":{"IN":FIN}},
-
-                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                #     {"LIKE_NUM":True},
-                #     {"LOWER": {"NOT_IN": MEDIDAS}}
-                # ],
-                #  [
-                #     {"LOWER":{"IN":INICIO}},
-                #     {"LOWER":{"IN":MEDIO}},
-                #     {"LOWER":{"IN":FIN}},
-
-                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                #     {"LIKE_NUM":True},
-                #     {"LOWER": {"NOT_IN": MEDIDAS}}
-                # ],
-
-                ##esta es con la que estoy trabajando
-                #  [
-                #     {"LOWER":{"IN":INICIO}},
-                #     {"LOWER":{"IN":MEDIO}},
-                #     {"LOWER":{"IN":MEDIO2}},
-
-                #     {"ORTH":{"IN":FIN}},
-
-                #     {"LOWER": {"IN":NUMERO_SINONIMOS+ANTE_NUMERO}, "OP":"?"},
-                #     {"LIKE_NUM":True},
-                #     {"LOWER": {"NOT_IN": MEDIDAS}}
-                # ],
-
-                # descomentar lo siguiente
                 [
                     # calle montevideo 412
                     # calle montevideo n° 412
