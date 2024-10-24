@@ -19,7 +19,7 @@ from src.rbm.patterns.pileta import pileta,pileta_barrio, no_pileta_DM
 from src.rbm.patterns.esquina import esquina,frases_not_esquina,frases_not_esquina
 from src.rbm.patterns.irregular import irregular,irregular_DM
 from src.rbm.patterns.frentes import frentes,frases_frentes_PM
-from src.rbm.patterns.multioferta import multioferta
+from src.rbm.patterns.multioferta import multioferta,frases_multioferta_PM
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -88,6 +88,12 @@ class Matcher:
         patterns = [NLP(text) for text in terms]
         Matcher.phraseMatcher.add(
             "frases_frentes_PM",patterns
+        )
+
+        terms = frases_multioferta_PM()
+        patterns = [NLP(text) for text in terms]
+        Matcher.phraseMatcher.add(
+            "frases_multioferta_PM",patterns
         )
 
 
@@ -335,6 +341,7 @@ class Matcher:
             "a_demoler-asegurado": [],
             "a_demoler-ideal": [],
             "es_multioferta": [],
+            "frases_multioferta_PM":[],
             "pre-venta-asegurados": [],
             "pre-venta-posibles": [],
             "pre-venta-fecha": [],

@@ -218,7 +218,7 @@ class Oferta():
         return True if predichos["urb_semicerrada"] else ""
     
     def es_multioferta(self, predichos: list):
-        return True if predichos["es_multioferta"] else ""
+        return True if predichos["es_multioferta"] or predichos["frases_multioferta_PM"] else ""
     
     def indiviso(self, predichos: list):
         if not predichos["indiviso_DM"] and (predichos["indiviso_M"] or predichos["frases_indiviso_PM"]):
