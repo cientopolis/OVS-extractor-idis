@@ -10,7 +10,7 @@ def multioferta() -> list:
         [{"LOWER": "son"},{"LIKE_NUM": True},{"LOWER" : "lotes"}],# son 4 (numero) lotes
         [{"LOWER" : "compuesto"},{"LOWER" : "por"},{"LIKE_NUM" : True},{"LOWER" : "unidades"},{"LOWER" : "funcionales"}], # compuesto por (num) unidades funcionales
         [{"LOWER" : "venta"},{"LIKE_NUM" : True},{"LOWER" : "de","OP" : "?"},{"LOWER" : "lotes"}],# venta {de(op)} (num) lotes
-        [{"LOWER" : "venta"},{"LOWER" : "de","OP" : "?"},{"LOWER" : {"IN" : [sinonimos_inmuebles]}}],# venta {de (op)} sinonimos_inmuebles 
+        #[{"LOWER" : "venta"},{"LOWER" : "de","OP" : "?"},{"LOWER" : {"IN" : [sinonimos_inmuebles]}}],# venta {de (op)} sinonimos_inmuebles 
         [{"LOWER" : "venta"},{"LOWER" : "en","OP" : "?"},{"LOWER" : "block"}], # venta {en (op)} block
         [{"LOWER" : "son"},{"LIKE_NUM" : True},{"LOWER" : "lotes"}], #son (num) lotes
         [{"LOWER" : "venta"},{"LOWER" : "lotes"}], #venta lotes
@@ -19,11 +19,13 @@ def multioferta() -> list:
     ])
 
 def frases_multioferta_PM() -> list:
-    frases = ["Disponemos a la venta amplios lotes","disponemos a la venta amplios lotes","disponemos a la venta amplios Lotes","disponemos a la venta amplios terrenos","disponemos a la venta amplios inmbuebles",
-              "Medidas de los lotes","medidas de los lotes","Medidas de los terrenos","medidas de los lotes","Lotes en PH",
+    frases = ["Disponemos a la venta amplios lotes","disponemos a la venta amplios terrenos","disponemos a la venta inmbuebles",
+              "Medidas de los lotes","Medidas de los terrenos","medidas de los lotes","Lotes en PH",
               "El inmueble consta de tres lotes","terreno consta de tres lotes","La propiedad consta de tres lotes","El inmueble consta de cuatro lotes",
               "El inmueble consta de dos lotes","El inmueble consta de cinco lotes","dos lotes","tres lotes","cuatro lotes","cinco lotes",
-              "Opción de sumar otro lote lindero","Opción de sumar otro lindero"
+              "Opción de sumar otro lote lindero","Opción de sumar otro lindero","venta de unidades funcionales","Venta de terrenos","venta de lotes","VENTA EN BLOCK",
+              "Disponemos a la venta amplios lotes","Medidas de los lotes","LOTES en","posibilidad de venderse por separado o en bloque",
+              "El inmueble consta de tres lotes","se puede comprar lotes contiguos","DOS LOTES EN BLOQUE","para la venta Lotes"
               ]
     return frases
 
