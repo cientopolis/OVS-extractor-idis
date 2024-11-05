@@ -2,11 +2,9 @@ sinonimos_inmuebles = ["terrenos","lotes","casas","inmuebles","propiedades"]
 def multioferta() -> list:
     return([
         [{"LOWER": {"IN": ["cada", "varios", "multiples", "múltiples"]}}, {"LOWER": {"IN": ["lotes", "lote", "terernos", "terreno", "parcela", "parcelas"]}}], #cada lote, varios lotes, multiples lotes
-        [{"POS":"NUM"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}}], #4 lotes
+        #[{"POS":"NUM"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}}], #4 lotes
         [{"POS": "NUM", "OP":"?"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}},{"OP":"{1,2}"}, {"LOWER": {"IN": ["venta","medidas"]}}], #lotes en venta, lotes a la venta, lotes de diferentes medidas
         [{"LOWER": {"IN": ["lotes",  "terrenos"]}}, {"POS":"NUM"},{"LOWER": {"IN": ["x", "por"]}}], # lotes 10x30
-
-        [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}], 
         [{"LOWER": "son"},{"LIKE_NUM": True},{"LOWER" : "lotes"}],# son 4 (numero) lotes
         [{"LOWER" : "lotes"},{"LOWER" : "de","OP":"?"},{"LIKE_NUM" : True},{"LOWER" : "m2"}], #lotes de (num) m2
         [{"LOWER" : "barrio "},{"LOWER" : {"IN" :["abierto","cerrado"]},"OP":"?"},{"LOWER" : "con"},{"LIKE_NUM" : True},{"LOWER":"lotes"}], 
@@ -20,6 +18,8 @@ def multioferta() -> list:
         [{"LOWER" : "son"},{"LIKE_NUM" : True},{"LOWER" : "lotes"}], #son (num) lotes
         [{"LOWER" : "venta"},{"LOWER" : "lotes"}], #venta lotes
         [{"LOWER" : "lotes"},{"LOWER" : "de","OP":"?"},{"LIKE_NUM" : True}], # lotes de (num)
+        [{"LOWER": "con"},{"LIKE_NUM" : True},{"LOWER":"locales"}],#con 4 locales
+        [{"LOWER":"venta"},{"LIKE_NUM": True},{"LOWER": "lotes"}],#venta 80 lotes
     ])
 
 # futura posible mejora con el phraseMatcher
@@ -31,7 +31,8 @@ def frases_multioferta_PM() -> list:
               "El inmueble consta de dos lotes","El inmueble consta de cinco lotes","dos lotes","tres lotes","cuatro lotes","cinco lotes",
               "Opción de sumar otro lote lindero","Opción de sumar otro lindero","venta de unidades funcionales","Venta de terrenos","venta de lotes","VENTA EN BLOCK",
               "Disponemos a la venta amplios lotes","Medidas de los lotes","LOTES en","posibilidad de venderse por separado o en bloque",
-              "El inmueble consta de tres lotes","se puede comprar lotes contiguos","DOS LOTES EN BLOQUE","para la venta Lotes"
+              "El inmueble consta de tres lotes","se puede comprar lotes contiguos","DOS LOTES EN BLOQUE","para la venta Lotes","ideal para desarrollos multifamiliares",
+              "ideal desarrollos multifamiliares"
               ]
     return frases
 
