@@ -5,12 +5,11 @@ def multioferta() -> list:
         [{"POS":"NUM"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}}], #4 lotes
         [{"POS": "NUM", "OP":"?"},{"LOWER": {"IN": ["lotes", "terrenos", "parcelas"]}},{"OP":"{1,2}"}, {"LOWER": {"IN": ["venta","medidas"]}}], #lotes en venta, lotes a la venta, lotes de diferentes medidas
         [{"LOWER": {"IN": ["lotes",  "terrenos"]}}, {"POS":"NUM"},{"LOWER": {"IN": ["x", "por"]}}], # lotes 10x30
-<<<<<<< HEAD
+
         [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}], 
         [{"LOWER": "son"},{"LIKE_NUM": True},{"LOWER" : "lotes"}],# son 4 (numero) lotes
         [{"LOWER" : "lotes"},{"LOWER" : "de","OP":"?"},{"LIKE_NUM" : True},{"LOWER" : "m2"}], #lotes de (num) m2
         [{"LOWER" : "barrio "},{"LOWER" : {"IN" :["abierto","cerrado"]},"OP":"?"},{"LOWER" : "con"},{"LIKE_NUM" : True},{"LOWER":"lotes"}]        
-=======
         [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}], #se venden juntos o separados
         # POSIBLES MEJORAS
         [{"LOWER": "son"},{"LIKE_NUM": True},{"LOWER" : "lotes"}],# son 4 (numero) lotes
@@ -21,8 +20,6 @@ def multioferta() -> list:
         [{"LOWER" : "son"},{"LIKE_NUM" : True},{"LOWER" : "lotes"}], #son (num) lotes
         [{"LOWER" : "venta"},{"LOWER" : "lotes"}], #venta lotes
         [{"LOWER" : "lotes"},{"LOWER" : "de","OP":"?"},{"LIKE_NUM" : True}], # lotes de (num)
-
->>>>>>> test_branch
     ])
 
 # futura posible mejora con el phraseMatcher
