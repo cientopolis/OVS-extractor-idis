@@ -9,7 +9,7 @@ def multioferta() -> list:
         [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}], 
         [{"LOWER": "son"},{"LIKE_NUM": True},{"LOWER" : "lotes"}],# son 4 (numero) lotes
         [{"LOWER" : "lotes"},{"LOWER" : "de","OP":"?"},{"LIKE_NUM" : True},{"LOWER" : "m2"}], #lotes de (num) m2
-        [{"LOWER" : "barrio "},{"LOWER" : {"IN" :["abierto","cerrado"]},"OP":"?"},{"LOWER" : "con"},{"LIKE_NUM" : True},{"LOWER":"lotes"}]        
+        [{"LOWER" : "barrio "},{"LOWER" : {"IN" :["abierto","cerrado"]},"OP":"?"},{"LOWER" : "con"},{"LIKE_NUM" : True},{"LOWER":"lotes"}], 
         [{"LOWER": "juntos"}, {"LOWER": "o"}, {"LOWER": "separados"}], #se venden juntos o separados
         # POSIBLES MEJORAS
         [{"LOWER": "son"},{"LIKE_NUM": True},{"LOWER" : "lotes"}],# son 4 (numero) lotes
