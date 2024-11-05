@@ -546,6 +546,11 @@
                 "expected": "20 x 30"
             },
             {
+                "context": "LOTES EN VENTA DESARROLLO BARRIO CERRADO EL MOLINO. CLUB DE CAMPO. Lotes en venta Desarrollo de barrio El Molino Club De Campo.  Ubicado en Ruta 2  Calle 531 Entre las rutas 2 y ruta 6. Lotes de: 15m x 30m = 450m2. 20m x 48m = 960m2. Lotes escriturables en parte indivisa. Posibilidad de financiar en los lotes de: Usd 6.000 contado: usd4.000, financiado en 12 meses de usd 170. Usd 11.000, contado: usd6.000, financiado en 12 meses de usd 450. El desarrollo contará con: Seguridad privada. Tendido eléctrico. Un muy buen movimiento de suelo. Una buena construcción tanto en Entrada como en La Garita de seguridad. Con ingreso exclusivo para los Propietarios y otro ingreso para los Servicios a su requerimiento. Con un excelente acceso y conexiones tanto Av. 520 & Av. 44. Salida rápida a Ruta 2 y Ruta 6  En una zona con un entorno natural. De campo.  Ideal para tu casa de fin de semana  Primeros terrenos disponibles en Preventa.",
+                "actual": "20 x 48;15 x 30",
+                "expected": "15 x 30;20 x 48"
+            },
+            {
                 "context": "Muy buen lote en barrio cerrado Area 60, forma parte del barrio interno \"La Victoria Polo Country Club\". Lote 307, cercano a la entrada principal. Muy buena superficie de 1171,39 m2 con un frente de 32,25 x 40,00 m., y al fondo se angosta a 26,32 m. El barrio cuenta con club House, Club de Polo, canchas de polo, de tenis, de fútbol, piscina y sector de actividades náuticas. Se escucha alguna oferta.",
                 "actual": "32.25 x 40.00",
                 "expected": "32.25 x 40.00 x 26.32"
@@ -597,28 +602,23 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 55;12 x 52;12 x 41;12 x 40",
+                "actual": "12 x 41;12 x 52;12 x 40;12 x 55",
                 "expected": "12 x 55;12 x 41;12 x 40;12 x 52"
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "15 x 28;15 x 32;15 x 55;15 x 40;10 x 21;24 x 45;10 x 27;24 x 30;10 x 32;14 x 30;12 x 30",
+                "actual": "10 x 32;15 x 32;15 x 40;24 x 45;10 x 27;24 x 30;15 x 55;15 x 28;12 x 30;10 x 21;14 x 30",
                 "expected": "10 x 21.89"
             },
             {
                 "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
-                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
+                "actual": "32.45 x 73.63;32.45 x 73.63;32.45 x 73",
                 "expected": "32.45 x 73.63;32.45 x 73;32.45 x 73.63"
             },
             {
                 "context": "Ubicado en barrio San José, a metros de Av. Independencia, se encuentra esta importante propiedad para uso comercial o para desarrollo de propiedad horizontal. Actualmente funciona como fábrica y local central de reconocida Marca de indumentaria y zapatería, por lo que su estructura resulta ideal para locales comerciales de amplias superficies como concecionarias, o para grandes empresas. Con 24 mts totales de frente y 43,25 mts de fondo, esta propiedad cuenta con 1.038 m2 de terreno y 1.052 m2 cubiertos. Emplazado sobre distrito urbano R2 con frente de VC1, cuenta además con la factibilidad de desarrollar aproximadamente 3.700 m2 en hasta ocho plantas, pudiéndose realizar local comercial en planta baja y edificio de viviendas sobre éste.",
                 "actual": "",
                 "expected": "24 x 43.25"
-            },
-            {
-                "context": "Lotes Propios ( No es ph, ni parte indivisa) - Medidas 12x27 y 12x33 - Urbanizacion con 29 parcelas - Asfalto, luz, gas y agua corriente - Obras Finalizadas - Ultimos 4 lotes disponibles - Desde U$S 14.000 a U$S 19.000 segun tamaño y ubicacion - Financiacion: 30 % al boleto y el saldo hasta 48 cuotas de U$S 200 cada una. -",
-                "actual": "12 x 27;12 x 33",
-                "expected": "12 x 33;12 x 27"
             },
             {
                 "context": "VENTA DE CASA O PH EN RAMOS MEJÍA- IDEAL INVERSIÓN, OPORTUNIDAD EN LA ZONA  ANTICIPO DE 199.000 USD Y CUOTAS A FINANCIAR VALOR DE CONTADO 200.000 USD  EXCLUSIVA VENTA O PERMUTA-  TOMA METROS CONSULTAR  Excelente chalet a la venta Ideal Constructor o primera vivienda. Ubicado en la localidad de Ramos Mejía, sobre la calle Oncativo al 400 entre las calles Necochea y Pringles. A pocos metros de la Av. de Mayo,  del centro comercial y de los distintos medios de transporte que conectan a Ramos Mejía con las diferentes ciudades cercanas de la Provincia y C.A.B.A.-  Toma propiedad en parte de Pago.  Descripción del inmueble: - El lote cuenta con las siguientes Medidas: 8,66 mts. de frente x 41.60 mts. de fondo.- - Superficie Total: 370,26 m2.- - Orientación Noroeste   Ubicación de la propiedad: - A mts. de Av. de Mayo - A mts. de Avenida San Martín. - A mts. de la calle Humbolt. - A mts. de la Plaza Bomberitos. - A mts. del Centro de Ramos Mejía.  (Las medidas, superficies, y demás información son meramente enunciativas. Los datos definitivos van a surgir del título de propiedad del inmueble).",
@@ -647,7 +647,7 @@
             },
             {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
-                "actual": "15 x 35;12 x 25;12 x 30",
+                "actual": "12 x 30;15 x 35;12 x 25",
                 "expected": "12 x 25;15 x 35;12 x 30"
             }
         ]
@@ -1239,13 +1239,13 @@
     },
     {
         "name": "es_multioferta",
-        "tp": 36,
+        "tp": 39,
         "fp": 10,
-        "fn": 4,
+        "fn": 1,
         "tn": 271,
-        "precision": 0.782608695652174,
-        "recall": 0.9,
-        "f1": 0.8372093023255814,
+        "precision": 0.7959183673469388,
+        "recall": 0.975,
+        "f1": 0.8764044943820225,
         "error": [
             {
                 "context": "Espectacular casa quinta en Barrio El Rodeo en La Plata. Acceso sobre ruta 215. muy buen entorno barrio familiar semi cerrado. la propiedad esta desarrolada sobre 4 lotes de 20 x 50 cada uno. la casa esta situada sobre dos lotes es de tipo chalet en una planta y consta de gran estar comedor con vista hacia la piscina",
@@ -1268,19 +1268,9 @@
                 "expected": ""
             },
             {
-                "context": "Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
-                "actual": "",
-                "expected": true
-            },
-            {
                 "context": "Se trata de un terreno conformado por tres lotes de 8.66 x 50 mts. Zonificación: R2. Barrio residencial de baja densidad. F.O.S. máximo = 0.60. F.O.T. máximo = 2.2. Densidad neta potencial: 800 hab/ha. Altura máxima: R = h/d = 1.6. Altura máxima basamento: 6 m. Altura mínima interior P.B.: 2.80 m. Altura mínima interior sobre P.B.: 2.60 m",
                 "actual": true,
                 "expected": ""
-            },
-            {
-                "context": "Barrio abierto con 150 lotes entre 200 y 500 m2 distribuido en 6 manzanas A 15 minutos del centro platnese ubicado entre las calles 608 entre 18bis y 20 rápido acceso alejado del ruido de la ciudad encontra el lugar para tu futuro hogar",
-                "actual": "",
-                "expected": true
             },
             {
                 "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
@@ -1289,11 +1279,6 @@
             },
             {
                 "context": " VENTA EXCELENTE LOTE EN CAMPOS DE LA ENRIQUETA. Hermoso lote de 700 m2 con salida náutica. Disponibilidad de playa y muelle , para uso de embarcaciones sin motor. Número de Lote 288. Excelente orientación. El Emprendimiento se ubica en plena zona de desarrollo de Clubes de Campo del corredor ruta 2, La Plata - Brandsen, en el kilómetro 65 de dicha vía. Lotes de 700 m2. y de 1000 m2. Lotes con acceso directo a espectaculares canales de agua, en los cuales podes tener un muelle y una playa privada de arena, desde donde podes salir a navegar en embarcaciones sin motor, o pescar desde tu propio jardín. MAS DE 12 CANALES NAVEGABLES Y 2 LAGUNAS PRINCIPALES que tendrán un tratamiento especial para la mantención del agua, las especies de peces y toda su vegetación, y con un Arroyo Natural con una RESERVA DE FLORA Y FAUNA AUTOCTONA, un espacio único en la zona con juncales y espadañares, y una gran cantidad de aves, zorros, carpinchos, nutrias y liebres. Arroyo natural y 2 lagunas artificiales navegables. Locales comerciales, club house, gimnasio spa y piscinas. Club de playa y pesca deportiva. Spa, Gimnasio y Piscina climatizada.",
-                "actual": "",
-                "expected": true
-            },
-            {
-                "context": "Oportunidad de inversión a valores de pre-venta: Barrio abierto Los Aromos, sin expensas, en la mejor zona de 20 de Junio, Matanza El proyecto contempla para la venta 80 Lotes de 900 y 1000m2 que se entregarán ESCRITURADOS en una fecha estimada cercana a DICIEMBRE 2026, y que gracias a una impecable gestión, hoy ya cuenta con Planos Aprobados en el Municipio de Matanza, y ARBA, en la La Plata. Para tal logro, serán necesarias todas las obras de infraestructura viales tales como: -Apertura de cinco calles nuevas -Aporte de suelo cemento -Aporte de tosca compactada -Aporte de cascote fino como terminaciÃ³n final -CordÃ³n cuneta de HormigÃ³n Armado en todas las nuevas calles a ceder con acceso vehicular y desagÃ¼e pluvial. El proyecto urbano tambiÃ©n contempla un plan hidrÃ¡ulico de evacuaciÃ³n de las aguas de lluvia mediante sumideros, zanjas y entubados perimetrales aprobados por el municipio de La Matanza Por otro lado, se contempla toda la iluminaciÃ³n pÃºblica y tendido elÃ©ctrico; mejorado de calles aledaÃ±as y desmalezado. El emprendimiento contará con un sector de 10.000mÂ² para el esparcimiento público.",
                 "actual": "",
                 "expected": true
             },
