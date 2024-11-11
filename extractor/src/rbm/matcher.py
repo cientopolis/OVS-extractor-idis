@@ -4,7 +4,7 @@ from spacy.matcher import DependencyMatcher
 from spacy.matcher import Matcher as MatcherSpacy
 from spacy.matcher import PhraseMatcher
 from src.rbm.patterns.urb_semicerrada import urb_semicerrada
-from src.rbm.patterns.barrio import barrio
+from src.rbm.patterns.barrio import barrio, barrio_coincencia_archivo
 from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro #dir_lote_nro,
 from src.rbm.patterns.fot import fot,fot_DM
 from src.rbm.patterns.medidas import medidas
@@ -324,7 +324,7 @@ class Matcher:
             "pileta": [],
             "pileta_barrio":[],
             "no_pileta_DM":[],
-            "barrio": [],
+            "barrio": [barrio_coincencia_archivo(text)],
             "esquina": [],
             "frases_not_esquina":[],
             "frentes": [],
