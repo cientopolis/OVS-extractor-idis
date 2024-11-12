@@ -196,7 +196,7 @@ class Oferta():
 
 
     def barrio(self, predichos: list):
-        return predichos["barrio"]
+        return max(predichos["barrio"], key=len) if predichos["barrio"] else ""
         # return re.compile(re.escape("Barrio"), re.IGNORECASE).sub("", mejor_match).strip()
 
     def esquina(self, predichos: list):
