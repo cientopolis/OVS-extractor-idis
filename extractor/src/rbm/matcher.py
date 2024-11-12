@@ -325,6 +325,7 @@ class Matcher:
             "pileta_barrio":[],
             "no_pileta_DM":[],
             "barrio": [barrio_coincencia_archivo(text)],
+            #"archivo_nombre_barrios":[barrio_coincencia_archivo(text)],
             "esquina": [],
             "frases_not_esquina":[],
             "frentes": [],

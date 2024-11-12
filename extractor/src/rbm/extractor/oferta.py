@@ -193,11 +193,12 @@ class Oferta():
         medidas= medidas.replace(",",".")
         return medidas.rstrip(" x")
 
-
-
+    #def barrio(self, predichos: list):
+    # Devuelve el elemento más largo en 'barrio' si existe, de lo contrario devuelve 'archivo_nombre_barrios' o una cadena vacía
+    #    return max(predichos["barrio"], key=len) if predichos.get("barrio") else predichos.get("archivo_nombre_barrios", "")
+              
     def barrio(self, predichos: list):
         return max(predichos["barrio"], key=len) if predichos["barrio"] else ""
-        # return re.compile(re.escape("Barrio"), re.IGNORECASE).sub("", mejor_match).strip()
 
     def esquina(self, predichos: list):
         if ((predichos["esquina"]) and (not predichos["frases_not_esquina"])): 
