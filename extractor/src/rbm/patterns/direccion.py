@@ -195,7 +195,7 @@ def dir_entre():
             # calle la hermosura n° 1231, entre calle moreno y san martin bis
             # calle 7 n° 1231, entre calle moreno y san martin bis
             # calle la hermosura n° 1231, entre calle 7 y 8 BIS
-            {"LOWER": {"IN":CALLE_SINONIMOS}}, 
+            {"LOWER": {"IN":CALLE_SINONIMOS}}, # SI LO HAGO OPCIONAL ME BAJA LA PRECISIÓN, AUNQUE AYUDE EN ALGUNOS CASOS
             {"POS": "PROPN", "OP":"?"},
             {"POS": "PUNCT", "OP":"?"},
             {"POS": {"IN": ["DET","PROPN", "ADP"]}, "OP":"{1,3}"},
