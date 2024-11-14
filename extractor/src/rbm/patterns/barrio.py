@@ -4,7 +4,7 @@ barrios_df = pd.read_csv("/home/apagano/OVS-extractor-idis/input/nombre_barrios.
 #convierto a lista el df
 nombre_barrios = barrios_df['NOMBRE_BARRIO'].tolist()
 
-def barrio_coincencia_archivo(description):    
+def barrio_coincidencia_archivo(description):    
     description = str(description).lower()  
     for barrio in nombre_barrios:
         if barrio.lower() in description:

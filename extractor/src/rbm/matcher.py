@@ -4,7 +4,7 @@ from spacy.matcher import DependencyMatcher
 from spacy.matcher import Matcher as MatcherSpacy
 from spacy.matcher import PhraseMatcher
 from src.rbm.patterns.urb_semicerrada import urb_semicerrada
-from src.rbm.patterns.barrio import barrio, barrio_coincencia_archivo
+from src.rbm.patterns.barrio import barrio, barrio_coincidencia_archivo
 from src.rbm.patterns.direccion import dir_entre, dir_interseccion, dir_lote, dir_nro #dir_lote_nro,
 from src.rbm.patterns.fot import fot,fot_DM
 from src.rbm.patterns.medidas import medidas
@@ -167,27 +167,27 @@ class Matcher:
 
         Matcher.matcher.add(
             "pre-venta-asegurados", 
-                asegurados()
+            asegurados()
             
         )
         Matcher.matcher.add(
             "pre-venta-posibles", 
-                posibles()
+            posibles()
             
         )
         Matcher.matcher.add(
             "pre-venta-fecha", 
-                fecha()
+            fecha()
             
         )
         Matcher.matcher.add(
             "pre-venta-cuotas", 
-                cuotas()
+             cuotas()
             
         )
         Matcher.matcher.add(
             "pre-venta-descartar", 
-                descartar()
+            descartar()
             
         )
 
@@ -197,11 +197,13 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "a_demoler-asegurado", asegurado()
+            "a_demoler-asegurado", 
+            asegurado()
         )   
 
         Matcher.matcher.add(
-            "a_demoler-ideal", ideal()
+            "a_demoler-ideal", 
+            ideal()
         )   
 
 
@@ -211,27 +213,33 @@ class Matcher:
         )
 
         Matcher.matcher.add(
-            "es_monetizable-construccion", construccion()
+            "es_monetizable-construccion", 
+            construccion()
         )
 
         Matcher.matcher.add(
-            "es_monetizable-mejorado", mejorado()
+            "es_monetizable-mejorado", 
+            mejorado()
         )
 
         Matcher.matcher.add(
-            "es_monetizable-mejoras_country", mejoras_country()
+            "es_monetizable-mejoras_country", 
+            mejoras_country()
         )
 
         Matcher.matcher.add(        
-            "es_monetizable-con_construccion", con_construccion()
+            "es_monetizable-con_construccion", 
+            con_construccion()
         )
 
         Matcher.matcher.add(
-            "mejora_posible_calle", mejora_posible_calle()
+            "mejora_posible_calle", 
+            mejora_posible_calle()
         )
 
         Matcher.matcher.add(
-            "posible_country", posible_country()
+            "posible_country", 
+            posible_country()
         )
 
 
@@ -324,7 +332,7 @@ class Matcher:
             "pileta": [],
             "pileta_barrio":[],
             "no_pileta_DM":[],
-            "barrio": [barrio_coincencia_archivo(text)],
+            "barrio": [barrio_coincidencia_archivo(text)],
             #"archivo_nombre_barrios":[barrio_coincencia_archivo(text)],
             "esquina": [],
             "frases_not_esquina":[],
