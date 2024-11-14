@@ -198,7 +198,9 @@ class Oferta():
     #    return max(predichos["barrio"], key=len) if predichos.get("barrio") else predichos.get("archivo_nombre_barrios", "")
               
     def barrio(self, predichos: list):
-        return max(predichos["barrio"], key=len) if predichos["barrio"] else ""
+        mejor_match= max(predichos["barrio"], key=len) if predichos["barrio"] else ""
+        # Utiliza la palabra barrio para matchear pero luego elimina y carga solo nombre
+        return re.compile(r"\b(barrio semicerrado|barrio cerrado|barrio)\b", re.IGNORECASE).sub("", mejor_match).strip()
 
     def esquina(self, predichos: list):
         if ((predichos["esquina"]) and (not predichos["frases_not_esquina"])): 
