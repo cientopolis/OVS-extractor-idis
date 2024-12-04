@@ -372,7 +372,7 @@
             },
             {
                 "context": "Venta de 2 Lotes linderos de 10 x 45,75 cada uno, total de 20 x 45,75, con Pileta de 7 mts x 3,20 mts y Quincho (abierto) con contrapiso de 4mts x 7mts con parrilla y baño. en Ciudad Nueva, Nueve de Julio  Medida: Frente : 20 Medida: Fondo : 45.75  (FAE-FAE-585)",
-                "actual": "20 x 45.75;10 x 45.75",
+                "actual": "10 x 45.75;20 x 45.75",
                 "expected": "10 x 45.75"
             },
             {
@@ -602,23 +602,23 @@
             },
             {
                 "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
-                "actual": "12 x 52;12 x 55;12 x 40;12 x 41",
+                "actual": "12 x 40;12 x 55;12 x 52;12 x 41",
                 "expected": "12 x 55;12 x 41;12 x 40;12 x 52"
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
-                "actual": "15 x 40;15 x 28;10 x 32;10 x 21;24 x 45;10 x 27;12 x 30;14 x 30;15 x 55;24 x 30;15 x 32",
+                "actual": "10 x 21;12 x 30;24 x 45;10 x 27;15 x 28;10 x 32;15 x 55;15 x 40;15 x 32;14 x 30;24 x 30",
                 "expected": "10 x 21.89"
+            },
+            {
+                "context": "En la localidad de Tandil sobre calle Entre Ríos al 300,  nos encontramos con estos excelentes y amplios lotes a la venta.  Los mismos cuentan con una superficie total aproximada de 2.370m2 con servicios de luz, agua corriente y gas.  UNIDADES DISPONIBLES:  - Parcela 4: 2.398m2 (32,45m de frente x 73,63m de fondo) - Parcela 5: 2.379m2 (32,45 de frente x 73,63m de fondo, menos ochava) - Parcela 6: 2.368m2 (32,45m de frente x 73m de fondo, menos ochava) - Parcela 7: 2.368m2 (32,45m de frente x 73m de fondo)  EL VALOR DE CADA PARCELA ES DE U$D85.000  INDICADORES URBANISTICOS:  ZONA: BARRIOS EN PROCESO DE CONSOLIDACIÓN FOS: 6,6 FOT: 0.8 DN: 280 ALT: 7,5 LADO MINIMO: 15M SUP. MINIMA: 375M2  USO: VIVIENDA MULTIFAMILAR AUTIRIZABLE (SUBDIVISILBLE EN PH)  Posibilidad de subdividir en propiedad plena y propiedad horizontal.  También se venden dos o más parcelas en Block. ",
+                "actual": "32.45 x 73;32.45 x 73.63;32.45 x 73.63",
+                "expected": "32.45 x 73.63;32.45 x 73;32.45 x 73.63"
             },
             {
                 "context": "Ubicado en barrio San José, a metros de Av. Independencia, se encuentra esta importante propiedad para uso comercial o para desarrollo de propiedad horizontal. Actualmente funciona como fábrica y local central de reconocida Marca de indumentaria y zapatería, por lo que su estructura resulta ideal para locales comerciales de amplias superficies como concecionarias, o para grandes empresas. Con 24 mts totales de frente y 43,25 mts de fondo, esta propiedad cuenta con 1.038 m2 de terreno y 1.052 m2 cubiertos. Emplazado sobre distrito urbano R2 con frente de VC1, cuenta además con la factibilidad de desarrollar aproximadamente 3.700 m2 en hasta ocho plantas, pudiéndose realizar local comercial en planta baja y edificio de viviendas sobre éste.",
                 "actual": "",
                 "expected": "24 x 43.25"
-            },
-            {
-                "context": "Lotes Propios ( No es ph, ni parte indivisa) - Medidas 12x27 y 12x33 - Urbanizacion con 29 parcelas - Asfalto, luz, gas y agua corriente - Obras Finalizadas - Ultimos 4 lotes disponibles - Desde U$S 14.000 a U$S 19.000 segun tamaño y ubicacion - Financiacion: 30 % al boleto y el saldo hasta 48 cuotas de U$S 200 cada una. -",
-                "actual": "12 x 27;12 x 33",
-                "expected": "12 x 33;12 x 27"
             },
             {
                 "context": "VENTA DE CASA O PH EN RAMOS MEJÍA- IDEAL INVERSIÓN, OPORTUNIDAD EN LA ZONA  ANTICIPO DE 199.000 USD Y CUOTAS A FINANCIAR VALOR DE CONTADO 200.000 USD  EXCLUSIVA VENTA O PERMUTA-  TOMA METROS CONSULTAR  Excelente chalet a la venta Ideal Constructor o primera vivienda. Ubicado en la localidad de Ramos Mejía, sobre la calle Oncativo al 400 entre las calles Necochea y Pringles. A pocos metros de la Av. de Mayo,  del centro comercial y de los distintos medios de transporte que conectan a Ramos Mejía con las diferentes ciudades cercanas de la Provincia y C.A.B.A.-  Toma propiedad en parte de Pago.  Descripción del inmueble: - El lote cuenta con las siguientes Medidas: 8,66 mts. de frente x 41.60 mts. de fondo.- - Superficie Total: 370,26 m2.- - Orientación Noroeste   Ubicación de la propiedad: - A mts. de Av. de Mayo - A mts. de Avenida San Martín. - A mts. de la calle Humbolt. - A mts. de la Plaza Bomberitos. - A mts. del Centro de Ramos Mejía.  (Las medidas, superficies, y demás información son meramente enunciativas. Los datos definitivos van a surgir del título de propiedad del inmueble).",
@@ -647,7 +647,7 @@
             },
             {
                 "context": "Potosi esquina Colectora calle Mimosas (ex COLPAYO). Medidas y valores: Lotes 12x 30 mts USD 11.000. Lotes 12x25 mts USD 10.000. SE ACEPTA FINANCIACION DEL 50% DEL VALOR Y CUOTAS! ACEPTAMOS PROPUESTAS! NUEVO CONDOMINIO CERRADO. A solo 10’ de la Autopista Pte. Peron con una inmejorable ubicación, tranquilidad y espacios verdes para disfrutar en familia. CONTARA CON:  LUZ, SEGURIDAD, CERCO PERIMETRAL, PLAZAS DISTRIBUIDAS EN TODAS LAS MANZANAS. Calles de tosca y mejorado pavimental. LOTES DE 15x35. VALORES PREVENTA PRIMERAS 25 UF DE: U$D10.000 (contado). U$D12.000 (financiado). ACEPTAMOS CUOTAS O PROPUESTAS PERSONALIZADAS PARA LA COMODIDAD DE CADA CLIENTE! APTOS PARA ESCRITURAR DE MANERA INMEDIATA.",
-                "actual": "15 x 35;12 x 30;12 x 25",
+                "actual": "12 x 30;15 x 35;12 x 25",
                 "expected": "12 x 25;15 x 35;12 x 30"
             }
         ]
@@ -681,18 +681,28 @@
     },
     {
         "name": "barrio",
-        "tp": 72,
-        "fp": 38,
-        "fn": 1,
-        "tn": 210,
-        "precision": 0.6545454545454545,
-        "recall": 0.9863013698630136,
-        "f1": 0.7868852459016393,
+        "tp": 62,
+        "fp": 83,
+        "fn": 7,
+        "tn": 169,
+        "precision": 0.42758620689655175,
+        "recall": 0.8985507246376812,
+        "f1": 0.5794392523364487,
         "error": [
             {
                 "context": "Espectacular casa quinta en Barrio El Rodeo en La Plata. Acceso sobre ruta 215. muy buen entorno barrio familiar semi cerrado. la propiedad esta desarrolada sobre 4 lotes de 20 x 50 cada uno. la casa esta situada sobre dos lotes es de tipo chalet en una planta y consta de gran estar comedor con vista hacia la piscina",
                 "actual": "El Rodeo en La Plata",
                 "expected": "El Rodeo"
+            },
+            {
+                "context": "Excelente casa de 288 mts2 cubiertos emplazada sobre 3 terrenos con un total de 1948 mts2 ubicada en un\nbarrio semicerrado perimetrado que se encuentra en muy linda zona de Escobar con excelente acceso y\ncercano al centro. La misma esta desarrollada completamente en una planta y cuenta con 4 dormitorios (uno de\nellos en suite con baÃ±o y vestidor), amplio living, comedor, cocina, lavaderos y tres baÃ±os mas y un toilette.\nTambiÃ©n cuenta con galeria, cochera, sector de parrilla y una mini pileta. La casa esta revestida de ladrillos a\nla vista con techo de teja francesas, pisos de ceramico, calefacciÃ³n por losa radiante, splits frio/calor, aberturas\nde madera de primera calidad y riego por aspersiÃ³n. El barrio cuenta con un sector de espacio comÃºn donde\nhay una gran pileta de nataciÃ³n y una cancha de paddle.",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "LOTES BARRIO SEMICERRADO QUILMES EZPELETA Esquel y Uriburu - Quilmes Ezpeleta Quilmes Ezpeleta,\nGBA Gran oportunidad de pertenecer a un barrio semicerrado a tu alcance. Loteo en inmejorable zona de\nQuilmes Ezpeleta. Barrio con edificaciÃ³n regulada por un reglamento de construcciÃ³n y de convivencia. Muy\nbuena ubicaciÃ³n a pocas cuadras de la estaciÃ³n de Ezpeleta y su centro comercial, a 150m de la Av. Mitre en\nla que estÃ¡n disponibles varias lÃ-neas de colectivos. Muy fÃ¡cil acceso a la Autopista Bs. As. La Plata, 30\nminutos al centro de Buenos Aires. Junto al importante supermercado Maxi Carrefour. ConstruÃ- tu propia casa\ncon garaje, jardÃ-n, pileta y quincho. Un lugar lleno de ventajas y beneficios. Escritura y posesiÃ³n inmediata.",
+                "actual": "CAN",
+                "expected": ""
             },
             {
                 "context": "Casa construida en 2 plantas en el Barrio Cerrado Trapalanda, sobre la ruta 5. En planta baja: living, comedor, cocina integrada, 3 dormitorios, uno en suite, toilette. Lavadero separado, dependencia de servicio con baño completo. Planta alta: 2 dormitorios, uno en suite con vestidor. Jardin, galeria, pileta, parrilla",
@@ -702,6 +712,31 @@
             {
                 "context": "ESTRUCTURA JURíDICA: Fideicomiso a precio cerrado. EL VALOR PUBLICADO ES CONTADO EFECTIVO. Medidas: 15,5 x 25m La entrega del barrio esta programada para mediados 2026, no obstante, se permitirá dar inicio a las obras particulares a fines del 2022.  FORMA DE PAGO: Opción A: Contado en USD Opción B: 50 % anticipo USD + Cuotas hasta Dicembre 2024 U$S98.813.- UBICACIóN: A 200 mt de la bajada de Ruta 26, Ramal Pilar km 41,5. ESQUEMA DE RETIROS: INFORMACIóN GENERAL: Los lotes rondan los 375 a 400 mts 2. Superficie a construir mínima inicial permitida es de 120 m2 FOS: 0.4 FOT: 0.7 Retiro frente: 3 metros Retiro lateral: 1) 3.00 mt - 2) 1,15 mt Retiro Fondo mínimo: 8.00 mt. Pileta despegada de los ejes medianeros 1.50 mt. INFRAESTRUCTURA: Calles internas asfaltadas / hormigón intertrabado con cuneta. Redes subterráneas de electricidad, agua, cloaca y gas. Alumbrado Público. Pilares de servicios. Edificio de acceso.  Club House.  Amenities ",
                 "actual": "Club House",
+                "expected": ""
+            },
+            {
+                "context": "Espectacular casa  de dos plantas emplazada en un  jardin de 1800m2 , el cual se encuentra en el centro del barrio! Esta propiedad posee un gran living apaisado y comedor ,  un toilette de de recepción  y  una cocina con comedor diario y family .Tiene además un Lavadero  independiente  y una habitacion de servicio   con  bano completo. La casa cuenta con un dormitorio principal en suite  y dos dormitorios que están asistidos por un bano completo.En la planta alta encontramos un gran  playroom desde el cual podemos disfrutar de una lindisimas vista al  Impresionante Jardin  y a la pileta , la cual es de 8x4  ,posee playa humeda y baldosas térmicas.Cabe destacar la zona  del  fogonero  , este tiene un banco de material y una canchita de futbol,  ideal para disfrutar buenos momentos!  Las  expensas  incluyen la cuota social, y el  agua. El Canon de ingreso en pesos equivale a 27 expensas. Se acepta en parte de pago PH, Dpto, velero o casa pequeña en zona norte desde tigre a Vicente Lopez.   El Country posee una forestación ….",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "Terreno a la venta (Lote 8 Manzana n°1), dimensiones irregulares con frente a tres calles principales, y vistas al parque verde central del predio. Son 850 m2 de superficie total. El loteo cuenta con frente y acceso directo sobre Ruta n° 1, y bajada también directa al canal por donde se accede al río",
+                "actual": "VISTAS",
+                "expected": ""
+            },
+            {
+                "context": "Lote en venta de (1.500 m2) con excelente ubicación! El cual consta de: Dos frentes a calles, uno con vista al Norte y otro al Este. Dos niveles de superficie, uno con tierra y otro nivel más elevado sobre roca.Amplias vistas panorámicas hacia las sierras chicas, sierras grandes y centro de Tanti. Colindante con espacio verde sobre lado Sur y parte del Oeste. Excepcional base para diseño de parque en rocalla. Existencia de acacias, paraísos, durazneros, yucas, lantanas, aromitos, palo amarillo y romerillos.Pasan por el frente TV por cable y recolección de residuos; luz instalada hasta unos 40 mts, y agua a 100 mts.",
+                "actual": "VISTAS",
+                "expected": ""
+            },
+            {
+                "context": "Lote de terreno de doble frente (17.32 m) ubicado sobre la calle Olaguer en la ciudad de lomas del mirador. Posee portón de acceso corredizo, piso de hormigón en toda la superficie y cuenta con una oficina con baño. Medidas del Lote: 17.32 m frente x 43.30 m fondo. Superficie Total: 750 m2. Zonificacion: U2b Urbano Mixto. FOT: 2.25 FOS: 0.60. Densidad: 700 Hab",
+                "actual": "EL MIRADOR",
+                "expected": ""
+            },
+            {
+                "context": "Hermoso loteo semicerrado en Cardales con financiación!!! Lotes de 1500 y 2000m2. Vistas abiertas al campo. Canchas de fútbol, plaza y sector aeróbico. A 1000m de Ruta 4, en zona de plena expansión. Cercano a colegios y comercios. Digno de visitar. Aproveche la etapa de preventa!!! Pagá un anticipo de usd y el saldo en 6 cuotas!!",
+                "actual": "VISTAS",
                 "expected": ""
             },
             {
@@ -730,9 +765,39 @@
                 "expected": ""
             },
             {
+                "context": "Lote de 253m2 a 600 metros del centro de San Vicente y 300m de la Laguna de San Vicente. Dependiendo el sector, disponibilidad de escritura o prescipción adquisitiva (usucapión - 20 ya años cumplidos). El barrio se encuentra en pleno desarrollo, es abierto y en un futuro pasará a ser cerrado.  Servicios: Luz y agua y cloaca de pozo.  Ya hay gente viviendo en el barrio",
+                "actual": "LA LAGUNA",
+                "expected": ""
+            },
+            {
+                "context": "LOTES EN VENTA EN TRISTAN SUAREZ, SOBRE CALLE LOS GIRASOLES ENTRE GADHINI Y MORENO MEDIDA DE CADA LOTE 10X35  VALOR DE CADA LOTE U$S 10.000 c/u.POSIBILIDAD DE FINANCIACION  SE VENDEN JUNTOS O SEPARADOS  Cesion de derechos posesorios",
+                "actual": "LOS GIRASOLES",
+                "expected": ""
+            },
+            {
                 "context": "OPORTUNIDAD SOLO MES DE JUNIO 2022 San Sebastián, ubicado en el límite de Escobar y Pilar, es el barrio indicado para vos, que buscas siempre lo mejor para tu familia. Con un acceso en el km 54,5 de la autopista panamericana, cuenta con todos los servicios necesarios para que vivas la naturaleza de una forma diferente. 13 barrios comunicados por un boulevard, lagunas, cancha de golf y más de 100 hectáreas destinadas a los deportes conforman este maravilloso ecosistema, ideal para disfrutar todos los días junto con tus seres más queridos. 154 hectáreas de lagunas Cancha de golf Canchas de futbol y tenis Seguridad 24hs Club house Disponibles Lotes internos frente a Plaza 659 Mt. La mejor orientación del Barrio Nuestra Señora del Carmen. Área 13 Anticipo USD 14.200 Restan 19 cuotas de $ 87.239,00 + CAC y 3 refuerzos de $ 375.800,00 No paga expensas hasta la posesión enero 2026. Aclaramos que tenemos varios disponibles todos con buena orientación !!! No dejes de contactarnos para mayor información Remax Duo",
                 "actual": "Nuestra Señora del Carmen",
                 "expected": "San Sebastián"
+            },
+            {
+                "context": "1.200 m2 Panamericana Km 42, mano a Capital. Localidad de Del Viso, Partido de Pilar. Provincia de Buenos Aires. 1.200 m2. lote 70 m de frente. Forma triangular. En esquina",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "Casa de 4 ambientes en Lomas del Mirador. Ubicada en Melo 836, Lomas del Mirador. Lote de 8.66 x 23. Vivienda con 100 años de antigüedad aprox. (ideal modernizar o demoler) de 90 m2 Cubiertos. Cocina. Comedor. Baño. Dormitorios. Patio. Terraza. Galpón. ZONIFICACION Zona: U2B. FOS 0.6. FOT 2.25. Densidad 700. Altura Máxima 13 mts",
+                "actual": "EL MIRADOR",
+                "expected": ""
+            },
+            {
+                "context": "Venta Lote IDEAL PROYECTO EDILICIO sobre José Indart entre Ocampo y Perón. Frente 10 Fondo 31. FOT 3. Actualmente posee dos casas construidas en muy buen estado con cochera pasante. Todas las medidas son aproximadas y provistas por el cliente. Información Adicional: gas natural. Servicios: cloacas, gas",
+                "actual": "VISTAS",
+                "expected": ""
+            },
+            {
+                "context": "Ubicados sobre la Calle De Luca entre calle Alsina y Av. San Martín (arteria principal de acceso). A sólo 350 metros de la Ruta Provincial N° 6. Localidad de Los Cardales, Partido de Exaltación de la Cruz, Provincia de Buenos Aires. Características: Se trata de dos terrenos ubicados en el casco urbano de Los Cardales. Se encuentran dentro de la Zona Residencial Comercial de Densidad Media Baja (RCmb) acorde al Código de Planeamiento de Exaltación de la Cruz en la cuál se admite la edificación de departamentos y locales comerciales. Con indicadores de ocupación de: FOS: O.6 y FOT: 1.",
+                "actual": "LOS CARDALES",
+                "expected": ""
             },
             {
                 "context": "Terreno en el barrio Altos del Mar en San Clemente del Tuyú. En calle 8 esquina calle 104 con frente al Barrio Playa Grande. Lote a 400 mts de la playa. Medidas 20 x 20 mts. El terreno tiene pilar de la luz. Tiene escritura, por lo que se escritura inmediatamente a su nombre. Lo reserva con 750 dólares, al firmar el boleto abona 4.500 dólares y al firmar la escritura abona 10.500 dólares.",
@@ -750,9 +815,39 @@
                 "expected": "Barrio Hipódromo"
             },
             {
+                "context": "Galpón en esquina, con muy buen acceso a Panamericana y Ruta 202 (a solo 600 metros). Zonificación: área industrial I2. Características:. Altura 6 metros sin columnas. Portón: 4.80 mts. alto y 4.50 mts. ancho. Lote: 10 x 30. Cubiertos: 190 m2. Fuerza motriz. FOS 0.60. FOT 1.20.",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "Lote de 10 x 30 en Lomas del Mirador. Excelente acceso a una cuadra de Gral Paz y 3 de Mosconi y de Tonelero. FOT 2.25. FOS 0.6.",
+                "actual": "EL MIRADOR",
+                "expected": ""
+            },
+            {
+                "context": "Ubicado en una esquina muy importante de Villa Ballester. Con acceso a varias líneas de colectivos. Frente 22 m, lateral 19.33 m y superficie de 422 m2. Cantidad de pisos a construir PB más 3 pisos. Estudio de factibilidad disponible. fot 3 + 30% en premios. Se escuchan ofertas. Se vende ya!",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "Lote de 15 metros de frente por 25 de fondo en excelente zona ubicada a 10 cuadras de la estación de Merlo, en zona residencial cercana al centro. Cuenta con planos aprobados para la construcción de dos duplex de 7.5 mts de frente cada uno. Zona bifamiliar. FOS 0.6. FOT 1. Información adicional: Tipo de terreno: Residencial FOS: 0.6. Zonificación: residencial. Estado de la propiedad: Muy bueno. Servicios: electricidad, pavimento, cloacas, gas, agua corriente. Características: Alambrado perimetral",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
                 "context": "Hermoso lote interno de 625 mts de largo y 200 mts de ancho en Barrio cerrado San Simón. Muy buena ubicación dentro del barrio. VALOR DE VENTA USD 39.000",
                 "actual": "",
                 "expected": "San Simón"
+            },
+            {
+                "context": "Excelente lote en L con frente a la ruta 58 (Mariano Castex) Canning. El mismo posee 10 mts de frente sobre la ruta y 50 mts de fondo, un martillo de 10 mts x 40 mts (con frente a la calle lago mascardi).",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "Increíble lote de 14 m x 47.5 m. Excelente acceso a 150 metros de Ruta 2. El lote está ubicado sobre calle 406 Bis y Calle 202. Zona de casas quinta. Soy particular venta directa de dueño. Cuento con la escritura a mi nombre no es posesión ni usucapion el lote cuenta con servicio de energía eléctrica agua por perforación gas envasado. Escuelas comercios de cercanía muy lindo entorno Ideal para casa quinta o vivienda permanente",
+                "actual": "CAN",
+                "expected": ""
             },
             {
                 "context": "AMPLIO LOTE EN VENTA EN MIRALAGOS CLUB DE CAMPO GOLF & SPA. el lote dispone de 1285 m2 ubicado en una calle poco transitable y cuenta con un fondo a la laguna del barrio. está ubicado cerca del segundo ingreso del barrio, con fácil acceso a la entrada al Club y a la entrada a la ruta 2. el barrio cerrado Miralagos Club de Campo Golf y Spa se encuentra solo a 30 minutos de la capital con vía directa cuenta con Club house, con pileta climatizada, piscina exterior, playroom, paddle, tenis, cancha de golf con 9 hoyos; spa y gimnasio orientacion. Frente al Suroeste. las medidas son aproximadas. Las definitivas surgirán del título de la propiedad. las medidas y superficie son aproximadas y no resultan vinculantes",
@@ -763,6 +858,16 @@
                 "context": "37 e/ 17 y 18. terreno en inmejorable zona de la ciudad de La Plata barrio Norte. de 8 m de frente y 30 de fondo con una construcción a demoler o reciclar siendo que los techos y estructura están en buen estado a media cuadra de Plaza Guemes zona residencial ",
                 "actual": "Norte",
                 "expected": "barrio Norte"
+            },
+            {
+                "context": "zona U/C1 area Central residencial. Central caracteristica es el ambito de centralidad donde se promueve preservar las caracteristicas significativas ambientales y culturales se caracteriza con usos institucionales administrativos de alcance regional comerciales y residenciales se promueve una elevada intensidad de ocupacion del suelo y multiplicidad de actividades. FOS 0,6. ALTURA REFERENCIA EN NIVELES 10. FOT COMERCIAL 3. FOT RESIDENCIAL 2,5. DENSIDAD COMERCIAL 2000. DENSIDAD RESIDENCIAl 1000. PREMIOS 70% en FOT Y DENSIDAD",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata, diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14,80 mts x 50 mts x 25,70 mts. Sup. Cubierta: 380.3.",
+                "actual": "EL TRIANGULO",
+                "expected": ""
             },
             {
                 "context": "MIRALAGOS. Club de Campo Golf y Spa. Ubicado en MIRALAGOS Club de Campo Golf & spa (La Plata, Buenos Aires). VENTA Terreno de 1285 mts2 con fondo a la laguna. Las medidas aproximadas de 20 mts de frente por 60 mts de fondo.Acceso por calle de tierra mejorada con servicio de electricidad en la zona. Características: Red de Energía eléctrica Red de fibra óptica para telefonía, internet, etc.Red de Agua corrienteRed de Gas natural Derecho de Conexión a Red cloacal con planta de tratamiento interna.Calles con pavimentación asfáltica Alumbrado de calles Seguridad y vigilancia las 24 horas Gimnasio & Spa, Cancha de Golf , 6 Canchas de Tenis, Canchas de Futbol 5 y 11, Cancha de Paddle, Canchas de Beach Voley, Polideportivo (básquet, patinaje, handball, hockey),Circuito aeróbico. El mismo concepto fue aplicado para el agua servida, esta es tratada y desechada en tu totalidad en una única red que se conecta a una importante planta de tratamiento propia construida con la última tecnología, que trabaja sin provocar ningún tipo de ruido y con ausencia de olores.La información gráfica y escrita contenida en el presente aviso es meramente a título ilustrativo e informativo y no forma parte de ningún tipo de documentación contractual.Las medidas y superficies definitivas surgirán del título de propiedad del inmueble referido. Asimismo los importes de tasas, servicios y expensas indicados están sujetos a verificación",
@@ -790,9 +895,39 @@
                 "expected": "Miralagos 2"
             },
             {
+                "context": "Lote en venta en Magdalena, La Plata. San Martin y Junín. Lote en venta ubicado en el casco de Magdalena de 622,5 mts2.Excelente ubicación, zona consolidada con buenos accesos, a un paso del centro y diversos centros culturales de la Ciudad, cuenta con todos los servicios. Son lotes geodésicos, con escritura y partida inmobiliaria individual, con el mejor valor del mt2 -u$s34 dls- Oportunidad. Posesión inmediata. LIKEUS S.A no ejerce el corretaje inmobiliario. El presente sitio web es una plataforma en donde cada oficina inmobiliaria independiente que contrata los servicios LIKE Propiedades puede publicar las propiedades a su cargo. Cada oficina es de propiedad y gestión independiente, por lo que LIKEUS S.A no interviene en los datos de la publicación, en la operación inmobiliaria, ni en la confección y/o firma del boleto de compraventa y/o escritura y/o contrato de alquiler. En cumplimiento de las leyes vigentes que regulan el corretaje inmobiliario, Ley Nacional 25.028, Ley 22.802 de Lealtad Comercial, Ley 24.240 de Defensa al Consumidor, las normas del Código Civil y Comercial de la Nación y Constitucionales, los agentes/gestores/Likers NO ejercen el corretaje inmobiliario. La información gráfica y escrita en el presente aviso es meramente a título estimativo y no forma parte de ningún tipo de documentación contractual. Las medidas y superficies descriptas en el presente son aproximadas, las definitivas surgirán del título de propiedad del inmueble referido. Asimismo los importes de tasas, servicios y expensas indicados están sujetos a verificación. El valor del inmueble indicado en el presente puede ser modificado sin previo aviso. Operación supeditada a que el propietario cumplimente con la Reg.2371 COTI. Todas las operaciones inmobiliarias son objeto de intermediación y conclusión por parte del martillero y corredor público JUAN MARTIN BANEGAS CMCPDJLP 7694",
+                "actual": "EL CASCO",
+                "expected": ""
+            },
+            {
+                "context": "Lote de 12m x 39m , 468 m2excelente zona en El Pato, El Peligro, todos los servicios. El lote es con escritura, dueño directo. Todos los papeles al día y a disposición de los interesados. Se encuentra sobre Calle 406 bis y Calle 202 . Excelente acceso desde Caba. Zona de casas quinta. Comercios en cercanía, escuelas. Comuníquese por Whatsapp y le envío la información.",
+                "actual": "EL PATO",
+                "expected": ""
+            },
+            {
+                "context": "Lote de 1020 m2 con orientación NE (luz solar todo el día) La nueva etapa es una combinación ideal para acceder a una inmejorable calidad de vida, disfrutando de los espacios y dimensiones propios de la vida de campo y el confort de una ciudad. Es el sector ideal para aquellos que quieran disfrutar de los deportes acuáticos, cuenta con una laguna artificial de 5.5 hectáreas. Sus chacras, que van de 800 m2 a 1400m2 y 50 metros de frente, ofrecen una amplia distancia entre vecinos y un espacio propio suficientemente generoso. Cuentan tambiÃ©n con la posibilidad de acceso a todo tipo de actividad deportiva del mega emprendimiento. Un sector que contará con 412 lotes de 800m2 a 1400m2. Éxito total en su primer lanzamiento de pre-venta a fines del año 2017. House nÃ¡utico con muelle hacia la laguna Lotes con frente a la laguna Acceso a todo tipo de actividad deportiva dentro del mega emprendimiento ( futbol, golf, polideportivo, tenis, pileta semi-olímpica ).",
+                "actual": "LA LAGUNA",
+                "expected": ""
+            },
+            {
+                "context": "Inmejorable oportunidad de inversión a valores de pre-venta: Se trata de un barrio abierto, sin expensas, en la mejor zona de Villa la Paz, Pontevedra, Merlo, Sobre Avenida UniÃ³n, arteria principal de Pontevedra, que conecta directo con la Autopista del Buen Ayre y distintos partidos del conurbano: ItuzaingÃ³, Merlo, La Matanza, Ezeiza, CaÃ±uelas, entre otros. El proyecto contempla para la venta Lotes de 660 a 2500mÂ² que se entregarán ESCRITURADOS en una fecha estimada cercana a DICIEMBRE 2026, y que gracias a una impecable gestiÃ³n, contarán con Planos registrados en el Municipio de Merlo , y ARBA, en la La Plata. Nuestros proyectos cuentan con todas las obras de infraestructura vial necesarias para las aprobaciones",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "LOTEO ABIERTO RECIDENCIAL COMERCIAL LISANDRO DE LA TORRE * Precio contado U$D 23.000- * Financiación con anticipo de U$D 12.000- * 48 cuotas de U$D 350- El loteo abierto Lisandro De La Torre combina la naturaleza y la cercanÃa a todo. Ya que tiene la gran virtud de estar ubicado en un pintoresco entorno y a la vez estas muy cerca de los servicios necesarios ; Shopping, supermercados, restaurantes, transportes, colegios, paradas de colectivo, etc. Se encuentra en Tortuguitas, a 5 cuadras de Ruta Nacional 8 y a 5 minutos de estaciÃ³n Del Viso y Tortuguitas, a 15 minutos de Shopping TOM. La etapa de comienzo de obra es una oportunidad ideal para poder comprar tu lote a valores y condiciones de financiación preferenciales. La primera etapa de pre-venta de Lisandro De La Torre cuenta con terrenos baldÃos a la venta de 192 metros cuadrados a 384 metros cuadrados, a subdividirse bajo el régimen de Propiedad Horizontal. * Loteo Abierto * Perfil comercial * Sin Expensas * Lotes de 8.50 por 24 Mts * Principales accesos * Electricidad * Pavimento * Financiación!!",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
                 "context": "LOTE EN VENTA * De 1187 m2 ubicado en Barrio Laguna (da a la laguna). Villa de Campo Tres Pino, partido de General Rodríguez * Entrega y posesión año 2026, Aun no se abonan expensas. * Predio de 500 hectáreas, con 7 barrios interconectados: \"Estribo\", \"Norte\", \"Polo\", \"Golf\", \"Casco\", \"Laguna\" e \"Isla\" * Club house ya funciona, se puede ir a pasar al día.",
                 "actual": "Laguna",
                 "expected": "Barrio Laguna"
+            },
+            {
+                "context": "DUEÑO DIRECTO. atencion: No respondo a Inmobiliarias. aviso: otros truchos copian y roban datos para publicar el mismo lote. tener cuidado!!! TOBAS entre COLIQUEO y ANCATRUZ. 400mts del río. zona no inundable. apto financiacion privada con garantia prop o prendaria 50% y saldo 12 cuotas en dolares sin interes- a 1500mts de ruta 11 tendido electrico en la entrada al lote no hay red de agua potable ni cloacal internet por antena parabolica .asp?id=7188&t=Punta-del-Indio-paraiso-oculto como llegar: desde capital tomar autopista buenos aires- la plata y en la primera bifurcación a la derecha pasa primer peaje. Tomar salida a la derecha a Mar del Plata ruta 2 Hudson para luego ver cartel ruta 36 EL PATO y salir en la bifurcacion a la derecha para tomar la 36 ruta hacia dolores chascomús salida empalme ruta 36 partido de la costa y en cartel a la izquierda hacer como una media U pasando por abajo del puente y todo derecho por la 36 es doble mano sin luz unos 15 minutos aprox. Pasar la primer rotonda y pasar la segunda rotonda y tercer rotonda a Pipinas qué son unos 45 minutos Aproximadamente en la cuarta rotonda seguir derecho hasta la cruz de Jesús ahí a la izquierda hay un cartel a Verónica la ruta se llama circunvalacion2. Hacer unos 7 km de ripio y después de un cartel de bienvenida a Punta Indio doblar a la derecha y seguir como 3 km más y luego doblar a la izquierda por ruta 11 en el cartel Parque Costero Sur, es como volviendo para atras. Luego doblar en calle ANCATRUZ a la derecha y seguir hasta Tobas y a 50mts está la entrada a lote 19. No esta demarcado ni amojonado ni cercado. para ir en micro: hay que llegar hasta veronica desde la plata con micro que sale de terminal. Y una vez en Veronica tomar el micro Parque Costero del Sur a Punta Indio. horarios-micro-comunal",
+                "actual": "EL PATO",
+                "expected": ""
             },
             {
                 "context": "Oportunidad! Anticipo con entrega de USD30.000 con entrega de posesion + 60 cuotas de USD500. Casa en venta en Barrio Abierto Los Campos de Fresnos, ubicado en Zarate sobre calle España, cercano a Antartida Argentina y a Ruta Nacional 9. Unidad Funcional de tres ambientes: Dos dormitorios, cocina-comedor integrada, baño completo. Parque y cochera semicubierta para dos vehiculos. Lote de 450 mts.2. Construccion en Seco. Sin Expensas. Termotanque eléctrico, cocina a gas envasado, biodigestor. InformaciÃ³n adicional: Agua caliente: Termotanque Superficie del terreno: 450",
@@ -800,14 +935,34 @@
                 "expected": "Los Campos de Fresnos"
             },
             {
+                "context": "RUTA N° 3, KM. 118, A 160 METROS DE LA RUTA (SAN MIGUEL DEL MONTE).  LOTE IRREGULAR EN ESQUINA. SUP. TOTAL DEL TERRENO 8.000 m2 APROX. RANCHO (A DEMOLER). SERVICIOS: LUZ â€“ AGUA POR BOMBEADOR. ALAMBRADO PERIMETRAL DE CAMPO. ARBOLEDA AÑOSA. MUY BUEN CAMINO DESDE LA RUTA PARA EL INGRESO CON DECLARATORIA DE HEREDEROS, PARA ESCRITURAR POR TRACTO ABREVIADO. PASANDO LA LAGUNA DE LAS PERDICES. ",
+                "actual": "LA LAGUNA",
+                "expected": ""
+            },
+            {
+                "context": "EXCELENTE LOTE CON GALPON A DEMOLER. EXCELENTE UBICACION PARA FINES COMERCIALES EN INGRESO A SAN VICENTE EN LA CERCANIA DE CAMPO DAROMY. ",
+                "actual": "CAMPO DAROMY",
+                "expected": ""
+            },
+            {
                 "context": "VENTA TERRENO Calle 14 entre 35 y 36 - La Plata LOTE EN VENTA, CALLE 14 E/ 35 Y 36. RENDIMIENTO: FOS 0,6 - ALTURA REFERENCIA EN NIVELES: 6. FOT COMERCIAL: 2,7. FOT RESIDENCIAL: 2,25. DENSIDAD COMERCIAL: 1800. DENSIDAD RESIDENCIAL: 900. PREMIOS: 50% en FOT Y DENSIDAD. RETIROS Y REQUISITOS Parcela con frente a Diagonal (de 30 mts), Avenida, Plaza o Parque Frente: No se permiten RETIROS de la Linea Municipal a nivel de basamento (hasta 7 mts.). Laterales: No se permiten RETIROS visibles desde la via pública a nivel de basamento (hasta 7 mts.) COCHERAS OBLIGATORIO PROVISION DE COCHERAS: 60% DE UNIDADES DE COMERCIO/VIVIENDA/OFICINA EN LOTES DE FRENTE MAYOR A 12 mts. Y SUPERFICIE MAYOR A 375 m2. VALOR DE INCIDENCIA POR METRO CUADRADO 177.77USD. VALOR DE INCIDENCIA POR UNIDAD FUNCIONAL 9000USD.  LOTE DE 10x30 EN BARRIO NORTE, LA PLATA, CON CASA A DEMOLER. ZONIFICACION UC2. F.O.S. 0,6, ALTURA REFERENCIA EN NIVELES 6, F.O.T. COMERCIAL 2,7, F.O.T. RESIDENCIAL 900, PREMIOS 50% EN F.O.T. IDEAL INVERSORES. ",
                 "actual": "NORTE",
+                "expected": ""
+            },
+            {
+                "context": "VENTA lote de 616 m2, con mejora a demoler y/o reciclar y una pileta de fibra a refaccionar. Tiene 20 m de frente por 30,80 m de fondo. Tiene luz, gas envasado, pozo ciego y agua de pozo. Ubicada en barrio de vivienda permanente con rápido acceso a Panamericana Ramal Pilar. Tiene escritura  ",
+                "actual": "CAN",
                 "expected": ""
             },
             {
                 "context": "Propiedad en block sobre lote de 8,66 x 34,64 en barrio Chauvén. Zonificación R4. Posibilidad de edificar PB y 5 pisos. 800m2 construibles mas cocheras y terrazas privadas. Vereda de sol. Toma menor valor o m2. ",
                 "actual": "Chauvén",
                 "expected": "Chuavén"
+            },
+            {
+                "context": "Casa 4 amb sobre lote 8,66 x 46.40mts!! Reciclada a Nuevo! con ent. vs autos y amplio fondo libre con quincho!! Ideal inversor para construir (8 deptos. con cochera). A Mts de ParanÃ¡!!  MEDIDAS 8.66 x 46.40 SUPERFICIE: 402.00M2 ZONIFICACION C1A FOS ZONA 0.6 FOT ZONA 1.5 RETIRO DE FRENTE. NO SE EXIGE RETIRO DE FONDO. 4 METROS DENSIDAD 300 HABITANTES POR HECTAREA PREMIOS MAXIMOS HASTA 25% EN FOT Y DENSIDAD CANTIDAD DE DEPARTAMENTOS MAXIMO 8 UNIDADES. PARA LLEGAR A ESTA CANTIDAD DE UNIDADES SE DEBE PROYECTAR 0.54 DE FOS Y RETIRAR DE FRENTE LA CONSTRUCCIÃ³N 5 METROS PARA LOGRAR LOS 25% DE PREMIOS CANTIDAD MAXIMA DE PISO 3(TRES) CON PLANTA BAJA INCLUIDA SOBRE SEGUNDO PISO SE PUEDE PROPONER ENTREPISOS EN LAS UNIDADES. ALTURA MÃ¡XIMA 13.50M CON CUBIERTA INCLINADA TANQUE DENTRO DEL TECHO, 11.50M CON TANQUE FUERA DEL TECHO Y 10.50M CON CUBIERTA PLANA. ESTACIONAMIENTO REQUERIDO, ESPACIO COMÃºN DE 20M2 POR UNIDAD O UN MODULO PARA CADA UNIDAD DE 2.50x5.00. SUPERFICIE DE LOSAS SEGÃºN FOS 217M2 PUEDEN SEPARARSE EN DOS CUERPOS CON PATIO INTERNO DE 6 METROS PARA VENTILAR. LAS SUPERFICIES DE COCHERAS CUBIERTAS NO SE COMPUTAN EN FOT Y LOS PASOS DE PLANTA BAJA Y ESCALERAS SE COMPUTAN AL 50% EN FOT LA SUPERFICIE DE CADA DEPARTAMENTO EN CASO DE HACER 8 UNIDADES SERÃ¬AN DE 50M2 Y DE 60M2 LOS QUE PROPONGAN ENTREPISO EN PLANTA SUPERIOR. SUPERFICIE CUBIERTA MAXIMA EDIFICABLE 1ER Y 2DO PISO 440.00M2 SUPEFICIE PLANTA BAJA 217.00M2 ",
+                "actual": "CAN",
+                "expected": ""
             },
             {
                 "context": "Se vende lote en gran zona. Zona de countrys (Grand Bell, Los Ceibos, Country Club de Estudiantes). 10 mts de frente x 30 mts de fondo. 300 mt2 totales. Tiene paredón al frente, alambrado, parrilla en el fondo, sala de maquinas/galpón. Zona con todos los servicios",
@@ -825,13 +980,48 @@
                 "expected": ""
             },
             {
+                "context": "Vendo lote de 12x49 en barrio cerrado Aires de Arana. El mismo es el tercer lote desde ingreso del predio. Nivelado. Posee bomba de agua. Bases de 90m2 para vivienda familiar. El predio tiene portón automatizado con apertura tanto por control remoto como por app desde el celular. Cámaras de seguridad. Calle interna iluminada. Se encuentra en una zona muy tranquila, próximo a la Av 137 a tan solo 20min del centro de la ciudad de La Plata. Posee escritura indivisa(próximo a escritura definitiva). Escucho Oferta Razonable",
+                "actual": "",
+                "expected": "Aires de Arana"
+            },
+            {
+                "context": "Lotes en calle Rio Reconquista, entre calles Atuel y Matanza, en Marcos Paz, provincia de Buenos Aires. Estos terrenos se encuentran en una zona privilegiada, rodeados de naturaleza y tranquilidad, pero a su vez cercanos a importantes vías de acceso y servicios.  El lote número 20 cuenta con una superficie total de 3550 m2, con medidas de 35.5 m. x 100 m., Mientras que el lote número 21 también tiene una superficie total de 3550 m2 y medidas de 35.5 m. x 100 m. Este último lote cuenta además con una hermosa cabaña de madera, ideal para disfrutar de momentos de descanso y relax en contacto con la naturaleza. ",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "Lote en Venta en Maschwitz Club con mejora de pileta!! Medidas de 11 x 30.- No dude en consultar.   El emprendimiento fue fundado en 1969, fue el primero en instalarse. ",
+                "actual": "",
+                "expected": "Maschwitz Club"
+            },
+            {
+                "context": "Lote de 11 metros de frente por 53.50, en excelente ubicación en Gonnet, con quincho cerrado, con cocina y baño, galpón para herramientas y caniles, totalmente parquizado.  ",
+                "actual": "CAN",
+                "expected": "Gonnet"
+            },
+            {
+                "context": "Cantisano propiedades vende lote de 16 x 40!!! excelente zona nueva!! con la construcción de nuevas casas!!",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "Lote en esquina de 133,49 mts en PH  La propiedad anteriormente era un lote, el cual fue subdividido bajo el régimen de PH, SIN ESPACIOS COMUNES.  No abona expensas.  Zonificación Id (Industrial Dominante) FOT: 1.2 (160 metros) FOS: 0.6 ( 80 metros)  La propiedad posee electricidad y agua corriente  Cuenta con construcción a refaccionar de living, dormitorio baño y cocina.  Y otra construcción para demoler  Ubicación: a una cuadra de Av. Pres. Juan Domingo Perón, a 4 cuadras de Av. Ricardo Balbín, rápida salida a General Paz. Gran cantidad de comercios y gastronomía en la zona. Bancos, colegios, Universidades cercanas y hospitales.  ",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "LOTES EN VENTA EN PH. Esquina Lacroze y 18, Gonnet.- Se trata de dos (2) lotes ubicados en esta estratégica esquina de Gonnet. Los mismos cuentan con 242 m2.  Medidas 12,5 x 18,73",
+                "actual": "",
+                "expected": "Gonnet"
+            },
+            {
                 "context": "Barrio San Patricio 2. Lote PH. Servicios. Escritura inmediata.  Alberto Dacal Propiedades: Código de la propiedad 18869",
                 "actual": "San Patricio",
                 "expected": "San Patricio 2"
             },
             {
                 "context": "504 Y 138 Excelente entorno consolidado de casa nuevas. Altos de Don Carlos. Lote en PH en esquina de 314 m2 aproximados. Movimiento de suelo, bases hechas, proyecto y permiso de obra aprobado. Rápido acceso a La Plata. Cercano a La Plata Rugby, Santa Bárbara, República de los Niños, Los Tilos, Colegio del Sol, Crisol, Raíces.",
-                "actual": "Don Carlos",
+                "actual": "LOS TILOS",
                 "expected": "Altos de Don Carlos"
             },
             {
@@ -845,9 +1035,19 @@
                 "expected": ""
             },
             {
-                "context": "Lote  en MARQUEZ \"Quintas para vivir\". Un emprendimiento ubicado en excelente zona de Gonnet (138 y 490). Un área en constante crecimiento y revalorización inmobiliaria. Lotes en PH de 330 a 800 m2. Añoso entorno verde.  Alberto Dacal Propiedades: Código de la propiedad 18789",
-                "actual": "Gonnet",
+                "context": "Barrio desarrollado en 16 hectáreas. Comprendido entre las calles 501 a 507 y 138 a 140. Una excelente zona de fácil acceso a las principales Avenidas 25, 31, 520 y Camino Gral. Belgrano. Se encuentra a 5 minutos de los principales colegios de la zona.  Un Hermoso lugar para vivir | LOTES en PH y Geodesia desde 230 m2. | SERVICIOS: LUZ  AGUA  ASFALTO - CORDóN CUNETA  GAS (Prefactibilidad aprobada)  Los datos consignados en este aviso deben considerarse estimaciones aproximadas, que  pueden carecer de precisión, exactitud y/o  estar desactualizados, al igual que las fotos , imágenes y videos,  que   se publican solo a título ilustrativo para facilitar la visualización del inmueble relacionado .",
+                "actual": "CAN",
                 "expected": ""
+            },
+            {
+                "context": "QUINTAS de MITRE (Privado) | 485 esq. 138 (J. Gorina) UF.34 (PH Cerrado). Medidas: 10,70 x 30,50 mts. Sup.Total: 321,47 mts. SERVICIOS: LUZ - AGUA - GAS ESCRITURA y entrega de POSESIÓN inmediata.   * Todas las medidas, superficies, descripciones, fotos, imágenes, videos y precios publicados son meramente orientativos y no contractuales.",
+                "actual": "",
+                "expected": "QUINTAS de MITRE"
+            },
+            {
+                "context": "Calle 141 y 515. El barrio “San Patricio 2” se desarrolla, más precisamente entre las calles 515 a 517 y 141 a 142. Es un barrio de amplios y cómodos lotes en PH, rodeados de mucho verde. Tiene un rápido acceso a la ciudad por avenida 520, lo que permite estar en 15 minutos en el centro platense. Este desarrollo cuenta con 40 lotes de diferentes medidas que van desde los 200m² a los 1000m².  Lotes de 12x40  480m2 U$S 48.000  Lotes de 12x41  492m2 U$S49.200  Lotes de 12x52  624m2   U$S 62.400  Lotes de 12x55  660m2 U$S 66.000  Servicios: luz, agua y gas. Consulte por financiación en pesos y en dólares.",
+                "actual": "SAN PATRICIO",
+                "expected": "San Patricio 2"
             },
             {
                 "context": "OPORTUNIDAD LOTE EN REVENTA - Barrio Don Carlos Lote ubicado en calle 138 Bis entre 506 y 507 - J. Hernández Medida: 10 mts de frente por 21,89 mts de fondo Información del emprendimiento: Barrio \"Altos de Don Carlos II\"Ubicación: de 501 a 507 y de 138 a 140 - Jose Hernández, La Plata. Lotes de diferentes medidas en PH y Geodesia. Medidas : 10x21 - 10x27 - 10x32 - 12x30 - 14x30 - 15x28 - 15x32 - 15x40 - 15x55 - 24x30 - 24x45 y muchos mas. Este Nuevo loteo esta compuesto por lotes de 220 a 1800 mts2. en una excelente ubicación. Cerca de las avenidas principales de La Plata Avs.25, 31 y 520 , como también a cuadras de Camino Belgrano y Republica de los niños. Zona de colegios como Raices de Gonnet - Crisol - Cennit (Del Sol) - Covenant . Servicios: Asfalto, cordón cuneta, luz, agua, (gas en Don Carlos I). Seguridad !Posesión Inmediata Financiación a medida",
@@ -858,6 +1058,31 @@
                 "context": "Lote de 244 mt2 en Barrio Privado Santa Elena (en PH), desarrollado en 1,2 hectáreas. A solo 10 minutos del centro de la ciudad de La Plata. Acceso principal por asfalto por calle 609 y 5 bis. Portón de ingreso vehicular. El emprendimiento está compuesto por 35 lotes unifamiliares y 10 locales comerciales. Plano Municipal y de Propiedad Horizontal probados. Servicios: Luz - Agua. La obra del servicio de gas será abonada por los compradores de las unidades y el comienzo de obra dependerá de la empresa prestadora. Escrituración y posesión inmediatas. ",
                 "actual": "Privado Santa Elena",
                 "expected": "Santa Elena"
+            },
+            {
+                "context": "Medidas: 20x54 Total mts2: 1080 SERVICIOS Agua: Si Gas: Si Luz: Si Cloacas: No Listo para escriturar Ubicacion: Zona Altos del Golf, entre calles Fidanza y Holmberg",
+                "actual": "ALTOS DEL GOLF",
+                "expected": ""
+            },
+            {
+                "context": "CONCEPTO GREENVILLE Greenville Polo & Resort es un nuevo concepto en proyectos de usos mixtos. Combina perfectamente el paisaje con los deportes al aire libre como el polo y un estilo de vida con servicios de hotelería de primer nivel. Ubicado en el Gran Buenos Aires, a 20 minutos de la Capital Federal por la autopista Buenos Aires – La Plata. Greenville Polo & Resort cuenta con 130 hectáreas rodeadas de arboleda y un lago que fueron parte de la famosa Estancia Abril de estilo francés. Quien elige vivir en Greenville no solo elige la vida de barrio privado sino las comodidades y servicios de hotel.  DESARROLLOS: Sheraton Greenville Polo & Resort Buenos Aires: Sus suites, salas de reuniones y espacios comunes serán sinónimo de elegancia, requeridos tanto por sus huéspedes como residentes. Villes: Acceso a amenities del resort. Experiencia Sheraton y servicios Greenville.  Condominios: Conectado al hotel con excelentes vistas al waterpark del hotel y canchas de polo. Los condominios son residencias subdivididas en propiedad horizontal. Cada uno, propietario de su unidad, podrá acceder a toda la infraestructura y servicios del hotel. Experiencia Sheraton y servicios Greenville  Terrazas al Polo:  Con la magia de un estilo moderno e imponente frente al polo, Terrazas al Polo nos hará vivir la comodidad y las vistas extraordinarias del complejo con sus 3 edificios de 5 y 6 niveles. Sus 67 aterrazados de 2 y 3 dormitorios en suite con superficies de 124 a 258 mts2 y continuando con la misma línea constructiva que los Condominios. Los mismos cuentan con balcones con parrilla individual, piscina, SUM y vistas a la Cancha 1 de Polo. Servicios Greenville y cocheras cubiertas.  Downtown Greenville: Incluye 1100m2 de locales de compras para lujos superiores, restaurantes, más las unidades profesionales o corporativas diseñadas a los que quieren gozar o trabajar dentro de todas las ventajas de Greenville Polo & Resort. Oficinas de 65m2 con pisos técnicos, cielorraso suspendido y termopanel de vidrio con filtro solar. Experiencia Sheraton y Servicios Greenville. Estacionamiento.  Lago:  Canchas de Polo:  Área deportiva:  Sendero ecuestre:  Establos:  Spring by Greenville:. -  Mat.",
+                "actual": "GREENVILLE",
+                "expected": "Greenville Polo & Resort"
+            },
+            {
+                "context": "Excelente lote interno de 1006m2 parquizado con sistema de riego, gramma bahiana y una gran arboleda desarrollada.  San Francisco Club de Campo se encuentra ubicado a la altura del km 59 de Panamericana Ramal Pilar.  Cuenta con una superficie total de 68.7 hectáreas, con 316 lotes con una superficie promedio por lote de 1.100m2, 25 hectáreas de zonas verdes, un lago y una importante infraestructura social y deportiva brindando un entorno muy familiar.  Cuenta con un importante club house, 3 canchas de tenis de polvo de ladrillo, 1 cancha de fútbol 11, 2 canchas de fútbol 7, 1 cancha de hockey, 2 piletas de natación, gimnasio totalmente equipado, quincho con parrilla, plaza de juegos para niños.  Servicios: - Electricidad- Gas- Teléfono- Internet- Recolección de residuos- Seguridad perimetral electrónica las 24 horas El club cuenta con una añosa arboleda en un entorno natural propio de la zona.\n",
+                "actual": "SAN FRANCISCO",
+                "expected": "San Francisco Club de Campo "
+            },
+            {
+                "context": "Hotel a reciclar ubicado en España 654, entre las calles Ayacucho e Ituzaingó, en el barrio de \"La Perla\". La propiedad está distribuida en dos plantas y posee 24 habitaciones con baño privado; hall de recepción; amplia cocina; gran comedor y patio descubierto.Ideal para complejo estudiantil  o construcción de PH. Se toman propiedades en parte de pago.  Seguinos en nuestras redes sociales y enterate de todos los nuevos ingresos, nos podés encontrar como @msestudioinmobiliario  ",
+                "actual": "",
+                "expected": "La Perla"
+            },
+            {
+                "context": "VENTA DE CASA O PH EN RAMOS MEJÍA- IDEAL INVERSIÓN, OPORTUNIDAD EN LA ZONA  ANTICIPO DE 199.000 USD Y CUOTAS A FINANCIAR VALOR DE CONTADO 200.000 USD  EXCLUSIVA VENTA O PERMUTA-  TOMA METROS CONSULTAR  Excelente chalet a la venta Ideal Constructor o primera vivienda. Ubicado en la localidad de Ramos Mejía, sobre la calle Oncativo al 400 entre las calles Necochea y Pringles. A pocos metros de la Av. de Mayo,  del centro comercial y de los distintos medios de transporte que conectan a Ramos Mejía con las diferentes ciudades cercanas de la Provincia y C.A.B.A.-  Toma propiedad en parte de Pago.  Descripción del inmueble: - El lote cuenta con las siguientes Medidas: 8,66 mts. de frente x 41.60 mts. de fondo.- - Superficie Total: 370,26 m2.- - Orientación Noroeste   Ubicación de la propiedad: - A mts. de Av. de Mayo - A mts. de Avenida San Martín. - A mts. de la calle Humbolt. - A mts. de la Plaza Bomberitos. - A mts. del Centro de Ramos Mejía.  (Las medidas, superficies, y demás información son meramente enunciativas. Los datos definitivos van a surgir del título de propiedad del inmueble).",
+                "actual": "CAN",
+                "expected": ""
             },
             {
                 "context": "El Equipo Remax Sierras Vende Lote (parcela 8a) en la zona norte de la ciudad, ubicado sobre calle Primera Junta casi Magallanes. Se encuentra a 1 cuadra de la Ruta Nacional 226 y a 10 minutos del centro de la ciudad. Cuenta con una superficie de 347,4 m2, con medidas de 12 metros de frente y 28,95 metros de fondo. APTO SUBDIVISIÓN EN PH. También disponemos de otros lotes de mayores medidas.  Servicios Disponibles: electricidad, agua y cloacas. El lote presenta un retiro obligatorio de 6 metros sobre calle Primera Junta.  El barrio se encuentra en desarrollo, con potencial residencial y comercial. Según el Plan de Desarrollo Territorial de Tandil cuenta con los siguientes indicadores:  *Zona: Barrio Usos Mixtos *FOS: 0,6 *FOT: 0,8 *Densidad: 200 hab/ha *Altura Construcción: 7,5 metros USOS: Vivienda Unifamiliar, Vivienda Multifamiliar, comercios minoristas y mayoristas, servicios generales y oficinas, taller doméstico, taller automotor, depósitos.  ",
@@ -875,14 +1100,44 @@
                 "expected": "Altos de Sol"
             },
             {
+                "context": "FRENTE AL HIGHLAND PARK Excelente zona (Partido de Pilar). Apto para hacer PH Superficie de lote 3820 m2 . Medidas: 39.50 m de frente al SudOeste 87 m de frente al NorOeste 4.24 m en la ochava a Oeste 42.50 m al Noreste 90 m al Sureste.  POSIBILIDAD DE CONSTRUIR 3.820 m2  ",
+                "actual": "HIGHLAND PARK",
+                "expected": ""
+            },
+            {
+                "context": "Venta de terrenos en el corazón de Gonnet, extraordinaria ubicación barrio consolidado muy buenos accesos por camino General Belgrano o Avenida 25.  Una nueva  forma de vivir que nos ofrece Gonnet, para el desarrollo de nuestros hijos por la proximidad con los clubes más importantes de la ciudad y el pulmón verde que es nuestra querida República de los Niños, para paseos recreativos, running y camitas deportivas.  Loteo que abarca 6 manzanas con superficies  que oscilan  entre  los 600 m2 y  los 960 m2 subdividido por geodesia (no es PH) y contaría  con todos los servicios.  Lote en esquina 20 x 30.",
+                "actual": "",
+                "expected": "Gonnet"
+            },
+            {
                 "context": "El lote se encuentra a una cuadra del asfalto, rapido acceso a la autopista y al centro de Villa Elisa. Las medidas aproximadas son de 22 x 43. Ideal para emprendimiento, salen 4 casas por PH (el propietario tiene un proyecto de esas características realizado) ",
                 "actual": "La Elisa",
+                "expected": ""
+            },
+            {
+                "context": "VENTA LOTE DIVISIBLE PH GARDEY - TANDIL  Amplio Lote ubicado sobre calle 3, entre 10 y 8.  Cuenta con una superficie de 750 m2, con medidas de 15 metros de frente y 50 metros de fondo. APTO SUBDIVISIÓN EN PH.   Servicios Disponibles: electricidad.  El barrio se encuentra en desarrollo, con potencial residencial. Es el lote que estabas buscando!!!  ¡¡MUDATE A LA VIDA QUE SOÑAS!!",
+                "actual": "CAN",
+                "expected": ""
+            },
+            {
+                "context": "LOTE DOBLE FRENTE en Ramos Mejía. Excelente Terreno de 17 mts. de Frente x 40 mts. de Fondo. Posibilidad de venta por fracción de 8,66 x 40 mts. La propiedad se encuentra ubicada sobre la calle 11 de Septiembre al 300, en el barrio de Ramos Mejía. A metros de la Av. San Martín. Ideal para emprendimiento de Departamentos o Duplex/PH. Posibilidad de tomar menor valor en parte de pago. ",
+                "actual": "SEPTIEMBRE",
                 "expected": ""
             },
             {
                 "context": "DESARROLLO: \"\"BELL BUENAVISTA\"\" SE VENDE: Lotes en barrio cerrado \"\"Bell Buenavista\"\", calle 135 entre 460 y 464, City Bell, partido de La Plata, provincia de Buenos Aires. El emprendimiento se emplaza sobre una nueva área urbana de City Bell, inserta en una situación de paisaje natural destacado, frente al campo de golf del club Estudiantes de La Plata. Se proponen 28 lotes para vivienda individual y 2 condominios. La estructura de circulación del conjunto comprende el concepto de manzana como criterio de orden y optimización de los espacios, liberando áreas de acceso a los conjuntos de vivienda multifamiliar y espacios del conjunto en relación a las condiciones de paisaje que genera el arroyo Martín como vínculo con el campo de golf. El emprendimiento contara con un portal de acceso (entrada), cerco perimetral, redes internas vial, agua, luz y cloaca con planta de tratamiento. Lotes a la venta hoy: Lote 03 (502,5 m2) = Usd 54.082Lote 04 (502,5 m2) = Usd 54.082 Lote 05 (502,5 m2) = Usd 54.082 Lote 10 (392 m2) = Usd 42.197 Lote 12 (461,5 m2) = Usd 49.674 Lote 13 (461,5 m2) =Usd 49.674. FINANCIAMIENTO: Anticipo del 50% y hasta 37 cuotas. Servicios: Gas, Agua y Electricidad.",
                 "actual": "club Estudiantes de La Plata",
                 "expected": "Bell Buenavista"
+            },
+            {
+                "context": "TERRENOS EN PRE-VENTA VENTA DE TERRENOS - EXCELENTE OPORTUNIDAD DE INVERSIÒN. Ubicados a tan solo 45 minutos de CABA y a 5 minutos de la nueva autopista Presidente Perón (Continuación del Camino del Buen Ayre) que conectara directamente Zona Norte con Ezeiza-La Plata. PRE VENTA DE LAS PRIMERAS 10 UNIDADADES DISPONIBLES DE 724 mts2 - DOCUMENTACION: Escritura al día. Posesión a 12 meses, escritura indivisa. DESCRIPCIONES GENERALES Barrio cerrado VIEDMA CHICO compuesto por 41 unidades funcionales que van desde los 724 a 850mts2 / Trabajo de agrimensura realizado, lotes amojonados / / Calles internas ( cul de sac ) / / Vigilancia / / Portón automático / / Cerco perimetral y alarma / / Circuito cerrado cámaras seguridad con acceso para cada propietario / / Iluminación LED / / Forestación / INFORMACION DE INTERES -Linea de transporte publico a 3 cuadras. -Ubicado a 300 metros de Avenida Constituyentes. -Ubicado a 10 minutos del centro comercial de Mariano Acosta., -Ubicado a 5 minutos del Lago San Francisco y Reserva Parque Los Robles. -Ubicado a 5 minutos de la subida de la nueva autopista con fácil acceso.",
+                "actual": "SAN FRANCISCO",
+                "expected": ""
+            },
+            {
+                "context": "486 Y 147 LOTEO FINCAS GORINA NUEVO EMPRENDIMIENTO. Lote nº1, de 633m2 de la manzana 100 . Servicios: luz, agua corriente por la cooperativa Cosego. Luminaria publica, calles con mejorado. Planos Aprobado (municipal y geodesia) UR6. Escritura y posesión inmediata. Fácil acceso a camino General Belgrano y a solo 10 minutos a la ciudad de La Plata. Lotes disponibles 990m2 - 1062",
+                "actual": "FINCAS",
+                "expected": ""
             }
         ]
     },
