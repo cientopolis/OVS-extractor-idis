@@ -81,4 +81,21 @@ def fot()->list:
             #        {"POS": "NUM"},
             #    ]
             ]
-    )   
+    )
+def fot_DM() -> list:
+    return([
+        [
+            {
+                "RIGHT_ID": "fot",
+                "RIGHT_ATTRS": {"LOWER": {"IN": ["fot", "f.o.t"]}},
+            },
+            {
+                "LEFT_ID": "fot",
+                "REL_OP": ">",
+                "RIGHT_ID": "num",
+                "RIGHT_ATTRS": {"DEP": "nummod"},
+            },
+        ],
+    ])
+
+

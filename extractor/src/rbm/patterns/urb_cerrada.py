@@ -44,4 +44,8 @@ def urb_cerrada_DM()-> list:
             ]
         ]
     )
-#relizar dependency matcher para descartar los casos como: "lindero a club de campo Grand Bell"
+#PhraseMatcher para descartar los casos como: "lindero a club de campo Grand Bell"
+
+def frases_urb_cerrada_PM () -> list:
+    frases = ["Zona de countrys","lindero grand bell"]
+    return frases

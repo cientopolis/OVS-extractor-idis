@@ -23,7 +23,7 @@ def get_numeros(cadena: str):
 def medidas_terrenos(medidas: list[str]):
     medidas_largas= []
     for medida in medidas:
-        if all([float(numero)>5 for numero in get_numeros(medida)]):
+        if all([float(numero)>7 for numero in get_numeros(medida)]):
             medidas_largas.append(medida)
     return medidas_largas
 
