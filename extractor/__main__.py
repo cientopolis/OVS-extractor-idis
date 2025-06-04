@@ -8,7 +8,7 @@ import pandas as pd
 
 warnings.filterwarnings("ignore", message=r"\[W008\]", category=UserWarning)
 
-GT: str = "input/ground_truth_sin_inferencias.csv"
+GT: str = "input/input_100.csv"
 
 
 def save_dataframe_to_csv(data, output: str) -> pd.DataFrame:

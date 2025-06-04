@@ -11,14 +11,10 @@ RE_TRES = re.compile(r"\b(tres|triple|3|tercer)\b", re.IGNORECASE)
 class Oferta():
 
     def a_demoler(self, predichos: list):
-        if (predichos["a_demoler-asegurado"]) or (predichos["a_demoler-ideal"] and ( self.hay_construccion(predichos))):
-            return True
-        else:
-            ""
-
+        return True if predichos["a_demoler"] else ""
+    
     def loteo_ph(self, predichos: list):
-        if (((not predichos["loteo_ph_DM"]) or (predichos["frases_not_loteo_ph_PM"])) and
-            ((predichos["loteo_ph_M"]) or ( predichos["frases_loteo_ph_PM"]))) :
+        if not predichos["loteo_ph_DM"] and (predichos["loteo_ph_M"]) : #or predichos["loteo_ph_DM_True"]):
             return True 
         return ""
     
@@ -81,13 +77,9 @@ class Oferta():
                     result["dir_interseccion"].remove(interseccion)
         return result
 
-    def _clear_lote_nro(self, predichos: list):
-        for prediction in predichos["dir_lote_nro"]:
-            prediction = prediction[:-1]
     
     def direccion(self, predichos: list):
         predichos = self._clear_inter_entre(predichos)
-        # predichos = self._clear_lote_nro(predichos)
         # predichos = clear_altura_entre(predichos)
         
         matches_direccion_todos = (
@@ -95,7 +87,6 @@ class Oferta():
             + predichos["dir_interseccion"]
             + predichos["dir_nro"]
             + [";".join(reduce_superstrings(predichos["dir_lote"]))]
-            # + [";".join(reduce_superstrings(predichos["dir_lote_nro"]))]
         )
         if matches_direccion_todos == []:
             return ""
@@ -125,7 +116,7 @@ class Oferta():
         return string.replace(",",".").replace("/","")
     
     def fot(self, predichos: list):
-        predichos = list(set(predichos["fot"])) #or predichos("fot_DM")) REVISAR
+        predichos = list(set(predichos["fot"]))
         veces_que_menciona_fot= self.fot_multiple(predichos)
         if (veces_que_menciona_fot == 1):
             result= max(predichos, key=len) if predichos else ""
@@ -161,7 +152,7 @@ class Oferta():
 
 
     def frentes(self, predichos: list):
-        predichos= predichos["frentes"] or predichos["frases_frentes_PM"]
+        predichos= predichos["frentes"]
         frentes_en_numeros = []
         for match in predichos:
             contiene_2 = self.__contiene_dos(match.lower())
@@ -200,17 +191,15 @@ class Oferta():
         # return re.compile(re.escape("Barrio"), re.IGNORECASE).sub("", mejor_match).strip()
 
     def esquina(self, predichos: list):
-        if ((predichos["esquina"]) and (not predichos["frases_not_esquina"])): 
-            return True
-        return "" 
+        return True if predichos["esquina"] else ""
 
     def pileta(self, predichos: list):
-        if not predichos["pileta_barrio"] and not predichos["no_pileta_DM"] and not predichos["posible_country"] and predichos["pileta"]:
+        if not predichos["pileta_barrio"] and predichos["pileta"]:
             return True 
         return ""
 
     def urb_cerrada(self, predichos: list):
-        if (((not predichos["urb_cerrada_DM"]) and (not predichos["frases_urb_cerrada_PM"])) and (predichos["urb_cerrada"])):
+        if ((not predichos["urb_cerrada_DM"]) and predichos["urb_cerrada"]):
             return True
         return ""
     
@@ -218,40 +207,17 @@ class Oferta():
         return True if predichos["urb_semicerrada"] else ""
     
     def es_multioferta(self, predichos: list):
-        return True if predichos["es_multioferta"] or predichos["frases_multioferta_PM"] else ""
+        return True if predichos["es_multioferta"] else ""
     
     def indiviso(self, predichos: list):
-        if not predichos["indiviso_DM"] and (predichos["indiviso_M"] or predichos["frases_indiviso_PM"]):
+        if not predichos["indiviso_DM"] and predichos["indiviso_M"]:
             return True 
         return ""
 
     def es_monetizable(self, predichos: list):
-        #si no es a demoler, seguro no es monetizable
-        if self.a_demoler(predichos):
-            return ""
-        #si tiene pileta entonces cuenta como mejora
-        if (self.pileta(predichos)): 
+        if not self.a_demoler(predichos) and not self.preventa(predichos) and predichos["es_monetizable"]:
             return True
-        #si habla de portones o alambrados, que no sea de la entrada al barrio, que sea del lote
-        if (predichos["es_monetizable-mejoras_country"] and not self.urb_cerrada(predichos) and not predichos["posible_country"] and not predichos["no_mejora_country_DM"] ):#
-            return True
-        #si hay mejoras que no sean de la calle
-        if predichos["es_monetizable-mejorado"] or (predichos["mejora_posible_calle"] and not predichos["no_mejora_DM"]):
-            return True
-        if self.no_cuenta_construccion(predichos) and ( predichos["es_monetizable-construccion"]  ): #or predichos["es_monetizable-con_construccion"]
-            return True
-        if self.no_cuenta_construccion(predichos) and predichos["es_monetizable-con_construccion"] and (not predichos["no_con_construccion_DM"]): #
-            return True
-        #si tiene una construcción que refiere estrictamente al lote -> empeora un poco el modelo
-        # if(predichos["lote_construccion_DM"]):
-        #     return True
         return ""
     
-    def no_cuenta_construccion(self, predichos):
-        return not self.preventa(predichos) and not predichos["no_construccion-PM"]
-                                                   
-    def hay_construccion(self, predichos):
-        return predichos["es_monetizable-con_construccion"] or predichos["es_monetizable-construccion"] 
-
     def posesion(self, predichos: list):
         return True if predichos["posesion"] else ""

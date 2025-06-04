@@ -27,14 +27,18 @@ def indiviso_DM() -> list:
                     "RIGHT_ID": "ADV_no",
                     "RIGHT_ATTRS": {"POS":{"IN" : ["ADV" , "CCONJ"]}},  # no/ni parte indivisa
                 }
-            ]
+            ],
+            #[
+            #    {
+            #        "RIGHT_ID": "indiviso).",
+            #        "RIGHT_ATTRS": {"POS": "ADJ"},
+            #    },
+            #    {
+            #        "LEFT_ID": "indiviso).",
+            #        "REL_OP": ">",
+            #        "RIGHT_ID": "NO",
+            #        "RIGHT_ATTRS": {"POS": "ADV"}
+            #    }            
+            #]
         ]
-
-def frases_indiviso_PM() -> list:
-    frases = ["Posee escritura indivisa(próximo","posee escritura indivsa","posee escritura por la parte indiva",]
-    return frases
-
-#futura mejora NO invocada aun
-def frases_not_indiviso_PH() -> list:
-    frases = ["(no es parte indivisa)","no es parte indivisa",]
-    return frases
+  
