@@ -20,23 +20,14 @@ Run an AI model for QA, NER and RBM and compute the results
 
 options:
   -h, --help            show this help message and exit
-  -s {qa,rbm,ner}, --strategy {qa,rbm,ner}
-                        Select the strategy
-  -i, --inferences, --no-inferences
-                        Run with inferences (default: False)
   -f file, --file file  
                         Run extractions over specific file without evaluation metrics
   -nr NROWS, --nrows NROWS
                         Select the first NROWS rows of the file
 ```
-Extracción sin inferencias usando rule-based matching
+Extracción usando rule-based matching en el dataset "input/input_100.csv"
 ```python
-py extractor -s rbm
-```
-
-Extracción sin inferencias usando rule-based matching para el archivo del OVS. No evalúa resultados
-```python
-py extractor -s rbm -f "ovs.csv" --nrows "500"
+py extractor -f "input/input_100.csv"
 ```
 
 ## 🌱 Licencia

@@ -20,16 +20,6 @@ def process_input(args: argparse.Namespace) -> pd.DataFrame:
     df = pd.read_csv(args.file.name, nrows=nrows, sep="|")
     return df
 
-
-def process_result(result: pd.DataFrame, args: argparse.Namespace) -> pd.DataFrame:
-    from src.helper import descubrir_nuevos
-
-    if args.inferences:
-        clean_result = result.apply(descubrir_nuevos, axis=1)
-        assert type(clean_result) == pd.DataFrame
-        result = clean_result
-    return result
-
 def run_rbm(input: pd.DataFrame) -> tuple[pd.DataFrame, str]:
     from src.rbm import rbm
 
@@ -37,13 +27,6 @@ def run_rbm(input: pd.DataFrame) -> tuple[pd.DataFrame, str]:
 
 def parse_args() -> argparse.Namespace:
     parser: argparse.ArgumentParser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "-i",
-        "--inferences",
-        action=argparse.BooleanOptionalAction,
-        default=False,
-        help="Run with inferences",
-    )
     parser.add_argument(
         "-f",
         "--file",
@@ -71,7 +54,6 @@ def main():
 
     results, filenames = run_rbm(input)
     results = results if isinstance(results, list) else [results]
-    results = [process_result(result, args) for result in results]
 
     filenames = filenames if isinstance(filenames, list) else [filenames]
 
