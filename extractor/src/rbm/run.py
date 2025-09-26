@@ -79,5 +79,8 @@ def rbm(input: pd.DataFrame) -> pd.DataFrame:
         }
         select_best_candidate(candidate_pairs, estructura)
         estructura["description"] = description
+        # para que el output del AVE incluya listing_id y site ademas de description
+        estructura["listing_id"] = listing_id 
+        estructura["site"] = site
         data.append(estructura)
     return pd.DataFrame(data, index=None)
