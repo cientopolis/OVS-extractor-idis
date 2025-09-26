@@ -36,5 +36,5 @@ def frases_indiviso_PM() -> list:
 
 #futura mejora NO invocada aun
 def frases_not_indiviso_PH() -> list:
-    frases = ["(no es parte indivisa)","no es parte indivisa",]
+    frases = ["(no es parte indivisa)","no es parte indivisa","subdivisión en trámite"]
     return frases

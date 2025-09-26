@@ -1,14 +1,14 @@
 numeros = ["uno","dos","tres","cuatro","cinco","seis","siete","ocho"]
 ph_similares = ["PH","ph","(PH)","(ph)","ph.","PH."]
 def loteo_ph_M() -> list:
-    return list ( 
-            [                 
-                [{"LOWER" : "por"},{"LOWER" : "ph"}],
-                [{"LOWER" : "Lote"},{"LOWER" : "interno"},{"LOWER" : {"IN" : ph_similares}}],  #Lote interno (PH)
-                [{"LOWER" : "diferentes"},{"LOWER" : "medidas"},{"LOWER": "en"},{"LOWER": {"IN" : ph_similares}}], # diferentes medidas en ph
-                [{"LOWER":"ph"},{"LOWER" : "aprobado"}], #ph aprobado                
-                [{"LOWER":"terreno"},{"LOWER" : "tipo","OP" : "?"},{"LOWER" : "ph"}],#terreno tipo (opcional) ph
-                [{"LOWER":{"IN" :["lote","lotes"]}},{"LOWER" : "en", "OP" : "?" },{"LOWER" : "ph"}], #lote/lotes en(opcional) ph                
+    return list (     
+        [                 
+        [{"LOWER" : "por"},{"LOWER" : "ph"}],
+        [{"LOWER" : "Lote"},{"LOWER" : "interno"},{"LOWER" : {"IN" : ph_similares}}],  #Lote interno (PH)
+        [{"LOWER" : "diferentes"},{"LOWER" : "medidas"},{"LOWER": "en"},{"LOWER": {"IN" : ph_similares}}], # diferentes medidas en ph
+        [{"LOWER":"ph"},{"LOWER" : "aprobado"}], #ph             
+        [{"LOWER":"terreno"},{"LOWER" : "tipo","OP" : "?"},{"LOWER" : "ph"}],#terreno tipo (opcional) ph
+        [{"LOWER":{"IN" :["lote","lotes"]}},{"LOWER" : "en", "OP" : "?" },{"LOWER" : "ph"}], #lote/lotes en(opcional) ph                
                 # POSIBLES MEJORAS
                 #[{"LOWER":"lotes"},{"LOWER" : "en"},{"LOWER" : "venta"},{"LOWER" : "en"},{"LOWER" : "ph"}],#lotes en venta en ph
                 #[{"LOWER" : {"IN" : ph_similares}}],
@@ -67,5 +67,13 @@ def frases_loteo_ph_PM() -> list:
     return frases
 
 def frases_not_loteo_ph_PM() -> list:
-    not_frases = ["departamento en ph.-en","APTO SUBDIVISIÓN EN PH","Posibilidad de dividir en PH","LOTE DIVISIBLE PH","LOTE EN L COMPUESTO POR TRES PH","posible ph",]
+    not_frases = ["departamento en ph.-en",
+    "APTO SUBDIVISIÓN EN PH",
+    "Posibilidad de dividir en PH",
+    "LOTE DIVISIBLE PH",
+    "LOTE EN L COMPUESTO POR TRES PH",
+    "posible ph",]
     return not_frases
+
+
+
